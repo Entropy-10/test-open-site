@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,12 +13,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
     "paths": {
+      "@supabase/*": ["lib/supabase/*"],
+      "@env": ["env.mjs"],
+      "@osu": ["lib/osu.ts"],
+      "@utils": ["lib/utils.ts"],
+      "@types": ["types/index.ts"],
+      "@metadata": ["lib/metadata.ts"],
+      "@navigation": ["lib/navigation.ts"],
+      "@siteConfig": ["lib/site-config.ts"],
       "~/*": ["./*"]
     }
   },

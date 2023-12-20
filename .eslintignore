@@ -1,0 +1,11 @@
+.next
+dist
+node_modules
+.env
+.env.local
+.env.example
+pnpm-lock.yaml
+README.md
+next-env.d.ts
+.eslintrc.cjs
+postcss.config.js

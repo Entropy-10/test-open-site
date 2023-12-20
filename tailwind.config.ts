@@ -1,20 +1,25 @@
+import typography from '@tailwindcss/typography'
+
 import type { Config } from 'tailwindcss'
 
-const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+export default {
+  content: ['./**/*.{ts,tsx,mdx}'],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'bottom-fade': 'linear-gradient(180deg, #FFFFFF00 85%, 95%, #FFFEFA)',
+        feature2: 'linear-gradient(270deg, #807EE1 -9.09%, #5E72EB 108.5%)',
+        feature4: 'linear-gradient(90deg, #807EE1 -8.67%, #FF9190 118.61%);',
+        footer: 'linear-gradient(90deg, #120C6E -30.19%, #807EE1 107.81%);'
       },
-    },
+      colors: {
+        'milky-white': '#FFFEFA',
+        'light-blue': '#5E72EB',
+        blue: '#120C6E',
+        'medium-blue': '#0B0742',
+        'dark-blue': '#070427'
+      }
+    }
   },
-  plugins: [],
-}
-export default config
+  plugins: [typography]
+} satisfies Config
