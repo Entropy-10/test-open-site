@@ -2,6 +2,14 @@
 
 import Button from './ui/Button'
 
-export default function SignInButton() {
-  return <Button variant='primary'>SIGN IN</Button>
+interface SignInButtonProps {
+  className?: string
+}
+
+export default function SignInButton({ className }: SignInButtonProps) {
+  return (
+    <Button variant='primary' className={className}>
+      SIGN IN
+    </Button>
+  )
 }

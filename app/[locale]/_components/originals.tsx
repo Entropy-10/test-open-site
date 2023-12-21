@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { links, songs } from '@siteConfig'
-import { cn } from '@utils'
 
 import Button from '~/components/ui/Button'
 import Songs from './songs'
@@ -39,16 +38,13 @@ export default function Originals() {
           <ol className='ml-10 mt-4 list-inside list-[decimal-leading-zero] space-y-3 border-l-2 border-light-blue py-1 pl-4 text-sm font-medium text-blue marker:font-bold'>
             {songs.map(({ name, artist, link }, i) => (
               <li key={name + i}>
-                <Link
-                  href={link}
-                  target='_blank'
-                  className={cn(
-                    'hover:underline',
-                    name === 'Coming Soon' && 'italic opacity-65'
-                  )}
-                >
-                  {name} {artist && `by ${artist}`}
-                </Link>
+                {name === 'Coming Soon' ? (
+                  <span className='italic opacity-65'>{name}</span>
+                ) : (
+                  <Link href={link} target='_blank' className='hover:underline'>
+                    {name} by {artist}
+                  </Link>
+                )}
               </li>
             ))}
           </ol>

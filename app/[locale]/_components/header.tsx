@@ -19,7 +19,7 @@ export default async function Header() {
           </h1>
         </Link>
 
-        <nav className='hidden h-full space-x-8 text-center text-xs font-semibold md:flex'>
+        <nav className='hidden h-full space-x-8 px-4 text-center text-xs font-semibold md:flex'>
           {navItems.map(({ link, text }) => (
             <NavItem
               key={text}
@@ -32,7 +32,7 @@ export default async function Header() {
           ))}
         </nav>
 
-        <SignInButton />
+        <SignInButton className='hidden md:flex' />
       </section>
     </header>
   )
