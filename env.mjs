@@ -4,7 +4,7 @@ import { z } from 'zod'
 export const env = createEnv({
   client: {
     NEXT_PUBLIC_START_DATE: z.string().min(1),
-    NEXT_PUBLIC_OSU_CLIENT_ID: z.string().min(1),
+    NEXT_PUBLIC_OSU_CLIENT_ID: z.coerce.number().min(1),
     NEXT_PUBLIC_OSU_REDIRECT_URI: z.string().min(1),
     NEXT_PUBLIC_DISCORD_CLIENT_ID: z.string().min(1),
     NEXT_PUBLIC_DISCORD_REDIRECT_URI: z.string().min(1),
@@ -23,7 +23,9 @@ export const env = createEnv({
     GUILD_ID: z.string().min(1),
     GUILD_CAPTAIN_ROLE_ID: z.string().min(1),
     GUILD_PLAYER_ROLE_ID: z.string().min(1),
-    UPTIME_API_KEY: z.string().min(1)
+    UPTIME_API_KEY: z.string().min(1),
+    JWT_SECRET: z.string().min(1),
+    SUPABASE_SERVICE_KEY: z.string().min(1)
   },
   experimental__runtimeEnv: {
     NEXT_PUBLIC_START_DATE: process.env.NEXT_PUBLIC_START_DATE,

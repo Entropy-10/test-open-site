@@ -69,3 +69,14 @@ export interface Feature {
   link: string
   className?: string
 }
+
+export interface SessionUser {
+  osu_id: string
+  discord_id: string
+  osu_name: string
+  discord_name: string
+  osu_avatar: string
+  discord_avatar?: string
+  rank?: number
+  restricted: boolean
+}

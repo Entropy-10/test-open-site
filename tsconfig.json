@@ -19,6 +19,7 @@
       "@supabase/*": ["lib/supabase/*"],
       "@env": ["env.mjs"],
       "@osu": ["lib/osu.ts"],
+      "@discord": ["lib/discord.ts"],
       "@utils": ["lib/utils.ts"],
       "@types": ["types/index.ts"],
       "@metadata": ["lib/metadata.ts"],
