@@ -20,7 +20,7 @@
       "@env": ["env.mjs"],
       "@osu": ["lib/osu.ts"],
       "@discord": ["lib/discord.ts"],
-      "@utils": ["lib/utils.ts"],
+      "@utils/*": ["lib/utils/*"],
       "@types": ["types/index.ts"],
       "@metadata": ["lib/metadata.ts"],
       "@navigation": ["lib/navigation.ts"],

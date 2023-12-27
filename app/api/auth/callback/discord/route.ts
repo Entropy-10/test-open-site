@@ -2,9 +2,9 @@ import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 import { env } from '@env'
 import { createClient } from '@supabase/server'
+import { signJWT, verifyJWT } from '@utils/server'
 import { Client } from 'osu-web.js'
 import { discordAuth } from '@discord'
-import { signJWT, verifyJWT } from '@utils'
 
 import { authError } from '../utils'
 
@@ -37,31 +37,43 @@ export async function GET(request: NextRequest) {
     const osuUser = await osuClient.users.getSelf()
     const discordUser = await discordAuth.getUser(tokens.access_token)
 
-    const baseUser = {
+    const { error: userError } = await supabase.from('users').upsert({
       osu_id: osuUser.id.toString(),
-      discord_id: discordUser.id,
       osu_name: osuUser.username,
-      discord_name: discordUser.username,
       osu_avatar: osuUser.avatar_url,
-      discord_avatar: discordUser.avatar,
+      restricted: osuUser.is_restricted,
       rank: osuUser.statistics_rulesets.osu?.global_rank,
-      restricted: osuUser.is_restricted
-    }
+      discord_id: discordUser.id,
+      discord_name: discordUser.username,
+      discord_avatar: discordUser.avatar
+    })
 
-    const { error } = await supabase.from('users').upsert({
-      ...baseUser,
+    if (userError) throw userError
+
+    const { error: tokenError } = await supabase.from('tokens').upsert({
+      osu_id: osuUser.id.toString(),
       osu_access_token: osuTokens.access_token,
-      discord_access_token: tokens.access_token,
       osu_refresh_token: osuTokens.refresh_token,
+      discord_access_token: tokens.access_token,
       discord_refresh_token: tokens.refresh_token
     })
 
-    if (error) throw error
+    if (tokenError) throw tokenError
+
+    const sessionData = {
+      sub: osuUser.id.toString(),
+      role: 'authenticated',
+      osu_name: osuUser.username,
+      osu_avatar: osuUser.avatar_url,
+      restricted: osuUser.is_restricted
+    }
 
     cookies().delete('osu-tokens')
-    cookies().set('session', signJWT(baseUser), { path: '/' })
+    cookies().set('session', signJWT(sessionData), { path: '/' })
   } catch (err) {
-    console.error(err)
+    console.log(err)
+
+    cookies().delete('osu-tokens')
     return authError(url)
   }
 

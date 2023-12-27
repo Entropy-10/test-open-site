@@ -1,4 +1,4 @@
-import { getBaseUrl } from '@utils'
+import { getBaseUrl } from '@utils/client'
 
 import type { MetadataRoute } from 'next'
 

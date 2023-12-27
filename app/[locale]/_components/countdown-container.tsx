@@ -1,10 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { pad } from '@utils/client'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import Confetti from 'react-confetti-boom'
-import { pad } from '@utils'
 
 import Countdown from './countdown'
 

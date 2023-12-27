@@ -1,12 +1,12 @@
 import '~/styles/globals.css'
 
 import { notFound } from 'next/navigation'
+import { cn, getBaseUrl, inter } from '@utils/client'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { getTranslations } from 'next-intl/server'
 import { genOgTwitterImage } from '@metadata'
 import { locales } from '@siteConfig'
-import { cn, getBaseUrl, inter } from '@utils'
 
 import Footer from './_components/footer'
 import Header from './_components/header'

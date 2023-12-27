@@ -51,70 +51,64 @@ export interface Database {
         }
         Relationships: []
       }
-      rules: {
+      tokens: {
         Row: {
           created_at: string
-          description: string
-          id: number
-          name: string
+          discord_access_token: string
+          discord_refresh_token: string
+          osu_access_token: string
+          osu_id: string
+          osu_refresh_token: string
         }
         Insert: {
           created_at?: string
-          description: string
-          id?: number
-          name: string
+          discord_access_token: string
+          discord_refresh_token: string
+          osu_access_token: string
+          osu_id: string
+          osu_refresh_token: string
         }
         Update: {
           created_at?: string
-          description?: string
-          id?: number
-          name?: string
+          discord_access_token?: string
+          discord_refresh_token?: string
+          osu_access_token?: string
+          osu_id?: string
+          osu_refresh_token?: string
         }
         Relationships: []
       }
       users: {
         Row: {
           created_at: string
-          discord_access_token: string
           discord_avatar: string | null
           discord_id: string
           discord_name: string
-          discord_refresh_token: string
-          osu_access_token: string
-          osu_avatar: string | null
+          osu_avatar: string
           osu_id: string
           osu_name: string
-          osu_refresh_token: string
           rank: number | null
           restricted: boolean
         }
         Insert: {
           created_at?: string
-          discord_access_token: string
           discord_avatar?: string | null
           discord_id: string
           discord_name: string
-          discord_refresh_token: string
-          osu_access_token: string
-          osu_avatar?: string | null
+          osu_avatar: string
           osu_id: string
           osu_name: string
-          osu_refresh_token: string
           rank?: number | null
           restricted: boolean
         }
         Update: {
           created_at?: string
-          discord_access_token?: string
           discord_avatar?: string | null
           discord_id?: string
           discord_name?: string
-          discord_refresh_token?: string
-          osu_access_token?: string
-          osu_avatar?: string | null
+          osu_avatar?: string
           osu_id?: string
           osu_name?: string
-          osu_refresh_token?: string
           rank?: number | null
           restricted?: boolean
         }
@@ -125,7 +119,10 @@ export interface Database {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      request_user_id: {
+        Args: Record<PropertyKey, never>
+        Returns: string
+      }
     }
     Enums: {
       [_ in never]: never

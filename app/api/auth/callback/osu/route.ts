@@ -1,8 +1,8 @@
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
+import { signJWT } from '@utils/server'
 import { discordAuth } from '@discord'
 import { osuAuth } from '@osu'
-import { signJWT } from '@utils'
 
 import { authError } from '../utils'
 

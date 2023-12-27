@@ -14,6 +14,11 @@ export const createClient = (
     env.NEXT_PUBLIC_SUPABASE_URL,
     serviceKey ?? env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     {
+      global: {
+        headers: {
+          Authorization: `Bearer ${cookieStore.get('session')?.value}`
+        }
+      },
       cookies: {
         get(name: string) {
           return cookieStore.get(name)?.value

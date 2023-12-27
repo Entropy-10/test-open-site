@@ -24,8 +24,8 @@ export const env = createEnv({
     GUILD_CAPTAIN_ROLE_ID: z.string().min(1),
     GUILD_PLAYER_ROLE_ID: z.string().min(1),
     UPTIME_API_KEY: z.string().min(1),
-    JWT_SECRET: z.string().min(1),
-    SUPABASE_SERVICE_KEY: z.string().min(1)
+    SUPABASE_SERVICE_KEY: z.string().min(1),
+    SUPABASE_JWT_SECRET: z.string().min(1)
   },
   experimental__runtimeEnv: {
     NEXT_PUBLIC_START_DATE: process.env.NEXT_PUBLIC_START_DATE,

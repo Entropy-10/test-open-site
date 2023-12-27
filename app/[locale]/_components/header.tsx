@@ -1,8 +1,7 @@
-import { cookies } from 'next/headers'
 import Image from 'next/image'
+import { getSession } from '@utils/server'
 import { getTranslations } from 'next-intl/server'
 import { navItems } from '@siteConfig'
-import { getSession } from '@utils'
 
 import Link from '~/components/ui/Link'
 import NavItem from '~/components/ui/NavItem'
@@ -11,7 +10,7 @@ import SignInButton from '~/components/sign-in-button'
 
 export default async function Header() {
   const t = await getTranslations('NavItems')
-  const session = getSession(cookies())
+  const session = getSession()
 
   return (
     <header className='disabledViewTransiton h-14 bg-milky-white'>

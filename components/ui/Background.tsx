@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { cn } from '@utils'
+import { cn } from '@utils/client'
 
 import background from '../../public/images/background.jpg'
 
