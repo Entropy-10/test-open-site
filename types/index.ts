@@ -69,3 +69,11 @@ export interface Feature {
   link: string
   className?: string
 }
+
+export interface Session {
+  sub: string
+  role: 'authenticated'
+  osu_name: string
+  osu_avatar: string
+  restricted: string
+}

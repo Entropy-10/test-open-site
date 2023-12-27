@@ -4,6 +4,7 @@ import { env } from '@env'
 import { createServerClient } from '@supabase/ssr'
 
 import type { CookieOptions } from '@supabase/ssr'
+import type { Database } from '~/types/supabase'
 import type { NextRequest } from 'next/server'
 
 export const createClient = (request: NextRequest) => {
@@ -11,10 +12,15 @@ export const createClient = (request: NextRequest) => {
     request: { headers: request.headers }
   })
 
-  const supabase = createServerClient(
+  const supabase = createServerClient<Database>(
     env.NEXT_PUBLIC_SUPABASE_URL,
     env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     {
+      global: {
+        headers: {
+          Authorization: `Bearer ${request.cookies.get('session')?.value}`
+        }
+      },
       cookies: {
         get(name: string) {
           return request.cookies.get(name)?.value

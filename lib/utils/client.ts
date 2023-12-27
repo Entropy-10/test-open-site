@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import { clsx } from 'clsx'
+import clsx from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
 import type { ClassValue } from 'clsx'

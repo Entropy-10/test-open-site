@@ -1,7 +1,7 @@
 import Image from 'next/image'
+import { cn } from '@utils/client'
 import { useTranslations } from 'next-intl'
 import { links, navItems } from '@siteConfig'
-import { cn } from '@utils'
 
 import Button from '~/components/ui/Button'
 import Link from '~/components/ui/Link'

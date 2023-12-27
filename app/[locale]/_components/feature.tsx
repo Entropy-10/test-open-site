@@ -1,5 +1,5 @@
+import { cn } from '@utils/client'
 import { useTranslations } from 'next-intl'
-import { cn } from '@utils'
 
 import Link from '~/components/ui/Link'
 import ClickArrowIcon from '~/components/icons/ClickArrowIcon'

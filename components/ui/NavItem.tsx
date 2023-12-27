@@ -1,9 +1,9 @@
 'use client'
 
 import { forwardRef } from 'react'
+import { cn } from '@utils/client'
 import { motion } from 'framer-motion'
 import { usePathname } from '@navigation'
-import { cn } from '@utils'
 
 import useAnimatedRouter from '~/hooks/useAnimatedRouter'
 

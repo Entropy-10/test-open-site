@@ -1,8 +1,8 @@
 'use client'
 
+import { cn } from '@utils/client'
 import { cva } from 'class-variance-authority'
 import { Loader2 } from 'lucide-react'
-import { cn } from '@utils'
 
 import Link from './Link'
 
