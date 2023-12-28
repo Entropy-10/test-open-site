@@ -23,7 +23,7 @@ export const discordAuth = new Auth({
 })
 
 export const discordAuthUrl = discordAuth.generateAuthUrl({
-  scope: ['identify', 'guilds.join']
+  scope: ['identify', 'guilds.join', 'guilds.members.read']
 })
 
 export async function refreshDiscordToken(tokens: Tables<'tokens'>) {

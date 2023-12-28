@@ -1,6 +1,5 @@
 'use client'
 
-import { getBaseUrl } from '@utils/client'
 import { usePathname } from '@navigation'
 
 import Button from '../ui/Button'
@@ -15,7 +14,7 @@ export default function SignInButton({ className }: SignInButtonProps) {
 
   return (
     <form action={signIn}>
-      <input name='return-url' defaultValue={getBaseUrl() + pathname} hidden />
+      <input name='return-path' defaultValue={pathname} hidden />
       <Button variant='primary' className={className}>
         SIGN IN
       </Button>

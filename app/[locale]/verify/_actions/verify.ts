@@ -25,7 +25,7 @@ export async function verify() {
 
   if (!user?.tokens || error) return verifyError('No user found in database.')
 
-  const member = await getGuildMember(user.tokens)
+  const member = await getGuildMember(user.tokens).catch(() => verifyError())
 
   if (member?.roles.includes(env.GUILD_VERIFIED_ROLE_ID)) {
     redirect('/verify?status=success&message=You are already verified.')

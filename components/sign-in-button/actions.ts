@@ -2,13 +2,14 @@
 
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
+import { getBaseUrl } from '@utils/client'
 import { osuAuthUrl } from '@osu'
 
 // Next.js requires server actions to async functions
 // eslint-disable-next-line @typescript-eslint/require-await
 export async function signIn(formData: FormData) {
-  const returnUrl = formData.get('return-url')?.toString()
-  if (returnUrl) cookies().set('return-url', returnUrl)
+  const returnPath = formData.get('return-path')?.toString()
+  if (returnPath) cookies().set('return-url', getBaseUrl() + returnPath)
 
   redirect(osuAuthUrl)
 }
