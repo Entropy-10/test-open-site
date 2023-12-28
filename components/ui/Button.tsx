@@ -92,9 +92,9 @@ function createInner({
     <>
       <div className='z-20 flex items-center space-x-2'>
         {children}
-        <span>
+        <span className='pl-1'>
           {loading && (
-            <Loader2 size={20} strokeWidth={3} className='animate-spin' />
+            <Loader2 size={15} strokeWidth={4} className='animate-spin' />
           )}
         </span>
       </div>
@@ -104,9 +104,9 @@ function createInner({
   ) : (
     <div className='flex items-center space-x-2'>
       {children}
-      <span>
+      <span className='pl-1'>
         {loading && (
-          <Loader2 size={20} strokeWidth={3} className='animate-spin' />
+          <Loader2 size={15} strokeWidth={4} className='animate-spin' />
         )}
       </span>
     </div>
