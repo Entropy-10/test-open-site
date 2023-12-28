@@ -76,7 +76,15 @@ export interface Database {
           osu_id?: string
           osu_refresh_token?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: 'tokens_osu_id_fkey'
+            columns: ['osu_id']
+            isOneToOne: true
+            referencedRelation: 'users'
+            referencedColumns: ['osu_id']
+          }
+        ]
       }
       users: {
         Row: {

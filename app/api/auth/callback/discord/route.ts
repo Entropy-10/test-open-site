@@ -71,11 +71,13 @@ export async function GET(request: NextRequest) {
     cookies().delete('osu-tokens')
     cookies().set('session', signJWT(sessionData), { path: '/' })
   } catch (err) {
-    console.log(err)
-
+    cookies().delete('return-url')
     cookies().delete('osu-tokens')
     return authError(url)
   }
 
-  return NextResponse.redirect(url.origin)
+  const returnUrl = cookies().get('return-url')?.value
+  if (returnUrl) cookies().delete('return-url')
+
+  return NextResponse.redirect(returnUrl ?? url.origin)
 }

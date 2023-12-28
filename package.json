@@ -17,6 +17,7 @@
     "db:types": "supabase gen types typescript --project-id dtoyeiqtecliyympsgji > types/supabase.ts"
   },
   "dependencies": {
+    "@discordjs/rest": "^2.2.0",
     "@supabase/ssr": "^0.0.10",
     "@supabase/supabase-js": "^2.39.1",
     "@t3-oss/env-nextjs": "^0.7.1",
@@ -51,6 +52,7 @@
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "autoprefixer": "^10.4.16",
+    "discord-api-types": "^0.37.66",
     "encoding": "^0.1.13",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
