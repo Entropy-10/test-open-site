@@ -1,71 +1,71 @@
 {
   "HomePage": {
     "Header": {
-      "description": "",
-      "hostTitle": ""
+      "description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
+      "hostTitle": "HOSTED BY"
     },
     "Features": {
       "Titles": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "MAPPOOL.",
+        "format": "FORMAT.",
+        "schedule": "SCHEDULE."
       },
       "Descriptions": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "A lazer modpool, with traceable, grow, and more.",
+        "format": "An open rank, double elimination, 3v3 tournament.",
+        "schedule": "Watch upcoming matches being streamed."
       },
       "Countdown": {
-        "titleSectionOne": "",
-        "titleSectionTwo": ""
+        "titleSectionOne": "TOURNAMENT",
+        "titleSectionTwo": "STARTS IN"
       }
     },
     "Originals": {
-      "title": "",
-      "subtitle": "",
-      "description": "",
-      "tracksTitle": "",
-      "listenButton": ""
+      "title": "Originals",
+      "subtitle": "CUSTOM SONGS COMING SOON.",
+      "description": "The elite few will ascend to play the exclusive TEST Originals. Custom tracks crafted just for TEST Open 2024, each with a unique style and vibrant art. To reach the grand finals stage, you must train and prove your skills are supreme. Will you be among the chosen ones?",
+      "tracksTitle": "TRACKLIST.",
+      "listenButton": "LISTEN NOW"
     }
   },
   "NavItems": {
-    "home": "",
-    "mappool": "",
-    "schedule": "",
-    "teams": "",
-    "info": "",
-    "sheet": ""
+    "home": "HOME",
+    "mappool": "MAPPOOL",
+    "schedule": "SCHEDULE",
+    "teams": "TEAMS",
+    "info": "INFO",
+    "sheet": "SHEET"
   },
   "Buttons": {
-    "register": "",
-    "signIn": "",
-    "signOut": ""
+    "register": "REGISTER",
+    "signIn": "SIGN IN",
+    "signOut": "SIGN OUT"
   },
   "Status": {
-    "operational": "",
-    "downtime": "",
-    "degraded": "",
-    "maintenance": ""
+    "operational": "All services are online",
+    "downtime": "Some services are down",
+    "degraded": "Some services are degraded",
+    "maintenance": "Ongoing maintenance"
   },
   "Footer": {
-    "description": ""
+    "description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
   },
   "Metadata": {
-    "description": "",
+    "description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
     "PageTitles": {
-      "home": "",
-      "schedule": "",
-      "info": "",
-      "mappool": "",
-      "register": "",
-      "teams": "",
-      "team": "",
-      "signIn": ""
+      "home": "Home",
+      "schedule": "Schedule",
+      "info": "Info",
+      "mappool": "Mappool",
+      "register": "Register",
+      "teams": "Teams",
+      "team": "Team",
+      "signIn": "Sign In"
     }
   },
   "Error": {
-    "title": "",
-    "retryButton": "",
-    "goHomeButton": ""
+    "title": "Something went wrong!",
+    "retryButton": "Try again",
+    "goHomeButton": "Go back home"
   }
 }

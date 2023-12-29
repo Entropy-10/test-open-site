@@ -1,71 +1,71 @@
 {
   "HomePage": {
     "Header": {
-      "description": "",
-      "hostTitle": ""
+      "description": "ISANG BUKAS NA RANGGONG, PALIGSAHAN SA OSU! LAZER",
+      "hostTitle": "HOSTED NI"
     },
     "Features": {
       "Titles": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "MAPPOOL.",
+        "format": "PORMAT.",
+        "schedule": "ISKEDYUL."
       },
       "Descriptions": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "Isang lazer modpool, na may traceable, grow, at higit pa.",
+        "format": "Isang bukas na ranggo, dobleng eliminasyon, 3v3 na paligsahan.",
+        "schedule": "Panoorin ang mga paparating na laban na ini-stream."
       },
       "Countdown": {
-        "titleSectionOne": "",
-        "titleSectionTwo": ""
+        "titleSectionOne": "PALIGSAHAN",
+        "titleSectionTwo": "MAGSISIMULA NG"
       }
     },
     "Originals": {
-      "title": "",
-      "subtitle": "",
-      "description": "",
-      "tracksTitle": "",
-      "listenButton": ""
+      "title": "Mga orihinal",
+      "subtitle": "CUSTOM SONGS COMING SOON.",
+      "description": "Ang mga pili na tao ay aakyat para maka laro sa eksklusibong TEST Originals. Mga sadyang trak na ginawa para sa TEST Open 2024, bawat isa ay may natatanging istilo at makulay na sining. Para abutin ang pinakahuling yugto, dapat mong sanayin at patunayan na pinakamataas ang iyong kasanayan. Isa ka ba sa mga bilang na mapipili?",
+      "tracksTitle": "TRACKLIST.",
+      "listenButton": "MAKINIG NGAYON"
     }
   },
   "NavItems": {
-    "home": "",
-    "mappool": "",
-    "schedule": "",
-    "teams": "",
-    "info": "",
-    "sheet": ""
+    "home": "BAHAY",
+    "mappool": "MAPPOOL",
+    "schedule": "ISKEDYUL",
+    "teams": "TEAMS",
+    "info": "IMPORMASYON",
+    "sheet": "SHEET"
   },
   "Buttons": {
-    "register": "",
-    "signIn": "",
-    "signOut": ""
+    "register": "REGISTER",
+    "signIn": "MAG-SIGN IN",
+    "signOut": "MAG-SIGN OUT"
   },
   "Status": {
-    "operational": "",
-    "downtime": "",
-    "degraded": "",
-    "maintenance": ""
+    "operational": "All services are online",
+    "downtime": "Some services are down",
+    "degraded": "Some services are degraded",
+    "maintenance": "Ongoing maintenance"
   },
   "Footer": {
-    "description": ""
+    "description": "ISANG BUKAS NA RANGGONG, PALIGSAHAN SA OSU! LAZER NA HOSTED NI TEDDY, ENTROPY, AT SORA."
   },
   "Metadata": {
-    "description": "",
+    "description": "Ang unang malakihang paligsahan ng Osu! Sa lazer. Maligayang pagdating Sa bagong karanasan Sa paligsahan Sa osu.",
     "PageTitles": {
-      "home": "",
-      "schedule": "",
-      "info": "",
-      "mappool": "",
-      "register": "",
-      "teams": "",
-      "team": "",
-      "signIn": ""
+      "home": "Home",
+      "schedule": "Iskedyul",
+      "info": "Impormasyon",
+      "mappool": "Mappool",
+      "register": "Mag rehistro",
+      "teams": "Teams",
+      "team": "Team",
+      "signIn": "Sign In"
     }
   },
   "Error": {
-    "title": "",
-    "retryButton": "",
-    "goHomeButton": ""
+    "title": "May nangyaring mali!",
+    "retryButton": "Subukan muli",
+    "goHomeButton": "Bumalik sa bahay"
   }
 }

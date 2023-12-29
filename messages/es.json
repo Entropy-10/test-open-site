@@ -1,71 +1,71 @@
 {
   "HomePage": {
     "Header": {
-      "description": "",
-      "hostTitle": ""
+      "description": "Un torneo en osu!lazer de rango abierto",
+      "hostTitle": "ORGANIZADO POR"
     },
     "Features": {
       "Titles": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "MAPPOOL.",
+        "format": "FORMATO.",
+        "schedule": "HORARIOS."
       },
       "Descriptions": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "Una mappool con mods exclusivos a osu!lazer, como el Traceable, Grow y más.",
+        "format": "Un torneo de rango abierto, doble eliminación, en formato de 3v3.",
+        "schedule": "Mira los próximos partidos que se transmitirán."
       },
       "Countdown": {
-        "titleSectionOne": "",
-        "titleSectionTwo": ""
+        "titleSectionOne": "TORNEO",
+        "titleSectionTwo": "COMIENZA EN"
       }
     },
     "Originals": {
-      "title": "",
-      "subtitle": "",
-      "description": "",
-      "tracksTitle": "",
-      "listenButton": ""
+      "title": "Originales",
+      "subtitle": "CUSTOM SONGS COMING SOON.",
+      "description": "Pocas leyendas ascenderán para jugar los exclusivos TEST Originals. Canciones originales creadas exclusivamente para TEST Open 2024, cada una con un estilo único y un arte vibrante. Para llegar a la gran final, deberás entrenar y demostrar que tus habilidades son supremas. ¿Estarás entre los elegidos?",
+      "tracksTitle": "LISTA DE CANCIONES.",
+      "listenButton": "ESCUCHA AHORA"
     }
   },
   "NavItems": {
-    "home": "",
-    "mappool": "",
-    "schedule": "",
-    "teams": "",
-    "info": "",
-    "sheet": ""
+    "home": "INICIO",
+    "mappool": "MAPPOOL",
+    "schedule": "HORARIOS",
+    "teams": "TEAMS",
+    "info": "INFORMACIÓN",
+    "sheet": "SHEET PRINCIPAL"
   },
   "Buttons": {
-    "register": "",
-    "signIn": "",
-    "signOut": ""
+    "register": "REGISTER",
+    "signIn": "INICIAR SESIÓN",
+    "signOut": "CERRAR SESIÓN"
   },
   "Status": {
-    "operational": "",
-    "downtime": "",
-    "degraded": "",
-    "maintenance": ""
+    "operational": "All services are online",
+    "downtime": "Some services are down",
+    "degraded": "Some services are degraded",
+    "maintenance": "Ongoing maintenance"
   },
   "Footer": {
-    "description": ""
+    "description": "¡UN TORNEO EN osu!lazer RANGO ABIERTO! ORGANIZADO POR TEDDY, ENTROPY Y SORA."
   },
   "Metadata": {
-    "description": "",
+    "description": "El primer torneo de gran escala en osu!lazer rangos abierto. Bienvenido a la nueva experiencia de torneos en osu.",
     "PageTitles": {
-      "home": "",
-      "schedule": "",
-      "info": "",
-      "mappool": "",
-      "register": "",
-      "teams": "",
-      "team": "",
-      "signIn": ""
+      "home": "Home",
+      "schedule": "Horarios",
+      "info": "Información",
+      "mappool": "Mappool",
+      "register": "Registrarse",
+      "teams": "Teams",
+      "team": "Team",
+      "signIn": "Sign In"
     }
   },
   "Error": {
-    "title": "",
-    "retryButton": "",
-    "goHomeButton": ""
+    "title": "¡Algo salió mal!",
+    "retryButton": "Intentar otra vez",
+    "goHomeButton": "Regresar a la página de Inicio"
   }
 }

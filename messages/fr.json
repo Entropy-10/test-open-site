@@ -1,71 +1,71 @@
 {
   "HomePage": {
     "Header": {
-      "description": "",
-      "hostTitle": ""
+      "description": "UN TOURNOI DE CLASSEMENTS OVERTS, DANS OSU! LAZER",
+      "hostTitle": "HÉBERGÉ PAR"
     },
     "Features": {
       "Titles": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "MAPPOOL.",
+        "format": "FORMAT.",
+        "schedule": "PROGRAMME."
       },
       "Descriptions": {
-        "mappool": "",
-        "format": "",
-        "schedule": ""
+        "mappool": "Un mappool de lazer avec Traceable, Grow, et plus.",
+        "format": "Un tournoi à classement ouvert, à double élimination, 3v3.",
+        "schedule": "Regardez les matchs prochains en diffusé."
       },
       "Countdown": {
-        "titleSectionOne": "",
-        "titleSectionTwo": ""
+        "titleSectionOne": "TOURNOI",
+        "titleSectionTwo": "COMMENCE DANS"
       }
     },
     "Originals": {
-      "title": "",
-      "subtitle": "",
-      "description": "",
-      "tracksTitle": "",
-      "listenButton": ""
+      "title": "Originaux",
+      "subtitle": "CUSTOM SONGS COMING SOON.",
+      "description": "Quelques élites monteront pour jouer aux TEST Originals exclusifs. Des pistes personnalisées conçues spécialement pour le TEST Open 2024, chacune avec un style unique et un art vibrant. Pour atteindre la grande finale, vous devez vous entraîner et prouver que vos compétences sont suprêmes. Ferez-vous partie des élus?",
+      "tracksTitle": "LISTE DES TRACES.",
+      "listenButton": "ÉCOUTE MAINTENANT"
     }
   },
   "NavItems": {
-    "home": "",
-    "mappool": "",
-    "schedule": "",
-    "teams": "",
-    "info": "",
-    "sheet": ""
+    "home": "ACCUEIL",
+    "mappool": "MAPPOOL",
+    "schedule": "PROGRAMME",
+    "teams": "TEAMS",
+    "info": "INFO",
+    "sheet": "FEUILLES"
   },
   "Buttons": {
-    "register": "",
-    "signIn": "",
-    "signOut": ""
+    "register": "REGISTER",
+    "signIn": "SE CONNECTER",
+    "signOut": "SE DÉCONNECTER"
   },
   "Status": {
-    "operational": "",
-    "downtime": "",
-    "degraded": "",
-    "maintenance": ""
+    "operational": "All services are online",
+    "downtime": "Some services are down",
+    "degraded": "Some services are degraded",
+    "maintenance": "Ongoing maintenance"
   },
   "Footer": {
-    "description": ""
+    "description": "UN RANG OUVERT, OSU ! TOURNOI LAZER ORGANISÉ PAR TEDDY, ENTROPY ET SORA."
   },
   "Metadata": {
-    "description": "",
+    "description": "Le premier tournoi de laser ouvert à grande échelle d'Osu!. Bienvenue dans la nouvelle expérience du tournoi osu.",
     "PageTitles": {
-      "home": "",
-      "schedule": "",
-      "info": "",
-      "mappool": "",
-      "register": "",
-      "teams": "",
-      "team": "",
-      "signIn": ""
+      "home": "Home",
+      "schedule": "Programme",
+      "info": "Info",
+      "mappool": "Mappool",
+      "register": "Registre",
+      "teams": "Teams",
+      "team": "Team",
+      "signIn": "Sign In"
     }
   },
   "Error": {
-    "title": "",
-    "retryButton": "",
-    "goHomeButton": ""
+    "title": "Quelque chose s'est mal passé !",
+    "retryButton": "Essayer à nouveau",
+    "goHomeButton": "Rentrer à la maison"
   }
 }
