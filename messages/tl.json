@@ -1,45 +1,45 @@
 {
   "HomePage": {
     "Header": {
-      "description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
-      "hostTitle": "HOSTED BY"
+      "description": "ISANG BUKAS NA RANGGONG, PALIGSAHAN SA OSU! LAZER",
+      "hostTitle": "HOSTED NI"
     },
     "Features": {
       "Titles": {
         "mappool": "MAPPOOL.",
-        "format": "FORMAT.",
-        "schedule": "SCHEDULE."
+        "format": "PORMAT.",
+        "schedule": "ISKEDYUL."
       },
       "Descriptions": {
-        "mappool": "A lazer modpool, with traceable, grow, and more.",
-        "format": "An open rank, double elimination, 3v3 tournament.",
-        "schedule": "Watch upcoming matches being streamed."
+        "mappool": "Isang lazer modpool, na may traceable, grow, at higit pa.",
+        "format": "Isang bukas na ranggo, dobleng eliminasyon, 3v3 na paligsahan.",
+        "schedule": "Panoorin ang mga paparating na laban na ini-stream."
       },
       "Countdown": {
-        "titleSectionOne": "TOURNAMENT",
-        "titleSectionTwo": "STARTS IN"
+        "titleSectionOne": "PALIGSAHAN",
+        "titleSectionTwo": "MAGSISIMULA NG"
       }
     },
     "Originals": {
-      "title": "Originals",
+      "title": "Mga orihinal",
       "subtitle": "CUSTOM SONGS COMING SOON.",
-      "description": "The elite few will ascend to play the exclusive TEST Originals. Custom tracks crafted just for TEST Open 2024, each with a unique style and vibrant art. To reach the grand finals stage, you must train and prove your skills are supreme. Will you be among the chosen ones?",
+      "description": "Ang mga pili na tao ay aakyat para maka laro sa eksklusibong TEST Originals. Mga sadyang trak na ginawa para sa TEST Open 2024, bawat isa ay may natatanging istilo at makulay na sining. Para abutin ang pinakahuling yugto, dapat mong sanayin at patunayan na pinakamataas ang iyong kasanayan. Isa ka ba sa mga bilang na mapipili?",
       "tracksTitle": "TRACKLIST.",
-      "listenButton": "LISTEN NOW"
+      "listenButton": "MAKINIG NGAYON"
     }
   },
   "NavItems": {
-    "home": "HOME",
+    "home": "BAHAY",
     "mappool": "MAPPOOL",
-    "schedule": "SCHEDULE",
+    "schedule": "ISKEDYUL",
     "teams": "TEAMS",
-    "info": "INFO",
+    "info": "IMPORMASYON",
     "sheet": "SHEET"
   },
   "Buttons": {
     "register": "REGISTER",
-    "signIn": "SIGN IN",
-    "signOut": "SIGN OUT"
+    "signIn": "MAG-SIGN IN",
+    "signOut": "MAG-SIGN OUT"
   },
   "Status": {
     "operational": "All services are online",
@@ -48,24 +48,24 @@
     "maintenance": "Ongoing maintenance"
   },
   "Footer": {
-    "description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
+    "description": "ISANG BUKAS NA RANGGONG, PALIGSAHAN SA OSU! LAZER NA HOSTED NI TEDDY, ENTROPY, AT SORA."
   },
   "Metadata": {
-    "description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
+    "description": "Ang unang malakihang paligsahan ng Osu! Sa lazer. Maligayang pagdating Sa bagong karanasan Sa paligsahan Sa osu.",
     "PageTitles": {
       "home": "Home",
-      "schedule": "Schedule",
-      "info": "Info",
+      "schedule": "Iskedyul",
+      "info": "Impormasyon",
       "mappool": "Mappool",
-      "register": "Register",
+      "register": "Mag rehistro",
       "teams": "Teams",
       "team": "Team",
       "signIn": "Sign In"
     }
   },
   "Error": {
-    "title": "Something went wrong!",
-    "retryButton": "Try again",
-    "goHomeButton": "Go back home"
+    "title": "May nangyaring mali!",
+    "retryButton": "Subukan muli",
+    "goHomeButton": "Bumalik sa bahay"
   }
 }
