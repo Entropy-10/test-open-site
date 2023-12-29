@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "Header": {
+      "description": "",
+      "hostTitle": ""
+    },
+    "Features": {
+      "Titles": {
+        "mappool": "",
+        "format": "",
+        "schedule": ""
+      },
+      "Descriptions": {
+        "mappool": "",
+        "format": "",
+        "schedule": ""
+      },
+      "Countdown": {
+        "titleSectionOne": "",
+        "titleSectionTwo": ""
+      }
+    },
+    "Originals": {
+      "title": "",
+      "subtitle": "",
+      "description": "",
+      "tracksTitle": "",
+      "listenButton": ""
+    }
+  },
+  "NavItems": {
+    "home": "",
+    "mappool": "",
+    "schedule": "",
+    "teams": "",
+    "info": "",
+    "sheet": ""
+  },
+  "Buttons": {
+    "register": "",
+    "signIn": "",
+    "signOut": ""
+  },
+  "Status": {
+    "operational": "",
+    "downtime": "",
+    "degraded": "",
+    "maintenance": ""
+  },
+  "Footer": {
+    "description": ""
+  },
+  "Metadata": {
+    "description": "",
+    "PageTitles": {
+      "home": "",
+      "schedule": "",
+      "info": "",
+      "mappool": "",
+      "register": "",
+      "teams": "",
+      "team": "",
+      "signIn": ""
+    }
+  },
+  "Error": {
+    "title": "",
+    "retryButton": "",
+    "goHomeButton": ""
+  }
+}
