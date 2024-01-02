@@ -12,5 +12,6 @@ export default withNextIntl({
       { protocol: 'https', hostname: 'a.ppy.sh' },
       { protocol: 'https', hostname: 'cdn.discordapp.com' }
     ]
-  }
+  },
+  logging: { fetches: { fullUrl: true } }
 })
