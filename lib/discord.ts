@@ -22,9 +22,12 @@ export const discordAuth = new Auth({
   redirectUri: env.NEXT_PUBLIC_DISCORD_REDIRECT_URI
 })
 
-export const discordAuthUrl = discordAuth.generateAuthUrl({
-  scope: ['identify', 'guilds.join', 'guilds.members.read']
-})
+export function getDiscordAuthUrl(redirectUri?: string) {
+  return discordAuth.generateAuthUrl({
+    scope: ['identify', 'guilds.join', 'guilds.members.read'],
+    redirectUri: redirectUri ?? env.NEXT_PUBLIC_DISCORD_REDIRECT_URI
+  })
+}
 
 export async function refreshDiscordToken(tokens: Tables<'tokens'>) {
   const newTokens = await discordAuth.tokenRequest({

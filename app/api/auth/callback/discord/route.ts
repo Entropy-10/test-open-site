@@ -6,7 +6,7 @@ import { signJWT, verifyJWT } from '@utils/server'
 import { Client } from 'osu-web.js'
 import { discordAuth } from '@discord'
 
-import { authError } from '../utils'
+import { authError, getDiscordAvatarUrl } from '../../utils'
 
 import type { NextRequest } from 'next/server'
 import type { Token } from 'osu-web.js'
@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
 
   const tokens = await discordAuth.tokenRequest({
     code,
-    scope: ['identify', 'guilds.join'],
+    scope: ['identify', 'guilds.join', 'guilds.members.read'],
     grantType: 'authorization_code'
   })
 
@@ -43,9 +43,16 @@ export async function GET(request: NextRequest) {
       osu_avatar: osuUser.avatar_url,
       restricted: osuUser.is_restricted,
       rank: osuUser.statistics_rulesets.osu?.global_rank,
+      country: osuUser.country.name,
+      country_code: osuUser.country.code,
       discord_id: discordUser.id,
-      discord_name: discordUser.username,
-      discord_avatar: discordUser.avatar
+      // @ts-expect-error the discord oauth package I'm using hasn't implemented the correct types yet for api v10
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      discord_name: discordUser.global_name,
+      discord_tag: discordUser.username ?? discordUser.discriminator,
+      discord_avatar:
+        discordUser.avatar &&
+        getDiscordAvatarUrl(discordUser.id, discordUser.avatar)
     })
 
     if (userError) throw userError

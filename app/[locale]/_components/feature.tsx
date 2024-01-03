@@ -2,9 +2,9 @@ import { cn } from '@utils/client'
 import { useTranslations } from 'next-intl'
 
 import Link from '~/components/ui/Link'
-import ClickArrowIcon from '~/components/icons/ClickArrowIcon'
-import FormatIcon from '~/components/icons/FormatIcon'
-import ScheduleIcon from '~/components/icons/ScheduleIcon'
+import ClickArrow from '~/components/icons/click-arrow'
+import Format from '~/components/icons/format'
+import Schedule from '~/components/icons/schedule'
 
 import type { Feature } from '@types'
 
@@ -20,11 +20,11 @@ export default function Feature({ name, link, className }: Feature) {
       )}
     >
       {name === 'format' ? (
-        <FormatIcon classList='size-12 md:size-14' />
+        <Format className='size-12 md:size-14' />
       ) : name === 'schedule' ? (
-        <ScheduleIcon classList='size-12 md:size-14' />
+        <Schedule className='size-12 md:size-14' />
       ) : name === 'mappool' ? (
-        <FormatIcon classList='size-12 md:size-14' />
+        <Format className='size-12 md:size-14' />
       ) : null}
 
       <div className='max-w-[168px]'>
@@ -36,7 +36,7 @@ export default function Feature({ name, link, className }: Feature) {
         href={link}
         aria-label={titlesT(name).toLowerCase().replace('.', '')}
       >
-        <ClickArrowIcon classList='absolute right-3 md:hidden' />
+        <ClickArrow className='absolute right-3 md:hidden' />
       </Link>
     </div>
   )

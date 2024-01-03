@@ -6,11 +6,11 @@ import { links, navItems } from '@siteConfig'
 import Button from '~/components/ui/Button'
 import Link from '~/components/ui/Link'
 import NavItem from '~/components/ui/NavItem'
-import DiscordIcon from '~/components/icons/DiscordIcon'
-import SpotifyIcon from '~/components/icons/SpotifyIcon'
-import TwitchIcon from '~/components/icons/TwitchIcon'
-import XIcon from '~/components/icons/XIcon'
-import YoutubeIcon from '~/components/icons/YoutubeIcon'
+import Discord from '~/components/icons/discord'
+import Spotify from '~/components/icons/spotify'
+import Twitch from '~/components/icons/twitch'
+import X from '~/components/icons/x'
+import Youtube from '~/components/icons/youtube'
 import whiteLogo from '../../../public/images/logo-white.png'
 import Status from './status'
 
@@ -62,19 +62,19 @@ export default function Footer() {
 
           <div className='mt-5 flex items-center space-x-5 *:cursor-pointer max-md:mt-0 md:justify-end'>
             <Link target='_blank' href={discord}>
-              <DiscordIcon className='hover:fill-[#5865F2]' />
+              <Discord className='hover:fill-[#5865F2]' />
             </Link>
             <Link target='_blank' href={x}>
-              <XIcon className='hover:fill-[#000000]' />
+              <X className='hover:fill-[#000000]' />
             </Link>
             <Link target='_blank' href={twitch}>
-              <TwitchIcon className='hover:fill-[#9146FF]' />
+              <Twitch className='hover:fill-[#9146FF]' />
             </Link>
             <Link target='_blank' href={youtube}>
-              <YoutubeIcon className='hover:fill-[#FF0000]' />
+              <Youtube className='hover:fill-[#FF0000]' />
             </Link>
             <Link target='_blank' href={spotify}>
-              <SpotifyIcon className='hover:fill-[#1DB954]' />
+              <Spotify className='hover:fill-[#1DB954]' />
             </Link>
           </div>
         </div>
