@@ -1,10 +1,10 @@
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 import { signJWT } from '@utils/server'
-import { discordAuthUrl } from '@discord'
+import { getDiscordAuthUrl } from '@discord'
 import { osuAuth } from '@osu'
 
-import { authError } from '../utils'
+import { authError } from '../../utils'
 
 import type { NextRequest } from 'next/server'
 
@@ -23,5 +23,5 @@ export async function GET(request: NextRequest) {
     return authError(url)
   }
 
-  return NextResponse.redirect(discordAuthUrl)
+  return NextResponse.redirect(getDiscordAuthUrl())
 }

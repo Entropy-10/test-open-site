@@ -1,10 +1,17 @@
-export default function FormatIcon({ classList }: { classList?: string }) {
+import type { SVGProps } from 'react'
+
+interface FormatIconProps extends SVGProps<SVGSVGElement> {
+  className?: string
+}
+
+export default function FormatIcon({ className, ...props }: FormatIconProps) {
   return (
     <svg
-      className={classList}
+      className={className}
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 49 49'
       fill='none'
+      {...props}
     >
       <path
         d='M42.5 13.1374V35.8624C42.14 35.7949 41.7575 35.7499 41.375 35.7499C38.27 35.7499 35.75 38.2699 35.75 41.3749C35.75 41.7574 35.795 42.1399 35.8625 42.4999H13.1375C13.205 42.1399 13.25 41.7574 13.25 41.3749C13.25 38.2699 10.73 35.7499 7.625 35.7499C7.2425 35.7499 6.86 35.7949 6.5 35.8624V13.1374C6.86 13.2049 7.2425 13.2499 7.625 13.2499C10.73 13.2499 13.25 10.7299 13.25 7.62486C13.25 7.24236 13.205 6.85986 13.1375 6.49986H35.8625C35.795 6.85986 35.75 7.24236 35.75 7.62486C35.75 10.7299 38.27 13.2499 41.375 13.2499C41.7575 13.2499 42.14 13.2049 42.5 13.1374Z'

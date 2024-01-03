@@ -1,12 +1,12 @@
-import Image from 'next/image'
 import { getSession } from '@utils/server'
 import { getTranslations } from 'next-intl/server'
 import { navItems } from '@siteConfig'
 
 import Link from '~/components/ui/Link'
 import NavItem from '~/components/ui/NavItem'
-import LogoIcon from '~/components/icons/LogoIcon'
+import Logo from '~/components/icons/logo'
 import SignInButton from '~/components/sign-in-button'
+import UserDropdown from './user-dropdown'
 
 export default async function Header() {
   const t = await getTranslations('NavItems')
@@ -16,7 +16,7 @@ export default async function Header() {
     <header className='disabledViewTransiton h-14 bg-milky-white'>
       <section className='padding flex h-full grow items-center justify-between'>
         <Link href='/' className='flex cursor-pointer items-center space-x-2'>
-          <LogoIcon h={38} w={44} className='h-[38px] w-[44px]' />
+          <Logo h={38} w={44} className='h-[38px] w-[44px]' />
           <h1 className='text-xl'>
             <span className='font-black'>TEST</span> OPEN
           </h1>
@@ -36,16 +36,7 @@ export default async function Header() {
         </nav>
 
         {session ? (
-          <div className='flex items-center gap-2'>
-            <Image
-              width={36}
-              height={36}
-              src={session.osu_avatar}
-              alt='pfp'
-              className='size-9 rounded'
-            />
-            {session.osu_name}
-          </div>
+          <UserDropdown session={session} />
         ) : (
           <SignInButton className='hidden md:flex' />
         )}

@@ -3,7 +3,7 @@ import { env } from '@env'
 import { getTranslations } from 'next-intl/server'
 import { StatusColor } from '@types'
 
-import StatusIcon from '~/components/icons/StatusIcon'
+import StatusIcon from '~/components/icons/status'
 
 import type { UptimeStatusPage } from '@types'
 

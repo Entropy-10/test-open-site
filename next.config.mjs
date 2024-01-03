@@ -10,7 +10,9 @@ export default withNextIntl({
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'a.ppy.sh' },
-      { protocol: 'https', hostname: 'cdn.discordapp.com' }
+      { protocol: 'https', hostname: 'cdn.discordapp.com' },
+      { protocol: 'https', hostname: 'flagsapi.com' }
     ]
-  }
+  },
+  logging: { fetches: { fullUrl: true } }
 })

@@ -1,3 +1,5 @@
+import { redirect } from 'next/navigation'
+import { getSession } from '@utils/server'
 import { getTranslations } from 'next-intl/server'
 import { createMetadata } from '@metadata'
 
@@ -15,5 +17,7 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 }
 
 export default function RegisterPage() {
+  const session = getSession()
+  if (!session) redirect('/unauthorized')
   return <ComingSoon />
 }

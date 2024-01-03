@@ -1,10 +1,20 @@
-export default function ScheduleIcon({ classList }: { classList?: string }) {
+import type { SVGProps } from 'react'
+
+interface ScheduleIconProps extends SVGProps<SVGSVGElement> {
+  className?: string
+}
+
+export default function ScheduleIcon({
+  className,
+  ...props
+}: ScheduleIconProps) {
   return (
     <svg
-      className={classList}
+      className={className}
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 43 48'
       fill='none'
+      {...props}
     >
       <path
         d='M12.6795 10.5128C11.7754 10.5128 11.0256 9.76307 11.0256 8.85897V2.24358C11.0256 1.33948 11.7754 0.589737 12.6795 0.589737C13.5836 0.589737 14.3333 1.33948 14.3333 2.24358V8.85897C14.3333 9.76307 13.5836 10.5128 12.6795 10.5128Z'

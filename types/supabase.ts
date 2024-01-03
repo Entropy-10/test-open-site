@@ -88,10 +88,13 @@ export interface Database {
       }
       users: {
         Row: {
+          country: string
+          country_code: string
           created_at: string
           discord_avatar: string | null
           discord_id: string
-          discord_name: string
+          discord_name: string | null
+          discord_tag: string
           osu_avatar: string
           osu_id: string
           osu_name: string
@@ -99,10 +102,13 @@ export interface Database {
           restricted: boolean
         }
         Insert: {
+          country: string
+          country_code: string
           created_at?: string
           discord_avatar?: string | null
           discord_id: string
-          discord_name: string
+          discord_name?: string | null
+          discord_tag: string
           osu_avatar: string
           osu_id: string
           osu_name: string
@@ -110,10 +116,13 @@ export interface Database {
           restricted: boolean
         }
         Update: {
+          country?: string
+          country_code?: string
           created_at?: string
           discord_avatar?: string | null
           discord_id?: string
-          discord_name?: string
+          discord_name?: string | null
+          discord_tag?: string
           osu_avatar?: string
           osu_id?: string
           osu_name?: string

@@ -1,18 +1,34 @@
 import { cn } from '@utils/client'
 
 interface HeadingProps {
+  className?: string
   children: React.ReactNode
   sub?: boolean
+  id?: string
 }
 
-export default function Heading({ children, sub }: HeadingProps) {
+export default function Heading({
+  className,
+  children,
+  sub,
+  id
+}: HeadingProps) {
   return !sub ? (
-    <h2 className={cn('padding grow text-3xl font-extrabold sm:text-5xl')}>
+    <h2
+      id={id}
+      className={cn(
+        'padding grow text-3xl font-extrabold sm:text-5xl',
+        className
+      )}
+    >
       {fancyHeader(children)}.
     </h2>
   ) : (
-    <h3 className={cn('padding text-lg font-extrabold sm:text-2xl')}>
-      {fancyHeader(children)}.
+    <h3
+      id={id}
+      className={cn('padding text-lg font-extrabold sm:text-2xl', className)}
+    >
+      {fancyHeader(children)}
     </h3>
   )
 }
