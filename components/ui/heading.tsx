@@ -5,13 +5,15 @@ interface HeadingProps {
   children: React.ReactNode
   sub?: boolean
   id?: string
+  padding?: boolean
 }
 
 export default function Heading({
   className,
   children,
   sub,
-  id
+  id,
+  padding = true
 }: HeadingProps) {
   return !sub ? (
     <h2
@@ -26,7 +28,11 @@ export default function Heading({
   ) : (
     <h3
       id={id}
-      className={cn('padding text-lg font-extrabold sm:text-2xl', className)}
+      className={cn(
+        'text-lg font-extrabold sm:text-2xl',
+        padding && 'padding',
+        className
+      )}
     >
       {fancyHeader(children)}
     </h3>
@@ -44,7 +50,9 @@ function fancyHeader(children: React.ReactNode) {
   ) : (
     <>
       {stringArray(children)[0]}
-      <span className='font-medium'>{` ${stringArray(children)[1]}`}</span>
+      <span className='font-medium'>{` ${Array.from(stringArray(children))
+        .slice(1)
+        .join(' ')}`}</span>
     </>
   )
 }

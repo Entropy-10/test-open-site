@@ -77,3 +77,8 @@ export interface Session {
   osu_avatar: string
   restricted: string
 }
+
+export interface ModalError {
+  title: string
+  message: string
+}

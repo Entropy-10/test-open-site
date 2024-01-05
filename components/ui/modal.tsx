@@ -36,7 +36,7 @@ const Title = forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AlertDialog.Title
     ref={ref}
-    className={cn('text-lg font-bold text-milky-white', className)}
+    className={cn('text-base font-bold text-milky-white sm:text-lg', className)}
     {...props}
   >
     {children}
@@ -51,7 +51,10 @@ const Description = forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AlertDialog.Description
     ref={ref}
-    className={cn('pb-5 pt-2 font-medium text-milky-white', className)}
+    className={cn(
+      'py-2 text-xs font-medium text-milky-white sm:pb-5 sm:text-sm',
+      className
+    )}
     {...props}
   >
     {children}

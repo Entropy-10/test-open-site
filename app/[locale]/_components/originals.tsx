@@ -24,7 +24,7 @@ export default function Originals() {
               {t('description')}
             </p>
 
-            <Button variant='outlineHover' href={links.album}>
+            <Button variant='invertedOutline' href={links.album}>
               {t('listenButton')}
             </Button>
           </div>

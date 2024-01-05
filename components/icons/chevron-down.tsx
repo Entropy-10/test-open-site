@@ -2,10 +2,12 @@ import type { SVGProps } from 'react'
 
 interface ChevronDownIconProps extends SVGProps<SVGSVGElement> {
   className?: string
+  pathClassName?: string
 }
 
 export default function ChevronDownIcon({
   className,
+  pathClassName,
   ...props
 }: ChevronDownIconProps) {
   return (
@@ -19,9 +21,10 @@ export default function ChevronDownIcon({
       {...props}
     >
       <path
+        className={pathClassName}
         d='M7.25 10.875L14.5 18.125L21.75 10.875'
         stroke='#fffefa'
-        stroke-width='3'
+        strokeWidth='3'
       />
     </svg>
   )
