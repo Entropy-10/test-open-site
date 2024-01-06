@@ -41,7 +41,11 @@ export default function Originals() {
                 {name === 'Coming Soon' ? (
                   <span className='italic opacity-65'>{name}</span>
                 ) : (
-                  <Link href={link} target='_blank' className='hover:underline'>
+                  <Link
+                    href={link}
+                    target='_blank'
+                    className='hover:underline focus:outline-none'
+                  >
                     {name} by {artist}
                   </Link>
                 )}

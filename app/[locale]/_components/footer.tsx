@@ -5,7 +5,7 @@ import { links, navItems } from '@siteConfig'
 
 import Button from '~/components/ui/Button'
 import Link from '~/components/ui/Link'
-import NavItem from '~/components/ui/NavItem'
+import NavItem from '~/components/ui/nav-item'
 import Discord from '~/components/icons/discord'
 import Spotify from '~/components/icons/spotify'
 import Twitch from '~/components/icons/twitch'
@@ -24,7 +24,7 @@ export default function Footer() {
     <footer className='disabledViewTransiton relative flex h-64 flex-col bg-footer py-4 text-milky-white'>
       <div className='padding mt-4 flex flex-col space-y-5 md:space-y-0'>
         <div className='hidden md:mb-5 md:flex'>
-          <Link href='/' className='cursor-pointer'>
+          <Link href='/' className='cursor-pointer focus:outline-none'>
             <h4 className='text-xl lg:text-2xl'>
               <span className='font-extrabold'>TEST</span> OPEN
             </h4>
@@ -60,7 +60,7 @@ export default function Footer() {
             {buttonsT('register')}
           </Button>
 
-          <div className='mt-5 flex items-center space-x-5 *:cursor-pointer max-md:mt-0 md:justify-end'>
+          <div className='mt-5 flex items-center space-x-5 *:cursor-pointer *:outline-none max-md:mt-0 md:justify-end'>
             <Link target='_blank' href={discord}>
               <Discord className='hover:fill-[#5865F2]' />
             </Link>

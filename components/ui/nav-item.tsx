@@ -31,7 +31,7 @@ const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
         onClick={() => router(link)}
         ref={forwardedRef}
         className={cn(
-          'relative select-none text-left transition-colors hover:text-light-blue',
+          'relative select-none text-left transition-colors hover:text-light-blue focus:outline-none',
           className,
           currentPath && cn('font-extrabold text-light-blue', activeClassName)
         )}
