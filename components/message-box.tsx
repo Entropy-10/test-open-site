@@ -1,7 +1,7 @@
 interface MessageBoxProps {
   title: string
   message: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export default function MessageBox({

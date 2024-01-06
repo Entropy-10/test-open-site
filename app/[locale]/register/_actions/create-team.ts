@@ -59,7 +59,6 @@ export async function createTeam(formData: FormData) {
 
     if (teamError && teamError.code === '23505') {
       const violatedKey = teamError.message.match(/(?<=_)[^_]+(?=_)/)?.[0]
-
       return {
         error: {
           type: `duplicate_${violatedKey}`,
