@@ -11,7 +11,8 @@ export default withNextIntl({
     remotePatterns: [
       { protocol: 'https', hostname: 'a.ppy.sh' },
       { protocol: 'https', hostname: 'cdn.discordapp.com' },
-      { protocol: 'https', hostname: 'flagsapi.com' }
+      { protocol: 'https', hostname: 'flagsapi.com' },
+      { protocol: 'https', hostname: 'dtoyeiqtecliyympsgji.supabase.co' }
     ]
   },
   logging: { fetches: { fullUrl: true } }

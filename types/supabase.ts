@@ -51,6 +51,78 @@ export interface Database {
         }
         Relationships: []
       }
+      players: {
+        Row: {
+          created_at: string
+          joined_at: string
+          role: Database['public']['Enums']['player_role']
+          team_id: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          joined_at: string
+          role: Database['public']['Enums']['player_role']
+          team_id: number
+          updated_at: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          joined_at?: string
+          role?: Database['public']['Enums']['player_role']
+          team_id?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'players_team_id_fkey'
+            columns: ['team_id']
+            isOneToOne: false
+            referencedRelation: 'teams'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'players_user_id_fkey'
+            columns: ['user_id']
+            isOneToOne: true
+            referencedRelation: 'users'
+            referencedColumns: ['osu_id']
+          }
+        ]
+      }
+      teams: {
+        Row: {
+          acronym: string
+          created_at: string
+          flag: string
+          id: number
+          name: string
+          timezone: string
+          updated_at: string
+        }
+        Insert: {
+          acronym: string
+          created_at?: string
+          flag: string
+          id?: number
+          name: string
+          timezone: string
+          updated_at: string
+        }
+        Update: {
+          acronym?: string
+          created_at?: string
+          flag?: string
+          id?: number
+          name?: string
+          timezone?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       tokens: {
         Row: {
           created_at: string
@@ -142,7 +214,7 @@ export interface Database {
       }
     }
     Enums: {
-      [_ in never]: never
+      player_role: 'captain' | 'player'
     }
     CompositeTypes: {
       [_ in never]: never

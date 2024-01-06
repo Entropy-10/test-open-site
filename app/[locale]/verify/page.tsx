@@ -34,7 +34,7 @@ export default function VerifyPage({ searchParams }: VerifyPageProps) {
         <p className='mb-4 text-sm'>
           {message ?? 'Verification failed. Please try again later.'}
         </p>
-        <Button href='/verify' variant='outlineHover' className='w-full'>
+        <Button href='/verify' variant='invertedOutline' className='w-full'>
           TRY AGAIN
         </Button>
       </VerifyContainer>

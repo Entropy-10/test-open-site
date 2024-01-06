@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { cookies } from 'next/headers'
 import Image from 'next/image'
 import { notFound, redirect } from 'next/navigation'
@@ -9,6 +10,8 @@ import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
 import AvatarInfo from './_components/avatar-info'
 import ErrorModal from './_components/error-modal'
+import Loader from './_components/loader'
+import Team from './_components/team'
 
 export default async function ProfilePage() {
   const session = getSession()
@@ -66,12 +69,9 @@ export default async function ProfilePage() {
         <Divider className='bg-light-blue' />
         <Heading sub>CURRENT TEAM</Heading>
 
-        <div className='h-48'>
-          <p className='flex h-full items-center justify-center text-center'>
-            You currently do not have a team. <br />
-            Join one by accepting any pending invites.
-          </p>
-        </div>
+        <Suspense fallback={<Loader />}>
+          <Team userId={session.sub} />
+        </Suspense>
 
         <Divider variant='single' className='bg-light-blue' />
         <Heading id='invites' sub>
