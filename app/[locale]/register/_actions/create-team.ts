@@ -58,11 +58,12 @@ export async function createTeam(formData: FormData) {
       .single()
 
     if (teamError && teamError.code === '23505') {
+      const violatedKey = teamError.message.match(/(?<=_)[^_]+(?=_)/)?.[0]
+
       return {
         error: {
-          type: 'duplicate_team',
-          message:
-            'Looks like a team with that name already exists. Please use a different name instead.'
+          type: `duplicate_${violatedKey}`,
+          message: `Looks like a team with that ${violatedKey} already exists. Please use a different ${violatedKey} instead.`
         }
       }
     } else if (teamError) throw teamError

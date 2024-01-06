@@ -8,7 +8,7 @@ export const createTeamForm = z.object({
     .trim()
     .min(1, 'Team name is required')
     .min(3, 'Cannot be less than three characters')
-    .max(15, 'Cannot be more than 15 characters'),
+    .max(20, 'Cannot be more than 20 characters'),
   acronym: z
     .string()
     .trim()

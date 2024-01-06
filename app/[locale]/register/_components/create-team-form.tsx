@@ -7,7 +7,6 @@ import { acceptedImageTypes, createTeamForm } from '@schemas'
 
 import Button from '~/components/ui/Button'
 import Heading from '~/components/ui/heading'
-import { Cancel } from '~/components/ui/modal'
 import MessageBox from '~/components/message-box'
 import TextModal from '~/components/text-modal'
 import { createTeam } from '../_actions/create-team'
@@ -76,9 +75,16 @@ export default function CreateTeamForm({ userId }: CreateTeamFormProps) {
 
     if (createTeamError) {
       switch (createTeamError.type) {
-        case 'duplicate_team': {
+        case 'duplicate_name': {
           setError({
-            title: 'TEAM ALREADY EXISTS!',
+            title: 'TEAM NAME ALREADY EXISTS!',
+            message: createTeamError.message
+          })
+          break
+        }
+        case 'duplicate_acronym': {
+          setError({
+            title: 'TEAM ACRONYM ALREADY EXISTS!',
             message: createTeamError.message
           })
           break
@@ -164,15 +170,7 @@ export default function CreateTeamForm({ userId }: CreateTeamFormProps) {
           setOpen={() => setOpen(!open)}
           title={error.title}
           message={error.message}
-        >
-          {error.title === 'TEAM ALREADY EXISTS!' ? (
-            <Button href='/team' variant='outline'>
-              TEAM MANAGEMENT
-            </Button>
-          ) : (
-            <Cancel>CLOSE</Cancel>
-          )}
-        </TextModal>
+        />
       )}
     </form>
   ) : (
