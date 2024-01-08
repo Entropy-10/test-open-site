@@ -8,9 +8,9 @@ import { getSession } from '@utils/server'
 import Background from '~/components/ui/Background'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
+import SectionLoader from '~/components/section-loader'
 import AvatarInfo from './_components/avatar-info'
 import ErrorModal from './_components/error-modal'
-import Loader from './_components/loader'
 import Team from './_components/team'
 
 export default async function ProfilePage() {
@@ -69,7 +69,7 @@ export default async function ProfilePage() {
         <Divider className='bg-light-blue' />
         <Heading sub>CURRENT TEAM</Heading>
 
-        <Suspense fallback={<Loader />}>
+        <Suspense fallback={<SectionLoader />}>
           <Team userId={session.sub} />
         </Suspense>
 
