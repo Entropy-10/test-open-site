@@ -14,11 +14,20 @@ export default async function Players({ teamId }: PlayersProps) {
     .select('*, users(*)')
     .eq('team_id', teamId)
 
-  if (!players) return null
+  if (!players?.[0]) {
+    return (
+      <div className='flex h-[311px] items-center justify-center'>
+        Sorry, we failed to get the players on your team.
+      </div>
+    )
+  }
 
+  //todo: make this a carousel to match design and prevent squishing of player cards
   return (
-    <div className='h-48'>
-      {players?.map(player => <Player key={player.user_id} player={player} />)}
+    <div className='padding my-5 flex w-full gap-5'>
+      {players.map(player => (
+        <Player key={player.user_id} player={player} />
+      ))}
     </div>
   )
 }

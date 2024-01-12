@@ -61,9 +61,13 @@ export default async function TeamPage() {
               <div className='text-lg font-extrabold uppercase md:text-xl'>
                 {team.name}
               </div>
-              <div className='font-extrabold'>{team.acronym}</div>
+              <div className='text-xs font-extrabold md:text-sm'>
+                {team.acronym}
+              </div>
               <div>
-                <span className='font-extrabold'>TIMEZONE:</span>{' '}
+                <span className='text-xs font-extrabold md:text-sm'>
+                  TIMEZONE:
+                </span>{' '}
                 {team.timezone}
               </div>
             </div>
@@ -87,7 +91,7 @@ export default async function TeamPage() {
         <Divider className='bg-light-blue' />
         <Heading sub>CURRENT MEMBERS</Heading>
 
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<SectionLoader className='h-[311px]' />}>
           <Players teamId={String(team.id)} />
         </Suspense>
 
