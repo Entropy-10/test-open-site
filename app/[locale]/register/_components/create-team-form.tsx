@@ -21,10 +21,14 @@ import type { ModalError } from '@types'
 import type { z } from 'zod'
 
 interface CreateTeamFormProps {
-  userId: string
+  osuId: string
+  discordId: string
 }
 
-export default function CreateTeamForm({ userId }: CreateTeamFormProps) {
+export default function CreateTeamForm({
+  osuId,
+  discordId
+}: CreateTeamFormProps) {
   const [previewImage, setPreviewImage] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState<ModalError | null>(null)
@@ -64,50 +68,35 @@ export default function CreateTeamForm({ userId }: CreateTeamFormProps) {
     const { data: flag, error: uploadImageError } = await uploadImage(flagForm)
 
     if (!flag || uploadImageError) {
-      setError(defaultErrorMessage())
+      setError({
+        title: 'FAILED TO UPLOAD FLAG!',
+        message:
+          'We were unable to upload your flag to our server. Please try again to see if that helps.'
+      })
       return setOpen(true)
     }
 
     const teamForm = new FormData()
-    teamForm.append('teamData', JSON.stringify({ ...data, flag, userId }))
+    teamForm.append(
+      'teamData',
+      JSON.stringify({ ...data, flag, osuId, discordId })
+    )
 
     const { error: createTeamError } = await createTeam(teamForm)
 
+    enum CreateTeamErrorTitle {
+      'duplicate_name' = 'TEAM NAME ALREADY EXISTS!',
+      'duplicate_acronym' = 'TEAM ACRONYM ALREADY EXISTS!',
+      'duplicate_player' = 'ALREADY ON A TEAM!',
+      'restricted' = 'YOU ARE RESTRICTED!',
+      'default' = 'FAILED TO CREATE TEAM!'
+    }
+
     if (createTeamError) {
-      switch (createTeamError.type) {
-        case 'duplicate_name': {
-          setError({
-            title: 'TEAM NAME ALREADY EXISTS!',
-            message: createTeamError.message
-          })
-          break
-        }
-        case 'duplicate_acronym': {
-          setError({
-            title: 'TEAM ACRONYM ALREADY EXISTS!',
-            message: createTeamError.message
-          })
-          break
-        }
-        case 'duplicate_player': {
-          setError({
-            title: 'ALREADY ON A TEAM!',
-            message: createTeamError.message
-          })
-          break
-        }
-        case 'restricted': {
-          setError({
-            title: 'YOU ARE RESTRICTED!',
-            message: createTeamError.message
-          })
-          break
-        }
-        default: {
-          setError(defaultErrorMessage())
-          break
-        }
-      }
+      setError({
+        title: CreateTeamErrorTitle[createTeamError.type],
+        message: createTeamError.message
+      })
       return setOpen(true)
     }
 
@@ -183,12 +172,4 @@ export default function CreateTeamForm({ userId }: CreateTeamFormProps) {
       </Button>
     </MessageBox>
   )
-}
-
-function defaultErrorMessage() {
-  return {
-    title: 'Failed To Create Team',
-    message:
-      'We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.'
-  }
 }

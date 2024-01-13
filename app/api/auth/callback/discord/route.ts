@@ -72,7 +72,8 @@ export async function GET(request: NextRequest) {
       role: 'authenticated',
       osu_name: osuUser.username,
       osu_avatar: osuUser.avatar_url,
-      restricted: osuUser.is_restricted
+      restricted: osuUser.is_restricted,
+      discord_id: discordUser.id
     }
 
     cookies().delete('osu-tokens')

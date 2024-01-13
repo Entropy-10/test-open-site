@@ -37,7 +37,7 @@ export default function RegisterPage() {
       </div>
 
       {allowRegs ? (
-        <CreateTeamForm userId={session.sub} />
+        <CreateTeamForm osuId={session.sub} discordId={session.discord_id} />
       ) : (
         <MessageBox
           title='REGISTRATIONS CLOSED!'

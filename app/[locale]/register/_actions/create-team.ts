@@ -2,11 +2,15 @@
 
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
+import { env } from '@env'
 import { createClient } from '@supabase/server'
 import { getSession } from '@utils/server'
 import { createTeamAction } from '@schemas'
+import { getDoc } from '@sheets'
 
-export async function createTeam(formData: FormData) {
+export async function createTeam(
+  formData: FormData
+): Promise<{ error: CreateTeamError | null }> {
   const session = getSession()
   if (!session) redirect('/unauthorized')
 
@@ -28,11 +32,12 @@ export async function createTeam(formData: FormData) {
 
   const supabase = createClient(cookies())
 
+  //todo: add system for cleaning up created data on error
   try {
     const { data: player } = await supabase
       .from('players')
       .select()
-      .eq('user_id', teamData.userId)
+      .eq('user_id', teamData.osuId)
       .maybeSingle()
 
     if (player) {
@@ -57,18 +62,23 @@ export async function createTeam(formData: FormData) {
       .select()
       .single()
 
-    if (teamError && teamError.code === '23505') {
-      const violatedKey = teamError.message.match(/(?<=_)[^_]+(?=_)/)?.[0]
-      return {
-        error: {
-          type: `duplicate_${violatedKey}`,
-          message: `Looks like a team with that ${violatedKey} already exists. Please use a different ${violatedKey} instead.`
+    if (teamError) {
+      const violatedKey = teamError.message
+        .match(/_(name|acronym|player)_/)?.[0]
+        .replaceAll('_', '') as 'name' | 'acronym' | 'player' | undefined
+
+      if (violatedKey && teamError.code === '23505') {
+        return {
+          error: {
+            type: `duplicate_${violatedKey}`,
+            message: `Looks like a team with that ${violatedKey} already exists. Please use a different ${violatedKey} instead.`
+          }
         }
-      }
-    } else if (teamError) throw teamError
+      } else throw teamError
+    }
 
     const { error: playerError } = await supabase.from('players').insert({
-      user_id: teamData.userId,
+      user_id: teamData.osuId,
       team_id: team.id,
       role: 'captain',
       joined_at: new Date().toISOString(),
@@ -77,8 +87,36 @@ export async function createTeam(formData: FormData) {
 
     if (playerError) throw playerError
 
+    const doc = getDoc(env.ADMIN_SHEET)
+    await doc.loadInfo()
+
+    const sheet = doc.sheetsByTitle.TeamRegs
+
+    await sheet.addRow({
+      team_id: team.id,
+      name: team.name,
+      p1_osu_id: teamData.osuId,
+      p1_discord_id: teamData.discordId,
+      timezone: team.timezone
+    })
     return { error: null }
   } catch (err) {
-    return { error: { type: 'default', message: 'failed to create team' } }
+    return {
+      error: {
+        type: 'default',
+        message:
+          'We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.'
+      }
+    }
   }
+}
+
+interface CreateTeamError {
+  type:
+    | 'duplicate_name'
+    | 'duplicate_acronym'
+    | 'duplicate_player'
+    | 'restricted'
+    | 'default'
+  message: string
 }

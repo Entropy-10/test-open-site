@@ -16,7 +16,7 @@ export default {
     '^(react/(.*)$)|^(react$)',
     '^(next/(.*)$)|^(next$)',
     '<THIRD_PARTY_MODULES>',
-    '^(@supabase|@navigation|@schemas|@utils|@types|@siteConfig|@metadata|@discord|@osu)$',
+    '^(@supabase|@navigation|@schemas|@utils|@types|@siteConfig|@metadata|@discord|@osu|@sheets)$',
     '',
     '^~/lib/(.*)$',
     '^~/components/ui/(.*)$',

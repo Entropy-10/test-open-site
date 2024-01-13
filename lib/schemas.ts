@@ -36,5 +36,6 @@ export const createTeamAction = z.object({
     path: z.string().min(1),
     url: z.string().min(1)
   }),
-  userId: z.string().min(1)
+  osuId: z.string().min(1),
+  discordId: z.string().min(1)
 })

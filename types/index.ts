@@ -76,6 +76,7 @@ export interface Session {
   osu_name: string
   osu_avatar: string
   restricted: string
+  discord_id: string
 }
 
 export interface ModalError {
