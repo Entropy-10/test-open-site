@@ -23,7 +23,9 @@ export default function ErrorModal() {
     <Root open={open} onOpenChange={setOpen}>
       <Content className='flex flex-col items-center justify-center'>
         <Title>
-          {type == 'osu' ? 'Osu Update Error' : 'Discord Linking Error'}
+          {type == 'osu'
+            ? 'FAILED TO UPDATE OSU!'
+            : 'FAILED TO RELINK DISCORD!'}
         </Title>
         <Description className='text-center'>{error}</Description>
         <form action={reset}>

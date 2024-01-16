@@ -18,7 +18,7 @@ export async function uploadImage(formData: FormData) {
       data: flag,
       info: { format }
     } = await sharp(image)
-      .resize(216, 96)
+      .resize(333, 148)
       .toFormat('jpeg', { quality: 100 })
       .toBuffer({ resolveWithObject: true })
 
