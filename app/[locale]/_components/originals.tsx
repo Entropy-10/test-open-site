@@ -39,7 +39,9 @@ export default function Originals() {
             {songs.map(({ name, artist, link }, i) => (
               <li key={name + i}>
                 {name === 'Coming Soon' ? (
-                  <span className='italic opacity-65'>{name}</span>
+                  <span className='italic opacity-65'>
+                    {name} by {artist}
+                  </span>
                 ) : (
                   <Link
                     href={link}

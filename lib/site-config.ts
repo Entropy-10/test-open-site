@@ -75,15 +75,18 @@ export const songs = [
   },
   {
     link: 'https://open.spotify.com/track/',
-    name: 'Coming Soon'
+    name: 'Coming Soon',
+    artist: 'Aethral'
   },
   {
     link: 'https://open.spotify.com/track/',
-    name: 'Coming Soon'
+    name: 'Coming Soon',
+    artist: 'Aethral'
   },
   {
     link: 'https://open.spotify.com/track/',
-    name: 'Coming Soon'
+    name: 'Coming Soon',
+    artist: 'Kanemiko'
   }
 ]
 
