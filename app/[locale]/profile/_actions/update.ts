@@ -83,7 +83,7 @@ export async function update(formData: FormData) {
 
 function updateError(pathname: string | undefined, message?: string) {
   redirect(
-    `${pathname ?? '/profile'}?type=osu&error=${
+    `${pathname ?? '/profile'}?title=FAILED TO UPDATE!&message=${
       message ??
       'Sorry, we failed to update your osu profile info. Please try again to see if that helps.'
     }`

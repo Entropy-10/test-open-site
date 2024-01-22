@@ -6,13 +6,14 @@ import Button from '~/components/ui/Button'
 import type { Tables } from '~/types/supabase'
 
 interface PlayerProps {
+  userId: string
+  isCaptain: boolean
   player: Tables<'players'> & { users: Tables<'users'> | null }
 }
 
-export default function Player({ player }: PlayerProps) {
+export default function Player({ player, userId, isCaptain }: PlayerProps) {
   if (!player.users) return null
   const user = player.users
-  const isCaptain = player.role === 'captain'
 
   return (
     <div className='w-[200px] bg-gradient-to-r from-light-blue to-salmon p-4 md:w-[250px]'>
@@ -26,7 +27,9 @@ export default function Player({ player }: PlayerProps) {
           className='size-[90px] md:size-[115px]'
         />
         <div className='flex items-center gap-1 text-lg font-extrabold text-milky-white md:text-xl'>
-          {isCaptain && <Star size={18} className='fill-milky-white' />}
+          {player.role === 'captain' && (
+            <Star size={18} className='fill-milky-white' />
+          )}
           {user.osu_name}
         </div>
       </div>
@@ -41,7 +44,9 @@ export default function Player({ player }: PlayerProps) {
         </div>
       </div>
 
-      {isCaptain && <Button className='w-full'>REMOVE PLAYER</Button>}
+      {userId !== player.user_id && isCaptain ? (
+        <Button className='w-full'>REMOVE PLAYER</Button>
+      ) : null}
     </div>
   )
 }

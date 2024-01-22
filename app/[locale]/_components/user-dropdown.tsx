@@ -11,13 +11,26 @@ import type { Session } from '@types'
 
 interface UserDropdownProps {
   session: Session
+  inviteCount: number | null
 }
 
-export default function UserDropdown({ session }: UserDropdownProps) {
+export default function UserDropdown({
+  session,
+  inviteCount
+}: UserDropdownProps) {
   return (
     <Dropdown.Root>
       {/* eslint-disable-next-line tailwindcss/no-contradicting-classname */}
-      <Dropdown.Trigger className='group flex max-w-44 items-center justify-between bg-gradient-to-r from-light-blue from-[-100%] to-salmon px-1 py-0.5 text-milky-white'>
+      <Dropdown.Trigger className='group relative flex max-w-44 items-center justify-between bg-gradient-to-r from-light-blue from-[-100%] to-salmon px-1 py-0.5 text-milky-white'>
+        {inviteCount ? (
+          <div className='absolute -left-1 -top-1'>
+            <div className='relative'>
+              <div className='size-3 rounded-full bg-red-500' />
+              <div className='absolute left-[1px] top-[1px] size-[10px] animate-ping rounded-full bg-red-500' />
+            </div>
+          </div>
+        ) : null}
+
         <div className='flex items-center'>
           <Image
             width={26}
@@ -40,7 +53,17 @@ export default function UserDropdown({ session }: UserDropdownProps) {
         </Dropdown.Item>
 
         <Dropdown.Item asChild>
-          <Link href='/profile#invites'>INVITES</Link>
+          <Link
+            className='flex items-center justify-between'
+            href='/profile#invites'
+          >
+            INVITES
+            {inviteCount ? (
+              <div className='flex size-4 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-milky-white'>
+                {inviteCount}
+              </div>
+            ) : null}
+          </Link>
         </Dropdown.Item>
 
         <Dropdown.Item asChild>

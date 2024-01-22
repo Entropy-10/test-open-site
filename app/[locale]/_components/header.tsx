@@ -1,3 +1,5 @@
+import { cookies } from 'next/headers'
+import { createClient } from '@supabase/server'
 import { getSession } from '@utils/server'
 import { getTranslations } from 'next-intl/server'
 import { navItems } from '@siteConfig'
@@ -11,6 +13,17 @@ import UserDropdown from './user-dropdown'
 export default async function Header() {
   const t = await getTranslations('NavItems')
   const session = getSession()
+  const supabase = createClient(cookies())
+  let inviteCount: number | null = null
+
+  if (session) {
+    const { count } = await supabase
+      .from('invites')
+      .select('', { count: 'exact' })
+      .eq('user_id', session?.sub)
+      .eq('status', 'pending')
+    inviteCount = count
+  }
 
   return (
     <header className='disabledViewTransiton h-14 bg-milky-white'>
@@ -39,7 +52,7 @@ export default async function Header() {
         </nav>
 
         {session ? (
-          <UserDropdown session={session} />
+          <UserDropdown session={session} inviteCount={inviteCount} />
         ) : (
           <SignInButton className='hidden md:flex' />
         )}

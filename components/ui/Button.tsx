@@ -74,7 +74,7 @@ export default function Button({
   ) : (
     <button
       {...props}
-      disabled={loading}
+      disabled={loading ? loading : props.disabled}
       className={cn(
         'cursor-pointer',
         buttonVariants({ variant, size, className })
@@ -100,8 +100,8 @@ function createInner({
           )}
         </span>
       </div>
-      <div className='absolute z-10 h-full w-full bg-gradient-to-r from-[#807EE1] to-[#D987A6] transition-all duration-200 ease-in-out group-hover:opacity-0' />
-      <div className='absolute z-0 h-full w-full bg-light-blue' />
+      <div className='absolute z-10 size-full bg-gradient-to-r from-[#807EE1] to-[#D987A6] transition-all duration-200 ease-in-out group-hover:opacity-0' />
+      <div className='absolute z-0 size-full bg-light-blue' />
     </>
   ) : (
     <div className='flex items-center space-x-2'>

@@ -37,7 +37,7 @@ const Item = forwardRef<
     ref={ref}
     {...props}
     className={cn(
-      'py-0.5 pl-3 text-sm font-semibold text-light-blue data-[highlighted]:bg-light-blue data-[highlighted]:text-milky-white data-[highlighted]:outline-none',
+      'px-3 py-0.5 text-sm font-semibold text-light-blue data-[highlighted]:bg-light-blue data-[highlighted]:text-milky-white data-[highlighted]:outline-none',
       className
     )}
   ></Dropdown.Item>

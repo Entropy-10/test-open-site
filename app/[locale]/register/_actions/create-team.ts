@@ -28,12 +28,11 @@ export async function createTeam(
     return { error: { type: 'default', message: 'failed to create team' } }
   }
 
-  const teamData = createTeamAction.parse(JSON.parse(formTeamData))
-
-  const supabase = createClient(cookies())
-
   //todo: add system for cleaning up created data on error
   try {
+    const teamData = createTeamAction.parse(JSON.parse(formTeamData))
+    const supabase = createClient(cookies())
+
     const { data: player } = await supabase
       .from('players')
       .select()

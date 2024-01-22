@@ -12,7 +12,9 @@ import Button from '~/components/ui/Button'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
 import SectionLoader from '~/components/section-loader'
+import Invites from './_components/invites'
 import Players from './_components/players'
+import Search from './_components/search'
 
 import type { MetadataProps } from '@types'
 
@@ -30,11 +32,13 @@ export default async function TeamPage() {
   if (!session) redirect('/unauthorized')
 
   const supabase = createClient(cookies())
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from('players')
     .select('role, teams(*)')
     .eq('user_id', session.sub)
     .maybeSingle()
+
+  console.log(error)
 
   if (!data?.teams) return null
 
@@ -92,18 +96,20 @@ export default async function TeamPage() {
         <Heading sub>CURRENT MEMBERS</Heading>
 
         <Suspense fallback={<SectionLoader className='h-[311px]' />}>
-          <Players teamId={String(team.id)} />
+          <Players
+            teamId={team.id}
+            userId={session.sub}
+            isCaptain={isCaptain}
+          />
         </Suspense>
 
         <Divider variant='single' className='bg-light-blue' />
         <Heading sub>OUTGOING INVITES</Heading>
 
-        <div className='h-48'>
-          <p className='flex h-full items-center justify-center text-center'>
-            You currently do not have any outgoing invites. <br />
-            Start by using the invite players box above.
-          </p>
-        </div>
+        {isCaptain && <Search teamId={team.id} />}
+        <Suspense fallback={<SectionLoader className='h-[311px]' />}>
+          <Invites teamId={team.id} isCaptain={isCaptain} />
+        </Suspense>
       </section>
     </div>
   )

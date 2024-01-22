@@ -40,7 +40,7 @@ export default async function Team({ userId }: TeamProps) {
           height={72}
           sizes='(min-width: 768px) 162px, 135px'
           src={team.flag}
-          alt='team flag'
+          alt={`${team.flag}'s flag`}
         />
         <div>
           <div className='text-lg font-extrabold md:text-xl'>{team.name}</div>

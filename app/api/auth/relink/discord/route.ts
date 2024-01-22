@@ -71,7 +71,7 @@ export async function GET(request: NextRequest) {
 
 function linkingError(url: URL, message?: string) {
   return NextResponse.redirect(
-    `${url.origin}/profile?type=discord&error=${
+    `${url.origin}/profile?title=FAILED TO RELINK!&message=${
       message ?? 'Failed to link new Discord account.'
     }`
   )

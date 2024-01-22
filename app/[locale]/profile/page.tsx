@@ -9,8 +9,9 @@ import Background from '~/components/ui/Background'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
 import SectionLoader from '~/components/section-loader'
+import ErrorModal from '../team/_components/error-modal'
 import AvatarInfo from './_components/avatar-info'
-import ErrorModal from './_components/error-modal'
+import Invites from './_components/invites'
 import Team from './_components/team'
 
 export default async function ProfilePage() {
@@ -78,12 +79,9 @@ export default async function ProfilePage() {
           PENDING INVITES
         </Heading>
 
-        <div className='h-48'>
-          <p className='flex h-full items-center justify-center text-center'>
-            You currently do not have any invites. <br />
-            Wait for one or create your own team.
-          </p>
-        </div>
+        <Suspense fallback={<SectionLoader className='h-[311px]' />}>
+          <Invites userId={session.sub} />
+        </Suspense>
       </section>
     </div>
   )
