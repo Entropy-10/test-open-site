@@ -5,23 +5,23 @@ import useAnimatedRouter from '~/hooks/useAnimatedRouter'
 import type { AnchorHTMLAttributes, ReactNode } from 'react'
 
 interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  href: string
-  locale?: string
-  children: ReactNode
+	href: string
+	locale?: string
+	children: ReactNode
 }
 
 export default function Link({ href, children, locale, ...props }: LinkProps) {
-  const animatedRoute = useAnimatedRouter()
+	const animatedRoute = useAnimatedRouter()
 
-  return (
-    <a
-      href={href}
-      onClick={() => {
-        animatedRoute(href, locale)
-      }}
-      {...props}
-    >
-      {children}
-    </a>
-  )
+	return (
+		<a
+			href={href}
+			onClick={() => {
+				animatedRoute(href, locale)
+			}}
+			{...props}
+		>
+			{children}
+		</a>
+	)
 }

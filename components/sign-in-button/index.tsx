@@ -6,18 +6,18 @@ import Button from '../ui/Button'
 import { signIn } from './actions'
 
 interface SignInButtonProps {
-  className?: string
+	className?: string
 }
 
 export default function SignInButton({ className }: SignInButtonProps) {
-  const pathname = usePathname()
+	const pathname = usePathname()
 
-  return (
-    <form action={signIn}>
-      <input name='return-path' defaultValue={pathname} hidden />
-      <Button variant='primary' className={className}>
-        SIGN IN
-      </Button>
-    </form>
-  )
+	return (
+		<form action={signIn}>
+			<input name='return-path' defaultValue={pathname} hidden />
+			<Button variant='primary' className={className}>
+				SIGN IN
+			</Button>
+		</form>
+	)
 }

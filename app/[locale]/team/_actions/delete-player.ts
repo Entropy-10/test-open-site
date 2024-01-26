@@ -4,16 +4,17 @@ import { createClient } from '@supabase/server'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 
-export async function denyInvite(formData: FormData) {
-	const inviteId = formData.get('invite_id')?.toString()
-	if (!inviteId) return
+export async function deletePlayer(formData: FormData) {
+	const userId = formData.get('player_id')?.toString()
+	if (!userId) return
 
 	const supabase = createClient(cookies())
 	const { error } = await supabase
-		.from('invites')
-		.update({ status: 'denied' })
-		.eq('id', inviteId)
+		.from('players')
+		.delete()
+		.eq('user_id', userId)
 
 	if (error) return console.log(error)
-	revalidatePath('/profile')
+
+	revalidatePath('')
 }
