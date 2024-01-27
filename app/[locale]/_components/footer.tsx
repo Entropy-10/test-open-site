@@ -3,6 +3,7 @@ import { cn } from '@utils/client'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
+import { Suspense } from 'react'
 import Discord from '~/components/icons/discord'
 import Spotify from '~/components/icons/spotify'
 import Twitch from '~/components/icons/twitch'
@@ -80,7 +81,9 @@ export default function Footer() {
 				</div>
 
 				<div className='z-20 flex justify-center md:absolute md:bottom-1 md:right-[48px] md:-mr-2 md:justify-end lg:right-[96px]'>
-					<Status />
+					<Suspense>
+						<Status />
+					</Suspense>
 				</div>
 			</div>
 
