@@ -63,14 +63,14 @@ export default async function TeamPage() {
 						/>
 
 						<div className='flex flex-col justify-center'>
-							<div className='text-lg font-extrabold uppercase md:text-xl'>
+							<div className='font-extrabold text-lg uppercase md:text-xl'>
 								{team.name}
 							</div>
-							<div className='text-xs font-extrabold md:text-sm'>
+							<div className='font-extrabold text-xs md:text-sm'>
 								{team.acronym}
 							</div>
 							<div>
-								<span className='text-xs font-extrabold md:text-sm'>
+								<span className='font-extrabold text-xs md:text-sm'>
 									TIMEZONE:
 								</span>{' '}
 								{team.timezone}

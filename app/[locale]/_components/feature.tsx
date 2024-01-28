@@ -15,7 +15,7 @@ export default function Feature({ name, link, className }: FeatureType) {
 	return (
 		<div
 			className={cn(
-				'relative flex w-full space-x-5 bg-[#5E72EB] py-5 pl-5 md:h-28 md:items-center md:px-5 md:py-0 xl:min-w-[250px]',
+				'relative flex w-full space-x-5 bg-[#5E72EB] py-5 pl-5 md:h-28 xl:min-w-[250px] md:items-center md:px-5 md:py-0',
 				className
 			)}
 		>
@@ -28,7 +28,7 @@ export default function Feature({ name, link, className }: FeatureType) {
 			) : null}
 
 			<div className='max-w-[168px]'>
-				<h2 className='text-sm font-bold tracking-wider'>{titlesT(name)}</h2>
+				<h2 className='font-bold text-sm tracking-wider'>{titlesT(name)}</h2>
 				<p className='text-xs'>{descriptionsT(name)}</p>
 			</div>
 

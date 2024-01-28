@@ -110,7 +110,7 @@ export default function CreateTeamForm({
 			onSubmit={handleSubmit(onSubmit)}
 			className='flex w-[300px] flex-col gap-3 bg-milky-white px-6 py-4'
 		>
-			<Heading className='sm:text-md text-light-blue' padding={false} sub>
+			<Heading className='text-light-blue sm:text-md' padding={false} sub>
 				CREATE A TEAM.
 			</Heading>
 

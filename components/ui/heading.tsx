@@ -19,7 +19,7 @@ export default function Heading({
 		<h2
 			id={id}
 			className={cn(
-				'padding grow text-3xl font-extrabold sm:text-5xl',
+				'padding grow font-extrabold text-3xl sm:text-5xl',
 				className
 			)}
 		>
@@ -29,7 +29,7 @@ export default function Heading({
 		<h3
 			id={id}
 			className={cn(
-				'text-lg font-extrabold sm:text-2xl',
+				'font-extrabold text-lg sm:text-2xl',
 				padding && 'padding',
 				className
 			)}

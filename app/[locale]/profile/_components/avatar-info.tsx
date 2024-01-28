@@ -48,7 +48,7 @@ export default function AvatarInfo({
 			</div>
 
 			<div className='flex h-24 flex-col justify-between text-sm md:h-[123px]'>
-				<div className='text-lg font-extrabold uppercase md:mb-1 md:text-xl'>
+				<div className='font-extrabold text-lg uppercase md:mb-1 md:text-xl'>
 					{type === 'osu' ? user.osu_name : user.discord_name}
 				</div>
 

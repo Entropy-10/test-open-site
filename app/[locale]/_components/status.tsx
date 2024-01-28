@@ -30,7 +30,7 @@ export default async function Status() {
 			target='_blank'
 		>
 			<StatusIcon style={{ color }} />
-			<span className='text-[14px] font-medium text-milky-white'>{text}</span>
+			<span className='font-medium text-[14px] text-milky-white'>{text}</span>
 		</Link>
 	)
 }

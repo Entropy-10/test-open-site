@@ -16,7 +16,7 @@ export default function ErrorPage({ error, reset }: ErrorProps) {
 
 	return (
 		<div className='flex min-h-screen flex-col items-center justify-center space-y-4 text-medium-blue'>
-			<h1 className='text-3xl font-bold'>Something Went Wrong!</h1>
+			<h1 className='font-bold text-3xl'>Something Went Wrong!</h1>
 			<div className='flex space-x-3'>
 				<Button variant='invertedOutline' onClick={() => reset()}>
 					Try Again

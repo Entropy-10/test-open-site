@@ -33,12 +33,12 @@ export default function Invite({ invite }: InviteProps) {
 					src={team.flag}
 					alt={`${team.flag}'s flag`}
 				/>
-				<div className='text-lg font-extrabold text-milky-white md:text-xl'>
+				<div className='font-extrabold text-lg text-milky-white md:text-xl'>
 					{team.name}
 				</div>
 			</div>
 
-			<div className='mb-4 text-xs text-dark-blue md:mb-8 md:text-sm'>
+			<div className='mb-4 text-dark-blue text-xs md:mb-8 md:text-sm'>
 				<div>
 					<span className='font-extrabold'>TIMEZONE:</span> {team.timezone}
 				</div>

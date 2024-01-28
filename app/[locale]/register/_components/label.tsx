@@ -11,7 +11,7 @@ export default function Label({ children, className, htmlFor }: LabelProps) {
 		<label
 			htmlFor={htmlFor}
 			className={cn(
-				'text-sm font-medium text-dark-blue group-focus-within:font-bold group-focus-within:text-light-blue',
+				'font-medium text-dark-blue text-sm group-focus-within:font-bold group-focus-within:text-light-blue',
 				className
 			)}
 		>

@@ -31,7 +31,7 @@ export default function RegisterPage() {
 
 	return (
 		<Background className='relative flex min-h-screen items-center justify-center'>
-			<div className='absolute left-0 top-10'>
+			<div className='absolute top-10 left-0'>
 				<Heading>TEAM REGISTRATION</Heading>
 				<Divider />
 			</div>

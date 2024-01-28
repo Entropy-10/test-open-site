@@ -21,7 +21,7 @@ const Content = forwardRef<
 			{...props}
 			// eslint-disable-next-line tailwindcss/no-contradicting-classname
 			className={cn(
-				'fixed left-[50%] top-[50%] h-[195px] w-[90vw] max-w-[595px] translate-x-[-50%] translate-y-[-50%] bg-gradient-to-bl from-lavender from-[-9%] to-light-blue to-[109%] p-[25px] drop-shadow-lg focus:outline-none data-[state=open]:animate-overlayShow',
+				'fixed top-[50%] left-[50%] h-[195px] w-[90vw] max-w-[595px] translate-x-[-50%] translate-y-[-50%] bg-gradient-to-bl from-[-9%] from-lavender to-[109%] to-light-blue p-[25px] drop-shadow-lg data-[state=open]:animate-overlayShow focus:outline-none',
 				className
 			)}
 		/>
@@ -36,7 +36,7 @@ const Title = forwardRef<
 >(({ className, children, ...props }, ref) => (
 	<AlertDialog.Title
 		ref={ref}
-		className={cn('text-base font-bold text-milky-white sm:text-lg', className)}
+		className={cn('font-bold text-base text-milky-white sm:text-lg', className)}
 		{...props}
 	>
 		{children}
@@ -52,7 +52,7 @@ const Description = forwardRef<
 	<AlertDialog.Description
 		ref={ref}
 		className={cn(
-			'py-2 text-xs font-medium text-milky-white sm:pb-5 sm:text-sm',
+			'py-2 font-medium text-milky-white text-xs sm:pb-5 sm:text-sm',
 			className
 		)}
 		{...props}

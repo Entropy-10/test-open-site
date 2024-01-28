@@ -55,7 +55,7 @@ export default function CountdownContainer() {
 						exit={{ x: 300, opacity: 0 }}
 						transition={{ ease: 'easeInOut', duration: 0.4 }}
 					>
-						<span className='text-lg font-bold'>
+						<span className='font-bold text-lg'>
 							{t('Countdown.titleSectionOne')}
 							<br className='hidden xl:block' />{' '}
 							{t('Countdown.titleSectionTwo')}

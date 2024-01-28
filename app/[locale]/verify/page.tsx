@@ -71,7 +71,7 @@ function VerifyContainer({ children }: VerifyContainerProps) {
 	return (
 		<div className='flex justify-center'>
 			<div className='mt-28 w-64 border-2 p-2'>
-				<h2 className='mb-1 text-lg font-bold'>Server Verification</h2>
+				<h2 className='mb-1 font-bold text-lg'>Server Verification</h2>
 				{children}
 			</div>
 		</div>

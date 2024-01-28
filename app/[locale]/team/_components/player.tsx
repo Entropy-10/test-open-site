@@ -26,7 +26,7 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 					sizes='(min-width: 768px) 115px, 90px'
 					className='size-[90px] md:size-[115px]'
 				/>
-				<div className='flex items-center gap-1 text-lg font-extrabold text-milky-white md:text-xl'>
+				<div className='flex items-center gap-1 font-extrabold text-lg text-milky-white md:text-xl'>
 					{player.role === 'captain' && (
 						<Star size={18} className='fill-milky-white' />
 					)}
@@ -34,7 +34,7 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 				</div>
 			</div>
 
-			<div className='mb-4 text-xs text-dark-blue md:mb-8 md:text-sm'>
+			<div className='mb-4 text-dark-blue text-xs md:mb-8 md:text-sm'>
 				<div>
 					<span className='font-extrabold'>RANK:</span> #
 					{user.rank?.toLocaleString()}

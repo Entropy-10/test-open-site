@@ -37,7 +37,7 @@ const Item = forwardRef<
 		ref={ref}
 		{...props}
 		className={cn(
-			'px-3 py-0.5 text-sm font-semibold text-light-blue data-[highlighted]:bg-light-blue data-[highlighted]:text-milky-white data-[highlighted]:outline-none',
+			'px-3 py-0.5 font-semibold text-light-blue text-sm data-[highlighted]:bg-light-blue data-[highlighted]:text-milky-white data-[highlighted]:outline-none',
 			className
 		)}
 	/>

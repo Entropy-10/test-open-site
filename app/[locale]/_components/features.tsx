@@ -16,7 +16,7 @@ export default function Features() {
 					initial={{ x: 300, opacity: 0 }}
 					animate={{ x: 0, opacity: 1 }}
 					transition={{ ease: 'easeInOut', duration: 0.4 }}
-					className='flex flex-col-reverse space-y-5 space-y-reverse px-4 md:flex-row md:justify-between md:space-x-5 md:space-y-0 md:px-12 xl:order-first xl:mr-5 xl:justify-end xl:pl-24 xl:pr-0'
+					className='flex flex-col-reverse space-y-5 space-y-reverse px-4 xl:order-first xl:mr-5 md:flex-row xl:justify-end md:justify-between md:space-x-5 md:space-y-0 md:px-12 xl:pr-0 xl:pl-24'
 				>
 					{features.map(({ name, link, className }) => {
 						return (

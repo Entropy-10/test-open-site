@@ -42,7 +42,7 @@ export default async function TeamList() {
 									/>
 
 									<div className='flex flex-col justify-center'>
-										<div className='text-sm/3 font-extrabold'>
+										<div className='font-extrabold text-sm/3'>
 											{user?.osu_name}
 										</div>
 										<div className='text-xs'>
@@ -54,8 +54,8 @@ export default async function TeamList() {
 						</div>
 					</div>
 
-					<div className='absolute bottom-1.5 z-20 w-[315px] pl-1.5 pr-4'>
-						<div className='text-xl/5 font-extrabold'>{team.name}</div>
+					<div className='absolute bottom-1.5 z-20 w-[315px] pr-4 pl-1.5'>
+						<div className='font-extrabold text-xl/5'>{team.name}</div>
 						<div className='flex justify-between'>
 							<div>{team.acronym}</div>
 							<div>{team.timezone}</div>

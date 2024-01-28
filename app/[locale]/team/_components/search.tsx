@@ -71,11 +71,11 @@ export default function Search({ teamId }: SearchProps) {
 							<button
 								type='button'
 								onClick={() => setSelectedUser(null)}
-								className='absolute right-1.5 top-[6px] focus:outline-none'
+								className='absolute top-[6px] right-1.5 focus:outline-none'
 							>
 								<X
 									size={20}
-									className=' stroke-dark-blue hover:stroke-red-400'
+									className='stroke-dark-blue hover:stroke-red-400'
 								/>
 							</button>
 						</>
@@ -84,11 +84,11 @@ export default function Search({ teamId }: SearchProps) {
 							<input
 								onChange={e => handleSearch(e.currentTarget.value)}
 								placeholder='Enter osu username...'
-								className='h-[32px] w-full border-[1.5px] border-dark-blue pl-1.5 pr-[30px] text-dark-blue placeholder:text-dark-blue/55 focus:-outline-offset-2'
+								className='focus:-outline-offset-2 h-[32px] w-full border-[1.5px] border-dark-blue pr-[30px] pl-1.5 text-dark-blue placeholder:text-dark-blue/55'
 							/>
 							<SearchIcon
 								size={20}
-								className='absolute right-1.5 top-[5px] stroke-dark-blue'
+								className='absolute top-[5px] right-1.5 stroke-dark-blue'
 							/>
 						</>
 					)}

@@ -1,29 +1,10 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
 	"organizeImports": {
-		"enabled": true,
-		"ignore": [
-			".next",
-			".vercel",
-			"node_modules",
-			".env.local",
-			".env.example",
-			"bun.lockb",
-			"README.md",
-			"next-env.d.ts"
-		]
+		"enabled": true
 	},
 	"formatter": {
-		"ignore": [
-			".next",
-			".vercel",
-			"node_modules",
-			".env.local",
-			".env.example",
-			"bun.lockb",
-			"README.md",
-			"next-env.d.ts"
-		]
+		"enabled": true
 	},
 	"linter": {
 		"enabled": true,
@@ -31,18 +12,15 @@
 			"recommended": true,
 			"a11y": {
 				"useValidAnchor": "off"
+			},
+			"nursery": {
+				"useSortedClasses": {
+					"options": {
+						"functions": ["clsx", "cva", "tw"]
+					}
+				}
 			}
-		},
-		"ignore": [
-			".next",
-			".vercel",
-			"node_modules",
-			".env.local",
-			".env.example",
-			"bun.lockb",
-			"README.md",
-			"next-env.d.ts"
-		]
+		}
 	},
 	"javascript": {
 		"formatter": {
@@ -52,5 +30,10 @@
 			"arrowParentheses": "asNeeded",
 			"trailingComma": "none"
 		}
+	},
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
 	}
 }

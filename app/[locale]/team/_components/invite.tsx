@@ -33,15 +33,15 @@ export default function Invite({ invite, isCaptain }: InviteProps) {
 					sizes='(min-width: 768px) 115px, 90px'
 					className='size-[90px] md:size-[115px]'
 				/>
-				<div className='flex flex-col text-lg/4 font-extrabold text-milky-white md:text-xl'>
+				<div className='flex flex-col font-extrabold text-lg/4 text-milky-white md:text-xl'>
 					{user.osu_name}
-					<div className='text-sm/3 font-medium italic text-[#f7cb73]'>
+					<div className='font-medium text-[#f7cb73] text-sm/3 italic'>
 						{invite.status}
 					</div>
 				</div>
 			</div>
 
-			<div className='mb-4 text-xs text-dark-blue md:mb-8 md:text-sm'>
+			<div className='mb-4 text-dark-blue text-xs md:mb-8 md:text-sm'>
 				<div>
 					<span className='font-extrabold'>RANK:</span> #
 					{user.rank?.toLocaleString()}

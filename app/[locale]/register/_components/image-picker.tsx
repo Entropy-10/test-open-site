@@ -14,11 +14,11 @@ interface ImagePickerProps extends UseFormRegisterReturn {
 const ImagePicker = forwardRef<HTMLInputElement, ImagePickerProps>(
 	({ previewImage, clearPreviewImage, ...props }, forwardedRef) => {
 		return (
-			<div className='h-[96px] w-[216px] border border-dashed border-dark-blue p-1'>
-				<div className='relative flex size-full items-center justify-center bg-[#E6E5E1] text-center text-xs text-dark-blue'>
+			<div className='h-[96px] w-[216px] border border-dark-blue border-dashed p-1'>
+				<div className='relative flex size-full items-center justify-center bg-[#E6E5E1] text-center text-dark-blue text-xs'>
 					<label htmlFor='file-upload' className='cursor-pointer'>
 						<div className='flex items-center justify-center'>
-							<p className='text-xs text-dark-blue hover:text-light-blue'>
+							<p className='text-dark-blue text-xs hover:text-light-blue'>
 								<span className='font-semibold'>Click here to upload</span>
 								<br /> Recommended Ratio 9:4
 							</p>
@@ -37,7 +37,7 @@ const ImagePicker = forwardRef<HTMLInputElement, ImagePickerProps>(
 					{previewImage && (
 						<>
 							<button
-								className='absolute right-1 top-1 z-20 text-milky-white drop-shadow-[0px_0px_1px_#000000]'
+								className='absolute top-1 right-1 z-20 text-milky-white drop-shadow-[0px_0px_1px_#000000]'
 								type='button'
 								onClick={() => clearPreviewImage()}
 							>

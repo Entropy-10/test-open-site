@@ -12,7 +12,7 @@ export default function Countdown({ timeLeft }: CountdownProps) {
 	const { days, hours, minutes, seconds } = timeLeft
 
 	return (
-		<div className='flex text-4xl font-black xl:w-full'>
+		<div className='flex font-black text-4xl xl:w-full'>
 			<CountdownNumber number={days} />:
 			<CountdownNumber number={hours} />:
 			<CountdownNumber number={minutes} />:

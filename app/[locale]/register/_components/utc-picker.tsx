@@ -17,7 +17,7 @@ const UtcPicker = forwardRef<HTMLButtonElement, UseFormRegisterReturn>(
 		>
 			<Select.Trigger
 				ref={forwardedRef}
-				className='flex w-28 justify-between border-[1.5px] border-dark-blue pl-1 text-dark-blue focus:-outline-offset-2'
+				className='focus:-outline-offset-2 flex w-28 justify-between border-[1.5px] border-dark-blue pl-1 text-dark-blue'
 			>
 				<Select.Value />
 				<Select.Icon>

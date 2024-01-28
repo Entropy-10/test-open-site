@@ -10,7 +10,7 @@ export default function Songs() {
 	const xlMatch = useSizeQuery('(max-width: 1280px)')
 
 	return (
-		<div className='relative mt-10 flex min-h-[120px] w-full items-center justify-start overflow-hidden md:min-h-[180px] xl:mt-0 xl:max-h-[400px] xl:pl-5'>
+		<div className='relative mt-10 flex min-h-[120px] w-full items-center justify-start overflow-hidden xl:mt-0 xl:max-h-[400px] md:min-h-[180px] xl:pl-5'>
 			{xlMatch ? (
 				<motion.div
 					initial={{ x: 0 }}

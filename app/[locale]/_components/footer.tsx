@@ -38,7 +38,7 @@ export default function Footer() {
 					</p>
 
 					<div className='max-md:w-full max-md:max-w-lg'>
-						<nav className='flex select-none justify-between divide-x-2 text-xs font-medium'>
+						<nav className='flex select-none justify-between divide-x-2 font-medium text-xs'>
 							{navItems.map((item, i) => (
 								<NavItem
 									key={item.text}
@@ -61,7 +61,7 @@ export default function Footer() {
 						{buttonsT('register')}
 					</Button>
 
-					<div className='mt-5 flex items-center space-x-5 *:cursor-pointer *:outline-none max-md:mt-0 md:justify-end'>
+					<div className='mt-5 flex items-center space-x-5 max-md:mt-0 *:cursor-pointer md:justify-end *:outline-none'>
 						<Link target='_blank' href={discord}>
 							<Discord className='hover:fill-[#5865F2]' />
 						</Link>
@@ -80,7 +80,7 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className='z-20 flex justify-center md:absolute md:bottom-1 md:right-[48px] md:-mr-2 md:justify-end lg:right-[96px]'>
+				<div className='md:-mr-2 z-20 flex justify-center md:absolute lg:right-[96px] md:right-[48px] md:bottom-1 md:justify-end'>
 					<Suspense>
 						<Status />
 					</Suspense>

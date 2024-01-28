@@ -23,7 +23,7 @@ export default function Home() {
 				<div className='py-20'>
 					<section className='relative flex items-center justify-center xl:justify-between xl:px-24'>
 						<article className='sm:block'>
-							<div className='flex flex-col items-center text-8xl leading-none md:flex-row md:space-x-7 lg:space-x-11 lg:text-[8.75rem]'>
+							<div className='flex flex-col items-center text-8xl leading-none md:flex-row lg:space-x-11 md:space-x-7 lg:text-[8.75rem]'>
 								<span className='font-extrabold'>TEST</span>
 								<div className='flex items-center space-x-4 lg:space-x-6'>
 									<Image
@@ -44,11 +44,11 @@ export default function Home() {
 						</article>
 
 						<aside>
-							<div className='text-right text-2xl font-extrabold'>
+							<div className='text-right font-extrabold text-2xl'>
 								<span className='hidden w-28 text-right xl:block'>
 									{t('Header.hostTitle')}
 								</span>
-								<div className='absolute -top-[20px] right-0 hidden h-[2px] w-96 bg-milky-white md:block xl:top-[15px]' />
+								<div className='-top-[20px] absolute right-0 hidden h-[2px] w-96 bg-milky-white xl:top-[15px] md:block' />
 							</div>
 
 							<div className='mt-9 hidden flex-col text-right font-light xl:flex'>
@@ -67,7 +67,7 @@ export default function Home() {
 
 					<div className='mt-5 hidden md:block'>
 						<div className='h-[2px] w-96 bg-milky-white' />
-						<div className='ml-12 mt-2 h-[5px] w-9 bg-milky-white' />
+						<div className='mt-2 ml-12 h-[5px] w-9 bg-milky-white' />
 					</div>
 
 					<div className='mt-5 flex w-full items-center justify-center xl:mt-0'>

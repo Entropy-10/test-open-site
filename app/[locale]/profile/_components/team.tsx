@@ -43,11 +43,11 @@ export default async function Team({ userId }: TeamProps) {
 					alt={`${team.flag}'s flag`}
 				/>
 				<div>
-					<div className='text-lg font-extrabold md:text-xl'>{team.name}</div>
-					<div className='text-sm font-medium text-medium-blue md:text-base'>
+					<div className='font-extrabold text-lg md:text-xl'>{team.name}</div>
+					<div className='font-medium text-medium-blue text-sm md:text-base'>
 						<span className='font-extrabold'>TIMEZONE:</span> {team.timezone}
 					</div>
-					<div className='text-sm font-medium text-medium-blue md:text-base'>
+					<div className='font-medium text-medium-blue text-sm md:text-base'>
 						<span className='font-extrabold'>JOINED:</span> {joinedDate}
 					</div>
 				</div>
