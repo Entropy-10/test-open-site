@@ -1,3 +1,7 @@
+import MessageBox from '~/components/message-box'
+import Background from '~/components/ui/Background'
+import Button from '~/components/ui/Button'
+
 interface UnauthorizedPageProps {
 	searchParams: {
 		type: 'auth-error'
@@ -9,20 +13,18 @@ export default function UnauthorizedPage({
 	searchParams
 }: UnauthorizedPageProps) {
 	const { type, message } = searchParams
-
-	if (type === 'auth-error') {
-		return (
-			<div>
-				<h2>Authorization Error</h2>
-				<p>{message}</p>
-			</div>
-		)
-	}
+	const authError = type === 'auth-error'
 
 	return (
-		<div>
-			<h2>Unauthorized</h2>
-			<p>Please sign in first before accessing this page.</p>
-		</div>
+		<Background className='flex min-h-screen items-center justify-center'>
+			<MessageBox
+				title={authError ? 'AUTHORIZATION FAILED!' : 'UNAUTHORIZED!'}
+				message={message ?? 'Please sign in first before accessing this page.'}
+			>
+				<Button href='/' variant='outline'>
+					HOME
+				</Button>
+			</MessageBox>
+		</Background>
 	)
 }

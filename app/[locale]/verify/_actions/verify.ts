@@ -28,7 +28,9 @@ export async function verify() {
 	const member = await getGuildMember(user.tokens).catch(() => verifyError())
 
 	if (member?.roles.includes(env.GUILD_VERIFIED_ROLE_ID)) {
-		redirect('/verify?status=success&message=You are already verified.')
+		redirect(
+			'/verify?status=error&message=You are already verified. If you think this is a mistake please DM @__entro for further help.'
+		)
 	}
 
 	const memberInfo = {

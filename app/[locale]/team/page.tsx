@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 
+import MessageBox from '~/components/message-box'
 import SectionLoader from '~/components/section-loader'
 import Background from '~/components/ui/Background'
 import Button from '~/components/ui/Button'
@@ -33,15 +34,25 @@ export default async function TeamPage() {
 	if (!session) redirect('/unauthorized')
 
 	const supabase = createClient(cookies())
-	const { data, error } = await supabase
+	const { data } = await supabase
 		.from('players')
 		.select('role, teams(*)')
 		.eq('user_id', session.sub)
 		.maybeSingle()
 
-	console.log(error)
-
-	if (!data?.teams) return null
+	if (!data?.teams)
+		return (
+			<Background className='flex min-h-screen items-center justify-center'>
+				<MessageBox
+					title='NOT ON A TEAM!'
+					message='Looks like you currently are not on a team. Please go to your profile and accept an invite first.'
+				>
+					<Button variant='outline' href='/profile'>
+						PROFILE
+					</Button>
+				</MessageBox>
+			</Background>
+		)
 
 	const team = data.teams
 	const isCaptain = data.role === 'captain'

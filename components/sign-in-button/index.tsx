@@ -2,20 +2,24 @@
 
 import { usePathname } from '@navigation'
 
-import Button from '../ui/Button'
+import { VariantProps } from 'class-variance-authority'
+import Button, { buttonVariants } from '../ui/Button'
 import { signIn } from './actions'
 
-interface SignInButtonProps {
+interface SignInButtonProps extends VariantProps<typeof buttonVariants> {
 	className?: string
 }
 
-export default function SignInButton({ className }: SignInButtonProps) {
+export default function SignInButton({
+	className,
+	variant
+}: SignInButtonProps) {
 	const pathname = usePathname()
 
 	return (
 		<form action={signIn}>
 			<input name='return-path' defaultValue={pathname} hidden />
-			<Button variant='primary' className={className}>
+			<Button variant={variant ?? 'primary'} className={className}>
 				SIGN IN
 			</Button>
 		</form>

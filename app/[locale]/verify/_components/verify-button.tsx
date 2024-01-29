@@ -8,7 +8,7 @@ export default function SubmitButton() {
 	const { pending } = useFormStatus()
 
 	return (
-		<Button loading={pending} variant='primary' className='w-full'>
+		<Button loading={pending} variant='outline'>
 			{pending ? 'VERIFYING' : 'VERIFY'}
 		</Button>
 	)

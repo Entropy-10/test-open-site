@@ -1,7 +1,8 @@
 import { getSession } from '@utils/server'
-import React from 'react'
 
+import MessageBox from '~/components/message-box'
 import SignInButton from '~/components/sign-in-button'
+import Background from '~/components/ui/Background'
 import Button from '~/components/ui/Button'
 import { verify } from './_actions/verify'
 import VerifyButton from './_components/verify-button'
@@ -17,63 +18,33 @@ export default function VerifyPage({ searchParams }: VerifyPageProps) {
 	const session = getSession()
 	const { status, message } = searchParams
 
-	if (!session) {
-		return (
-			<VerifyContainer>
-				<p className='mb-2 text-sm'>
-					Sign in first before attempting to verify.
-				</p>
-				<SignInButton className='w-full' />
-			</VerifyContainer>
-		)
-	}
-
-	if (status === 'error') {
-		return (
-			<VerifyContainer>
-				<p className='mb-4 text-sm'>
-					{message ?? 'Verification failed. Please try again later.'}
-				</p>
-				<Button href='/verify' variant='invertedOutline' className='w-full'>
-					TRY AGAIN
-				</Button>
-			</VerifyContainer>
-		)
-	}
-
-	if (status === 'success') {
-		return (
-			<VerifyContainer>
-				<p className='text-sm'>
-					{message ?? 'Welcome to the TEST Open Discord server!'}
-				</p>
-			</VerifyContainer>
-		)
-	}
-
+	// this is pretty cringe... not going to fix tho :p
 	return (
-		<VerifyContainer>
-			<form action={verify}>
-				<p className='mb-4 text-sm'>
-					Please click the button below to gain access to the server.
-				</p>
-				<VerifyButton />
-			</form>
-		</VerifyContainer>
-	)
-}
-
-interface VerifyContainerProps {
-	children: React.ReactNode
-}
-
-function VerifyContainer({ children }: VerifyContainerProps) {
-	return (
-		<div className='flex justify-center'>
-			<div className='mt-28 w-64 border-2 p-2'>
-				<h2 className='mb-1 font-bold text-lg'>Server Verification</h2>
-				{children}
-			</div>
-		</div>
+		<Background className='flex min-h-screen items-center justify-center'>
+			<MessageBox
+				title='SERVER VERIFICATION'
+				message={
+					!session
+						? 'Sign in first before attempting to verify.'
+						: status === 'success'
+						  ? 'Welcome to the TEST Open Discord server!'
+						  : status === 'error'
+							  ? `${message ?? 'Verification failed. Please try again later.'}`
+							  : 'Please click the button below to gain access to the server.'
+				}
+			>
+				{!session ? (
+					<SignInButton variant='outline' />
+				) : status === 'error' ? (
+					<Button href='/verify' variant='outline'>
+						TRY AGAIN
+					</Button>
+				) : (
+					<form action={verify}>
+						<VerifyButton />
+					</form>
+				)}
+			</MessageBox>
+		</Background>
 	)
 }
