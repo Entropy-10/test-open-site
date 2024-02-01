@@ -33,7 +33,7 @@ export default function InfoPage() {
 							<Link href='https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer'>
 								osu! lazer
 							</Link>
-							, standard mode, 3v3, open rank
+							, standard mode, 3v3 teams of 5, open rank
 						</Highlight>{' '}
 						tournament.
 					</li>
