@@ -28,6 +28,7 @@
     "clsx": "^2.1.0",
     "dayjs": "^1.11.10",
     "discord-oauth2": "^2.12.0",
+    "edge-csrf": "^1.0.7",
     "framer-motion": "^11.0.3",
     "google-auth-library": "^9.5.0",
     "google-spreadsheet": "^4.1.1",

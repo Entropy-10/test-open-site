@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { deleteInvite } from '../_actions/delete-invite'
 import DeleteButton from './delete-button'
 
+import { headers } from 'next/headers'
 import type { Tables } from '~/types/supabase'
 
 interface InviteProps {
@@ -20,6 +21,7 @@ interface InviteProps {
 
 export default function Invite({ invite, isCaptain }: InviteProps) {
 	if (!invite.users) return null
+	const csrfToken = headers().get('X-CSRF-Token') || 'missing'
 	const user = invite.users
 
 	return (
@@ -57,6 +59,7 @@ export default function Invite({ invite, isCaptain }: InviteProps) {
 
 			{isCaptain && (
 				<form action={deleteInvite}>
+					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
 					<DeleteButton />
 				</form>

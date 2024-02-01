@@ -5,7 +5,8 @@ import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 import sharp from 'sharp'
 
-export async function uploadImage(formData: FormData) {
+export async function uploadImage(csrfToken: string, formData: FormData) {
+	console.log('I ran flag upload action!')
 	try {
 		const teamName = formData.get('teamName')?.toString()
 		const image = await (

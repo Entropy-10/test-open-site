@@ -2,7 +2,7 @@ import { createMetadata } from '@metadata'
 import { createClient } from '@supabase/server'
 import { getSession } from '@utils/server'
 import { getTranslations } from 'next-intl/server'
-import { cookies } from 'next/headers'
+import { cookies, headers } from 'next/headers'
 import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
@@ -31,6 +31,7 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 
 export default async function TeamPage() {
 	const session = getSession()
+	const csrfToken = headers().get('X-CSRF-Token') || 'missing'
 	if (!session) redirect('/unauthorized')
 
 	const supabase = createClient(cookies())
@@ -93,6 +94,7 @@ export default async function TeamPage() {
 						<div className='flex gap-3'>
 							<Button className='w-[180px]'>EDIT TEAM</Button>
 							<form action={deleteTeam}>
+								<input name='csrf_token' defaultValue={csrfToken} hidden />
 								<input name='team_id' defaultValue={team.id} hidden />
 								<input name='user_id' defaultValue={session.sub} hidden />
 								<Button variant='outline' className='w-[180px]'>
