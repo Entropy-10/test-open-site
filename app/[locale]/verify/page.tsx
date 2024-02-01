@@ -17,7 +17,7 @@ interface VerifyPageProps {
 
 export default function VerifyPage({ searchParams }: VerifyPageProps) {
 	const session = getSession()
-	const csrfToken = headers().get('X-CSRF-Token') || 'missing'
+	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	const { status, message } = searchParams
 
 	// this is pretty cringe... not going to fix tho :p
@@ -29,12 +29,11 @@ export default function VerifyPage({ searchParams }: VerifyPageProps) {
 					!session
 						? 'Sign in first before attempting to verify.'
 						: status === 'success'
-						  ? 'Welcome to the TEST Open Discord server!'
-						  : status === 'error'
-							  ? `${message ?? 'Verification failed. Please try again later.'}`
-							  : 'Please click the button below to gain access to the server.'
-				}
-			>
+						? 'Welcome to the TEST Open Discord server!'
+						: status === 'error'
+						? `${message ?? 'Verification failed. Please try again later.'}`
+						: 'Please click the button below to gain access to the server.'
+				}>
 				{!session ? (
 					<SignInButton variant='outline' />
 				) : status === 'error' ? (

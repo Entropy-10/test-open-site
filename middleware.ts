@@ -25,10 +25,11 @@ export default async function middleware(request: NextRequest) {
 
 	if (request.nextUrl.pathname === '/csrf-token') {
 		return NextResponse.json({
-			csrfToken: response.headers.get('X-CSRF-Token') || 'missing'
+			csrfToken: response.headers.get('X-CSRF-Token') ?? 'missing'
 		})
 	}
 
+	response.headers.set('x-pathname', request.nextUrl.pathname)
 	return response
 }
 

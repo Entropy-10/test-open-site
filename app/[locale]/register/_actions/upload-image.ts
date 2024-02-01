@@ -5,13 +5,14 @@ import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 import sharp from 'sharp'
 
-export async function uploadImage(csrfToken: string, formData: FormData) {
-	console.log('I ran flag upload action!')
+export async function uploadImage(
+	csrfToken: string,
+	flagForm: { blob: string; name: string }
+) {
 	try {
-		const teamName = formData.get('teamName')?.toString()
-		const image = await (
-			formData.get('file') as Blob | undefined
-		)?.arrayBuffer()
+		const teamName = flagForm.name
+		const flagBlob = await fetch(flagForm.blob).then((res) => res.blob())
+		const image = await flagBlob.arrayBuffer()
 
 		if (!teamName || !image) throw new Error('Missing team name or file')
 
@@ -42,6 +43,7 @@ export async function uploadImage(csrfToken: string, formData: FormData) {
 			error: null
 		}
 	} catch (err) {
+		console.log(err)
 		return { error: { type: 'default', message: 'failed to create team' } }
 	}
 }

@@ -10,7 +10,7 @@ import { redirect } from 'next/navigation'
 
 export async function createTeam(
 	csrfToken: string,
-	formData: FormData
+	teamForm: { teamData: string }
 ): Promise<{ error: CreateTeamError | null }> {
 	const session = getSession()
 	if (!session) redirect('/unauthorized')
@@ -24,7 +24,7 @@ export async function createTeam(
 			}
 		}
 
-	const formTeamData = formData.get('teamData')?.toString()
+	const formTeamData = teamForm.teamData
 	if (!formTeamData) {
 		return { error: { type: 'default', message: 'failed to create team' } }
 	}

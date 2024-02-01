@@ -21,7 +21,7 @@ interface InviteProps {
 
 export default function Invite({ invite, isCaptain }: InviteProps) {
 	if (!invite.users) return null
-	const csrfToken = headers().get('X-CSRF-Token') || 'missing'
+	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	const user = invite.users
 
 	return (

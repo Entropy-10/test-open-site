@@ -22,3 +22,11 @@ export function getBaseUrl() {
 export function pad(number: number) {
 	return String(number).padStart(2, '0')
 }
+
+export function blobToBase64(blob: Blob) {
+	return new Promise((resolve, _) => {
+		const reader = new FileReader()
+		reader.onloadend = () => resolve(reader.result)
+		reader.readAsDataURL(blob)
+	})
+}

@@ -5,6 +5,7 @@ import Button from '~/components/ui/Button'
 import { acceptInvite } from '../_actions/accept-invite'
 import { denyInvite } from '../_actions/deny-invite'
 
+import { headers } from 'next/headers'
 import type { Tables } from '~/types/supabase'
 
 interface InviteProps {
@@ -21,6 +22,7 @@ interface InviteProps {
 export default function Invite({ invite }: InviteProps) {
 	if (!invite.teams) return null
 	const team = invite.teams
+	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 
 	return (
 		<div className='w-[200px] bg-gradient-to-r from-light-blue to-lavender p-4 md:w-[250px]'>
@@ -50,11 +52,13 @@ export default function Invite({ invite }: InviteProps) {
 
 			<div className='flex justify-between'>
 				<form action={acceptInvite}>
+					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='team_id' defaultValue={team.id} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
 					<Button className='w-[100px]'>ACCEPT</Button>
 				</form>
 				<form action={denyInvite}>
+					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
 					<Button variant='outline' className='w-[100px]'>
 						DENY
