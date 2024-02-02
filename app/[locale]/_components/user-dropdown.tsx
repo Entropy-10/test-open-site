@@ -1,14 +1,11 @@
-'use client'
-
-import { Link } from '@navigation'
 import Image from 'next/image'
 
 import ChevronDown from '~/components/icons/chevron-down'
 import * as Dropdown from '~/components/ui/dropdown'
-import { signOut } from '~/lib/actions'
 
 import type { Session } from '@types'
-import { useEffect, useState } from 'react'
+import SignOutButton from '~/components/sign-out-button'
+import NavItem from '~/components/ui/nav-item'
 
 interface UserDropdownProps {
 	session: Session
@@ -19,19 +16,9 @@ export default function UserDropdown({
 	session,
 	inviteCount
 }: UserDropdownProps) {
-	const [csrfToken, setCsrfToken] = useState<string>('loading...')
-
-	useEffect(() => {
-		const el = document.querySelector(
-			'meta[name="x-csrf-token"]'
-		) as HTMLMetaElement | null
-		if (el) setCsrfToken(el.content)
-		else setCsrfToken('missing')
-	}, [])
 	return (
 		<Dropdown.Root>
-			{/* eslint-disable-next-line tailwindcss/no-contradicting-classname */}
-			<Dropdown.Trigger className='group relative flex max-w-44 items-center justify-between bg-gradient-to-r from-[-100%] from-light-blue to-salmon px-1 py-0.5 text-milky-white'>
+			<Dropdown.Trigger className='group relative hidden max-w-44 items-center justify-between bg-gradient-to-r from-[-100%] from-light-blue to-salmon px-1 py-0.5 text-milky-white md:flex focus:outline-none'>
 				{inviteCount ? (
 					<div className='-left-1 -top-1 absolute'>
 						<div className='relative'>
@@ -49,7 +36,7 @@ export default function UserDropdown({
 						src={session.osu_avatar}
 						className='size-[26px]'
 					/>
-					<span className='mx-1 hidden max-w-28 truncate text-left font-semibold text-sm md:block'>
+					<span className='mx-1 max-w-28 truncate text-left font-semibold text-sm'>
 						{session.osu_name}
 					</span>
 				</div>
@@ -58,14 +45,21 @@ export default function UserDropdown({
 			</Dropdown.Trigger>
 
 			<Dropdown.Content>
-				<Dropdown.Item asChild>
-					<Link href='/profile'>PROFILE</Link>
+				<Dropdown.Item className='p-0'>
+					<NavItem
+						link='/profile'
+						activeClassName='bg-light-blue text-milky-white'
+						className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
+					>
+						PROFILE
+					</NavItem>
 				</Dropdown.Item>
 
-				<Dropdown.Item asChild>
-					<Link
-						className='flex items-center justify-between'
-						href='/profile#invites'
+				<Dropdown.Item className='p-0'>
+					<NavItem
+						link='/profile#invites'
+						activeClassName='bg-light-blue text-milky-white'
+						className='flex h-full w-full items-center justify-between px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 					>
 						INVITES
 						{inviteCount ? (
@@ -73,21 +67,21 @@ export default function UserDropdown({
 								{inviteCount}
 							</div>
 						) : null}
-					</Link>
+					</NavItem>
 				</Dropdown.Item>
 
-				<Dropdown.Item asChild>
-					<Link href='/team'>TEAM</Link>
-				</Dropdown.Item>
-
-				<Dropdown.Item asChild className='data-[highlighted]:bg-red-400'>
-					<button
-						className='text-left text-red-400'
-						type='button'
-						onClick={() => signOut(csrfToken)}
+				<Dropdown.Item className='p-0'>
+					<NavItem
+						link='/team'
+						activeClassName='bg-light-blue text-milky-white'
+						className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 					>
-						SIGN OUT
-					</button>
+						TEAM
+					</NavItem>
+				</Dropdown.Item>
+
+				<Dropdown.Item className='p-0 data-[highlighted]:bg-red-400'>
+					<SignOutButton className='h-full w-full px-3 py-0.5 hover:text-milky-white' />
 				</Dropdown.Item>
 			</Dropdown.Content>
 		</Dropdown.Root>

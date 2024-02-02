@@ -41,7 +41,6 @@ export async function GET(request: NextRequest) {
 			.update({
 				discord_id: user.id,
 				// @ts-expect-error the discord oauth package I'm using hasn't implemented the correct types yet for api v10
-				// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 				discord_name: user.global_name,
 				discord_tag: user.username ?? user.discriminator,
 				discord_avatar: user.avatar && getDiscordAvatarUrl(user.id, user.avatar)

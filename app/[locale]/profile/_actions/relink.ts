@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/require-await */
 'use server'
 
 import { getDiscordAuthUrl } from '@discord'

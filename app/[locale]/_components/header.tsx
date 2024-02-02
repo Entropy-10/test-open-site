@@ -8,6 +8,7 @@ import Logo from '~/components/icons/logo'
 import SignInButton from '~/components/sign-in-button'
 import Link from '~/components/ui/Link'
 import NavItem from '~/components/ui/nav-item'
+import MobileNav from './mobile-nav'
 import UserDropdown from './user-dropdown'
 
 export default async function Header() {
@@ -51,10 +52,16 @@ export default async function Header() {
 					))}
 				</nav>
 
+				<nav className='md:hidden'>
+					<MobileNav session={session} inviteCount={inviteCount} />
+				</nav>
+
 				{session ? (
 					<UserDropdown session={session} inviteCount={inviteCount} />
 				) : (
-					<SignInButton className='hidden md:flex' />
+					<div className='hidden md:flex'>
+						<SignInButton />
+					</div>
 				)}
 			</section>
 		</header>

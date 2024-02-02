@@ -10,7 +10,6 @@ const UtcPicker = forwardRef<HTMLButtonElement, UseFormRegisterReturn>(
 	({ name, onChange, required, disabled }, forwardedRef) => (
 		<Select.Root
 			name={name}
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 			onValueChange={value => onChange({ target: { name, value } })}
 			required={required}
 			disabled={disabled}

@@ -1,6 +1,5 @@
 import { env } from '@env'
 import { createServerClient } from '@supabase/ssr'
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { NextResponse } from 'next/server'
 
 import type { CookieOptions } from '@supabase/ssr'

@@ -99,7 +99,7 @@ export default function InfoPage() {
 				</List>
 			</Background>
 
-			<div className='py-10 flex justify-center'>
+			<div className='flex justify-center py-10'>
 				<span className='font-bold text-3xl text-medium-blue italic'>
 					More Info Coming Soon
 				</span>

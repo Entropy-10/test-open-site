@@ -47,7 +47,6 @@ export async function GET(request: NextRequest) {
 			country_code: osuUser.country.code,
 			discord_id: discordUser.id,
 			// @ts-expect-error the discord oauth package I'm using hasn't implemented the correct types yet for api v10
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 			discord_name: discordUser.global_name,
 			discord_tag: discordUser.username ?? discordUser.discriminator,
 			discord_avatar:

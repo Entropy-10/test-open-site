@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { env } from '@env'
 import { createServerClient } from '@supabase/ssr'
 
