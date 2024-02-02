@@ -29,11 +29,12 @@ export default function VerifyPage({ searchParams }: VerifyPageProps) {
 					!session
 						? 'Sign in first before attempting to verify.'
 						: status === 'success'
-						? 'Welcome to the TEST Open Discord server!'
-						: status === 'error'
-						? `${message ?? 'Verification failed. Please try again later.'}`
-						: 'Please click the button below to gain access to the server.'
-				}>
+						  ? 'Welcome to the TEST Open Discord server!'
+						  : status === 'error'
+							  ? `${message ?? 'Verification failed. Please try again later.'}`
+							  : 'Please click the button below to gain access to the server.'
+				}
+			>
 				{!session ? (
 					<SignInButton variant='outline' />
 				) : status === 'error' ? (

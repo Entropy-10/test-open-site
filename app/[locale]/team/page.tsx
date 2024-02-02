@@ -46,7 +46,8 @@ export default async function TeamPage() {
 			<Background className='flex min-h-screen items-center justify-center'>
 				<MessageBox
 					title='NOT ON A TEAM!'
-					message='Looks like you currently are not on a team. Please go to your profile and accept an invite first.'>
+					message='Looks like you currently are not on a team. Please go to your profile and accept an invite first.'
+				>
 					<Button variant='outline' href='/profile'>
 						PROFILE
 					</Button>

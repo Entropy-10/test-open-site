@@ -13,10 +13,12 @@ import Header from './_components/header'
 
 import type { MetadataProps } from '@types'
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import type { ReactNode } from 'react'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
+	const csrfToken = headers().get('X-CSRF-Token') || 'missing'
 
 	return {
 		metadataBase: new URL(getBaseUrl()),
@@ -32,7 +34,8 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 			},
 			description: t('description'),
 			locale
-		})
+		}),
+		other: { 'x-csrf-token': csrfToken }
 	} satisfies Metadata
 }
 

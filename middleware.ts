@@ -3,7 +3,7 @@ import csrf from 'edge-csrf'
 import createIntlMiddleware from 'next-intl/middleware'
 
 import { env } from '@env'
-import { NextResponse, type NextRequest } from 'next/server'
+import { type NextRequest, NextResponse } from 'next/server'
 
 const intlMiddleware = createIntlMiddleware({
 	locales,

@@ -18,7 +18,6 @@ import Label from './label'
 import UtcPicker from './utc-picker'
 
 import type { ModalError } from '@types'
-import { blobToBase64 } from '@utils/client'
 import type { z } from 'zod'
 
 interface CreateTeamFormProps {
@@ -72,22 +71,17 @@ export default function CreateTeamForm({
 
 		const flagBlob = new Blob([await data.flag.arrayBuffer()])
 		const flagForm = new FormData()
-
-		flagForm.append('file', flagBlob)
-		flagForm.append('teamName', data.name)
-
 		const csrfResp = await fetch('/csrf-token')
 		const { csrfToken } = await csrfResp.json()
 
+		flagForm.append('file', flagBlob)
+		flagForm.append('teamName', data.name)
+		flagForm.append('csrf_token', csrfToken)
+
 		let flag: { path: string; url: string }
 		try {
-			const { data: flagData, error: imageUploadError } = await uploadImage(
-				csrfToken,
-				{
-					blob: String(await blobToBase64(flagBlob)),
-					name: data.name
-				}
-			)
+			const { data: flagData, error: imageUploadError } =
+				await uploadImage(flagForm)
 
 			if (!flagData || imageUploadError) throw Error
 			flag = flagData
@@ -100,9 +94,14 @@ export default function CreateTeamForm({
 			return setOpen(true)
 		}
 
-		const { error: createTeamError } = await createTeam(csrfToken, {
-			teamData: JSON.stringify({ ...data, flag, osuId, discordId })
-		})
+		const teamForm = new FormData()
+		teamForm.append('csrf_token', csrfToken)
+		teamForm.append(
+			'teamData',
+			JSON.stringify({ ...data, flag, osuId, discordId })
+		)
+
+		const { error: createTeamError } = await createTeam(teamForm)
 
 		if (createTeamError) {
 			setError({
@@ -118,7 +117,8 @@ export default function CreateTeamForm({
 	return !success ? (
 		<form
 			onSubmit={handleSubmit(onSubmit)}
-			className='flex w-[300px] flex-col gap-3 bg-milky-white px-6 py-4'>
+			className='flex w-[300px] flex-col gap-3 bg-milky-white px-6 py-4'
+		>
 			<Heading className='text-light-blue sm:text-md' padding={false} sub>
 				CREATE A TEAM.
 			</Heading>
@@ -159,7 +159,8 @@ export default function CreateTeamForm({
 				loading={isSubmitting}
 				type='submit'
 				className='w-full'
-				variant='invertedOutline'>
+				variant='invertedOutline'
+			>
 				CREATE
 			</Button>
 
@@ -175,7 +176,8 @@ export default function CreateTeamForm({
 	) : (
 		<MessageBox
 			title='TEAM CREATED!'
-			message='Welcome to TEST Open Click the button below to view your team management page and start inviting players.'>
+			message='Welcome to TEST Open Click the button below to view your team management page and start inviting players.'
+		>
 			<Button href='/team' variant='outline'>
 				TEAM MANAGEMENT
 			</Button>

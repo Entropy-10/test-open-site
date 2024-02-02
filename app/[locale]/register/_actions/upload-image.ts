@@ -5,14 +5,12 @@ import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 import sharp from 'sharp'
 
-export async function uploadImage(
-	csrfToken: string,
-	flagForm: { blob: string; name: string }
-) {
+export async function uploadImage(formData: FormData) {
 	try {
-		const teamName = flagForm.name
-		const flagBlob = await fetch(flagForm.blob).then((res) => res.blob())
-		const image = await flagBlob.arrayBuffer()
+		const teamName = formData.get('teamName')?.toString()
+		const image = await (
+			formData.get('file') as Blob | undefined
+		)?.arrayBuffer()
 
 		if (!teamName || !image) throw new Error('Missing team name or file')
 
