@@ -41,6 +41,7 @@ export async function uploadImage(formData: FormData) {
 			error: null
 		}
 	} catch (err) {
+		console.log(err)
 		return { error: { type: 'default', message: 'failed to create team' } }
 	}
 }

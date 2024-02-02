@@ -5,7 +5,10 @@ import nextIntl from 'next-intl/plugin'
 const withNextIntl = nextIntl('./i18n.ts')
 
 export default withNextIntl({
-	experimental: { mdxRs: true },
+	experimental: {
+		mdxRs: true,
+		serverActions: { bodySizeLimit: '5mb' }
+	},
 	pageExtensions: ['mdx', 'ts', 'tsx'],
 	images: {
 		remotePatterns: [

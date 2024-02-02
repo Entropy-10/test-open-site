@@ -1,5 +1,6 @@
 import { getSession } from '@utils/server'
 
+import { headers } from 'next/headers'
 import MessageBox from '~/components/message-box'
 import SignInButton from '~/components/sign-in-button'
 import Background from '~/components/ui/Background'
@@ -16,6 +17,7 @@ interface VerifyPageProps {
 
 export default function VerifyPage({ searchParams }: VerifyPageProps) {
 	const session = getSession()
+	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	const { status, message } = searchParams
 
 	// this is pretty cringe... not going to fix tho :p
@@ -41,6 +43,7 @@ export default function VerifyPage({ searchParams }: VerifyPageProps) {
 					</Button>
 				) : (
 					<form action={verify}>
+						<input name='csrf_token' defaultValue={csrfToken} hidden />
 						<VerifyButton />
 					</form>
 				)}

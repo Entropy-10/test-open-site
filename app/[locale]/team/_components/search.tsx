@@ -3,7 +3,7 @@
 import { createClient } from '@supabase/client'
 import { SearchIcon, X } from 'lucide-react'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { invite } from '../_actions/invite'
 import StatusModal from './error-modal'
@@ -17,7 +17,16 @@ export default function Search({ teamId }: SearchProps) {
 	const [debounce, setDebounce] = useState<NodeJS.Timeout>()
 	const [results, setResults] = useState<UserResult[]>([])
 	const [selectedUser, setSelectedUser] = useState<UserResult | null>(null)
+	const [csrfToken, setCsrfToken] = useState<string>('loading...')
 	const supabase = createClient()
+
+	useEffect(() => {
+		const el = document.querySelector(
+			'meta[name="x-csrf-token"]'
+		) as HTMLMetaElement | null
+		if (el) setCsrfToken(el.content)
+		else setCsrfToken('missing')
+	}, [])
 
 	function handleSearch(term: string | null) {
 		if (debounce) clearTimeout(debounce)
@@ -52,6 +61,7 @@ export default function Search({ teamId }: SearchProps) {
 				className='flex gap-3'
 			>
 				<InviteButton disabled={!selectedUser} />
+				<input name='csrf_token' defaultValue={csrfToken} hidden />
 				<input name='team_id' defaultValue={teamId} hidden />
 				<input name='user_id' defaultValue={selectedUser?.osu_id} hidden />
 

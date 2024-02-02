@@ -8,6 +8,7 @@ import * as Dropdown from '~/components/ui/dropdown'
 import { signOut } from '~/lib/actions'
 
 import type { Session } from '@types'
+import { useEffect, useState } from 'react'
 
 interface UserDropdownProps {
 	session: Session
@@ -18,6 +19,15 @@ export default function UserDropdown({
 	session,
 	inviteCount
 }: UserDropdownProps) {
+	const [csrfToken, setCsrfToken] = useState<string>('loading...')
+
+	useEffect(() => {
+		const el = document.querySelector(
+			'meta[name="x-csrf-token"]'
+		) as HTMLMetaElement | null
+		if (el) setCsrfToken(el.content)
+		else setCsrfToken('missing')
+	}, [])
 	return (
 		<Dropdown.Root>
 			{/* eslint-disable-next-line tailwindcss/no-contradicting-classname */}
@@ -74,7 +84,7 @@ export default function UserDropdown({
 					<button
 						className='text-left text-red-400'
 						type='button'
-						onClick={() => signOut()}
+						onClick={() => signOut(csrfToken)}
 					>
 						SIGN OUT
 					</button>

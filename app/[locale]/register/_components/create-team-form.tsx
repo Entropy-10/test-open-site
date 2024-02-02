@@ -58,18 +58,34 @@ export default function CreateTeamForm({
 		resetField('flag')
 	}
 
+	enum CreateTeamErrorTitle {
+		duplicate_name = 'TEAM NAME ALREADY EXISTS!',
+		duplicate_acronym = 'TEAM ACRONYM ALREADY EXISTS!',
+		duplicate_player = 'ALREADY ON A TEAM!',
+		restricted = 'YOU ARE RESTRICTED!',
+		default = 'FAILED TO CREATE TEAM!'
+	}
+
 	async function onSubmit(data: z.infer<typeof createTeamForm>) {
 		if (!data.flag) return
 
 		const flagBlob = new Blob([await data.flag.arrayBuffer()])
 		const flagForm = new FormData()
+		const csrfResp = await fetch('/csrf-token')
+		const { csrfToken } = await csrfResp.json()
 
 		flagForm.append('file', flagBlob)
 		flagForm.append('teamName', data.name)
+		flagForm.append('csrf_token', csrfToken)
 
-		const { data: flag, error: uploadImageError } = await uploadImage(flagForm)
+		let flag: { path: string; url: string }
+		try {
+			const { data: flagData, error: imageUploadError } =
+				await uploadImage(flagForm)
 
-		if (!flag || uploadImageError) {
+			if (!flagData || imageUploadError) throw Error
+			flag = flagData
+		} catch (err) {
 			setError({
 				title: 'FAILED TO UPLOAD FLAG!',
 				message:
@@ -79,20 +95,13 @@ export default function CreateTeamForm({
 		}
 
 		const teamForm = new FormData()
+		teamForm.append('csrf_token', csrfToken)
 		teamForm.append(
 			'teamData',
 			JSON.stringify({ ...data, flag, osuId, discordId })
 		)
 
 		const { error: createTeamError } = await createTeam(teamForm)
-
-		enum CreateTeamErrorTitle {
-			duplicate_name = 'TEAM NAME ALREADY EXISTS!',
-			duplicate_acronym = 'TEAM ACRONYM ALREADY EXISTS!',
-			duplicate_player = 'ALREADY ON A TEAM!',
-			restricted = 'YOU ARE RESTRICTED!',
-			default = 'FAILED TO CREATE TEAM!'
-		}
 
 		if (createTeamError) {
 			setError({

@@ -4,7 +4,7 @@
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-export async function signOut() {
+export async function signOut(csrfToken: string) {
 	cookies().delete('session')
 	redirect('/')
 }
