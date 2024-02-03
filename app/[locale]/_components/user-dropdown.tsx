@@ -34,7 +34,7 @@ export default function UserDropdown({
 						height={26}
 						alt='pfp'
 						src={session.osu_avatar}
-						className='size-[26px]'
+						className='size-[26px] select-none'
 					/>
 					<span className='mx-1 max-w-28 truncate text-left font-semibold text-sm'>
 						{session.osu_name}
@@ -79,6 +79,10 @@ export default function UserDropdown({
 						TEAM
 					</NavItem>
 				</Dropdown.Item>
+
+				<div className='px-2 py-0.5'>
+					<div className='h-px w-full bg-light-blue' />
+				</div>
 
 				<Dropdown.Item className='p-0 data-[highlighted]:bg-red-400'>
 					<SignOutButton className='h-full w-full px-3 py-0.5 hover:text-milky-white' />

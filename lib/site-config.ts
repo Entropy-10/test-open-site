@@ -6,7 +6,7 @@ export const localesMetadata = [
 	{ code: 'en', name: 'English', flag: 'en.svg' },
 	{ code: 'fr', name: 'Français', flag: 'fr.svg' },
 	{ code: 'es', name: 'Español', flag: 'es.svg' },
-	{ code: 'ru', name: 'Русский язык', flag: 'ru.svg' },
+	{ code: 'ru', name: 'Россия', flag: 'ru.svg' },
 	{ code: 'ko', name: '한국어', flag: 'ko.svg' },
 	{ code: 'ja', name: '日本語', flag: 'ja.svg' },
 	{ code: 'zh', name: '中文', flag: 'zh.svg' },

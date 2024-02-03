@@ -24,7 +24,7 @@ export default function ChevronDownIcon({
 			<path
 				className={pathClassName}
 				d='M7.25 10.875L14.5 18.125L21.75 10.875'
-				stroke='#fffefa'
+				stroke='currentColor'
 				strokeWidth='3'
 			/>
 		</svg>

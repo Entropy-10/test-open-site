@@ -8,10 +8,15 @@ import Logo from '~/components/icons/logo'
 import SignInButton from '~/components/sign-in-button'
 import Link from '~/components/ui/Link'
 import NavItem from '~/components/ui/nav-item'
+import LanguagePicker from './language-picker'
 import MobileNav from './mobile-nav'
 import UserDropdown from './user-dropdown'
 
-export default async function Header() {
+interface HeaderProps {
+	locale: string
+}
+
+export default async function Header({ locale }: HeaderProps) {
 	const t = await getTranslations('NavItems')
 	const session = getSession()
 	const supabase = createClient(cookies())
@@ -39,7 +44,7 @@ export default async function Header() {
 					</h1>
 				</Link>
 
-				<nav className='hidden h-full space-x-8 px-4 text-center font-semibold text-xs md:flex'>
+				<nav className='hidden h-full gap-4 px-4 text-center font-semibold text-xs md:flex min-[925px]:gap-8'>
 					{navItems.map(({ link, text }) => (
 						<NavItem
 							key={text}
@@ -52,17 +57,18 @@ export default async function Header() {
 					))}
 				</nav>
 
-				<nav className='md:hidden'>
+				<div className='flex gap-3'>
+					<LanguagePicker locale={locale} />
 					<MobileNav session={session} inviteCount={inviteCount} />
-				</nav>
 
-				{session ? (
-					<UserDropdown session={session} inviteCount={inviteCount} />
-				) : (
-					<div className='hidden md:flex'>
-						<SignInButton />
-					</div>
-				)}
+					{session ? (
+						<UserDropdown session={session} inviteCount={inviteCount} />
+					) : (
+						<div className='hidden md:flex'>
+							<SignInButton />
+						</div>
+					)}
+				</div>
 			</section>
 		</header>
 	)

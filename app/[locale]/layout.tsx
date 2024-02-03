@@ -58,7 +58,7 @@ export default function LocaleLayout({
 					inter.className
 				)}
 			>
-				<Header />
+				<Header locale={locale} />
 				<main className='flex-1'>{children}</main>
 				<Footer />
 				<Analytics />
