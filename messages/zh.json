@@ -1,71 +1,71 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
-			"hostTitle": "HOSTED BY"
+			"description": "一个Open Rank，使用Osu! lazer客户端的比赛",
+			"hostTitle": "主办"
 		},
 		"Features": {
 			"Titles": {
-				"mappool": "MAPPOOL.",
-				"format": "FORMAT.",
-				"schedule": "SCHEDULE."
+				"mappool": "图池",
+				"format": "赛制",
+				"schedule": "赛程"
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool, with traceable, grow, and more.",
-				"format": "An open rank, double elimination, 3v3 tournament.",
-				"schedule": "Watch upcoming matches being streamed."
+				"mappool": "图池基于lazer mod，兼具追溯性，递进性等等",
+				"format": "一个不限排名的双败3v3赛事",
+				"schedule": "观看即将直播的比赛"
 			},
 			"Countdown": {
-				"titleSectionOne": "TOURNAMENT",
-				"titleSectionTwo": "STARTS IN"
+				"titleSectionOne": "赛事",
+				"titleSectionTwo": "开始于"
 			}
 		},
 		"Originals": {
-			"title": "Originals",
-			"subtitle": "CUSTOM SONGS COMING SOON.",
-			"description": "The elite few will ascend to play the exclusive TEST Originals. Custom tracks crafted just for TEST Open 2024, each with a unique style and vibrant art. To reach the grand finals stage, you must train and prove your skills are supreme. Will you be among the chosen ones?",
-			"tracksTitle": "TRACKLIST.",
-			"listenButton": "LISTEN NOW"
+			"title": "原创曲",
+			"subtitle": "敬请期待原创歌曲",
+			"description": "一些精英将专门谱写独占的 TEST 原创曲。专为TEST Open 2024打造的曲目将独具风格，充满激情。只有经过努力练习证明自己技术卓绝众人的选手才能到达总决赛的舞台。你是那其中之一吗？",
+			"tracksTitle": "曲目列表",
+			"listenButton": "立刻收听"
 		}
 	},
 	"NavItems": {
-		"home": "HOME",
-		"mappool": "MAPPOOL",
-		"schedule": "SCHEDULE",
-		"teams": "TEAMS",
-		"info": "INFO",
-		"sheet": "SHEET"
+		"home": "首页",
+		"mappool": "图池",
+		"schedule": "赛程",
+		"teams": "队伍",
+		"info": "信息",
+		"sheet": "赛程表"
 	},
 	"Buttons": {
-		"register": "REGISTER",
-		"signIn": "SIGN IN",
-		"signOut": "SIGN OUT"
+		"register": "注册",
+		"signIn": "登入",
+		"signOut": "登出"
 	},
 	"Status": {
-		"operational": "All services are online",
-		"downtime": "Some services are down",
-		"degraded": "Some services are degraded",
-		"maintenance": "Ongoing maintenance"
+		"operational": "所有服务均正常运转",
+		"downtime": "一些服务挂掉了",
+		"degraded": "所有服务均未运转",
+		"maintenance": "正在维护中"
 	},
 	"Footer": {
-		"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
+		"description": "一个由 TEDDY, ENTROPY, 和 SORA 主办的不限排名Osu! lazer比赛。"
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
+		"description": "Osu! 史上第一届大范围不限排名lazer赛事。敬请体验全新的osu比赛。",
 		"PageTitles": {
-			"home": "Home",
-			"schedule": "Schedule",
-			"info": "Info",
-			"mappool": "Mappool",
-			"register": "Register",
-			"teams": "Teams",
-			"team": "Team",
-			"signIn": "Sign In"
+			"home": "主页",
+			"schedule": "赛程",
+			"info": "信息",
+			"mappool": "图池",
+			"register": "注册",
+			"teams": "队伍列表",
+			"team": "队伍",
+			"signIn": "注册"
 		}
 	},
 	"Error": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home"
+		"title": "出了些问题！",
+		"retryButton": "再试一次",
+		"goHomeButton": "返回主页"
 	}
 }
