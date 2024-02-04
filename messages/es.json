@@ -1,71 +1,71 @@
 {
-  "HomePage": {
-    "Header": {
-      "description": "Un torneo en osu!lazer de rango abierto",
-      "hostTitle": "ORGANIZADO POR"
-    },
-    "Features": {
-      "Titles": {
-        "mappool": "MAPPOOL.",
-        "format": "FORMATO.",
-        "schedule": "HORARIOS."
-      },
-      "Descriptions": {
-        "mappool": "Una mappool con mods exclusivos a osu!lazer, como el Traceable, Grow y más.",
-        "format": "Un torneo de rango abierto, doble eliminación, en formato de 3v3.",
-        "schedule": "Mira los próximos partidos que se transmitirán."
-      },
-      "Countdown": {
-        "titleSectionOne": "TORNEO",
-        "titleSectionTwo": "COMIENZA EN"
-      }
-    },
-    "Originals": {
-      "title": "Originales",
-      "subtitle": "CUSTOM SONGS COMING SOON.",
-      "description": "Pocas leyendas ascenderán para jugar los exclusivos TEST Originals. Canciones originales creadas exclusivamente para TEST Open 2024, cada una con un estilo único y un arte vibrante. Para llegar a la gran final, deberás entrenar y demostrar que tus habilidades son supremas. ¿Estarás entre los elegidos?",
-      "tracksTitle": "LISTA DE CANCIONES.",
-      "listenButton": "ESCUCHA AHORA"
-    }
-  },
-  "NavItems": {
-    "home": "INICIO",
-    "mappool": "MAPPOOL",
-    "schedule": "HORARIOS",
-    "teams": "TEAMS",
-    "info": "INFORMACIÓN",
-    "sheet": "SHEET PRINCIPAL"
-  },
-  "Buttons": {
-    "register": "REGISTER",
-    "signIn": "INICIAR SESIÓN",
-    "signOut": "CERRAR SESIÓN"
-  },
-  "Status": {
-    "operational": "All services are online",
-    "downtime": "Some services are down",
-    "degraded": "Some services are degraded",
-    "maintenance": "Ongoing maintenance"
-  },
-  "Footer": {
-    "description": "¡UN TORNEO EN osu!lazer RANGO ABIERTO! ORGANIZADO POR TEDDY, ENTROPY Y SORA."
-  },
-  "Metadata": {
-    "description": "El primer torneo de gran escala en osu!lazer rangos abierto. Bienvenido a la nueva experiencia de torneos en osu.",
-    "PageTitles": {
-      "home": "Home",
-      "schedule": "Horarios",
-      "info": "Información",
-      "mappool": "Mappool",
-      "register": "Registrarse",
-      "teams": "Teams",
-      "team": "Team",
-      "signIn": "Sign In"
-    }
-  },
-  "Error": {
-    "title": "¡Algo salió mal!",
-    "retryButton": "Intentar otra vez",
-    "goHomeButton": "Regresar a la página de Inicio"
-  }
+	"HomePage": {
+		"Header": {
+			"description": "Un torneo en osu!lazer de rango abierto",
+			"hostTitle": "ORGANIZADO POR"
+		},
+		"Features": {
+			"Titles": {
+				"mappool": "MAPPOOL.",
+				"format": "FORMATO.",
+				"schedule": "HORARIOS."
+			},
+			"Descriptions": {
+				"mappool": "Una mappool con mods exclusivos a osu!lazer, como el Traceable, Grow y más.",
+				"format": "Un torneo de rango abierto, doble eliminación, en formato de 3v3.",
+				"schedule": "Mira los próximos partidos que se transmitirán."
+			},
+			"Countdown": {
+				"titleSectionOne": "TORNEO",
+				"titleSectionTwo": "COMIENZA EN"
+			}
+		},
+		"Originals": {
+			"title": "Originales",
+			"subtitle": "CUSTOM SONGS COMING SOON.",
+			"description": "Pocas leyendas ascenderán para jugar los exclusivos TEST Originals. Canciones originales creadas exclusivamente para TEST Open 2024, cada una con un estilo único y un arte vibrante. Para llegar a la gran final, deberás entrenar y demostrar que tus habilidades son supremas. ¿Estarás entre los elegidos?",
+			"tracksTitle": "LISTA DE CANCIONES.",
+			"listenButton": "ESCUCHA AHORA"
+		}
+	},
+	"NavItems": {
+		"home": "INICIO",
+		"mappool": "MAPPOOL",
+		"schedule": "HORARIOS",
+		"teams": "TEAMS",
+		"info": "INFORMACIÓN",
+		"sheet": "SHEET PRINCIPAL"
+	},
+	"Buttons": {
+		"register": "REGISTER",
+		"signIn": "INICIAR SESIÓN",
+		"signOut": "CERRAR SESIÓN"
+	},
+	"Status": {
+		"operational": "All services are online",
+		"downtime": "Some services are down",
+		"degraded": "Some services are degraded",
+		"maintenance": "Ongoing maintenance"
+	},
+	"Footer": {
+		"description": "¡UN TORNEO EN osu!lazer RANGO ABIERTO! ORGANIZADO POR TEDDY, ENTROPY Y SORA."
+	},
+	"Metadata": {
+		"description": "El primer torneo de gran escala en osu!lazer rangos abierto. Bienvenido a la nueva experiencia de torneos en osu.",
+		"PageTitles": {
+			"home": "Home",
+			"schedule": "Horarios",
+			"info": "Información",
+			"mappool": "Mappool",
+			"register": "Registrarse",
+			"teams": "Teams",
+			"team": "Team",
+			"signIn": "Sign In"
+		}
+	},
+	"Error": {
+		"title": "¡Algo salió mal!",
+		"retryButton": "Intentar otra vez",
+		"goHomeButton": "Regresar a la página de Inicio"
+	}
 }
