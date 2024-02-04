@@ -1,79 +1,53 @@
-import React from 'react'
 import { getSession } from '@utils/server'
 
-import Button from '~/components/ui/Button'
+import { headers } from 'next/headers'
+import MessageBox from '~/components/message-box'
 import SignInButton from '~/components/sign-in-button'
+import Background from '~/components/ui/Background'
+import Button from '~/components/ui/Button'
 import { verify } from './_actions/verify'
 import VerifyButton from './_components/verify-button'
 
 interface VerifyPageProps {
-  searchParams: {
-    status?: 'success' | 'error'
-    message?: string
-  }
+	searchParams: {
+		status?: 'success' | 'error'
+		message?: string
+	}
 }
 
 export default function VerifyPage({ searchParams }: VerifyPageProps) {
-  const session = getSession()
-  const { status, message } = searchParams
+	const session = getSession()
+	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
+	const { status, message } = searchParams
 
-  if (!session) {
-    return (
-      <VerifyContainer>
-        <p className='mb-2 text-sm'>
-          Sign in first before attempting to verify.
-        </p>
-        <SignInButton className='w-full' />
-      </VerifyContainer>
-    )
-  }
-
-  if (status === 'error') {
-    return (
-      <VerifyContainer>
-        <p className='mb-4 text-sm'>
-          {message ?? 'Verification failed. Please try again later.'}
-        </p>
-        <Button href='/verify' variant='outlineHover' className='w-full'>
-          TRY AGAIN
-        </Button>
-      </VerifyContainer>
-    )
-  }
-
-  if (status === 'success') {
-    return (
-      <VerifyContainer>
-        <p className='text-sm'>
-          {message ?? 'Welcome to the TEST Open Discord server!'}
-        </p>
-      </VerifyContainer>
-    )
-  }
-
-  return (
-    <VerifyContainer>
-      <form action={verify}>
-        <p className='mb-4 text-sm'>
-          Please click the button below to gain access to the server.
-        </p>
-        <VerifyButton />
-      </form>
-    </VerifyContainer>
-  )
-}
-
-interface VerifyContainerProps {
-  children: React.ReactNode
-}
-
-function VerifyContainer({ children }: VerifyContainerProps) {
-  return (
-    <div className='flex justify-center'>
-      <div className='mt-28 w-64 border-2 p-2'>
-        <h2 className='mb-1 text-lg font-bold'>Server Verification</h2>
-        {children}
-      </div>
-    </div>
-  )
+	// this is pretty cringe... not going to fix tho :p
+	return (
+		<Background className='flex min-h-screen items-center justify-center'>
+			<MessageBox
+				title='SERVER VERIFICATION'
+				message={
+					!session
+						? 'Sign in first before attempting to verify.'
+						: status === 'success'
+						  ? 'Welcome to the TEST Open Discord server!'
+						  : status === 'error'
+							  ? `${message ?? 'Verification failed. Please try again later.'}`
+							  : 'Please click the button below to gain access to the server.'
+				}
+			>
+				{!session ? (
+					<SignInButton variant='outline' />
+				) : status === 'error' ? (
+					<Button href='/verify' variant='outline'>
+						TRY AGAIN
+					</Button>
+				) : (
+					<form action={verify}>
+						<input name='csrf_token' defaultValue={csrfToken} hidden />
+						<VerifyButton />
+					</form>
+				)}
+			</MessageBox>
+		</Background>
+	)
 }

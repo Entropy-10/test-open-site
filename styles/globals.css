@@ -8,6 +8,14 @@
   }
 }
 
+* {
+  outline: 2px solid transparent;
+  outline-offset: 0px;
+}
+*:focus {
+  outline-color: #5e72eb;
+}
+
 .disabledViewTransiton {
   view-transition-name: disabled-view-transiton;
 }
