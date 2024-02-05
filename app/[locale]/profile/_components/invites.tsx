@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 
+import { getTranslations } from 'next-intl/server'
 import Invite from './invite'
 
 interface InvitesProps {
@@ -8,6 +9,7 @@ interface InvitesProps {
 }
 
 export default async function Invites({ userId }: InvitesProps) {
+	const t = await getTranslations('ProfilePage.Invites')
 	const supabase = createClient(cookies())
 	const { data: invites, error } = await supabase
 		.from('invites')
@@ -18,10 +20,9 @@ export default async function Invites({ userId }: InvitesProps) {
 	if (error) console.log(error)
 	if (!invites || invites.length === 0) {
 		return (
-			<p className='flex h-[311px] items-center justify-center text-center'>
-				You currently do not have any invites. <br />
-				Wait for one or create your own team.
-			</p>
+			<div className='flex h-[311px] items-center justify-center'>
+				<p className='max-w-72 text-center'>{t('none')}</p>
+			</div>
 		)
 	}
 

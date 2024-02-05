@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 
+import { getTranslations } from 'next-intl/server'
 import Player from './player'
 
 interface PlayersProps {
@@ -14,6 +15,7 @@ export default async function Players({
 	userId,
 	isCaptain
 }: PlayersProps) {
+	const t = await getTranslations('TeamPage.Invites')
 	const supabase = createClient(cookies())
 	const { data: players } = await supabase
 		.from('players')
@@ -24,12 +26,11 @@ export default async function Players({
 	if (!players?.[0]) {
 		return (
 			<div className='flex h-[311px] items-center justify-center'>
-				Sorry, we failed to get the players on your team.
+				{t('error')}
 			</div>
 		)
 	}
 
-	//todo: make this a carousel to match design and prevent squishing of player cards
 	return (
 		<div className='padding my-5 flex w-full gap-5'>
 			{players.map(player => (

@@ -4,12 +4,17 @@ import { useFormStatus } from 'react-dom'
 
 import Button from '~/components/ui/Button'
 
-export default function SubmitButton() {
+interface SubmitButtonProps {
+	text: string
+	loadingText: string
+}
+
+export default function SubmitButton({ text, loadingText }: SubmitButtonProps) {
 	const { pending } = useFormStatus()
 
 	return (
 		<Button loading={pending} variant='outline'>
-			{pending ? 'VERIFYING' : 'VERIFY'}
+			{pending ? loadingText : text}
 		</Button>
 	)
 }

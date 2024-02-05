@@ -5,6 +5,7 @@ import Button from '~/components/ui/Button'
 import { acceptInvite } from '../_actions/accept-invite'
 import { denyInvite } from '../_actions/deny-invite'
 
+import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
 import type { Tables } from '~/types/supabase'
 
@@ -23,6 +24,7 @@ export default function Invite({ invite }: InviteProps) {
 	if (!invite.teams) return null
 	const team = invite.teams
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
+	const t = useTranslations('ProfilePage.Invites.Invite')
 
 	return (
 		<div className='w-[200px] bg-gradient-to-r from-light-blue to-lavender p-4 md:w-[250px]'>
@@ -42,10 +44,11 @@ export default function Invite({ invite }: InviteProps) {
 
 			<div className='mb-4 text-dark-blue text-xs md:mb-8 md:text-sm'>
 				<div>
-					<span className='font-extrabold'>TIMEZONE:</span> {team.timezone}
+					<span className='font-extrabold'>{t('timezone')}:</span>{' '}
+					{team.timezone}
 				</div>
 				<div>
-					<span className='font-extrabold'>INVITED:</span>{' '}
+					<span className='font-extrabold'>{t('invited')}:</span>{' '}
 					{dayjs(invite.created_at).format('MMMM D, YYYY')}
 				</div>
 			</div>
@@ -55,13 +58,13 @@ export default function Invite({ invite }: InviteProps) {
 					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='team_id' defaultValue={team.id} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
-					<Button className='w-[100px]'>ACCEPT</Button>
+					<Button className='w-[100px]'>{t('Buttons.accept')}</Button>
 				</form>
 				<form action={denyInvite}>
 					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
 					<Button variant='outline' className='w-[100px]'>
-						DENY
+						{t('Buttons.deny')}
 					</Button>
 				</form>
 			</div>

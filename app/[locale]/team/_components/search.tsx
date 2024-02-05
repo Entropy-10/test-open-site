@@ -5,15 +5,21 @@ import { SearchIcon, X } from 'lucide-react'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
+import ErrorModal from '~/components/error-modal'
 import { invite } from '../_actions/invite'
-import StatusModal from './error-modal'
 import InviteButton from './invite-button'
 
 interface SearchProps {
 	teamId: number
+	inviteButtonText: string
+	placeholderText: string
 }
 
-export default function Search({ teamId }: SearchProps) {
+export default function Search({
+	teamId,
+	inviteButtonText,
+	placeholderText
+}: SearchProps) {
 	const [debounce, setDebounce] = useState<NodeJS.Timeout>()
 	const [results, setResults] = useState<UserResult[]>([])
 	const [selectedUser, setSelectedUser] = useState<UserResult | null>(null)
@@ -54,13 +60,13 @@ export default function Search({ teamId }: SearchProps) {
 
 	return (
 		<div className='padding pt-3'>
-			<StatusModal />
+			<ErrorModal />
 			<form
 				onSubmit={() => setSelectedUser(null)}
 				action={invite}
 				className='flex gap-3'
 			>
-				<InviteButton disabled={!selectedUser} />
+				<InviteButton text={inviteButtonText} disabled={!selectedUser} />
 				<input name='csrf_token' defaultValue={csrfToken} hidden />
 				<input name='team_id' defaultValue={teamId} hidden />
 				<input name='user_id' defaultValue={selectedUser?.osu_id} hidden />
@@ -93,7 +99,7 @@ export default function Search({ teamId }: SearchProps) {
 						<>
 							<input
 								onChange={e => handleSearch(e.currentTarget.value)}
-								placeholder='Enter osu username...'
+								placeholder={placeholderText}
 								className='focus:-outline-offset-2 h-[32px] w-full border-[1.5px] border-dark-blue pr-[30px] pl-1.5 text-dark-blue placeholder:text-dark-blue/55'
 							/>
 							<SearchIcon

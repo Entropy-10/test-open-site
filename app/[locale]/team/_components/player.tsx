@@ -1,4 +1,5 @@
 import { Star } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 import Button from '~/components/ui/Button'
@@ -14,6 +15,7 @@ interface PlayerProps {
 export default function Player({ player, userId, isCaptain }: PlayerProps) {
 	if (!player.users) return null
 	const user = player.users
+	const t = useTranslations('TeamPage.Players.Player')
 
 	return (
 		<div className='w-[200px] bg-gradient-to-r from-light-blue to-salmon p-4 md:w-[250px]'>
@@ -36,16 +38,17 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 
 			<div className='mb-4 text-dark-blue text-xs md:mb-8 md:text-sm'>
 				<div>
-					<span className='font-extrabold'>RANK:</span> #
+					<span className='font-extrabold'>{t('rank')}:</span> #
 					{user.rank?.toLocaleString()}
 				</div>
 				<div>
-					<span className='font-extrabold'>DISCORD:</span> @{user.discord_tag}
+					<span className='font-extrabold'>{t('discord')}:</span> @
+					{user.discord_tag}
 				</div>
 			</div>
 
 			{userId !== player.user_id && isCaptain ? (
-				<Button className='w-full'>REMOVE PLAYER</Button>
+				<Button className='w-full'>{t('removeButton')}</Button>
 			) : null}
 		</div>
 	)

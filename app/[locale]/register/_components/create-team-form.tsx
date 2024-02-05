@@ -18,6 +18,7 @@ import Label from './label'
 import UtcPicker from './utc-picker'
 
 import type { ModalError } from '@types'
+import { useTranslations } from 'next-intl'
 import type { z } from 'zod'
 
 interface CreateTeamFormProps {
@@ -29,6 +30,7 @@ export default function CreateTeamForm({
 	osuId,
 	discordId
 }: CreateTeamFormProps) {
+	const t = useTranslations('RegistrationPage.Form')
 	const [previewImage, setPreviewImage] = useState<string | null>(null)
 	const [success, setSuccess] = useState(false)
 	const [error, setError] = useState<ModalError | null>(null)
@@ -120,17 +122,17 @@ export default function CreateTeamForm({
 			className='flex w-[300px] flex-col gap-3 bg-milky-white px-6 py-4'
 		>
 			<Heading className='text-light-blue sm:text-md' padding={false} sub>
-				CREATE A TEAM.
+				{t('heading')}
 			</Heading>
 
 			<div className='group'>
-				<Label htmlFor='name'>*Team Name</Label>
+				<Label htmlFor='name'>*{t('teamName')}</Label>
 				<Input {...register('name')} />
 				{errors.name?.message && <InputError message={errors.name.message} />}
 			</div>
 
 			<div className='group'>
-				<Label htmlFor='acronym'>*Team Acronym</Label>
+				<Label htmlFor='acronym'>*{t('teamAcronym')}</Label>
 				<Input {...register('acronym')} />
 				{errors.acronym?.message && (
 					<InputError message={errors.acronym.message} />
@@ -138,7 +140,7 @@ export default function CreateTeamForm({
 			</div>
 
 			<div className='group'>
-				<Label htmlFor='timezone'>*Timezone</Label>
+				<Label htmlFor='timezone'>*{t('timezone')}</Label>
 				<UtcPicker {...register('timezone')} />
 				{errors.timezone?.message && (
 					<InputError message={errors.timezone.message} />
@@ -146,8 +148,10 @@ export default function CreateTeamForm({
 			</div>
 
 			<div className='relative'>
-				<Label htmlFor='flag'>*Team Flag</Label>
+				<Label htmlFor='flag'>*{t('teamFlag')}</Label>
 				<ImagePicker
+					uploadText={t('ImagePicker.upload')}
+					recommendedText={t('ImagePicker.recommended')}
 					previewImage={previewImage}
 					clearPreviewImage={clearPreviewImage}
 					{...register('flag')}
@@ -161,7 +165,7 @@ export default function CreateTeamForm({
 				className='w-full'
 				variant='invertedOutline'
 			>
-				CREATE
+				{isSubmitting ? t('createButton.loadingText') : t('createButton.text')}
 			</Button>
 
 			{error && (
@@ -174,12 +178,9 @@ export default function CreateTeamForm({
 			)}
 		</form>
 	) : (
-		<MessageBox
-			title='TEAM CREATED!'
-			message='Welcome to TEST Open Click the button below to view your team management page and start inviting players.'
-		>
+		<MessageBox title={t('Success.title')} message={t('Success.message')}>
 			<Button href='/team' variant='outline'>
-				TEAM MANAGEMENT
+				{t('Success.teamManagementButton')}
 			</Button>
 		</MessageBox>
 	)

@@ -34,7 +34,9 @@ export default async function TeamPage() {
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	if (!session) redirect('/unauthorized')
 
+	const t = await getTranslations('TeamPage')
 	const supabase = createClient(cookies())
+
 	const { data } = await supabase
 		.from('players')
 		.select('role, teams(*)')
@@ -61,7 +63,7 @@ export default async function TeamPage() {
 	return (
 		<div>
 			<Background className='py-8'>
-				<Heading>MY TEAM</Heading>
+				<Heading>{t('Headings.team')}</Heading>
 				<Divider />
 
 				<section className='padding space-y-4'>
@@ -83,7 +85,7 @@ export default async function TeamPage() {
 							</div>
 							<div>
 								<span className='font-extrabold text-xs md:text-sm'>
-									TIMEZONE:
+									{t('timezone')}:
 								</span>{' '}
 								{team.timezone}
 							</div>
@@ -92,26 +94,26 @@ export default async function TeamPage() {
 
 					{isCaptain ? (
 						<div className='flex gap-3'>
-							<Button className='w-[180px]'>EDIT TEAM</Button>
+							<Button className='w-[180px]'>{t('Buttons.edit')}</Button>
 							<form action={deleteTeam}>
 								<input name='csrf_token' defaultValue={csrfToken} hidden />
 								<input name='team_id' defaultValue={team.id} hidden />
 								<input name='user_id' defaultValue={session.sub} hidden />
 								<Button variant='outline' className='w-[180px]'>
-									DELETE TEAM
+									{t('Buttons.delete')}
 								</Button>
 							</form>
 						</div>
 					) : (
-						<Button className='w-[180px]'>LEAVE TEAM</Button>
+						<Button className='w-[180px]'>{t('Buttons.leave')}</Button>
 					)}
 				</section>
 			</Background>
 
 			<section className='py-8 text-light-blue'>
-				<Heading>PLAYER LIST</Heading>
+				<Heading>{t('Headings.player')}</Heading>
 				<Divider className='bg-light-blue' />
-				<Heading sub>CURRENT MEMBERS</Heading>
+				<Heading sub>{t('Players.heading')}</Heading>
 
 				<Suspense fallback={<SectionLoader className='h-[311px]' />}>
 					<Players
@@ -122,9 +124,15 @@ export default async function TeamPage() {
 				</Suspense>
 
 				<Divider variant='single' className='bg-light-blue' />
-				<Heading sub>OUTGOING INVITES</Heading>
+				<Heading sub>{t('Invites.heading')}</Heading>
 
-				{isCaptain && <Search teamId={team.id} />}
+				{isCaptain && (
+					<Search
+						teamId={team.id}
+						inviteButtonText={t('Invites.Invite.inviteButton')}
+						placeholderText={t('Invites.Invite.placeholder')}
+					/>
+				)}
 				<Suspense fallback={<SectionLoader className='h-[311px]' />}>
 					<Invites teamId={team.id} isCaptain={isCaptain} />
 				</Suspense>

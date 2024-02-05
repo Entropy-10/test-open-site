@@ -64,26 +64,31 @@ export const features: Feature[] = [
 
 export const songs = [
 	{
+		id: 0,
 		link: 'https://open.spotify.com/track/',
 		name: 'Fermion Amplification',
 		artist: 'Kou!'
 	},
 	{
+		id: 1,
 		link: 'https://open.spotify.com/track/',
 		name: 'RE_generate:fractal',
 		artist: 'Kou!'
 	},
 	{
+		id: 2,
 		link: 'https://open.spotify.com/track/',
 		name: 'Coming Soon',
 		artist: 'Aethral'
 	},
 	{
+		id: 3,
 		link: 'https://open.spotify.com/track/',
 		name: 'Coming Soon',
 		artist: 'Aethral'
 	},
 	{
+		id: 4,
 		link: 'https://open.spotify.com/track/',
 		name: 'Coming Soon',
 		artist: 'Kanemiko'

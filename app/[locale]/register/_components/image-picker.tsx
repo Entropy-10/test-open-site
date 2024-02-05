@@ -9,19 +9,24 @@ import type { UseFormRegisterReturn } from 'react-hook-form'
 interface ImagePickerProps extends UseFormRegisterReturn {
 	previewImage: string | null
 	clearPreviewImage: () => void
+	uploadText: string
+	recommendedText: string
 }
 
 const ImagePicker = forwardRef<HTMLInputElement, ImagePickerProps>(
-	({ previewImage, clearPreviewImage, ...props }, forwardedRef) => {
+	(
+		{ previewImage, clearPreviewImage, uploadText, recommendedText, ...props },
+		forwardedRef
+	) => {
 		return (
 			<div className='h-[96px] w-[216px] border border-dark-blue border-dashed p-1'>
 				<div className='relative flex size-full items-center justify-center bg-[#E6E5E1] text-center text-dark-blue text-xs'>
 					<label htmlFor='file-upload' className='cursor-pointer'>
 						<div className='flex items-center justify-center'>
-							<p className='text-dark-blue text-xs hover:text-light-blue'>
-								<span className='font-semibold'>Click here to upload</span>
-								<br /> Recommended Ratio 9:4
-							</p>
+							<div className='text-dark-blue text-xs hover:text-light-blue'>
+								<div className='font-semibold'>{uploadText}</div>
+								{recommendedText}
+							</div>
 						</div>
 
 						<input

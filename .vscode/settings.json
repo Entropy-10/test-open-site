@@ -1,4 +1,5 @@
 {
 	"i18n-ally.localesPaths": ["messages"],
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"i18n-ally.keystyle": "nested"
 }

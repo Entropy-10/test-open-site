@@ -6,6 +6,7 @@ import { relink } from '../_actions/relink'
 import { update } from '../_actions/update'
 import UpdateButton from './update-button'
 
+import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
 import type { Tables } from '~/types/supabase'
 
@@ -24,6 +25,7 @@ export default function AvatarInfo({
 }: AvatarInfoProps) {
 	const pathname = headers().get('x-pathname') ?? '/profile'
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
+	const t = useTranslations('ProfilePage.Buttons')
 
 	return (
 		<div className={cn('flex gap-2', className)}>
@@ -33,16 +35,19 @@ export default function AvatarInfo({
 					height={123}
 					sizes='(min-width: 768px) 123px, 96px'
 					src={type === 'osu' ? user.osu_avatar : user.discord_avatar ?? ''}
-					alt='osu pfp'
+					alt='pfp'
 					className='mb-4 size-24 border-2 border-milky-white md:size-[123px]'
 				/>
 				<form action={type === 'discord' ? relink : update}>
 					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='pathname' defaultValue={pathname} hidden />
 					{type === 'osu' ? (
-						<UpdateButton />
+						<UpdateButton
+							text={t('Update.text')}
+							loadingText={t('Update.loadingText')}
+						/>
 					) : (
-						<Button className='w-24 md:w-[123px]'>RELINK</Button>
+						<Button className='w-24 md:w-[123px]'>{t('relink')}</Button>
 					)}
 				</form>
 			</div>
