@@ -196,9 +196,9 @@
 		}
 	},
 	"InfoPage": {
-		"heading": "GENERAL INFO"
+		"heading": "概要信息"
 	},
 	"Components": {
-		"comingSoon": "Coming Soon"
+		"comingSoon": "未完待续"
 	}
 }
