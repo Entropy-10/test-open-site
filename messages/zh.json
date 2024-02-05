@@ -1,7 +1,7 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "一个Open Rank，使用Osu! lazer客户端的比赛",
+			"description": "一个Open Rank，Osu! lazer的比赛",
 			"hostTitle": "主办"
 		},
 		"Features": {
@@ -17,13 +17,13 @@
 			},
 			"Countdown": {
 				"titleSectionOne": "赛事",
-				"titleSectionTwo": "开始于"
+				"titleSectionTwo": "始于"
 			}
 		},
 		"Originals": {
 			"title": "原创曲",
-			"subtitle": "敬请期待原创歌曲",
-			"description": "一些精英将专门谱写独占的 TEST 原创曲。专为TEST Open 2024打造的曲目将独具风格，充满激情。只有经过努力练习证明自己技术卓绝众人的选手才能到达总决赛的舞台。你是那其中之一吗？",
+			"subtitle": "定制歌曲即将揭晓",
+			"description": "一些精英将专门谱写独占的 TEST 原创曲。专为TEST Open 2024打造的定制曲目将独具风格，充满激情。只有经过努力练习证明自己技术卓绝众人的选手才能到达总决赛的舞台。你是那其中之一吗？",
 			"tracksTitle": "曲目列表",
 			"listenButton": "立刻收听"
 		}
