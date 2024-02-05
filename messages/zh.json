@@ -11,9 +11,9 @@
 				"schedule": "赛程"
 			},
 			"Descriptions": {
-				"mappool": "一个每周引入新mods的lazer mod图池。",
-				"format": "一个不限排名的双败3v3赛事",
-				"schedule": "观看在Twitch上直播的即将到来的比赛。"
+				"mappool": "一个每周引进新模组的lazer模组池。",
+				"format": "一个不限排名的双败3v3赛事。",
+				"schedule": "观看即将到来的，于Twitch上直播的比赛。"
 			},
 			"Countdown": {
 				"titleSectionOne": "赛事",
@@ -23,7 +23,7 @@
 		"Originals": {
 			"title": "原创曲",
 			"subtitle": "定制歌曲即将揭晓",
-			"description": "随赛程进行将逐步解锁独家的TEST原创曲。独具天赋的创作者所创造的自定义曲目将随四分之一决赛，半决赛，决赛及总决赛的进程逐步揭晓。这些利用原创曲目，独具风格及艺术的铺面将仅为赛事顶尖的参赛者所保留。",
+			"description": "随赛程进行将逐步解锁独家的TEST原创曲。才华横溢的曲师们创造的定制曲目将随赛事进入到四分之一决赛，半决赛，决赛及总决赛阶段时一一揭晓。这些使用原创曲目，兼具风格及艺术的谱面为赛事中顶尖的参赛者量身打造。",
 			"tracksTitle": "曲目列表",
 			"listenButton": "立刻收听"
 		}
@@ -89,14 +89,14 @@
 		},
 		"Team": {
 			"heading": "当前队伍",
-			"none": "你当前没有加入任何队伍。通过接受待定的邀请来加入一个。",
+			"none": "你当前没有加入任何队伍。通过接受待定邀请以加入一个队伍。",
 			"timezone": "时区",
 			"joined": "加入于",
 			"manageTeamButton": "管理我的队伍"
 		},
 		"Invites": {
 			"heading": "待定邀请",
-			"none": "你当前尚未收到任何邀请。可以等待邀请，或者创建一个自己的队伍。",
+			"none": "你当前尚未收到任何邀请。可以等待他人发送邀请，或自己创建一个队伍。",
 			"Invite": {
 				"timezone": "时区",
 				"invited": "邀请于",
@@ -199,6 +199,6 @@
 		"heading": "概要信息"
 	},
 	"Components": {
-		"comingSoon": "未完待续"
+		"comingSoon": "敬请期待"
 	}
 }
