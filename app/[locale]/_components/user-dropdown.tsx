@@ -18,6 +18,7 @@ export default function UserDropdown({
 	inviteCount
 }: UserDropdownProps) {
 	const t = useTranslations('NavItems')
+	const buttonT = useTranslations('Buttons')
 
 	return (
 		<Dropdown.Root>
@@ -88,7 +89,10 @@ export default function UserDropdown({
 				</div>
 
 				<Dropdown.Item className='p-0 data-[highlighted]:bg-red-400'>
-					<SignOutButton className='h-full w-full px-3 py-0.5 hover:text-milky-white' />
+					<SignOutButton
+						text={buttonT('signOut')}
+						className='h-full w-full px-3 py-0.5 hover:text-milky-white'
+					/>
 				</Dropdown.Item>
 			</Dropdown.Content>
 		</Dropdown.Root>
