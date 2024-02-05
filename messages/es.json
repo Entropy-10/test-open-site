@@ -22,8 +22,8 @@
 		},
 		"Originals": {
 			"title": "Originales",
-			"subtitle": "CUSTOM SONGS COMING SOON.",
-			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
+			"subtitle": "MUSICA ORIGINAL MUY PRONTO.",
+			"description": "Avanza a través de rondas para desbloquear TEST Originals exclusivas. Creadores talentosos crearon música original que se revelaran progresivamente en clasificatorias, semi finales, finales y la gran final. Con cada música original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
 			"tracksTitle": "LISTA DE CANCIONES.",
 			"listenButton": "ESCUCHA AHORA"
 		}
@@ -32,20 +32,20 @@
 		"home": "INICIO",
 		"mappool": "MAPPOOL",
 		"schedule": "HORARIOS",
-		"teams": "TEAMS",
+		"teams": "EQUIPOS",
 		"info": "INFORMACIÓN",
 		"sheet": "SHEET PRINCIPAL",
-		"invites": "INVITES",
-		"team": "TEAM",
-		"profile": "PROFILE"
+		"invites": "INVITACIONES",
+		"team": "MI EQUIPO",
+		"profile": "MI PERFIL"
 	},
 	"Buttons": {
-		"register": "REGISTER",
+		"register": "REGISTRATE",
 		"signIn": "INICIAR SESIÓN",
 		"signOut": "CERRAR SESIÓN"
 	},
 	"Status": {
-		"operational": "All services are online",
+		"operational": "Todos los servicios están online",
 		"downtime": "Some services are down",
 		"degraded": "Some services are degraded",
 		"maintenance": "Ongoing maintenance"
