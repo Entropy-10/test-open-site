@@ -11,9 +11,9 @@
 				"schedule": "赛程"
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
+				"mappool": "一个每周引入新mods的lazer mod图池。",
 				"format": "一个不限排名的双败3v3赛事",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"schedule": "观看在Twitch上直播的即将到来的比赛。"
 			},
 			"Countdown": {
 				"titleSectionOne": "赛事",
@@ -23,7 +23,7 @@
 		"Originals": {
 			"title": "原创曲",
 			"subtitle": "定制歌曲即将揭晓",
-			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
+			"description": "随赛程进行将逐步解锁独家的TEST原创曲。独具天赋的创作者所创造的自定义曲目将随四分之一决赛，半决赛，决赛及总决赛的进程逐步揭晓。这些利用原创曲目，独具风格及艺术的铺面将仅为赛事顶尖的参赛者所保留。",
 			"tracksTitle": "曲目列表",
 			"listenButton": "立刻收听"
 		}
@@ -35,9 +35,9 @@
 		"teams": "队伍",
 		"info": "信息",
 		"sheet": "赛程表",
-		"invites": "INVITES",
-		"team": "TEAM",
-		"profile": "PROFILE"
+		"invites": "邀请",
+		"team": "队伍",
+		"profile": "个人信息"
 	},
 	"Buttons": {
 		"register": "注册",
@@ -73,125 +73,125 @@
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "RELINK",
+			"relink": "重新绑定",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "更新",
+				"loadingText": "更新中"
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE",
-			"team": "MY TEAM"
+			"profile": "个人信息",
+			"team": "我的队伍"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
-			"countryRank": "COUNTRY RANK"
+			"rank": "全球排名",
+			"countryRank": "地区排名"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
-			"timezone": "TIMEZONE",
-			"joined": "JOINED",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"heading": "当前队伍",
+			"none": "你当前没有加入任何队伍。通过接受待定的邀请来加入一个。",
+			"timezone": "时区",
+			"joined": "加入于",
+			"manageTeamButton": "管理我的队伍"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "待定邀请",
+			"none": "你当前尚未收到任何邀请。可以等待邀请，或者创建一个自己的队伍。",
 			"Invite": {
-				"timezone": "TIMEZONE",
-				"invited": "INVITED",
+				"timezone": "时区",
+				"invited": "邀请于",
 				"Buttons": {
-					"accept": "ACCEPT",
-					"deny": "DENY"
+					"accept": "接受",
+					"deny": "拒绝"
 				}
 			}
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "队伍注册",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"title": "注册已截止！",
+			"message": "直到赛事开始前注册尚处于关闭状态。请在主页倒计时结束后再来查看本页面。"
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
-			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"heading": "创建队伍",
+			"teamName": "队伍名称",
+			"teamAcronym": "队名缩写",
+			"timezone": "时区",
+			"teamFlag": "队标",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "创建",
+				"loadingText": "创建中"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"title": "队伍创建完成！",
+				"message": "欢迎来到TEST Open，点击下方的按钮来访问你的队伍管理页面并邀请选手。",
+				"teamManagementButton": "队伍管理"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"upload": "点击此处上传",
+				"recommended": "推荐比例为 9:4"
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "队伍列表",
+		"teamsRegistered": "个队伍已经注册"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"authFailed": "授权失败！",
+		"unauthorized": "未授权！",
+		"homeButton": "主页",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "欲访问该页面请先登录。"
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "服务器验证",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
-			"verified": "Welcome to the TEST Open Discord server!",
-			"defaultError": "Verification failed. Please try again later.",
-			"default": "Please click the button below to gain access to the server."
+			"signIn": "欲进行验证请先登录。",
+			"verified": "欢迎来到TEST Open Discord服务器！",
+			"defaultError": "验证失败。请稍后重试。",
+			"default": "请点击下方按钮以访问服务器。"
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "再试一次",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "验证",
+				"loadingText": "验证中"
 			}
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM",
-			"player": "PLAYER LIST"
+			"team": "我的队伍",
+			"player": "选手列表"
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "时区",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "删除队伍",
+			"edit": "修改队伍",
+			"leave": "离开队伍"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "当前成员",
 			"Player": {
-				"rank": "RANK",
+				"rank": "排名",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "移除选手"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"heading": "已发送的邀请",
+			"error": "抱歉，我们未能获取你队伍中的选手信息。",
+			"none": "你当前尚未发出任何邀请。使用上方的邀请选手栏来开始。",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "排名",
 				"discord": "DISCORD",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "发送于",
+				"deleteButton": "删除邀请",
+				"inviteButton": "邀请",
+				"placeholder": "输入 osu 用户名..."
 			}
 		}
 	},
