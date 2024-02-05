@@ -78,8 +78,8 @@ export const songs = [
 	{
 		id: 2,
 		link: 'https://open.spotify.com/track/',
-		name: 'Coming Soon',
-		artist: 'Aethral'
+		name: 'Twilight of the Abyss',
+		artist: 'Kanemiko'
 	},
 	{
 		id: 3,
@@ -91,7 +91,7 @@ export const songs = [
 		id: 4,
 		link: 'https://open.spotify.com/track/',
 		name: 'Coming Soon',
-		artist: 'Kanemiko'
+		artist: 'Aethral'
 	}
 ]
 

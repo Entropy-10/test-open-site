@@ -9,14 +9,11 @@ import * as Dropdown from '~/components/ui/dropdown'
 import NavItem from '~/components/ui/nav-item'
 
 interface MobileNavProps {
-	session: Session | null
+	user: Session['user'] | undefined
 	inviteCount: number | null
 }
 
-export default async function MobileNav({
-	session,
-	inviteCount
-}: MobileNavProps) {
+export default async function MobileNav({ user, inviteCount }: MobileNavProps) {
 	const t = await getTranslations('NavItems')
 	const buttonT = await getTranslations('Buttons')
 
@@ -33,12 +30,12 @@ export default async function MobileNav({
 						</div>
 					) : null}
 
-					{session && (
+					{user && (
 						<Image
 							width={26}
 							height={26}
 							alt='pfp'
-							src={session.osu_avatar}
+							src={user.osu_avatar}
 							className='size-[26px] select-none'
 						/>
 					)}
@@ -63,7 +60,7 @@ export default async function MobileNav({
 						<div className='h-px w-full bg-light-blue' />
 					</div>
 
-					{session ? (
+					{user ? (
 						<>
 							<Dropdown.Item className='p-0'>
 								<NavItem

@@ -2,19 +2,19 @@
 
 import { env } from '@env'
 import { createTeamAction } from '@schemas'
+import { getSession } from '@session'
 import { getDoc } from '@sheets'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
 export async function createTeam(
 	formData: FormData
 ): Promise<{ error: CreateTeamError | null }> {
-	const session = getSession()
+	const session = await getSession()
 	if (!session) redirect('/unauthorized')
 
-	if (session.restricted)
+	if (session.user.restricted)
 		return {
 			error: {
 				type: 'restricted',

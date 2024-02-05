@@ -1,4 +1,4 @@
-import { getSession } from '@utils/server'
+import { getSession } from '@session'
 
 import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
@@ -16,8 +16,8 @@ interface VerifyPageProps {
 	}
 }
 
-export default function VerifyPage({ searchParams }: VerifyPageProps) {
-	const session = getSession()
+export default async function VerifyPage({ searchParams }: VerifyPageProps) {
+	const session = await getSession()
 	const t = useTranslations('VerifyPage')
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	const { status, message } = searchParams

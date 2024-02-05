@@ -1,13 +1,13 @@
 import { discordAuth } from '@discord'
 import { env } from '@env'
 import { createClient } from '@supabase/server'
-import { signJWT, verifyJWT } from '@utils/server'
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 import { Client } from 'osu-web.js'
 
 import { authError, getDiscordAvatarUrl } from '../../utils'
 
+import { decrypt, encrypt } from '@session'
 import type { NextRequest } from 'next/server'
 import type { Token } from 'osu-web.js'
 
@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
 	const osuTokensJWT = cookies().get('osu-tokens')?.value
 	if (!osuTokensJWT) return authError(url)
 
-	const osuTokens = verifyJWT<Token>(osuTokensJWT)
+	const osuTokens = await decrypt<Token>(osuTokensJWT)
 	if (!osuTokens) return authError(url)
 
 	const osuClient = new Client(osuTokens.access_token)
@@ -66,17 +66,23 @@ export async function GET(request: NextRequest) {
 
 		if (tokenError) throw tokenError
 
-		const sessionData = {
+		const expires = new Date(Date.now() + 604800 * 1000)
+		const session = await encrypt({
 			sub: osuUser.id.toString(),
 			role: 'authenticated',
-			osu_name: osuUser.username,
-			osu_avatar: osuUser.avatar_url,
-			restricted: osuUser.is_restricted,
-			discord_id: discordUser.id
-		}
+			user: {
+				osu_name: osuUser.username,
+				osu_avatar: osuUser.avatar_url,
+				restricted: osuUser.is_restricted,
+				discord_id: discordUser.id
+			},
+			expires
+		})
+
+		if (cookies().get('session')?.value) cookies().delete('session')
 
 		cookies().delete('osu-tokens')
-		cookies().set('session', signJWT(sessionData), { path: '/' })
+		cookies().set('session', session, { expires, httpOnly: true })
 	} catch (err) {
 		cookies().delete('return-url')
 		cookies().delete('osu-tokens')

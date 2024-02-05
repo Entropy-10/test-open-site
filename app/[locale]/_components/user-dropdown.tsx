@@ -9,14 +9,11 @@ import SignOutButton from '~/components/sign-out-button'
 import NavItem from '~/components/ui/nav-item'
 
 interface UserDropdownProps {
-	session: Session
+	user: Session['user']
 	inviteCount: number | null
 }
 
-export default function UserDropdown({
-	session,
-	inviteCount
-}: UserDropdownProps) {
+export default function UserDropdown({ user, inviteCount }: UserDropdownProps) {
 	const t = useTranslations('NavItems')
 	const buttonT = useTranslations('Buttons')
 
@@ -37,11 +34,11 @@ export default function UserDropdown({
 						width={26}
 						height={26}
 						alt='pfp'
-						src={session.osu_avatar}
+						src={user.osu_avatar}
 						className='size-[26px] select-none'
 					/>
 					<span className='mx-1 max-w-28 truncate text-left font-semibold text-sm'>
-						{session.osu_name}
+						{user.osu_name}
 					</span>
 				</div>
 

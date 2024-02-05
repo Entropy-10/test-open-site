@@ -1,6 +1,6 @@
+import { getSession } from '@session'
 import { navItems } from '@siteConfig'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { getTranslations } from 'next-intl/server'
 import { cookies } from 'next/headers'
 
@@ -18,7 +18,7 @@ interface HeaderProps {
 
 export default async function Header({ locale }: HeaderProps) {
 	const t = await getTranslations('NavItems')
-	const session = getSession()
+	const session = await getSession()
 	const supabase = createClient(cookies())
 	let inviteCount: number | null = null
 
@@ -59,10 +59,10 @@ export default async function Header({ locale }: HeaderProps) {
 
 				<div className='flex gap-3'>
 					<LanguagePicker locale={locale} />
-					<MobileNav session={session} inviteCount={inviteCount} />
+					<MobileNav user={session?.user} inviteCount={inviteCount} />
 
-					{session ? (
-						<UserDropdown session={session} inviteCount={inviteCount} />
+					{session?.user ? (
+						<UserDropdown user={session.user} inviteCount={inviteCount} />
 					) : (
 						<div className='hidden md:flex'>
 							<SignInButton />

@@ -1,5 +1,5 @@
 import { createMetadata } from '@metadata'
-import { getSession } from '@utils/server'
+import { getSession } from '@session'
 import { getTranslations } from 'next-intl/server'
 import { redirect } from 'next/navigation'
 
@@ -24,8 +24,8 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	})
 }
 
-export default function RegisterPage() {
-	const session = getSession()
+export default async function RegisterPage() {
+	const session = await getSession()
 	if (!session) redirect('/unauthorized')
 
 	const t = useTranslations('RegistrationPage')
@@ -45,7 +45,10 @@ export default function RegisterPage() {
 				<NextIntlClientProvider
 					messages={pick(messages, 'RegistrationPage.Form')}
 				>
-					<CreateTeamForm osuId={session.sub} discordId={session.discord_id} />
+					<CreateTeamForm
+						osuId={session.sub}
+						discordId={session.user.discord_id}
+					/>
 				</NextIntlClientProvider>
 			) : (
 				<MessageBox title={t('Closed.title')} message={t('Closed.message')} />

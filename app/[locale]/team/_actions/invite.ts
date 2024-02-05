@@ -1,7 +1,7 @@
 'use server'
 
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -9,7 +9,7 @@ import { redirect } from 'next/navigation'
 export async function invite(formData: FormData) {
 	const teamId = formData.get('team_id')?.toString()
 	const userId = formData.get('user_id')?.toString()
-	const session = getSession()
+	const session = await getSession()
 
 	if (session?.sub === userId) {
 		redirect(

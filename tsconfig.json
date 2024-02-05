@@ -24,6 +24,7 @@
       "@utils/*": ["lib/utils/*"],
       "@types": ["types/index.ts"],
       "@schemas": ["lib/schemas.ts"],
+      "@session": ["lib/session.ts"],
       "@metadata": ["lib/metadata.ts"],
       "@navigation": ["lib/navigation.ts"],
       "@siteConfig": ["lib/site-config.ts"],

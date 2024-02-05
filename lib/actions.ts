@@ -1,10 +1,10 @@
 'use server'
 
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
+import { redirect } from '@navigation'
+import { deleteSession } from '@session'
 
 export async function signOut(csrfToken: string) {
-	cookies().delete('session')
+	await deleteSession()
 	redirect('/')
 }
 

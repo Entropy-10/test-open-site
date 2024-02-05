@@ -7,13 +7,13 @@ import {
 	updateGuildMember
 } from '@discord'
 import { env } from '@env'
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
 export async function verify() {
-	const session = getSession()
+	const session = await getSession()
 	if (!session) return verifyError('Invalid session. Try signing in again.')
 
 	const supabase = createClient(cookies())

@@ -1,8 +1,8 @@
 'use server'
 
 import { osuAuth } from '@osu'
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { AxiosError } from 'axios'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
@@ -13,7 +13,7 @@ import type { StatisticsRulesets, UserExtended } from 'osu-web.js'
 
 export async function update(formData: FormData) {
 	const pathname = formData.get('pathname')?.toString()
-	const session = getSession()
+	const session = await getSession()
 	if (!session) {
 		return updateError(
 			pathname,

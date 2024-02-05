@@ -1,5 +1,5 @@
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { cookies } from 'next/headers'
 import Image from 'next/image'
 import { notFound, redirect } from 'next/navigation'
@@ -16,7 +16,7 @@ import Invites from './_components/invites'
 import Team from './_components/team'
 
 export default async function ProfilePage() {
-	const session = getSession()
+	const session = await getSession()
 	if (!session) redirect('/unauthorized')
 
 	const t = await getTranslations('ProfilePage')
