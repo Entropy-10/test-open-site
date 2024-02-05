@@ -4,6 +4,7 @@ import ChevronDown from '~/components/icons/chevron-down'
 import * as Dropdown from '~/components/ui/dropdown'
 
 import type { Session } from '@types'
+import { useTranslations } from 'next-intl'
 import SignOutButton from '~/components/sign-out-button'
 import NavItem from '~/components/ui/nav-item'
 
@@ -16,6 +17,8 @@ export default function UserDropdown({
 	session,
 	inviteCount
 }: UserDropdownProps) {
+	const t = useTranslations('NavItems')
+
 	return (
 		<Dropdown.Root>
 			<Dropdown.Trigger className='group relative hidden max-w-44 items-center justify-between bg-gradient-to-r from-[-100%] from-light-blue to-salmon px-1 py-0.5 text-milky-white md:flex focus:outline-none'>
@@ -51,7 +54,7 @@ export default function UserDropdown({
 						activeClassName='bg-light-blue text-milky-white'
 						className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 					>
-						PROFILE
+						{t('profile')}
 					</NavItem>
 				</Dropdown.Item>
 
@@ -61,7 +64,7 @@ export default function UserDropdown({
 						activeClassName='bg-light-blue text-milky-white'
 						className='flex h-full w-full items-center justify-between px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 					>
-						INVITES
+						{t('invites')}
 						{inviteCount ? (
 							<div className='flex size-4 items-center justify-center rounded-full bg-red-500 font-bold text-milky-white text-xs'>
 								{inviteCount}
@@ -76,7 +79,7 @@ export default function UserDropdown({
 						activeClassName='bg-light-blue text-milky-white'
 						className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 					>
-						TEAM
+						{t('team')}
 					</NavItem>
 				</Dropdown.Item>
 

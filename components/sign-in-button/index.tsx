@@ -1,4 +1,5 @@
 import { VariantProps } from 'class-variance-authority'
+import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
 import Button, { buttonVariants } from '../ui/Button'
 import { signIn } from './actions'
@@ -11,6 +12,7 @@ export default function SignInButton({
 	className,
 	variant
 }: SignInButtonProps) {
+	const t = useTranslations('Buttons')
 	const pathname = headers().get('x-pathname') ?? '/'
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 
@@ -19,7 +21,7 @@ export default function SignInButton({
 			<input name='csrf_token' defaultValue={csrfToken} hidden />
 			<input name='return-path' defaultValue={pathname} hidden />
 			<Button variant={variant ?? 'primary'} className={className}>
-				SIGN IN
+				{t('signIn')}
 			</Button>
 		</form>
 	)

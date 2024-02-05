@@ -9,6 +9,7 @@ import Link from './_components/link'
 import List from './_components/list'
 
 import type { MetadataProps } from '@types'
+import { useTranslations } from 'next-intl'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -20,10 +21,11 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 }
 
 export default function InfoPage() {
+	const t = useTranslations('InfoPage')
 	return (
 		<div>
 			<Background className='py-10'>
-				<Heading>GENERAL INFO</Heading>
+				<Heading>{t('heading')}</Heading>
 				<Divider />
 
 				<List>

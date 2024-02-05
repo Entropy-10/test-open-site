@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { deleteInvite } from '../_actions/delete-invite'
 import DeleteButton from './delete-button'
 
+import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
 import type { Tables } from '~/types/supabase'
 
@@ -23,6 +24,7 @@ export default function Invite({ invite, isCaptain }: InviteProps) {
 	if (!invite.users) return null
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	const user = invite.users
+	const t = useTranslations('TeamPage.Invites.Invite')
 
 	return (
 		<div className='w-[200px] bg-gradient-to-r from-light-blue to-lavender p-4 md:w-[250px]'>
@@ -45,14 +47,15 @@ export default function Invite({ invite, isCaptain }: InviteProps) {
 
 			<div className='mb-4 text-dark-blue text-xs md:mb-8 md:text-sm'>
 				<div>
-					<span className='font-extrabold'>RANK:</span> #
+					<span className='font-extrabold'>{t('rank')}:</span> #
 					{user.rank?.toLocaleString()}
 				</div>
 				<div>
-					<span className='font-extrabold'>DISCORD:</span> @{user.discord_tag}
+					<span className='font-extrabold'>{t('discord')}:</span> @
+					{user.discord_tag}
 				</div>
 				<div>
-					<span className='font-extrabold'>SENT:</span>{' '}
+					<span className='font-extrabold'>{t('sent')}:</span>{' '}
 					{dayjs(invite.created_at).format('MMMM D, YYYY')}
 				</div>
 			</div>
@@ -61,7 +64,7 @@ export default function Invite({ invite, isCaptain }: InviteProps) {
 				<form action={deleteInvite}>
 					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
-					<DeleteButton />
+					<DeleteButton text={t('deleteButton')} />
 				</form>
 			)}
 		</div>

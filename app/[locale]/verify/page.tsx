@@ -1,5 +1,6 @@
 import { getSession } from '@utils/server'
 
+import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
 import MessageBox from '~/components/message-box'
 import SignInButton from '~/components/sign-in-button'
@@ -17,6 +18,7 @@ interface VerifyPageProps {
 
 export default function VerifyPage({ searchParams }: VerifyPageProps) {
 	const session = getSession()
+	const t = useTranslations('VerifyPage')
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	const { status, message } = searchParams
 
@@ -24,27 +26,30 @@ export default function VerifyPage({ searchParams }: VerifyPageProps) {
 	return (
 		<Background className='flex min-h-screen items-center justify-center'>
 			<MessageBox
-				title='SERVER VERIFICATION'
+				title={t('title')}
 				message={
 					!session
-						? 'Sign in first before attempting to verify.'
+						? t('Messages.signIn')
 						: status === 'success'
-						  ? 'Welcome to the TEST Open Discord server!'
+						  ? t('Messages.verified')
 						  : status === 'error'
-							  ? `${message ?? 'Verification failed. Please try again later.'}`
-							  : 'Please click the button below to gain access to the server.'
+							  ? `${message ?? t('Messages.defaultError')}`
+							  : t('Messages.default')
 				}
 			>
 				{!session ? (
 					<SignInButton variant='outline' />
 				) : status === 'error' ? (
 					<Button href='/verify' variant='outline'>
-						TRY AGAIN
+						{t('Buttons.tryAgain')}
 					</Button>
 				) : (
 					<form action={verify}>
 						<input name='csrf_token' defaultValue={csrfToken} hidden />
-						<VerifyButton />
+						<VerifyButton
+							text={t('Buttons.Verify.text')}
+							loadingText={t('Buttons.Verify.loadingText')}
+						/>
 					</form>
 				)}
 			</MessageBox>

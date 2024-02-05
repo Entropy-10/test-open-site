@@ -11,6 +11,8 @@ import CreateTeamForm from './_components/create-team-form'
 import { env } from '@env'
 import type { MetadataProps } from '@types'
 import { isProd } from '@utils/client'
+import pick from 'lodash/pick'
+import { NextIntlClientProvider, useMessages, useTranslations } from 'next-intl'
 import MessageBox from '~/components/message-box'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
@@ -25,6 +27,9 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 export default function RegisterPage() {
 	const session = getSession()
 	if (!session) redirect('/unauthorized')
+
+	const t = useTranslations('RegistrationPage')
+	const messages = useMessages()
 	const allowRegs = isProd
 		? Date.now() >= Number(env.NEXT_PUBLIC_START_DATE)
 		: true
@@ -32,17 +37,18 @@ export default function RegisterPage() {
 	return (
 		<Background className='relative flex min-h-screen items-center justify-center'>
 			<div className='absolute top-10 left-0'>
-				<Heading>TEAM REGISTRATION</Heading>
+				<Heading>{t('heading')}</Heading>
 				<Divider />
 			</div>
 
 			{allowRegs ? (
-				<CreateTeamForm osuId={session.sub} discordId={session.discord_id} />
+				<NextIntlClientProvider
+					messages={pick(messages, 'RegistrationPage.Form')}
+				>
+					<CreateTeamForm osuId={session.sub} discordId={session.discord_id} />
+				</NextIntlClientProvider>
 			) : (
-				<MessageBox
-					title='REGISTRATIONS CLOSED!'
-					message='Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended.'
-				/>
+				<MessageBox title={t('Closed.title')} message={t('Closed.message')} />
 			)}
 		</Background>
 	)

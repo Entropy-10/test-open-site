@@ -5,11 +5,12 @@ import Image from 'next/image'
 import { notFound, redirect } from 'next/navigation'
 import { Suspense } from 'react'
 
+import { getTranslations } from 'next-intl/server'
+import ErrorModal from '~/components/error-modal'
 import SectionLoader from '~/components/section-loader'
 import Background from '~/components/ui/Background'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
-import ErrorModal from '../team/_components/error-modal'
 import AvatarInfo from './_components/avatar-info'
 import Invites from './_components/invites'
 import Team from './_components/team'
@@ -18,7 +19,9 @@ export default async function ProfilePage() {
 	const session = getSession()
 	if (!session) redirect('/unauthorized')
 
+	const t = await getTranslations('ProfilePage')
 	const supabase = createClient(cookies())
+
 	const { data: user } = await supabase
 		.from('users')
 		.select('*')
@@ -31,20 +34,20 @@ export default async function ProfilePage() {
 		<div>
 			<ErrorModal />
 			<Background className='py-8'>
-				<Heading>MY PROFILE</Heading>
+				<Heading>{t('Headings.profile')}</Heading>
 				<Divider />
 
 				<section className='padding flex gap-6 md:gap-20'>
 					<AvatarInfo user={user} type='osu'>
 						<div className='space-y-1'>
 							<div>
-								<span className='font-extrabold'>GLOBAL RANK:</span> #
+								<span className='font-extrabold'>{t('Osu.rank')}:</span> #
 								{user.rank ? user.rank.toLocaleString() : 'No Rank'}
 							</div>
 
 							<div>
-								<span className='font-extrabold'>BWS RANK:</span> #
-								{user.rank ? user.rank.toLocaleString() : 'No Rank'}
+								<span className='font-extrabold'>{t('Osu.countryRank')}:</span>{' '}
+								#{user.rank ? user.rank.toLocaleString() : 'No Rank'}
 							</div>
 						</div>
 
@@ -66,9 +69,9 @@ export default async function ProfilePage() {
 			</Background>
 
 			<section className='py-8 text-light-blue'>
-				<Heading>MY TEAM</Heading>
+				<Heading>{t('Headings.team')}</Heading>
 				<Divider className='bg-light-blue' />
-				<Heading sub>CURRENT TEAM</Heading>
+				<Heading sub>{t('Team.heading')}</Heading>
 
 				<Suspense fallback={<SectionLoader />}>
 					<Team userId={session.sub} />
@@ -76,7 +79,7 @@ export default async function ProfilePage() {
 
 				<Divider variant='single' className='bg-light-blue' />
 				<Heading id='invites' sub>
-					PENDING INVITES
+					{t('Invites.heading')}
 				</Heading>
 
 				<Suspense fallback={<SectionLoader className='h-[311px]' />}>

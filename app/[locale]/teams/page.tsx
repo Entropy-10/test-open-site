@@ -22,6 +22,7 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 }
 
 export default async function TeamsPage() {
+	const t = await getTranslations('TeamsPage')
 	const supabase = createClient(cookies())
 	const { count } = await supabase
 		.from('teams')
@@ -30,10 +31,11 @@ export default async function TeamsPage() {
 	return (
 		<div>
 			<Background className='py-8'>
-				<Heading>TEAM LIST</Heading>
+				<Heading>{t('heading')}</Heading>
 				<Divider />
 				<div className='padding text-xl'>
-					<span className='font-extrabold'>{count ?? 0}</span> TEAMS REGISTERED
+					<span className='font-extrabold'>{count ?? 0}</span>{' '}
+					{t('teamsRegistered')}
 				</div>
 			</Background>
 

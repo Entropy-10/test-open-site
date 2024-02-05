@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/server'
 import dayjs from 'dayjs'
+import { getTranslations } from 'next-intl/server'
 import { cookies } from 'next/headers'
 import Image from 'next/image'
 
@@ -10,6 +11,7 @@ interface TeamProps {
 }
 
 export default async function Team({ userId }: TeamProps) {
+	const t = await getTranslations('ProfilePage.Team')
 	const supabase = createClient(cookies())
 	const { data } = await supabase
 		.from('players')
@@ -19,11 +21,8 @@ export default async function Team({ userId }: TeamProps) {
 
 	if (!data?.teams) {
 		return (
-			<div className='h-48'>
-				<p className='flex h-full items-center justify-center text-center'>
-					You currently do not have a team. <br />
-					Join one by accepting any pending invites.
-				</p>
+			<div className='flex h-48 items-center justify-center text-center'>
+				<p className='max-w-80 text-center'>{t('none')}</p>
 			</div>
 		)
 	}
@@ -45,16 +44,17 @@ export default async function Team({ userId }: TeamProps) {
 				<div>
 					<div className='font-extrabold text-lg md:text-xl'>{team.name}</div>
 					<div className='font-medium text-medium-blue text-sm md:text-base'>
-						<span className='font-extrabold'>TIMEZONE:</span> {team.timezone}
+						<span className='font-extrabold'>{t('timezone')}:</span>{' '}
+						{team.timezone}
 					</div>
 					<div className='font-medium text-medium-blue text-sm md:text-base'>
-						<span className='font-extrabold'>JOINED:</span> {joinedDate}
+						<span className='font-extrabold'>{t('joined')}:</span> {joinedDate}
 					</div>
 				</div>
 			</div>
 
 			<Button className='w-[162px]' href='/team' variant='invertedOutline'>
-				MANAGE MY TEAM
+				{t('manageTeamButton')}
 			</Button>
 		</div>
 	)

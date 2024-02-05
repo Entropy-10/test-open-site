@@ -47,9 +47,8 @@ export default async function MobileNav({
 
 				<Dropdown.Content>
 					{navItems.map(({ link, text }) => (
-						<Dropdown.Item className='p-0'>
+						<Dropdown.Item key={text} className='p-0'>
 							<NavItem
-								key={text}
 								link={link}
 								className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 								activeClassName='bg-light-blue text-milky-white'
@@ -71,7 +70,7 @@ export default async function MobileNav({
 									activeClassName='bg-light-blue text-milky-white'
 									className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 								>
-									PROFILE
+									{t('profile')}
 								</NavItem>
 							</Dropdown.Item>
 
@@ -81,7 +80,7 @@ export default async function MobileNav({
 									activeClassName='bg-light-blue text-milky-white'
 									className='flex h-full w-full items-center justify-between px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 								>
-									INVITES
+									{t('invites')}
 									{inviteCount ? (
 										<div className='flex size-4 items-center justify-center rounded-full bg-red-500 font-bold text-milky-white text-xs'>
 											{inviteCount}
@@ -96,7 +95,7 @@ export default async function MobileNav({
 									activeClassName='bg-light-blue text-milky-white'
 									className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
 								>
-									TEAM
+									{t('team')}
 								</NavItem>
 							</Dropdown.Item>
 
