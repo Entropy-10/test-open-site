@@ -11,9 +11,9 @@
 				"schedule": "HORARIOS."
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
+				"mappool": "Una osu!lazer modpool con nuevos mods cada semana.",
 				"format": "Un torneo de rango abierto, doble eliminación, en formato de 3v3.",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"schedule": "Mira los próximos partidos transmitidos en Twitch."
 			},
 			"Countdown": {
 				"titleSectionOne": "TORNEO",
@@ -22,8 +22,8 @@
 		},
 		"Originals": {
 			"title": "Originales",
-			"subtitle": "MUSICA ORIGINAL MUY PRONTO.",
-			"description": "Avanza a través de rondas para desbloquear TEST Originals exclusivas. Creadores talentosos crearon música original que se revelaran progresivamente en clasificatorias, semi finales, finales y la gran final. Con cada música original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
+			"subtitle": "PRÓXIMAMENTE MUSICA ORIGINAL.",
+			"description": "Avanza a través de rondas para desbloquear TEST Originales exclusivas. Creadores talentosos crearon música original que se revelaran progresivamente en clasificatorias, semifinales, finales y la gran final. Con cada música original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
 			"tracksTitle": "LISTA DE CANCIONES.",
 			"listenButton": "ESCUCHA AHORA"
 		}
@@ -46,9 +46,9 @@
 	},
 	"Status": {
 		"operational": "Todos los servicios están online",
-		"downtime": "Some services are down",
-		"degraded": "Some services are degraded",
-		"maintenance": "Ongoing maintenance"
+		"downtime": "Algunos servicios están caídos",
+		"degraded": "Algunos servicios están degradados",
+		"maintenance": "Mantenimiento en proceso"
 	},
 	"Footer": {
 		"description": "¡UN TORNEO EN osu!lazer RANGO ABIERTO! ORGANIZADO POR TEDDY, ENTROPY Y SORA."
@@ -56,14 +56,14 @@
 	"Metadata": {
 		"description": "El primer torneo de gran escala en osu!lazer rangos abierto. Bienvenido a la nueva experiencia de torneos en osu.",
 		"PageTitles": {
-			"home": "Home",
+			"home": "Inicio",
 			"schedule": "Horarios",
 			"info": "Información",
 			"mappool": "Mappool",
 			"register": "Registrarse",
-			"teams": "Teams",
-			"team": "Team",
-			"signIn": "Sign In"
+			"teams": "Equipos",
+			"team": "Mi Equipo",
+			"signIn": "Iniciar Sesión"
 		}
 	},
 	"Error": {
@@ -73,45 +73,45 @@
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "RELINK",
+			"relink": "REVINCULAR",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "ACTUALIZAR",
+				"loadingText": "ACTUALIZANDO"
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE",
-			"team": "MY TEAM"
+			"profile": "MI PERFIL",
+			"team": "MI EQUIPO"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
-			"countryRank": "COUNTRY RANK"
+			"rank": "CLASIFICACIÓN GLOBAL",
+			"countryRank": "CLASIFICACIÓN NACIONAL"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
-			"timezone": "TIMEZONE",
-			"joined": "JOINED",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"heading": "EQUIPO ACTUAL",
+			"none": "Actualmente no tienes un equipo. Únete a uno aceptando cualquier invitación pendiente.",
+			"timezone": "ZONA HORARIA",
+			"joined": "SE UNIÓ EN",
+			"manageTeamButton": "ADMINISTRAR MI EQUIPO"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "INVITACIONES PENDIENTES",
+			"none": "Actualmente no tienes alguna invitación. Espera por una o crea tu propio equipo.",
 			"Invite": {
-				"timezone": "TIMEZONE",
-				"invited": "INVITED",
+				"timezone": "ZONA HORARIA",
+				"invited": "INVITADO",
 				"Buttons": {
-					"accept": "ACCEPT",
-					"deny": "DENY"
+					"accept": "ACEPTAR",
+					"deny": "RECHAZAR"
 				}
 			}
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "REGISTRAR TU EQUIPO",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"title": "REGISTROS CERRADOS!",
+			"message": "Inscripciones están actualmente cerradas hasta que el torneo comience. Por favor regresa más tarde cuando la cuenta regresiva haya concluido."
 		},
 		"Form": {
 			"heading": "CREATE A TEAM.",
@@ -130,7 +130,7 @@
 			},
 			"ImagePicker": {
 				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"recommended": "Relación de aspecto recomendada 9:4"
 			}
 		}
 	},
@@ -141,9 +141,9 @@
 	"UnauthorizedPage": {
 		"authFailed": "AUTHORIZATION FAILED!",
 		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"homeButton": "INICIO",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "Por favor inicia sesión antes de acceder esta página."
 		}
 	},
 	"VerifyPage": {
@@ -151,8 +151,8 @@
 		"Messages": {
 			"signIn": "Sign in first before attempting to verify.",
 			"verified": "Welcome to the TEST Open Discord server!",
-			"defaultError": "Verification failed. Please try again later.",
-			"default": "Please click the button below to gain access to the server."
+			"defaultError": "Verificación fallida. Por favor intenta más tarde.",
+			"default": "Por favor dale click al botón debajo para acceder al servidor."
 		},
 		"Buttons": {
 			"tryAgain": "TRY AGAIN",
