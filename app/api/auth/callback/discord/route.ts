@@ -79,8 +79,6 @@ export async function GET(request: NextRequest) {
 			expires
 		})
 
-		if (cookies().get('session')?.value) cookies().delete('session')
-
 		cookies().delete('osu-tokens')
 		cookies().set('session', session, { expires, httpOnly: true })
 	} catch (err) {

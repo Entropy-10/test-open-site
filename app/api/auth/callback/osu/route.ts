@@ -16,6 +16,7 @@ export async function GET(request: NextRequest) {
 	if (!code) return authError(url)
 
 	try {
+		cookies().delete('session')
 		const tokens = await osuAuth.requestToken(code)
 		cookies().set('osu-tokens', await encrypt(tokens, '10 mins from now'), {
 			httpOnly: true
