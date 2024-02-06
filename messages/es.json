@@ -1,7 +1,7 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "Un torneo en osu!lazer de rango abierto",
+			"description": "UN TORNEO DE OSU! LAZER DE CLASIFICACIÓN ABIERTA",
 			"hostTitle": "ORGANIZADO POR"
 		},
 		"Features": {
@@ -11,8 +11,8 @@
 				"schedule": "HORARIOS."
 			},
 			"Descriptions": {
-				"mappool": "Una osu!lazer modpool con nuevos mods cada semana.",
-				"format": "Un torneo de rango abierto, doble eliminación, en formato de 3v3.",
+				"mappool": "Un modpool de lazer presentando nuevos mods cada semana.",
+				"format": "Un torneo de clasificación abierta, doble eliminación, en formato de 3v3.",
 				"schedule": "Mira los próximos partidos transmitidos en Twitch."
 			},
 			"Countdown": {
@@ -22,8 +22,8 @@
 		},
 		"Originals": {
 			"title": "Originales",
-			"subtitle": "PRÓXIMAMENTE MUSICA ORIGINAL.",
-			"description": "Avanza a través de rondas para desbloquear TEST Originales exclusivas. Creadores talentosos crearon música original que se revelaran progresivamente en clasificatorias, semifinales, finales y la gran final. Con cada música original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
+			"subtitle": "CANCIONES ORIGINALES, PRÓXIMAMENTE.",
+			"description": "Avanza a través de las rondas para desbloquear Originales de TEST exclusivas. Creadores talentosos compusieron pistas musicales originales que se revelarán progresivamente en clasificatorias, semifinales, finales y la gran final. Cada pista original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
 			"tracksTitle": "LISTA DE CANCIONES.",
 			"listenButton": "ESCUCHA AHORA"
 		}
@@ -96,7 +96,7 @@
 		},
 		"Invites": {
 			"heading": "INVITACIONES PENDIENTES",
-			"none": "Actualmente no tienes alguna invitación. Espera por una o crea tu propio equipo.",
+			"none": "Actualmente no tienes alguna invitación. Espera una o crea tu propio equipo.",
 			"Invite": {
 				"timezone": "ZONA HORARIA",
 				"invited": "INVITADO",
@@ -114,91 +114,91 @@
 			"message": "Inscripciones están actualmente cerradas hasta que el torneo comience. Por favor regresa más tarde cuando la cuenta regresiva haya concluido."
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
-			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"heading": "CREA UN EQUIPO.",
+			"teamName": "Nombre del Equipo",
+			"teamAcronym": "Acrónimo del Equipo",
+			"timezone": "Zona Horaria",
+			"teamFlag": "Bandera del Equipo",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "CREAR",
+				"loadingText": "CREANDO"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"title": "¡EQUIPO CREADO!",
+				"message": "Bienvenido a TEST Open Haz clic en el botón debajo para ver la página donde gestionarás tu equipo y empieza a invitar jugadores.",
+				"teamManagementButton": "GESTIÓN DEL EQUIPO"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
+				"upload": "Haz clic aquí para subir un archivo",
 				"recommended": "Relación de aspecto recomendada 9:4"
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "LISTA DE EQUIPOS",
+		"teamsRegistered": "EQUIPOS REGISTRADOS"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
+		"authFailed": "¡AUTORIZACIÓN FALLIDA!",
+		"unauthorized": "¡NO AUTORIZADO!",
 		"homeButton": "INICIO",
 		"Messages": {
 			"default": "Por favor inicia sesión antes de acceder esta página."
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "VERIFICACIÓN DEL SERVIDOR",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
-			"verified": "Welcome to the TEST Open Discord server!",
+			"signIn": "Inicia sesión antes de intentar verificar.",
+			"verified": "¡Bienvenido al servidor de Discord de TEST Open!",
 			"defaultError": "Verificación fallida. Por favor intenta más tarde.",
 			"default": "Por favor dale click al botón debajo para acceder al servidor."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "INTENTA DENUEVO",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "VERIFICA",
+				"loadingText": "VERIFICANDO"
 			}
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM",
-			"player": "PLAYER LIST"
+			"team": "MI EQUIPO",
+			"player": "LISTA DE JUGADORES"
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "ZONA HORARIA",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "ELIMINAR EQUIPO",
+			"edit": "MODIFICAR EQUIPO",
+			"leave": "SALIRSE DEL EQUIPO"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "MIEMBROS ACTUALES",
 			"Player": {
-				"rank": "RANK",
+				"rank": "CLASIFICACIÓN",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "REMOVER JUGADOR"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"heading": "INVITACIONES SALIENTES",
+			"error": "Lo sentimos, no pudimos conseguir los jugadores dentro de tu equipo.",
+			"none": "Actualmente, no tienes invitaciones salientes. Empieza por usar la barra para invitar jugadores de arriba.",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "CLASIFICACIÓN",
 				"discord": "DISCORD",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "ENVIADO",
+				"deleteButton": "ELIMINAR INVITACIÓN",
+				"inviteButton": "INVITA",
+				"placeholder": "Digita el nombre de usuario en osu..."
 			}
 		}
 	},
 	"InfoPage": {
-		"heading": "GENERAL INFO"
+		"heading": "INFORMACIÓN GENERAL"
 	},
 	"Components": {
-		"comingSoon": "Coming Soon"
+		"comingSoon": "Próximamente"
 	}
 }
