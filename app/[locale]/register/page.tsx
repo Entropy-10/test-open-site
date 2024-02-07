@@ -1,6 +1,6 @@
 import { createMetadata } from '@metadata'
 import { getSession } from '@session'
-import { getTranslations } from 'next-intl/server'
+import { getMessages, getTranslations } from 'next-intl/server'
 import { redirect } from 'next/navigation'
 
 import Background from '~/components/ui/Background'
@@ -12,7 +12,7 @@ import { env } from '@env'
 import type { MetadataProps } from '@types'
 import { isProd } from '@utils/client'
 import pick from 'lodash/pick'
-import { NextIntlClientProvider, useMessages, useTranslations } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl'
 import MessageBox from '~/components/message-box'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
@@ -28,8 +28,8 @@ export default async function RegisterPage() {
 	const session = await getSession()
 	if (!session) redirect('/unauthorized')
 
-	const t = useTranslations('RegistrationPage')
-	const messages = useMessages()
+	const t = await getTranslations('RegistrationPage')
+	const messages = await getMessages()
 	const allowRegs = isProd
 		? Date.now() >= Number(env.NEXT_PUBLIC_START_DATE)
 		: true
