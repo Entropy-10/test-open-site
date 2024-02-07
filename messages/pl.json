@@ -29,20 +29,20 @@
 		}
 	},
 	"NavItems": {
-		"home": "HOME",
+		"home": "STRONA GŁÓWNA",
 		"mappool": "MAPPOOL",
 		"schedule": "SCHEDULE",
-		"teams": "TEAMS",
-		"info": "INFO",
+		"teams": "DRUŻYNY",
+		"info": "INFORMACJE",
 		"sheet": "SHEET",
-		"invites": "INVITES",
-		"team": "TEAM",
-		"profile": "PROFILE"
+		"invites": "ZAPROSZENIA",
+		"team": "DRUŻYNA",
+		"profile": "PROFIL"
 	},
 	"Buttons": {
-		"register": "REGISTER",
-		"signIn": "SIGN IN",
-		"signOut": "SIGN OUT"
+		"register": "ZAREJESTRUJ",
+		"signIn": "ZALOGUJ",
+		"signOut": "WYLOGUJ"
 	},
 	"Status": {
 		"operational": "All services are online",
@@ -80,8 +80,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE",
-			"team": "MY TEAM"
+			"profile": "MÓJ PROFIL",
+			"team": "MOJA DRUŻYNA"
 		},
 		"Osu": {
 			"rank": "GLOBAL RANK",
