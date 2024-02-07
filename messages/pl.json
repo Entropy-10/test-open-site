@@ -1,14 +1,14 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
+			"description": "Oryginały",
 			"hostTitle": "HOSTED BY"
 		},
 		"Features": {
 			"Titles": {
 				"mappool": "MAPPOOL.",
 				"format": "FORMAT.",
-				"schedule": "SCHEDULE."
+				"schedule": "HARMONOGRAM."
 			},
 			"Descriptions": {
 				"mappool": "A lazer modpool featuring new mods each week.",
@@ -16,8 +16,8 @@
 				"schedule": "Watch upcoming matches being streamed on Twitch."
 			},
 			"Countdown": {
-				"titleSectionOne": "TOURNAMENT",
-				"titleSectionTwo": "STARTS IN"
+				"titleSectionOne": "TURNIEJ",
+				"titleSectionTwo": "ROZPOCZNIE SIĘ ZA"
 			}
 		},
 		"Originals": {
@@ -25,13 +25,13 @@
 			"subtitle": "CUSTOM SONGS COMING SOON.",
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
 			"tracksTitle": "TRACKLIST.",
-			"listenButton": "LISTEN NOW"
+			"listenButton": "POSŁUCHAJ TERAZ"
 		}
 	},
 	"NavItems": {
 		"home": "STRONA GŁÓWNA",
 		"mappool": "MAPPOOL",
-		"schedule": "SCHEDULE",
+		"schedule": "HARMONOGRAM",
 		"teams": "DRUŻYNY",
 		"info": "INFORMACJE",
 		"sheet": "SHEET",
@@ -56,19 +56,19 @@
 	"Metadata": {
 		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
 		"PageTitles": {
-			"home": "Home",
-			"schedule": "Schedule",
-			"info": "Info",
+			"home": "Strona główna",
+			"schedule": "Harmonogram",
+			"info": "Informacje",
 			"mappool": "Mappool",
-			"register": "Register",
-			"teams": "Teams",
-			"team": "Team",
-			"signIn": "Sign In"
+			"register": "Zarejestruj",
+			"teams": "Drużyny",
+			"team": "Drużyna",
+			"signIn": "Zaloguj"
 		}
 	},
 	"Error": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
+		"title": "Coś poszło nie tak!",
+		"retryButton": "Spróbuj ponownie",
 		"goHomeButton": "Go back home"
 	},
 	"ProfilePage": {
@@ -84,14 +84,14 @@
 			"team": "MOJA DRUŻYNA"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
-			"countryRank": "COUNTRY RANK"
+			"rank": "RANGA GLOBALNA",
+			"countryRank": "RANGA KRAJOWA"
 		},
 		"Team": {
 			"heading": "CURRENT TEAM",
 			"none": "You currently do not have a team. Join one by accepting any pending invites.",
 			"timezone": "TIMEZONE",
-			"joined": "JOINED",
+			"joined": "DOŁĄCZYŁ",
 			"manageTeamButton": "MANAGE MY TEAM"
 		},
 		"Invites": {
