@@ -24,7 +24,7 @@
 			"title": "Originals",
 			"subtitle": "CUSTOM SONGS COMING SOON.",
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
-			"tracksTitle": "TRACKLIST.",
+			"tracksTitle": "LISTA UTWORÓW.",
 			"listenButton": "POSŁUCHAJ TERAZ"
 		}
 	},
@@ -69,7 +69,7 @@
 	"Error": {
 		"title": "Coś poszło nie tak!",
 		"retryButton": "Spróbuj ponownie",
-		"goHomeButton": "Go back home"
+		"goHomeButton": "Powrót do strony głównej"
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -88,43 +88,43 @@
 			"countryRank": "RANGA KRAJOWA"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
-			"timezone": "TIMEZONE",
+			"heading": "AKTUALNA DRUŻYNA",
+			"none": "Obecnie nie należysz do żadnej drużyny. Dołącz, akceptując oczekujące zaproszenia.",
+			"timezone": "STREFA CZASOWA",
 			"joined": "DOŁĄCZYŁ",
 			"manageTeamButton": "MANAGE MY TEAM"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "OCZEKUJĄCE ZAPROSZENIA",
+			"none": "Obecnie nie masz żadnych zaproszeń. Poczekaj na jedno lub stwórz swoją własną drużynę.",
 			"Invite": {
-				"timezone": "TIMEZONE",
-				"invited": "INVITED",
+				"timezone": "STREFA CZASOWA",
+				"invited": "WYSŁANO",
 				"Buttons": {
-					"accept": "ACCEPT",
-					"deny": "DENY"
+					"accept": "AKCEPTUJ",
+					"deny": "ODRZUĆ"
 				}
 			}
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "ZAPISY DRUŻYNOWE",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
+			"title": "ZAPISY ZAMKNIĘTE!",
 			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
-			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"heading": "STWÓRZ DRUŻYNĘ.",
+			"teamName": "Nazwa Drużyny",
+			"teamAcronym": "Akronim Drużyny",
+			"timezone": "Strefa Czasowa",
+			"teamFlag": "Flaga Drużyny",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "STWÓRZ",
+				"loadingText": "TWORZENIE"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
+				"title": "STWORZONO DRUŻYNĘ!",
 				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
 				"teamManagementButton": "TEAM MANAGEMENT"
 			},
@@ -135,8 +135,8 @@
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "LISTA DRUŻYN",
+		"teamsRegistered": "ZAREJESTROWANE DRUŻYNY"
 	},
 	"UnauthorizedPage": {
 		"authFailed": "AUTHORIZATION FAILED!",
@@ -155,48 +155,48 @@
 			"default": "Please click the button below to gain access to the server."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "SPRÓBUJ PONOWNIE",
 			"Verify": {
-				"text": "VERIFY",
+				"text": "ZWERYFIKUJ",
 				"loadingText": "VERIFYING"
 			}
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM",
-			"player": "PLAYER LIST"
+			"team": "MOJA DRUŻYNA",
+			"player": "LISTA GRACZY"
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "STREFA CZASOWA",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "USUŃ DRUŻYNĘ",
+			"edit": "EDYTUJ DRUŻYNĘ",
+			"leave": "OPUŚĆ DRUŻYNĘ"
 		},
 		"Players": {
 			"heading": "CURRENT MEMBERS",
 			"Player": {
-				"rank": "RANK",
+				"rank": "RANGA",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "USUŃ GRACZA"
 			}
 		},
 		"Invites": {
 			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
+			"error": "Przepraszamy, nie udało się wyświetlić graczy w twojej drużynie.",
 			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
 			"Invite": {
 				"rank": "RANK",
 				"discord": "DISCORD",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "WYSŁANO",
+				"deleteButton": "USUŃ ZAPROSZENIE",
+				"inviteButton": "ZAPROŚ",
+				"placeholder": "Wprowadź nazwę użytkownika osu..."
 			}
 		}
 	},
 	"InfoPage": {
-		"heading": "GENERAL INFO"
+		"heading": "OGÓLNE INFORMACJE"
 	},
 	"Components": {
 		"comingSoon": "Coming Soon"
