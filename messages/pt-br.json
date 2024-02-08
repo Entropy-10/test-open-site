@@ -1,7 +1,7 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
+			"description": "UM TORNEIO EM OSU!LAZER DE RANK ABERTO",
 			"hostTitle": "ORGANIZADO POR"
 		},
 		"Features": {
@@ -17,7 +17,7 @@
 			},
 			"Countdown": {
 				"titleSectionOne": "TORNEIO",
-				"titleSectionTwo": "STARTS IN"
+				"titleSectionTwo": "COMEÇA EM"
 			}
 		},
 		"Originals": {
@@ -34,36 +34,36 @@
 		"schedule": "PROGRAMAÇÃO",
 		"teams": "TIMES",
 		"info": "INFORMAÇÕES",
-		"sheet": "SHEET",
+		"sheet": "SHEET PRINCIPAL",
 		"invites": "CONVITES",
 		"team": "TIME",
 		"profile": "PERFIL"
 	},
 	"Buttons": {
-		"register": "REGISTER",
-		"signIn": "SIGN IN",
-		"signOut": "SIGN OUT"
+		"register": "INSCREVA-SE",
+		"signIn": "ENTRAR",
+		"signOut": "ENCERRAR SESSÃO"
 	},
 	"Status": {
 		"operational": "Todos os serviços estão online",
 		"downtime": "Alguns serviços estão indisponíveis",
-		"degraded": "Some services are degraded",
+		"degraded": "Alguns serviços estão degradados",
 		"maintenance": "Manutenção em andamento"
 	},
 	"Footer": {
-		"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
+		"description": "UM TORNEIO EM OSU!LAZER DE RANK ABERTO ORGANIZADO POR TEDDY, ENTROPY, E SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
+		"description": "O primeiro torneio de osu!lazer com rank aberto em larga escala. Bem-vindo à nova experiência de torneios de osu!.",
 		"PageTitles": {
 			"home": "Início",
 			"schedule": "Programação",
 			"info": "Informações",
 			"mappool": "Mappool",
-			"register": "Register",
+			"register": "Inscrever-se",
 			"teams": "Times",
 			"team": "Time",
-			"signIn": "Sign In"
+			"signIn": "Entrar"
 		}
 	},
 	"Error": {
@@ -73,7 +73,7 @@
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "RELINK",
+			"relink": "REVINCULAR",
 			"Update": {
 				"text": "ATUALIZAR",
 				"loadingText": "ATUALIZANDO"
@@ -91,7 +91,7 @@
 			"heading": "TIME ATUAL",
 			"none": "No momento você não tem um time. Entre em um aceitando quaisquer convites pendentes.",
 			"timezone": "FUSO HORÁRIO",
-			"joined": "JOINED",
+			"joined": "JUNTOU-SE EM",
 			"manageTeamButton": "GERENCIAR MEU TIME"
 		},
 		"Invites": {
@@ -139,7 +139,7 @@
 		"teamsRegistered": "TIMES REGISTRADOS"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
+		"authFailed": "AUTORIZAÇÃO FALHOU!",
 		"unauthorized": "SEM AUTORIZAÇÃO!",
 		"homeButton": "INÍCIO",
 		"Messages": {
