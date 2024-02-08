@@ -14,6 +14,15 @@ export default function ErrorModal() {
 	const title = searchParams.get('title')
 	const message = searchParams.get('message')
 	const [open, setOpen] = useState(false)
+	const [csrfToken, setCsrfToken] = useState<string>('loading...')
+
+	useEffect(() => {
+		const el = document.querySelector(
+			'meta[name="x-csrf-token"]'
+		) as HTMLMetaElement | null
+		if (el) setCsrfToken(el.content)
+		else setCsrfToken('missing')
+	}, [])
 
 	useEffect(() => {
 		if (title && message) setOpen(true)
@@ -26,6 +35,7 @@ export default function ErrorModal() {
 				<Description className='text-center'>{message}</Description>
 
 				<form action={reset}>
+					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='pathname' defaultValue={pathname} hidden />
 					<Button variant='outline'>CLOSE</Button>
 				</form>

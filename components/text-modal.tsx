@@ -20,7 +20,7 @@ export default function TextModal({
 			<Content className='z-20 flex flex-col items-center justify-center'>
 				<Title>{title}</Title>
 				<Description className='text-center'>{message}</Description>
-				{children ?? <Cancel>CLOSE</Cancel>}
+				{children ?? <Cancel variant='outline'>CLOSE</Cancel>}
 			</Content>
 		</Root>
 	)

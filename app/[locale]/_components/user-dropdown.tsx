@@ -88,7 +88,7 @@ export default function UserDropdown({ user, inviteCount }: UserDropdownProps) {
 				<Dropdown.Item className='p-0 data-[highlighted]:bg-red-400'>
 					<SignOutButton
 						text={buttonT('signOut')}
-						className='h-full w-full px-3 py-0.5 hover:text-milky-white'
+						className='h-full w-full px-3 py-0.5 hover:text-milky-white focus:outline-none'
 					/>
 				</Dropdown.Item>
 			</Dropdown.Content>
