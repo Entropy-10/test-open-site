@@ -13,7 +13,12 @@ export async function GET(request: NextRequest) {
 	const code = searchParams.get('code')
 	const url = new URL(request.url)
 
-	if (!code) return authError(url)
+	if (!code) {
+		return authError(
+			url,
+			"Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+		)
+	}
 
 	try {
 		cookies().delete('session')

@@ -5,7 +5,7 @@ import { getBaseUrl } from '@utils/client'
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 
-import { getDiscordAvatarUrl } from '../../utils'
+import { authError, getDiscordAvatarUrl } from '../../utils'
 
 import type { NextRequest } from 'next/server'
 
@@ -15,7 +15,12 @@ export async function GET(request: NextRequest) {
 	const code = searchParams.get('code')
 	const url = new URL(request.url)
 
-	if (!code) return new NextResponse('Missing code', { status: 400 })
+	if (!code) {
+		return authError(
+			url,
+			"Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+		)
+	}
 
 	if (!session) {
 		return linkingError(
