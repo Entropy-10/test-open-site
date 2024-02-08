@@ -1,1 +1,204 @@
-{}
+{
+	"HomePage": {
+		"Header": {
+			"description": "UM TORNEIO EM OSU!LAZER DE RANK ABERTO",
+			"hostTitle": "ORGANIZADO POR"
+		},
+		"Features": {
+			"Titles": {
+				"mappool": "MAPPOOL.",
+				"format": "FORMATO.",
+				"schedule": "PROGRAMAÇÃO."
+			},
+			"Descriptions": {
+				"mappool": "Uma modpool de lazer, com novos mods a cada semana.",
+				"format": "Um torneio 3v3, rank aberto, de eliminação dupla.",
+				"schedule": "Assista à transmissão de partidas futuras na Twitch."
+			},
+			"Countdown": {
+				"titleSectionOne": "TORNEIO",
+				"titleSectionTwo": "COMEÇA EM"
+			}
+		},
+		"Originals": {
+			"title": "Originais",
+			"subtitle": "MÚSICAS ORIGINAIS LANÇADAS EM BREVE.",
+			"description": "Avance pelas fases para desbloquear originais do TEST exclusivos. Criadores talentosos compuseram músicas originais que são progressivamente reveladas com os estágios de qualificação, semifinals, finals e grand finals. Com cada música original apresentando estilo e arte únicos, estes beatmaps estão reservados para os melhores competidores deste torneio.",
+			"tracksTitle": "LISTA DE MÚSICAS.",
+			"listenButton": "OUÇA AGORA"
+		}
+	},
+	"NavItems": {
+		"home": "INÍCIO",
+		"mappool": "MAPPOOL",
+		"schedule": "PROGRAMAÇÃO",
+		"teams": "TIMES",
+		"info": "INFORMAÇÕES",
+		"sheet": "SHEET PRINCIPAL",
+		"invites": "CONVITES",
+		"team": "TIME",
+		"profile": "PERFIL"
+	},
+	"Buttons": {
+		"register": "INSCREVA-SE",
+		"signIn": "ENTRAR",
+		"signOut": "ENCERRAR SESSÃO"
+	},
+	"Status": {
+		"operational": "Todos os serviços estão online",
+		"downtime": "Alguns serviços estão indisponíveis",
+		"degraded": "Alguns serviços estão degradados",
+		"maintenance": "Manutenção em andamento"
+	},
+	"Footer": {
+		"description": "UM TORNEIO EM OSU!LAZER DE RANK ABERTO ORGANIZADO POR TEDDY, ENTROPY, E SORA."
+	},
+	"Metadata": {
+		"description": "O primeiro torneio de osu!lazer com rank aberto em larga escala. Bem-vindo à nova experiência de torneios de osu!.",
+		"PageTitles": {
+			"home": "Início",
+			"schedule": "Programação",
+			"info": "Informações",
+			"mappool": "Mappool",
+			"register": "Inscrever-se",
+			"teams": "Times",
+			"team": "Time",
+			"signIn": "Entrar"
+		}
+	},
+	"Error": {
+		"title": "Algo deu errado!",
+		"retryButton": "Tentar novamente",
+		"goHomeButton": "Voltar ao início"
+	},
+	"ProfilePage": {
+		"Buttons": {
+			"relink": "REVINCULAR",
+			"Update": {
+				"text": "ATUALIZAR",
+				"loadingText": "ATUALIZANDO"
+			}
+		},
+		"Headings": {
+			"profile": "MEU PERFIL",
+			"team": "MEU TIME"
+		},
+		"Osu": {
+			"rank": "RANK GLOBAL",
+			"countryRank": "RANK NACIONAL"
+		},
+		"Team": {
+			"heading": "TIME ATUAL",
+			"none": "No momento você não tem um time. Entre em um aceitando quaisquer convites pendentes.",
+			"timezone": "FUSO HORÁRIO",
+			"joined": "JUNTOU-SE EM",
+			"manageTeamButton": "GERENCIAR MEU TIME"
+		},
+		"Invites": {
+			"heading": "CONVITES PENDENTES",
+			"none": "No momento você não tem nenhum convite. Espere por um ou crie seu próprio time.",
+			"Invite": {
+				"timezone": "FUSO HORÁRIO",
+				"invited": "CONVIDADO",
+				"Buttons": {
+					"accept": "ACEITAR",
+					"deny": "NEGAR"
+				}
+			}
+		}
+	},
+	"RegistrationPage": {
+		"heading": "REGISTRO DO TIME",
+		"Closed": {
+			"title": "REGISTROS FECHADOS!",
+			"message": "Registros estão atualmente fechados até que o torneio comece. Por favor, volte assim que a contagem regressiva na página inicial terminar."
+		},
+		"Form": {
+			"heading": "CRIE UM TIME.",
+			"teamName": "Nome do Time",
+			"teamAcronym": "Acrônimo do Time",
+			"timezone": "Fuso-horário",
+			"teamFlag": "Bandeira do Time",
+			"createButton": {
+				"text": "CRIAR",
+				"loadingText": "CRIANDO"
+			},
+			"Success": {
+				"title": "TIME CRIADO!",
+				"message": "Bem-vindo ao TEST Open! Clique o botão abaixo para ver a página de gerenciamento do seu time e comece a convidar jogadores.",
+				"teamManagementButton": "GERENCIAMENTO DE TIME"
+			},
+			"ImagePicker": {
+				"upload": "Clique aqui para fazer upload",
+				"recommended": "Proporção recomendada 9:4"
+			}
+		}
+	},
+	"TeamsPage": {
+		"heading": "LISTA DE TIMES",
+		"teamsRegistered": "TIMES REGISTRADOS"
+	},
+	"UnauthorizedPage": {
+		"authFailed": "AUTORIZAÇÃO FALHOU!",
+		"unauthorized": "SEM AUTORIZAÇÃO!",
+		"homeButton": "INÍCIO",
+		"Messages": {
+			"default": "Por favor, faça login antes de acessar esta página."
+		}
+	},
+	"VerifyPage": {
+		"title": "VERIFICAÇÃO DE SERVIDOR",
+		"Messages": {
+			"signIn": "Inscreva-se antes de tentar verificar-se.",
+			"verified": "Bem-vindo ao servidor do Discord do TEST Open!",
+			"defaultError": "A verificação falhou. Por favor, tente novamente mais tarde.",
+			"default": "Por favor, clique o botão abaixo para obter acesso ao servidor."
+		},
+		"Buttons": {
+			"tryAgain": "TENTE NOVAMENTE",
+			"Verify": {
+				"text": "VERIFICAR",
+				"loadingText": "VERIFICANDO"
+			}
+		}
+	},
+	"TeamPage": {
+		"Headings": {
+			"team": "MEU TIME",
+			"player": "LISTA DE JOGADORES"
+		},
+		"timezone": "FUSO HORÁRIO",
+		"Buttons": {
+			"delete": "EXCLUIR TIME",
+			"edit": "EDITAR TIME",
+			"leave": "SAIR DO TIME"
+		},
+		"Players": {
+			"heading": "MEMBROS ATUAIS",
+			"Player": {
+				"rank": "RANK",
+				"discord": "DISCORD",
+				"removeButton": "REMOVER JOGADOR"
+			}
+		},
+		"Invites": {
+			"heading": "CONVITES ENVIADOS",
+			"error": "Desculpe, não conseguimos os jogadores do seu time.",
+			"none": "No momento você não tem nenhum convite enviado. Comece usando a caixa de convites acima.",
+			"Invite": {
+				"rank": "RANK",
+				"discord": "DISCORD",
+				"sent": "ENVIAR",
+				"deleteButton": "EXCLUIR CONVITE",
+				"inviteButton": "CONVIDAR",
+				"placeholder": "Insira um nome de usuário..."
+			}
+		}
+	},
+	"InfoPage": {
+		"heading": "INFORMAÇÕES GERAIS"
+	},
+	"Components": {
+		"comingSoon": "Em breve"
+	}
+}
