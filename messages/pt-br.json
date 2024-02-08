@@ -7,7 +7,7 @@
 		"Features": {
 			"Titles": {
 				"mappool": "MAPPOOL.",
-				"format": "FORMAT.",
+				"format": "FORMATO.",
 				"schedule": "SCHEDULE."
 			},
 			"Descriptions": {
@@ -21,11 +21,11 @@
 			}
 		},
 		"Originals": {
-			"title": "Originals",
+			"title": "Originais",
 			"subtitle": "CUSTOM SONGS COMING SOON.",
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
 			"tracksTitle": "TRACKLIST.",
-			"listenButton": "LISTEN NOW"
+			"listenButton": "OUÇA AGORA"
 		}
 	},
 	"NavItems": {
@@ -45,8 +45,8 @@
 		"signOut": "SIGN OUT"
 	},
 	"Status": {
-		"operational": "All services are online",
-		"downtime": "Some services are down",
+		"operational": "Todos os serviços estão online",
+		"downtime": "Alguns serviços estão indisponíveis",
 		"degraded": "Some services are degraded",
 		"maintenance": "Ongoing maintenance"
 	},
@@ -56,9 +56,9 @@
 	"Metadata": {
 		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
 		"PageTitles": {
-			"home": "Home",
+			"home": "Início",
 			"schedule": "Schedule",
-			"info": "Info",
+			"info": "Informações",
 			"mappool": "Mappool",
 			"register": "Register",
 			"teams": "Teams",
@@ -68,7 +68,7 @@
 	},
 	"Error": {
 		"title": "Something went wrong!",
-		"retryButton": "Try again",
+		"retryButton": "Tentar novamente",
 		"goHomeButton": "Go back home"
 	},
 	"ProfilePage": {
@@ -81,10 +81,10 @@
 		},
 		"Headings": {
 			"profile": "MY PROFILE",
-			"team": "MY TEAM"
+			"team": "MEU TIME"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
+			"rank": "RANK GLOBAL",
 			"countryRank": "COUNTRY RANK"
 		},
 		"Team": {
@@ -101,8 +101,8 @@
 				"timezone": "TIMEZONE",
 				"invited": "INVITED",
 				"Buttons": {
-					"accept": "ACCEPT",
-					"deny": "DENY"
+					"accept": "ACEITAR",
+					"deny": "NEGAR"
 				}
 			}
 		}
@@ -111,22 +111,22 @@
 		"heading": "TEAM REGISTRATION",
 		"Closed": {
 			"title": "REGISTRATIONS CLOSED!",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"message": "Registros estão atualmente fechados até que o torneio comece. Por favor, volte assim que a contagem regressiva na página inicial terminar."
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
-			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"heading": "CRIE UM TIME.",
+			"teamName": "Nome do Time",
+			"teamAcronym": "Acrônimo do Time",
+			"timezone": "Fuso-horário",
+			"teamFlag": "Bandeira do Time",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "CRIAR",
+				"loadingText": "CRIANDO"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"title": "TIME CRIADO!",
+				"message": "Bem-vindo ao TEST Open! Clique o botão abaixo para ver a página de gerenciamento do seu time e comece a convidar jogadores.",
+				"teamManagementButton": "GERENCIAMENTO DE TIME"
 			},
 			"ImagePicker": {
 				"upload": "Click here to upload",
@@ -135,21 +135,21 @@
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "LISTA DE TIMES",
+		"teamsRegistered": "TIMES REGISTRADOS"
 	},
 	"UnauthorizedPage": {
 		"authFailed": "AUTHORIZATION FAILED!",
 		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"homeButton": "INÍCIO",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "Por favor, faça login antes de acessar esta página."
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "VERIFICAÇÃO DE SERVIDOR",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
+			"signIn": "Inscreva-se antes de tentar verificar-se.",
 			"verified": "Welcome to the TEST Open Discord server!",
 			"defaultError": "Verification failed. Please try again later.",
 			"default": "Please click the button below to gain access to the server."
