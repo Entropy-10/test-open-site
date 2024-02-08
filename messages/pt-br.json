@@ -8,7 +8,7 @@
 			"Titles": {
 				"mappool": "MAPPOOL.",
 				"format": "FORMATO.",
-				"schedule": "SCHEDULE."
+				"schedule": "PROGRAMAÇÃO."
 			},
 			"Descriptions": {
 				"mappool": "A lazer modpool featuring new mods each week.",
@@ -16,7 +16,7 @@
 				"schedule": "Watch upcoming matches being streamed on Twitch."
 			},
 			"Countdown": {
-				"titleSectionOne": "TOURNAMENT",
+				"titleSectionOne": "TORNEIO",
 				"titleSectionTwo": "STARTS IN"
 			}
 		},
@@ -24,20 +24,20 @@
 			"title": "Originais",
 			"subtitle": "CUSTOM SONGS COMING SOON.",
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
-			"tracksTitle": "TRACKLIST.",
+			"tracksTitle": "LISTA DE MÚSICAS.",
 			"listenButton": "OUÇA AGORA"
 		}
 	},
 	"NavItems": {
-		"home": "HOME",
+		"home": "INÍCIO",
 		"mappool": "MAPPOOL",
 		"schedule": "SCHEDULE",
-		"teams": "TEAMS",
-		"info": "INFO",
+		"teams": "TIMES",
+		"info": "INFORMAÇÕES",
 		"sheet": "SHEET",
-		"invites": "INVITES",
-		"team": "TEAM",
-		"profile": "PROFILE"
+		"invites": "CONVITES",
+		"team": "TIME",
+		"profile": "PERFIL"
 	},
 	"Buttons": {
 		"register": "REGISTER",
@@ -48,7 +48,7 @@
 		"operational": "Todos os serviços estão online",
 		"downtime": "Alguns serviços estão indisponíveis",
 		"degraded": "Some services are degraded",
-		"maintenance": "Ongoing maintenance"
+		"maintenance": "Manutenção em andamento"
 	},
 	"Footer": {
 		"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
@@ -57,49 +57,49 @@
 		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
 		"PageTitles": {
 			"home": "Início",
-			"schedule": "Schedule",
+			"schedule": "Programação",
 			"info": "Informações",
 			"mappool": "Mappool",
 			"register": "Register",
-			"teams": "Teams",
-			"team": "Team",
+			"teams": "Times",
+			"team": "Time",
 			"signIn": "Sign In"
 		}
 	},
 	"Error": {
-		"title": "Something went wrong!",
+		"title": "Algo deu errado!",
 		"retryButton": "Tentar novamente",
-		"goHomeButton": "Go back home"
+		"goHomeButton": "Voltar ao início"
 	},
 	"ProfilePage": {
 		"Buttons": {
 			"relink": "RELINK",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "ATUALIZAR",
+				"loadingText": "ATUALIZANDO"
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE",
+			"profile": "MEU PERFIL",
 			"team": "MEU TIME"
 		},
 		"Osu": {
 			"rank": "RANK GLOBAL",
-			"countryRank": "COUNTRY RANK"
+			"countryRank": "RANK NACIONAL"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
-			"timezone": "TIMEZONE",
+			"heading": "TIME ATUAL",
+			"none": "No momento você não tem um time. Entre em um aceitando quaisquer convites pendentes.",
+			"timezone": "FUSO HORÁRIO",
 			"joined": "JOINED",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"manageTeamButton": "GERENCIAR MEU TIME"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "CONVITES PENDENTES",
+			"none": "No momento você não tem nenhum convite. Espere por um ou crie seu próprio time.",
 			"Invite": {
-				"timezone": "TIMEZONE",
-				"invited": "INVITED",
+				"timezone": "FUSO HORÁRIO",
+				"invited": "CONVIDADO",
 				"Buttons": {
 					"accept": "ACEITAR",
 					"deny": "NEGAR"
@@ -108,9 +108,9 @@
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "REGISTRO DO TIME",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
+			"title": "REGISTROS FECHADOS!",
 			"message": "Registros estão atualmente fechados até que o torneio comece. Por favor, volte assim que a contagem regressiva na página inicial terminar."
 		},
 		"Form": {
@@ -129,8 +129,8 @@
 				"teamManagementButton": "GERENCIAMENTO DE TIME"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"upload": "Clique aqui para fazer upload",
+				"recommended": "Proporção recomendada 9:4"
 			}
 		}
 	},
@@ -140,7 +140,7 @@
 	},
 	"UnauthorizedPage": {
 		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
+		"unauthorized": "SEM AUTORIZAÇÃO!",
 		"homeButton": "INÍCIO",
 		"Messages": {
 			"default": "Por favor, faça login antes de acessar esta página."
@@ -150,55 +150,55 @@
 		"title": "VERIFICAÇÃO DE SERVIDOR",
 		"Messages": {
 			"signIn": "Inscreva-se antes de tentar verificar-se.",
-			"verified": "Welcome to the TEST Open Discord server!",
-			"defaultError": "Verification failed. Please try again later.",
-			"default": "Please click the button below to gain access to the server."
+			"verified": "Bem-vindo ao servidor do Discord do TEST Open!",
+			"defaultError": "A verificação falhou. Por favor, tente novamente mais tarde.",
+			"default": "Por favor, clique o botão abaixo para obter acesso ao servidor."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "TENTE NOVAMENTE",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "VERIFICAR",
+				"loadingText": "VERIFICANDO"
 			}
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM",
-			"player": "PLAYER LIST"
+			"team": "MEU TIME",
+			"player": "LISTA DE JOGADORES"
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "FUSO HORÁRIO",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "EXCLUIR TIME",
+			"edit": "EDITAR TIME",
+			"leave": "SAIR DO TIME"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "MEMBROS ATUAIS",
 			"Player": {
 				"rank": "RANK",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "REMOVER JOGADOR"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"heading": "CONVITES ENVIADOS",
+			"error": "Desculpe, não conseguimos os jogadores do seu time.",
+			"none": "No momento você não tem nenhum convite enviado. Comece usando a caixa de convites acima.",
 			"Invite": {
 				"rank": "RANK",
 				"discord": "DISCORD",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "ENVIAR",
+				"deleteButton": "EXCLUIR CONVITE",
+				"inviteButton": "CONVIDAR",
+				"placeholder": "Insira um nome de usuário..."
 			}
 		}
 	},
 	"InfoPage": {
-		"heading": "GENERAL INFO"
+		"heading": "INFORMAÇÕES GERAIS"
 	},
 	"Components": {
-		"comingSoon": "Coming Soon"
+		"comingSoon": "Em breve"
 	}
 }
