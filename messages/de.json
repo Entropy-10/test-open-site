@@ -2,22 +2,22 @@
 	"HomePage": {
 		"Header": {
 			"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
-			"hostTitle": "HOSTED BY"
+			"hostTitle": "VERANSTALTET VON"
 		},
 		"Features": {
 			"Titles": {
 				"mappool": "MAPPOOL.",
 				"format": "FORMAT.",
-				"schedule": "SCHEDULE."
+				"schedule": "ZEITPLAN."
 			},
 			"Descriptions": {
 				"mappool": "A lazer modpool featuring new mods each week.",
-				"format": "An open rank, double elimination, 3v3 tournament.",
+				"format": "Ein 3 gegen 3 Turnier für alle Ränge, mit Doppel-K.-o.-System.",
 				"schedule": "Watch upcoming matches being streamed on Twitch."
 			},
 			"Countdown": {
-				"titleSectionOne": "TOURNAMENT",
-				"titleSectionTwo": "STARTS IN"
+				"titleSectionOne": "TURNER",
+				"titleSectionTwo": "BEGINNT IN"
 			}
 		},
 		"Originals": {
