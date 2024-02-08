@@ -7,7 +7,8 @@ const withNextIntl = nextIntl('./i18n.ts')
 export default withNextIntl({
 	experimental: {
 		mdxRs: true,
-		serverActions: { bodySizeLimit: '5mb' }
+		serverActions: { bodySizeLimit: '5mb' },
+		esmExternals: 'loose'
 	},
 	pageExtensions: ['mdx', 'ts', 'tsx'],
 	images: {
