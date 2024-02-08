@@ -2,7 +2,7 @@
 	"HomePage": {
 		"Header": {
 			"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
-			"hostTitle": "HOSTED BY"
+			"hostTitle": "ORGANIZADO POR"
 		},
 		"Features": {
 			"Titles": {
@@ -11,9 +11,9 @@
 				"schedule": "PROGRAMAÇÃO."
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
-				"format": "An open rank, double elimination, 3v3 tournament.",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"mappool": "Uma modpool de lazer, com novos mods a cada semana.",
+				"format": "Um torneio 3v3, rank aberto, de eliminação dupla.",
+				"schedule": "Assista à transmissão de partidas futuras na Twitch."
 			},
 			"Countdown": {
 				"titleSectionOne": "TORNEIO",
@@ -22,8 +22,8 @@
 		},
 		"Originals": {
 			"title": "Originais",
-			"subtitle": "CUSTOM SONGS COMING SOON.",
-			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
+			"subtitle": "MÚSICAS ORIGINAIS LANÇADAS EM BREVE.",
+			"description": "Avance pelas fases para desbloquear originais do TEST exclusivos. Criadores talentosos compuseram músicas originais que são progressivamente reveladas com os estágios de qualificação, semifinals, finals e grand finals. Com cada música original apresentando estilo e arte únicos, estes beatmaps estão reservados para os melhores competidores deste torneio.",
 			"tracksTitle": "LISTA DE MÚSICAS.",
 			"listenButton": "OUÇA AGORA"
 		}
@@ -31,7 +31,7 @@
 	"NavItems": {
 		"home": "INÍCIO",
 		"mappool": "MAPPOOL",
-		"schedule": "SCHEDULE",
+		"schedule": "PROGRAMAÇÃO",
 		"teams": "TIMES",
 		"info": "INFORMAÇÕES",
 		"sheet": "SHEET",
