@@ -21,23 +21,23 @@
 			}
 		},
 		"Originals": {
-			"title": "Originale",
+			"title": "Originals",
 			"subtitle": "CUSTOM SONGS COMING SOON.",
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
-			"tracksTitle": "TRACKLIST.",
+			"tracksTitle": "TRACKLISTE.",
 			"listenButton": "JETZT ANHÖREN"
 		}
 	},
 	"NavItems": {
-		"home": "HOME",
+		"home": "STARTSEITE",
 		"mappool": "MAPPOOL",
-		"schedule": "SCHEDULE",
-		"teams": "TEAMS",
-		"info": "INFO",
+		"schedule": "ZEITPLAN",
+		"teams": "TEAM LISTE",
+		"info": "INFORMATION",
 		"sheet": "SHEET",
-		"invites": "INVITES",
+		"invites": "EINLADUNGEN",
 		"team": "TEAM",
-		"profile": "PROFILE"
+		"profile": "PROFIL"
 	},
 	"Buttons": {
 		"register": "REGISTRIEREN",
@@ -63,32 +63,32 @@
 			"register": "Anmelden",
 			"teams": "Teams",
 			"team": "Team",
-			"signIn": "Sign In"
+			"signIn": "Anmelden"
 		}
 	},
 	"Error": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home"
+		"title": "Etwas ist schiefgelaufen!",
+		"retryButton": "Erneut versuchen",
+		"goHomeButton": "Zurück zur Startseite"
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "RELINK",
+			"relink": "NEU-VERLINKEN",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "AKTUALISIEREN",
+				"loadingText": "WIRD AKTUALISIERT"
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE",
-			"team": "MY TEAM"
+			"profile": "MEIN PROFIL",
+			"team": "MEIN TEAM"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
-			"countryRank": "COUNTRY RANK"
+			"rank": "GLOBALER RANG",
+			"countryRank": "LANDESRANG"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
+			"heading": "AKTUELLES TEAM",
 			"none": "Du hast derzeit kein Team. Trete einem bei, indem du eine ausstehende Einlandung annimmst.",
 			"timezone": "ZEITZONE",
 			"joined": "BEIGETRETEN",
@@ -116,32 +116,32 @@
 		"Form": {
 			"heading": "EIN TEAM ERSTELLEN",
 			"teamName": "Teamname",
-			"teamAcronym": "Team Acronym",
-			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"teamAcronym": "Team Akronym",
+			"timezone": "Zeitzone",
+			"teamFlag": "Team Flagge",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "ERSTELLEN",
+				"loadingText": "ERSTELLUNG LÄUFT"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
+				"title": "TEAM ERSTELLT!",
 				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
 				"teamManagementButton": "TEAM MANAGEMENT"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"upload": "Hier klicken, um eine Datei hochzuladen",
+				"recommended": "Empfohlenes Bildverhältnis 9:4"
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "TEAM LISTE",
+		"teamsRegistered": "TEAMS SIND ANGEMELDET"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"authFailed": "AUTHENTIFIZIERUNG FEHLGESCHLAGEN!",
+		"unauthorized": "FEHLENDE AUTHORISIERUNG!",
+		"homeButton": "STARTSEITE",
 		"Messages": {
 			"default": "Bitte melden Sie sich zuerst an, bevor Sie auf diese Seite zugreifen."
 		}
@@ -150,7 +150,7 @@
 		"title": "SERVERIFIZIERUNG",
 		"Messages": {
 			"signIn": "Melden Sie sich zuerst an, bevor Sie versuchen zu verifizieren.",
-			"verified": "Welcome to the TEST Open Discord server!",
+			"verified": "Willkommen auf dem TEST Open Discord Server!",
 			"defaultError": "Verifizierung fehlgeschlagen. Bitte versuchen Sie es später erneut.",
 			"default": "Bitte klicken Sie auf die Schaltfläche unten, um Zugang zum Server zu erhalten."
 		},
@@ -158,7 +158,7 @@
 			"tryAgain": "ERNEUT VERSUCHEN",
 			"Verify": {
 				"text": "VERIFIZIEREN",
-				"loadingText": "VERIFYING"
+				"loadingText": "VERIFIZIERUNG LÄUFT"
 			}
 		}
 	},
@@ -176,22 +176,22 @@
 		"Players": {
 			"heading": "CURRENT MEMBERS",
 			"Player": {
-				"rank": "RANK",
+				"rank": "RANG",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "SPIELER ENTFERNEN"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"heading": "ABGESCHICKTE EINLADUNGEN",
+			"error": "Verzeihung, leider konnten wir die Spieler nicht deinem Team hinzufügen.",
+			"none": "Du hast derzeit keine ausgehenden Einladungen. Nutze die obige Suchfunktion, um Einladungen zu versenden.",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "RANG",
 				"discord": "DISCORD",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "EINGELADEN",
+				"deleteButton": "EINLADUNG LÖSCHEN",
+				"inviteButton": "EINLADEN",
+				"placeholder": "Gebe einen Benutzernamen ein..."
 			}
 		}
 	},
