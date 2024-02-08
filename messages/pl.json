@@ -75,8 +75,8 @@
 		"Buttons": {
 			"relink": "RELINK",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "ZAKTUALIZUJ",
+				"loadingText": "AKTUALIZOWANIE"
 			}
 		},
 		"Headings": {
@@ -92,7 +92,7 @@
 			"none": "Obecnie nie należysz do żadnej drużyny. Dołącz, akceptując oczekujące zaproszenia.",
 			"timezone": "STREFA CZASOWA",
 			"joined": "DOŁĄCZYŁ",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"manageTeamButton": "ZARZĄDZAJ MOJĄ DRUŻYNĄ"
 		},
 		"Invites": {
 			"heading": "OCZEKUJĄCE ZAPROSZENIA",
@@ -139,26 +139,26 @@
 		"teamsRegistered": "ZAREJESTROWANE DRUŻYNY"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
+		"authFailed": "AUTORYZACJA NIE POWIODŁA SIĘ!",
 		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"homeButton": "STRONA GŁÓWNA",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "Zaloguj się, aby otrzymać dostęp do tej strony."
 		}
 	},
 	"VerifyPage": {
 		"title": "SERVER VERIFICATION",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
+			"signIn": "Zaloguj się, aby otrzymać możliwość weryfikacji.",
 			"verified": "Welcome to the TEST Open Discord server!",
-			"defaultError": "Verification failed. Please try again later.",
-			"default": "Please click the button below to gain access to the server."
+			"defaultError": "Weryfikacja nie powiodła się. Spróbuj ponownie później.",
+			"default": "Kliknij przycisk poniżej, aby otrzymać dostęp do serwera."
 		},
 		"Buttons": {
 			"tryAgain": "SPRÓBUJ PONOWNIE",
 			"Verify": {
 				"text": "ZWERYFIKUJ",
-				"loadingText": "VERIFYING"
+				"loadingText": "WERYFIKOWANIE"
 			}
 		}
 	},
@@ -174,7 +174,7 @@
 			"leave": "OPUŚĆ DRUŻYNĘ"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "AKTUALNI CZŁONKOWIE",
 			"Player": {
 				"rank": "RANGA",
 				"discord": "DISCORD",
@@ -182,11 +182,11 @@
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
+			"heading": "WYSŁANE ZAPROSZENIA",
 			"error": "Przepraszamy, nie udało się wyświetlić graczy w twojej drużynie.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"none": "Aktualnie nie masz żadnych wysłanych zaproszeń. Zacznij od użycia pola zaproszeń powyżej.",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "RANGA",
 				"discord": "DISCORD",
 				"sent": "WYSŁANO",
 				"deleteButton": "USUŃ ZAPROSZENIE",
@@ -199,6 +199,6 @@
 		"heading": "OGÓLNE INFORMACJE"
 	},
 	"Components": {
-		"comingSoon": "Coming Soon"
+		"comingSoon": "Już Wkrótce"
 	}
 }
