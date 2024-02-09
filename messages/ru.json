@@ -32,17 +32,17 @@
 		"home": "HOME",
 		"mappool": "MAPPOOL",
 		"schedule": "SCHEDULE",
-		"teams": "TEAMS",
-		"info": "INFO",
+		"teams": "ЭКИПАЖИ",
+		"info": "ИНФО",
 		"sheet": "SHEET",
 		"invites": "INVITES",
-		"team": "TEAM",
-		"profile": "PROFILE"
+		"team": "ЭКИПАЖ",
+		"profile": "ПРОФИЛЬ"
 	},
 	"Buttons": {
-		"register": "REGISTER",
-		"signIn": "SIGN IN",
-		"signOut": "SIGN OUT"
+		"register": "ПРОФИЛЬ СОЗДАТЬ",
+		"signIn": "ВХОД",
+		"signOut": "ВЫЙТИ"
 	},
 	"Status": {
 		"operational": "All services are online",
@@ -58,12 +58,12 @@
 		"PageTitles": {
 			"home": "Home",
 			"schedule": "Schedule",
-			"info": "Info",
+			"info": "Инфо",
 			"mappool": "Mappool",
-			"register": "Register",
-			"teams": "Teams",
-			"team": "Team",
-			"signIn": "Sign In"
+			"register": "Профиль создать",
+			"teams": "Экипажи",
+			"team": "Экипаж",
+			"signIn": "Вход"
 		}
 	},
 	"Error": {
@@ -80,11 +80,11 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE",
-			"team": "MY TEAM"
+			"profile": "МОЙ ПРОФИЛЬ",
+			"team": "Мой экипаж"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
+			"rank": "РЕЙТИНГ Б МИРЕ",
 			"countryRank": "COUNTRY RANK"
 		},
 		"Team": {
@@ -101,8 +101,8 @@
 				"timezone": "TIMEZONE",
 				"invited": "INVITED",
 				"Buttons": {
-					"accept": "ACCEPT",
-					"deny": "DENY"
+					"accept": "ПРИНЯТЬ",
+					"deny": "ОТКЛОНИТЬ"
 				}
 			}
 		}
@@ -176,8 +176,8 @@
 		"Players": {
 			"heading": "CURRENT MEMBERS",
 			"Player": {
-				"rank": "RANK",
-				"discord": "DISCORD",
+				"rank": "РАНГ",
+				"discord": "ДИСКОРД",
 				"removeButton": "REMOVE PLAYER"
 			}
 		},
@@ -187,7 +187,7 @@
 			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
 			"Invite": {
 				"rank": "RANK",
-				"discord": "DISCORD",
+				"discord": "ДИСКОРД",
 				"sent": "SENT",
 				"deleteButton": "DELETE INVITE",
 				"inviteButton": "INVITE",
