@@ -11,7 +11,7 @@
 				"schedule": "ZEITPLAN."
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
+				"mappool": "Ein lazer Modpool welcher jede Woche neue Mods enthält.",
 				"format": "Ein 3 gegen 3 Turnier für alle Ränge, mit Doppel-K.-o.-System.",
 				"schedule": "Schau dir die kommenden Runden auf Twitch an."
 			},
@@ -54,7 +54,7 @@
 		"description": "EIN OSU! LAZER TURNIER FÜR ALLE RÄNGE, VERANSTALTET VON TEDDY, ENTROPY, UND SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
+		"description": "Osu!'s erstes großangelegtes lazer Turnier für jeden Rang. Willkommen bei der neusten Turnier-Erfahrung in osu.",
 		"PageTitles": {
 			"home": "Startseite",
 			"schedule": "Zeitplan",
@@ -125,8 +125,8 @@
 			},
 			"Success": {
 				"title": "TEAM ERSTELLT!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"message": "Willkommen bei TEST Open, Klicke auf den Button zur Team-Bearbeitung um dein Team anzuschauen und Spieler einzuladen.",
+				"teamManagementButton": "TEAM-BEARBEITUNG"
 			},
 			"ImagePicker": {
 				"upload": "Hier klicken, um eine Datei hochzuladen",
