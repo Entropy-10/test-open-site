@@ -75,8 +75,8 @@
 		"Buttons": {
 			"relink": "RELINK",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "ОБНОВИТЬ",
+				"loadingText": "ОБНОВЛЕНИЕ"
 			}
 		},
 		"Headings": {
@@ -129,7 +129,7 @@
 				"teamManagementButton": "TEAM MANAGEMENT"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
+				"upload": "Выбрать файл",
 				"recommended": "Recommended Ratio 9:4"
 			}
 		}
@@ -150,7 +150,7 @@
 		"title": "SERVER VERIFICATION",
 		"Messages": {
 			"signIn": "Sign in first before attempting to verify.",
-			"verified": "Welcome to the TEST Open Discord server!",
+			"verified": "Добро пожаловать в TEST Open дискорд-сервер!",
 			"defaultError": "Verification failed. Please try again later.",
 			"default": "Please click the button below to gain access to the server."
 		},
