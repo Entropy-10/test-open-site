@@ -35,12 +35,12 @@
 		"teams": "TEAMS",
 		"info": "IMPORMASYON",
 		"sheet": "SHEET",
-		"invites": "INVITES",
+		"invites": "MGA IMBITASYON",
 		"team": "TEAM",
 		"profile": "PROFILE"
 	},
 	"Buttons": {
-		"register": "REGISTER",
+		"register": "MAG-REHISTRO",
 		"signIn": "MAG-SIGN IN",
 		"signOut": "MAG-SIGN OUT"
 	},
@@ -56,7 +56,7 @@
 	"Metadata": {
 		"description": "Ang unang malakihang paligsahan ng Osu! Sa lazer. Maligayang pagdating Sa bagong karanasan Sa paligsahan Sa osu.",
 		"PageTitles": {
-			"home": "Home",
+			"home": "Simula",
 			"schedule": "Iskedyul",
 			"info": "Impormasyon",
 			"mappool": "Mappool",
@@ -91,7 +91,7 @@
 			"heading": "CURRENT TEAM",
 			"none": "You currently do not have a team. Join one by accepting any pending invites.",
 			"timezone": "TIMEZONE",
-			"joined": "JOINED",
+			"joined": "SINALIHAN",
 			"manageTeamButton": "MANAGE MY TEAM"
 		},
 		"Invites": {
@@ -101,8 +101,8 @@
 				"timezone": "TIMEZONE",
 				"invited": "INVITED",
 				"Buttons": {
-					"accept": "ACCEPT",
-					"deny": "DENY"
+					"accept": "TANGGAPIN",
+					"deny": "TANGGIHAN"
 				}
 			}
 		}
@@ -120,8 +120,8 @@
 			"timezone": "Timezone",
 			"teamFlag": "Team Flag",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "GUMAWA",
+				"loadingText": "GINAGAWA"
 			},
 			"Success": {
 				"title": "TEAM CREATED!",
