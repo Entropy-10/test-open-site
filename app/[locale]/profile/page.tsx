@@ -48,7 +48,10 @@ export default async function ProfilePage() {
 
 							<div>
 								<span className='font-extrabold'>{t('Osu.countryRank')}:</span>{' '}
-								#{user.rank ? user.rank.toLocaleString() : 'No Rank'}
+								#
+								{user.country_rank
+									? user.country_rank.toLocaleString()
+									: 'No Rank'}
 							</div>
 						</div>
 

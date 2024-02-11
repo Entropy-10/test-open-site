@@ -20,6 +20,7 @@ import Search from './_components/search'
 
 import type { MetadataProps } from '@types'
 import { CsrfInput } from '~/components/csrf-input'
+import { deleteItem } from './_actions/delete'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -108,7 +109,12 @@ export default async function TeamPage() {
 							</form>
 						</div>
 					) : (
-						<Button className='w-[180px]'>{t('Buttons.leave')}</Button>
+						<form action={deleteItem}>
+							<CsrfInput token={csrfToken} />
+							<input name='id' defaultValue={session.sub} hidden />
+							<input name='type' defaultValue='player' hidden />
+							<Button className='w-[180px]'>{t('Buttons.leave')}</Button>
+						</form>
 					)}
 				</section>
 			</Background>

@@ -18,6 +18,5 @@ export default withNextIntl({
 			{ protocol: 'https', hostname: 'flagsapi.com' },
 			{ protocol: 'https', hostname: 'dtoyeiqtecliyympsgji.supabase.co' }
 		]
-	},
-	logging: { fetches: { fullUrl: true } }
+	}
 })
