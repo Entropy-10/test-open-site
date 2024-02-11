@@ -1,7 +1,7 @@
 'use server'
 
-import { redirect } from '@navigation'
 import { deleteSession } from '@session'
+import { redirect } from 'next/navigation'
 
 export async function signOut(csrfToken: string) {
 	await deleteSession()

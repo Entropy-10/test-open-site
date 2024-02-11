@@ -2,6 +2,7 @@
 
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
+import { getServerTranslations } from '@utils/server'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -11,6 +12,8 @@ export async function acceptInvite(formData: FormData) {
 	const teamId = formData.get('team_id')?.toString()
 	const session = await getSession()
 	if (!inviteId || !teamId || !session) return
+
+	const t = await getServerTranslations('ProfilePage.Errors')
 
 	try {
 		const supabase = createClient(cookies())
@@ -24,7 +27,9 @@ export async function acceptInvite(formData: FormData) {
 
 		if (teamError?.code === '23505') {
 			redirect(
-				'/profile?title=ALREADY ON A TEAM!&message=Looks like you are already on a team. Please delete or leave your current team before joining a new one.'
+				`/profile?title=${t('ExistingTeam.title')}&message=${t(
+					'ExistingTeam.message'
+				)}`
 			)
 		} else if (teamError) throw teamError
 
@@ -36,7 +41,11 @@ export async function acceptInvite(formData: FormData) {
 		if (inviteError) throw inviteError
 	} catch (err) {
 		redirect(
-			'/profile?title=FAILED TO ACCEPT INVITE!&message=Sorry, we failed to accept that invite. Please try again to see if that helps.'
+			`/profile?title=${t('FailedInvite.title', {
+				type: t('FailedInvite.Types.accept')
+			})}&message=${t('FailedInvite.message', {
+				type: t('FailedInvite.Types.accept')
+			})}`
 		)
 	}
 

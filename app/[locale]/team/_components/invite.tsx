@@ -1,11 +1,12 @@
 import dayjs from 'dayjs'
 import Image from 'next/image'
 
-import { deleteInvite } from '../_actions/delete-invite'
+import { deleteItem } from '../_actions/delete'
 import DeleteButton from './delete-button'
 
 import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
+import { CsrfInput } from '~/components/csrf-input'
 import type { Tables } from '~/types/supabase'
 
 interface InviteProps {
@@ -23,8 +24,21 @@ interface InviteProps {
 export default function Invite({ invite, isCaptain }: InviteProps) {
 	if (!invite.users) return null
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
-	const user = invite.users
 	const t = useTranslations('TeamPage.Invites.Invite')
+	const user = invite.users
+	let statusColor: string
+
+	switch (invite.status) {
+		case 'pending':
+			statusColor = '#faca47'
+			break
+		case 'accepted':
+			statusColor = '#4eea7b'
+			break
+		case 'denied':
+			statusColor = '#ff716c'
+			break
+	}
 
 	return (
 		<div className='w-[200px] bg-gradient-to-r from-light-blue to-lavender p-4 md:w-[250px]'>
@@ -37,9 +51,12 @@ export default function Invite({ invite, isCaptain }: InviteProps) {
 					sizes='(min-width: 768px) 115px, 90px'
 					className='size-[90px] md:size-[115px]'
 				/>
-				<div className='flex flex-col font-extrabold text-lg/4 text-milky-white md:text-xl'>
+				<div className='flex flex-col items-center font-extrabold text-lg/4 text-milky-white md:text-xl'>
 					{user.osu_name}
-					<div className='font-medium text-[#f7cb73] text-sm/3 italic'>
+					<div
+						style={{ color: statusColor }}
+						className='text-center font-medium text-sm/3 italic'
+					>
 						{invite.status}
 					</div>
 				</div>
@@ -61,9 +78,10 @@ export default function Invite({ invite, isCaptain }: InviteProps) {
 			</div>
 
 			{isCaptain && (
-				<form action={deleteInvite}>
-					<input name='csrf_token' defaultValue={csrfToken} hidden />
-					<input name='invite_id' defaultValue={invite.id} hidden />
+				<form action={deleteItem}>
+					<CsrfInput token={csrfToken} />
+					<input name='id' defaultValue={invite.id} hidden />
+					<input name='type' defaultValue='invite' hidden />
 					<DeleteButton text={t('deleteButton')} />
 				</form>
 			)}

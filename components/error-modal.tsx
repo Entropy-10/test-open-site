@@ -7,8 +7,13 @@ import { useEffect, useState } from 'react'
 import Button from '~/components/ui/Button'
 import { Content, Description, Root, Title } from '~/components/ui/modal'
 import { reset } from '~/lib/actions'
+import { CsrfInput } from './csrf-input'
 
-export default function ErrorModal() {
+interface ErrorModalProps {
+	text: string
+}
+
+export default function ErrorModal({ text }: ErrorModalProps) {
 	const pathname = usePathname()
 	const searchParams = useSearchParams()
 	const title = searchParams.get('title')
@@ -26,6 +31,7 @@ export default function ErrorModal() {
 
 	useEffect(() => {
 		if (title && message) setOpen(true)
+		else setOpen(false)
 	}, [title, message])
 
 	return (
@@ -35,9 +41,9 @@ export default function ErrorModal() {
 				<Description className='text-center'>{message}</Description>
 
 				<form action={reset}>
-					<input name='csrf_token' defaultValue={csrfToken} hidden />
+					<CsrfInput token={csrfToken} />
 					<input name='pathname' defaultValue={pathname} hidden />
-					<Button variant='outline'>CLOSE</Button>
+					<Button variant='outline'>{text}</Button>
 				</form>
 			</Content>
 		</Root>

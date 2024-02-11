@@ -3,6 +3,7 @@
 import { osuAuth } from '@osu'
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
+import { getServerTranslations } from '@utils/server'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -11,13 +12,11 @@ import { Client, isOsuJSError } from 'osu-web.js'
 import type { StatisticsRulesets, UserExtended } from 'osu-web.js'
 
 export async function update(formData: FormData) {
-	const pathname = formData.get('pathname')?.toString()
 	const session = await getSession()
+	const t = await getServerTranslations('ProfilePage.Errors')
+
 	if (!session) {
-		return updateError(
-			pathname,
-			'Invalid session. Please trying logging out and back in.'
-		)
+		return updateError(t)
 	}
 
 	try {
@@ -77,15 +76,15 @@ export async function update(formData: FormData) {
 
 		revalidatePath('/profile')
 	} catch (err) {
-		updateError(pathname)
+		updateError(t)
 	}
 }
 
-function updateError(pathname: string | undefined, message?: string) {
+// biome-ignore lint/suspicious/noExplicitAny: I need to figure out how to type this properly
+function updateError(t: any) {
 	redirect(
-		`${pathname ?? '/profile'}?title=FAILED TO UPDATE!&message=${
-			message ??
-			'Sorry, we failed to update your osu profile info. Please try again to see if that helps.'
-		}`
+		`/profile?title=${t('FailedUpdate.title')}&message=${t(
+			'FailedUpdate.message'
+		)}`
 	)
 }

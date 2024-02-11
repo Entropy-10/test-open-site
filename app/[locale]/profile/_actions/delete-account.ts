@@ -3,13 +3,16 @@
 import { discordAuth } from '@discord'
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
+import { getServerTranslations } from '@utils/server'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { Client } from 'osu-web.js'
 
 export async function deleteAccount(csrfToken: string) {
 	const session = await getSession()
-	if (!session) return deleteAccountError()
+	const t = await getServerTranslations('ProfilePage.Errors')
+
+	if (!session) return deleteAccountError(t)
 
 	const supabase = createClient(cookies())
 
@@ -19,14 +22,13 @@ export async function deleteAccount(csrfToken: string) {
 		.eq('user_id', session.sub)
 		.maybeSingle()
 
-	if (playerError) return deleteAccountError()
+	if (playerError) return deleteAccountError(t)
 
 	if (player) {
 		return {
 			error: {
-				title: 'CURRENTLY ON TEAM!',
-				message:
-					'Looks like you are still on a team. Please leave or delete the team first before deleting your account.'
+				title: t('CurrentTeam.title'),
+				message: t('CurrentTeam.message')
 			}
 		}
 	}
@@ -36,7 +38,7 @@ export async function deleteAccount(csrfToken: string) {
 		.select('*')
 		.maybeSingle()
 
-	if (!tokens || tokensError) return deleteAccountError()
+	if (!tokens || tokensError) return deleteAccountError(t)
 
 	const osuClient = new Client(tokens.osu_access_token)
 
@@ -44,7 +46,7 @@ export async function deleteAccount(csrfToken: string) {
 		osuClient.revokeToken()
 		discordAuth.revokeToken(tokens.discord_access_token)
 	} catch (err) {
-		return deleteAccountError()
+		return deleteAccountError(t)
 	}
 
 	const { error: userError } = await supabase
@@ -52,18 +54,18 @@ export async function deleteAccount(csrfToken: string) {
 		.delete()
 		.eq('osu_id', session.sub)
 
-	if (userError) return deleteAccountError()
+	if (userError) return deleteAccountError(t)
 
 	cookies().delete('session')
 	redirect('/')
 }
 
-function deleteAccountError() {
+// biome-ignore lint/suspicious/noExplicitAny: I need to figure out how to type this properly
+function deleteAccountError(t: any) {
 	return {
 		error: {
-			title: 'FAILED TO DELETE ACCOUNT!',
-			message:
-				'Sorry, looks like we failed to delete your account. Please try again to see if that helps.'
+			title: t('FailedAccountDelete.title'),
+			message: t('FailedAccountDelete.message')
 		}
 	}
 }

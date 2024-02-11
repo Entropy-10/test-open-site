@@ -6,11 +6,11 @@ export default async function TeamList() {
 	const supabase = createClient(cookies())
 	const { data: teams } = await supabase
 		.from('teams')
-		.select('*, players(users(osu_avatar, osu_name, rank))')
+		.select('*, players(role, users(osu_avatar, osu_name, rank))')
+		.order('role', { referencedTable: 'players' })
 
 	if (!teams) return null
 
-	//todo: improve space usage and mobile viewing
 	return (
 		<div className='padding flex flex-wrap justify-center gap-5 py-8'>
 			{teams.map(team => (

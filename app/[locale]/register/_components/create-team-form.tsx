@@ -30,7 +30,7 @@ export default function CreateTeamForm({
 	osuId,
 	discordId
 }: CreateTeamFormProps) {
-	const t = useTranslations('RegistrationPage.Form')
+	const t = useTranslations('RegistrationPage')
 	const [previewImage, setPreviewImage] = useState<string | null>(null)
 	const [success, setSuccess] = useState(false)
 	const [error, setError] = useState<ModalError | null>(null)
@@ -60,14 +60,6 @@ export default function CreateTeamForm({
 		resetField('flag')
 	}
 
-	enum CreateTeamErrorTitle {
-		duplicate_name = 'TEAM NAME ALREADY EXISTS!',
-		duplicate_acronym = 'TEAM ACRONYM ALREADY EXISTS!',
-		duplicate_player = 'ALREADY ON A TEAM!',
-		restricted = 'YOU ARE RESTRICTED!',
-		default = 'FAILED TO CREATE TEAM!'
-	}
-
 	async function onSubmit(data: z.infer<typeof createTeamForm>) {
 		if (!data.flag) return
 
@@ -89,9 +81,8 @@ export default function CreateTeamForm({
 			flag = flagData
 		} catch (err) {
 			setError({
-				title: 'FAILED TO UPLOAD FLAG!',
-				message:
-					'We were unable to upload your flag to our server. Please try again to see if that helps.'
+				title: t('Errors.UploadFailed.title'),
+				message: t('Errors.UploadFailed.message')
 			})
 			return setOpen(true)
 		}
@@ -107,7 +98,7 @@ export default function CreateTeamForm({
 
 		if (createTeamError) {
 			setError({
-				title: CreateTeamErrorTitle[createTeamError.type],
+				title: createTeamError.title,
 				message: createTeamError.message
 			})
 			return setOpen(true)
@@ -122,17 +113,17 @@ export default function CreateTeamForm({
 			className='flex w-[300px] flex-col gap-3 bg-milky-white px-6 py-4'
 		>
 			<Heading className='text-light-blue sm:text-md' padding={false} sub>
-				{t('heading')}
+				{t('Form.heading')}
 			</Heading>
 
 			<div className='group'>
-				<Label htmlFor='name'>*{t('teamName')}</Label>
+				<Label htmlFor='name'>*{t('Form.teamName')}</Label>
 				<Input {...register('name')} />
 				{errors.name?.message && <InputError message={errors.name.message} />}
 			</div>
 
 			<div className='group'>
-				<Label htmlFor='acronym'>*{t('teamAcronym')}</Label>
+				<Label htmlFor='acronym'>*{t('Form.teamAcronym')}</Label>
 				<Input {...register('acronym')} />
 				{errors.acronym?.message && (
 					<InputError message={errors.acronym.message} />
@@ -140,7 +131,7 @@ export default function CreateTeamForm({
 			</div>
 
 			<div className='group'>
-				<Label htmlFor='timezone'>*{t('timezone')}</Label>
+				<Label htmlFor='timezone'>*{t('Form.timezone')}</Label>
 				<UtcPicker {...register('timezone')} />
 				{errors.timezone?.message && (
 					<InputError message={errors.timezone.message} />
@@ -148,10 +139,10 @@ export default function CreateTeamForm({
 			</div>
 
 			<div className='relative'>
-				<Label htmlFor='flag'>*{t('teamFlag')}</Label>
+				<Label htmlFor='flag'>*{t('Form.teamFlag')}</Label>
 				<ImagePicker
-					uploadText={t('ImagePicker.upload')}
-					recommendedText={t('ImagePicker.recommended')}
+					uploadText={t('Form.ImagePicker.upload')}
+					recommendedText={t('Form.ImagePicker.recommended')}
 					previewImage={previewImage}
 					clearPreviewImage={clearPreviewImage}
 					{...register('flag')}
@@ -165,7 +156,9 @@ export default function CreateTeamForm({
 				className='w-full'
 				variant='invertedOutline'
 			>
-				{isSubmitting ? t('createButton.loadingText') : t('createButton.text')}
+				{isSubmitting
+					? t('Form.createButton.loadingText')
+					: t('Form.createButton.text')}
 			</Button>
 
 			{error && (
@@ -178,9 +171,12 @@ export default function CreateTeamForm({
 			)}
 		</form>
 	) : (
-		<MessageBox title={t('Success.title')} message={t('Success.message')}>
+		<MessageBox
+			title={t('Form.Success.title')}
+			message={t('Form.Success.message')}
+		>
 			<Button href='/team' variant='outline'>
-				{t('Success.teamManagementButton')}
+				{t('Form.Success.teamManagementButton')}
 			</Button>
 		</MessageBox>
 	)

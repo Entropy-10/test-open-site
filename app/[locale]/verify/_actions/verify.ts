@@ -9,28 +9,29 @@ import {
 import { env } from '@env'
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
+import { getServerTranslations } from '@utils/server'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
 export async function verify() {
 	const session = await getSession()
-	if (!session) return verifyError('Invalid session. Try signing in again.')
+	if (!session) redirect('/unauthorized')
 
+	const t = await getServerTranslations('VerifyPage.Errors')
 	const supabase = createClient(cookies())
+
 	const { data: user, error } = await supabase
 		.from('users')
 		.select('*, tokens(*)')
 		.eq('osu_id', session.sub)
 		.single()
 
-	if (!user?.tokens || error) return verifyError('No user found in database.')
+	if (!user?.tokens || error) return verifyError(t)
 
-	const member = await getGuildMember(user.tokens).catch(() => verifyError())
+	const member = await getGuildMember(user.tokens).catch(() => verifyError(t))
 
 	if (member?.roles.includes(env.GUILD_VERIFIED_ROLE_ID)) {
-		redirect(
-			'/verify?status=error&message=You are already verified. If you think this is a mistake please DM @__entro for further help.'
-		)
+		redirect(`/verify?status=error&message=${t('alreadyVerified')}`)
 	}
 
 	const memberInfo = {
@@ -47,7 +48,7 @@ export async function verify() {
 			await updateGuildMember(memberInfo)
 		}
 	} catch (err) {
-		verifyError()
+		verifyError(t)
 	}
 
 	await sendMessage(env.GUILD_LOG_CHANNEL_ID, {
@@ -62,10 +63,7 @@ export async function verify() {
 	redirect('/verify?status=success')
 }
 
-function verifyError(message?: string) {
-	redirect(
-		`/verify?status=error&message=Verification failed${
-			message ? `: ${message}` : '. Please try again later.'
-		}`
-	)
+// biome-ignore lint/suspicious/noExplicitAny: I need to figure out how to type this properly
+function verifyError(t: any) {
+	redirect(`/verify?status=error&message=${t('verificationFailed')}`)
 }

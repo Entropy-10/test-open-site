@@ -20,6 +20,7 @@ export default async function ProfilePage() {
 	if (!session) redirect('/unauthorized')
 
 	const t = await getTranslations('ProfilePage')
+	const buttonT = await getTranslations('Buttons')
 	const supabase = createClient(cookies())
 
 	const { data: user } = await supabase
@@ -32,7 +33,7 @@ export default async function ProfilePage() {
 
 	return (
 		<div>
-			<ErrorModal />
+			<ErrorModal text={buttonT('close')} />
 			<Background className='py-8'>
 				<Heading>{t('Headings.profile')}</Heading>
 				<Divider />

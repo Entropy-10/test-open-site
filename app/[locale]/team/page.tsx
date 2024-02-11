@@ -19,6 +19,7 @@ import Players from './_components/players'
 import Search from './_components/search'
 
 import type { MetadataProps } from '@types'
+import { CsrfInput } from '~/components/csrf-input'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -35,6 +36,7 @@ export default async function TeamPage() {
 	if (!session) redirect('/unauthorized')
 
 	const t = await getTranslations('TeamPage')
+	const buttonT = await getTranslations('Buttons')
 	const supabase = createClient(cookies())
 
 	const { data } = await supabase
@@ -96,7 +98,7 @@ export default async function TeamPage() {
 						<div className='flex gap-3'>
 							<Button className='w-[180px]'>{t('Buttons.edit')}</Button>
 							<form action={deleteTeam}>
-								<input name='csrf_token' defaultValue={csrfToken} hidden />
+								<CsrfInput token={csrfToken} />
 								<input name='team_id' defaultValue={team.id} hidden />
 								<input name='user_id' defaultValue={session.sub} hidden />
 								<Button variant='outline' className='w-[180px]'>
@@ -131,6 +133,7 @@ export default async function TeamPage() {
 						teamId={team.id}
 						inviteButtonText={t('Invites.Invite.inviteButton')}
 						placeholderText={t('Invites.Invite.placeholder')}
+						closeButtonText={buttonT('close')}
 					/>
 				)}
 				<Suspense fallback={<SectionLoader className='h-[311px]' />}>

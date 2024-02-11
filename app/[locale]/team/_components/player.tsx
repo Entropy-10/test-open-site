@@ -2,9 +2,11 @@ import { Star } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
-import Button from '~/components/ui/Button'
-
+import { headers } from 'next/headers'
+import { CsrfInput } from '~/components/csrf-input'
 import type { Tables } from '~/types/supabase'
+import { deleteItem } from '../_actions/delete'
+import DeleteButton from './delete-button'
 
 interface PlayerProps {
 	userId: string
@@ -16,6 +18,7 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 	if (!player.users) return null
 	const user = player.users
 	const t = useTranslations('TeamPage.Players.Player')
+	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 
 	return (
 		<div className='w-[200px] bg-gradient-to-r from-light-blue to-salmon p-4 md:w-[250px]'>
@@ -48,7 +51,12 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 			</div>
 
 			{userId !== player.user_id && isCaptain ? (
-				<Button className='w-full'>{t('removeButton')}</Button>
+				<form action={deleteItem}>
+					<CsrfInput token={csrfToken} />
+					<input name='id' defaultValue={player.user_id} hidden />
+					<input name='type' defaultValue='player' hidden />
+					<DeleteButton text={t('removeButton')} />
+				</form>
 			) : null}
 		</div>
 	)

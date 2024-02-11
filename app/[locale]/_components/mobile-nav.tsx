@@ -97,6 +97,10 @@ export default async function MobileNav({ user, inviteCount }: MobileNavProps) {
 								</NavItem>
 							</Dropdown.Item>
 
+							<div className='px-2 py-0.5'>
+								<div className='h-px w-full bg-light-blue' />
+							</div>
+
 							<Dropdown.Item className='p-0 data-[highlighted]:bg-red-400'>
 								<SignOutButton
 									text={buttonT('signOut')}

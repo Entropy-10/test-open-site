@@ -2,6 +2,7 @@
 
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
+import { getServerTranslations } from '@utils/server'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -10,10 +11,13 @@ export async function invite(formData: FormData) {
 	const teamId = formData.get('team_id')?.toString()
 	const userId = formData.get('user_id')?.toString()
 	const session = await getSession()
+	const t = await getServerTranslations('TeamPage.Errors')
 
 	if (session?.sub === userId) {
 		redirect(
-			'/team?title=CANNOT INVITE SELF!&message=You cannot invite yourself to your own team. If you want to switch teams please delete this team first.'
+			`/team?title=${t('InvitedSelf.title')}&message=${t(
+				'InvitedSelf.message'
+			)}`
 		)
 	}
 
@@ -29,11 +33,15 @@ export async function invite(formData: FormData) {
 
 	if (error?.code === '23505') {
 		redirect(
-			`/team?title=PLAYER ALREADY INVITED!&message=Looks like you've already sent that player and invite. Please remove the current invite before trying to reinvite them.`
+			`/team?title=${t('AlreadyInvited.title')}&message=${t(
+				'AlreadyInvited.message'
+			)}`
 		)
 	} else if (error) {
 		redirect(
-			'/team?title=FAILED TO INVITE PLAYER!&message=Sorry, we failed to invite that player. Please try again to see if that helps.'
+			`/team?title=${t('InviteFailed.title')}&message=${t(
+				'InviteFailed.message'
+			)}`
 		)
 	}
 

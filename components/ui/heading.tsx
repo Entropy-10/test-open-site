@@ -23,7 +23,7 @@ export default function Heading({
 				className
 			)}
 		>
-			{fancyHeader(children)}.
+			{fancyHeader(children)}
 		</h2>
 	) : (
 		<h3

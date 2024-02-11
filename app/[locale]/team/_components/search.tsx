@@ -5,6 +5,7 @@ import { SearchIcon, X } from 'lucide-react'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
+import { CsrfInput } from '~/components/csrf-input'
 import ErrorModal from '~/components/error-modal'
 import { invite } from '../_actions/invite'
 import InviteButton from './invite-button'
@@ -13,12 +14,14 @@ interface SearchProps {
 	teamId: number
 	inviteButtonText: string
 	placeholderText: string
+	closeButtonText: string
 }
 
 export default function Search({
 	teamId,
 	inviteButtonText,
-	placeholderText
+	placeholderText,
+	closeButtonText
 }: SearchProps) {
 	const [debounce, setDebounce] = useState<Timer>()
 	const [results, setResults] = useState<UserResult[]>([])
@@ -60,14 +63,14 @@ export default function Search({
 
 	return (
 		<div className='padding pt-3'>
-			<ErrorModal />
+			<ErrorModal text={closeButtonText} />
 			<form
 				onSubmit={() => setSelectedUser(null)}
 				action={invite}
 				className='flex gap-3'
 			>
 				<InviteButton text={inviteButtonText} disabled={!selectedUser} />
-				<input name='csrf_token' defaultValue={csrfToken} hidden />
+				<CsrfInput token={csrfToken} />
 				<input name='team_id' defaultValue={teamId} hidden />
 				<input name='user_id' defaultValue={selectedUser?.osu_id} hidden />
 

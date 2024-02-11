@@ -6,18 +6,19 @@ import { NextResponse } from 'next/server'
 import { authError } from '../../utils'
 
 import { encrypt } from '@session'
+import { getTranslations } from 'next-intl/server'
 import type { NextRequest } from 'next/server'
 
 export async function GET(request: NextRequest) {
 	const searchParams = request.nextUrl.searchParams
+	const locale = searchParams.get('locale') ?? 'en'
 	const code = searchParams.get('code')
 	const url = new URL(request.url)
 
+	const t = await getTranslations({ locale, namespace: 'APICallbacks' })
+
 	if (!code) {
-		return authError(
-			url,
-			"Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
-		)
+		return authError(url, t('Errors.missingCode'))
 	}
 
 	try {

@@ -66,7 +66,7 @@
 			"signIn": "Zaloguj"
 		}
 	},
-	"Error": {
+	"ErrorPage": {
 		"title": "Coś poszło nie tak!",
 		"retryButton": "Spróbuj ponownie",
 		"goHomeButton": "Powrót do strony głównej"

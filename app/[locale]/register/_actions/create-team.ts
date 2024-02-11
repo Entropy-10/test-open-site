@@ -5,6 +5,7 @@ import { createTeamAction } from '@schemas'
 import { getSession } from '@session'
 import { getDoc } from '@sheets'
 import { createClient } from '@supabase/server'
+import { getServerTranslations } from '@utils/server'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
@@ -12,23 +13,23 @@ export async function createTeam(
 	formData: FormData
 ): Promise<{ error: CreateTeamError | null }> {
 	const session = await getSession()
+	const t = await getServerTranslations('RegistrationPage.Errors')
+
 	if (!session) redirect('/unauthorized')
 
 	if (session.user.restricted)
 		return {
 			error: {
-				type: 'restricted',
-				message:
-					'Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.'
+				title: t('Restricted.title'),
+				message: t('Restricted.message')
 			}
 		}
 
 	const formTeamData = formData.get('teamData')?.toString()
 	if (!formTeamData) {
-		return { error: { type: 'default', message: 'failed to create team' } }
+		return { error: { title: 'default', message: 'failed to create team' } }
 	}
 
-	//todo: add system for cleaning up created data on error
 	try {
 		const teamData = createTeamAction.parse(JSON.parse(formTeamData))
 		const supabase = createClient(cookies())
@@ -42,9 +43,8 @@ export async function createTeam(
 		if (player) {
 			return {
 				error: {
-					type: 'duplicate_player',
-					message:
-						'Looks like you are already on a team. Please delete or leave your current team before making a new one.'
+					title: t('DuplicatePlayer.title'),
+					message: t('DuplicatePlayer.message')
 				}
 			}
 		}
@@ -69,8 +69,12 @@ export async function createTeam(
 			if (violatedKey && teamError.code === '23505') {
 				return {
 					error: {
-						type: `duplicate_${violatedKey}`,
-						message: `Looks like a team with that ${violatedKey} already exists. Please use a different ${violatedKey} instead.`
+						title: t('Duplicate.title', {
+							type: t(`Duplicate.Types.${violatedKey}`).toUpperCase()
+						}),
+						message: t('Duplicate.message', {
+							type: t(`Duplicate.Types.${violatedKey}`)
+						})
 					}
 				}
 			}
@@ -103,20 +107,14 @@ export async function createTeam(
 	} catch (err) {
 		return {
 			error: {
-				type: 'default',
-				message:
-					'We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.'
+				title: t('Default.title'),
+				message: t('Default.message')
 			}
 		}
 	}
 }
 
 interface CreateTeamError {
-	type:
-		| 'duplicate_name'
-		| 'duplicate_acronym'
-		| 'duplicate_player'
-		| 'restricted'
-		| 'default'
+	title: string
 	message: string
 }

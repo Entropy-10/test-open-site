@@ -66,7 +66,7 @@
 			"signIn": "Iniciar Sesión"
 		}
 	},
-	"Error": {
+	"ErrorPage": {
 		"title": "¡Algo salió mal!",
 		"retryButton": "Intentar otra vez",
 		"goHomeButton": "Regresar a la página de Inicio"
