@@ -7,7 +7,7 @@ import sharp from 'sharp'
 
 export async function uploadImage(formData: FormData) {
 	try {
-		const teamName = formData.get('teamName')?.toString()
+		const teamName = formData.get('team_name')?.toString()
 		const image = await (
 			formData.get('file') as Blob | undefined
 		)?.arrayBuffer()
@@ -26,7 +26,7 @@ export async function uploadImage(formData: FormData) {
 		const { data, error } = await supabase.storage
 			.from('flags')
 			.upload(
-				`${teamName}/flag.${format}`,
+				`${teamName}/flag-${Date.now()}.${format}`,
 				new File([flag], `flag.${format}`, { type: `image/${format}` }),
 				{ upsert: true }
 			)

@@ -100,6 +100,7 @@ export default async function TeamPage() {
 							<form action={deleteTeam}>
 								<CsrfInput token={csrfToken} />
 								<input name='team_id' defaultValue={team.id} hidden />
+								<input name='team_flag' defaultValue={team.flag} hidden />
 								<input name='user_id' defaultValue={session.sub} hidden />
 								<Button variant='outline' className='w-[180px]'>
 									{t('Buttons.delete')}

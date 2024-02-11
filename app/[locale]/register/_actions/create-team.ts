@@ -1,9 +1,7 @@
 'use server'
 
-import { env } from '@env'
 import { createTeamAction } from '@schemas'
 import { getSession } from '@session'
-import { getDoc } from '@sheets'
 import { createClient } from '@supabase/server'
 import { getServerTranslations } from '@utils/server'
 import { cookies } from 'next/headers'
@@ -91,18 +89,6 @@ export async function createTeam(
 
 		if (playerError) throw playerError
 
-		const doc = getDoc(env.ADMIN_SHEET)
-		await doc.loadInfo()
-
-		const sheet = doc.sheetsByTitle.TeamRegs
-
-		await sheet.addRow({
-			team_id: team.id,
-			name: team.name,
-			p1_osu_id: teamData.osuId,
-			p1_discord_id: teamData.discordId,
-			timezone: team.timezone
-		})
 		return { error: null }
 	} catch (err) {
 		return {

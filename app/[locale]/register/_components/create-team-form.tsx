@@ -69,7 +69,7 @@ export default function CreateTeamForm({
 		const { csrfToken } = await csrfResp.json()
 
 		flagForm.append('file', flagBlob)
-		flagForm.append('teamName', data.name)
+		flagForm.append('team_name', data.name.toLowerCase().replaceAll(' ', '-'))
 		flagForm.append('csrf_token', csrfToken)
 
 		let flag: { path: string; url: string }
