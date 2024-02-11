@@ -42,7 +42,8 @@
 	"Buttons": {
 		"register": "注册",
 		"signIn": "登入",
-		"signOut": "登出"
+		"signOut": "登出",
+		"close": "CLOSE"
 	},
 	"Status": {
 		"operational": "所有服务均正常运转",
@@ -66,10 +67,10 @@
 			"signIn": "注册"
 		}
 	},
-	"Error": {
-		"title": "出了些问题！",
-		"retryButton": "再试一次",
-		"goHomeButton": "返回主页"
+	"ErrorPage": {
+		"title": "Something went wrong!",
+		"retryButton": "Try again",
+		"goHomeButton": "Go back home"
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -80,8 +81,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "个人信息",
-			"team": "我的队伍"
+			"profile": "MY PROFILE.",
+			"team": "MY TEAM."
 		},
 		"Osu": {
 			"rank": "全球排名",
@@ -104,6 +105,32 @@
 					"accept": "接受",
 					"deny": "拒绝"
 				}
+			}
+		},
+		"Errors": {
+			"ExistingTeam": {
+				"title": "ALREADY ON A TEAM!",
+				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+			},
+			"FailedInvite": {
+				"title": "FAILED TO {type} INVITE!",
+				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"Types": {
+					"deny": "deny",
+					"accept": "accept"
+				}
+			},
+			"CurrentTeam": {
+				"title": "CURRENTLY ON TEAM!",
+				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+			},
+			"FailedAccountDelete": {
+				"title": "FAILED TO DELETE ACCOUNT!",
+				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+			},
+			"FailedUpdate": {
+				"title": "FAILED TO UPDATE!",
+				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
 			}
 		}
 	},
@@ -132,10 +159,37 @@
 				"upload": "点击此处上传",
 				"recommended": "推荐比例为 9:4"
 			}
+		},
+		"Errors": {
+			"Restricted": {
+				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
+				"title": "YOU ARE RESTRICTED!"
+			},
+			"DuplicatePlayer": {
+				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
+				"title": "ALREADY ON A TEAM!"
+			},
+			"Duplicate": {
+				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"Types": {
+					"name": "name",
+					"acronym": "acronym",
+					"player": "player"
+				},
+				"title": "TEAM {type} ALREADY EXISTS!"
+			},
+			"Default": {
+				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
+				"title": "FAILED TO CREATE TEAM!"
+			},
+			"UploadFailed": {
+				"title": "FAILED TO UPLOAD FLAG!",
+				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "队伍列表",
+		"heading": "TEAM LIST.",
 		"teamsRegistered": "个队伍已经注册"
 	},
 	"UnauthorizedPage": {
@@ -160,12 +214,16 @@
 				"text": "验证",
 				"loadingText": "验证中"
 			}
+		},
+		"Errors": {
+			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
+			"verificationFailed": "Verification failed. Please try again and see if that helps."
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "我的队伍",
-			"player": "选手列表"
+			"team": "MY TEAM.",
+			"player": "PLAYER LIST."
 		},
 		"timezone": "时区",
 		"Buttons": {
@@ -193,12 +251,47 @@
 				"inviteButton": "邀请",
 				"placeholder": "输入 osu 用户名..."
 			}
+		},
+		"Errors": {
+			"DeleteItemFailed": {
+				"title": "FAILED TO {type}!",
+				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"Types": {
+					"player": "player",
+					"invite": "invite"
+				}
+			},
+			"InvitedSelf": {
+				"title": "CANNOT INVITE SELF!",
+				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+			},
+			"AlreadyInvited": {
+				"title": "PLAYER ALREADY INVITED!",
+				"message": "Looks like you've already sent that player and invite. Please remove the current invite before trying to reinvite them."
+			},
+			"InviteFailed": {
+				"title": "FAILED TO INVITE PLAYER!",
+				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+			},
+			"PlayersOnTeam": {
+				"title": "PLAYERS STILL ON TEAM!",
+				"message": "Please remove all players from the team before deleting the team."
+			},
+			"DeleteTeamFailed": {
+				"title": "FAILED TO DELETE TEAM!",
+				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+			}
 		}
 	},
 	"InfoPage": {
-		"heading": "概要信息"
+		"heading": "GENERAL INFO."
 	},
 	"Components": {
 		"comingSoon": "敬请期待"
+	},
+	"APICallbacks": {
+		"Errors": {
+			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+		}
 	}
 }
