@@ -43,7 +43,7 @@
 		"register": "注册",
 		"signIn": "登入",
 		"signOut": "登出",
-		"close": "CLOSE"
+		"close": "关闭"
 	},
 	"Status": {
 		"operational": "所有服务均正常运转",
@@ -68,9 +68,9 @@
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home"
+		"title": "出现未知错误！",
+		"retryButton": "重试",
+		"goHomeButton": "返回主页"
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -81,8 +81,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "个人信息",
+			"team": "我的队伍"
 		},
 		"Osu": {
 			"rank": "全球排名",
@@ -109,24 +109,24 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"title": "已经在一个队伍里了!",
+				"message": "看起来您已经在一个队伍里了。若要加入新队伍，请先删除或退出当前的队伍。"
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "{type} 邀请失败！",
+				"message": "抱歉，我们未能 {type} 邀请。试试再试一次有没有用。",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "谢绝",
+					"accept": "接受"
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "当前在队伍中!",
+				"message": "看起来您仍然在队伍里。若要删除账号，请先离开或删除队伍。"
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"title": "删除账户失败！",
+				"message": "抱歉，看起来我们未能删除您的账户。试试再试一次看看有没有用。"
 			},
 			"FailedUpdate": {
 				"title": "FAILED TO UPDATE!",
