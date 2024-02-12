@@ -129,8 +129,8 @@
 				"message": "抱歉，看起来我们未能删除您的账户。试试再试一次看看有没有用。"
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "更新失败!",
+				"message": "抱歉，我们未能更新你的osu个人资料信息。试试再试一次有没有用。"
 			}
 		}
 	},
