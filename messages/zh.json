@@ -162,12 +162,12 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "看起来你的osu账号处于限制状态。抱歉您不能在账号限制状态下注册。如果您认为这是一个错误，请登出后，在重新进行登录。",
+				"title": "账号处于限制状态!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "看起来你已经在一个队伍里了。在创建新队伍前，请先删除或退出当前队伍。",
+				"title": "已在队伍中!"
 			},
 			"Duplicate": {
 				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
