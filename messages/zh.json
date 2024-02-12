@@ -170,21 +170,21 @@
 				"title": "已在队伍中!"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "看起来已经存在相同 {type} 的队了。请用一个不同的 {type} 。",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "队名",
+					"acronym": "缩写",
+					"player": "选手"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "{type} 已经存在!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "我们未能创建你的队伍。看起来是我们这边出了问题。请稍后尝试看看有没有用。",
+				"title": "创建队伍失败!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "上传队标失败!",
+				"message": "我们无法上传您的队旗到我们的服务器。请再试试看看有没有用。"
 			}
 		}
 	},
