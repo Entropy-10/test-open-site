@@ -43,7 +43,7 @@
 		"register": "INSCREVA-SE",
 		"signIn": "ENTRAR",
 		"signOut": "ENCERRAR SESSÃO",
-		"close": "CLOSE"
+		"close": "FECHAR"
 	},
 	"Status": {
 		"operational": "Todos os serviços estão online",
@@ -68,9 +68,9 @@
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home"
+		"title": "Algo deu errado!",
+		"retryButton": "Tentar novamente",
+		"goHomeButton": "Voltar ao início"
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -81,8 +81,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "MEU PERFIL.",
+			"team": "MEU TIME."
 		},
 		"Osu": {
 			"rank": "RANK GLOBAL",
@@ -110,23 +110,23 @@
 		"Errors": {
 			"ExistingTeam": {
 				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de entrar em um novo time."
 			},
 			"FailedInvite": {
 				"title": "FAILED TO {type} INVITE!",
 				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "negar",
+					"accept": "aceitar"
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "ATUALMENTE EM TIME!",
+				"message": "Parece que você ainda está em um time. Por favor, saia ou exclua o time antes de excluir sua conta."
 			},
 			"FailedAccountDelete": {
 				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"message": "Desculpe, parece que não conseguimos excluir sua conta. Por favor, tente novamente para ver se isso ajuda."
 			},
 			"FailedUpdate": {
 				"title": "FAILED TO UPDATE!",
