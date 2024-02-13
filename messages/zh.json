@@ -114,7 +114,7 @@
 			},
 			"FailedInvite": {
 				"title": "{type} 邀请失败！",
-				"message": "抱歉，我们未能 {type} 邀请。试试再试一次有没有用。",
+				"message": "抱歉，我们未能 {type} 邀请。请再试一次看看是否有用。",
 				"Types": {
 					"deny": "谢绝",
 					"accept": "接受"
@@ -126,11 +126,11 @@
 			},
 			"FailedAccountDelete": {
 				"title": "删除账户失败！",
-				"message": "抱歉，看起来我们未能删除您的账户。试试再试一次看看有没有用。"
+				"message": "抱歉，看起来我们未能删除您的账户。请再试一次看看是否有用。"
 			},
 			"FailedUpdate": {
 				"title": "更新失败!",
-				"message": "抱歉，我们未能更新你的osu个人资料信息。试试再试一次有没有用。"
+				"message": "抱歉，我们未能更新你的osu个人资料信息。请再试一次看看是否有用。"
 			}
 		}
 	},
@@ -162,7 +162,7 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "看起来你的osu账号处于限制状态。抱歉您不能在账号限制状态下注册。如果您认为这是一个错误，请登出后，在重新进行登录。",
+				"message": "看起来你的osu账号处于限制状态。抱歉，您不能在账号限制状态下进行注册。如果您认为这是一个错误，请登出后，再重新进行登录。",
 				"title": "账号处于限制状态!"
 			},
 			"DuplicatePlayer": {
@@ -179,17 +179,17 @@
 				"title": "{type} 已经存在!"
 			},
 			"Default": {
-				"message": "我们未能创建你的队伍。看起来是我们这边出了问题。请稍后尝试看看有没有用。",
+				"message": "我们未能创建你的队伍。看起来是我们这边出了问题。请再试一次看看是否有用。",
 				"title": "创建队伍失败!"
 			},
 			"UploadFailed": {
 				"title": "上传队标失败!",
-				"message": "我们无法上传您的队旗到我们的服务器。请再试试看看有没有用。"
+				"message": "我们无法上传您的队旗到我们的服务器。请再试一次看看是否有用。"
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
+		"heading": "队伍列表",
 		"teamsRegistered": "个队伍已经注册"
 	},
 	"UnauthorizedPage": {
@@ -216,14 +216,14 @@
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "您已通过认证。如果您认为有误，请私信@__entro获取更多帮助。",
+			"verificationFailed": "验证失败。请再试一次看看是否有用。"
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "我的队伍",
+			"player": "队伍列表"
 		},
 		"timezone": "时区",
 		"Buttons": {
@@ -254,44 +254,44 @@
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"title": "删除 {type} 失败!",
+				"message": "抱歉，我们未能删除 {type}。请再试一次看看是否有用。",
 				"Types": {
-					"player": "player",
-					"invite": "invite"
+					"player": "选手",
+					"invite": "邀请"
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"title": "不能邀请自己!",
+				"message": "您不能邀请您到自己的队伍中。如果您想更换队伍，请先删除当前队伍。"
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player and invite. Please remove the current invite before trying to reinvite them."
+				"title": "选手已受邀!",
+				"message": "看起来您已经向该选手发送邀请。请在尝试重新邀请Ta前先移除当前邀请。"
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "邀请选手失败!",
+				"message": "抱歉，我们未能成功邀请该名选手。请再试一次看看是否有用。"
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "仍有选手在队伍中!",
+				"message": "在删除队伍前，请先移除所有选手。"
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "删除队伍失败!",
+				"message": "抱歉，我们未能成功删除你的队伍。请再试一次看看是否有用。"
 			}
 		}
 	},
 	"InfoPage": {
-		"heading": "GENERAL INFO."
+		"heading": "规则概述"
 	},
 	"Components": {
 		"comingSoon": "敬请期待"
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "抱歉，登录无法完成。如果是异常请再次尝试，否则可自由地返回主页。"
 		}
 	}
 }
