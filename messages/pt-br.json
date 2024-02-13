@@ -162,21 +162,21 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "Parece que sua conta está restrita no osu. Infelizmente, você não pode se registrar enquanto no modo restrito. Se você acredita que isto foi um erro, tente deslogar e logar novamente no site.",
+				"title": "VOCÊ ESTÁ RESTRITO!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
+				"message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de entrar em um novo time.",
 				"title": "ALREADY ON A TEAM!"
 			},
 			"Duplicate": {
 				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "nome",
+					"acronym": "acrônimo",
+					"player": "jogador"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "TIME {type} JÁ EXISTE!"
 			},
 			"Default": {
 				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
@@ -189,7 +189,7 @@
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
+		"heading": "LISTA DE TIMES.",
 		"teamsRegistered": "TIMES REGISTRADOS"
 	},
 	"UnauthorizedPage": {
@@ -222,7 +222,7 @@
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
+			"team": "MEU TIME.",
 			"player": "PLAYER LIST."
 		},
 		"timezone": "FUSO HORÁRIO",
@@ -262,7 +262,7 @@
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
+				"title": "VOCÊ NÃO PODE CONVIDAR A SI MESMO(A)!",
 				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
 			},
 			"AlreadyInvited": {
@@ -274,17 +274,17 @@
 				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "JOGADORES AINDA ESTÃO NO TIME!",
+				"message": "Por favor, remova todos os jogadores do time antes de excluí-lo."
 			},
 			"DeleteTeamFailed": {
 				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"message": "Desculpe, não conseguimos excluir seu time. Por favor, tente novamente para ver se isso ajuda."
 			}
 		}
 	},
 	"InfoPage": {
-		"heading": "GENERAL INFO."
+		"heading": "INFORMAÇÕES GERAIS."
 	},
 	"Components": {
 		"comingSoon": "Em breve"
