@@ -1,7 +1,7 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "모든 랭크를 위한 osu! lazer 대회",
+			"description": "오픈 랭크, OSU! lazer 토너먼트",
 			"hostTitle": "에 의해 호스팅"
 		},
 		"Features": {
@@ -12,11 +12,11 @@
 			},
 			"Descriptions": {
 				"mappool": "매주 새로운 모드가 도입되는 lazer 모드풀.",
-				"format": "An open rank, double elimination, 3v3 tournament.",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"format": "오픈 랭크, 더블 엘리미네이션, 3v3 토너먼트.",
+				"schedule": "트위치에서 스트리밍되는 다가오는 경기를 시청하세요."
 			},
 			"Countdown": {
-				"titleSectionOne": "TOURNAMENT",
+				"titleSectionOne": "토너먼트",
 				"titleSectionTwo": "STARTS IN"
 			}
 		},
@@ -60,10 +60,10 @@
 			"home": "Home",
 			"schedule": "Schedule",
 			"info": "Info",
-			"mappool": "Mappool",
-			"register": "Register",
-			"teams": "Teams",
-			"team": "Team",
+			"mappool": "맵풀",
+			"register": "등록하기",
+			"teams": "팀",
+			"team": "팀",
 			"signIn": "Sign In"
 		}
 	},
@@ -91,7 +91,7 @@
 		"Team": {
 			"heading": "CURRENT TEAM",
 			"none": "You currently do not have a team. Join one by accepting any pending invites.",
-			"timezone": "TIMEZONE",
+			"timezone": "시간대별",
 			"joined": "JOINED",
 			"manageTeamButton": "MANAGE MY TEAM"
 		},
@@ -99,7 +99,7 @@
 			"heading": "PENDING INVITES",
 			"none": "You currently do not have any invites. Wait for one or create your own team.",
 			"Invite": {
-				"timezone": "TIMEZONE",
+				"timezone": "시간대별",
 				"invited": "INVITED",
 				"Buttons": {
 					"accept": "ACCEPT",
