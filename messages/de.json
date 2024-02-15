@@ -68,7 +68,7 @@
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
+		"title": "Etwas ist schiefgelaufen!",
 		"retryButton": "Try again",
 		"goHomeButton": "Go back home"
 	},
@@ -81,8 +81,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "MEIN PROFIL.",
+			"team": "MEIN TEAM."
 		},
 		"Osu": {
 			"rank": "GLOBALER RANG",
