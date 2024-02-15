@@ -1,14 +1,14 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
-			"hostTitle": "HOSTED BY"
+			"description": "모든 랭크를 위한 osu! lazer 대회",
+			"hostTitle": "에 의해 호스팅"
 		},
 		"Features": {
 			"Titles": {
-				"mappool": "MAPPOOL.",
-				"format": "FORMAT.",
-				"schedule": "SCHEDULE."
+				"mappool": "맵풀.",
+				"format": "형식.",
+				"schedule": "일정."
 			},
 			"Descriptions": {
 				"mappool": "A lazer modpool featuring new mods each week.",
@@ -34,7 +34,7 @@
 		"schedule": "SCHEDULE",
 		"teams": "TEAMS",
 		"info": "INFO",
-		"sheet": "SHEET",
+		"sheet": "시트",
 		"invites": "INVITES",
 		"team": "TEAM",
 		"profile": "PROFILE"
