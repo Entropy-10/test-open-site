@@ -69,8 +69,8 @@
 	},
 	"ErrorPage": {
 		"title": "Etwas ist schiefgelaufen!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home"
+		"retryButton": "Erneut versuchen",
+		"goHomeButton": "Zurück zur Startseite"
 	},
 	"ProfilePage": {
 		"Buttons": {
