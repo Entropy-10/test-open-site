@@ -180,11 +180,11 @@
 			},
 			"Default": {
 				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"title": "NÃO CONSEGUIU CRIAR TIME!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "NÃO CONSEGUIU FAZER UPLOAD DA BANDEIRA!",
+				"message": "Não conseguimos carregar a sua bandeira em nosso servidor. Por favor, tente novamente para ver se isso ajuda."
 			}
 		}
 	},
