@@ -11,7 +11,7 @@
 				"schedule": "일정."
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
+				"mappool": "매주 새로운 모드가 도입되는 lazer 모드풀.",
 				"format": "An open rank, double elimination, 3v3 tournament.",
 				"schedule": "Watch upcoming matches being streamed on Twitch."
 			},
@@ -30,17 +30,17 @@
 	},
 	"NavItems": {
 		"home": "HOME",
-		"mappool": "MAPPOOL",
-		"schedule": "SCHEDULE",
-		"teams": "TEAMS",
-		"info": "INFO",
+		"mappool": "맵풀",
+		"schedule": "일정",
+		"teams": "팀",
+		"info": "정보",
 		"sheet": "시트",
-		"invites": "INVITES",
-		"team": "TEAM",
-		"profile": "PROFILE"
+		"invites": "초대",
+		"team": "팀",
+		"profile": "프로필"
 	},
 	"Buttons": {
-		"register": "REGISTER",
+		"register": "등록하기",
 		"signIn": "SIGN IN",
 		"signOut": "SIGN OUT",
 		"close": "CLOSE"
