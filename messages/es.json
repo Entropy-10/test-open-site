@@ -43,7 +43,7 @@
 		"register": "REGISTRATE",
 		"signIn": "INICIAR SESIÓN",
 		"signOut": "CERRAR SESIÓN",
-		"close": "CLOSE"
+		"close": "CERRAR"
 	},
 	"Status": {
 		"operational": "Todos los servicios están online",
@@ -68,8 +68,8 @@
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
+		"title": "¡Algo salió mal!",
+		"retryButton": "Intenta otra vez",
 		"goHomeButton": "Go back home"
 	},
 	"ProfilePage": {
