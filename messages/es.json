@@ -70,7 +70,7 @@
 	"ErrorPage": {
 		"title": "¡Algo salió mal!",
 		"retryButton": "Intenta otra vez",
-		"goHomeButton": "Go back home"
+		"goHomeButton": "Volver al inicio"
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -81,8 +81,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "MI PERFIL.",
+			"team": "MI EQUIPO."
 		},
 		"Osu": {
 			"rank": "CLASIFICACIÓN GLOBAL",
@@ -109,15 +109,15 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"title": "¡YA ESTÁS EN UN EQUIPO!",
+				"message": "Parece que ya estás en un equipo. Por favor elimina o deja tu equipo actual antes de unirte a uno nuevo."
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "¡FALLÓ AL {type} LA INVITACIÓN!",
+				"message": "Lo sentimos, fallamos al {type} la invitación. Por favor intenta otra vez para ver si eso ayuda.",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "negar",
+					"accept": "aceptar"
 				}
 			},
 			"CurrentTeam": {
@@ -162,19 +162,19 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "Parece que estás restringido en osu. Desafortunadamente no puedes registrarte estando restringido. Si crees que esto es un error, intenta cerrar sesión y vuelve a iniciar sesión en el sitio. ",
+				"title": "¡ESTÁS RESTRINGIDO!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "Parece que ya estás en un equipo. Por favor elimina o deja tu equipo actual antes de crear uno nuevo.",
+				"title": "¡ESTÁS EN UN EQUIPO!"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "Parece que un equipo con ese {type} ya existe. Por favor usa un {type} diferente.",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "nombre",
+					"acronym": "acrónimo",
+					"player": "jugador"
 				},
 				"title": "TEAM {type} ALREADY EXISTS!"
 			},
@@ -189,7 +189,7 @@
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
+		"heading": "LISTA DE EQUIPOS.",
 		"teamsRegistered": "EQUIPOS REGISTRADOS"
 	},
 	"UnauthorizedPage": {
@@ -222,8 +222,8 @@
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "MI EQUIPO.",
+			"player": "LISTA DE JUGADORES."
 		},
 		"timezone": "ZONA HORARIA",
 		"Buttons": {
@@ -262,8 +262,8 @@
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"title": "!NO PUEDES INVITAR A TI MISMO!",
+				"message": "No puedes invitarte a ti mismo a tu propio equipo. Si deseas cambiar de equipo, por favor elimina este equipo primero."
 			},
 			"AlreadyInvited": {
 				"title": "PLAYER ALREADY INVITED!",
@@ -284,14 +284,14 @@
 		}
 	},
 	"InfoPage": {
-		"heading": "GENERAL INFO."
+		"heading": "INFORMACIÓN GENERAL."
 	},
 	"Components": {
 		"comingSoon": "Próximamente"
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "Lo sentimos, pero el inicio de sesión no pudo completarse. Si fue inesperado, por favor intenta otra vez, de lo contrario, no dudes en navegar al inicio."
 		}
 	}
 }
