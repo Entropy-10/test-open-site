@@ -23,6 +23,7 @@ export default async function Invites({ teamId, isCaptain }: InvitesProps) {
 		.from('invites')
 		.select('*, users(osu_avatar, osu_name, rank, discord_tag)')
 		.eq('team_id', teamId)
+		.neq('status', 'accepted')
 
 	if (error) console.log(error)
 	if (!invites || invites.length === 0) {

@@ -32,7 +32,7 @@ export default async function Header({ locale }: HeaderProps) {
 	}
 
 	return (
-		<header className='disabledViewTransiton h-14 bg-milky-white'>
+		<header className='disabledViewTransition h-14 bg-milky-white'>
 			<section className='padding flex h-full grow items-center justify-between'>
 				<Link
 					href='/'

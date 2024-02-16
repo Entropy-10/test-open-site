@@ -22,7 +22,7 @@ export default function Footer() {
 	const { discord, x, twitch, spotify, youtube } = links.socials
 
 	return (
-		<footer className='disabledViewTransiton relative flex h-64 flex-col bg-footer py-4 text-milky-white'>
+		<footer className='relative flex h-64 flex-col bg-footer py-4 text-milky-white'>
 			<div className='padding mt-4 flex flex-col space-y-5 md:space-y-0'>
 				<div className='hidden md:mb-5 md:flex'>
 					<Link href='/' className='cursor-pointer focus:outline-none'>

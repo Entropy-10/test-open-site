@@ -2,6 +2,7 @@ import { Star } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
+import { cn } from '@utils/client'
 import { headers } from 'next/headers'
 import { CsrfInput } from '~/components/csrf-input'
 import type { Tables } from '~/types/supabase'
@@ -21,7 +22,12 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 
 	return (
-		<div className='w-[200px] bg-gradient-to-r from-light-blue to-salmon p-4 md:w-[250px]'>
+		<div
+			className={cn(
+				'w-[200px] bg-gradient-to-r from-light-blue to-salmon p-4 md:w-[250px]',
+				isCaptain && 'h-full'
+			)}
+		>
 			<div className='mb-1.5 flex flex-col items-center uppercase md:mb-3'>
 				<Image
 					height={115}

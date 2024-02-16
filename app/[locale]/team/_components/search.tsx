@@ -5,7 +5,6 @@ import { SearchIcon, X } from 'lucide-react'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import { CsrfInput } from '~/components/csrf-input'
 import ErrorModal from '~/components/error-modal'
 import { invite } from '../_actions/invite'
 import InviteButton from './invite-button'
@@ -70,7 +69,7 @@ export default function Search({
 				className='flex gap-3'
 			>
 				<InviteButton text={inviteButtonText} disabled={!selectedUser} />
-				<CsrfInput token={csrfToken} />
+				<input name='csrf_token' value={csrfToken} hidden readOnly />
 				<input name='team_id' defaultValue={teamId} hidden />
 				<input name='user_id' defaultValue={selectedUser?.osu_id} hidden />
 

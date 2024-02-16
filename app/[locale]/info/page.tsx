@@ -85,8 +85,9 @@ export default function InfoPage() {
 					<CustomMDX
 						source={`
 - ${t('Scheduling.1')}
-- ${t('Scheduling.2', { sublist_alpha: '\n1.' })}
-- ${t('Scheduling.3', { sublist_alpha: '\n1.' })}
+- ${t('Scheduling.2')}
+- ${t('Scheduling.3')}
+- ${t('Scheduling.4')}
 					`}
 					/>
 				</div>

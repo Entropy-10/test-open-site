@@ -25,19 +25,33 @@ export async function invite(formData: FormData) {
 
 	const supabase = createClient(cookies())
 
-	const { error } = await supabase.from('invites').insert({
+	const { data: player } = await supabase
+		.from('players')
+		.select()
+		.eq('team_id', teamId)
+		.eq('user_id', userId)
+
+	if (player) {
+		redirect(
+			`/team?title=${t('PlayerOnTeam.title')}&message=${t(
+				'PlayerOnTeam.message'
+			)}`
+		)
+	}
+
+	const { error: inviteError } = await supabase.from('invites').insert({
 		team_id: parseInt(teamId),
 		user_id: userId,
 		updated_at: new Date().toISOString()
 	})
 
-	if (error?.code === '23505') {
+	if (inviteError?.code === '23505') {
 		redirect(
 			`/team?title=${t('AlreadyInvited.title')}&message=${t(
 				'AlreadyInvited.message'
 			)}`
 		)
-	} else if (error) {
+	} else if (inviteError) {
 		redirect(
 			`/team?title=${t('InviteFailed.title')}&message=${t(
 				'InviteFailed.message'
