@@ -53,17 +53,17 @@ export default function Invite({ invite }: InviteProps) {
 				</div>
 			</div>
 
-			<div className='flex justify-between'>
+			<div className='flex flex-col justify-between gap-2 md:flex-row md:gap-0'>
 				<form action={acceptInvite}>
 					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='team_id' defaultValue={team.id} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
-					<Button className='w-[100px]'>{t('Buttons.accept')}</Button>
+					<Button className='w-full md:w-[100px]'>{t('Buttons.accept')}</Button>
 				</form>
 				<form action={denyInvite}>
 					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
-					<Button variant='outline' className='w-[100px]'>
+					<Button variant='outline' className='w-full md:w-[100px]'>
 						{t('Buttons.deny')}
 					</Button>
 				</form>

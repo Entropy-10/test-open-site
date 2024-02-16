@@ -2,6 +2,13 @@ import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 
 import { getTranslations } from 'next-intl/server'
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious
+} from '~/components/carousel'
 import Player from './player'
 
 interface PlayersProps {
@@ -32,15 +39,21 @@ export default async function Players({
 	}
 
 	return (
-		<div className='padding my-5 flex w-full gap-5'>
-			{players.map(player => (
-				<Player
-					key={player.user_id}
-					player={player}
-					userId={userId}
-					isCaptain={isCaptain}
-				/>
-			))}
+		<div className='padding my-5 flex w-full justify-center gap-5'>
+			<Carousel className='w-full'>
+				<CarouselContent className='-ml-4'>
+					{players.map(player => (
+						<CarouselItem
+							key={player.user_id}
+							className='ml-4 basis-[200px] md:basis-[250px]'
+						>
+							<Player player={player} userId={userId} isCaptain={isCaptain} />
+						</CarouselItem>
+					))}
+				</CarouselContent>
+				<CarouselPrevious />
+				<CarouselNext />
+			</Carousel>
 		</div>
 	)
 }

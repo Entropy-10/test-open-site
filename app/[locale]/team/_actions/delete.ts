@@ -27,7 +27,7 @@ export async function deleteItem(formData: FormData) {
 		console.log(error)
 		redirect(
 			`/team?title=${t('DeleteItemFailed.title', {
-				type: t(`DeleteItemFailed.Types.${type}`)
+				type: t(`DeleteItemFailed.Types.${type}`).toUpperCase()
 			})}&message=${t('DeleteItemFailed.message', {
 				type: t(`DeleteItemFailed.Types.${type}`)
 			})}`

@@ -2,6 +2,13 @@ import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 
 import { getTranslations } from 'next-intl/server'
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious
+} from '~/components/carousel'
 import Invite from './invite'
 
 interface InvitesProps {
@@ -28,9 +35,20 @@ export default async function Invites({ userId }: InvitesProps) {
 
 	return (
 		<div className='padding my-5 flex w-full gap-5'>
-			{invites.map(invite => (
-				<Invite key={invite.id} invite={invite} />
-			))}
+			<Carousel className='w-full'>
+				<CarouselContent className='-ml-4'>
+					{invites.map(invite => (
+						<CarouselItem
+							key={invite.id}
+							className='ml-4 basis-[200px] md:basis-[250px]'
+						>
+							<Invite invite={invite} />
+						</CarouselItem>
+					))}
+				</CarouselContent>
+				<CarouselPrevious />
+				<CarouselNext />
+			</Carousel>
 		</div>
 	)
 }

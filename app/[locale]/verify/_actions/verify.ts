@@ -63,7 +63,6 @@ export async function verify() {
 	redirect('/verify?status=success')
 }
 
-// biome-ignore lint/suspicious/noExplicitAny: I need to figure out how to type this properly
-function verifyError(t: any) {
+function verifyError(t: Awaited<ReturnType<typeof getServerTranslations>>) {
 	redirect(`/verify?status=error&message=${t('verificationFailed')}`)
 }

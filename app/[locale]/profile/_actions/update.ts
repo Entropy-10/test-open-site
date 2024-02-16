@@ -80,8 +80,7 @@ export async function update(formData: FormData) {
 	}
 }
 
-// biome-ignore lint/suspicious/noExplicitAny: I need to figure out how to type this properly
-function updateError(t: any) {
+function updateError(t: Awaited<ReturnType<typeof getServerTranslations>>) {
 	redirect(
 		`/profile?title=${t('FailedUpdate.title')}&message=${t(
 			'FailedUpdate.message'

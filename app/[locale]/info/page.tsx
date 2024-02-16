@@ -4,12 +4,11 @@ import { getTranslations } from 'next-intl/server'
 import Background from '~/components/ui/Background'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
-import Highlight from './_components/highlight'
-import Link from './_components/link'
-import List from './_components/list'
 
 import type { MetadataProps } from '@types'
 import { useTranslations } from 'next-intl'
+import { CustomMDX } from './_components/custom-mdx'
+import MappoolTable from './_components/mapool-table'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -24,88 +23,155 @@ export default function InfoPage() {
 	const t = useTranslations('InfoPage')
 	return (
 		<div>
-			<Background className='py-10'>
-				<Heading>{t('heading')}</Heading>
+			<Background className='py-10' imageClassName='brightness-95'>
+				<Heading>{t('GeneralInfo.heading')}</Heading>
 				<Divider />
 
-				<List>
-					<li>
-						This is an international{' '}
-						<Highlight>
-							<Link href='https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer'>
-								osu! lazer
-							</Link>
-							, standard mode, 3v3 teams of 5, open rank
-						</Highlight>{' '}
-						tournament.
-					</li>
-					<li>
-						All tournament activities will{' '}
-						<Highlight>
-							utilize the{' '}
-							<Link href='https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer'>
-								osu! lazer
-							</Link>{' '}
-							client.
-						</Highlight>
-					</li>
-					<li>
-						The tournament will start with{' '}
-						<Highlight>
-							qualifiers and then move into a RO32 double elimination
-						</Highlight>{' '}
-						bracket.
-					</li>
-					<li>
-						Matches will be played with{' '}
-						<Highlight>
-							Team VS and No Fail, and scored using lazer&apos;s default
-						</Highlight>{' '}
-						scoring.
-					</li>
-					<li>
-						All times will be{' '}
-						<Highlight>
-							displayed in <Link href='https://time.is/UTC'>UTC</Link>
-						</Highlight>{' '}
-						along with Discord&apos;s locale time format.
-					</li>
-					<li>
-						You{' '}
-						<Highlight>
-							must be in the{' '}
-							<Link href='https://discord.com/invite/nZnQZMvEhq'>
-								Discord server
-							</Link>
-						</Highlight>{' '}
-						at all times to participate in the tournament.
-					</li>
-					<li>
-						<Highlight>Rescheduling</Highlight> must be completed{' '}
-						<Highlight>before Thursday at 23:59 UTC</Highlight> the week of the
-						current round. Exceptions may be made on a case-by-case basis.
-					</li>
-					<li>
-						<Highlight>Mappools and schedules</Highlight> for the upcoming round
-						will be released on the{' '}
-						<Highlight>Sunday before 23:59 UTC</Highlight>.
-					</li>
-					<li>
-						<Highlight>No staff members may participate</Highlight> in the
-						tournament{' '}
-						<Highlight>
-							excluding streamers, commentators, designers, and translators
-						</Highlight>
-						.
-					</li>
-				</List>
+				<CustomMDX
+					source={`
+- ${t('GeneralInfo.1')}
+- ${t('GeneralInfo.2')}
+- ${t('GeneralInfo.3')}
+- ${t('GeneralInfo.4')}
+- ${t('GeneralInfo.5')}
+- ${t('GeneralInfo.6')}
+- ${t('GeneralInfo.7')}
+- ${t('GeneralInfo.8')}
+- ${t('GeneralInfo.9', { sublist_alpha: '\n1.' })}
+					`}
+				/>
 			</Background>
 
-			<div className='flex justify-center py-10'>
-				<span className='font-bold text-3xl text-medium-blue italic'>
-					More Info Coming Soon
-				</span>
-			</div>
+			<Background className='py-10 text-light-blue' gradient={false}>
+				<Heading>{t('Registrations.heading')}</Heading>
+				<Divider className='bg-light-blue' />
+				<div className='text-blue'>
+					<CustomMDX
+						source={`
+- ${t('Registrations.1')}
+- ${t('Registrations.2')}
+- ${t('Registrations.3')}
+- ${t('Registrations.4')}
+- ${t('Registrations.5')}
+					`}
+					/>
+				</div>
+			</Background>
+
+			<Background className='py-10' imageClassName='brightness-95'>
+				<Heading>{t('GeneralConduct.heading')}</Heading>
+				<Divider />
+				<CustomMDX
+					source={`
+- ${t('GeneralConduct.1')}
+- ${t('GeneralConduct.2', { sublist_alpha: '\n1.' })}
+- ${t('GeneralConduct.3')}
+- ${t('GeneralConduct.4', { sublist_alpha: '\n1.' })}
+- ${t('GeneralConduct.5')}
+- ${t('GeneralConduct.6')}
+- ${t('GeneralConduct.7')}
+- ${t('GeneralConduct.8')}
+- ${t('GeneralConduct.9')}
+- ${t('GeneralConduct.10')}
+- ${t('GeneralConduct.11')}
+					`}
+				/>
+			</Background>
+
+			<Background className='py-10 text-light-blue' gradient={false}>
+				<Heading>{t('Scheduling.heading')}</Heading>
+				<Divider className='bg-light-blue' />
+				<div className='text-blue'>
+					<CustomMDX
+						source={`
+- ${t('Scheduling.1')}
+- ${t('Scheduling.2', { sublist_alpha: '\n1.' })}
+- ${t('Scheduling.3', { sublist_alpha: '\n1.' })}
+					`}
+					/>
+				</div>
+			</Background>
+
+			<Background className='py-10' imageClassName='brightness-95'>
+				<Heading>{t('GameProcedures.heading')}</Heading>
+				<Divider />
+				<CustomMDX
+					source={`
+- ${t('GameProcedures.1')}
+- ${t('GameProcedures.2')}
+- ${t('GameProcedures.3', { sublist_alpha: '\n1.' })}
+- ${t('GameProcedures.4')}
+					`}
+				/>
+
+				<Divider variant='single' />
+
+				<Heading sub>{t('GameProcedures.Qualifiers.heading')}</Heading>
+				<div className='px-7 lg:px-11 md:px-9'>
+					<CustomMDX
+						source={`
+- ${t('GameProcedures.Qualifiers.1')}
+- ${t('GameProcedures.Qualifiers.2', { sublist_alpha: '\n1.' })}
+- ${t('GameProcedures.Qualifiers.3')}
+					`}
+					/>
+				</div>
+
+				<Divider variant='single' />
+
+				<Heading sub>{t('GameProcedures.Match.heading')}</Heading>
+				<div className='px-7 lg:px-11 md:px-9'>
+					<CustomMDX
+						source={`
+- ${t('GameProcedures.Match.1')}
+- ${t('GameProcedures.Match.2')}
+- ${t('GameProcedures.Match.3', { sublist_alpha: '\n1.' })}
+- ${t('GameProcedures.Match.4', { sublist_alpha: '\n1.' })}
+- ${t('GameProcedures.Match.5', { sublist_alpha: '\n1.' })}
+- ${t('GameProcedures.Match.6', { sublist_alpha: '\n1.' })}
+- ${t('GameProcedures.Match.7')}
+- ${t('GameProcedures.Match.8', { sublist_alpha: '\n1.' })}
+- ${t('GameProcedures.Match.9')}
+- ${t('GameProcedures.Match.10')}
+- ${t('GameProcedures.Match.11')}
+- ${t('GameProcedures.Match.12')}
+- ${t('GameProcedures.Match.13')}
+- ${t('GameProcedures.Match.14')}
+					`}
+					/>
+				</div>
+			</Background>
+
+			<Background className='py-10 text-light-blue' gradient={false}>
+				<Heading>{t('MappoolInfo.heading')}</Heading>
+				<Divider className='bg-light-blue' />
+
+				<div className='padding mb-5 overflow-x-scroll'>
+					<MappoolTable />
+				</div>
+
+				<div className='text-blue'>
+					<CustomMDX
+						source={`
+- ${t('MappoolInfo.1')}
+- ${t('MappoolInfo.2')}
+					`}
+					/>
+				</div>
+			</Background>
+
+			<Background className='py-10' imageClassName='brightness-95'>
+				<Heading>{t('PrizePool.heading')}</Heading>
+				<Divider />
+				<CustomMDX
+					source={`
+- ${t('PrizePool.1', { sublist_alpha: '\n1.' })}
+- ${t('PrizePool.2', { sublist_alpha: '\n1.' })}
+- ${t('PrizePool.3', { sublist_alpha: '\n1.' })}
+- ${t('PrizePool.4', { sublist_alpha: '\n1.' })}
+					`}
+				/>
+			</Background>
 		</div>
 	)
 }

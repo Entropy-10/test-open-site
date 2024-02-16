@@ -6,6 +6,7 @@ import background from '../../public/images/background.jpg'
 interface BackgroundProps {
 	children: React.ReactNode
 	className?: string
+	imageClassName?: string
 	fade?: boolean | 'double'
 	gradient?: boolean
 }
@@ -13,6 +14,7 @@ interface BackgroundProps {
 export default function Background({
 	children,
 	className,
+	imageClassName,
 	fade,
 	gradient = true
 }: BackgroundProps) {
@@ -32,7 +34,10 @@ export default function Background({
 					alt='gradient background'
 					placeholder='blur'
 					sizes='100vw'
-					className='-z-20 h-auto select-none object-cover'
+					className={cn(
+						'-z-20 h-auto select-none object-cover',
+						imageClassName
+					)}
 				/>
 			)}
 			<div className={className}>{children}</div>

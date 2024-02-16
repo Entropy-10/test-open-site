@@ -14,9 +14,10 @@ export async function deleteTeam(formData: FormData) {
 	const t = await getServerTranslations('TeamPage.Errors')
 	const supabase = createClient(cookies())
 
-	const { count } = await supabase
+	const { count, data } = await supabase
 		.from('players')
 		.select('*', { count: 'exact' })
+		.eq('team_id', teamId)
 		.neq('user_id', userId)
 
 	if (count && count > 0) {

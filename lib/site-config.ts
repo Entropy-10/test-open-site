@@ -98,13 +98,13 @@ export const songs = [
 	{
 		id: 3,
 		link: 'https://open.spotify.com/track/',
-		name: 'Coming Soon',
+		name: 'Phoenix',
 		artist: 'Aethral'
 	},
 	{
 		id: 4,
 		link: 'https://open.spotify.com/track/',
-		name: 'Coming Soon',
+		name: 'Cyber Cryo',
 		artist: 'Aethral'
 	}
 ]

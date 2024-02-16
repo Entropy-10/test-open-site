@@ -29,7 +29,7 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 					src={user.osu_avatar}
 					alt='osu pfp'
 					sizes='(min-width: 768px) 115px, 90px'
-					className='size-[90px] md:size-[115px]'
+					className='size-[90px] select-none md:size-[115px]'
 				/>
 				<div className='flex items-center gap-1 font-extrabold text-lg text-milky-white md:text-xl'>
 					{player.role === 'captain' && (

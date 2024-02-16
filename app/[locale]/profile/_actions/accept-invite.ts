@@ -42,7 +42,7 @@ export async function acceptInvite(formData: FormData) {
 	} catch (err) {
 		redirect(
 			`/profile?title=${t('FailedInvite.title', {
-				type: t('FailedInvite.Types.accept')
+				type: t('FailedInvite.Types.accept').toUpperCase()
 			})}&message=${t('FailedInvite.message', {
 				type: t('FailedInvite.Types.accept')
 			})}`

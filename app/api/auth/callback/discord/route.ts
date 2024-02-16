@@ -53,7 +53,6 @@ export async function GET(request: NextRequest) {
 			country_code: osuUser.country.code,
 			country_rank: osuUser.statistics_rulesets.osu?.country_rank,
 			discord_id: discordUser.id,
-			// @ts-expect-error the discord oauth package I'm using hasn't implemented the correct types yet for api v10
 			discord_name: discordUser.global_name,
 			discord_tag: discordUser.username ?? discordUser.discriminator,
 			discord_avatar:

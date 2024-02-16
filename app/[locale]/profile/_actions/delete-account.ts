@@ -43,8 +43,10 @@ export async function deleteAccount(csrfToken: string) {
 	const osuClient = new Client(tokens.osu_access_token)
 
 	try {
-		osuClient.revokeToken()
-		discordAuth.revokeToken(tokens.discord_access_token)
+		await Promise.all([
+			osuClient.revokeToken(),
+			discordAuth.revokeToken(tokens.discord_access_token)
+		])
 	} catch (err) {
 		return deleteAccountError(t)
 	}
@@ -60,8 +62,9 @@ export async function deleteAccount(csrfToken: string) {
 	redirect('/')
 }
 
-// biome-ignore lint/suspicious/noExplicitAny: I need to figure out how to type this properly
-function deleteAccountError(t: any) {
+function deleteAccountError(
+	t: Awaited<ReturnType<typeof getServerTranslations>>
+) {
 	return {
 		error: {
 			title: t('FailedAccountDelete.title'),

@@ -53,7 +53,11 @@ export default async function Team({ userId }: TeamProps) {
 				</div>
 			</div>
 
-			<Button className='w-[162px]' href='/team' variant='invertedOutline'>
+			<Button
+				className='w-[135px] md:w-[162px]'
+				href='/team'
+				variant='invertedOutline'
+			>
 				{t('manageTeamButton')}
 			</Button>
 		</div>
