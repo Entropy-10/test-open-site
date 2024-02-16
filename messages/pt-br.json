@@ -109,12 +109,12 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
+				"title": "JÁ ESTÁ EM UM TIME!",
 				"message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de entrar em um novo time."
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "FALHA EM {type} CONVITE!",
+				"message": "Desculpe, não conseguimos {type} aquele convite. Por favor, tente novamente para ver se isso ajuda.",
 				"Types": {
 					"deny": "negar",
 					"accept": "aceitar"
@@ -125,12 +125,12 @@
 				"message": "Parece que você ainda está em um time. Por favor, saia ou exclua o time antes de excluir sua conta."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
+				"title": "FALHA NA EXCLUSÃO DA CONTA!",
 				"message": "Desculpe, parece que não conseguimos excluir sua conta. Por favor, tente novamente para ver se isso ajuda."
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "FALHA EM ATUALIZAR!",
+				"message": "Desculpe, não conseguimos atualizar as informações do seu perfil de osu. Por favor, tente novamente para ver se isso ajuda."
 			}
 		}
 	},
@@ -167,10 +167,10 @@
 			},
 			"DuplicatePlayer": {
 				"message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de entrar em um novo time.",
-				"title": "ALREADY ON A TEAM!"
+				"title": "JÁ ESTÁ EM UM TIME!"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "Parece que um time com esse {type} já existe. Por favor, use um {type} diferente.",
 				"Types": {
 					"name": "nome",
 					"acronym": "acrônimo",
@@ -179,11 +179,11 @@
 				"title": "TIME {type} JÁ EXISTE!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "NÃO CONSEGUIU CRIAR TIME!"
+				"message": "Não pudemos criar o seu time. Parece um problema no nosso lado. Por favor, tente novamente para ver se isso ajuda.",
+				"title": "FALHA NA CRIAÇÃO DO TIME!"
 			},
 			"UploadFailed": {
-				"title": "NÃO CONSEGUIU FAZER UPLOAD DA BANDEIRA!",
+				"title": "FALHA NO UPLOAD DA BANDEIRA!",
 				"message": "Não conseguimos carregar a sua bandeira em nosso servidor. Por favor, tente novamente para ver se isso ajuda."
 			}
 		}
@@ -216,14 +216,14 @@
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "Você já foi verificado. Caso você pense que isto foi um erro, entre em contato com @__entro para mais ajuda.",
+			"verificationFailed": "Falha na verificação. Por favor, tente novamente para ver se isso ajuda."
 		}
 	},
 	"TeamPage": {
 		"Headings": {
 			"team": "MEU TIME.",
-			"player": "PLAYER LIST."
+			"player": "LISTA DE JOGADORES."
 		},
 		"timezone": "FUSO HORÁRIO",
 		"Buttons": {
@@ -255,30 +255,30 @@
 		"Errors": {
 			"DeleteItemFailed": {
 				"title": "FAILED TO {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"message": "Desculpe, não conseguimos excluir aquele{type}. Por favor, tente novamente para ver se isso ajuda.",
 				"Types": {
-					"player": "player",
-					"invite": "invite"
+					"player": "jogador",
+					"invite": "convite"
 				}
 			},
 			"InvitedSelf": {
 				"title": "VOCÊ NÃO PODE CONVIDAR A SI MESMO(A)!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"message": "Você não pode se convidar para o seu próprio time. Se você deseja mudar de times, exclua este time primeiro."
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player and invite. Please remove the current invite before trying to reinvite them."
+				"title": "JOGADOR JÁ FOI CONVIDADO!",
+				"message": "Parece que você já enviou um convite àquele jogador. Por favor, remova o convite atual antes de tentar convidá-lo novamente."
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "FALHA EM CONVIDAR JOGADOR!",
+				"message": "Desculpe, não conseguimos convidar aquele jogador. Por favor, tente novamente para ver se isso ajuda."
 			},
 			"PlayersOnTeam": {
 				"title": "JOGADORES AINDA ESTÃO NO TIME!",
 				"message": "Por favor, remova todos os jogadores do time antes de excluí-lo."
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
+				"title": "FALHA NA EXCLUSÃO DO TIME!",
 				"message": "Desculpe, não conseguimos excluir seu time. Por favor, tente novamente para ver se isso ajuda."
 			}
 		}
