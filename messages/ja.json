@@ -362,7 +362,22 @@
 		"MappoolInfo": {
 			"1": "The mappool will be released the **Sunday** of every week.",
 			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO."
+			"heading": "MAPPOOL INFO.",
+			"Table": {
+				"round": "Round",
+				"starRating": "SR",
+				"bestOf": "Best Of",
+				"bans": "Bans",
+				"protects": "Protects",
+				"total": "Total",
+				"qaulifiers": "Qualifiers",
+				"roundOf32": "Round of 32",
+				"roundOf16": "Round of 16",
+				"quarterfinals": "Quarterfinals",
+				"semifinals": "Semifinals",
+				"finals": "Finals",
+				"grandFinals": "Grand Finals"
+			}
 		},
 		"PrizePool": {
 			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
