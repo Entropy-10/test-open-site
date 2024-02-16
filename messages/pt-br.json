@@ -55,7 +55,7 @@
 		"description": "UM TORNEIO EM OSU!LAZER DE RANK ABERTO ORGANIZADO POR TEDDY, ENTROPY, E SORA."
 	},
 	"Metadata": {
-		"description": "O primeiro torneio de osu!lazer com rank aberto em larga escala. Bem-vindo à nova experiência de torneios de osu!.",
+		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
 		"PageTitles": {
 			"home": "Início",
 			"schedule": "Programação",
@@ -280,6 +280,10 @@
 			"DeleteTeamFailed": {
 				"title": "FALHA NA EXCLUSÃO DO TIME!",
 				"message": "Desculpe, não conseguimos excluir seu time. Por favor, tente novamente para ver se isso ajuda."
+			},
+			"PlayerOnTeam": {
+				"title": "PLAYER ON TEAM ALREADY!",
+				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
 			}
 		}
 	},
@@ -319,9 +323,10 @@
 			"heading": "GENERAL CONDUCT."
 		},
 		"Scheduling": {
-			"1": "Games will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling a qualifier lobby, please use the **/schedule** command and follow the instructions given.  {sublist_alpha} If scheduling a lobby please use the **/schedule** command and enter the info asked. {sublist_alpha} If rescheduling you can do the same as above it and it will automatically move your lobby.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and follow the instructions given. {sublist_alpha} Once a reschedule command has been used, the **captain of both teams** will be required to click **accept** on the embed in the chat. {sublist_alpha} If a captain selects **deny**, the teams will have to send out another request to the bot to reschedule.",
+			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
+			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
+			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
+			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
 			"heading": "SCHEDULING."
 		},
 		"GameProcedures": {
@@ -345,22 +350,22 @@
 				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
 				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
 				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "If either team bans the opposing team's protected map, then that **ban will be voided**.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the**No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the**Lazer-Mod** and**No-Mod pools**.",
+				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
+				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
+				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
 				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout**which may be used at any point in the match.",
-				"14": "If a player **disconnects** **within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team.",
+				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
+				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
 				"heading": "MATCH"
 			}
 		},
 		"MappoolInfo": {
 			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "New modpool called **Lazer-Mod or LM for short**. This modpool will feature different mods every week to showcase the new mods the Lazer client has to offer.",
+			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
 			"heading": "MAPPOOL INFO."
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized TEST Open mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name.",
+			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
 			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
 			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
 			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
