@@ -121,8 +121,8 @@
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "¡ACTUALMENTE EN EQUIPO!",
+				"message": "Parece que aún sigues en un equipo. Por favor deja o elimina el equipo antes de eliminar tu cuenta."
 			},
 			"FailedAccountDelete": {
 				"title": "FAILED TO DELETE ACCOUNT!",
@@ -176,15 +176,15 @@
 					"acronym": "acrónimo",
 					"player": "jugador"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "¡{type} DE EQUIPO YA EXISTE!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
+				"message": "No pudimos crear tu equipo. Parece ser un problema de nuestra parte. Por favor intenta de nuevo para ver si eso ayuda.",
 				"title": "FAILED TO CREATE TEAM!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "¡FALLÓ AL SUBIR LA BANDERA!",
+				"message": "No pudimos subir tu bandera a nuestro servidor. Por favor intenta otra vez para ver si eso ayuda."
 			}
 		}
 	},
@@ -254,11 +254,11 @@
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"title": "¡FALLÓ AL ELIMINAR {type}!",
+				"message": "Lo sentimos, fallamos al eliminar {type}. Por favor intenta otra vez para ver si eso ayuda.",
 				"Types": {
-					"player": "player",
-					"invite": "invite"
+					"player": "al jugador",
+					"invite": "la invitación"
 				}
 			},
 			"InvitedSelf": {
