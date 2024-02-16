@@ -17,12 +17,12 @@
 			},
 			"Countdown": {
 				"titleSectionOne": "토너먼트",
-				"titleSectionTwo": "STARTS IN"
+				"titleSectionTwo": "시작 날짜"
 			}
 		},
 		"Originals": {
 			"title": "Originals",
-			"subtitle": "CUSTOM SONGS COMING SOON.",
+			"subtitle": "맞춤 곡 곧 출시 예정",
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
 			"tracksTitle": "TRACKLIST.",
 			"listenButton": "LISTEN NOW"
@@ -41,8 +41,8 @@
 	},
 	"Buttons": {
 		"register": "등록하기",
-		"signIn": "SIGN IN",
-		"signOut": "SIGN OUT",
+		"signIn": "로그인",
+		"signOut": "로그아웃",
 		"close": "CLOSE"
 	},
 	"Status": {
@@ -58,13 +58,13 @@
 		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu tournament experience.",
 		"PageTitles": {
 			"home": "Home",
-			"schedule": "Schedule",
-			"info": "Info",
+			"schedule": "일정",
+			"info": "정보",
 			"mappool": "맵풀",
 			"register": "등록하기",
 			"teams": "팀",
 			"team": "팀",
-			"signIn": "Sign In"
+			"signIn": "로그인"
 		}
 	},
 	"ErrorPage": {
@@ -102,8 +102,8 @@
 				"timezone": "시간대별",
 				"invited": "INVITED",
 				"Buttons": {
-					"accept": "ACCEPT",
-					"deny": "DENY"
+					"accept": "수락",
+					"deny": "거절"
 				}
 			}
 		},
@@ -116,8 +116,8 @@
 				"title": "FAILED TO {type} INVITE!",
 				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "거부",
+					"accept": "수락"
 				}
 			},
 			"CurrentTeam": {
@@ -172,8 +172,8 @@
 			"Duplicate": {
 				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
+					"name": "이름",
+					"acronym": "머리글자",
 					"player": "player"
 				},
 				"title": "TEAM {type} ALREADY EXISTS!"
@@ -235,7 +235,7 @@
 			"heading": "CURRENT MEMBERS",
 			"Player": {
 				"rank": "RANK",
-				"discord": "DISCORD",
+				"discord": "디스코드",
 				"removeButton": "REMOVE PLAYER"
 			}
 		},
@@ -245,7 +245,7 @@
 			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
 			"Invite": {
 				"rank": "RANK",
-				"discord": "DISCORD",
+				"discord": "디스코드",
 				"sent": "SENT",
 				"deleteButton": "DELETE INVITE",
 				"inviteButton": "INVITE",
