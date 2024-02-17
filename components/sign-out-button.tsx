@@ -6,9 +6,10 @@ import { signOut } from '~/lib/actions'
 
 interface SignOutButtonProps {
 	className?: string
+	text: string
 }
 
-export default function SignOutButton({ className }: SignOutButtonProps) {
+export default function SignOutButton({ className, text }: SignOutButtonProps) {
 	const [csrfToken, setCsrfToken] = useState<string>('loading...')
 
 	useEffect(() => {
@@ -25,7 +26,7 @@ export default function SignOutButton({ className }: SignOutButtonProps) {
 			type='button'
 			onClick={() => signOut(csrfToken)}
 		>
-			SIGN OUT
+			{text}
 		</button>
 	)
 }

@@ -49,13 +49,13 @@ export default function CountdownContainer() {
 			<AnimatePresence mode='wait'>
 				{!completed && (
 					<motion.div
-						className='flex h-28 w-full flex-col items-center justify-center bg-feature4 text-milky-white xl:min-w-[450px] xl:flex-row xl:space-x-5 xl:pl-5'
+						className='flex h-28 w-full flex-col items-center justify-center bg-feature4 text-milky-white xl:min-w-[450px] xl:flex-row xl:gap-5 xl:pl-5'
 						initial={{ x: 300, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						exit={{ x: 300, opacity: 0 }}
 						transition={{ ease: 'easeInOut', duration: 0.4 }}
 					>
-						<span className='font-bold text-lg'>
+						<span className='text-nowrap font-bold text-lg'>
 							{t('Countdown.titleSectionOne')}
 							<br className='hidden xl:block' />{' '}
 							{t('Countdown.titleSectionTwo')}

@@ -1,21 +1,26 @@
 import { discordAuth } from '@discord'
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
 import { getBaseUrl } from '@utils/client'
-import { getSession } from '@utils/server'
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 
-import { getDiscordAvatarUrl } from '../../utils'
+import { authError, getDiscordAvatarUrl } from '../../utils'
 
 import type { NextRequest } from 'next/server'
 
 export async function GET(request: NextRequest) {
-	const session = getSession()
+	const session = await getSession()
 	const searchParams = request.nextUrl.searchParams
 	const code = searchParams.get('code')
 	const url = new URL(request.url)
 
-	if (!code) return new NextResponse('Missing code', { status: 400 })
+	if (!code) {
+		return authError(
+			url,
+			"Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+		)
+	}
 
 	if (!session) {
 		return linkingError(

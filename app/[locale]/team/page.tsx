@@ -1,6 +1,6 @@
 import { createMetadata } from '@metadata'
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { getTranslations } from 'next-intl/server'
 import { cookies, headers } from 'next/headers'
 import Image from 'next/image'
@@ -30,7 +30,7 @@ export async function generateMetadata({ params: { locale } }: MetadataProps) {
 }
 
 export default async function TeamPage() {
-	const session = getSession()
+	const session = await getSession()
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	if (!session) redirect('/unauthorized')
 

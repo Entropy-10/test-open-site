@@ -9,6 +9,7 @@ import UpdateButton from './update-button'
 import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
 import type { Tables } from '~/types/supabase'
+import Options from './options'
 
 interface AvatarInfoProps {
 	user: Tables<'users'>
@@ -35,21 +36,28 @@ export default function AvatarInfo({
 					height={123}
 					sizes='(min-width: 768px) 123px, 96px'
 					src={type === 'osu' ? user.osu_avatar : user.discord_avatar ?? ''}
-					alt='pfp'
+					alt={
+						type === 'osu'
+							? `${user.osu_name}'s pfp`
+							: `${user.discord_name}'s pfp` ?? ''
+					}
 					className='mb-4 size-24 border-2 border-milky-white md:size-[123px]'
 				/>
-				<form action={type === 'discord' ? relink : update}>
-					<input name='csrf_token' defaultValue={csrfToken} hidden />
-					<input name='pathname' defaultValue={pathname} hidden />
-					{type === 'osu' ? (
-						<UpdateButton
-							text={t('Update.text')}
-							loadingText={t('Update.loadingText')}
-						/>
-					) : (
-						<Button className='w-24 md:w-[123px]'>{t('relink')}</Button>
-					)}
-				</form>
+				<div className={cn(type === 'osu' && 'flex w-24 gap-1 md:w-[123px]')}>
+					{type === 'osu' && <Options />}
+					<form action={type === 'discord' ? relink : update} className='grow'>
+						<input name='csrf_token' defaultValue={csrfToken} hidden />
+						<input name='pathname' defaultValue={pathname} hidden />
+						{type === 'osu' ? (
+							<UpdateButton
+								text={t('Update.text')}
+								loadingText={t('Update.loadingText')}
+							/>
+						) : (
+							<Button className='w-24 md:w-[123px]'>{t('relink')}</Button>
+						)}
+					</form>
+				</div>
 			</div>
 
 			<div className='flex h-24 flex-col justify-between text-sm md:h-[123px]'>

@@ -19,7 +19,10 @@ const rest = new REST({ version: '10' }).setToken(env.BOT_TOKEN)
 export const discordAuth = new Auth({
 	clientId: env.NEXT_PUBLIC_DISCORD_CLIENT_ID,
 	clientSecret: env.DISCORD_CLIENT_SECRET,
-	redirectUri: env.NEXT_PUBLIC_DISCORD_REDIRECT_URI
+	redirectUri: env.NEXT_PUBLIC_DISCORD_REDIRECT_URI,
+	credentials: Buffer.from(
+		`${env.NEXT_PUBLIC_DISCORD_CLIENT_ID}:${env.DISCORD_CLIENT_SECRET}`
+	).toString('base64')
 })
 
 export function getDiscordAuthUrl(redirectUri?: string) {

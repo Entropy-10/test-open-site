@@ -72,10 +72,13 @@ export interface Feature {
 export interface Session {
 	sub: string
 	role: 'authenticated'
-	osu_name: string
-	osu_avatar: string
-	restricted: string
-	discord_id: string
+	user: {
+		osu_name: string
+		osu_avatar: string
+		restricted: string
+		discord_id: string
+	}
+	expires: Date
 }
 
 export interface ModalError {

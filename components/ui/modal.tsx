@@ -2,8 +2,9 @@ import * as AlertDialog from '@radix-ui/react-alert-dialog'
 import { cn } from '@utils/client'
 import { forwardRef } from 'react'
 
-import Button from './Button'
+import { buttonVariants } from './Button'
 
+import { VariantProps } from 'class-variance-authority'
 import type { ComponentPropsWithoutRef, ElementRef } from 'react'
 
 const Root = AlertDialog.Root
@@ -62,16 +63,24 @@ const Description = forwardRef<
 
 Description.displayName = 'Description'
 
-const Cancel = forwardRef<
-	ElementRef<typeof AlertDialog.Cancel>,
-	ComponentPropsWithoutRef<typeof AlertDialog.Cancel>
->(({ className, children, ...props }, ref) => (
-	<AlertDialog.Cancel ref={ref} {...props}>
-		<Button variant='outline' className={className}>
+interface CancelProps
+	extends ComponentPropsWithoutRef<typeof AlertDialog.Cancel>,
+		VariantProps<typeof buttonVariants> {}
+
+const Cancel = forwardRef<ElementRef<typeof AlertDialog.Cancel>, CancelProps>(
+	({ className, children, variant, size, ...props }, ref) => (
+		<AlertDialog.Cancel
+			ref={ref}
+			className={cn(
+				'cursor-pointer',
+				buttonVariants({ variant, size, className })
+			)}
+			{...props}
+		>
 			{children}
-		</Button>
-	</AlertDialog.Cancel>
-))
+		</AlertDialog.Cancel>
+	)
+)
 
 Cancel.displayName = 'Cancel'
 

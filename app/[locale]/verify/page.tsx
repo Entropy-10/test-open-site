@@ -1,6 +1,6 @@
-import { getSession } from '@utils/server'
+import { getSession } from '@session'
 
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { headers } from 'next/headers'
 import MessageBox from '~/components/message-box'
 import SignInButton from '~/components/sign-in-button'
@@ -16,9 +16,9 @@ interface VerifyPageProps {
 	}
 }
 
-export default function VerifyPage({ searchParams }: VerifyPageProps) {
-	const session = getSession()
-	const t = useTranslations('VerifyPage')
+export default async function VerifyPage({ searchParams }: VerifyPageProps) {
+	const session = await getSession()
+	const t = await getTranslations('VerifyPage')
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 	const { status, message } = searchParams
 

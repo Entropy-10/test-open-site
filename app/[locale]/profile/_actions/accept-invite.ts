@@ -1,7 +1,7 @@
 'use server'
 
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -9,7 +9,7 @@ import { redirect } from 'next/navigation'
 export async function acceptInvite(formData: FormData) {
 	const inviteId = formData.get('invite_id')?.toString()
 	const teamId = formData.get('team_id')?.toString()
-	const session = getSession()
+	const session = await getSession()
 	if (!inviteId || !teamId || !session) return
 
 	try {

@@ -20,7 +20,7 @@ export default function Search({
 	inviteButtonText,
 	placeholderText
 }: SearchProps) {
-	const [debounce, setDebounce] = useState<NodeJS.Timeout>()
+	const [debounce, setDebounce] = useState<Timer>()
 	const [results, setResults] = useState<UserResult[]>([])
 	const [selectedUser, setSelectedUser] = useState<UserResult | null>(null)
 	const [csrfToken, setCsrfToken] = useState<string>('loading...')

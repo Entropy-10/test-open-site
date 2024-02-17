@@ -1,6 +1,18 @@
 import type { Feature, NavItems } from '@types'
 
-export const locales = ['en', 'fr', 'es', 'ru', 'ko', 'ja', 'zh', 'de', 'tl']
+export const locales = [
+	'en',
+	'fr',
+	'es',
+	'ru',
+	'ko',
+	'ja',
+	'zh',
+	'de',
+	'tl',
+	'pl',
+	'pt-br'
+]
 
 export const localesMetadata = [
 	{ code: 'en', name: 'English', flag: 'en.svg' },
@@ -11,7 +23,9 @@ export const localesMetadata = [
 	{ code: 'ja', name: '日本語', flag: 'ja.svg' },
 	{ code: 'zh', name: '中文', flag: 'zh.svg' },
 	{ code: 'de', name: 'Deutsch', flag: 'de.svg' },
-	{ code: 'tl', name: 'Tagalog', flag: 'tl.svg' }
+	{ code: 'tl', name: 'Tagalog', flag: 'tl.svg' },
+	{ code: 'pl', name: 'Polski', flag: 'pl.svg' },
+	{ code: 'pt-br', name: 'Português', flag: 'pt-br.svg' }
 ]
 
 const sheetLink =
@@ -78,8 +92,8 @@ export const songs = [
 	{
 		id: 2,
 		link: 'https://open.spotify.com/track/',
-		name: 'Coming Soon',
-		artist: 'Aethral'
+		name: 'Twilight of the Abyss',
+		artist: 'Kanemiko'
 	},
 	{
 		id: 3,
@@ -91,7 +105,7 @@ export const songs = [
 		id: 4,
 		link: 'https://open.spotify.com/track/',
 		name: 'Coming Soon',
-		artist: 'Kanemiko'
+		artist: 'Aethral'
 	}
 ]
 

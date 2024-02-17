@@ -1,19 +1,18 @@
 'use server'
 
 import { osuAuth } from '@osu'
+import { getSession } from '@session'
 import { createClient } from '@supabase/server'
-import { getSession } from '@utils/server'
-import { AxiosError } from 'axios'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
-import { Client } from 'osu-web.js'
+import { Client, isOsuJSError } from 'osu-web.js'
 
 import type { StatisticsRulesets, UserExtended } from 'osu-web.js'
 
 export async function update(formData: FormData) {
 	const pathname = formData.get('pathname')?.toString()
-	const session = getSession()
+	const session = await getSession()
 	if (!session) {
 		return updateError(
 			pathname,
@@ -42,8 +41,9 @@ export async function update(formData: FormData) {
 			user = await osuClient.users.getSelf()
 		} catch (err) {
 			if (
-				err instanceof AxiosError &&
-				err.response?.statusText === 'Unauthorized'
+				isOsuJSError(err) &&
+				err.type === 'unexpected_response' &&
+				err.response().statusText === 'Unauthorized'
 			) {
 				const newTokens = await osuAuth.refreshToken(tokens.osu_refresh_token)
 				const { error } = await supabase

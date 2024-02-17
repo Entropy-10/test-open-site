@@ -13,7 +13,7 @@ export default function UpdateButton({ text, loadingText }: UpdateButtonProps) {
 	const { pending } = useFormStatus()
 
 	return (
-		<Button loading={pending} className='w-24 md:w-[123px]'>
+		<Button loading={pending} className='w-full'>
 			{pending ? loadingText : text}
 		</Button>
 	)
