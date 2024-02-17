@@ -267,7 +267,7 @@
 			},
 			"AlreadyInvited": {
 				"title": "JOGADOR JÁ FOI CONVIDADO!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"message": "Parece que você já enviou um convite para esse jogador. Por favor, remova o convite atual antes de tentar convidá-lo novamente."
 			},
 			"InviteFailed": {
 				"title": "FALHA EM CONVIDAR JOGADOR!",
@@ -282,18 +282,18 @@
 				"message": "Desculpe, não conseguimos excluir seu time. Por favor, tente novamente para ver se isso ajuda."
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "JOGADOR JÁ ESTÁ EM TIME!",
+				"message": "Parece que esse jogador já está em sua equipe. Se isso for um erro, por favor, tente novamente e veja se isso ajuda."
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
+			"1": "TEST Open é um torneio de osu! que acontecerá exclusivamente no cliente do **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)**.",
+			"2": "As equipes serão compostas por **3-5 membros**.",
+			"3": "As equipes deverão escolher exatamente **3 jogadores** para cada mapa jogado no torneio.",
+			"4": "Não há **nenhum requerimento para o rank** dos participantes.",
+			"5": "Todas as respectivas equipes devem jogar as qualificatórias no fim de semana listado.",
 			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
 			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
 			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
@@ -306,7 +306,7 @@
 			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
 			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
 			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
+			"heading": "REGISTROS."
 		},
 		"GeneralConduct": {
 			"1": "Respect other players and all staff members.",
@@ -320,14 +320,14 @@
 			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
 			"10": "If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.",
 			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
-			"heading": "GENERAL CONDUCT."
+			"heading": "CONDUTAS GERAIS."
 		},
 		"Scheduling": {
 			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
 			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
 			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
 			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
+			"heading": "PROGRAMAÇÃO."
 		},
 		"GameProcedures": {
 			"1": "All maps will be scored with **osu! Lazer default scoring**.",
@@ -339,7 +339,7 @@
 				"1": "Maps will be played in the same order as seen on the mappool.",
 				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
-				"heading": "QUALIFIERS"
+				"heading": "QUALIFICATÓRIAS"
 			},
 			"Match": {
 				"1": "The win-condition for each match will be **TeamVS**.",
