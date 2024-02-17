@@ -294,10 +294,10 @@
 			"3": "As equipes deverão escolher exatamente **3 jogadores** para cada mapa jogado no torneio.",
 			"4": "Não há **nenhum requerimento para o rank** dos participantes.",
 			"5": "Todas as respectivas equipes devem jogar as qualificatórias no fim de semana listado.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
-			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
+			"6": "As melhores **32 equipes** das qualificatórias irão continuar dentro de uma chave de **Eliminação Dupla**.",
+			"7": "Todos os jogadores devem estar dentro do **[Servidor do Discord](https://discord.com/invite/nZnQZMvEhq)** e mudar seus nomes atuais para seus **nomes no osu**.",
 			"8": "Horários serão listados em **UTC-0** e **Hora Local do Discord**.",
-			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
+			"9": "Membros da staff que possuírem qualquer um dos cargos citados abaixo não poderão participar do torneio: {sublist_alpha} Streamer {sublist_alpha} Comentador {sublist_alpha} Designer {sublist_alpha} Tradutor",
 			"heading": "INFORMAÇÕES GERAIS."
 		},
 		"Registrations": {
@@ -325,8 +325,8 @@
 		"Scheduling": {
 			"1": "Partidas serão marcadas através do **TEST Bot** no Servidor do Discord.",
 			"2": "Para agendar ou reagendar um lobby de qualificatória, por favor, use o comando **/schedule** e digite as informações solicitadas.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
-			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
+			"3": "Para o reagendamento da match, por favor, use o comando **/reschedule** e insira as informações solicitadas. Isso enviará um pedido de reagendamento no canal de agendamento.",
+			"4": "Quando agendar a partida **ambos os capitães das equipes deverão clicar em aceitar** situado no pedido de agendamento localizado no canal de agendamento para que o reagendamento seja concluído.",
 			"heading": "PROGRAMAÇÃO."
 		},
 		"GameProcedures": {
@@ -337,24 +337,24 @@
 			"heading": "PROCEDIMENTOS DE JOGO.",
 			"Qualifiers": {
 				"1": "Os mapas serão jogados na mesma ordem em que foram apresentados na mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
+				"2": "Se um jogador **desconectar** **dentro do primeiro minuto de um mapa**, o jogador jogará o mapa novamente no **final da sala qualificatória**.",
+				"3": "Espera-se que as equipes tenham no mínimo 3 jogadores na sala dentro de **5 minutos após o início da sala**. Se uma equipe não aparecer, então o time terá que reagendar a sala para outro horário. Essa sala deve ser, pelo menos, **4 horas** depois da sala na qual não compareceram mais cedo.",
 				"heading": "QUALIFICATÓRIAS"
 			},
 			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
+				"1": "A condição de vitória para cada partida será **TeamVS**.",
+				"2": "Warmups, Protects, Bans e Picks devem ser escolhidos dentro de **2 minutos**.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
 				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
 				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
+				"6": "As equipes podem optar por jogar 1 mapa de suas escolhas como warmup antes da partida. {sublist_alpha} Warmups devem ser **menores que 4 minutos de duração**. {sublist_alpha} Warmups podem **não fazer parte da mappool**.",
+				"7": "Os protects serão **submetidos de forma privada** ao juiz antes da fase de banimento.",
+				"8": "As fases de bans serão feitas em um **formato cobra** (ABBA). {sublist_alpha} Time 1 Bane {sublist_alpha} Time 2 Bane duas vezes {sublist_alpha} Time 1 Bane",
+				"9": "Uma vez que a fase de ban e protect terminar, **qualquer ban em um mapa protegido será anulada** e esse mapa poderá ser jogado normalmente.",
+				"10": "É proibido banir **a mesma modpool duas vezes seguidas** com exceção da **pool de No-Mod**.",
 				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
+				"12": "Os jogadores podem jogar o Desempate com qualquer mod que **não seja um mod que altere a taxa de dificuldade global**.",
+				"13": "Cada equipe tem **um timeout de 5 minutos** que pode ser usado em qualquer momento da partida.",
 				"14": "Se um jogador **desconectar no primeiro minuto de mapa**, o mapa será **abortado** e a equipe tem **5 minutos** para colocar outro jogador para jogá-lo. Isso só pode acontecer uma vez por time e por partida.",
 				"heading": "PARTIDA"
 			}
@@ -376,13 +376,13 @@
 				"quarterfinals": "Quartas de final",
 				"semifinals": "Semifinais",
 				"finals": "Finais",
-				"grandFinals": "Grande Final"
+				"grandFinals": "Grandes Finais"
 			}
 		},
 		"PrizePool": {
 			"1": "O MVP do torneio {sublist_alpha} **WLmouse Beast X mini mouse customizado** projetado por Spoo e pintado pela Dovacustums. O mouse customizado terá o nome do jogador pintado no topo.",
 			"2": "Primeiro Lugar {sublist_alpha} $500 distribuídos entre os jogadores {sublist_alpha} **Cover de Tablet Customizado TEST Open** projetado por Spoo e produzido pela Bluebunny {sublist_alpha} Banner de Time Animado",
-			"3": "Segundo Lugar {sublist_alpha} $200 distribuído entre os jogadores {sublist_alpha} Banner de Time Estático",
+			"3": "Segundo Lugar {sublist_alpha} $200 distribuídos entre os jogadores {sublist_alpha} Banner de Time Estático",
 			"4": "Terceiro Lugar {sublist_alpha} $100 distribuídos entre os jogadores {sublist_alpha} Banner de Time Estático",
 			"heading": "PREMIAÇÕES."
 		}
