@@ -304,23 +304,23 @@
 			"1": "你必须同时使用你的** osu! **与** Discord 账户**注册网站。",
 			"2": "队伍创建与管理将通过 **[TEST Open 网站](https://test-open.com)**完成。",
 			"3": "若要创建 **自由人选手自荐帖** ，请到** discord 服务器**，找到 looking-for-team 频道，利用 **TEST Bot** 在那里创建一个帖子。",
-			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
-			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
+			"4": "如果网站宕机，你可以咨询赛事管理员填写**报名表** 。但使用这种方式报名后，虽然你的信息会主表上显示，但在网站手动更新前，报名信息不在网站中显示。",
+			"5": "赛事工作人员团队不会创建**自由人选手队伍**。如果你想参赛，你必须自己寻找队伍。",
+			"heading": "报名"
 		},
 		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
-			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
-			"3": "TEST Open has no tolerance for bullying of any kind.",
-			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
-			"5": "Try to keep **controversial conversations** to a minimum.",
-			"6": "Keep disagreements civilized.",
-			"7": "**Doxing is not allowed** under any circumstances.",
-			"8": "No content that is banned under **Discord TOS** is allowed.",
-			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
-			"10": "If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.",
+			"1": "请尊重选手与赛事工作人员。",
+			"2": "禁止**歧视性用语**。包括但不限于：{sublist_alpha} 种族歧视 {sublist_alpha} 冒犯 LGBTQ+ 团体的用语 {sublist_alpha} 性别歧视言论 {sublist_alpha} 仇恨言论",
+			"3": "TEST Open 绝不容忍任何类型的欺凌行为。",
+			"4": "禁止**NSFW 内容**。包括：{sublist_alpha} 裸露 {sublist_alpha} 血腥/暴力内容 {sublist_alpha} 滥用药品/酒精 {sublist_alpha} 骚扰",
+			"5": "请尽可能减少**争论**。",
+			"6": "尊重不同地域文化。",
+			"7": "任何情况下禁止**开盒**。",
+			"8": "被**Discord 用户条款**所禁止的内容也会被禁止。",
+			"9": "**英语时赛事使用的主要语言**，请在与工作人员交流时注意这点。",
+			"10": "如果你看到任何人违反了上述任何规则，请联系**社区管理或赛事管理**来解决问题。",
 			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
-			"heading": "GENERAL CONDUCT."
+			"heading": "行为准则"
 		},
 		"Scheduling": {
 			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
@@ -365,18 +365,18 @@
 			"heading": "MAPPOOL INFO.",
 			"Table": {
 				"round": "Round",
-				"starRating": "SR",
-				"bestOf": "Best Of",
-				"bans": "Bans",
-				"protects": "Protects",
-				"total": "Total",
-				"qaulifiers": "Qualifiers",
-				"roundOf32": "Round of 32",
-				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
-				"finals": "Finals",
-				"grandFinals": "Grand Finals"
+				"starRating": "星数",
+				"bestOf": "BO",
+				"bans": "禁图",
+				"protects": "保图",
+				"total": "总计",
+				"qaulifiers": "资格赛",
+				"roundOf32": "32 强",
+				"roundOf16": "16 强",
+				"quarterfinals": "四分之一决赛",
+				"semifinals": "半决赛",
+				"finals": "决赛",
+				"grandFinals": "总决赛"
 			}
 		},
 		"PrizePool": {
