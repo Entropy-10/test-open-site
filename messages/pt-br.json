@@ -313,13 +313,13 @@
 			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
 			"3": "TEST Open não tem tolerância para nenhum tipo de bullying.",
 			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
-			"5": "Try to keep **controversial conversations** to a minimum.",
+			"5": "Tente manter **tópicos controversos** a um mínimo.",
 			"6": "Keep disagreements civilized.",
-			"7": "**Doxing is not allowed** under any circumstances.",
-			"8": "No content that is banned under **Discord TOS** is allowed.",
-			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
-			"10": "If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.",
-			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
+			"7": "**Doxing não é permitido** em qualquer circunstância.",
+			"8": "Nenhum conteúdo banido pelos **Termos de Serviço do Discord** é permitido.",
+			"9": "**O inglês é a língua principal do torneio**, então mantenha isso em mente quando se comunicar com a staff.",
+			"10": "Se você ver alguém quebrando qualquer dessas regras, por favor entre em contato com um **Moderador ou Administrador** para resolver a má conduta.",
+			"11": "Por último, apenas basta usar o **senso comum** e criar um **ambiente acolhedor** para todos!",
 			"heading": "CONDUTAS GERAIS."
 		},
 		"Scheduling": {
@@ -331,12 +331,12 @@
 		},
 		"GameProcedures": {
 			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
+			"2": "**NoFail** será aplicado.",
 			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
+			"4": "Após a seleção de um mapa, os jogadores participantes têm **2 minutos** para entrar no lobby.",
+			"heading": "PROCEDIMENTOS DE JOGO.",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
+				"1": "Mapas serão jogados na mesma ordem em que foram apresentados na mappool.",
 				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
 				"heading": "QUALIFICATÓRIAS"
@@ -355,36 +355,36 @@
 				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
 				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
 				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
+				"14": "Se um jogador **desconectar no primeiro minuto de mapa**, o mapa será **abortado** e a equipe tem **5 minutos** para colocar outro jogador para jogá-lo. Isso só pode acontecer uma vez por time e por partida.",
 				"heading": "PARTIDA"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
+			"1": "A mappool será lançada no **Domingo** de toda semana.",
 			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"heading": "INFORMAÇÕES DA MAPPOOL.",
 			"Table": {
-				"round": "Round",
+				"round": "Rodada",
 				"starRating": "SR",
 				"bestOf": "Melhor de",
 				"bans": "Banimentos",
-				"protects": "Protects",
+				"protects": "Protegidos",
 				"total": "Total",
-				"qaulifiers": "Qualifiers",
-				"roundOf32": "Round of 32",
-				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
-				"finals": "Finals",
-				"grandFinals": "Grand Finals"
+				"qaulifiers": "Qualificatórias",
+				"roundOf32": "Rodada de 32",
+				"roundOf16": "Rodada de 16",
+				"quarterfinals": "Quartas de final",
+				"semifinals": "Semifinais",
+				"finals": "Finais",
+				"grandFinals": "Grande Final"
 			}
 		},
 		"PrizePool": {
 			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"2": "Primeiro Lugar {sublist_alpha} $500 distribuídos entre os jogadores {sublist_alpha} **Cover de Tablet Customizado TEST Open** projetado por Spoo e produzido pela Bluebunny {sublist_alpha} Banner de Time Animado",
+			"3": "Segundo Lugar {sublist_alpha} $200 distribuído entre os jogadores {sublist_alpha} Banner de Time Estático",
+			"4": "Terceiro Lugar {sublist_alpha} $100 distribuídos entre os jogadores {sublist_alpha} Banner de Time Estático",
+			"heading": "PREMIAÇÕES."
 		}
 	},
 	"Components": {
@@ -392,7 +392,7 @@
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "Desculpe, mas o login não pôde ser finalizado. Se inesperado, por favor, tente novamente, caso ao contrário, sinta-se à vontade para retornar ao início."
 		}
 	}
 }
