@@ -55,7 +55,7 @@
 		"description": "一个由 TEDDY, ENTROPY, 和 SORA 主办，不限排名的Osu! lazer比赛。"
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "Osu史上首届大范围不限排名的lazer比赛。敬请享受全新的osu比赛体验。",
 		"PageTitles": {
 			"home": "主页",
 			"schedule": "赛程",
@@ -254,7 +254,7 @@
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
+				"title": "删除{type}失败！",
 				"message": "抱歉，我们未能删除 {type}。请再试一次看看是否有用。",
 				"Types": {
 					"player": "选手",
@@ -267,7 +267,7 @@
 			},
 			"AlreadyInvited": {
 				"title": "选手已受邀!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"message": "看起来您已经向该选手发送邀请。请在尝试重新邀请Ta前先移除当前邀请。"
 			},
 			"InviteFailed": {
 				"title": "邀请选手失败!",
@@ -282,28 +282,28 @@
 				"message": "抱歉，我们未能成功删除你的队伍。请再试一次看看是否有用。"
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "选手已在队伍中!",
+				"message": "看起来选手已经在您的队伍中。如果这是一个错误，请再试一次看看有没有用。"
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
-			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
-			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
-			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO."
+			"1": "TEST Open是一个仅在**[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)**上举办的 osu! 赛事。",
+			"2": "队伍由 ** 3-5 名**选手组成。",
+			"3": "每队须在赛事的每张图中派** 3 名选手**上场。",
+			"4": "参赛者**没有排名要求**。",
+			"5": "全部欲参赛队伍，须在给定周末参加资格赛。",
+			"6": "资格赛前** 32 名**将继续参加双败淘汰赛。",
+			"7": "所有选手必须加入**[ Discord 服务器](https://discord.com/invite/nZnQZMvEhq)**并将昵称设置为自己的** osu! 用户名**。",
+			"8": "时间将以 **UTC-0** 与 **Discord 时间戳** 的方式列出。",
+			"9": "除下列职位以外，任何赛事工作人员不允许作为选手参赛： {sublist_alpha} 直播员 {sublist_alpha} 解说 {sublist_alpha} 美工 {sublist_alpha} 翻译员。",
+			"heading": "通则"
 		},
 		"Registrations": {
-			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
-			"2": "Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.",
-			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
+			"1": "你必须同时使用你的** osu! **与** Discord 账户**注册网站。",
+			"2": "队伍创建与管理将通过 **[TEST Open 网站](https://test-open.com)**完成。",
+			"3": "若要创建 **自由人选手自荐帖** ，请到** discord 服务器**，找到 looking-for-team 频道，利用 **TEST Bot** 在那里创建一个帖子。",
 			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
 			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
 			"heading": "REGISTRATIONS."
