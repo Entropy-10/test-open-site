@@ -125,12 +125,12 @@
 				"message": "Parece que aún sigues en un equipo. Por favor deja o elimina el equipo antes de eliminar tu cuenta."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"title": "NO SE PUDO ELIMINAR TU CUENTA!",
+				"message": "Lo siento, parece que fallamos en eliminar tu cuenta. Por favor intenta otra vez para ver si eso te ayuda."
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "NO SE PUDO ACTUALIZAR!",
+				"message": "Lo siento, parece que fallamos en actualizar la información de tu perfil de osu. Por favor intenta otra vez para ver si eso te ayuda."
 			}
 		}
 	},
@@ -180,7 +180,7 @@
 			},
 			"Default": {
 				"message": "No pudimos crear tu equipo. Parece ser un problema de nuestra parte. Por favor intenta de nuevo para ver si eso ayuda.",
-				"title": "FAILED TO CREATE TEAM!"
+				"title": "NO SE PUDO CREAR TU EQUIPO!"
 			},
 			"UploadFailed": {
 				"title": "¡FALLÓ AL SUBIR LA BANDERA!",
@@ -216,8 +216,8 @@
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "Ya estabas verificado. Si crees que esto es un error, por favor manda mensaje privado a @_entro para ayuda.",
+			"verificationFailed": "Verificación fallida. Por favor intenta otra vez para ver si eso te ayuda."
 		}
 	},
 	"TeamPage": {
@@ -254,7 +254,7 @@
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
+				"title": "NO SE PUDO ELIMINAR {type}!",
 				"message": "Lo sentimos, fallamos al eliminar {type}. Por favor intenta otra vez para ver si eso ayuda.",
 				"Types": {
 					"player": "al jugador",
@@ -266,35 +266,35 @@
 				"message": "No puedes invitarte a ti mismo a tu propio equipo. Si deseas cambiar de equipo, por favor elimina este equipo primero."
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"title": "EL JUGADOR YA ESTABA INVITADO!",
+				"message": "Parece que ya le habías mandado una invitación a este jugador. Por favor elimina la invitación actual antes de intentar re-invitarlo."
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "NO SE PUDO INVITAR AL JUGADOR!",
+				"message": "Lo siento, no se pudo invitar a ese jugador. Por favor intenta otra vez para ver si eso te ayuda."
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "ESTE JUGADOR TODAVIA ESTA EN EL EQUIPO!",
+				"message": "Por favor elimina a todos los jugadores del equipo antes de eliminar el equipo."
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "NO SE PUDO ELIMINAR TU EQUIPO!",
+				"message": "Lo siento, no se pudo eliminar a tu equipo. Por favor intenta otra vez para ver si eso te ayuda."
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "ESTE JUGADOR YA ESTA EN EL EQUIPO!",
+				"message": "Parece que este jugador ya está en tu equipo. Si esto es un error intenta otra vez para ver si eso te ayuda."
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
+			"1": "TEST Open es un torneo de osu! exclusivamente para el cliente **[osu!lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
+			"2": "Los equipos están formados por **3-5 jugadores**.",
+			"3": "Los equipos deberán de seleccionar exactamente **3 jugadores** para cada mapa jugado en el torneo.",
+			"4": "**No hay requisitos de rango** para los participantes.",
+			"5": "Todos los equipos tendrán que jugar clasificatorias en el fin de semana especificado en los horarios.",
+			"6": "Los **32 equipos** más altos de clasificatorias podrán continuar al formato de **Doble Eliminación**.",
 			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
 			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
 			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
