@@ -326,17 +326,17 @@
 			"1": "比赛将通过 **TEST Bot** 在Discord服务器中进行安排。",
 			"2": "请使用 **/schedule** 命令并依提示输入信息完成资格赛房间的时间安排或调整。",
 			"3": "请使用 **/reschedule** 命令并依提示输入信息进行比赛的时间调整。使用指令后会在 scheduling 频道发送时间调整请求。",
-			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
+			"4": "**双方队长必须均点击**位于scheduling频道的重排时间请求上的**接受**来完成重排时间。",
 			"heading": "时间安排"
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
+			"1": "所有谱面将使用**osu! Lazer 默认计分方式**来计算。",
+			"2": "**NoFail** 将会被强制开启。",
+			"3": "裁判会联系每场比赛参赛队伍的队长。{sublist_alpha} 队长负责传递裁判给出的信息。{sublist_alpha} 每场比赛赛前** 25 分钟**会有提醒发出。{sublist_alpha} 每场比赛赛前** 15 分钟**会有该比赛的Lazer房间名和密码发出。",
+			"4": "当谱面被选择后，参赛选手有** 2 分钟**时间加入房间。",
+			"heading": "对局流程",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
+				"1": "谱面的游玩顺序与图池所见顺序相同。",
 				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
 				"heading": "QUALIFIERS"
