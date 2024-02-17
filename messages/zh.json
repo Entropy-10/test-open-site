@@ -42,7 +42,8 @@
 	"Buttons": {
 		"register": "注册",
 		"signIn": "登入",
-		"signOut": "登出"
+		"signOut": "登出",
+		"close": "关闭"
 	},
 	"Status": {
 		"operational": "所有服务均正常运转",
@@ -67,8 +68,8 @@
 		}
 	},
 	"ErrorPage": {
-		"title": "出了些问题！",
-		"retryButton": "再试一次",
+		"title": "出现未知错误！",
+		"retryButton": "重试",
 		"goHomeButton": "返回主页"
 	},
 	"ProfilePage": {
@@ -105,6 +106,32 @@
 					"deny": "拒绝"
 				}
 			}
+		},
+		"Errors": {
+			"ExistingTeam": {
+				"title": "已经在一个队伍里了!",
+				"message": "看起来您已经在一个队伍里了。若要加入新队伍，请先删除或退出当前的队伍。"
+			},
+			"FailedInvite": {
+				"title": "{type} 邀请失败！",
+				"message": "抱歉，我们未能 {type} 邀请。请再试一次看看是否有用。",
+				"Types": {
+					"deny": "谢绝",
+					"accept": "接受"
+				}
+			},
+			"CurrentTeam": {
+				"title": "当前在队伍中!",
+				"message": "看起来您仍然在队伍里。若要删除账号，请先离开或删除队伍。"
+			},
+			"FailedAccountDelete": {
+				"title": "删除账户失败！",
+				"message": "抱歉，看起来我们未能删除您的账户。请再试一次看看是否有用。"
+			},
+			"FailedUpdate": {
+				"title": "更新失败!",
+				"message": "抱歉，我们未能更新你的osu个人资料信息。请再试一次看看是否有用。"
+			}
 		}
 	},
 	"RegistrationPage": {
@@ -131,6 +158,33 @@
 			"ImagePicker": {
 				"upload": "点击此处上传",
 				"recommended": "推荐比例为 9:4"
+			}
+		},
+		"Errors": {
+			"Restricted": {
+				"message": "看起来你的osu账号处于限制状态。抱歉，您不能在账号限制状态下进行注册。如果您认为这是一个错误，请登出后，再重新进行登录。",
+				"title": "账号处于限制状态!"
+			},
+			"DuplicatePlayer": {
+				"message": "看起来你已经在一个队伍里了。在创建新队伍前，请先删除或退出当前队伍。",
+				"title": "已在队伍中!"
+			},
+			"Duplicate": {
+				"message": "看起来已经存在相同 {type} 的队了。请用一个不同的 {type} 。",
+				"Types": {
+					"name": "队名",
+					"acronym": "缩写",
+					"player": "选手"
+				},
+				"title": "{type} 已经存在!"
+			},
+			"Default": {
+				"message": "我们未能创建你的队伍。看起来是我们这边出了问题。请再试一次看看是否有用。",
+				"title": "创建队伍失败!"
+			},
+			"UploadFailed": {
+				"title": "上传队标失败!",
+				"message": "我们无法上传您的队旗到我们的服务器。请再试一次看看是否有用。"
 			}
 		}
 	},
@@ -160,12 +214,16 @@
 				"text": "验证",
 				"loadingText": "验证中"
 			}
+		},
+		"Errors": {
+			"alreadyVerified": "您已通过认证。如果您认为有误，请私信@__entro获取更多帮助。",
+			"verificationFailed": "验证失败。请再试一次看看是否有用。"
 		}
 	},
 	"TeamPage": {
 		"Headings": {
 			"team": "我的队伍",
-			"player": "选手列表"
+			"player": "队伍列表"
 		},
 		"timezone": "时区",
 		"Buttons": {
@@ -193,12 +251,148 @@
 				"inviteButton": "邀请",
 				"placeholder": "输入 osu 用户名..."
 			}
+		},
+		"Errors": {
+			"DeleteItemFailed": {
+				"title": "删除{type}失败！",
+				"message": "抱歉，我们未能删除 {type}。请再试一次看看是否有用。",
+				"Types": {
+					"player": "选手",
+					"invite": "邀请"
+				}
+			},
+			"InvitedSelf": {
+				"title": "不能邀请自己!",
+				"message": "您不能邀请您到自己的队伍中。如果您想更换队伍，请先删除当前队伍。"
+			},
+			"AlreadyInvited": {
+				"title": "选手已受邀!",
+				"message": "看起来您已经向该选手发送邀请。请在尝试重新邀请Ta前先移除当前邀请。"
+			},
+			"InviteFailed": {
+				"title": "邀请选手失败!",
+				"message": "抱歉，我们未能成功邀请该名选手。请再试一次看看是否有用。"
+			},
+			"PlayersOnTeam": {
+				"title": "仍有选手在队伍中!",
+				"message": "在删除队伍前，请先移除所有选手。"
+			},
+			"DeleteTeamFailed": {
+				"title": "删除队伍失败!",
+				"message": "抱歉，我们未能成功删除你的队伍。请再试一次看看是否有用。"
+			},
+			"PlayerOnTeam": {
+				"title": "选手已在队伍中!",
+				"message": "看起来选手已经在您的队伍中。如果这是一个错误，请再试一次看看有没有用。"
+			}
 		}
 	},
 	"InfoPage": {
-		"heading": "概要信息"
+		"GeneralInfo": {
+			"1": "TEST Open是一个仅在**[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)**上举办的 osu! 赛事。",
+			"2": "队伍由 ** 3-5 名**选手组成。",
+			"3": "每队须在赛事的每张图中派** 3 名选手**上场。",
+			"4": "参赛者**没有排名要求**。",
+			"5": "全部欲参赛队伍，须在给定周末参加资格赛。",
+			"6": "资格赛前** 32 名**将继续参加双败淘汰赛。",
+			"7": "所有选手必须加入**[ Discord 服务器](https://discord.com/invite/nZnQZMvEhq)**并将昵称设置为自己的** osu! 用户名**。",
+			"8": "时间将以 **UTC-0** 与 **Discord 时间戳** 的方式列出。",
+			"9": "除下列职位以外，任何赛事工作人员不允许作为选手参赛： {sublist_alpha} 直播员 {sublist_alpha} 解说 {sublist_alpha} 美工 {sublist_alpha} 翻译员。",
+			"heading": "通则"
+		},
+		"Registrations": {
+			"1": "你必须同时使用你的** osu! **与** Discord 账户**注册网站。",
+			"2": "队伍创建与管理将通过 **[TEST Open 网站](https://test-open.com)**完成。",
+			"3": "若要创建 **自由人选手自荐帖** ，请到** discord 服务器**，找到 looking-for-team 频道，利用 **TEST Bot** 在那里创建一个帖子。",
+			"4": "如果网站宕机，你可以咨询赛事管理员填写**报名表** 。但使用这种方式报名后，虽然你的信息会主表上显示，但在网站手动更新前，报名信息不在网站中显示。",
+			"5": "赛事工作人员团队不会创建**自由人选手队伍**。如果你想参赛，你必须自己寻找队伍。",
+			"heading": "报名"
+		},
+		"GeneralConduct": {
+			"1": "请尊重选手与赛事工作人员。",
+			"2": "禁止**歧视性用语**。包括但不限于：{sublist_alpha} 种族歧视 {sublist_alpha} 冒犯 LGBTQ+ 团体的用语 {sublist_alpha} 性别歧视言论 {sublist_alpha} 仇恨言论",
+			"3": "TEST Open 绝不容忍任何类型的欺凌行为。",
+			"4": "禁止**NSFW 内容**。包括：{sublist_alpha} 裸露 {sublist_alpha} 血腥/暴力内容 {sublist_alpha} 滥用药品/酒精 {sublist_alpha} 骚扰",
+			"5": "请尽可能减少**争论**。",
+			"6": "尊重不同地域文化。",
+			"7": "任何情况下禁止**开盒**。",
+			"8": "被**Discord 用户条款**所禁止的内容也会被禁止。",
+			"9": "**英语时赛事使用的主要语言**，请在与工作人员交流时注意这点。",
+			"10": "如果你看到任何人违反了上述任何规则，请联系**社区管理或赛事管理**来解决问题。",
+			"11": "总之，请依**常识**行事，共同构建**和谐友善**的环境！",
+			"heading": "行为准则"
+		},
+		"Scheduling": {
+			"1": "比赛将通过 **TEST Bot** 在Discord服务器中进行安排。",
+			"2": "请使用 **/schedule** 命令并依提示输入信息完成资格赛房间的时间安排或调整。",
+			"3": "请使用 **/reschedule** 命令并依提示输入信息进行比赛的时间调整。使用指令后会在 scheduling 频道发送时间调整请求。",
+			"4": "**双方队长必须均点击**位于scheduling频道的重排时间请求上的**接受**来完成重排时间。",
+			"heading": "时间安排"
+		},
+		"GameProcedures": {
+			"1": "所有谱面将使用**osu! Lazer 默认计分方式**来计算。",
+			"2": "**NoFail** 将会被强制开启。",
+			"3": "裁判会联系每场比赛参赛队伍的队长。{sublist_alpha} 队长负责传递裁判给出的信息。{sublist_alpha} 每场比赛赛前** 25 分钟**会有提醒发出。{sublist_alpha} 每场比赛赛前** 15 分钟**会有该比赛的Lazer房间名和密码发出。",
+			"4": "当谱面被选择后，参赛选手有** 2 分钟**时间加入房间。",
+			"heading": "对局流程",
+			"Qualifiers": {
+				"1": "谱面的游玩顺序与图池所见顺序相同。",
+				"2": "如果选手**在谱面开始的一分钟前****掉线**，选手会在**资格赛房结束后**重玩此谱面。",
+				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
+				"heading": "QUALIFIERS"
+			},
+			"Match": {
+				"1": "The win-condition for each match will be **TeamVS**.",
+				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
+				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
+				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
+				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
+				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
+				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
+				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
+				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
+				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
+				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
+				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
+				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
+				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
+				"heading": "MATCH"
+			}
+		},
+		"MappoolInfo": {
+			"1": "The mappool will be released the **Sunday** of every week.",
+			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
+			"heading": "MAPPOOL INFO.",
+			"Table": {
+				"round": "Round",
+				"starRating": "星数",
+				"bestOf": "BO",
+				"bans": "禁图",
+				"protects": "保图",
+				"total": "总计",
+				"qaulifiers": "资格赛",
+				"roundOf32": "32 强",
+				"roundOf16": "16 强",
+				"quarterfinals": "四分之一决赛",
+				"semifinals": "半决赛",
+				"finals": "决赛",
+				"grandFinals": "总决赛"
+			}
+		},
+		"PrizePool": {
+			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
+			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
+			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
+			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
+			"heading": "PRIZE POOL."
+		}
 	},
 	"Components": {
 		"comingSoon": "敬请期待"
+	},
+	"APICallbacks": {
+		"Errors": {
+			"missingCode": "抱歉，登录无法完成。如果是异常请再次尝试，否则可自由地返回主页。"
+		}
 	}
 }
