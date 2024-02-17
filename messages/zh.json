@@ -319,15 +319,15 @@
 			"8": "被**Discord 用户条款**所禁止的内容也会被禁止。",
 			"9": "**英语时赛事使用的主要语言**，请在与工作人员交流时注意这点。",
 			"10": "如果你看到任何人违反了上述任何规则，请联系**社区管理或赛事管理**来解决问题。",
-			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
+			"11": "总之，请依**常识**行事，共同构建**和谐友善**的环境！",
 			"heading": "行为准则"
 		},
 		"Scheduling": {
-			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
+			"1": "比赛将通过 **TEST Bot** 在Discord服务器中进行安排。",
+			"2": "请使用 **/schedule** 命令并依提示输入信息完成资格赛房间的时间安排或调整。",
+			"3": "请使用 **/reschedule** 命令并依提示输入信息进行比赛的时间调整。使用指令后会在 scheduling 频道发送时间调整请求。",
 			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
+			"heading": "时间安排"
 		},
 		"GameProcedures": {
 			"1": "All maps will be scored with **osu! Lazer default scoring**.",
