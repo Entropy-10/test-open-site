@@ -55,7 +55,7 @@
 		"description": "UM TORNEIO EM OSU!LAZER DE RANK ABERTO ORGANIZADO POR TEDDY, ENTROPY, E SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "O primeiro torneio de osu!lazer com rank aberto em larga escala. Bem-vindo à nova experiência de torneios de osu!.",
 		"PageTitles": {
 			"home": "Início",
 			"schedule": "Programação",
@@ -254,7 +254,7 @@
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
+				"title": "FALHA NA EXCLUSÃO DO {type}!",
 				"message": "Desculpe, não conseguimos excluir aquele{type}. Por favor, tente novamente para ver se isso ajuda.",
 				"Types": {
 					"player": "jogador",
@@ -296,22 +296,22 @@
 			"5": "Todas as respectivas equipes devem jogar as qualificatórias no fim de semana listado.",
 			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
 			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
-			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
+			"8": "Horários serão listados em **UTC-0** e **Hora Local do Discord**.",
 			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO."
+			"heading": "INFORMAÇÕES GERAIS."
 		},
 		"Registrations": {
-			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
-			"2": "Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.",
-			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
-			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
-			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
+			"1": "Você deve registrar-se no site com a sua conta do **osu!** e com sua **conta do Discord**.",
+			"2": "Criação da equipe e o gerenciamento serão executados através do **[site TEST Open](https://test-open.com)**.",
+			"3": "Para criar um **anúncio de agente livre**, vá para o **servidor do discord** e localize o canal looking-for-team. Lá você poderá criar um anúncio através do **TEST Bot**.",
+			"4": "Se o site estiver fora de ar, você poderá solicitar a algum administrador pelo **formulário de registro**. No entanto, se você optar registrar-se através desse método, suas informações serão vistas na planilha, mas não no site até que seja atualizado manualmente.",
+			"5": "A equipe da staff não criará * de agentes*times livres**. Então, se você deseja participar, você deve achar uma equipe por conta própria.",
 			"heading": "REGISTROS."
 		},
 		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
+			"1": "Respeite os outros jogadores e todos os membros da staff.",
 			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
-			"3": "TEST Open has no tolerance for bullying of any kind.",
+			"3": "TEST Open não tem tolerância para nenhum tipo de bullying.",
 			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
 			"5": "Try to keep **controversial conversations** to a minimum.",
 			"6": "Keep disagreements civilized.",
@@ -356,7 +356,7 @@
 				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
 				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
 				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
+				"heading": "PARTIDA"
 			}
 		},
 		"MappoolInfo": {
@@ -366,8 +366,8 @@
 			"Table": {
 				"round": "Round",
 				"starRating": "SR",
-				"bestOf": "Best Of",
-				"bans": "Bans",
+				"bestOf": "Melhor de",
+				"bans": "Banimentos",
 				"protects": "Protects",
 				"total": "Total",
 				"qaulifiers": "Qualifiers",
