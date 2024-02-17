@@ -312,7 +312,7 @@
 			"1": "Respeite os outros jogadores e todos os membros da staff.",
 			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
 			"3": "TEST Open não tem tolerância para nenhum tipo de bullying.",
-			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
+			"4": "**Conteúdo NSFW** é proibido. Isso incluí: {sublist_alpha} Nudez {sublist_alpha} Gore/Conteúdos Violentos {sublist_alpha} Drogas/Abuso de Álcool {sublist_alpha} Conteúdo Perturbador",
 			"5": "Tente manter **tópicos controversos** a um mínimo.",
 			"6": "Keep disagreements civilized.",
 			"7": "**Doxing não é permitido** em qualquer circunstância.",
@@ -323,20 +323,20 @@
 			"heading": "CONDUTAS GERAIS."
 		},
 		"Scheduling": {
-			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
+			"1": "Partidas serão marcadas através do **TEST Bot** no Servidor do Discord.",
+			"2": "Para agendar ou reagendar um lobby de qualificatória, por favor, use o comando **/schedule** e digite as informações solicitadas.",
 			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
 			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
 			"heading": "PROGRAMAÇÃO."
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
+			"1": "Todos os mapas serão pontuados com a **pontuação padrão do osu! Lazer**.",
 			"2": "**NoFail** será aplicado.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
+			"3": "Os juízes entrarão em contato com os Capitães de qualquer equipe participante para cada jogo. {sublist_alpha} Capitães serão responsáveis por repassar qualquer tipo de informação dada pelo juiz para a sua equipe. {sublist_alpha} Um lembrete será enviado com **25 minutos** de antecedência. {sublist_alpha} O nome e a senha da sala do Lazer serão enviadas com **15 minutos** antes do jogo.",
 			"4": "Após a seleção de um mapa, os jogadores participantes têm **2 minutos** para entrar no lobby.",
 			"heading": "PROCEDIMENTOS DE JOGO.",
 			"Qualifiers": {
-				"1": "Mapas serão jogados na mesma ordem em que foram apresentados na mappool.",
+				"1": "Os mapas serão jogados na mesma ordem em que foram apresentados na mappool.",
 				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
 				"heading": "QUALIFICATÓRIAS"
@@ -380,7 +380,7 @@
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
+			"1": "O MVP do torneio {sublist_alpha} **WLmouse Beast X mini mouse customizado** projetado por Spoo e pintado pela Dovacustums. O mouse customizado terá o nome do jogador pintado no topo.",
 			"2": "Primeiro Lugar {sublist_alpha} $500 distribuídos entre os jogadores {sublist_alpha} **Cover de Tablet Customizado TEST Open** projetado por Spoo e produzido pela Bluebunny {sublist_alpha} Banner de Time Animado",
 			"3": "Segundo Lugar {sublist_alpha} $200 distribuído entre os jogadores {sublist_alpha} Banner de Time Estático",
 			"4": "Terceiro Lugar {sublist_alpha} $100 distribuídos entre os jogadores {sublist_alpha} Banner de Time Estático",
