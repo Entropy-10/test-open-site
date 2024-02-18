@@ -43,7 +43,7 @@
 		"register": "REGISTRIEREN",
 		"signIn": "ANMELDEN",
 		"signOut": "ABMELDEN",
-		"close": "CLOSE"
+		"close": "Schließen"
 	},
 	"Status": {
 		"operational": "Alle Dienste sind online",
@@ -55,7 +55,7 @@
 		"description": "EIN OSU! LAZER TURNIER FÜR ALLE RÄNGE, VERANSTALTET VON TEDDY, ENTROPY, UND SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "osu!'s erstes großangelegtes lazer Turnier für jeden Rang. Willkommen bei der neuen osu! Turner-Erfahrung.",
 		"PageTitles": {
 			"home": "Startseite",
 			"schedule": "Zeitplan",
@@ -109,28 +109,28 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"title": "BEREITS IN EINEM TEAM!",
+				"message": "Scheint so als seist du bereits in einem Team. Bitte lösche oder verlasse dein aktuelles Team, bevor du einem anderen beitrittst."
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "ANNEHMEN DER {type} FEHLGESCHLAGEN!",
+				"message": "Verzeihung, es war uns nicht möglich die Einladung zu {type}. Bitte versuche es erneut und schau, ob es klappt.",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "ablehnen",
+					"accept": "annehmen"
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "DERZEIT IN EINEM TEAM!",
+				"message": "Es scheint als seist du derzeit in einem Team, bitte verlasse oder lösche das Team, bevor du dein Konto löscht."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"title": "KONTO LÖSCHUNG FEHGESCHLAGEN!",
+				"message": "Verzeihung, aber es war uns nicht möglich dein Konto zu löschen. Bitte versuche es erneut und schau, ob es klappt."
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "UPDATE FEHLGESCHLAGEN!",
+				"message": "Verzeihung, aber es war uns nicht möglich deine osu! Profil-Informationen zu aktualisieren. Bitte versuche es erneut und schau, ob es klappt."
 			}
 		}
 	},
@@ -162,34 +162,34 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "Es scheint als wäre dein osu! Konto gesperrt. Es ist dir leider nicht möglich dich zu Registrieren, währen das Konto gesperrt ist. Falls du meinst, dies sei ein Fehler, melde dich von der Test Open Seite ab, und melde dich dann wieder an.",
+				"title": "OSU ACCOUNT GESPERRT!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "Es scheint als wärst du bereits in einem Team. Bitte lösche oder verlasse dein derzeitiges Team, bevor du ein neues erstellst.",
+				"title": "BEREITS IN EINEM TEAM!"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "Es existiert bereits ein Team mit diesem {type}, bitte nutze stattdessen ein anderes {type}.",
 				"Types": {
 					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"acronym": "abkürzung",
+					"player": "spieler"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "TEAM {type} EXISTIERT BEREITS!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "Es war uns nicht möglich dein Team zu erstellen, scheint als wäre es ein Fehler in unserem System. Bitte versuche es erneut und schau, ob es klappt.",
+				"title": "TEAM ERSTELLUNG FEHLGESCHLAGEN!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "HOCHLADEN DER FLAGGE FEHLGESCHLAGEN!",
+				"message": "Es war uns nicht möglich deine Flagge in unseren Server hochzuladen. Bitte versuche es erneut und schau, ob es klappt."
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
+		"heading": "TEAM LISTE.",
 		"teamsRegistered": "TEAMS SIND ANGEMELDET"
 	},
 	"UnauthorizedPage": {
@@ -216,14 +216,14 @@
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "Du bist bereits verifiziert. Sollte dies ein Irrtum sein, sende bitte eine Nachricht an @__entro, um weitere Hilfe zu erhalten.",
+			"verificationFailed": "Verifizierung fehlgeschlagen. Bitte versuche es erneut und schau, ob es klappt."
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "MEIN TEAM.",
+			"player": "SPIELER LISTE."
 		},
 		"timezone": "ZEITZOHNE",
 		"Buttons": {
@@ -254,137 +254,137 @@
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"title": "LÖSCHEN VON {type} FEHLGESCHLAGEN!",
+				"message": "Verzeihung, es war uns nicht möglich diesen {type} zu entfernen. Bitte versuche es erneut und schau, ob es klappt.",
 				"Types": {
-					"player": "player",
-					"invite": "invite"
+					"player": "spieler",
+					"invite": "einladung"
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"title": "SELBSTEINLADUNG NICHT MÖGLICH!",
+				"message": "Du kannst dich nicht selber in dein eigenes Team einladen. Falls du das Team wechseln möchtest, lösche es bitte vorher."
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"title": "SPIELER BEREITS EINGELADEN!",
+				"message": "Es scheint als hättest du diesen Spieler bereits eingeladen. Bitte entferne die existierende Einladung, bevor du eine neue versendest."
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "EINLADEN DES SPIELERS FEHLGESCHLAGEN!",
+				"message": "Verzeihung, es war uns nicht möglich diesen Spieler einzuladen. Bitte versuche es erneut und schau, ob es klappt."
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "SPIELER IM TEAM!",
+				"message": "Bitte entferne alle Spieler aus dem Team, bevor du das Team löscht."
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "LÖSCHEN DES TEAMS FEHLGESCHLAGEN!",
+				"message": "Verzeihung, es war uns nicht möglich dein Team zu löschen. Bitte versuche es erneut und schau, ob es klappt."
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "SPIELER BEREITS IM TEAM!",
+				"message": "Es scheint als wäre dieser Spieler bereits in deinem Team, sollte dies ein Irrtum sein, versuche es bitte erneut."
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
-			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
-			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
-			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO."
+			"1": "TEST Open ist ein osu! Turnier welches Exklusiv in **[osu! lazer](https://osu.ppy.sh/wiki/de/Help_centre/Upgrading_to_lazer)** gespielt wird.",
+			"2": "Die Teams bestehen aus **3 bis 5 Spielern**.",
+			"3": "Exakt **3 Spieler** pro Team werden eine Map im Turnier spielen. Diese werden vom Team selbst gewählt.",
+			"4": "Es gibt **keine Rang-Voraussetzungen** für Teilnehmer.",
+			"5": "Alle registrierten Teams müssen sich am dafür vorgesehenen Wochenende qualifizieren.",
+			"6": "Die besten **32 Teams** werden in den **Doppel-K.-o. Turnierbaum** voranschreiten.",
+			"7": "Alle Spieler müssen sich im **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** befinden, und ihre Spitznamen zu ihrem osu! Namen ändern.",
+			"8": "Die Uhrzeit wird in **UTC 0** und deiner **Lokalen Discord Uhrzeit** angezeigt.",
+			"9": "Alle Turnier-Mitarbeiter (Staff), welche in keiner der hier genannten Postion sind, ist es untersagt bei dem Turnier mitzuspielen: {sublist_alpha} Streamer {sublist_alpha} Stream Moderator/Kommentator {sublist_alpha} Designer {sublist_alpha} Übersetzer",
+			"heading": "ALLGEMEINE INFORMATION."
 		},
 		"Registrations": {
-			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
-			"2": "Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.",
-			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
-			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
-			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
+			"1": "Du musst dich auf der Website sowohl mit deinem **osu!**, sowie deinem **Discord Konto** anmelden.",
+			"2": "Team Erstellung und Management wird durch die **[TEST Open Webseite](https://test-open.com)** ausgeführt.",
+			"3": "Um dich als **Freier Spieler** (Free Agent) zu registrieren, suche im **Discord Server** den #looking-for-team Kanal auf, dort ist es dir möglich mithilfe des **TEST Bot** einen Post zu erstellen.",
+			"4": "Falls die Webseite nicht verfügbar ist, kontaktiere einen Admin, um dich über das **anmelde Formular** zu registrieren. Beachte bitte, dass die Daten des Anmeldeformulars nur auf dem Sheet sichtbar sind, bis diese auf der Webseite manuell nachgetragen werden.",
+			"5": "Die Turnier-Organisation wird keine **Free Agent Teams** erstellen. Solltest du wünschen am Turnier mitzuspielen, musst du selber ein Team finden.",
+			"heading": "REGISTRIERUNGEN."
 		},
 		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
-			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
-			"3": "TEST Open has no tolerance for bullying of any kind.",
-			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
-			"5": "Try to keep **controversial conversations** to a minimum.",
-			"6": "Keep disagreements civilized.",
-			"7": "**Doxing is not allowed** under any circumstances.",
-			"8": "No content that is banned under **Discord TOS** is allowed.",
-			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
-			"10": "If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.",
-			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
-			"heading": "GENERAL CONDUCT."
+			"1": "Respektiere andere Spieler und das Turner-Personal.",
+			"2": "**Keine diskriminierenden Texte oder Nachrichten**. Dies beinhalten unter anderem {sublist_alpha} Rassistische Kommentare {sublist_alpha} Begriffe, die für LGBTQ+-Mitglieder anstößig sein könnten {sublist_alpha} Sexismus {sublist_alpha} Hassrede",
+			"3": "TEST Open hat keine Toleranz für Mobbing jeglicher Art.",
+			"4": "**Jugendfreie Themen (NSFW) sind nicht erlaubt**. Dies beinhaltet: {sublist_alpha} Nacktheit {sublist_alpha} Blut/Gewaltätige Inhalte {sublist_alpha} Drogen/Alkohol missbrauch {sublist_alpha} Verstörender Inhalt",
+			"5": "Versuche Gespräche über **Kontroverse Themen** auf ein Minimum zu reduzieren.",
+			"6": "Bleibt bei Meinungsverschiedenheiten zivilisiert.",
+			"7": "**Doxing ist unter keinen Umständen erlaubt**.",
+			"8": "Jeglicher Inhalt welcher gegen die **Discord TOS** verstößt ist nicht erlaubt.",
+			"9": "Englisch ist die primäre Sprache des Turniers, behalte dies im Hinterkopf, wenn du mit dem Turnier-Personal (Staff) kommunizierst.",
+			"10": "Solltest du bemerken das jemand gegen eine dieser regeln verstößt, **melde es bitte einem Moderator oder Admin**.",
+			"11": "Des Weiteren, benutze **gesunden Menschenverstand** um eine **einladende Umgebung für alle** zu gestalten!",
+			"heading": "ALLGEMEINES VERHALTEN."
 		},
 		"Scheduling": {
-			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
-			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
+			"1": "Spiele werden über den **TEST-Bot** im Discord Server geplant.",
+			"2": "Um die Qualifizierungsrunde zu planen oder zu verschieben, nutze den **/schedule** Befehl und fülle die entsprechenden Informationsfelder aus.",
+			"3": "Um ein Spiel zu verschieben, nutze den **/reschedule** Befehl und fülle die entsprechenden Informationsfelder aus. Dies sendet eine anfrage in den Planungs-Kanal.",
+			"4": "Um das Spiel zu verschieben, müssen beide Teamkapitäne im Planungs-Kanal auf \"annehmen\" (\"accept\") drücken.",
+			"heading": "SPIEL/RUNDEN PLANUNG."
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
+			"1": "Alle Maps werden mit dem **Standard osu! lazer Score System** bewertet.",
+			"2": "Die \"**NoFail**\" mod wird erzwungen.",
+			"3": "Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren. {sublist_alpha} Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten. {sublist_alpha} Eine Erinnerung wird **25 Minuten** vor dem jeweiligen Spiel verschickt. {sublist_alpha} Der lazer Raumname und das Passwort werden **15 Minuten** vor beginn des spiels verschickt.",
+			"4": "Nachdem eine Map gewählt wurde haben die Teams **2 Minuten** Zeit um, ihre Spieler auszuwechseln.",
+			"heading": "SPIELABLAUF.",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
-				"heading": "QUALIFIERS"
+				"1": "Maps werden in derselben Reihenfolge gespielt wie der Mappool sie vorgibt.",
+				"2": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, wird der entsprechende Spieler die Map am Ende der Qualifizierungsrunde erneut spielen.",
+				"3": "Es wird erwartet, dass die Teams bis spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.",
+				"heading": "QUALIFIZIERUNGEN"
 			},
 			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
-				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
+				"1": "Die Sieg-Bedingung für jede Spielrunde ist **Team gegen Team** (\"TeamVS\").",
+				"2": "Maps zum Aufwärmen, zu Schützende, oder zu Bannende Maps, sowie die Auswahl der nächsten Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
+				"3": "Es wird erwartet, dass die Teams bis spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen: {sublist_alpha} 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect). {sublist_alpha} 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban). {sublist_alpha}15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).",
+				"4": "Die Spieler müssen folgende \"Sitzplätze\" in der Spielrunde einnehmen: {sublist_alpha} Team 1 (Rot): Platz 1, 2, und 3.{sublist_alpha} Team 2 (Blau): Platz 4, 5, und 6.",
+				"5": "Die Teamkapitäne werden den \"!roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:{sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren.{sublist_alpha}Als Zwietes Wählen, aber zuerst eine Map Sperren.",
+				"6": "Den Teams ist es erlaubt eine Map ihrer Wahl zum Aufwärmen zu spielen.{sublist_alpha} Die Map darf **nicht länger als 4 Minuten lang** sein.{sublist_alpha} Die Map darf **nicht im Mappool** sein.",
+				"7": "Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (banning phase).",
+				"8": "Die Sperrphase (banning phase) wird im **\"snake format\"** (ABBA) abgehalten.{sublist_alpha} Team 1 sperrt eine Map.{sublist_alpha} Team 2 sperrt 2 Maps.{sublist_alpha}Team 1 sperrt eine Map.",
+				"9": "Sollte eine der gesperrten **Maps von einem der Teams geschützt sein, wird die Sperrung annulliert** und die Map wird regulär spielbar sein.",
+				"10": "Das **doppelt Sperren einer Mod im Mappool ist nicht erlaubt**, mit Ausnahme der \"No-Mod\" Maps.",
+				"11": "Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der \"**Lazer-Mod**\" und \"** No-Mod**\" Maps.",
+				"12": "Spieler dürfen den Tiebreaker mit jeder Mod spielen, die nicht alle Spieler beeinflusst.",
+				"13": "Jedes Team hat **eine 5 minütige Pause**, welche zu jeder Zeit in der Spielrunde genutzt werden kann.",
+				"14": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, **wird die Map abgebrochen**. Das Team hat dann **5 Minuten Zeit einen anderen Spieler für die Map einzutauschen**. Dies sollte nur ein mal Pro Team/Spielrunde passieren.",
+				"heading": "Spielrunde"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"1": "Der Mappool wird jede Woche am Sonntag veröffentlicht.",
+			"2": "lazer Mod, LM abgekürzt, ist ein Modpool welcher jede Woche andere Mods nutzt, welche in lazer zu finden sind.",
+			"heading": "MAPPOOL INFO",
 			"Table": {
-				"round": "Round",
+				"round": "Runde",
 				"starRating": "SR",
-				"bestOf": "Best Of",
-				"bans": "Bans",
-				"protects": "Protects",
-				"total": "Total",
-				"qaulifiers": "Qualifiers",
-				"roundOf32": "Round of 32",
-				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
-				"finals": "Finals",
-				"grandFinals": "Grand Finals"
+				"bestOf": "Das beste von",
+				"bans": "Sperren",
+				"protects": "Schützen",
+				"total": "Insgesamt",
+				"qaulifiers": "Qualifizierung",
+				"roundOf32": "Runde der 32",
+				"roundOf16": "Achtelfinale",
+				"quarterfinals": "Viertelfinale",
+				"semifinals": "Halbfinale",
+				"finals": "Finale",
+				"grandFinals": "Großes Finale"
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"1": "Der MVP des Turniers{sublist_alpha} **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.",
+			"2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasste Tablet-Hülle**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
+			"3": "Zweiter Platz{sublist_alpha} $200 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
+			"4": "Dritter Platz{sublist_alpha} $100 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
+			"heading": "BELOHNUNGS- UND PREISLISTE"
 		}
 	},
 	"Components": {
@@ -392,7 +392,7 @@
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "Verzeihung, aber die Anmeldung konnte nicht abgeschlossen werden. Bitte versuche es erneut oder gehe zurück zur Startseite."
 		}
 	}
 }

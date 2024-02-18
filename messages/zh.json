@@ -23,7 +23,7 @@
 		"Originals": {
 			"title": "原创曲",
 			"subtitle": "定制歌曲即将揭晓",
-			"description": "随赛程进行将逐步解锁独家的TEST原创曲。才华横溢的曲师们创造的定制曲目将随赛事进入到四分之一决赛，半决赛，决赛及总决赛阶段时一一揭晓。这些使用原创曲目，兼具风格及艺术的谱面为赛事中顶尖的参赛者量身打造。",
+			"description": "随赛程进行将逐步解锁独家的TEST原创曲。才华横溢的曲师们创造的定制曲目将随赛事进入到四分之一决赛，半决赛，决赛及总决赛阶段时一一揭晓。这些使用原创曲目，兼具风格及艺术的谱面为赛事中的顶尖选手量身打造。",
 			"tracksTitle": "曲目列表",
 			"listenButton": "立刻收听"
 		}
@@ -34,7 +34,7 @@
 		"schedule": "赛程",
 		"teams": "队伍",
 		"info": "信息",
-		"sheet": "赛程表",
+		"sheet": "赛事主表",
 		"invites": "邀请",
 		"team": "队伍",
 		"profile": "个人信息"
@@ -121,7 +121,7 @@
 				}
 			},
 			"CurrentTeam": {
-				"title": "当前在队伍中!",
+				"title": "当前已在队伍中!",
 				"message": "看起来您仍然在队伍里。若要删除账号，请先离开或删除队伍。"
 			},
 			"FailedAccountDelete": {
@@ -190,7 +190,7 @@
 	},
 	"TeamsPage": {
 		"heading": "队伍列表",
-		"teamsRegistered": "个队伍已经注册"
+		"teamsRegistered": "支队伍已经注册"
 	},
 	"UnauthorizedPage": {
 		"authFailed": "授权失败！",
@@ -228,7 +228,7 @@
 		"timezone": "时区",
 		"Buttons": {
 			"delete": "删除队伍",
-			"edit": "修改队伍",
+			"edit": "编辑队伍",
 			"leave": "离开队伍"
 		},
 		"Players": {
@@ -242,7 +242,7 @@
 		"Invites": {
 			"heading": "已发送的邀请",
 			"error": "抱歉，我们未能获取你队伍中的选手信息。",
-			"none": "你当前尚未发出任何邀请。使用上方的邀请选手栏来开始。",
+			"none": "你当前尚未发出任何邀请。点击上方的邀请按钮来开始。",
 			"Invite": {
 				"rank": "排名",
 				"discord": "DISCORD",
@@ -338,33 +338,33 @@
 			"Qualifiers": {
 				"1": "谱面的游玩顺序与图池所见顺序相同。",
 				"2": "如果选手**在谱面开始的一分钟前****掉线**，选手会在**资格赛房结束后**重玩此谱面。",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
-				"heading": "QUALIFIERS"
+				"3": "队伍需要在**资格赛房间预定开始时间后 5 分钟**之前保证有 3 名选手在房间中。如果队伍未能出席，则必须重排资格赛房间。其必须晚于他们未能出席的房间至少** 4 小时**。",
+				"heading": "资格赛"
 			},
 			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
-				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
+				"1": "每场比赛的获胜条件均为 **TeamVS** 。",
+				"2": "热手，保图，禁图和选图必须在 **2 分钟**内提交。",
+				"3": "队伍需要在**比赛预定开始时间后 5 分钟**之前保证有 3 名选手在房间中。他们会在后续时间节点放弃如下权利。{sublist_alpha} 迟到 5 分钟放弃保图。 {sublist_alpha} 迟到 10 分钟放弃禁图。 {sublist_alpha} 迟到 15 分钟放弃比赛。",
+				"4": "选手必须依队伍在房间的指定位置。{sublist_alpha} 队伍 1 （红队）：位置 1， 2， 3。 {sublist_alpha} 队伍 2 （蓝队）：位置 4， 5， 6。",
+				"5": "队长将在对应比赛的** Discord 子区中使用 !roll 指令**来决定**选图/禁图 顺序**。拥有较高roll点的队长可以选择下列两者之一，对方队长将自动获得另一个：{sublist_alpha} 先选后禁 {sublist_alpha} 后选先禁",
+				"6": "队伍在赛前可以选择一个谱面作为热手图。{sublist_alpha} 热手必须**短于 4 分钟**。 {sublist_alpha} 热手 **不应是图池的一部分**。",
+				"7": "保图将在禁图阶段前**私信提交**给裁判。",
+				"8": "禁图将以**蛇形方式** (ABBA) 进行。{sublist_alpha} 队伍 1 禁用 {sublist_alpha} 队伍 2 禁用两次 {sublist_alpha} 队伍 1 禁用",
+				"9": "当禁选阶段结束后，**对保图的禁用将直接失效**，那个谱面将可按平常选取。",
+				"10": "除了** No-Mod 图**以外，一方不能**连续**禁用**两张同 mod 池中的图**。",
+				"11": "除了** No-Mod**和**Lazer-Mod**图以外，一方不能**连续**选取**两张同 mod 池中的图**。",
+				"12": "除了**改变全局速度的mod**，选手可以使用任何 mod 游玩决胜图。",
+				"13": "每只队伍拥有**一次 5 分钟的暂停**，可于一场比赛中的任何时刻使用。",
+				"14": "如果选手**在谱面开始的一分钟内掉线**，这个谱面会被**中止**，队伍将有** 5 分钟**时间指派另一位选手游玩该谱面。每场比赛每只队伍只有一次机会。",
+				"heading": "比赛"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"1": "图池将会在每**周日**公布。",
+			"2": "Lazer Mod，简称LM，是一个从Lazer客户端提供的新模组中，每周选用不同模组组成的模组池。",
+			"heading": "图池信息",
 			"Table": {
-				"round": "Round",
+				"round": "轮次",
 				"starRating": "星数",
 				"bestOf": "BO",
 				"bans": "禁图",
@@ -380,11 +380,11 @@
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"1": "赛事的MVP {sublist_alpha} 由 Spoo 设计，Dovacustoms 喷涂的**定制 WLmouse Beast X mini 鼠标**。定制鼠标上方也会喷涂选手的名字。",
+			"2": "第一名 {sublist_alpha} 由队员均分 $500 {sublist_alpha} 由 Spro 设计，Bluebunny 制造的**定制 TEST Open 触控板贴膜** {sublist_alpha} 动态队伍Banner",
+			"3": "第二名 {sublist_alpha} 由队员均分 $200 {sublist_alpha} 静态队伍Banner",
+			"4": "第三名 {sublist_alpha} 由队员均分 $100 {sublist_alpha} 静态队伍Banner",
+			"heading": "奖池"
 		}
 	},
 	"Components": {
