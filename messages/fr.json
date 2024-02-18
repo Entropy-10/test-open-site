@@ -383,12 +383,12 @@
 			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
 			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
 			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"4": "Troisième place {sublist_alpha} $100 divisé entre les joueurs {sublist_alpha} Bannière d'équipe statique",
+			"heading": "LES PRIX."
 		}
 	},
 	"Components": {
-		"comingSoon": "Coming Soon"
+		"comingSoon": "À venir"
 	},
 	"APICallbacks": {
 		"Errors": {
