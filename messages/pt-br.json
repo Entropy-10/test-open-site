@@ -1,7 +1,7 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "UM TORNEIO EM OSU!LAZER DE RANK ABERTO",
+			"description": "UM TORNEIO EM OSU! LAZER DE RANK ABERTO",
 			"hostTitle": "ORGANIZADO POR"
 		},
 		"Features": {
@@ -305,7 +305,7 @@
 			"2": "Criação da equipe e o gerenciamento serão executados através do **[site TEST Open](https://test-open.com)**.",
 			"3": "Para criar um **anúncio de agente livre**, vá para o **servidor do discord** e localize o canal looking-for-team. Lá você poderá criar um anúncio através do **TEST Bot**.",
 			"4": "Se o site estiver fora de ar, você poderá solicitar a algum administrador pelo **formulário de registro**. No entanto, se você optar registrar-se através desse método, suas informações serão vistas na planilha, mas não no site até que seja atualizado manualmente.",
-			"5": "A equipe da staff não criará **times de agentes livres**. Então, se você deseja participar, você deve achar uma equipe por conta própria.",
+			"5": "A equipe da staff não criará * de agentes*times livres**. Então, se você deseja participar, você deve achar uma equipe por conta própria.",
 			"heading": "REGISTROS."
 		},
 		"GeneralConduct": {
