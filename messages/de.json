@@ -332,18 +332,18 @@
 		"GameProcedures": {
 			"1": "Alle Maps werden mit dem **Standard osu! lazer Score System** bewertet.",
 			"2": "Die \"**NoFail**\" mod wird erzwungen.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
+			"3": "Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren. {sublist_alpha} Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten. {sublist_alpha} Eine Erinnerung wird **25 Minuten** vor dem jeweiligen Spiel verschickt. {sublist_alpha} Der lazer Raumname und das Passwort werden **15 Minuten** vor beginn des spiels verschickt.",
+			"4": "Nachdem eine Map gewählt wurde haben die Teams **2 Minuten** Zeit um, ihre Spieler auszuwechseln.",
+			"heading": "SPIELABLAUF.",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
-				"heading": "QUALIFIERS"
+				"1": "Maps werden in derselben Reihenfolge gespielt wie der Mappool sie vorgibt.",
+				"2": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, wird der entsprechende Spieler die Map am Ende der Qualifizierungsrunde erneut spielen.",
+				"3": "Es wird erwartet, dass die Teams bis spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.",
+				"heading": "QUALIFIZIERUNGEN"
 			},
 			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
+				"1": "Die Sieg-Bedingung für jede Spielrunde ist **Team gegen Team** (\"TeamVS\").",
+				"2": "Maps zum Aufwärmen, zu Schützende, oder zu Bannende Maps, sowie die Auswahl der nächsten Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
 				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
 				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
