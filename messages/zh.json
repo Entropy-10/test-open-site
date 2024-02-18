@@ -381,10 +381,10 @@
 		},
 		"PrizePool": {
 			"1": "赛事的MVP {sublist_alpha} 由 Spoo 设计，Dovacustoms 喷涂的**定制 WLmouse Beast X mini 鼠标**。定制鼠标上方也会喷涂选手的名字。",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"2": "第一名 {sublist_alpha} 由队员均分 $500 {sublist_alpha} 由 Spro 设计，Bluebunny 制造的**定制 TEST Open 触控板贴膜** {sublist_alpha} 动态队伍Banner",
+			"3": "第二名 {sublist_alpha} 由队员均分 $200 {sublist_alpha} 静态队伍Banner",
+			"4": "第三名 {sublist_alpha} 由队员均分 $100 {sublist_alpha} 静态队伍Banner",
+			"heading": "奖池"
 		}
 	},
 	"Components": {
