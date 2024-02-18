@@ -346,7 +346,7 @@
 				"2": "Warmups, Protects, Bans e Picks devem ser escolhidos dentro de **2 minutos**.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
 				"4": "Os jogadores devem estar em um slot correspondente a sua equipe no lobby. {sublist_alpha} Time 1 (Vermelho): Slots 1, 2, e 3. {sublist_alpha} Time 2 (Azul): Slots 4, 5 e 6.",
-				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
+				"5": "Os capitães deverão usar o **comando!roll na thread do Discord** para decidir a **ordem do Pick/Ban**. O capitão com o maior roll pode escolher uma das duas ordens, enquanto o outro capitão receberá a outra: {sublist_alpha} Primeiro Pick e Segundo Ban {sublist_alpha} Segundo Pick e Primeiro Ban",
 				"6": "As equipes podem optar por jogar 1 mapa de suas escolhas como warmup antes da partida. {sublist_alpha} Warmups devem ser **menores que 4 minutos de duração**. {sublist_alpha} Warmups podem **não fazer parte da mappool**.",
 				"7": "Os protects serão **submetidos de forma privada** ao juiz antes da fase de banimento.",
 				"8": "As fases de bans serão feitas em um **formato cobra** (ABBA). {sublist_alpha} Time 1 Bane {sublist_alpha} Time 2 Bane duas vezes {sublist_alpha} Time 1 Bane",
