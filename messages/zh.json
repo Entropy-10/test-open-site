@@ -34,7 +34,7 @@
 		"schedule": "赛程",
 		"teams": "队伍",
 		"info": "信息",
-		"sheet": "赛程表",
+		"sheet": "赛事主表",
 		"invites": "邀请",
 		"team": "队伍",
 		"profile": "个人信息"
@@ -121,7 +121,7 @@
 				}
 			},
 			"CurrentTeam": {
-				"title": "当前在队伍中!",
+				"title": "当前已在队伍中!",
 				"message": "看起来您仍然在队伍里。若要删除账号，请先离开或删除队伍。"
 			},
 			"FailedAccountDelete": {
@@ -190,7 +190,7 @@
 	},
 	"TeamsPage": {
 		"heading": "队伍列表",
-		"teamsRegistered": "个队伍已经注册"
+		"teamsRegistered": "支队伍已经注册"
 	},
 	"UnauthorizedPage": {
 		"authFailed": "授权失败！",
@@ -228,7 +228,7 @@
 		"timezone": "时区",
 		"Buttons": {
 			"delete": "删除队伍",
-			"edit": "修改队伍",
+			"edit": "编辑队伍",
 			"leave": "离开队伍"
 		},
 		"Players": {
