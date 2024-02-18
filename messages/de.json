@@ -143,7 +143,7 @@
 		"Form": {
 			"heading": "EIN TEAM ERSTELLEN",
 			"teamName": "Teamname",
-			"teamAcronym": "Team Abkürzung (Akronym)",
+			"teamAcronym": "Team Akronym",
 			"timezone": "Zeitzone",
 			"teamFlag": "Team Flagge",
 			"createButton": {
