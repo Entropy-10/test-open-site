@@ -55,7 +55,7 @@
 		"description": "EIN OSU! LAZER TURNIER FÜR ALLE RÄNGE, VERANSTALTET VON TEDDY, ENTROPY, UND SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "osu!'s erstes großangelegtes lazer Turnier für jeden Rang. Willkommen bei der neuen osu! Turner-Erfahrung.",
 		"PageTitles": {
 			"home": "Startseite",
 			"schedule": "Zeitplan",
@@ -354,37 +354,37 @@
 				"10": "Das **doppelt Sperren einer Mod im Mappool ist nicht erlaubt**, mit Ausnahme der \"No-Mod\" Maps.",
 				"11": "Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der \"**Lazer-Mod**\" und \"** No-Mod**\" Maps.",
 				"12": "Spieler dürfen den Tiebreaker mit jeder Mod spielen, die nicht alle Spieler beeinflusst.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
+				"13": "Jedes Team hat **eine 5 minütige Pause**, welche zu jeder Zeit in der Spielrunde genutzt werden kann.",
+				"14": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, **wird die Map abgebrochen**. Das Team hat dann **5 Minuten Zeit einen anderen Spieler für die Map einzutauschen**. Dies sollte nur ein mal Pro Team/Spielrunde passieren.",
+				"heading": "Spielrunde"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"1": "Der Mappool wird jede Woche am Sonntag veröffentlicht.",
+			"2": "lazer Mod, LM abgekürzt, ist ein Modpool welcher jede Woche andere Mods nutzt, welche in lazer zu finden sind.",
+			"heading": "MAPPOOL INFO",
 			"Table": {
-				"round": "Round",
+				"round": "Runde",
 				"starRating": "SR",
-				"bestOf": "Best Of",
-				"bans": "Bans",
-				"protects": "Protects",
-				"total": "Total",
-				"qaulifiers": "Qualifiers",
-				"roundOf32": "Round of 32",
-				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
-				"finals": "Finals",
-				"grandFinals": "Grand Finals"
+				"bestOf": "Das beste von",
+				"bans": "Sperren",
+				"protects": "Schützen",
+				"total": "Insgesamt",
+				"qaulifiers": "Qualifizierung",
+				"roundOf32": "Runde der 32",
+				"roundOf16": "Achtelfinale",
+				"quarterfinals": "Viertelfinale",
+				"semifinals": "Halbfinale",
+				"finals": "Finale",
+				"grandFinals": "Großes Finale"
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"1": "Der MVP des Turniers{sublist_alpha} **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.",
+			"2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasste Tablet-Hülle**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
+			"3": "Zweiter Platz{sublist_alpha} $200 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
+			"4": "Dritter Platz{sublist_alpha} $100 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
+			"heading": "BELOHNUNGS- UND PREISLISTE"
 		}
 	},
 	"Components": {
@@ -392,7 +392,7 @@
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "Verzeihung, aber die Anmeldung konnte nicht abgeschlossen werden. Bitte versuche es erneut oder gehe zurück zur Startseite."
 		}
 	}
 }
