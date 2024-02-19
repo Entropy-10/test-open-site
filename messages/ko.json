@@ -246,16 +246,16 @@
 			"Invite": {
 				"rank": "순위",
 				"discord": "디스코드",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "보낸 날짜",
+				"deleteButton": "초대 삭제",
+				"inviteButton": "초대",
+				"placeholder": "osu! 유저명을 입력하세요..."
 			}
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"title": "{type} 삭제가 실패했어요!",
+				"message": "죄송합니다. {type} 삭제가 실패했어요. 다시 시도해 보세요",
 				"Types": {
 					"player": "player",
 					"invite": "invite"
