@@ -223,11 +223,11 @@
 	"TeamPage": {
 		"Headings": {
 			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"player": "LISTE DES JOUEURS."
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "FUSEAU HORAIRE",
 		"Buttons": {
-			"delete": "DELETE TEAM",
+			"delete": "SUPPRIMER L'ÉQUIPE",
 			"edit": "MODIFIER L'ÉQUIPE",
 			"leave": "QUITTER L'ÉQUIPE"
 		},
