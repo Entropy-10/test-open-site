@@ -380,11 +380,11 @@
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"1": "대회 MVP {sublist_alpha} **커스터마이즈된 WLmouse Beast X 미니 마우스** 는 Spoo가 디자인하고 Dovacustoms가 그립니다. 사용자의 이름도 마우스 상단에 그려집니다.",
+			"2": "첫 번째 자리 {sublist_alpha} 선수들 사이에서 $500을 나누어 {sublist_alpha} **커스터마이즈된 TEST 오픈 태블릿 커버** 는 Spoo가 디자인하고 Bluebunny가 제작했습니다 {sublist_alpha} 애니메이션된 팀 배너",
+			"3": "두 번째 자리 {sublist_alpha} 선수들 사이에서 $200을 분배 {sublist_alpha} 정적 팀 배너",
+			"4": "세 번째 자리 {sublist_alpha} 선수들 사이에서 $100을 분배 {sublist_alpha} 정적 팀 배너",
+			"heading": "상금 풀"
 		}
 	},
 	"Components": {
