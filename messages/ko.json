@@ -23,13 +23,13 @@
 		"Originals": {
 			"title": "원작품",
 			"subtitle": "맞춤 곡 곧 출시 예정",
-			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
-			"tracksTitle": "TRACKLIST.",
-			"listenButton": "LISTEN NOW"
+			"description": "단계를 진행하여 독점 TEST 오리지널을 잠금 해제하세요. 재능 있는 제작자들이 예선, 준결승, 결승, 결승전에서 점진적으로 공개되는 맞춤형 트랙을 제작했습니다. 독특한 스타일과 예술이 포함된 이 비트맵들은 토너먼트의 최고 참가자를 위해 예약되었습니다.",
+			"tracksTitle": "트랙리스트.",
+			"listenButton": "들어보기"
 		}
 	},
 	"NavItems": {
-		"home": "HOME",
+		"home": "홈페이지",
 		"mappool": "맵풀",
 		"schedule": "일정",
 		"teams": "팀",
@@ -43,21 +43,21 @@
 		"register": "등록하기",
 		"signIn": "로그인",
 		"signOut": "로그아웃",
-		"close": "CLOSE"
+		"close": "닫기"
 	},
 	"Status": {
-		"operational": "All services are online",
-		"downtime": "Some services are down",
-		"degraded": "Some services are degraded",
-		"maintenance": "Ongoing maintenance"
+		"operational": "모든 서비스 운영중",
+		"downtime": "일부 서비스 오프라인",
+		"degraded": "일부 서비스 미운영",
+		"maintenance": "서비스 관리중"
 	},
 	"Footer": {
-		"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
+		"description": "오픈 랭크, TEDDY, ENTROPY, SORA가 주최하는 OSU! LAZAR 토너먼트."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "Osu! 최초의 대규모 오픈 랭크 레이저 토너먼트입니다. \n새로운 osu 토너먼트 경험에 오신 것을 환영합니다!",
 		"PageTitles": {
-			"home": "Home",
+			"home": "홈페이지",
 			"schedule": "일정",
 			"info": "정보",
 			"mappool": "맵풀",
@@ -68,39 +68,39 @@
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home"
+		"title": "문제가 발생했습니다!",
+		"retryButton": "재시도",
+		"goHomeButton": "홈으로 돌아가기"
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "RELINK",
+			"relink": "재연결",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "업데이트",
+				"loadingText": "업데이트 중"
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "프로필.",
+			"team": "팀 관리"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
-			"countryRank": "COUNTRY RANK"
+			"rank": "세계 순위",
+			"countryRank": "나라 순위"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
+			"heading": "내 팀",
+			"none": "현재 팀이 없습니다. 보류 중인 초대를 수락하여 하나에 참여하세요.",
 			"timezone": "시간대별",
-			"joined": "JOINED",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"joined": "가입날짜",
+			"manageTeamButton": "내 팀 관리"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "보류 중인 초대들",
+			"none": "현재 보류중인 초대가 없습니다. 기다리거나 자신만의 팀을 만드세요.",
 			"Invite": {
 				"timezone": "시간대별",
-				"invited": "INVITED",
+				"invited": "초대 날짜",
 				"Buttons": {
 					"accept": "수락",
 					"deny": "거절"
@@ -109,153 +109,153 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"title": "벌써 팀이 있습니다!",
+				"message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 조인하기 전에 현재 팀을 삭제하거나 탈퇴하세요."
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "초대를 {type} 하지 못했습니다!",
+				"message": "죄송합니다. 초대를 {type} 하지 못했습니다. 도움이 되는지 다시 확인해 보세요.",
 				"Types": {
 					"deny": "거부",
 					"accept": "수락"
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "현재 팀에 있습니다!",
+				"message": "아직 팀에 있는 것 같군요. 계정을 삭제하기 전에 먼저 팀을 탈퇴하거나 삭제하세요."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"title": "계정 삭제가 실패했어요!",
+				"message": "죄송합니다. 계정 삭제가 실패했습니다. 다시 시도 해보세요."
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "업데이트가 실패했습니다!",
+				"message": "죄송합니다. osu 프로필 정보를 업데이트하지 못했습니다. 다시 시도해 보세요."
 			}
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "팀 등록",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"title": "지금은 등록이 마감되었습니다!",
+			"message": "현재 토너먼트가 시작될 때까지 등록이 마감되어 있습니다. 홈페이지의 카운트다운이 종료되면 여기를 다시 확인하시기 바랍니다."
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
-			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"heading": "팀 만들기",
+			"teamName": "팀 이름",
+			"teamAcronym": "팀 약어",
+			"timezone": "시간대",
+			"teamFlag": "팀 깃발",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "만들기",
+				"loadingText": "만드는중"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"title": "팀을 만들었습니다!",
+				"message": "TEST 오픈에 오신 것을 환영합니다! 팀 관리 하고 플레이어 초대를 시작하려면 아래 버튼을 클릭하세요.",
+				"teamManagementButton": "팀 관리"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"upload": "업로드하려면 여기를 클릭하세요",
+				"recommended": "추천 비율 9:4"
 			}
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "Osu! 에 제한이 있는 것 같습니다. 안타깝게도 제한된 동안에는 등록할 수 없습니다. 이것이 실수라고 생각되면 로그아웃했다가 사이트에 다시 로그인해 보세요.",
+				"title": "제한되어 있습니다!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 만들기 전에 현재 팀을 삭제하거나 탈퇴하세요.",
+				"title": "벌써 팀이 있습니다!"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "해당 {type} 팀이 이미 존재하는 것 같습니다. 대신 다른 {type} 을(를) 사용하세요.",
 				"Types": {
 					"name": "이름",
 					"acronym": "머리글자",
-					"player": "player"
+					"player": "참가자"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "팀 {type} 이(가) 이미 존재합니다!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "팀을 만들 수 없습니다. 우리 측에 문제가 있는 것 같습니다. 다시 시도해 보세요.",
+				"title": "팀을 만들지 못했습니다!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "플래그를 업로드하지 못했습니다!",
+				"message": "깃발을 우리 서버에 업로드할 수 없습니다. 다시 시도해 보세요."
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "팀 목록",
+		"teamsRegistered": "등록된 팀들"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"authFailed": "로그인에 실패했습니다!",
+		"unauthorized": "금지!",
+		"homeButton": "홈페이지",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "이 페이지에 액세스하기 전에 먼저 로그인하십시오."
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "서버 확인",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
-			"verified": "Welcome to the TEST Open Discord server!",
-			"defaultError": "Verification failed. Please try again later.",
-			"default": "Please click the button below to gain access to the server."
+			"signIn": "인증을 시도하기 전에 먼저 로그인하세요.",
+			"verified": "TEST Open Discord 서버에 오신 것을 환영합니다!",
+			"defaultError": "인증 실패했습니다. 잠시후 시도하세요",
+			"default": "서버에 접속하려면 아래 버튼을 클릭하세요."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "재시도",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "확인",
+				"loadingText": "확인중"
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "이미 확인되었습니다. 이것이 실수라고 생각되면 @__entro에게 DM을 보내 도움을 요청하세요.",
+			"verificationFailed": "확인을 실패했습니다. 잠시후 시도하세요"
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "내 팀.",
+			"player": "플레이어 목록."
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "시간대별",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "팀 삭제",
+			"edit": "팀 편집",
+			"leave": "팀 탈퇴"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "현재 회원들",
 			"Player": {
-				"rank": "RANK",
+				"rank": "순위",
 				"discord": "디스코드",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "플레이어 제거"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"heading": "보낸 초대장들",
+			"error": "죄송합니다. 귀하의 팀에 선수를 가져오지 못했습니다.",
+			"none": "현재 보낸 초대가 없습니다. 위의 플레이어 초대 상자를 사용하여 시작하세요.",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "순위",
 				"discord": "디스코드",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "보낸 날짜",
+				"deleteButton": "초대 삭제",
+				"inviteButton": "초대",
+				"placeholder": "osu! 유저명을 입력하세요..."
 			}
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"title": "{type} 삭제가 실패했어요!",
+				"message": "죄송합니다. {type} 삭제가 실패했어요. 다시 시도해 보세요",
 				"Types": {
 					"player": "player",
 					"invite": "invite"

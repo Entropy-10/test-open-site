@@ -332,20 +332,20 @@
 		"GameProcedures": {
 			"1": "Todos los mapas utilizarán el **puntaje nuevo de osu! lazer**.",
 			"2": "**NoFail** es obligatorio.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
+			"3": "Los árbitros contactarán los Capitanes de cualquier equipo participante para cada partida. {sublist_alpha} Los capitanes son responsables de comunicar cualquier información dado por el árbitro hacia su equipo. {sublist_alpha} Un recordatorio será enviado **25 minutos** antes de cada partida. {sublist_alpha} El nombre y la contraseña de la sala en Lazer será enviado **15 minutos** antes de cada partida.",
+			"4": "Luego de que un mapa haya sido seleccionado, los jugadores participantes tendrán **2 minutos** para unirse a la sala.",
+			"heading": "PROCEDIMIENTOS DE LA PARTIDA.",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
-				"heading": "QUALIFIERS"
+				"1": "Los mapas se jugarán en el mismo orden en que se muestra en la mappool.",
+				"2": "Si un jugador **se desconecta** **dentro del primer minuto del mapa**, el jugador repetirá el mapa al **final de la sala clasificatoria**.",
+				"3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la sala**. Si un equipo falla en hacerse presente entonces el equipo tendrá que reprogramar la hora de su sala. Esta sala debe de ser al menos **4 horas** después de la sala en que no se hicieron presentes.",
+				"heading": "CLASIFICATORIOS"
 			},
 			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
+				"1": "La condición de victoria para cada partida será **TeamVS**.",
+				"2": "Los Warmups, Protects, Bans y Picks deben ser enviados en **2 minutos**.",
+				"3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la partida**. Perderán lo siguiente en cada intervalo de tiempo. {sublist_alpha} Perderás tus protects estando 5 minutos tarde. {sublist_alpha} Perderás tus bans estando 10 minutos tarde. {sublist_alpha} Perderás tu partida estando 15 minutos tarde.",
+				"4": "Los jugadores deben de estar en una casilla dentro de la sala correspondiente a su equipo. {sublist_alpha} Equipo 1 (Rojo): Casillas 1, 2, y 3. {sublist_alpha} Equipo 2 (Azul): Casillas 4, 5, y 6.",
 				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
 				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
 				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
@@ -356,12 +356,12 @@
 				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
 				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
 				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
+				"heading": "PARTIDO"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
+			"1": "El mappool se publicará el **domingo** de cada semana.",
+			"2": "Lazer Mod, o LM para abreviar, es un modpool que incluirá diferentes mods cada semana para mostrar los nuevos mods que el cliente de Lazer tiene para ofrecer.",
 			"heading": "INFORMACIÓN DE LA MAPPOOL.",
 			"Table": {
 				"round": "Ronda",
