@@ -241,10 +241,10 @@
 		},
 		"Invites": {
 			"heading": "보낸 초대장들",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"error": "죄송합니다. 귀하의 팀에 선수를 가져오지 못했습니다.",
+			"none": "현재 보낸 초대가 없습니다. 위의 플레이어 초대 상자를 사용하여 시작하세요.",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "순위",
 				"discord": "디스코드",
 				"sent": "SENT",
 				"deleteButton": "DELETE INVITE",
