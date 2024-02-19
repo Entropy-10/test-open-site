@@ -52,7 +52,7 @@
 		"maintenance": "서비스 관리중"
 	},
 	"Footer": {
-		"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
+		"description": "오픈 랭크, TEDDY, ENTROPY, SORA가 주최하는 OSU! LAZAR 토너먼트."
 	},
 	"Metadata": {
 		"description": "Osu! 최초의 대규모 오픈 랭크 레이저 토너먼트입니다. \n새로운 osu 토너먼트 경험에 오신 것을 환영합니다!",
@@ -109,7 +109,7 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "현재 팀에 있습니다!",
+				"title": "벌써 팀이 있습니다!",
 				"message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 조인하기 전에 현재 팀을 삭제하거나 탈퇴하세요."
 			},
 			"FailedInvite": {
@@ -122,11 +122,11 @@
 			},
 			"CurrentTeam": {
 				"title": "현재 팀에 있습니다!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"message": "아직 팀에 있는 것 같군요. 계정을 삭제하기 전에 먼저 팀을 탈퇴하거나 삭제하세요."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"title": "계정 삭제가 실패했어요!",
+				"message": "죄송합니다. 계정 삭제가 실패했습니다. 다시 시도 해보세요."
 			},
 			"FailedUpdate": {
 				"title": "FAILED TO UPDATE!",
@@ -135,10 +135,10 @@
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "팀 등록",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"title": "지금은 등록이 마감되었습니다!",
+			"message": "현재 토너먼트가 시작될 때까지 등록이 마감되어 있습니다. 홈페이지의 카운트다운이 종료되면 여기를 다시 확인하시기 바랍니다."
 		},
 		"Form": {
 			"heading": "CREATE A TEAM.",
