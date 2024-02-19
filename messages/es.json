@@ -345,7 +345,7 @@
 				"1": "La condición de victoria para cada partida será **TeamVS**.",
 				"2": "Los Warmups, Protects, Bans y Picks deben ser enviados en **2 minutos**.",
 				"3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la partida**. Perderán lo siguiente en cada intervalo de tiempo. {sublist_alpha} Perderás tus protects estando 5 minutos tarde. {sublist_alpha} Perderás tus bans estando 10 minutos tarde. {sublist_alpha} Perderás tu partida estando 15 minutos tarde.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
+				"4": "Los jugadores deben de estar en una casilla dentro de la sala correspondiente a su equipo. {sublist_alpha} Equipo 1 (Rojo): Casillas 1, 2, y 3. {sublist_alpha} Equipo 2 (Azul): Casillas 4, 5, y 6.",
 				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
 				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
 				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
