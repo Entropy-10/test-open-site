@@ -24,12 +24,12 @@
 			"title": "원작품",
 			"subtitle": "맞춤 곡 곧 출시 예정",
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
-			"tracksTitle": "TRACKLIST.",
-			"listenButton": "LISTEN NOW"
+			"tracksTitle": "트랙리스트.",
+			"listenButton": "들어보기"
 		}
 	},
 	"NavItems": {
-		"home": "HOME",
+		"home": "홈페이지",
 		"mappool": "맵풀",
 		"schedule": "일정",
 		"teams": "팀",
@@ -43,21 +43,21 @@
 		"register": "등록하기",
 		"signIn": "로그인",
 		"signOut": "로그아웃",
-		"close": "CLOSE"
+		"close": "닫기"
 	},
 	"Status": {
-		"operational": "All services are online",
-		"downtime": "Some services are down",
-		"degraded": "Some services are degraded",
-		"maintenance": "Ongoing maintenance"
+		"operational": "모든 서비스 운영중",
+		"downtime": "일부 서비스 오프라인",
+		"degraded": "일부 서비스 미운영",
+		"maintenance": "서비스 관리중"
 	},
 	"Footer": {
 		"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "Osu! 최초의 대규모 오픈 랭크 레이저 토너먼트입니다. \n새로운 osu 토너먼트 경험에 오신 것을 환영합니다!",
 		"PageTitles": {
-			"home": "Home",
+			"home": "홈페이지",
 			"schedule": "일정",
 			"info": "정보",
 			"mappool": "맵풀",
@@ -68,36 +68,36 @@
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home"
+		"title": "문제가 발생했습니다!",
+		"retryButton": "재시도",
+		"goHomeButton": "홈으로 돌아가기"
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "RELINK",
+			"relink": "재연결",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "업데이트",
+				"loadingText": "업데이트 중"
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "프로필.",
+			"team": "팀 관리"
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
-			"countryRank": "COUNTRY RANK"
+			"rank": "세계 순위",
+			"countryRank": "나라 순위"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
+			"heading": "내 팀",
+			"none": "현재 팀이 없습니다. 보류 중인 초대를 수락하여 하나에 참여하세요.",
 			"timezone": "시간대별",
-			"joined": "JOINED",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"joined": "가입날짜",
+			"manageTeamButton": "내 팀 관리"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "보류 중인 초대들",
+			"none": "현재 보류중인 초대가 없습니다. 기다리거나 자신만의 팀을 만드세요.",
 			"Invite": {
 				"timezone": "시간대별",
 				"invited": "INVITED",
@@ -109,8 +109,8 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"title": "현재 팀에 있습니다!",
+				"message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 조인하기 전에 현재 팀을 삭제하거나 탈퇴하세요."
 			},
 			"FailedInvite": {
 				"title": "FAILED TO {type} INVITE!",
@@ -121,7 +121,7 @@
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
+				"title": "현재 팀에 있습니다!",
 				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
 			},
 			"FailedAccountDelete": {
