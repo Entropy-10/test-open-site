@@ -295,7 +295,7 @@
 			"4": "参赛者**没有排名要求**。",
 			"5": "所有参赛队伍，须在指定周末参加资格赛。",
 			"6": "资格赛前 **32 名**的队伍将继续参加**双败淘汰赛**。",
-			"7": "所有选手必须加入 **[Discord 服务器](https://discord.com/invite/nZnQZMvEhq)** 并将昵称设置为自己的 **osu! 用户名**。",
+			"7": "所有选手必须加入**[Discord 服务器](https://discord.com/invite/nZnQZMvEhq)** 并将昵称设置为自己的 **osu! 用户名**。",
 			"8": "时间将以 **UTC-0** 与 **Discord 时间戳** 的方式列出。",
 			"9": "除下列职位以外，任何赛事工作人员不允许作为选手参赛： {sublist_alpha} 直播员 {sublist_alpha} 解说 {sublist_alpha} 美术设计 {sublist_alpha} 翻译员",
 			"heading": "通则"
