@@ -289,7 +289,7 @@
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open 是一个仅在 **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)**上举办的 osu! 赛事。",
+			"1": "TEST Open 是一个仅在 **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** 上举办的 osu! 赛事。",
 			"2": "队伍由 **3-5 名**选手组成。",
 			"3": "每队须在每张谱面中派 **3 名选手**上场。",
 			"4": "参赛者**没有排名要求**。",
@@ -302,7 +302,7 @@
 		},
 		"Registrations": {
 			"1": "您必须同时使用您的 **osu!** 与 **Discord 账号**注册网站。",
-			"2": "队伍创建与管理将通过 **[TEST Open 网站](https://test-open.com)**完成。",
+			"2": "队伍创建与管理将通过 **[TEST Open 网站](https://test-open.com)** 完成。",
 			"3": "若要创建 **自由人选手自荐帖** ，请到 **discord 服务器**，找到 looking-for-team 频道，利用 **TEST Bot** 在那里发布一个帖子。",
 			"4": "如果网站宕机，您可以咨询赛事管理员填写**报名表** 。不过使用这种方式报名后，直到网站手动更新前，您的信息只会在主表上显示，而不会在网站中显示。",
 			"5": "赛事团队不会创建**自由人选手队伍**。如果您想参赛，您必须自己寻找队伍。",
