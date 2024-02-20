@@ -8,9 +8,10 @@ import Confetti from 'react-confetti-boom'
 
 import Countdown from './countdown'
 
+import { env } from '@env'
 import type { CountdownTime } from '@types'
 
-const start = Number(process.env.NEXT_PUBLIC_START_DATE)
+const start = Number(env.NEXT_PUBLIC_START_DATE)
 const hour = 1000 * 60 * 60
 
 export default function CountdownContainer() {
@@ -69,12 +70,12 @@ export default function CountdownContainer() {
 				<Confetti
 					x={0.5}
 					y={0.5}
-					particleCount={250}
+					particleCount={2000}
 					deg={270}
 					shapeSize={13}
-					spreadDeg={100}
-					effectInterval={1}
+					spreadDeg={200}
 					effectCount={1}
+					mode='boom'
 					colors={['#ff577f', '#ff884b', '#ffd384', '#fff9b0', '#3498db']}
 				/>
 			)}

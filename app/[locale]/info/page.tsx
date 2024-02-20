@@ -8,7 +8,7 @@ import Heading from '~/components/ui/heading'
 import type { MetadataProps } from '@types'
 import { useTranslations } from 'next-intl'
 import { CustomMDX } from './_components/custom-mdx'
-import MappoolTable from './_components/mapool-table'
+import MappoolTable from './_components/mappool-table'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })

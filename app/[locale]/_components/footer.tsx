@@ -3,9 +3,12 @@ import { cn } from '@utils/client'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
+import NextLink from 'next/link'
 import { Suspense } from 'react'
+import Challonge from '~/components/icons/challonge'
 import Discord from '~/components/icons/discord'
-import Spotify from '~/components/icons/spotify'
+import Osu from '~/components/icons/osu'
+import OsuBg from '~/components/icons/osu-bg'
 import Twitch from '~/components/icons/twitch'
 import X from '~/components/icons/x'
 import Youtube from '~/components/icons/youtube'
@@ -19,7 +22,7 @@ export default function Footer() {
 	const buttonsT = useTranslations('Buttons')
 	const navT = useTranslations('NavItems')
 	const t = useTranslations('Footer')
-	const { discord, x, twitch, spotify, youtube } = links.socials
+	const { discord, x, twitch, youtube } = links.socials
 
 	return (
 		<footer className='relative flex h-64 flex-col bg-footer py-4 text-milky-white'>
@@ -62,21 +65,29 @@ export default function Footer() {
 					</Button>
 
 					<div className='mt-5 flex items-center space-x-5 max-md:mt-0 *:cursor-pointer md:justify-end *:outline-none'>
-						<Link target='_blank' href={discord}>
+						<NextLink target='_blank' href={discord}>
 							<Discord className='hover:fill-[#5865F2]' />
-						</Link>
-						<Link target='_blank' href={x}>
+						</NextLink>
+						<NextLink target='_blank' href={x}>
 							<X className='hover:fill-[#000000]' />
-						</Link>
-						<Link target='_blank' href={twitch}>
+						</NextLink>
+						<NextLink target='_blank' href={twitch}>
 							<Twitch className='hover:fill-[#9146FF]' />
-						</Link>
-						<Link target='_blank' href={youtube}>
+						</NextLink>
+						<NextLink target='_blank' href={youtube}>
 							<Youtube className='hover:fill-[#FF0000]' />
-						</Link>
-						<Link target='_blank' href={spotify}>
-							<Spotify className='hover:fill-[#1DB954]' />
-						</Link>
+						</NextLink>
+						<NextLink
+							className='group relative h-[30px] w-[30px]'
+							target='_blank'
+							href={links.forumPost}
+						>
+							<Osu className='absolute z-10' />
+							<OsuBg className='absolute top-0 left-0 opacity-0 group-hover:opacity-100' />
+						</NextLink>
+						<NextLink target='_blank' href={links.challonge}>
+							<Challonge className='hover:fill-[#FF7324]' />
+						</NextLink>
 					</div>
 				</div>
 
