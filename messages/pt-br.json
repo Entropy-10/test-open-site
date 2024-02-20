@@ -64,7 +64,8 @@
 			"register": "Inscrever-se",
 			"teams": "Times",
 			"team": "Time",
-			"signIn": "Entrar"
+			"signIn": "Entrar",
+			"profile": "Profile"
 		}
 	},
 	"ErrorPage": {
