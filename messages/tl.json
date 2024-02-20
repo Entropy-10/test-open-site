@@ -64,7 +64,8 @@
 			"register": "Mag rehistro",
 			"teams": "Teams",
 			"team": "Team",
-			"signIn": "Mag-sign in"
+			"signIn": "Mag-sign in",
+			"profile": "Profile"
 		}
 	},
 	"ErrorPage": {
