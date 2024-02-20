@@ -16,7 +16,8 @@ export default withNextIntl({
 			{ protocol: 'https', hostname: 'a.ppy.sh' },
 			{ protocol: 'https', hostname: 'cdn.discordapp.com' },
 			{ protocol: 'https', hostname: 'flagsapi.com' },
-			{ protocol: 'https', hostname: 'dtoyeiqtecliyympsgji.supabase.co' }
+			{ protocol: 'https', hostname: 'dtoyeiqtecliyympsgji.supabase.co' },
+			{ protocol: 'https', hostname: 'avxmlbhyydzgmiwadyja.supabase.co' }
 		]
 	}
 })
