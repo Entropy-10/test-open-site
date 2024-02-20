@@ -64,7 +64,8 @@
 			"register": "Zarejestruj",
 			"teams": "Drużyny",
 			"team": "Drużyna",
-			"signIn": "Zaloguj"
+			"signIn": "Zaloguj",
+			"profile": "Profile"
 		}
 	},
 	"ErrorPage": {
