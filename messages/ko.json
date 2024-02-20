@@ -23,7 +23,7 @@
 		"Originals": {
 			"title": "원작품",
 			"subtitle": "맞춤 곡 곧 출시 예정",
-			"description": "단계를 진행하여 독점 TEST 오리지널을 잠금 해제하세요. 재능 있는 제작자들이 예선, 준결승, 결승, 결승전에서 점진적으로 공개되는 맞춤형 트랙을 제작했습니다. 독특한 스타일과 예술이 포함된 이 비트맵들은 토너먼트의 최고 참가자를 위해 예약되었습니다.",
+			"description": "무대를 넘어서며 독창적인 TEST 오리지널을 하나씩 풀어나가세요. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들을 마련했어요. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
 			"tracksTitle": "트랙리스트.",
 			"listenButton": "들어보기"
 		}
@@ -52,7 +52,7 @@
 		"maintenance": "서비스 관리중"
 	},
 	"Footer": {
-		"description": "오픈 랭크, TEDDY, ENTROPY, SORA가 주최하는 OSU! LAZAR 토너먼트."
+		"description": "TEDDY, ENTROPY, SORA가 주최하는 오픈 랭크 OSU! LAZAR 토너먼트."
 	},
 	"Metadata": {
 		"description": "Osu! 최초의 대규모 오픈 랭크 레이저 토너먼트입니다. \n새로운 osu 토너먼트 경험에 오신 것을 환영합니다!",
@@ -258,48 +258,48 @@
 				"title": "{type} 삭제가 실패했어요!",
 				"message": "죄송합니다. {type} 삭제가 실패했어요. 다시 시도해 보세요",
 				"Types": {
-					"player": "player",
-					"invite": "invite"
+					"player": "플레이어",
+					"invite": "초대하기"
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"title": "자신을 초대할 수 없습니다!",
+				"message": "자신의 팀에 자신을 초대할 수 없습니다. 팀을 바꾸고 싶다면, 먼저 이 팀을 삭제해 주세요."
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"title": "이미 초대된 선수입니다!",
+				"message": "해당 선수에게 이미 초대장을 보낸 것 같습니다. 다시 초대하기 전에 현재의 초대를 취소해 주세요."
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "선수 초대에 실패했습니다!",
+				"message": "죄송합니다, 해당 선수를 초대하는 데 실패했습니다. 다시 시도해 주세요."
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "팀에 아직 선수가 남아 있습니다!",
+				"message": "팀을 삭제하기 전에 모든 선수를 팀에서 제거해 주세요."
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "팀 삭제에 실패했습니다!",
+				"message": "죄송합니다, 팀을 삭제하는데 실패했습니다. 다시 시도해 주세요."
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "팀에 이미 있는 플레이어입니다!",
+				"message": "이 플레이어가 이미 귀하의 팀에 있는 것으로 보입니다. 만약 이것이 오류라면, 다시 시도해보새요."
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
-			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
-			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
-			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO."
+			"1": "TEST Open은 오직 **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** 클라이언트에서만 전개되는 공식 osu! 토너먼트입니다.",
+			"2": "본 대회의 팀은 **3명에서 5명** 사이의 멤버로 구성되어야 합니다.",
+			"3": "대회 진행 중 각 맵에 대하여, 팀은 반드시 정확히 **3명의 선수를** 출전시켜야 합니다.",
+			"4": "참가자의 랭킹에 대한 제한은 **없습니다**.",
+			"5": "모든 참가 예정 팀은 지정된 주말에 실시되는 예선을 통과해야만 합니다.",
+			"6": "예선을 통해 선발된 **상위 32개** 팀은 **더블 엘리미네이션** 형식으로 진행됩니다.",
+			"7": "모든 선수는 **[Discord 서버](https://discord.com/invite/nZnQZMvEhq)** 에 반드시 참여해야 하며, 자신의 Discord 닉네임을 **osu! 사용자 이름**으로 설정해야 합니다.",
+			"8": "모든 시간은 **UTC-0** 및 **Discord 현지 시간**으로 표시됩니다.",
+			"9": "Streaming, Commentary, Design, Translation을 제외한 어떠한 역할을 맡고 있는 스태프 멤버도 본 대회에 참여할 수 없습니다.",
+			"heading": "일반 정보."
 		},
 		"Registrations": {
 			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
@@ -381,19 +381,19 @@
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"1": "대회 MVP {sublist_alpha} **커스터마이즈된 WLmouse Beast X 미니 마우스** 는 Spoo가 디자인하고 Dovacustoms가 그립니다. 사용자의 이름도 마우스 상단에 그려집니다.",
+			"2": "첫 번째 자리 {sublist_alpha} 선수들 사이에서 $500을 나누어 {sublist_alpha} **커스터마이즈된 TEST 오픈 태블릿 커버** 는 Spoo가 디자인하고 Bluebunny가 제작했습니다 {sublist_alpha} 애니메이션된 팀 배너",
+			"3": "두 번째 자리 {sublist_alpha} 선수들 사이에서 $200을 분배 {sublist_alpha} 정적 팀 배너",
+			"4": "세 번째 자리 {sublist_alpha} 선수들 사이에서 $100을 분배 {sublist_alpha} 정적 팀 배너",
+			"heading": "상금 풀"
 		}
 	},
 	"Components": {
-		"comingSoon": "Coming Soon"
+		"comingSoon": "곧 출시 예정"
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "죄송하지만, 로그인을 완료할 수 없었습니다. 예상치 못한 문제라면 다시 시도해 주세요. 그렇지 않다면 홈으로 돌아가는 것을 권장합니다."
 		}
 	}
 }

@@ -65,7 +65,7 @@
 			"teams": "Equipos",
 			"team": "Mi Equipo",
 			"signIn": "Iniciar Sesión",
-			"profile": "Perfil"
+			"profile": "Mi Profil"
 		}
 	},
 	"ErrorPage": {
@@ -347,16 +347,16 @@
 				"2": "Los Warmups, Protects, Bans y Picks deben ser enviados en **2 minutos**.",
 				"3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la partida**. Perderán lo siguiente en cada intervalo de tiempo. {sublist_alpha} Perderás tus protects estando 5 minutos tarde. {sublist_alpha} Perderás tus bans estando 10 minutos tarde. {sublist_alpha} Perderás tu partida estando 15 minutos tarde.",
 				"4": "Los jugadores deben de estar en una casilla dentro de la sala correspondiente a su equipo. {sublist_alpha} Equipo 1 (Rojo): Casillas 1, 2, y 3. {sublist_alpha} Equipo 2 (Azul): Casillas 4, 5, y 6.",
-				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
+				"5": "Los capitanes usarán el **comando !roll en el hilo de Discord** de su partida para decidir **el orden de Picks/Bans**. El capitán con el valor más alto podrá seleccionar uno de los siguientes, mientras que el otro capitán recibirá el otro: {sublist_alpha} Primer Pick y Segundo Ban {sublist_alpha} Segundo Pick y Primer Ban",
+				"6": "Los equipos tendrán la opción de jugar 1 mapa de su elección como un calentamiento (warmup) antes de la partida. {sublist_alpha} Los calentamientos deben de **durar menos de 4 minutos**. {sublist_alpha} Los calentamientos **no deberán de ser parte del la mappool**.",
+				"7": "Los protects serán **enviados de forma privada** al árbitro antes de la fase de baneos.",
+				"8": "La fase de baneos se harán en **formato de serpiente** (ABBA). {sublist_alpha} Equipo 1 Banea {sublist_alpha} Equipo 2 Banea dos veces {sublist_alpha} Equipo 1 Banea",
+				"9": "Una vez la fase de protects y bans haya concluido, **cualquier ban sobre un mapa protegido será anulado** y ese mapa será jugable normalmente.",
+				"10": "Banear del **mismo modpool dos veces seguidas es prohibido** excluyendo el **pool de No-Mod**.",
+				"11": "Seleccionar del **mismo modpool dos veces seguidas es prohibido** excluyendo **las pools de Lazer-Mod** y **No-Mod**.",
+				"12": "Los jugadores podrán jugar el Tiebreaker con cualquier mod que **no se aplique de manera global**.",
+				"13": "Cada equipo tiene **un timeout de 5 minutos** la cual se podrá utilizar en cualquier punto de la partida.",
+				"14": "Si un jugador **se desconecta dentro del primer minuto del mapa**, el mapa será **abortado** y el equipo tiene **5 minutos** para reemplazar al jugador para jugar el mapa. Esto sucederá solamente una vez por equipo y por partida.",
 				"heading": "PARTIDO"
 			}
 		},
