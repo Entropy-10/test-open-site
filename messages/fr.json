@@ -129,100 +129,100 @@
 				"message": "Désolé, nous n'ayons pas réussi à supprimer votre compte. Veuillez réessayer."
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "ÉCHEC DE MISE À JOUR !",
+				"message": "Désolé, nous n'avons pas réussi à mettre à jour les informations de votre profil osu. Veuillez réessayer."
 			}
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "ENREGISTREMENT DE L'ÉQUIPE",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
+			"title": "ENREGISTREMENTS FERMES !",
 			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
-			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"heading": "CRÉER UNE ÉQUIPE.",
+			"teamName": "Nom de l'Équipe",
+			"teamAcronym": "Acronyme de l'équipe",
+			"timezone": "Fuseau Horaire",
+			"teamFlag": "Drapeau de l'équipe",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "CRÉER",
+				"loadingText": "CRÉATION EN COURS"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"title": "ÉQUIPE CRÉE !",
+				"message": "Bienvenue à TEST Open, Cliquez sur le bouton ci-dessous pour voir la page de gestion de l'équipe et commencer à inviter des joueurs.",
+				"teamManagementButton": "GESTION DE L'ÉQUIPE"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"upload": "Cliquez ici pour télécharger",
+				"recommended": "Ratio Recommandé 9:4"
 			}
 		},
 		"Errors": {
 			"Restricted": {
 				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"title": "VOUS ÊTES RESTRICTÉ!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "Vous êtes déjà dans une équipe. Veuillez supprimer ou quitter votre équipe actuelle avant d'en faire une nouvelle.",
+				"title": "DÉJÀ SUR UNE ÉQUIPE !"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "Une équipe avec cette {type} existé déjà. Veuillez utiliser une autre {type}.",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "nom",
+					"acronym": "acronyme",
+					"player": "joueur"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "L'ÉQUIPE {type} EST DÉJÀ DES EXISTES !"
 			},
 			"Default": {
 				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"title": "ÉCHEC DE CRÉER L'ÉQUIPE !"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
+				"title": "ÉCHEC DE TÉLÉCHARGER LE DRAPEAU !",
 				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "LISTE D'ÉQUIPES.",
+		"teamsRegistered": "ÉQUIPES ENREGISTRÉES"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"authFailed": "L'AUTORISATION A ÉCHOUÉ !",
+		"unauthorized": "PAS AUTORISÉ !",
+		"homeButton": "ACCUEIL",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "Veuillez d'abord vous connecter avant d'accéder à cette page."
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "VÉRIFICATION DU SERVEUR",
 		"Messages": {
 			"signIn": "Sign in first before attempting to verify.",
 			"verified": "Welcome to the TEST Open Discord server!",
 			"defaultError": "Verification failed. Please try again later.",
-			"default": "Please click the button below to gain access to the server."
+			"default": "Veuillez cliquer sur le bouton dessous pour accéder au serveur."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "RÉESSAYEZ",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "VERIFIER",
+				"loadingText": "VÉRIFICATION EN COURS"
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "Vous êtes déjà vérifié. Si vous pensez qu'il s'agit d'une erreur, veuillez DM @__entro pour plus d'aide.",
+			"verificationFailed": "Échec de la vérification. Veuillez réessayer."
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
+			"team": "MA ÉQUIPE.",
 			"player": "LISTE DES JOUEURS."
 		},
 		"timezone": "FUSEAU HORAIRE",
