@@ -2,7 +2,7 @@ import '~/styles/globals.css'
 
 import { genOgTwitterImage } from '@metadata'
 import { locales } from '@siteConfig'
-import { cn, getBaseUrl, inter } from '@utils/client'
+import { cn, getBaseUrl, inter, isPreview } from '@utils/client'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { getTranslations } from 'next-intl/server'
@@ -15,6 +15,7 @@ import type { MetadataProps } from '@types'
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import type { ReactNode } from 'react'
+import PreviewWarning from './_components/preview-warning'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -59,6 +60,7 @@ export default function LocaleLayout({
 				)}
 			>
 				<Header locale={locale} />
+				{isPreview && <PreviewWarning />}
 				<main className='flex-1'>{children}</main>
 				<Footer />
 				<Analytics />
