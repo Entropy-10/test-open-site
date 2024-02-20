@@ -35,11 +35,10 @@ export const links = {
 	sheet: sheetLink,
 	forumPost: 'https://osu.ppy.sh/community/forums/topics/',
 	challonge: 'https://challonge.com/test_open_2024',
-	album: 'https://open.spotify.com/album/',
+	album: 'https://www.youtube.com/@TEST_Open',
 	socials: {
 		twitch: 'https://www.twitch.tv/test_open',
 		youtube: 'https://www.youtube.com/@TEST_Open',
-		spotify: 'https://open.spotify.com/artist/',
 		x: 'https://twitter.com/TESTOpen_lazer',
 		discord: 'https://discord.com/invite/nZnQZMvEhq'
 	},
@@ -79,32 +78,32 @@ export const features: Feature[] = [
 export const songs = [
 	{
 		id: 0,
-		link: 'https://open.spotify.com/track/',
+		link: 'https://www.youtube.com/@TEST_Open',
 		name: 'Fermion Amplification',
 		artist: 'Kou!'
 	},
 	{
 		id: 1,
-		link: 'https://open.spotify.com/track/',
+		link: 'https://www.youtube.com/@TEST_Open',
 		name: 'RE_generate:fractal',
 		artist: 'Kou!'
 	},
 	{
 		id: 2,
-		link: 'https://open.spotify.com/track/',
+		link: 'https://www.youtube.com/@TEST_Open',
 		name: 'Twilight of the Abyss',
 		artist: 'Kanemiko'
 	},
 	{
 		id: 3,
-		link: 'https://open.spotify.com/track/',
+		link: 'https://www.youtube.com/@TEST_Open',
 		name: 'Phoenix',
 		artist: 'Aethral'
 	},
 	{
 		id: 4,
-		link: 'https://open.spotify.com/track/',
-		name: 'Cyber Cryo',
+		link: 'https://www.youtube.com/@TEST_Open',
+		name: 'Cyber Surge',
 		artist: 'Aethral'
 	}
 ]

@@ -6,11 +6,15 @@ import { LayoutGroup, motion } from 'framer-motion'
 import CountdownContainer from './countdown-container'
 import Feature from './feature'
 
-export default function Features() {
+interface FeaturesProps {
+	countdownComplete: boolean
+}
+
+export default function Features({ countdownComplete }: FeaturesProps) {
 	return (
 		<section className='flex w-full flex-col justify-end space-y-5 text-milky-white xl:flex-row xl:space-y-0'>
 			<LayoutGroup>
-				<CountdownContainer />
+				{!countdownComplete && <CountdownContainer />}
 				<motion.div
 					layout
 					initial={{ x: 300, opacity: 0 }}

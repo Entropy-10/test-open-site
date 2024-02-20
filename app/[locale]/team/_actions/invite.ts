@@ -30,6 +30,7 @@ export async function invite(formData: FormData) {
 		.select()
 		.eq('team_id', teamId)
 		.eq('user_id', userId)
+		.maybeSingle()
 
 	if (player) {
 		redirect(

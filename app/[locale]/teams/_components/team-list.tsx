@@ -25,7 +25,7 @@ export default async function TeamList() {
 								height={140}
 								src={team.flag}
 								alt={`${team.name}'s flag`}
-								className='h-[140px] w-[315px]'
+								className='h-[140px] w-[315px] select-none'
 							/>
 							<div className='absolute top-0 z-10 size-full bg-flag-fade' />
 						</div>

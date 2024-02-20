@@ -64,7 +64,8 @@
 			"register": "등록하기",
 			"teams": "팀",
 			"team": "팀",
-			"signIn": "로그인"
+			"signIn": "로그인",
+			"profile": "프로필"
 		}
 	},
 	"ErrorPage": {

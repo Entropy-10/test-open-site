@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { env } from '@env'
 import Background from '~/components/ui/Background'
 import Button from '~/components/ui/Button'
 import whiteLogo from '../../public/images/logo-white.png'
@@ -16,6 +17,8 @@ export default function Home() {
 	const buttonT = useTranslations('Buttons')
 	const t = useTranslations('HomePage')
 	const messages = useMessages()
+	const start = Number(env.NEXT_PUBLIC_START_DATE)
+	const countdownComplete = start - new Date().getTime() <= 0
 
 	return (
 		<div>
@@ -80,7 +83,7 @@ export default function Home() {
 
 			<div className='w-full space-y-20 overflow-x-hidden'>
 				<NextIntlClientProvider messages={pick(messages, 'HomePage.Features')}>
-					<Features />
+					<Features countdownComplete={countdownComplete} />
 				</NextIntlClientProvider>
 
 				<Originals />

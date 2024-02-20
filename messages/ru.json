@@ -64,7 +64,8 @@
 			"register": "Профиль создать",
 			"teams": "Экипажи",
 			"team": "Экипаж",
-			"signIn": "Вход"
+			"signIn": "Вход",
+			"profile": "Profile"
 		}
 	},
 	"ErrorPage": {

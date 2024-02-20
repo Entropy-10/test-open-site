@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { notFound, redirect } from 'next/navigation'
 import { Suspense } from 'react'
 
+import { createMetadata } from '@metadata'
+import { MetadataProps } from '@types'
 import { getTranslations } from 'next-intl/server'
 import ErrorModal from '~/components/error-modal'
 import SectionLoader from '~/components/section-loader'
@@ -14,6 +16,15 @@ import Heading from '~/components/ui/heading'
 import AvatarInfo from './_components/avatar-info'
 import Invites from './_components/invites'
 import Team from './_components/team'
+
+export async function generateMetadata({ params: { locale } }: MetadataProps) {
+	const t = await getTranslations({ locale, namespace: 'Metadata' })
+	return createMetadata({
+		locale,
+		title: t('PageTitles.profile'),
+		description: t('description')
+	})
+}
 
 export default async function ProfilePage() {
 	const session = await getSession()
