@@ -1,436 +1,436 @@
 {
-  "HomePage": {
-    "Header": {
-      "description": "UN TORNEO DE OSU! LAZER DE CLASIFICACIÓN ABIERTA",
-      "hostTitle": "ORGANIZADO POR"
-    },
-    "Features": {
-      "Titles": {
-        "mappool": "MAPPOOL.",
-        "format": "FORMATO.",
-        "schedule": "HORARIOS."
-      },
-      "Descriptions": {
-        "mappool": "Un modpool de lazer presentando nuevos mods cada semana.",
-        "format": "Un torneo de clasificación abierta, doble eliminación, en formato de 3v3.",
-        "schedule": "Mira los próximos partidos transmitidos en Twitch."
-      },
-      "Countdown": {
-        "titleSectionOne": "TORNEO",
-        "titleSectionTwo": "COMIENZA EN"
-      }
-    },
-    "Originals": {
-      "title": "Originales",
-      "subtitle": "CANCIONES ORIGINALES, PRÓXIMAMENTE.",
-      "description": "Avanza a través de las rondas para desbloquear Originales de TEST exclusivas. Creadores talentosos compusieron pistas musicales originales que se revelarán progresivamente en clasificatorias, semifinales, finales y la gran final. Cada pista original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
-      "tracksTitle": "LISTA DE CANCIONES.",
-      "listenButton": "ESCUCHA AHORA"
-    }
-  },
-  "NavItems": {
-    "home": "INICIO",
-    "mappool": "MAPPOOL",
-    "schedule": "HORARIOS",
-    "teams": "EQUIPOS",
-    "info": "INFORMACIÓN",
-    "sheet": "SHEET PRINCIPAL",
-    "invites": "INVITACIONES",
-    "team": "MI EQUIPO",
-    "profile": "MI PERFIL"
-  },
-  "Buttons": {
-    "register": "REGISTRATE",
-    "signIn": "INICIAR SESIÓN",
-    "signOut": "CERRAR SESIÓN",
-    "close": "CERRAR"
-  },
-  "Status": {
-    "operational": "Todos los servicios están online",
-    "downtime": "Algunos servicios están caídos",
-    "degraded": "Algunos servicios están degradados",
-    "maintenance": "Mantenimiento en proceso"
-  },
-  "Footer": {
-    "description": "¡UN TORNEO EN osu!lazer RANGO ABIERTO! ORGANIZADO POR TEDDY, ENTROPY Y SORA."
-  },
-  "Metadata": {
-    "description": "El primer torneo de escala grande open rank en osu!lazer. Bienvenido a la nueva experiencia de torneos de osu!",
-    "PageTitles": {
-      "home": "Inicio",
-      "schedule": "Horarios",
-      "info": "Información",
-      "mappool": "Mappool",
-      "register": "Registrarse",
-      "teams": "Equipos",
-      "team": "Mi Equipo",
-      "signIn": "Iniciar Sesión",
-      "profile": "Mi Profil"
-    }
-  },
-  "ErrorPage": {
-    "title": "¡Algo salió mal!",
-    "retryButton": "Intenta otra vez",
-    "goHomeButton": "Volver al inicio",
-    "message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
-  },
-  "ProfilePage": {
-    "Buttons": {
-      "relink": "REVINCULAR",
-      "Update": {
-        "text": "ACTUALIZAR",
-        "loadingText": "ACTUALIZANDO"
-      }
-    },
-    "Headings": {
-      "profile": "MI PERFIL.",
-      "team": "MI EQUIPO."
-    },
-    "Osu": {
-      "rank": "CLASIFICACIÓN GLOBAL",
-      "countryRank": "CLASIFICACIÓN NACIONAL"
-    },
-    "Team": {
-      "heading": "EQUIPO ACTUAL",
-      "none": "Actualmente no tienes un equipo. Únete a uno aceptando cualquier invitación pendiente.",
-      "timezone": "ZONA HORARIA",
-      "joined": "SE UNIÓ EN",
-      "manageTeamButton": "ADMINISTRAR MI EQUIPO"
-    },
-    "Invites": {
-      "heading": "INVITACIONES PENDIENTES",
-      "none": "Actualmente no tienes alguna invitación. Espera una o crea tu propio equipo.",
-      "Invite": {
-        "timezone": "ZONA HORARIA",
-        "invited": "INVITADO",
-        "Buttons": {
-          "accept": "ACEPTAR",
-          "deny": "RECHAZAR"
-        }
-      }
-    },
-    "Errors": {
-      "ExistingTeam": {
-        "title": "¡YA ESTÁS EN UN EQUIPO!",
-        "message": "Parece que ya estás en un equipo. Por favor elimina o deja tu equipo actual antes de unirte a uno nuevo."
-      },
-      "FailedInvite": {
-        "title": "¡FALLÓ AL {type} LA INVITACIÓN!",
-        "message": "Lo sentimos, fallamos al {type} la invitación. Por favor intenta otra vez para ver si eso ayuda.",
-        "Types": {
-          "deny": "negar",
-          "accept": "aceptar"
-        }
-      },
-      "CurrentTeam": {
-        "title": "¡ACTUALMENTE EN EQUIPO!",
-        "message": "Parece que aún sigues en un equipo. Por favor deja o elimina el equipo antes de eliminar tu cuenta."
-      },
-      "FailedAccountDelete": {
-        "title": "NO SE PUDO ELIMINAR TU CUENTA!",
-        "message": "Lo siento, parece que fallamos en eliminar tu cuenta. Por favor intenta otra vez para ver si eso te ayuda."
-      },
-      "FailedUpdate": {
-        "title": "NO SE PUDO ACTUALIZAR!",
-        "message": "Lo siento, parece que fallamos en actualizar la información de tu perfil de osu. Por favor intenta otra vez para ver si eso te ayuda."
-      },
-      "noRank": "No Rank"
-    },
-    "Options": {
-      "DeleteAccount": {
-        "title": "DELETE ACCOUNT?",
-        "message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
-        "Buttons": {
-          "Delete": {
-            "text": "DELETE",
-            "loadingText": "DELETING"
-          },
-          "noThanks": "NO THANKS",
-          "confirmDelete": "DELETE ACCOUNT",
-          "close": "CLOSE"
-        }
-      }
-    }
-  },
-  "RegistrationPage": {
-    "heading": "REGISTRAR TU EQUIPO",
-    "Closed": {
-      "title": "REGISTROS CERRADOS!",
-      "message": "Inscripciones están actualmente cerradas hasta que el torneo comience. Por favor regresa más tarde cuando la cuenta regresiva haya concluido."
-    },
-    "Form": {
-      "heading": "CREA UN EQUIPO.",
-      "teamName": "Nombre del Equipo",
-      "teamAcronym": "Acrónimo del Equipo",
-      "timezone": "Zona Horaria",
-      "teamFlag": "Bandera del Equipo",
-      "createButton": {
-        "text": "CREAR",
-        "loadingText": "CREANDO"
-      },
-      "Success": {
-        "title": "¡EQUIPO CREADO!",
-        "message": "Bienvenido a TEST Open Haz clic en el botón debajo para ver la página donde gestionarás tu equipo y empieza a invitar jugadores.",
-        "teamManagementButton": "GESTIÓN DEL EQUIPO"
-      },
-      "ImagePicker": {
-        "upload": "Haz clic aquí para subir un archivo",
-        "recommended": "Relación de aspecto recomendada 9:4"
-      }
-    },
-    "Errors": {
-      "Restricted": {
-        "message": "Parece que estás restringido en osu. Desafortunadamente no puedes registrarte estando restringido. Si crees que esto es un error, intenta cerrar sesión y vuelve a iniciar sesión en el sitio. ",
-        "title": "¡ESTÁS RESTRINGIDO!"
-      },
-      "DuplicatePlayer": {
-        "message": "Parece que ya estás en un equipo. Por favor elimina o deja tu equipo actual antes de crear uno nuevo.",
-        "title": "¡ESTÁS EN UN EQUIPO!"
-      },
-      "Duplicate": {
-        "message": "Parece que un equipo con ese {type} ya existe. Por favor usa un {type} diferente.",
-        "Types": {
-          "name": "nombre",
-          "acronym": "acrónimo",
-          "player": "jugador"
-        },
-        "title": "¡{type} DE EQUIPO YA EXISTE!"
-      },
-      "Default": {
-        "message": "No pudimos crear tu equipo. Parece ser un problema de nuestra parte. Por favor intenta de nuevo para ver si eso ayuda.",
-        "title": "NO SE PUDO CREAR TU EQUIPO!"
-      },
-      "UploadFailed": {
-        "title": "¡FALLÓ AL SUBIR LA BANDERA!",
-        "message": "No pudimos subir tu bandera a nuestro servidor. Por favor intenta otra vez para ver si eso ayuda."
-      }
-    }
-  },
-  "TeamsPage": {
-    "heading": "LISTA DE EQUIPOS.",
-    "teamsRegistered": "EQUIPOS REGISTRADOS"
-  },
-  "UnauthorizedPage": {
-    "authFailed": "¡AUTORIZACIÓN FALLIDA!",
-    "unauthorized": "¡NO AUTORIZADO!",
-    "homeButton": "INICIO",
-    "Messages": {
-      "default": "Por favor inicia sesión antes de acceder esta página."
-    }
-  },
-  "VerifyPage": {
-    "title": "VERIFICACIÓN DEL SERVIDOR",
-    "Messages": {
-      "signIn": "Inicia sesión antes de intentar verificar.",
-      "verified": "¡Bienvenido al servidor de Discord de TEST Open!",
-      "defaultError": "Verificación fallida. Por favor intenta más tarde.",
-      "default": "Por favor dale click al botón debajo para acceder al servidor."
-    },
-    "Buttons": {
-      "tryAgain": "INTENTA DENUEVO",
-      "Verify": {
-        "text": "VERIFICA",
-        "loadingText": "VERIFICANDO"
-      }
-    },
-    "Errors": {
-      "alreadyVerified": "Ya estabas verificado. Si crees que esto es un error, por favor manda mensaje privado a @_entro para ayuda.",
-      "verificationFailed": "Verificación fallida. Por favor intenta otra vez para ver si eso te ayuda."
-    }
-  },
-  "TeamPage": {
-    "Headings": {
-      "team": "MI EQUIPO.",
-      "player": "LISTA DE JUGADORES."
-    },
-    "timezone": "ZONA HORARIA",
-    "Buttons": {
-      "delete": "ELIMINAR EQUIPO",
-      "edit": "MODIFICAR EQUIPO",
-      "leave": "SALIRSE DEL EQUIPO"
-    },
-    "Players": {
-      "heading": "MIEMBROS ACTUALES",
-      "Player": {
-        "rank": "CLASIFICACIÓN",
-        "discord": "DISCORD",
-        "removeButton": "REMOVER JUGADOR"
-      }
-    },
-    "Invites": {
-      "heading": "INVITACIONES SALIENTES",
-      "error": "Lo sentimos, no pudimos conseguir los jugadores dentro de tu equipo.",
-      "none": "Actualmente, no tienes invitaciones salientes. Empieza por usar la barra para invitar jugadores de arriba.",
-      "Invite": {
-        "rank": "CLASIFICACIÓN",
-        "discord": "DISCORD",
-        "sent": "ENVIADO",
-        "deleteButton": "ELIMINAR INVITACIÓN",
-        "inviteButton": "INVITA",
-        "placeholder": "Digita el nombre de usuario en osu..."
-      }
-    },
-    "Errors": {
-      "DeleteItemFailed": {
-        "title": "NO SE PUDO ELIMINAR {type}!",
-        "message": "Lo sentimos, fallamos al eliminar {type}. Por favor intenta otra vez para ver si eso ayuda.",
-        "Types": {
-          "player": "al jugador",
-          "invite": "la invitación"
-        }
-      },
-      "InvitedSelf": {
-        "title": "!NO PUEDES INVITAR A TI MISMO!",
-        "message": "No puedes invitarte a ti mismo a tu propio equipo. Si deseas cambiar de equipo, por favor elimina este equipo primero."
-      },
-      "AlreadyInvited": {
-        "title": "EL JUGADOR YA ESTABA INVITADO!",
-        "message": "Parece que ya le habías mandado una invitación a este jugador. Por favor elimina la invitación actual antes de intentar re-invitarlo."
-      },
-      "InviteFailed": {
-        "title": "NO SE PUDO INVITAR AL JUGADOR!",
-        "message": "Lo siento, no se pudo invitar a ese jugador. Por favor intenta otra vez para ver si eso te ayuda."
-      },
-      "PlayersOnTeam": {
-        "title": "ESTE JUGADOR TODAVIA ESTA EN EL EQUIPO!",
-        "message": "Por favor elimina a todos los jugadores del equipo antes de eliminar el equipo."
-      },
-      "DeleteTeamFailed": {
-        "title": "NO SE PUDO ELIMINAR TU EQUIPO!",
-        "message": "Lo siento, no se pudo eliminar a tu equipo. Por favor intenta otra vez para ver si eso te ayuda."
-      },
-      "PlayerOnTeam": {
-        "title": "ESTE JUGADOR YA ESTA EN EL EQUIPO!",
-        "message": "Parece que este jugador ya está en tu equipo. Si esto es un error intenta otra vez para ver si eso te ayuda."
-      },
-      "NotOnTeam": {
-        "title": "NOT ON A TEAM!",
-        "message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-        "profileButton": "PROFILE"
-      }
-    }
-  },
-  "InfoPage": {
-    "GeneralInfo": {
-      "1": "TEST Open es un torneo de osu! exclusivamente para el cliente **[osu!lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-      "2": "Los equipos están formados por **3-5 jugadores**.",
-      "3": "Los equipos deberán de seleccionar exactamente **3 jugadores** para cada mapa jugado en el torneo.",
-      "4": "**No hay requisitos de rango** para los participantes.",
-      "5": "Todos los equipos tendrán que jugar clasificatorias en el fin de semana especificado en los horarios.",
-      "6": "Los **32 equipos** más altos de clasificatorias podrán continuar al formato de **Doble Eliminación**.",
-      "7": "Todos los jugadores deben de estar dentro del **[Servidor de Discord](https://discord.com/invite/nZnQZMvEhq)** y cambiar su apodo dentro del servidor a su **nombre de usuario de osu!**.",
-      "8": "Los horarios van a ser mostrados en **UTC-0** y **Hora Local de Discord**.",
-      "9": "Miembro del Staff que tengan cualquier rol que no sean las siguientes no podrán participar en el torneo: {sublist_alpha} Streaming {sublist_alpha} Comentarista {sublist_alpha} Diseñador {sublist_alpha} Traductores",
-      "heading": "INFORMACIÓN GENERAL.",
-      "Schedule": {
-        "1": "**Registrations:** February 26th - March 18th",
-        "2": "**Screening:** March 18th - March 23rd",
-        "3": "**Qualifiers:** March 29th - 31st",
-        "4": "**RO32:** April 5th - 7th",
-        "5": "**RO16:** April 12th - 14th",
-        "6": "**Quarterfinals:** April 19th - 21st",
-        "7": "**Semifinals:** April 26th - 28th",
-        "8": "**Finals:** May 3rd - 5th",
-        "9": "**Grand Finals:** May 10th - 12th",
-        "heading": "SCHEDULE"
-      }
-    },
-    "Registrations": {
-      "1": "Deberás de registrarte en la página web con tu **osu!** y **cuenta de Discord**.",
-      "2": "La creación y administración de tu equipo se realizará a través de **[la página web de TEST Open](https://test-open.com)**.",
-      "3": "Para crear un **post de agente libre**, vaya al **servidor de discord** y busque el canal looking-for-team. Allí puedes crear una publicación a través del **TEST Bot**.",
-      "4": "Si el sitio web está caído, entonces puedes pedir a un administrador un **formulario de registro**. Sin embargo, si usa este método su información se verá en la sheet pero no en el sitio web hasta que se actualice manualmente.",
-      "5": "El Staff no creará **equipos de agentes libres**. Así que si deseas participar, deberás encontrar un equipo.",
-      "heading": "REGISTRACIONES."
-    },
-    "GeneralConduct": {
-      "1": "Respeta a los otros jugadores y los miembros del Staff.",
-      "2": "No usar **términos discriminatorios**. Incluyendo pero no está limitado a: {sublist_alpha} Comentarios Racistas {sublist_alpha} términos que puedan ser ofensivos para los miembros LGBTQ+ {sublist_alpha} Comentarios Sexista {sublist_alpha} Comentarios de odio",
-      "3": "TEST Open no tiene tolerancia alguna para bullying de cualquier tipo.",
-      "4": "**Contenido NSFW** está prohibido. Esto incluye: {sublist_alpha} Contenido Sexual {sublist_alpha} Contenido Violento o Gore {sublist_alpha} Abuso de Alcohol/Drogas {sublist_alpha} Contenido Perturbador",
-      "5": "Intenta mantener **conversaciones polémicas** lo más mínimo posible.",
-      "6": "Mantén los desacuerdos civilizados.",
-      "7": "El **Doxing no está permitido** bajo ninguna circunstancia.",
-      "8": "No se permite ningún contenido que esté prohibido bajo **Discord TOS**.",
-      "9": "**El inglés es el idioma principal del torneo**, así que ten esto en cuenta al comunicarte con el Staff.",
-      "10": "Si ves a alguien rompiendo alguna de estas reglas, por favor contacta con un **Moderador o Administrador** para resolverlo.",
-      "11": "Por último, ¡utilice el **sentido común** y cree un **ambiente de bienvenida** para todos!",
-      "heading": "CONDUCTA GENERAL."
-    },
-    "Scheduling": {
-      "1": "Las partidas se programarán a través del **TEST Bot** en el servidor de Discord.",
-      "2": "Para programar o reprogramar un lobby de clasificatorias, por favor usa el comando **/schedule** e introduce la información solicitada.",
-      "3": "Para reprogramar una partida, por favor usa el comando **/reschedule** e introduce la información solicitada. Esto enviará una solicitud de reprogramación en el canal de scheduling.",
-      "4": "Al reprogramar un partido **ambos capitanes tendrán que hacer clic en aceptar** en la solicitud de reprogramación en el canal de programación para que la reprogramación termine exitosamente.",
-      "heading": "HORARIOS."
-    },
-    "GameProcedures": {
-      "1": "Todos los mapas utilizarán el **puntaje nuevo de osu! lazer**.",
-      "2": "**NoFail** es obligatorio.",
-      "3": "Los árbitros contactarán los Capitanes de cualquier equipo participante para cada partida. {sublist_alpha} Los capitanes son responsables de comunicar cualquier información dado por el árbitro hacia su equipo. {sublist_alpha} Un recordatorio será enviado **25 minutos** antes de cada partida. {sublist_alpha} El nombre y la contraseña de la sala en Lazer será enviado **15 minutos** antes de cada partida.",
-      "4": "Luego de que un mapa haya sido seleccionado, los jugadores participantes tendrán **2 minutos** para unirse a la sala.",
-      "heading": "PROCEDIMIENTOS DE LA PARTIDA.",
-      "Qualifiers": {
-        "1": "Los mapas se jugarán en el mismo orden en que se muestra en la mappool.",
-        "2": "Si un jugador **se desconecta** **dentro del primer minuto del mapa**, el jugador repetirá el mapa al **final de la sala clasificatoria**.",
-        "3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la sala**. Si un equipo falla en hacerse presente entonces el equipo tendrá que reprogramar la hora de su sala. Esta sala debe de ser al menos **4 horas** después de la sala en que no se hicieron presentes.",
-        "heading": "CLASIFICATORIOS"
-      },
-      "Match": {
-        "1": "La condición de victoria para cada partida será **TeamVS**.",
-        "2": "Los Warmups, Protects, Bans y Picks deben ser enviados en **2 minutos**.",
-        "3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la partida**. Perderán lo siguiente en cada intervalo de tiempo. {sublist_alpha} Perderás tus protects estando 5 minutos tarde. {sublist_alpha} Perderás tus bans estando 10 minutos tarde. {sublist_alpha} Perderás tu partida estando 15 minutos tarde.",
-        "4": "Los jugadores deben de estar en una casilla dentro de la sala correspondiente a su equipo. {sublist_alpha} Equipo 1 (Rojo): Casillas 1, 2, y 3. {sublist_alpha} Equipo 2 (Azul): Casillas 4, 5, y 6.",
-        "5": "Los capitanes usarán el **comando !roll en el hilo de Discord** de su partida para decidir **el orden de Picks/Bans**. El capitán con el valor más alto podrá seleccionar uno de los siguientes, mientras que el otro capitán recibirá el otro: {sublist_alpha} Primer Pick y Segundo Ban {sublist_alpha} Segundo Pick y Primer Ban",
-        "6": "Los equipos tendrán la opción de jugar 1 mapa de su elección como un calentamiento (warmup) antes de la partida. {sublist_alpha} Los calentamientos deben de **durar menos de 4 minutos**. {sublist_alpha} Los calentamientos **no deberán de ser parte del la mappool**.",
-        "7": "Los protects serán **enviados de forma privada** al árbitro antes de la fase de baneos.",
-        "8": "La fase de baneos se harán en **formato de serpiente** (ABBA). {sublist_alpha} Equipo 1 Banea {sublist_alpha} Equipo 2 Banea dos veces {sublist_alpha} Equipo 1 Banea",
-        "9": "Una vez la fase de protects y bans haya concluido, **cualquier ban sobre un mapa protegido será anulado** y ese mapa será jugable normalmente.",
-        "10": "Banear del **mismo modpool dos veces seguidas es prohibido** excluyendo el **pool de No-Mod**.",
-        "11": "Seleccionar del **mismo modpool dos veces seguidas es prohibido** excluyendo **las pools de Lazer-Mod** y **No-Mod**.",
-        "12": "Los jugadores podrán jugar el Tiebreaker con cualquier mod que **no se aplique de manera global**.",
-        "13": "Cada equipo tiene **un timeout de 5 minutos** la cual se podrá utilizar en cualquier punto de la partida.",
-        "14": "Si un jugador **se desconecta dentro del primer minuto del mapa**, el mapa será **abortado** y el equipo tiene **5 minutos** para reemplazar al jugador para jugar el mapa. Esto sucederá solamente una vez por equipo y por partida.",
-        "heading": "PARTIDO"
-      }
-    },
-    "MappoolInfo": {
-      "1": "El mappool se publicará el **domingo** de cada semana.",
-      "2": "Lazer Mod, o LM para abreviar, es un modpool que incluirá diferentes mods cada semana para mostrar los nuevos mods que el cliente de Lazer tiene para ofrecer.",
-      "heading": "INFORMACIÓN DE LA MAPPOOL.",
-      "Table": {
-        "round": "Ronda",
-        "starRating": "SR",
-        "bestOf": "Mejor de",
-        "bans": "Bans",
-        "protects": "Protecciones",
-        "total": "Total",
-        "qaulifiers": "Clasificatorias",
-        "roundOf32": "Ronda de 32",
-        "roundOf16": "Ronda de 16",
-        "quarterfinals": "Cuartos de Final",
-        "semifinals": "Semifinales",
-        "finals": "Finales",
-        "grandFinals": "Gran Final"
-      }
-    },
-    "PrizePool": {
-      "1": "El MVP del torneo {sublist_alpha} **Un mouse personalizado WLmouse Beast X mini** diseñador por Spoo y pintado por Dovacustoms. El mouse personalizado también incluirá el nombre del jugador pintado en la parte superior.",
-      "2": "Primer Lugar {sublist_alpha} $500 dividido entre los jugadores {sublist_alpha} **Un Tablet Cover Original de TEST Open** diseñado por Spoo y producido por Bluebunny {sublist_alpha} Un banner animado del Equipo",
-      "3": "Segundo Lugar {sublist_alpha} $200 dividido entre los jugadores {sublist_alpha} Un banner normal del Equipo",
-      "4": "Tercer Lugar {sublist_alpha} $100 dividido entre los jugadores {sublist_alpha} Un banner normal del Equipo",
-      "heading": "PREMIOS DEL TORNEO."
-    }
-  },
-  "Components": {
-    "ComingSoon": {
-      "title": "Coming Soon",
-      "message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
-    }
-  },
-  "APICallbacks": {
-    "Errors": {
-      "missingCode": "Lo sentimos, pero el inicio de sesión no pudo completarse. Si fue inesperado, por favor intenta otra vez, de lo contrario, no dudes en navegar al inicio."
-    }
-  }
+	"HomePage": {
+		"Header": {
+			"description": "UN TORNEO DE OSU! LAZER DE CLASIFICACIÓN ABIERTA",
+			"hostTitle": "ORGANIZADO POR"
+		},
+		"Features": {
+			"Titles": {
+				"mappool": "MAPPOOL.",
+				"format": "FORMATO.",
+				"schedule": "HORARIOS."
+			},
+			"Descriptions": {
+				"mappool": "Un modpool de lazer presentando nuevos mods cada semana.",
+				"format": "Un torneo de clasificación abierta, doble eliminación, en formato de 3v3.",
+				"schedule": "Mira los próximos partidos transmitidos en Twitch."
+			},
+			"Countdown": {
+				"titleSectionOne": "TORNEO",
+				"titleSectionTwo": "COMIENZA EN"
+			}
+		},
+		"Originals": {
+			"title": "Originales",
+			"subtitle": "CANCIONES ORIGINALES, PRÓXIMAMENTE.",
+			"description": "Avanza a través de las rondas para desbloquear Originales de TEST exclusivas. Creadores talentosos compusieron pistas musicales originales que se revelarán progresivamente en clasificatorias, semifinales, finales y la gran final. Cada pista original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
+			"tracksTitle": "LISTA DE CANCIONES.",
+			"listenButton": "ESCUCHA AHORA"
+		}
+	},
+	"NavItems": {
+		"home": "INICIO",
+		"mappool": "MAPPOOL",
+		"schedule": "HORARIOS",
+		"teams": "EQUIPOS",
+		"info": "INFORMACIÓN",
+		"sheet": "SHEET PRINCIPAL",
+		"invites": "INVITACIONES",
+		"team": "MI EQUIPO",
+		"profile": "MI PERFIL"
+	},
+	"Buttons": {
+		"register": "REGISTRATE",
+		"signIn": "INICIAR SESIÓN",
+		"signOut": "CERRAR SESIÓN",
+		"close": "CERRAR"
+	},
+	"Status": {
+		"operational": "Todos los servicios están online",
+		"downtime": "Algunos servicios están caídos",
+		"degraded": "Algunos servicios están degradados",
+		"maintenance": "Mantenimiento en proceso"
+	},
+	"Footer": {
+		"description": "¡UN TORNEO EN osu!lazer RANGO ABIERTO! ORGANIZADO POR TEDDY, ENTROPY Y SORA."
+	},
+	"Metadata": {
+		"description": "El primer torneo de escala grande open rank en osu!lazer. Bienvenido a la nueva experiencia de torneos de osu!",
+		"PageTitles": {
+			"home": "Inicio",
+			"schedule": "Horarios",
+			"info": "Información",
+			"mappool": "Mappool",
+			"register": "Registrarse",
+			"teams": "Equipos",
+			"team": "Mi Equipo",
+			"signIn": "Iniciar Sesión",
+			"profile": "Mi Profil"
+		}
+	},
+	"ErrorPage": {
+		"title": "¡Algo salió mal!",
+		"retryButton": "Intenta otra vez",
+		"goHomeButton": "Volver al inicio",
+		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+	},
+	"ProfilePage": {
+		"Buttons": {
+			"relink": "REVINCULAR",
+			"Update": {
+				"text": "ACTUALIZAR",
+				"loadingText": "ACTUALIZANDO"
+			}
+		},
+		"Headings": {
+			"profile": "MI PERFIL.",
+			"team": "MI EQUIPO."
+		},
+		"Osu": {
+			"rank": "CLASIFICACIÓN GLOBAL",
+			"countryRank": "CLASIFICACIÓN NACIONAL"
+		},
+		"Team": {
+			"heading": "EQUIPO ACTUAL",
+			"none": "Actualmente no tienes un equipo. Únete a uno aceptando cualquier invitación pendiente.",
+			"timezone": "ZONA HORARIA",
+			"joined": "SE UNIÓ EN",
+			"manageTeamButton": "ADMINISTRAR MI EQUIPO"
+		},
+		"Invites": {
+			"heading": "INVITACIONES PENDIENTES",
+			"none": "Actualmente no tienes alguna invitación. Espera una o crea tu propio equipo.",
+			"Invite": {
+				"timezone": "ZONA HORARIA",
+				"invited": "INVITADO",
+				"Buttons": {
+					"accept": "ACEPTAR",
+					"deny": "RECHAZAR"
+				}
+			}
+		},
+		"Errors": {
+			"ExistingTeam": {
+				"title": "¡YA ESTÁS EN UN EQUIPO!",
+				"message": "Parece que ya estás en un equipo. Por favor elimina o deja tu equipo actual antes de unirte a uno nuevo."
+			},
+			"FailedInvite": {
+				"title": "¡FALLÓ AL {type} LA INVITACIÓN!",
+				"message": "Lo sentimos, fallamos al {type} la invitación. Por favor intenta otra vez para ver si eso ayuda.",
+				"Types": {
+					"deny": "negar",
+					"accept": "aceptar"
+				}
+			},
+			"CurrentTeam": {
+				"title": "¡ACTUALMENTE EN EQUIPO!",
+				"message": "Parece que aún sigues en un equipo. Por favor deja o elimina el equipo antes de eliminar tu cuenta."
+			},
+			"FailedAccountDelete": {
+				"title": "NO SE PUDO ELIMINAR TU CUENTA!",
+				"message": "Lo siento, parece que fallamos en eliminar tu cuenta. Por favor intenta otra vez para ver si eso te ayuda."
+			},
+			"FailedUpdate": {
+				"title": "NO SE PUDO ACTUALIZAR!",
+				"message": "Lo siento, parece que fallamos en actualizar la información de tu perfil de osu. Por favor intenta otra vez para ver si eso te ayuda."
+			},
+			"noRank": "No Rank"
+		},
+		"Options": {
+			"DeleteAccount": {
+				"title": "DELETE ACCOUNT?",
+				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"Buttons": {
+					"Delete": {
+						"text": "DELETE",
+						"loadingText": "DELETING"
+					},
+					"noThanks": "NO THANKS",
+					"confirmDelete": "DELETE ACCOUNT",
+					"close": "CLOSE"
+				}
+			}
+		}
+	},
+	"RegistrationPage": {
+		"heading": "REGISTRAR TU EQUIPO",
+		"Closed": {
+			"title": "REGISTROS CERRADOS!",
+			"message": "Inscripciones están actualmente cerradas hasta que el torneo comience. Por favor regresa más tarde cuando la cuenta regresiva haya concluido."
+		},
+		"Form": {
+			"heading": "CREA UN EQUIPO.",
+			"teamName": "Nombre del Equipo",
+			"teamAcronym": "Acrónimo del Equipo",
+			"timezone": "Zona Horaria",
+			"teamFlag": "Bandera del Equipo",
+			"createButton": {
+				"text": "CREAR",
+				"loadingText": "CREANDO"
+			},
+			"Success": {
+				"title": "¡EQUIPO CREADO!",
+				"message": "Bienvenido a TEST Open Haz clic en el botón debajo para ver la página donde gestionarás tu equipo y empieza a invitar jugadores.",
+				"teamManagementButton": "GESTIÓN DEL EQUIPO"
+			},
+			"ImagePicker": {
+				"upload": "Haz clic aquí para subir un archivo",
+				"recommended": "Relación de aspecto recomendada 9:4"
+			}
+		},
+		"Errors": {
+			"Restricted": {
+				"message": "Parece que estás restringido en osu. Desafortunadamente no puedes registrarte estando restringido. Si crees que esto es un error, intenta cerrar sesión y vuelve a iniciar sesión en el sitio. ",
+				"title": "¡ESTÁS RESTRINGIDO!"
+			},
+			"DuplicatePlayer": {
+				"message": "Parece que ya estás en un equipo. Por favor elimina o deja tu equipo actual antes de crear uno nuevo.",
+				"title": "¡ESTÁS EN UN EQUIPO!"
+			},
+			"Duplicate": {
+				"message": "Parece que un equipo con ese {type} ya existe. Por favor usa un {type} diferente.",
+				"Types": {
+					"name": "nombre",
+					"acronym": "acrónimo",
+					"player": "jugador"
+				},
+				"title": "¡{type} DE EQUIPO YA EXISTE!"
+			},
+			"Default": {
+				"message": "No pudimos crear tu equipo. Parece ser un problema de nuestra parte. Por favor intenta de nuevo para ver si eso ayuda.",
+				"title": "NO SE PUDO CREAR TU EQUIPO!"
+			},
+			"UploadFailed": {
+				"title": "¡FALLÓ AL SUBIR LA BANDERA!",
+				"message": "No pudimos subir tu bandera a nuestro servidor. Por favor intenta otra vez para ver si eso ayuda."
+			}
+		}
+	},
+	"TeamsPage": {
+		"heading": "LISTA DE EQUIPOS.",
+		"teamsRegistered": "EQUIPOS REGISTRADOS"
+	},
+	"UnauthorizedPage": {
+		"authFailed": "¡AUTORIZACIÓN FALLIDA!",
+		"unauthorized": "¡NO AUTORIZADO!",
+		"homeButton": "INICIO",
+		"Messages": {
+			"default": "Por favor inicia sesión antes de acceder esta página."
+		}
+	},
+	"VerifyPage": {
+		"title": "VERIFICACIÓN DEL SERVIDOR",
+		"Messages": {
+			"signIn": "Inicia sesión antes de intentar verificar.",
+			"verified": "¡Bienvenido al servidor de Discord de TEST Open!",
+			"defaultError": "Verificación fallida. Por favor intenta más tarde.",
+			"default": "Por favor dale click al botón debajo para acceder al servidor."
+		},
+		"Buttons": {
+			"tryAgain": "INTENTA DENUEVO",
+			"Verify": {
+				"text": "VERIFICA",
+				"loadingText": "VERIFICANDO"
+			}
+		},
+		"Errors": {
+			"alreadyVerified": "Ya estabas verificado. Si crees que esto es un error, por favor manda mensaje privado a @_entro para ayuda.",
+			"verificationFailed": "Verificación fallida. Por favor intenta otra vez para ver si eso te ayuda."
+		}
+	},
+	"TeamPage": {
+		"Headings": {
+			"team": "MI EQUIPO.",
+			"player": "LISTA DE JUGADORES."
+		},
+		"timezone": "ZONA HORARIA",
+		"Buttons": {
+			"delete": "ELIMINAR EQUIPO",
+			"edit": "MODIFICAR EQUIPO",
+			"leave": "SALIRSE DEL EQUIPO"
+		},
+		"Players": {
+			"heading": "MIEMBROS ACTUALES",
+			"Player": {
+				"rank": "CLASIFICACIÓN",
+				"discord": "DISCORD",
+				"removeButton": "REMOVER JUGADOR"
+			}
+		},
+		"Invites": {
+			"heading": "INVITACIONES SALIENTES",
+			"error": "Lo sentimos, no pudimos conseguir los jugadores dentro de tu equipo.",
+			"none": "Actualmente, no tienes invitaciones salientes. Empieza por usar la barra para invitar jugadores de arriba.",
+			"Invite": {
+				"rank": "CLASIFICACIÓN",
+				"discord": "DISCORD",
+				"sent": "ENVIADO",
+				"deleteButton": "ELIMINAR INVITACIÓN",
+				"inviteButton": "INVITA",
+				"placeholder": "Digita el nombre de usuario en osu..."
+			}
+		},
+		"Errors": {
+			"DeleteItemFailed": {
+				"title": "NO SE PUDO ELIMINAR {type}!",
+				"message": "Lo sentimos, fallamos al eliminar {type}. Por favor intenta otra vez para ver si eso ayuda.",
+				"Types": {
+					"player": "al jugador",
+					"invite": "la invitación"
+				}
+			},
+			"InvitedSelf": {
+				"title": "!NO PUEDES INVITAR A TI MISMO!",
+				"message": "No puedes invitarte a ti mismo a tu propio equipo. Si deseas cambiar de equipo, por favor elimina este equipo primero."
+			},
+			"AlreadyInvited": {
+				"title": "EL JUGADOR YA ESTABA INVITADO!",
+				"message": "Parece que ya le habías mandado una invitación a este jugador. Por favor elimina la invitación actual antes de intentar re-invitarlo."
+			},
+			"InviteFailed": {
+				"title": "NO SE PUDO INVITAR AL JUGADOR!",
+				"message": "Lo siento, no se pudo invitar a ese jugador. Por favor intenta otra vez para ver si eso te ayuda."
+			},
+			"PlayersOnTeam": {
+				"title": "ESTE JUGADOR TODAVIA ESTA EN EL EQUIPO!",
+				"message": "Por favor elimina a todos los jugadores del equipo antes de eliminar el equipo."
+			},
+			"DeleteTeamFailed": {
+				"title": "NO SE PUDO ELIMINAR TU EQUIPO!",
+				"message": "Lo siento, no se pudo eliminar a tu equipo. Por favor intenta otra vez para ver si eso te ayuda."
+			},
+			"PlayerOnTeam": {
+				"title": "ESTE JUGADOR YA ESTA EN EL EQUIPO!",
+				"message": "Parece que este jugador ya está en tu equipo. Si esto es un error intenta otra vez para ver si eso te ayuda."
+			},
+			"NotOnTeam": {
+				"title": "NOT ON A TEAM!",
+				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
+				"profileButton": "PROFILE"
+			}
+		}
+	},
+	"InfoPage": {
+		"GeneralInfo": {
+			"1": "TEST Open es un torneo de osu! exclusivamente para el cliente **[osu!lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
+			"2": "Los equipos están formados por **3-5 jugadores**.",
+			"3": "Los equipos deberán de seleccionar exactamente **3 jugadores** para cada mapa jugado en el torneo.",
+			"4": "**No hay requisitos de rango** para los participantes.",
+			"5": "Todos los equipos tendrán que jugar clasificatorias en el fin de semana especificado en los horarios.",
+			"6": "Los **32 equipos** más altos de clasificatorias podrán continuar al formato de **Doble Eliminación**.",
+			"7": "Todos los jugadores deben de estar dentro del **[Servidor de Discord](https://discord.com/invite/nZnQZMvEhq)** y cambiar su apodo dentro del servidor a su **nombre de usuario de osu!**.",
+			"8": "Los horarios van a ser mostrados en **UTC-0** y **Hora Local de Discord**.",
+			"9": "Miembro del Staff que tengan cualquier rol que no sean las siguientes no podrán participar en el torneo: {sublist_alpha} Streaming {sublist_alpha} Comentarista {sublist_alpha} Diseñador {sublist_alpha} Traductores",
+			"heading": "INFORMACIÓN GENERAL.",
+			"Schedule": {
+				"1": "**Registrations:** February 26th - March 18th",
+				"2": "**Screening:** March 18th - March 23rd",
+				"3": "**Qualifiers:** March 29th - 31st",
+				"4": "**RO32:** April 5th - 7th",
+				"5": "**RO16:** April 12th - 14th",
+				"6": "**Quarterfinals:** April 19th - 21st",
+				"7": "**Semifinals:** April 26th - 28th",
+				"8": "**Finals:** May 3rd - 5th",
+				"9": "**Grand Finals:** May 10th - 12th",
+				"heading": "SCHEDULE"
+			}
+		},
+		"Registrations": {
+			"1": "Deberás de registrarte en la página web con tu **osu!** y **cuenta de Discord**.",
+			"2": "La creación y administración de tu equipo se realizará a través de **[la página web de TEST Open](https://test-open.com)**.",
+			"3": "Para crear un **post de agente libre**, vaya al **servidor de discord** y busque el canal looking-for-team. Allí puedes crear una publicación a través del **TEST Bot**.",
+			"4": "Si el sitio web está caído, entonces puedes pedir a un administrador un **formulario de registro**. Sin embargo, si usa este método su información se verá en la sheet pero no en el sitio web hasta que se actualice manualmente.",
+			"5": "El Staff no creará **equipos de agentes libres**. Así que si deseas participar, deberás encontrar un equipo.",
+			"heading": "REGISTRACIONES."
+		},
+		"GeneralConduct": {
+			"1": "Respeta a los otros jugadores y los miembros del Staff.",
+			"2": "No usar **términos discriminatorios**. Incluyendo pero no está limitado a: {sublist_alpha} Comentarios Racistas {sublist_alpha} términos que puedan ser ofensivos para los miembros LGBTQ+ {sublist_alpha} Comentarios Sexista {sublist_alpha} Comentarios de odio",
+			"3": "TEST Open no tiene tolerancia alguna para bullying de cualquier tipo.",
+			"4": "**Contenido NSFW** está prohibido. Esto incluye: {sublist_alpha} Contenido Sexual {sublist_alpha} Contenido Violento o Gore {sublist_alpha} Abuso de Alcohol/Drogas {sublist_alpha} Contenido Perturbador",
+			"5": "Intenta mantener **conversaciones polémicas** lo más mínimo posible.",
+			"6": "Mantén los desacuerdos civilizados.",
+			"7": "El **Doxing no está permitido** bajo ninguna circunstancia.",
+			"8": "No se permite ningún contenido que esté prohibido bajo **Discord TOS**.",
+			"9": "**El inglés es el idioma principal del torneo**, así que ten esto en cuenta al comunicarte con el Staff.",
+			"10": "Si ves a alguien rompiendo alguna de estas reglas, por favor contacta con un **Moderador o Administrador** para resolverlo.",
+			"11": "Por último, ¡utilice el **sentido común** y cree un **ambiente de bienvenida** para todos!",
+			"heading": "CONDUCTA GENERAL."
+		},
+		"Scheduling": {
+			"1": "Las partidas se programarán a través del **TEST Bot** en el servidor de Discord.",
+			"2": "Para programar o reprogramar un lobby de clasificatorias, por favor usa el comando **/schedule** e introduce la información solicitada.",
+			"3": "Para reprogramar una partida, por favor usa el comando **/reschedule** e introduce la información solicitada. Esto enviará una solicitud de reprogramación en el canal de scheduling.",
+			"4": "Al reprogramar un partido **ambos capitanes tendrán que hacer clic en aceptar** en la solicitud de reprogramación en el canal de programación para que la reprogramación termine exitosamente.",
+			"heading": "HORARIOS."
+		},
+		"GameProcedures": {
+			"1": "Todos los mapas utilizarán el **puntaje nuevo de osu! lazer**.",
+			"2": "**NoFail** es obligatorio.",
+			"3": "Los árbitros contactarán los Capitanes de cualquier equipo participante para cada partida. {sublist_alpha} Los capitanes son responsables de comunicar cualquier información dado por el árbitro hacia su equipo. {sublist_alpha} Un recordatorio será enviado **25 minutos** antes de cada partida. {sublist_alpha} El nombre y la contraseña de la sala en Lazer será enviado **15 minutos** antes de cada partida.",
+			"4": "Luego de que un mapa haya sido seleccionado, los jugadores participantes tendrán **2 minutos** para unirse a la sala.",
+			"heading": "PROCEDIMIENTOS DE LA PARTIDA.",
+			"Qualifiers": {
+				"1": "Los mapas se jugarán en el mismo orden en que se muestra en la mappool.",
+				"2": "Si un jugador **se desconecta** **dentro del primer minuto del mapa**, el jugador repetirá el mapa al **final de la sala clasificatoria**.",
+				"3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la sala**. Si un equipo falla en hacerse presente entonces el equipo tendrá que reprogramar la hora de su sala. Esta sala debe de ser al menos **4 horas** después de la sala en que no se hicieron presentes.",
+				"heading": "CLASIFICATORIOS"
+			},
+			"Match": {
+				"1": "La condición de victoria para cada partida será **TeamVS**.",
+				"2": "Los Warmups, Protects, Bans y Picks deben ser enviados en **2 minutos**.",
+				"3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la partida**. Perderán lo siguiente en cada intervalo de tiempo. {sublist_alpha} Perderás tus protects estando 5 minutos tarde. {sublist_alpha} Perderás tus bans estando 10 minutos tarde. {sublist_alpha} Perderás tu partida estando 15 minutos tarde.",
+				"4": "Los jugadores deben de estar en una casilla dentro de la sala correspondiente a su equipo. {sublist_alpha} Equipo 1 (Rojo): Casillas 1, 2, y 3. {sublist_alpha} Equipo 2 (Azul): Casillas 4, 5, y 6.",
+				"5": "Los capitanes usarán el **comando !roll en el hilo de Discord** de su partida para decidir **el orden de Picks/Bans**. El capitán con el valor más alto podrá seleccionar uno de los siguientes, mientras que el otro capitán recibirá el otro: {sublist_alpha} Primer Pick y Segundo Ban {sublist_alpha} Segundo Pick y Primer Ban",
+				"6": "Los equipos tendrán la opción de jugar 1 mapa de su elección como un calentamiento (warmup) antes de la partida. {sublist_alpha} Los calentamientos deben de **durar menos de 4 minutos**. {sublist_alpha} Los calentamientos **no deberán de ser parte del la mappool**.",
+				"7": "Los protects serán **enviados de forma privada** al árbitro antes de la fase de baneos.",
+				"8": "La fase de baneos se harán en **formato de serpiente** (ABBA). {sublist_alpha} Equipo 1 Banea {sublist_alpha} Equipo 2 Banea dos veces {sublist_alpha} Equipo 1 Banea",
+				"9": "Una vez la fase de protects y bans haya concluido, **cualquier ban sobre un mapa protegido será anulado** y ese mapa será jugable normalmente.",
+				"10": "Banear del **mismo modpool dos veces seguidas es prohibido** excluyendo el **pool de No-Mod**.",
+				"11": "Seleccionar del **mismo modpool dos veces seguidas es prohibido** excluyendo **las pools de Lazer-Mod** y **No-Mod**.",
+				"12": "Los jugadores podrán jugar el Tiebreaker con cualquier mod que **no se aplique de manera global**.",
+				"13": "Cada equipo tiene **un timeout de 5 minutos** la cual se podrá utilizar en cualquier punto de la partida.",
+				"14": "Si un jugador **se desconecta dentro del primer minuto del mapa**, el mapa será **abortado** y el equipo tiene **5 minutos** para reemplazar al jugador para jugar el mapa. Esto sucederá solamente una vez por equipo y por partida.",
+				"heading": "PARTIDO"
+			}
+		},
+		"MappoolInfo": {
+			"1": "El mappool se publicará el **domingo** de cada semana.",
+			"2": "Lazer Mod, o LM para abreviar, es un modpool que incluirá diferentes mods cada semana para mostrar los nuevos mods que el cliente de Lazer tiene para ofrecer.",
+			"heading": "INFORMACIÓN DE LA MAPPOOL.",
+			"Table": {
+				"round": "Ronda",
+				"starRating": "SR",
+				"bestOf": "Mejor de",
+				"bans": "Bans",
+				"protects": "Protecciones",
+				"total": "Total",
+				"qaulifiers": "Clasificatorias",
+				"roundOf32": "Ronda de 32",
+				"roundOf16": "Ronda de 16",
+				"quarterfinals": "Cuartos de Final",
+				"semifinals": "Semifinales",
+				"finals": "Finales",
+				"grandFinals": "Gran Final"
+			}
+		},
+		"PrizePool": {
+			"1": "El MVP del torneo {sublist_alpha} **Un mouse personalizado WLmouse Beast X mini** diseñador por Spoo y pintado por Dovacustoms. El mouse personalizado también incluirá el nombre del jugador pintado en la parte superior.",
+			"2": "Primer Lugar {sublist_alpha} $500 dividido entre los jugadores {sublist_alpha} **Un Tablet Cover Original de TEST Open** diseñado por Spoo y producido por Bluebunny {sublist_alpha} Un banner animado del Equipo",
+			"3": "Segundo Lugar {sublist_alpha} $200 dividido entre los jugadores {sublist_alpha} Un banner normal del Equipo",
+			"4": "Tercer Lugar {sublist_alpha} $100 dividido entre los jugadores {sublist_alpha} Un banner normal del Equipo",
+			"heading": "PREMIOS DEL TORNEO."
+		}
+	},
+	"Components": {
+		"ComingSoon": {
+			"title": "COMING SOON!",
+			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+		}
+	},
+	"APICallbacks": {
+		"Errors": {
+			"missingCode": "Lo sentimos, pero el inicio de sesión no pudo completarse. Si fue inesperado, por favor intenta otra vez, de lo contrario, no dudes en navegar al inicio."
+		}
+	}
 }
