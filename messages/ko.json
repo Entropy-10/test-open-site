@@ -1,399 +1,436 @@
 {
-	"HomePage": {
-		"Header": {
-			"description": "오픈 랭크, OSU! lazer 토너먼트",
-			"hostTitle": "에 의해 호스팅"
-		},
-		"Features": {
-			"Titles": {
-				"mappool": "맵풀.",
-				"format": "형식.",
-				"schedule": "일정."
-			},
-			"Descriptions": {
-				"mappool": "매주 새로운 모드가 도입되는 lazer 모드풀.",
-				"format": "오픈 랭크, 더블 엘리미네이션, 3v3 토너먼트.",
-				"schedule": "트위치에서 스트리밍되는 다가오는 경기를 시청하세요."
-			},
-			"Countdown": {
-				"titleSectionOne": "토너먼트",
-				"titleSectionTwo": "시작 날짜"
-			}
-		},
-		"Originals": {
-			"title": "원작품",
-			"subtitle": "맞춤 곡 곧 출시 예정",
-			"description": "무대를 넘어서며 독창적인 TEST 오리지널을 하나씩 풀어나가세요. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들을 마련했어요. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
-			"tracksTitle": "트랙리스트.",
-			"listenButton": "들어보기"
-		}
-	},
-	"NavItems": {
-		"home": "홈페이지",
-		"mappool": "맵풀",
-		"schedule": "일정",
-		"teams": "팀",
-		"info": "정보",
-		"sheet": "시트",
-		"invites": "초대",
-		"team": "팀",
-		"profile": "프로필"
-	},
-	"Buttons": {
-		"register": "등록하기",
-		"signIn": "로그인",
-		"signOut": "로그아웃",
-		"close": "닫기"
-	},
-	"Status": {
-		"operational": "모든 서비스 운영중",
-		"downtime": "일부 서비스 오프라인",
-		"degraded": "일부 서비스 미운영",
-		"maintenance": "서비스 관리중"
-	},
-	"Footer": {
-		"description": "TEDDY, ENTROPY, SORA가 주최하는 오픈 랭크 OSU! LAZAR 토너먼트."
-	},
-	"Metadata": {
-		"description": "Osu! 최초의 대규모 오픈 랭크 레이저 토너먼트입니다. \n새로운 osu 토너먼트 경험에 오신 것을 환영합니다!",
-		"PageTitles": {
-			"home": "홈페이지",
-			"schedule": "일정",
-			"info": "정보",
-			"mappool": "맵풀",
-			"register": "등록하기",
-			"teams": "팀",
-			"team": "팀",
-			"signIn": "로그인",
-			"profile": "프로필"
-		}
-	},
-	"ErrorPage": {
-		"title": "문제가 발생했습니다!",
-		"retryButton": "재시도",
-		"goHomeButton": "홈으로 돌아가기"
-	},
-	"ProfilePage": {
-		"Buttons": {
-			"relink": "재연결",
-			"Update": {
-				"text": "업데이트",
-				"loadingText": "업데이트 중"
-			}
-		},
-		"Headings": {
-			"profile": "프로필.",
-			"team": "팀 관리"
-		},
-		"Osu": {
-			"rank": "세계 순위",
-			"countryRank": "나라 순위"
-		},
-		"Team": {
-			"heading": "내 팀",
-			"none": "현재 팀이 없습니다. 보류 중인 초대를 수락하여 하나에 참여하세요.",
-			"timezone": "시간대별",
-			"joined": "가입날짜",
-			"manageTeamButton": "내 팀 관리"
-		},
-		"Invites": {
-			"heading": "보류 중인 초대들",
-			"none": "현재 보류중인 초대가 없습니다. 기다리거나 자신만의 팀을 만드세요.",
-			"Invite": {
-				"timezone": "시간대별",
-				"invited": "초대 날짜",
-				"Buttons": {
-					"accept": "수락",
-					"deny": "거절"
-				}
-			}
-		},
-		"Errors": {
-			"ExistingTeam": {
-				"title": "벌써 팀이 있습니다!",
-				"message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 조인하기 전에 현재 팀을 삭제하거나 탈퇴하세요."
-			},
-			"FailedInvite": {
-				"title": "초대를 {type} 하지 못했습니다!",
-				"message": "죄송합니다. 초대를 {type} 하지 못했습니다. 도움이 되는지 다시 확인해 보세요.",
-				"Types": {
-					"deny": "거부",
-					"accept": "수락"
-				}
-			},
-			"CurrentTeam": {
-				"title": "현재 팀에 있습니다!",
-				"message": "아직 팀에 있는 것 같군요. 계정을 삭제하기 전에 먼저 팀을 탈퇴하거나 삭제하세요."
-			},
-			"FailedAccountDelete": {
-				"title": "계정 삭제가 실패했어요!",
-				"message": "죄송합니다. 계정 삭제가 실패했습니다. 다시 시도 해보세요."
-			},
-			"FailedUpdate": {
-				"title": "업데이트가 실패했습니다!",
-				"message": "죄송합니다. osu 프로필 정보를 업데이트하지 못했습니다. 다시 시도해 보세요."
-			}
-		}
-	},
-	"RegistrationPage": {
-		"heading": "팀 등록",
-		"Closed": {
-			"title": "지금은 등록이 마감되었습니다!",
-			"message": "현재 토너먼트가 시작될 때까지 등록이 마감되어 있습니다. 홈페이지의 카운트다운이 종료되면 여기를 다시 확인하시기 바랍니다."
-		},
-		"Form": {
-			"heading": "팀 만들기",
-			"teamName": "팀 이름",
-			"teamAcronym": "팀 약어",
-			"timezone": "시간대",
-			"teamFlag": "팀 깃발",
-			"createButton": {
-				"text": "만들기",
-				"loadingText": "만드는중"
-			},
-			"Success": {
-				"title": "팀을 만들었습니다!",
-				"message": "TEST 오픈에 오신 것을 환영합니다! 팀 관리 하고 플레이어 초대를 시작하려면 아래 버튼을 클릭하세요.",
-				"teamManagementButton": "팀 관리"
-			},
-			"ImagePicker": {
-				"upload": "업로드하려면 여기를 클릭하세요",
-				"recommended": "추천 비율 9:4"
-			}
-		},
-		"Errors": {
-			"Restricted": {
-				"message": "Osu! 에 제한이 있는 것 같습니다. 안타깝게도 제한된 동안에는 등록할 수 없습니다. 이것이 실수라고 생각되면 로그아웃했다가 사이트에 다시 로그인해 보세요.",
-				"title": "제한되어 있습니다!"
-			},
-			"DuplicatePlayer": {
-				"message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 만들기 전에 현재 팀을 삭제하거나 탈퇴하세요.",
-				"title": "벌써 팀이 있습니다!"
-			},
-			"Duplicate": {
-				"message": "해당 {type} 팀이 이미 존재하는 것 같습니다. 대신 다른 {type} 을(를) 사용하세요.",
-				"Types": {
-					"name": "이름",
-					"acronym": "머리글자",
-					"player": "참가자"
-				},
-				"title": "팀 {type} 이(가) 이미 존재합니다!"
-			},
-			"Default": {
-				"message": "팀을 만들 수 없습니다. 우리 측에 문제가 있는 것 같습니다. 다시 시도해 보세요.",
-				"title": "팀을 만들지 못했습니다!"
-			},
-			"UploadFailed": {
-				"title": "플래그를 업로드하지 못했습니다!",
-				"message": "깃발을 우리 서버에 업로드할 수 없습니다. 다시 시도해 보세요."
-			}
-		}
-	},
-	"TeamsPage": {
-		"heading": "팀 목록",
-		"teamsRegistered": "등록된 팀들"
-	},
-	"UnauthorizedPage": {
-		"authFailed": "로그인에 실패했습니다!",
-		"unauthorized": "금지!",
-		"homeButton": "홈페이지",
-		"Messages": {
-			"default": "이 페이지에 액세스하기 전에 먼저 로그인하십시오."
-		}
-	},
-	"VerifyPage": {
-		"title": "서버 확인",
-		"Messages": {
-			"signIn": "인증을 시도하기 전에 먼저 로그인하세요.",
-			"verified": "TEST Open Discord 서버에 오신 것을 환영합니다!",
-			"defaultError": "인증 실패했습니다. 잠시후 시도하세요",
-			"default": "서버에 접속하려면 아래 버튼을 클릭하세요."
-		},
-		"Buttons": {
-			"tryAgain": "재시도",
-			"Verify": {
-				"text": "확인",
-				"loadingText": "확인중"
-			}
-		},
-		"Errors": {
-			"alreadyVerified": "이미 확인되었습니다. 이것이 실수라고 생각되면 @__entro에게 DM을 보내 도움을 요청하세요.",
-			"verificationFailed": "확인을 실패했습니다. 잠시후 시도하세요"
-		}
-	},
-	"TeamPage": {
-		"Headings": {
-			"team": "내 팀.",
-			"player": "플레이어 목록."
-		},
-		"timezone": "시간대별",
-		"Buttons": {
-			"delete": "팀 삭제",
-			"edit": "팀 편집",
-			"leave": "팀 탈퇴"
-		},
-		"Players": {
-			"heading": "현재 회원들",
-			"Player": {
-				"rank": "순위",
-				"discord": "디스코드",
-				"removeButton": "플레이어 제거"
-			}
-		},
-		"Invites": {
-			"heading": "보낸 초대장들",
-			"error": "죄송합니다. 귀하의 팀에 선수를 가져오지 못했습니다.",
-			"none": "현재 보낸 초대가 없습니다. 위의 플레이어 초대 상자를 사용하여 시작하세요.",
-			"Invite": {
-				"rank": "순위",
-				"discord": "디스코드",
-				"sent": "보낸 날짜",
-				"deleteButton": "초대 삭제",
-				"inviteButton": "초대",
-				"placeholder": "osu! 유저명을 입력하세요..."
-			}
-		},
-		"Errors": {
-			"DeleteItemFailed": {
-				"title": "{type} 삭제가 실패했어요!",
-				"message": "죄송합니다. {type} 삭제가 실패했어요. 다시 시도해 보세요",
-				"Types": {
-					"player": "플레이어",
-					"invite": "초대하기"
-				}
-			},
-			"InvitedSelf": {
-				"title": "자신을 초대할 수 없습니다!",
-				"message": "자신의 팀에 자신을 초대할 수 없습니다. 팀을 바꾸고 싶다면, 먼저 이 팀을 삭제해 주세요."
-			},
-			"AlreadyInvited": {
-				"title": "이미 초대된 선수입니다!",
-				"message": "해당 선수에게 이미 초대장을 보낸 것 같습니다. 다시 초대하기 전에 현재의 초대를 취소해 주세요."
-			},
-			"InviteFailed": {
-				"title": "선수 초대에 실패했습니다!",
-				"message": "죄송합니다, 해당 선수를 초대하는 데 실패했습니다. 다시 시도해 주세요."
-			},
-			"PlayersOnTeam": {
-				"title": "팀에 아직 선수가 남아 있습니다!",
-				"message": "팀을 삭제하기 전에 모든 선수를 팀에서 제거해 주세요."
-			},
-			"DeleteTeamFailed": {
-				"title": "팀 삭제에 실패했습니다!",
-				"message": "죄송합니다, 팀을 삭제하는데 실패했습니다. 다시 시도해 주세요."
-			},
-			"PlayerOnTeam": {
-				"title": "팀에 이미 있는 플레이어입니다!",
-				"message": "이 플레이어가 이미 귀하의 팀에 있는 것으로 보입니다. 만약 이것이 오류라면, 다시 시도해보새요."
-			}
-		}
-	},
-	"InfoPage": {
-		"GeneralInfo": {
-			"1": "TEST Open은 오직 **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** 클라이언트에서만 전개되는 공식 osu! 토너먼트입니다.",
-			"2": "본 대회의 팀은 **3명에서 5명** 사이의 멤버로 구성되어야 합니다.",
-			"3": "대회 진행 중 각 맵에 대하여, 팀은 반드시 정확히 **3명의 선수를** 출전시켜야 합니다.",
-			"4": "참가자의 랭킹에 대한 제한은 **없습니다**.",
-			"5": "모든 참가 예정 팀은 지정된 주말에 실시되는 예선을 통과해야만 합니다.",
-			"6": "예선을 통해 선발된 **상위 32개** 팀은 **더블 엘리미네이션** 형식으로 진행됩니다.",
-			"7": "모든 선수는 **[Discord 서버](https://discord.com/invite/nZnQZMvEhq)** 에 반드시 참여해야 하며, 자신의 Discord 닉네임을 **osu! 사용자 이름**으로 설정해야 합니다.",
-			"8": "모든 시간은 **UTC-0** 및 **Discord 현지 시간**으로 표시됩니다.",
-			"9": "Streaming, Commentary, Design, Translation을 제외한 어떠한 역할을 맡고 있는 스태프 멤버도 본 대회에 참여할 수 없습니다.",
-			"heading": "일반 정보."
-		},
-		"Registrations": {
-			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
-			"2": "Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.",
-			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
-			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
-			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
-		},
-		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
-			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
-			"3": "TEST Open has no tolerance for bullying of any kind.",
-			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
-			"5": "Try to keep **controversial conversations** to a minimum.",
-			"6": "Keep disagreements civilized.",
-			"7": "**Doxing is not allowed** under any circumstances.",
-			"8": "No content that is banned under **Discord TOS** is allowed.",
-			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
-			"10": "If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.",
-			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
-			"heading": "GENERAL CONDUCT."
-		},
-		"Scheduling": {
-			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
-			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
-		},
-		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
-			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
-				"heading": "QUALIFIERS"
-			},
-			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
-				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
-			}
-		},
-		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
-			"Table": {
-				"round": "Round",
-				"starRating": "SR",
-				"bestOf": "Best Of",
-				"bans": "Bans",
-				"protects": "Protects",
-				"total": "Total",
-				"qaulifiers": "Qualifiers",
-				"roundOf32": "Round of 32",
-				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
-				"finals": "Finals",
-				"grandFinals": "Grand Finals"
-			}
-		},
-		"PrizePool": {
-			"1": "대회 MVP {sublist_alpha} **커스터마이즈된 WLmouse Beast X 미니 마우스** 는 Spoo가 디자인하고 Dovacustoms가 그립니다. 사용자의 이름도 마우스 상단에 그려집니다.",
-			"2": "첫 번째 자리 {sublist_alpha} 선수들 사이에서 $500을 나누어 {sublist_alpha} **커스터마이즈된 TEST 오픈 태블릿 커버** 는 Spoo가 디자인하고 Bluebunny가 제작했습니다 {sublist_alpha} 애니메이션된 팀 배너",
-			"3": "두 번째 자리 {sublist_alpha} 선수들 사이에서 $200을 분배 {sublist_alpha} 정적 팀 배너",
-			"4": "세 번째 자리 {sublist_alpha} 선수들 사이에서 $100을 분배 {sublist_alpha} 정적 팀 배너",
-			"heading": "상금 풀"
-		}
-	},
-	"Components": {
-		"comingSoon": "곧 출시 예정"
-	},
-	"APICallbacks": {
-		"Errors": {
-			"missingCode": "죄송하지만, 로그인을 완료할 수 없었습니다. 예상치 못한 문제라면 다시 시도해 주세요. 그렇지 않다면 홈으로 돌아가는 것을 권장합니다."
-		}
-	}
+  "HomePage": {
+    "Header": {
+      "description": "오픈 랭크, OSU! lazer 토너먼트",
+      "hostTitle": "가주최하는"
+    },
+    "Features": {
+      "Titles": {
+        "mappool": "맵풀.",
+        "format": "형식.",
+        "schedule": "일정."
+      },
+      "Descriptions": {
+        "mappool": "매주 새로운 모드가 도입되는 lazer 모드풀.",
+        "format": "오픈 랭크, 더블 엘리미네이션, 3v3 토너먼트.",
+        "schedule": "트위치에서 스트리밍되는 다가오는 경기를 시청하세요."
+      },
+      "Countdown": {
+        "titleSectionOne": "토너먼트",
+        "titleSectionTwo": "시작 날짜"
+      }
+    },
+    "Originals": {
+      "title": "원작품",
+      "subtitle": "맞춤 곡 곧 출시 예정",
+      "description": "무대를 넘어서며 독창적인 TEST 오리지널을 하나씩 풀어나가세요. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들을 마련했어요. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
+      "tracksTitle": "트랙리스트.",
+      "listenButton": "들어보기"
+    }
+  },
+  "NavItems": {
+    "home": "홈페이지",
+    "mappool": "맵풀",
+    "schedule": "일정",
+    "teams": "팀",
+    "info": "정보",
+    "sheet": "시트",
+    "invites": "초대",
+    "team": "팀",
+    "profile": "프로필"
+  },
+  "Buttons": {
+    "register": "등록하기",
+    "signIn": "로그인",
+    "signOut": "로그아웃",
+    "close": "닫기"
+  },
+  "Status": {
+    "operational": "모든 서비스 운영중",
+    "downtime": "일부 서비스 미운영중",
+    "degraded": "일부 서비스 미운영",
+    "maintenance": "서비스 관리중"
+  },
+  "Footer": {
+    "description": "TEDDY, ENTROPY, SORA가 주최하는 오픈 랭크 OSU! LAZER 토너먼트."
+  },
+  "Metadata": {
+    "description": "Osu! 최초의 대규모 오픈 랭크 레이저 토너먼트입니다. \n새로운 osu 토너먼트 경험에 오신 것을 환영합니다!",
+    "PageTitles": {
+      "home": "홈페이지",
+      "schedule": "일정",
+      "info": "정보",
+      "mappool": "맵풀",
+      "register": "등록하기",
+      "teams": "팀",
+      "team": "팀",
+      "signIn": "로그인",
+      "profile": "프로필"
+    }
+  },
+  "ErrorPage": {
+    "title": "문제가 발생했습니다!",
+    "retryButton": "재시도",
+    "goHomeButton": "홈으로 돌아가기",
+    "message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+  },
+  "ProfilePage": {
+    "Buttons": {
+      "relink": "재연결",
+      "Update": {
+        "text": "업데이트",
+        "loadingText": "업데이트 중"
+      }
+    },
+    "Headings": {
+      "profile": "프로필.",
+      "team": "팀 관리"
+    },
+    "Osu": {
+      "rank": "세계 순위",
+      "countryRank": "나라 순위"
+    },
+    "Team": {
+      "heading": "내 팀",
+      "none": "현재 팀이 없습니다. 보류 중인 초대를 수락하여 하나에 참여하세요.",
+      "timezone": "시간대별",
+      "joined": "가입날짜",
+      "manageTeamButton": "내 팀 관리"
+    },
+    "Invites": {
+      "heading": "보류 중인 초대들",
+      "none": "현재 보류중인 초대가 없습니다. 기다리거나 자신만의 팀을 만드세요.",
+      "Invite": {
+        "timezone": "시간대별",
+        "invited": "초대 날짜",
+        "Buttons": {
+          "accept": "수락",
+          "deny": "거절"
+        }
+      }
+    },
+    "Errors": {
+      "ExistingTeam": {
+        "title": "벌써 팀이 있습니다!",
+        "message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 조인하기 전에 현재 팀을 삭제하거나 탈퇴하세요."
+      },
+      "FailedInvite": {
+        "title": "초대를 {type} 하지 못했습니다!",
+        "message": "죄송합니다. 초대를 {type} 하지 못했습니다. 도움이 되는지 다시 확인해 보세요.",
+        "Types": {
+          "deny": "거부",
+          "accept": "수락"
+        }
+      },
+      "CurrentTeam": {
+        "title": "현재 팀에 있습니다!",
+        "message": "아직 팀에 있는 것 같군요. 계정을 삭제하기 전에 먼저 팀을 탈퇴하거나 삭제하세요."
+      },
+      "FailedAccountDelete": {
+        "title": "계정 삭제가 실패했어요!",
+        "message": "죄송합니다. 계정 삭제가 실패했습니다. 다시 시도 해보세요."
+      },
+      "FailedUpdate": {
+        "title": "업데이트가 실패했습니다!",
+        "message": "죄송합니다. osu 프로필 정보를 업데이트하지 못했습니다. 다시 시도해 보세요."
+      },
+      "noRank": "No Rank"
+    },
+    "Options": {
+      "DeleteAccount": {
+        "title": "DELETE ACCOUNT?",
+        "message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+        "Buttons": {
+          "Delete": {
+            "text": "DELETE",
+            "loadingText": "DELETING"
+          },
+          "noThanks": "NO THANKS",
+          "confirmDelete": "DELETE ACCOUNT",
+          "close": "CLOSE"
+        }
+      }
+    }
+  },
+  "RegistrationPage": {
+    "heading": "팀 등록",
+    "Closed": {
+      "title": "지금은 등록이 마감되었습니다!",
+      "message": "현재 토너먼트가 시작될 때까지 등록이 마감되어 있습니다. 홈페이지의 카운트다운이 종료되면 여기를 다시 확인하시기 바랍니다."
+    },
+    "Form": {
+      "heading": "팀 만들기",
+      "teamName": "팀 이름",
+      "teamAcronym": "팀 약어",
+      "timezone": "시간대",
+      "teamFlag": "팀 깃발",
+      "createButton": {
+        "text": "만들기",
+        "loadingText": "만드는중"
+      },
+      "Success": {
+        "title": "팀을 만들었습니다!",
+        "message": "TEST 오픈에 오신 것을 환영합니다! 팀 관리 하고 플레이어 초대를 시작하려면 아래 버튼을 클릭하세요.",
+        "teamManagementButton": "팀 관리"
+      },
+      "ImagePicker": {
+        "upload": "업로드하려면 여기를 클릭하세요",
+        "recommended": "추천 비율 9:4"
+      }
+    },
+    "Errors": {
+      "Restricted": {
+        "message": "Osu! 에 제한이 있는 것 같습니다. 안타깝게도 제한된 동안에는 등록할 수 없습니다. 이것이 실수라고 생각되면 로그아웃했다가 사이트에 다시 로그인해 보세요.",
+        "title": "제한되어 있습니다!"
+      },
+      "DuplicatePlayer": {
+        "message": "이미 팀에 속해 있는 것 같습니다. 새 팀을 만들기 전에 현재 팀을 삭제하거나 탈퇴하세요.",
+        "title": "벌써 팀이 있습니다!"
+      },
+      "Duplicate": {
+        "message": "해당 {type} 팀이 이미 존재하는 것 같습니다. 대신 다른 {type} 을(를) 사용하세요.",
+        "Types": {
+          "name": "이름",
+          "acronym": "머리글자",
+          "player": "참가자"
+        },
+        "title": "팀 {type} 이(가) 이미 존재합니다!"
+      },
+      "Default": {
+        "message": "팀을 만들 수 없습니다. 우리 측에 문제가 있는 것 같습니다. 다시 시도해 보세요.",
+        "title": "팀을 만들지 못했습니다!"
+      },
+      "UploadFailed": {
+        "title": "플래그를 업로드하지 못했습니다!",
+        "message": "깃발을 우리 서버에 업로드할 수 없습니다. 다시 시도해 보세요."
+      }
+    }
+  },
+  "TeamsPage": {
+    "heading": "팀 목록",
+    "teamsRegistered": "등록된 팀들"
+  },
+  "UnauthorizedPage": {
+    "authFailed": "로그인에 실패했습니다!",
+    "unauthorized": "금지!",
+    "homeButton": "홈페이지",
+    "Messages": {
+      "default": "이 페이지에 액세스하기 전에 먼저 로그인하십시오."
+    }
+  },
+  "VerifyPage": {
+    "title": "서버 확인",
+    "Messages": {
+      "signIn": "인증을 시도하기 전에 먼저 로그인하세요.",
+      "verified": "TEST Open Discord 서버에 오신 것을 환영합니다!",
+      "defaultError": "인증 실패했습니다. 잠시후 시도하세요",
+      "default": "서버에 접속하려면 아래 버튼을 클릭하세요."
+    },
+    "Buttons": {
+      "tryAgain": "재시도",
+      "Verify": {
+        "text": "확인",
+        "loadingText": "확인중"
+      }
+    },
+    "Errors": {
+      "alreadyVerified": "이미 확인되었습니다. 이것이 실수라고 생각되면 @__entro에게 DM을 보내 도움을 요청하세요.",
+      "verificationFailed": "확인을 실패했습니다. 잠시후 시도하세요"
+    }
+  },
+  "TeamPage": {
+    "Headings": {
+      "team": "내 팀.",
+      "player": "플레이어 목록."
+    },
+    "timezone": "시간대별",
+    "Buttons": {
+      "delete": "팀 삭제",
+      "edit": "팀 편집",
+      "leave": "팀 탈퇴"
+    },
+    "Players": {
+      "heading": "현재 회원들",
+      "Player": {
+        "rank": "순위",
+        "discord": "디스코드",
+        "removeButton": "플레이어 제거"
+      }
+    },
+    "Invites": {
+      "heading": "보낸 초대장들",
+      "error": "죄송합니다. 귀하의 팀에 선수를 가져오지 못했습니다.",
+      "none": "현재 보낸 초대가 없습니다. 위의 플레이어 초대 상자를 사용하여 시작하세요.",
+      "Invite": {
+        "rank": "순위",
+        "discord": "디스코드",
+        "sent": "보낸 날짜",
+        "deleteButton": "초대 삭제",
+        "inviteButton": "초대",
+        "placeholder": "osu! 유저명을 입력하세요..."
+      }
+    },
+    "Errors": {
+      "DeleteItemFailed": {
+        "title": "{type} 삭제가 실패했어요!",
+        "message": "죄송합니다. {type} 삭제가 실패했어요. 다시 시도해 보세요",
+        "Types": {
+          "player": "플레이어",
+          "invite": "초대하기"
+        }
+      },
+      "InvitedSelf": {
+        "title": "자신을 초대할 수 없습니다!",
+        "message": "자신의 팀에 자신을 초대할 수 없습니다. 팀을 바꾸고 싶다면, 먼저 이 팀을 삭제해 주세요."
+      },
+      "AlreadyInvited": {
+        "title": "이미 초대된 선수입니다!",
+        "message": "해당 선수에게 이미 초대장을 보낸 것 같습니다. 다시 초대하기 전에 현재의 초대를 취소해 주세요."
+      },
+      "InviteFailed": {
+        "title": "선수 초대에 실패했습니다!",
+        "message": "죄송합니다, 해당 선수를 초대하는 데 실패했습니다. 다시 시도해 주세요."
+      },
+      "PlayersOnTeam": {
+        "title": "팀에 아직 선수가 남아 있습니다!",
+        "message": "팀을 삭제하기 전에 모든 선수를 팀에서 제거해 주세요."
+      },
+      "DeleteTeamFailed": {
+        "title": "팀 삭제에 실패했습니다!",
+        "message": "죄송합니다, 팀을 삭제하는데 실패했습니다. 다시 시도해 주세요."
+      },
+      "PlayerOnTeam": {
+        "title": "팀에 이미 있는 플레이어입니다!",
+        "message": "이 플레이어가 이미 귀하의 팀에 있는 것으로 보입니다. 만약 이것이 오류라면, 다시 시도해보새요."
+      },
+      "NotOnTeam": {
+        "title": "NOT ON A TEAM!",
+        "message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
+        "profileButton": "PROFILE"
+      }
+    }
+  },
+  "InfoPage": {
+    "GeneralInfo": {
+      "1": "TEST Open은 오직 **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** 클라이언트에서만 전개되는 공식 osu! 토너먼트입니다.",
+      "2": "본 대회의 팀은 **3명에서 5명** 사이의 멤버로 구성되어야 합니다.",
+      "3": "대회 진행 중 각 맵에 대하여, 팀은 반드시 정확히 **3명의 선수를** 출전시켜야 합니다.",
+      "4": "참가자의 랭킹에 대한 제한은 **없습니다**.",
+      "5": "모든 참가 예정 팀은 지정된 주말에 실시되는 예선을 통과해야만 합니다.",
+      "6": "예선을 통해 선발된 **상위 32개** 팀은 **더블 엘리미네이션** 형식으로 진행됩니다.",
+      "7": "모든 선수는 **[Discord 서버](https://discord.com/invite/nZnQZMvEhq)** 에 반드시 참여해야 하며, 자신의 Discord 닉네임을 **osu! 이름**으로 설정해야 합니다.",
+      "8": "모든 시간은 **UTC-0** 및 **Discord 현지 시간**으로 표시됩니다.",
+      "9": "Streaming, Commentary, Design, Translation을 제외한 어떠한 역할을 맡고 있는 스태프 멤버도 본 대회에 참여할 수 없습니다.",
+      "heading": "일반 정보.",
+      "Schedule": {
+        "1": "**Registrations:** February 26th - March 18th",
+        "2": "**Screening:** March 18th - March 23rd",
+        "3": "**Qualifiers:** March 29th - 31st",
+        "4": "**RO32:** April 5th - 7th",
+        "5": "**RO16:** April 12th - 14th",
+        "6": "**Quarterfinals:** April 19th - 21st",
+        "7": "**Semifinals:** April 26th - 28th",
+        "8": "**Finals:** May 3rd - 5th",
+        "9": "**Grand Finals:** May 10th - 12th",
+        "heading": "SCHEDULE"
+      }
+    },
+    "Registrations": {
+      "1": "**osu! 계정과 Discord 계정**을 모두 사용하여 웹사이트에 가입해야 합니다.",
+      "2": "팀 생성 및 관리는 **[TEST Open 웹사이트](https://test-open.com)**를 통해 이루어집니다.",
+      "3": "**자유 계약 선수 게시물**을 생성하려면, **Discord 서버**에서 looking-for-team 채널을 찾아가세요. 그곳에서 **TEST Bot**을 통해 게시물을 생성할 수 있습니다.",
+      "4": "웹사이트가 다운되었다면, 관리자에게 **등록 양식(registeration form)**을 요청할 수 있습니다. 하지만, 이 방법으로 가입을 선택한 경우, 정보는 시트에 표시되지만 웹사이트에는 수동으로 업데이트될 때까지 보이지 않을 것입니다.",
+      "5": "스태프 팀은 **자유 계약 팀**을 생성하지 않습니다. 따라서 참여를 원한다면, 스스로 팀을 찾아야 합니다.",
+      "heading": "등록 안내."
+    },
+    "GeneralConduct": {
+      "1": "다른 플레이어와 모든 스태프 멤버를 존중하세요.",
+      "2": "**차별적인 용어** 사용 금지. 이에는 다음이 포함되지만 이에 국한되지 않습니다:{sublist_alpha} 인종 차별적인 발언 {sublist_alpha} LGBTQ+ 구성원에게 모욕적일 수 있는 용어 {sublist_alpha} 성차별적인 댓글 {sublist_alpha} 혐오 발언",
+      "3": "TEST Open은 어떠한 형태의 괴롭힘도 용납하지 않습니다.",
+      "4": "NSFW(성인용) 콘텐츠는 금지됩니다. 이에는 다음이 포함됩니다: {sublist_alpha} 누드 {sublist_alpha} 고어(Gore)/폭력적 콘텐츠 {sublist_alpha} 약물/알코올 남용 {sublist_alpha} 불쾌한 콘텐츠",
+      "5": "**논란이 될 수 있는 대화**는 최소화하세요.",
+      "6": "의견 차이가 있을 때는 문명하게 대화하세요.",
+      "7": "어떠한 상황에서도 **독싱(개인 정보 유출) 은 허용되지 않습니다**.",
+      "8": "**Discord 이용 약관** 하에 금지된 콘텐츠는 허용되지 않습니다.",
+      "9": "**대회의 주요 언어는 영어이므로**, 스태프와 소통할 때 이를 염두에 두세요.",
+      "10": "이러한 규칙을 어기는 사람을 발견하면, **관리자(Admin) 나 모더레이터(Moderator)**에게 연락하여 해결해 주세요.",
+      "11": "마지막으로, **상식**을 사용하고 모두에게 **환영받는 환경**을 만드세요!",
+      "heading": "일반 행동 규범."
+    },
+    "Scheduling": {
+      "1": "경기 일정은 Discord 서버의 **TEST Bot**을 통해 예약됩니다.",
+      "2": "예선 로비의 일정을 잡거나 변경하기 위해서는 **/schedule** 명령어를 사용하고 요구되는 정보를 입력해 주세요.",
+      "3": "경기 일정을 변경하기 위해서는 **/reschedule** 명령어를 사용하고 요구되는 정보를 입력해 주세요. 이는 scheduling 채널에 재조정 요청을 보낼 것입니다.",
+      "4": "경기 일정을 재조정할 때, **양 팀의 대표**는 재조정 요청이 scheduling 채널에 있을 때 **이를 수락해야만** 재조정이 완료됩니다.",
+      "heading": "일정 조정."
+    },
+    "GameProcedures": {
+      "1": "모든 맵은 **osu! Lazer 기본 점수 매기기** 로 점수를 매깁니다.",
+      "2": "**NoFail**이 적용될 것입니다.",
+      "3": "심판은 각 게임에 참가하는 팀의 대장들에게 연락할 것입니다. {sublist_alpha} 대장들은 심판이 제공한 모든 정보를 자신의 팀에 전달하는 책임이 있습니다. {sublist_alpha} 게임 시작 **25분** 전에 알림이 전송될 것입니다. {sublist_alpha} Lazer 게임 로비 이름과 비밀번호가 각 게임 시작 **15분** 전에 전송될 것입니다.",
+      "4": "맵이 선택된 후, 참가 선수들은 로비에 참여하기 위해 **2분**의 시간이 주어집니다",
+      "heading": "GAME PROCEDURES.",
+      "Qualifiers": {
+        "1": "맵은 맵풀 에서 본 순서대로 플레이됩니다.",
+        "2": "만약 플레이어가 **맵의 첫 분 안에** **연결이 끊기면**, 플레이어는 **예선 로비의 끝에서** 맵을 다시 플레이하게 됩니다.",
+        "3": "팀은 **방 시작 시간 후 5분 이내에** 로비 안에 3명의 플레이어가 있어야 합니다. 팀이 나타나지 않으면, 팀은 자신의 로비를 재일정해야 합니다. 이 로비는 팀이 나타나지 않은 로비 이후 최소 **4시간**이 지난 후여야 합니다.",
+        "heading": "QUALIFIERS"
+      },
+      "Match": {
+        "1": "각 경기의 승리 조건은 **TeamVS**가 될 것입니다.",
+        "2": "워밍업, 보호, 금지, 그리고 선택은 **2분** 안에 제출되어야 합니다.",
+        "3": "팀은 **경기 시작 후 5분 이내에** 로비 안에 3명의 플레이어가 있어야 합니다. 각 시간에 다음을 포기해야 합니다. {sublist_alpha} 5분 지각은 보호를 포기합니다. {sublist_alpha} 10분 지각은 금지를 포기합니다. {sublist_alpha} 15분 지각은 경기를 포기합니다.",
+        "4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
+        "5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
+        "6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
+        "7": "Protects will be **privately submitted** to the referee before the banning phase.",
+        "8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
+        "9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
+        "10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
+        "11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
+        "12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
+        "13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
+        "14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
+        "heading": "MATCH"
+      }
+    },
+    "MappoolInfo": {
+      "1": "맵풀은 매주 **일요일**에 공개됩니다.",
+      "2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
+      "heading": "MAPPOOL INFO.",
+      "Table": {
+        "round": "Round",
+        "starRating": "SR",
+        "bestOf": "Best Of",
+        "bans": "Bans",
+        "protects": "Protects",
+        "total": "Total",
+        "qaulifiers": "Qualifiers",
+        "roundOf32": "Round of 32",
+        "roundOf16": "Round of 16",
+        "quarterfinals": "Quarterfinals",
+        "semifinals": "Semifinals",
+        "finals": "Finals",
+        "grandFinals": "Grand Finals"
+      }
+    },
+    "PrizePool": {
+      "1": "대회 MVP {sublist_alpha} **커스터마이즈된 WLmouse Beast X 미니 마우스** 는 Spoo가 디자인하고 Dovacustoms가 그립니다. 사용자의 이름도 마우스 상단에 그려집니다.",
+      "2": "첫 번째 자리 {sublist_alpha} 선수들 사이에서 $500을 나누어 {sublist_alpha} **커스터마이즈된 TEST 오픈 태블릿 커버** 는 Spoo가 디자인하고 Bluebunny가 제작했습니다 {sublist_alpha} 애니메이션된 팀 배너",
+      "3": "두 번째 자리 {sublist_alpha} 선수들 사이에서 $200을 분배 {sublist_alpha} 정적 팀 배너",
+      "4": "세 번째 자리 {sublist_alpha} 선수들 사이에서 $100을 분배 {sublist_alpha} 정적 팀 배너",
+      "heading": "상금 풀"
+    }
+  },
+  "Components": {
+    "ComingSoon": {
+      "title": "Coming Soon",
+      "message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+    }
+  },
+  "APICallbacks": {
+    "Errors": {
+      "missingCode": "죄송하지만, 로그인을 완료할 수 없었습니다. 예상치 못한 문제라면 다시 시도해 주세요. 그렇지 않다면 홈으로 돌아가는 것을 권장합니다."
+    }
+  }
 }
