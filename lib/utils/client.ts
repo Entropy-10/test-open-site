@@ -6,6 +6,8 @@ import type { ClassValue } from 'clsx'
 
 export const isProd = process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
 
+export const isPreview = process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview'
+
 export const inter = Inter({ subsets: ['latin'] })
 
 export function cn(...inputs: ClassValue[]) {

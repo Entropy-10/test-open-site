@@ -6,8 +6,9 @@ import { relink } from '../_actions/relink'
 import { update } from '../_actions/update'
 import UpdateButton from './update-button'
 
-import { useTranslations } from 'next-intl'
-import { headers } from 'next/headers'
+import pick from 'lodash/pick'
+import { NextIntlClientProvider, useMessages, useTranslations } from 'next-intl'
+import { cookies, headers } from 'next/headers'
 import type { Tables } from '~/types/supabase'
 import Options from './options'
 
@@ -26,7 +27,9 @@ export default function AvatarInfo({
 }: AvatarInfoProps) {
 	const pathname = headers().get('x-pathname') ?? '/profile'
 	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
+	const locale = cookies().get('NEXT_LOCALE')?.value ?? 'en'
 	const t = useTranslations('ProfilePage.Buttons')
+	const messages = useMessages()
 
 	return (
 		<div className={cn('flex gap-2', className)}>
@@ -44,7 +47,12 @@ export default function AvatarInfo({
 					className='mb-4 size-24 border-2 border-milky-white md:size-[123px]'
 				/>
 				<div className={cn(type === 'osu' && 'flex w-24 gap-1 md:w-[123px]')}>
-					{type === 'osu' && <Options />}
+					<NextIntlClientProvider
+						locale={locale}
+						messages={pick(messages, 'ProfilePage.Options')}
+					>
+						{type === 'osu' && <Options />}
+					</NextIntlClientProvider>
 					<form action={type === 'discord' ? relink : update} className='grow'>
 						<input name='csrf_token' defaultValue={csrfToken} hidden />
 						<input name='pathname' defaultValue={pathname} hidden />
