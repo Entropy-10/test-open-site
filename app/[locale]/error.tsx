@@ -1,6 +1,9 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useEffect } from 'react'
+import MessageBox from '~/components/message-box'
+import Background from '~/components/ui/Background'
 
 import Button from '~/components/ui/Button'
 
@@ -10,22 +13,24 @@ interface ErrorProps {
 }
 
 export default function ErrorPage({ error, reset }: ErrorProps) {
+	const t = useTranslations('ErrorPage')
 	useEffect(() => {
 		console.error(error)
 	}, [error])
 
 	return (
-		<div className='flex min-h-screen flex-col items-center justify-center space-y-4 text-medium-blue'>
-			<h1 className='font-bold text-3xl'>Something Went Wrong!</h1>
-			<div className='flex space-x-3'>
-				<Button variant='invertedOutline' onClick={() => reset()}>
-					Try Again
-				</Button>
+		<Background className='flex min-h-screen items-center justify-center'>
+			<MessageBox title={t('title')} message={t('message')}>
+				<div className='flex gap-6 max-xs:grid max-xs:w-full max-xs:grid-cols-2'>
+					<Button onClick={() => reset()} className='max-xs:w-full'>
+						{t('retryButton')}
+					</Button>
 
-				<Button href='/' variant='invertedOutline'>
-					Go Home
-				</Button>
-			</div>
-		</div>
+					<Button href='/' variant='outline' className='max-xs:w-full'>
+						{t('goHomeButton')}
+					</Button>
+				</div>
+			</MessageBox>
+		</Background>
 	)
 }

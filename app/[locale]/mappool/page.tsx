@@ -1,9 +1,8 @@
 import { createMetadata } from '@metadata'
 import { getTranslations } from 'next-intl/server'
 
-import ComingSoon from '~/components/coming-soon'
-
 import type { MetadataProps } from '@types'
+import ComingSoon from '~/components/coming-soon'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
 	const t = await getTranslations({ locale, namespace: 'Metadata' })

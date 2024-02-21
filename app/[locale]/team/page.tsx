@@ -47,19 +47,20 @@ export default async function TeamPage() {
 		.eq('user_id', session.sub)
 		.maybeSingle()
 
-	if (!data?.teams)
+	if (!data?.teams) {
 		return (
 			<Background className='flex min-h-screen items-center justify-center'>
 				<MessageBox
-					title='NOT ON A TEAM!'
-					message='Looks like you currently are not on a team. Please go to your profile and accept an invite first.'
+					title={t('Errors.NotOnTeam.title')}
+					message={t('Errors.NotOnTeam.message')}
 				>
 					<Button variant='outline' href='/profile'>
-						PROFILE
+						{t('Errors.NotOnTeam.profileButton')}
 					</Button>
 				</MessageBox>
 			</Background>
 		)
+	}
 
 	const team = data.teams
 	const isCaptain = data.role === 'captain'

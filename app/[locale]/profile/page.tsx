@@ -54,7 +54,7 @@ export default async function ProfilePage() {
 						<div className='space-y-1'>
 							<div>
 								<span className='font-extrabold'>{t('Osu.rank')}:</span> #
-								{user.rank ? user.rank.toLocaleString() : 'No Rank'}
+								{user.rank ? user.rank.toLocaleString() : t('Errors.noRank')}
 							</div>
 
 							<div>
@@ -62,7 +62,7 @@ export default async function ProfilePage() {
 								#
 								{user.country_rank
 									? user.country_rank.toLocaleString()
-									: 'No Rank'}
+									: t('Errors.noRank')}
 							</div>
 						</div>
 

@@ -10,12 +10,10 @@ export default function MappoolTable({ className }: MappoolTableProps) {
 	return (
 		<table className={cn('table-auto', className)}>
 			<tbody>
-				<tr className='border-light-blue border-b-2'>
+				<tr className='border-light-blue border-b-2 *:text-nowrap'>
 					<td className='font-bold'>{t('round')}</td>
 					<td className='px-2.5 text-center font-bold'>{t('starRating')}</td>
-					<td className='text-nowrap px-2 text-center font-bold'>
-						{t('bestOf')}
-					</td>
+					<td className='px-2 text-center font-bold'>{t('bestOf')}</td>
 					<td className='px-2 text-center font-bold'>{t('bans')}</td>
 					<td className='px-2 text-center font-bold'>{t('protects')}</td>
 					<td className='px-1.5 font-bold text-[#ff9190]'>LM</td>
@@ -26,7 +24,7 @@ export default function MappoolTable({ className }: MappoolTableProps) {
 					<td className='px-1.5 font-bold text-[#93c47d]'>TB</td>
 					<td className='px-1 font-bold'>{t('total')}</td>
 				</tr>
-				<tr>
+				<tr className='*:text-nowrap'>
 					<td className='border-light-blue border-r-2 pr-5 text-blue'>
 						{t('qaulifiers')}
 					</td>
