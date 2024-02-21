@@ -42,9 +42,7 @@ export default async function RegisterPage() {
 			</div>
 
 			{allowRegs ? (
-				<NextIntlClientProvider
-					messages={pick(messages, 'RegistrationPage.Form')}
-				>
+				<NextIntlClientProvider messages={pick(messages, 'RegistrationPage')}>
 					<CreateTeamForm
 						osuId={session.sub}
 						discordId={session.user.discord_id}

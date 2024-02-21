@@ -40,6 +40,27 @@ export default function InfoPage() {
 - ${t('GeneralInfo.9', { sublist_alpha: '\n1.' })}
 					`}
 				/>
+
+				<Divider variant='single' />
+
+				<Heading sub>{t('GeneralInfo.Schedule.heading')}</Heading>
+				<div className='padding'>
+					<div className='px-7 lg:px-11 md:px-9'>
+						<CustomMDX
+							source={`
+${t('GeneralInfo.Schedule.1')}\n
+${t('GeneralInfo.Schedule.2')}\n
+${t('GeneralInfo.Schedule.3')}\n
+${t('GeneralInfo.Schedule.4')}\n
+${t('GeneralInfo.Schedule.5')}\n
+${t('GeneralInfo.Schedule.6')}\n
+${t('GeneralInfo.Schedule.7')}\n
+${t('GeneralInfo.Schedule.8')}\n
+${t('GeneralInfo.Schedule.9')}
+					`}
+						/>
+					</div>
+				</div>
 			</Background>
 
 			<Background className='py-10 text-light-blue' gradient={false}>

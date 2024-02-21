@@ -2,6 +2,7 @@
 
 import { ModalError } from '@types'
 import { MoreVertical } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import TextModal from '~/components/text-modal'
 import Button from '~/components/ui/Button'
@@ -10,6 +11,8 @@ import { Cancel } from '~/components/ui/modal'
 import { deleteAccount } from '../_actions/delete-account'
 
 export default function Options() {
+	const t = useTranslations('ProfilePage.Options')
+	const buttonT = useTranslations('Buttons')
 	const [open, setOpen] = useState(false)
 	const [deleting, setDeleting] = useState(false)
 	const [error, setError] = useState<ModalError | null>(null)
@@ -29,16 +32,12 @@ export default function Options() {
 			<TextModal
 				open={open}
 				setOpen={() => setOpen(!open)}
-				title={error ? error.title : 'DELETE ACCOUNT?'}
-				message={
-					error
-						? error.message
-						: 'Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.'
-				}
+				title={error ? error.title : t('DeleteAccount.title')}
+				message={error ? error.message : t('DeleteAccount.message')}
 			>
 				{error ? (
 					<Cancel onClick={() => setError(null)} variant='outline'>
-						CLOSE
+						{t('DeleteAccount.Buttons.close')}
 					</Cancel>
 				) : (
 					<div className='flex gap-6 max-xs:grid max-xs:w-full max-xs:grid-cols-2'>
@@ -47,10 +46,12 @@ export default function Options() {
 							onClick={() => handleDelete()}
 							className='text-red-400 max-xs:w-full hover:bg-red-400 hover:text-milky-white'
 						>
-							{deleting ? 'DELETING' : 'DELETE'}
+							{deleting
+								? t('DeleteAccount.Buttons.Delete.loadingText')
+								: t('DeleteAccount.Buttons.Delete.text')}
 						</Button>
 						<Cancel variant='outline' className='max-xs:w-full'>
-							NO THANKS
+							{t('DeleteAccount.Buttons.noThanks')}
 						</Cancel>
 					</div>
 				)}
@@ -71,7 +72,7 @@ export default function Options() {
 							onClick={() => setOpen(true)}
 							className='w-full px-3 py-0.5 text-left text-red-400 hover:bg-red-400 hover:text-milky-white focus:outline-none'
 						>
-							DELETE ACCOUNT
+							{t('DeleteAccount.Buttons.confirmDelete')}
 						</button>
 					</Dropdown.Item>
 				</Dropdown.Content>

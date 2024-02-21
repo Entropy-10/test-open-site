@@ -1,13 +1,13 @@
 import { useTranslations } from 'next-intl'
+import MessageBox from './message-box'
+import Background from './ui/Background'
 
 export default function ComingSoon() {
-	const t = useTranslations('Components')
+	const t = useTranslations('Components.ComingSoon')
 
 	return (
-		<div className='mt-48 flex justify-center'>
-			<h1 className='font-bold text-3xl text-medium-blue italic'>
-				{t('comingSoon')}
-			</h1>
-		</div>
+		<Background className='flex min-h-screen items-center justify-center'>
+			<MessageBox title={t('title')} message={t('message')} />
+		</Background>
 	)
 }
