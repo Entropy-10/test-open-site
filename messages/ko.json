@@ -2,7 +2,7 @@
 	"HomePage": {
 		"Header": {
 			"description": "오픈 랭크, OSU! lazer 토너먼트",
-			"hostTitle": "에 의해 호스팅"
+			"hostTitle": "가주최하는"
 		},
 		"Features": {
 			"Titles": {
@@ -331,14 +331,14 @@
 			"heading": "일정 조정."
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
+			"1": "모든 맵은 **osu! Lazer 기본 점수 매기기** 로 점수를 매깁니다.",
+			"2": "**NoFail**이 적용될 것입니다.",
+			"3": "심판은 각 게임에 참가하는 팀의 대장들에게 연락할 것입니다. {sublist_alpha} 대장들은 심판이 제공한 모든 정보를 자신의 팀에 전달하는 책임이 있습니다. {sublist_alpha} 게임 시작 **25분** 전에 알림이 전송될 것입니다. {sublist_alpha} Lazer 게임 로비 이름과 비밀번호가 각 게임 시작 **15분** 전에 전송될 것입니다.",
+			"4": "맵이 선택된 후, 참가 선수들은 로비에 참여하기 위해 **2분**의 시간이 주어집니다",
 			"heading": "GAME PROCEDURES.",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
+				"1": "맵은 맵풀 에서 본 순서대로 플레이됩니다.",
+				"2": "만약 플레이어가 **맵의 처음 1분 이내에** **연결을 끊으면**, 플레이어는 **예선 룸의 끝에서** 맵을 다시 플레이합니다.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
 				"heading": "QUALIFIERS"
 			},
