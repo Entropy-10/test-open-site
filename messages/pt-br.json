@@ -167,7 +167,7 @@
 				"title": "VOCÊ ESTÁ RESTRITO!"
 			},
 			"DuplicatePlayer": {
-				"message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de entrar em um novo time.",
+				"message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de criar um novo time.",
 				"title": "JÁ ESTÁ EM UM TIME!"
 			},
 			"Duplicate": {
@@ -311,7 +311,7 @@
 		},
 		"GeneralConduct": {
 			"1": "Respeite os outros jogadores e todos os membros da staff.",
-			"2": "Não toleramos **termos discriminatórios**. Sendo alguns deles: {sublist_alpha} Insultos raciais {sublist_alpha} Termos que podem ofender a comunidade LGBTQ+ {sublist_alpha} Comentários sexistas {sublist_alpha} Discurso de ódioz",
+			"2": "Não toleramos **termos discriminatórios**. Sendo alguns deles: {sublist_alpha} Insultos raciais {sublist_alpha} Termos que podem ofender a comunidade LGBTQ+ {sublist_alpha} Comentários sexistas {sublist_alpha} Discurso de ódio",
 			"3": "TEST Open não tem tolerância para nenhum tipo de bullying.",
 			"4": "**Conteúdo NSFW** é proibido. Isso incluí: {sublist_alpha} Nudez {sublist_alpha} Gore/Conteúdos Violentos {sublist_alpha} Drogas/Abuso de Álcool {sublist_alpha} Conteúdo Perturbador",
 			"5": "Tente manter **tópicos controversos** a um mínimo.",
@@ -333,8 +333,8 @@
 		"GameProcedures": {
 			"1": "Todos os mapas serão pontuados com a **pontuação padrão do osu! Lazer**.",
 			"2": "**NoFail** será aplicado.",
-			"3": "Os juízes entrarão em contato com os Capitães de qualquer equipe participante para cada jogo. {sublist_alpha} Capitães serão responsáveis por repassar qualquer tipo de informação dada pelo juiz para a sua equipe. {sublist_alpha} Um lembrete será enviado com **25 minutos** de antecedência. {sublist_alpha} O nome e a senha da sala do Lazer serão enviadas com **15 minutos** antes do jogo.",
-			"4": "Após a seleção de um mapa, os jogadores participantes têm **2 minutos** para entrar no lobby.",
+			"3": "Os juízes entrarão em contato com os Capitães de qualquer equipe participante para cada jogo. {sublist_alpha} Capitães serão responsáveis por repassar qualquer tipo de informação dada pelo juiz para a sua equipe. {sublist_alpha} Um lembrete será enviado com **25 minutos** de antecedência. {sublist_alpha} O nome e a senha da sala do Lazer serão enviadas com **15 minutos** antes de cada jogo.",
+			"4": "Após a seleção de um mapa, os jogadores participantes terão **2 minutos** para entrar no lobby.",
 			"heading": "PROCEDIMENTOS DE JOGO.",
 			"Qualifiers": {
 				"1": "Os mapas serão jogados na mesma ordem em que foram apresentados na mappool.",
