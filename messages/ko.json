@@ -23,7 +23,7 @@
 		"Originals": {
 			"title": "원작품",
 			"subtitle": "맞춤 곡 곧 출시 예정",
-			"description": "무대를 넘어서며 독창적인 TEST 오리지널을 하나씩 풀어나가세요. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들을 마련했어요. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
+			"description": "단계를 통과하여 TEST 오리지널 곡들을 즐겨보자!. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들!. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
 			"tracksTitle": "트랙리스트.",
 			"listenButton": "들어보기"
 		}
@@ -424,8 +424,8 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "곧 출시 예정!",
+			"message": "이 페이지는 아직 작업 중입니다. 관련 정보를 기다려 주시고, 준비가 완료되면 다시 확인해 주세요."
 		}
 	},
 	"APICallbacks": {
