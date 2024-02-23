@@ -194,25 +194,25 @@
 					"acronym": "acronym",
 					"player": "player"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "DRUŻYNA {type} JUŻ ISTNIEJE!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "Nie udało się utworzyć drużyny. Wygląda to na problem z naszej strony. Proszę, spróbuj ponownie i sprawdź, czy to pomoże.",
+				"title": "UTWORZENIE DRUŻYNY NIE POWIODŁO SIĘ!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "PRZESŁANIE FLAGI NIE POWIODŁO SIĘ!",
+				"message": "Nie udało się przesłać flagi na nasz serwer. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
+		"heading": "LISTA DRUŻYN.",
 		"teamsRegistered": "ZAREJESTROWANE DRUŻYNY"
 	},
 	"UnauthorizedPage": {
 		"authFailed": "AUTORYZACJA NIE POWIODŁA SIĘ!",
-		"unauthorized": "UNAUTHORIZED!",
+		"unauthorized": "NIEZAUTORYZOWANO!",
 		"homeButton": "STRONA GŁÓWNA",
 		"Messages": {
 			"default": "Zaloguj się, aby otrzymać dostęp do tej strony."
@@ -240,8 +240,8 @@
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "MOJA DRUŻYNA.",
+			"player": "LISTA GRACZY."
 		},
 		"timezone": "STREFA CZASOWA",
 		"Buttons": {
