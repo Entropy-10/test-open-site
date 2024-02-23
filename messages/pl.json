@@ -70,8 +70,8 @@
 	},
 	"ErrorPage": {
 		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home",
+		"retryButton": "Spróbuj ponownie",
+		"goHomeButton": "Powrót do strony głównej",
 		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
 	},
 	"ProfilePage": {
@@ -83,8 +83,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "MÓJ PROFIL.",
+			"team": "MOJA DRUŻYNA."
 		},
 		"Osu": {
 			"rank": "RANGA GLOBALNA",
@@ -115,39 +115,39 @@
 				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "NIE UDAŁO SIĘ {type} ZAPROSZENIA!",
+				"message": "Przepraszamy, {type} zaproszenia nie powiodło się. Proszę, spróbuj ponownie i sprawdź, czy to pomoże.",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "odrzuć",
+					"accept": "zaakceptuj"
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "JESTEŚ JUŻ W DRUŻYNIE!",
+				"message": "Wygląda na to, że nadal znajdujesz się w drużynie. Proszę, opuść lub usuń drużynę, zanim usuniesz swoje konto."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"title": "USUNIĘCIE KONTA NIE POWIODŁO SIĘ!",
+				"message": "Przepraszamy, nie udało się usunąć twojego konta. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
 			},
 			"FailedUpdate": {
 				"title": "FAILED TO UPDATE!",
 				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
 			},
-			"noRank": "No Rank"
+			"noRank": "Brak Rangi"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
+				"title": "USUNĄĆ KONTO?",
 				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
 				"Buttons": {
 					"Delete": {
-						"text": "DELETE",
-						"loadingText": "DELETING"
+						"text": "USUŃ",
+						"loadingText": "USUWANIE"
 					},
-					"noThanks": "NO THANKS",
-					"confirmDelete": "DELETE ACCOUNT",
-					"close": "CLOSE"
+					"noThanks": "NIE, DZIĘKUJĘ",
+					"confirmDelete": "USUŃ KONTO",
+					"close": "ZAMKNIJ"
 				}
 			}
 		}
@@ -171,10 +171,10 @@
 			"Success": {
 				"title": "STWORZONO DRUŻYNĘ!",
 				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"teamManagementButton": "ZARZĄDZANIE DRUŻYNĄ"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
+				"upload": "Kliknij tutaj aby przesłać",
 				"recommended": "Recommended Ratio 9:4"
 			}
 		},
@@ -191,8 +191,8 @@
 				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
 				"Types": {
 					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"acronym": "akronim",
+					"player": "gracz"
 				},
 				"title": "DRUŻYNA {type} JUŻ ISTNIEJE!"
 			},
@@ -272,67 +272,67 @@
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"title": "USUNIĘCIE {type} NIE POWIODŁO SIĘ!",
+				"message": "Przepraszamy, nie udało się usunąć {type}. Proszę, spróbuj ponownie i sprawdź, czy to pomoże.",
 				"Types": {
-					"player": "player",
-					"invite": "invite"
+					"player": "gracz",
+					"invite": "zaproszenie"
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"title": "NIE MOŻESZ ZAPROSIĆ SIEBIE!",
+				"message": "Nie możesz zaprosić siebie samego do swojej drużyny. Jeśli chcesz zmienić drużynę, wpierw usuń dotychczasową."
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"title": "GRACZ ZOSTAŁ JUŻ ZAPROSZONY!",
+				"message": "Wygląda na to, że już wysłałeś zaproszenie temu graczowi. Proszę, usuń dotychczasowe zaproszenie przed spróbowaniem ponownie."
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "NIE UDAŁO SIĘ ZAPROSIĆ GRACZA!",
+				"message": "Przepraszamy, usunięcie gracza nie powiodło się. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "GRACZ NADAL JEST W DRUŻYNIE!",
+				"message": "Usuń wszystkich graczy przed usunięciem drużyny."
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "USUNIĘCIE DRUŻYNY NIE POWIODŁO SIĘ!",
+				"message": "Przepraszamy, nie udało się usunąć twojej drużyny. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "GRACZ JEST JUŻ W DRUŻYNIE!",
+				"message": "Gracz jest już w twojej drużynie. Jeśli jest to błąd, spróbuj ponownie i sprawdź, czy to pomoże."
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-				"profileButton": "PROFILE"
+				"title": "NIE JESTEŚ W DRUŻYNIE!",
+				"message": "Nie znajdujesz się aktualnie w żadnej drużynie. Odwiedź swój profil i zaakceptuj zaproszenie.",
+				"profileButton": "PROFIL"
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
 			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
+			"2": "Drużyny składają się z **od 3 do 5 graczy**.",
+			"3": "Drużyny muszą wybrać dokładnie **3 graczy** do każdej mapy granej w turnieju.",
 			"4": "There are **no rank requirements** for participants.",
 			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
 			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
 			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
 			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
 			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO.",
+			"heading": "OGÓLNE INFORMACJE.",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
+				"1": "**Rejestracja:** 26 luty - 18 marzec",
 				"2": "**Screening:** March 18th - March 23rd",
 				"3": "**Qualifiers:** March 29th - 31st",
 				"4": "**RO32:** April 5th - 7th",
 				"5": "**RO16:** April 12th - 14th",
 				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
+				"7": "**Półfinały:** 26 - 28 kwiecień",
+				"8": "**Finały:** 3 - 5 maj",
 				"9": "**Grand Finals:** May 10th - 12th",
-				"heading": "SCHEDULE"
+				"heading": "HARMONOGRAM"
 			}
 		},
 		"Registrations": {
@@ -341,10 +341,10 @@
 			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
 			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
 			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
+			"heading": "REJESTRACJA."
 		},
 		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
+			"1": "Szanuj innych graczy oraz wszystkich członków personelu.",
 			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
 			"3": "TEST Open has no tolerance for bullying of any kind.",
 			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
@@ -362,10 +362,10 @@
 			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
 			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
 			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
+			"heading": "HARMONOGRAM."
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
+			"1": "Wszystkie mapy będą oceniane według **podstawowej punktacji osu! Lazer**.",
 			"2": "**NoFail** will be enforced.",
 			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
 			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
@@ -374,7 +374,7 @@
 				"1": "Maps will be played in the same order as seen on the mappool.",
 				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
 				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
-				"heading": "QUALIFIERS"
+				"heading": "KWALIFIKACJE"
 			},
 			"Match": {
 				"1": "The win-condition for each match will be **TeamVS**.",
@@ -397,19 +397,19 @@
 		"MappoolInfo": {
 			"1": "The mappool will be released the **Sunday** of every week.",
 			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"heading": "INFORMACJE MAPPOOL.",
 			"Table": {
-				"round": "Round",
+				"round": "Runda",
 				"starRating": "SR",
 				"bestOf": "Best Of",
 				"bans": "Bans",
 				"protects": "Protects",
 				"total": "Total",
-				"qaulifiers": "Qualifiers",
+				"qaulifiers": "Kwalifikacje",
 				"roundOf32": "Round of 32",
 				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
+				"quarterfinals": "Ćwierćfinały",
+				"semifinals": "Półfinały",
 				"finals": "Finals",
 				"grandFinals": "Grand Finals"
 			}
@@ -419,12 +419,12 @@
 			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
 			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
 			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"heading": "PULA NAGRÓD."
 		}
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
+			"title": "JUŻ WKRÓTCE!",
 			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
 		}
 	},
