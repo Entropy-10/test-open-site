@@ -8,6 +8,7 @@ export default function Sponsor() {
 	const t = useTranslations('HomePage.SponsorSpot')
 
 	return (
+
 		<div className='grid w-full grid-cols-1 md:h-[250px] md:grid-cols-2'>
 			<div className='flex items-center justify-center gap-5 bg-[#F5F5F5] px-4 py-6 md:p-2'>
 				<Image

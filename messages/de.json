@@ -26,6 +26,16 @@
 			"description": "Schreite durch die Runden um exklusive TEST originale freizuschalten. Talentierte Künstler haben Orginelle Songs erstellt, welche progressiv in jeder Runde freigeschaltet werden: Qualifizierung, Halbfinale, Finale, und das große Finale.\nJedes Original beinhaltet einen einzigartigen Stil und Kunst, diese Beatmaps sind für die besten des Turniers vorbehalten.",
 			"tracksTitle": "TRACKLISTE.",
 			"listenButton": "JETZT ANHÖREN"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -405,7 +415,7 @@
 				"bans": "Sperren",
 				"protects": "Schützen",
 				"total": "Insgesamt",
-				"qaulifiers": "Qualifizierung",
+				"qualifiers": "Qualifizierung",
 				"roundOf32": "Runde der 32",
 				"roundOf16": "Achtelfinale",
 				"quarterfinals": "Viertelfinale",
@@ -424,7 +434,7 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "Coming Soon",
+			"title": "COMING SOON!",
 			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
 		}
 	},

@@ -26,6 +26,16 @@
 			"description": "Faites avancer les étapes pour débloquer des TEST Originals exclusifs. Des créateurs talentueux ont créé des chansons personnalisées qui se révèlent progressivement lors des éliminatoires, des demi-finales, des finales et des grandes finales. Chaque beatmap ont la style et l'art uniques. Ces beatmaps sont réservées aux meilleurs compétiteurs du tournoi.",
 			"tracksTitle": "LISTE DES TRACES.",
 			"listenButton": "ÉCOUTE MAINTENANT"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -405,7 +415,7 @@
 				"bans": "Bans",
 				"protects": "Protèges",
 				"total": "Total",
-				"qaulifiers": "Éliminatoire",
+				"qualifiers": "Éliminatoire",
 				"roundOf32": "Top 32",
 				"roundOf16": "Top 16",
 				"quarterfinals": "Quart de Finale",
@@ -424,7 +434,7 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "Coming Soon",
+			"title": "COMING SOON!",
 			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
 		}
 	},

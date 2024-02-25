@@ -26,6 +26,16 @@
 			"description": "随赛程进行将逐步解锁独家的TEST原创曲。才华横溢的曲师们创造的定制曲目将随赛事进入到四分之一决赛，半决赛，决赛及总决赛阶段时一一揭晓。这些使用原创曲目，兼具风格及艺术的谱面为赛事中的顶尖选手量身打造。",
 			"tracksTitle": "曲目列表",
 			"listenButton": "立刻收听"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -405,7 +415,7 @@
 				"bans": "禁图",
 				"protects": "保图",
 				"total": "总计",
-				"qaulifiers": "资格赛",
+				"qualifiers": "资格赛",
 				"roundOf32": "32 强",
 				"roundOf16": "16 强",
 				"quarterfinals": "四分之一决赛",
@@ -424,7 +434,7 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "Coming Soon",
+			"title": "COMING SOON!",
 			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
 		}
 	},
