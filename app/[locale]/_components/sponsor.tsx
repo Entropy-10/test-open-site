@@ -37,7 +37,9 @@ export default function Sponsor() {
 					<SponsorCode />
 					<div>{t('Coupon.checkout')}</div>
 				</div>
-				<Button>{t('Coupon.shopButton')}</Button>
+				<Button href='https://bluebunny.store/'>
+					{t('Coupon.shopButton')}
+				</Button>
 			</div>
 		</div>
 	)

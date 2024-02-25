@@ -66,7 +66,7 @@ export default function LocaleLayout({
 					locale={locale}
 					messages={pick(messages, 'ErrorPage')}
 				>
-					<Header locale={locale} />
+					<Header />
 					{isPreview && <PreviewWarning />}
 					<main className='flex-1'>{children}</main>
 					<Footer />

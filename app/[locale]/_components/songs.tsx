@@ -21,7 +21,8 @@ export default function Songs() {
 							duration: 15,
 							ease: 'linear'
 						}}
-						className='absolute flex gap-5'>
+						className='absolute flex gap-5'
+					>
 						<SongsContainer />
 						<SongsContainer />
 					</motion.div>

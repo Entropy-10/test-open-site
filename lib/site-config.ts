@@ -21,11 +21,11 @@ export const localesMetadata = [
 	{ code: 'ru', name: 'Русский', flag: 'ru.svg' },
 	{ code: 'ko', name: '한국어', flag: 'ko.svg' },
 	{ code: 'ja', name: '日本語', flag: 'ja.svg' },
-	{ code: 'zh', name: '中文', flag: 'zh.svg' },
+	{ code: 'zh', editorCode: 'zhcn', name: '中文', flag: 'zh.svg' },
 	{ code: 'de', name: 'Deutsch', flag: 'de.svg' },
 	{ code: 'tl', name: 'Tagalog', flag: 'tl.svg' },
 	{ code: 'pl', name: 'Polski', flag: 'pl.svg' },
-	{ code: 'pt-br', name: 'Português', flag: 'pt-br.svg' }
+	{ code: 'pt-br', editorCode: 'ptbr', name: 'Português', flag: 'pt-br.svg' }
 ]
 
 const sheetLink =
