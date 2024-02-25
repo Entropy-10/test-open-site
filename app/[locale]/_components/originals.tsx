@@ -9,7 +9,7 @@ export default function Originals() {
 	const t = useTranslations('HomePage.Originals')
 
 	return (
-		<section className='flex flex-col items-center pb-10 text-light-blue xl:flex-row xl:justify-between xl:pb-0'>
+		<section className='mt-10 flex flex-col items-center pb-10 text-light-blue xl:flex-row xl:justify-between xl:pb-0'>
 			<div className='flex flex-col px-4 md:mr-10 md:flex-row lg:justify-normal md:justify-between lg:space-x-12 md:pl-12 xl:pl-24'>
 				<article className='lg:min-w-[450px] md:min-w-[400px]'>
 					<h3 className='mb-2 text-center font-extrabold text-4xl md:text-left lg:text-6xl sm:text-5xl'>

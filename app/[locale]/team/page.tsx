@@ -99,7 +99,7 @@ export default async function TeamPage() {
 
 					{isCaptain ? (
 						<div className='flex gap-3'>
-							<Button className='w-[180px]'>{t('Buttons.edit')}</Button>
+							{/* <Button className='w-[180px]'>{t('Buttons.edit')}</Button> */}
 							<form action={deleteTeam}>
 								<CsrfInput token={csrfToken} />
 								<input name='team_id' defaultValue={team.id} hidden />

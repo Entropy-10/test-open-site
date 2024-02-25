@@ -26,7 +26,7 @@ export default function MappoolTable({ className }: MappoolTableProps) {
 				</tr>
 				<tr className='*:text-nowrap'>
 					<td className='border-light-blue border-r-2 pr-5 text-blue'>
-						{t('qaulifiers')}
+						{t('qualifiers')}
 					</td>
 					<td className='text-center text-blue'>6.8</td>
 					<td className='text-center text-blue'>-</td>
