@@ -26,7 +26,7 @@ export default function LanguagePicker({
 
 	return (
 		<Dropdown.Root>
-			<Dropdown.Trigger className='group flex select-none items-center space-x-1 focus:outline-none'>
+			<Dropdown.Trigger className='group flex w-12 select-none items-center justify-between focus:outline-none'>
 				<Image
 					width={20}
 					height={15}

@@ -55,7 +55,7 @@ export default async function Header() {
 				</nav>
 
 				<div className='flex gap-3'>
-					<Suspense>
+					<Suspense fallback={<div className='w-12' />}>
 						<LanguageWrapper />
 					</Suspense>
 
