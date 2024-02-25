@@ -26,6 +26,16 @@
 			"description": "Avanza a través de las rondas para desbloquear Originales de TEST exclusivas. Creadores talentosos compusieron pistas musicales originales que se revelarán progresivamente en clasificatorias, semifinales, finales y la gran final. Cada pista original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
 			"tracksTitle": "LISTA DE CANCIONES.",
 			"listenButton": "ESCUCHA AHORA"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -381,7 +391,7 @@
 				"2": "Los Warmups, Protects, Bans y Picks deben ser enviados en **2 minutos**.",
 				"3": "Se espera que los equipos tendrán 3 jugadores en la sala dentro de **5 minutos luego de la hora en que empieza la partida**. Perderán lo siguiente en cada intervalo de tiempo. {sublist_alpha} Perderás tus protects estando 5 minutos tarde. {sublist_alpha} Perderás tus bans estando 10 minutos tarde. {sublist_alpha} Perderás tu partida estando 15 minutos tarde.",
 				"4": "Los jugadores deben de estar en una casilla dentro de la sala correspondiente a su equipo. {sublist_alpha} Equipo 1 (Rojo): Casillas 1, 2, y 3. {sublist_alpha} Equipo 2 (Azul): Casillas 4, 5, y 6.",
-				"5": "Los capitanes usarán el **comando !roll en el hilo de Discord** de su partida para decidir **el orden de Picks/Bans**. El capitán con el valor más alto podrá seleccionar uno de los siguientes, mientras que el otro capitán recibirá el otro: {sublist_alpha} Primer Pick y Segundo Ban {sublist_alpha} Segundo Pick y Primer Ban",
+				"5": "Captains will use the **/roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
 				"6": "Los equipos tendrán la opción de jugar 1 mapa de su elección como un calentamiento (warmup) antes de la partida. {sublist_alpha} Los calentamientos deben de **durar menos de 4 minutos**. {sublist_alpha} Los calentamientos **no deberán de ser parte del la mappool**.",
 				"7": "Los protects serán **enviados de forma privada** al árbitro antes de la fase de baneos.",
 				"8": "La fase de baneos se harán en **formato de serpiente** (ABBA). {sublist_alpha} Equipo 1 Banea {sublist_alpha} Equipo 2 Banea dos veces {sublist_alpha} Equipo 1 Banea",
@@ -405,7 +415,7 @@
 				"bans": "Bans",
 				"protects": "Protecciones",
 				"total": "Total",
-				"qaulifiers": "Clasificatorias",
+				"qualifiers": "Qualifiers",
 				"roundOf32": "Ronda de 32",
 				"roundOf16": "Ronda de 16",
 				"quarterfinals": "Cuartos de Final",
