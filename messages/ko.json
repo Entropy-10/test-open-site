@@ -26,6 +26,16 @@
 			"description": "단계를 통과하여 TEST 오리지널 곡들을 즐겨보자!. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들!. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
 			"tracksTitle": "트랙리스트.",
 			"listenButton": "들어보기"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -381,7 +391,7 @@
 				"2": "워밍업, 보호, 금지, 그리고 선택은 **2분** 안에 제출되어야 합니다.",
 				"3": "팀은 **경기 시작 후 5분 이내에** 로비 안에 3명의 플레이어가 있어야 합니다. 각 시간에 다음을 포기해야 합니다. {sublist_alpha} 5분 지각은 보호를 포기합니다. {sublist_alpha} 10분 지각은 금지를 포기합니다. {sublist_alpha} 15분 지각은 경기를 포기합니다.",
 				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
-				"5": "Captains will use the **!roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
+				"5": "Captains will use the **/roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
 				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
 				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
 				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
@@ -405,7 +415,7 @@
 				"bans": "Bans",
 				"protects": "Protects",
 				"total": "Total",
-				"qaulifiers": "Qualifiers",
+				"qualifiers": "Qualifiers",
 				"roundOf32": "Round of 32",
 				"roundOf16": "Round of 16",
 				"quarterfinals": "Quarterfinals",
