@@ -26,6 +26,16 @@
 			"description": "Avance pelas fases para desbloquear originais do TEST exclusivos. Criadores talentosos compuseram músicas originais que são progressivamente reveladas com os estágios de qualificação, semifinals, finals e grand finals. Com cada música original apresentando estilo e arte únicos, estes beatmaps estão reservados para os melhores competidores deste torneio.",
 			"tracksTitle": "LISTA DE MÚSICAS.",
 			"listenButton": "OUÇA AGORA"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -405,7 +415,7 @@
 				"bans": "Banimentos",
 				"protects": "Protegidos",
 				"total": "Total",
-				"qaulifiers": "Qualificatórias",
+				"qualifiers": "Qualifiers",
 				"roundOf32": "Rodada de 32",
 				"roundOf16": "Rodada de 16",
 				"quarterfinals": "Quartas de final",
@@ -424,7 +434,7 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "Coming Soon",
+			"title": "COMING SOON!",
 			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
 		}
 	},

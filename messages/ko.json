@@ -23,9 +23,19 @@
 		"Originals": {
 			"title": "원작품",
 			"subtitle": "맞춤 곡 곧 출시 예정",
-			"description": "무대를 넘어서며 독창적인 TEST 오리지널을 하나씩 풀어나가세요. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들을 마련했어요. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
+			"description": "단계를 통과하여 TEST 오리지널 곡들을 즐겨보자!. 창의력이 넘치는 제작자들이 예선부터 준결승, 결승, 그리고 대망의 결승전에 이르기까지, 단계마다 새롭게 드러나는 맞춤형 트랙들!. 각기 독특한 스타일과 아트로 빛나는 이 비트맵들은, 대회에서 최고의 플레이어들만의 특권입니다",
 			"tracksTitle": "트랙리스트.",
 			"listenButton": "들어보기"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -72,7 +82,7 @@
 		"title": "문제가 발생했습니다!",
 		"retryButton": "재시도",
 		"goHomeButton": "홈으로 돌아가기",
-		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+		"message": "죄송하지만, 우리 쪽에서 문제가 발생한 것 같습니다. '다시 시도'를 클릭해 보실 수 있고, 그것이 작동하지 않으면 '홈으로 돌아가기'를 클릭할 수 있습니다."
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -134,20 +144,20 @@
 				"title": "업데이트가 실패했습니다!",
 				"message": "죄송합니다. osu 프로필 정보를 업데이트하지 못했습니다. 다시 시도해 보세요."
 			},
-			"noRank": "No Rank"
+			"noRank": "랭크 없음"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
-				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"title": "계정을 삭제하시겠습니까?",
+				"message": "계정을 삭제하시면 저장된 모든 데이터가 삭제되며, osu! 및 Discord에 대한 모든 활성 액세스 토큰이 취소됩니다.",
 				"Buttons": {
 					"Delete": {
-						"text": "DELETE",
-						"loadingText": "DELETING"
+						"text": "삭제",
+						"loadingText": "삭제 중"
 					},
-					"noThanks": "NO THANKS",
-					"confirmDelete": "DELETE ACCOUNT",
-					"close": "CLOSE"
+					"noThanks": "아니요, 괜찮습니다",
+					"confirmDelete": "계정 삭제",
+					"close": "닫기"
 				}
 			}
 		}
@@ -305,8 +315,8 @@
 			},
 			"NotOnTeam": {
 				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-				"profileButton": "PROFILE"
+				"message": "현재 팀에 속해있지 않은 것으로 보입니다. 프로필로 가서 먼저 초대를 수락해 주세요.",
+				"profileButton": "프로필"
 			}
 		}
 	},
@@ -323,29 +333,29 @@
 			"9": "Streaming, Commentary, Design, Translation을 제외한 어떠한 역할을 맡고 있는 스태프 멤버도 본 대회에 참여할 수 없습니다.",
 			"heading": "일반 정보.",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
-				"heading": "SCHEDULE"
+				"1": "**등록:** 2월 26일 - 3월 18일",
+				"2": "**심사:** 3월 18일 - 3월 23일",
+				"3": "**예선:** 3월 29일 - 31일",
+				"4": "**32강:** 4월 5일 - 7일",
+				"5": "**16강:** 4월 12일 - 14일",
+				"6": "**8강전:** 4월 19일 - 21일",
+				"7": "**준결승:** 4월 26일 - 28일",
+				"8": "**파이널:** 5월 3일 - 5일",
+				"9": "**그랜드 파이널:** 5월 10일 - 12일",
+				"heading": "일정"
 			}
 		},
 		"Registrations": {
 			"1": "**osu! 계정과 Discord 계정**을 모두 사용하여 웹사이트에 가입해야 합니다.",
-			"2": "팀 생성 및 관리는 **[TEST Open 웹사이트](https://test-open.com)**를 통해 이루어집니다.",
+			"2": "팀 생성 및 관리는 **[TEST Open 웹사이트](https://test-open.com)** 를 통해 이루어집니다.",
 			"3": "**자유 계약 선수 게시물**을 생성하려면, **Discord 서버**에서 looking-for-team 채널을 찾아가세요. 그곳에서 **TEST Bot**을 통해 게시물을 생성할 수 있습니다.",
-			"4": "웹사이트가 다운되었다면, 관리자에게 **등록 양식(registeration form)**을 요청할 수 있습니다. 하지만, 이 방법으로 가입을 선택한 경우, 정보는 시트에 표시되지만 웹사이트에는 수동으로 업데이트될 때까지 보이지 않을 것입니다.",
+			"4": "웹사이트가 다운되었다면, 관리자에게 **등록 양식(registeration form)** 을 요청할 수 있습니다. 하지만, 이 방법으로 가입을 선택한 경우, 정보는 시트에 표시되지만 웹사이트에는 수동으로 업데이트될 때까지 보이지 않을 것입니다.",
 			"5": "스태프 팀은 **자유 계약 팀**을 생성하지 않습니다. 따라서 참여를 원한다면, 스스로 팀을 찾아야 합니다.",
 			"heading": "등록 안내."
 		},
 		"GeneralConduct": {
 			"1": "다른 플레이어와 모든 스태프 멤버를 존중하세요.",
-			"2": "**차별적인 용어** 사용 금지. 이에는 다음이 포함되지만 이에 국한되지 않습니다:{sublist_alpha} 인종 차별적인 발언 {sublist_alpha} LGBTQ+ 구성원에게 모욕적일 수 있는 용어 {sublist_alpha} 성차별적인 댓글 {sublist_alpha} 혐오 발언",
+			"2": "**차별적인 용어** 사용 금지. 이에는 다음이 포함되지만 이에 국한되지 않습니다:{sublist_alpha} 인종 차별적인 발언 {sublist_alpha} LGBTQ+ 구성원에게 모욕적일 수 있는 용어 {sublist_alpha} 성 차별적인 댓글 {sublist_alpha} 혐오 발언",
 			"3": "TEST Open은 어떠한 형태의 괴롭힘도 용납하지 않습니다.",
 			"4": "NSFW(성인용) 콘텐츠는 금지됩니다. 이에는 다음이 포함됩니다: {sublist_alpha} 누드 {sublist_alpha} 고어(Gore)/폭력적 콘텐츠 {sublist_alpha} 약물/알코올 남용 {sublist_alpha} 불쾌한 콘텐츠",
 			"5": "**논란이 될 수 있는 대화**는 최소화하세요.",
@@ -353,7 +363,7 @@
 			"7": "어떠한 상황에서도 **독싱(개인 정보 유출) 은 허용되지 않습니다**.",
 			"8": "**Discord 이용 약관** 하에 금지된 콘텐츠는 허용되지 않습니다.",
 			"9": "**대회의 주요 언어는 영어이므로**, 스태프와 소통할 때 이를 염두에 두세요.",
-			"10": "이러한 규칙을 어기는 사람을 발견하면, **관리자(Admin) 나 모더레이터(Moderator)**에게 연락하여 해결해 주세요.",
+			"10": "이러한 규칙을 어기는 사람을 발견하면, **관리자(Admin) 나 모더레이터(Moderator)** 에게 연락하여 해결해 주세요.",
 			"11": "마지막으로, **상식**을 사용하고 모두에게 **환영받는 환경**을 만드세요!",
 			"heading": "일반 행동 규범."
 		},
@@ -361,7 +371,7 @@
 			"1": "경기 일정은 Discord 서버의 **TEST Bot**을 통해 예약됩니다.",
 			"2": "예선 로비의 일정을 잡거나 변경하기 위해서는 **/schedule** 명령어를 사용하고 요구되는 정보를 입력해 주세요.",
 			"3": "경기 일정을 변경하기 위해서는 **/reschedule** 명령어를 사용하고 요구되는 정보를 입력해 주세요. 이는 scheduling 채널에 재조정 요청을 보낼 것입니다.",
-			"4": "경기 일정을 재조정할 때, **양 팀의 대표**는 재조정 요청이 scheduling 채널에 있을 때 **이를 수락해야만** 재조정이 완료됩니다.",
+			"4": "경기 일정을 재조정할 때, **양 팀의 대장**은 재조정 요청이 scheduling 채널에 있을 때 **이를 수락해야만** 재조정이 완료됩니다.",
 			"heading": "일정 조정."
 		},
 		"GameProcedures": {
@@ -405,7 +415,7 @@
 				"bans": "Bans",
 				"protects": "Protects",
 				"total": "Total",
-				"qaulifiers": "Qualifiers",
+				"qualifiers": "Qualifiers",
 				"roundOf32": "Round of 32",
 				"roundOf16": "Round of 16",
 				"quarterfinals": "Quarterfinals",
@@ -424,8 +434,8 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "Coming Soon",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "곧 출시 예정!",
+			"message": "이 페이지는 아직 작업 중입니다. 관련 정보를 기다려 주시고, 준비가 완료되면 다시 확인해 주세요."
 		}
 	},
 	"APICallbacks": {

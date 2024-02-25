@@ -26,6 +26,16 @@
 			"description": "Avanza a través de las rondas para desbloquear Originales de TEST exclusivas. Creadores talentosos compusieron pistas musicales originales que se revelarán progresivamente en clasificatorias, semifinales, finales y la gran final. Cada pista original teniendo un estilo y arte único, estos beatmaps son reservados para los mejores competidores del torneo.",
 			"tracksTitle": "LISTA DE CANCIONES.",
 			"listenButton": "ESCUCHA AHORA"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -405,7 +415,7 @@
 				"bans": "Bans",
 				"protects": "Protecciones",
 				"total": "Total",
-				"qaulifiers": "Clasificatorias",
+				"qualifiers": "Qualifiers",
 				"roundOf32": "Ronda de 32",
 				"roundOf16": "Ronda de 16",
 				"quarterfinals": "Cuartos de Final",
@@ -424,7 +434,7 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "Coming Soon",
+			"title": "COMING SOON!",
 			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
 		}
 	},

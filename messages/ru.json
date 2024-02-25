@@ -26,6 +26,16 @@
 			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
 			"tracksTitle": "TRACKLIST.",
 			"listenButton": "LISTEN NOW"
+		},
+		"SponsorSpot": {
+			"sponsoredBy": "TEST OPEN is proudly sponsored by",
+			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"Coupon": {
+				"save": "SHOP AND SAVE 10%",
+				"codeTitle": "USE CODE",
+				"checkout": "AT CHECKOUT",
+				"shopButton": "SHOP NOW"
+			}
 		}
 	},
 	"NavItems": {
@@ -405,7 +415,7 @@
 				"bans": "Bans",
 				"protects": "Protects",
 				"total": "Total",
-				"qaulifiers": "Qualifiers",
+				"qualifiers": "Qualifiers",
 				"roundOf32": "Round of 32",
 				"roundOf16": "Round of 16",
 				"quarterfinals": "Quarterfinals",
@@ -424,7 +434,7 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "Coming Soon",
+			"title": "COMING SOON!",
 			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
 		}
 	},
