@@ -8,33 +8,31 @@ export default function Sponsor() {
 	const t = useTranslations('HomePage.SponsorSpot')
 
 	return (
-		<div className='grid w-full grid-cols-1 md:h-[350px] md:grid-cols-2'>
+		<div className='grid w-full grid-cols-1 md:h-[250px] md:grid-cols-2'>
 			<div className='flex items-center justify-center gap-5 bg-[#F5F5F5] px-4 py-6 md:p-2'>
 				<Image
-					height={186}
-					width={132}
+					height={155}
+					width={110}
 					src={SponsorLogo}
 					alt='bluebunny'
-					className='h-[155px] w-[110px] md:h-[186px] md:w-[132px]'
+					className='h-[155px] w-[110px]'
 				/>
 
 				<div className='text-center font-medium text-light-blue'>
 					<div className='mb-1 text-dark-blue text-xs lg:text-sm'>
 						{t('sponsoredBy')}
 					</div>
-					<div className='mb-2 font-black text-3xl lg:text-5xl sm:text-4xl'>
-						BLUEBUNNY
-					</div>
-					<div className='text-base lg:text-lg'>{t('sponsorMessage')}</div>
+					<div className='mb-2 font-black text-3xl sm:text-4xl'>BLUEBUNNY</div>
+					<div className='text-base'>{t('sponsorMessage')}</div>
 				</div>
 			</div>
 
 			<div className='flex flex-col items-center justify-center gap-4 bg-light-blue/60 px-4 py-6 text-center text-milky-white md:gap-5 md:p-2'>
-				<div className='font-black text-3xl lg:text-5xl sm:text-4xl'>
+				<div className='font-black text-3xl sm:text-4xl'>
 					{t('Coupon.save')}
 				</div>
 
-				<div className='flex items-center gap-4 font-medium text-lg lg:text-xl'>
+				<div className='flex items-center gap-4 font-medium text-lg'>
 					<div>{t('Coupon.codeTitle')}</div>
 					<SponsorCode />
 					<div>{t('Coupon.checkout')}</div>
