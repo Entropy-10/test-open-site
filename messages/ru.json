@@ -32,20 +32,20 @@
 			"sponsorMessage": "КАСТОМНЫЕ ОБЛОЖКИ НА ПЛАНШЕТ ПО СПРАВЕДЛИВОЙ ЦЕНЕ",
 			"Coupon": {
 				"save": "ПОКУПАЙ И СЪЭКОНОМЬ 10%",
-				"codeTitle": "USE CODE",
-				"checkout": "AT CHECKOUT",
-				"shopButton": "SHOP NOW"
+				"codeTitle": "ИСПОЛЬЗУЙ КОД",
+				"checkout": "ПРИ ОПЛАТЕ",
+				"shopButton": "ПОКУПАЙ СЕЙЧАС"
 			}
 		}
 	},
 	"NavItems": {
 		"home": "ГЛАВНАЯ СТРАНИЦА",
-		"mappool": "MAPPOOL",
-		"schedule": "SCHEDULE",
+		"mappool": "МАППУЛ",
+		"schedule": "РАСПИСАНИЕ",
 		"teams": "КОМАНДЫ",
 		"info": "ИНФОРМАЦИЯ",
-		"sheet": "SHEET",
-		"invites": "INVITES",
+		"sheet": "ДОКУМЕНТ ТУРНИРА",
+		"invites": "ПРИГЛАШЕНИЯ",
 		"team": "КОМАНДА",
 		"profile": "ПРОФИЛЬ"
 	},
@@ -53,36 +53,36 @@
 		"register": "ПРОФИЛЬ СОЗДАТЬ",
 		"signIn": "ВХОД",
 		"signOut": "ВЫХОД",
-		"close": "CLOSE"
+		"close": "ЗАКРЫТЬ"
 	},
 	"Status": {
-		"operational": "All services are online",
-		"downtime": "Some services are down",
-		"degraded": "Some services are degraded",
-		"maintenance": "Ongoing maintenance"
+		"operational": "Все сервисы онлайн",
+		"downtime": "Некоторые сервисы недоступны",
+		"degraded": "Некоторые сервисы недоступны",
+		"maintenance": "Текущее техническое обслуживание"
 	},
 	"Footer": {
-		"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT HOSTED BY TEDDY, ENTROPY, AND SORA."
+		"description": "ТУРНИР ПО OSU! LAZER БЕЗ ОГРАНИЧЕНИЙ ПО РАНГУ ПРОВОДЯЩИЙ TEDDY, ENTROPY, AND SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "Первый крупномасштабный турнир по osu! lazer без ограничений по рангу \nДобро пожаловать в новый турнирный опыт osu.",
 		"PageTitles": {
 			"home": "Главная страница",
-			"schedule": "Schedule",
+			"schedule": "Расписание",
 			"info": "Информация",
-			"mappool": "Mappool",
+			"mappool": "Маппул",
 			"register": "Регистрация",
 			"teams": "Команды",
 			"team": "Команда",
 			"signIn": "Вход",
-			"profile": "Profile"
+			"profile": "Профиль"
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home",
-		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+		"title": "Что-то пошло не так!",
+		"retryButton": "Попробуйте еще раз",
+		"goHomeButton": "Перейти на главную страницу",
+		"message": "Извините, но кажется, что-то сломалось. Вы можете попробовать повторить попытку, и если это не работает, то вы можете нажать вернуться домой."
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -93,26 +93,26 @@
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "МОЙ ПРОФИЛЬ.",
+			"team": "МОЯ КОМАНДА."
 		},
 		"Osu": {
 			"rank": "МЕСТО В МИРЕ",
 			"countryRank": "МЕСТО В СТРАНЕ"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
+			"heading": "ТЕКУЩАЯ КОМАНДА",
+			"none": "В настоящее время у вас нет команды. Присоединяйтесь к команде, принимайте приглашения в ожидании.",
 			"timezone": "ЧАСОВОЙ ПОЯС",
-			"joined": "JOINED",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"joined": "ПРИСОЕДИНИЛСЯ",
+			"manageTeamButton": "УПРАВЛЕНИЕ КОМАНДОЙ"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "ОЖИДАНИЕ ПРИГЛАШЕНИЙ",
+			"none": "В настоящее время у вас нет приглашений. Ждите или создайте свою собственную команду.",
 			"Invite": {
 				"timezone": "ЧАСОВОЙ ПОЯС",
-				"invited": "INVITED",
+				"invited": "ПРИГЛАШЕНЫ",
 				"Buttons": {
 					"accept": "ПРИНЯТЬ",
 					"deny": "ОТКЛОНИТЬ"
@@ -121,233 +121,233 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"title": "УЖЕ В КОМАНДЕ!",
+				"message": "Похоже, что вы уже в команде. Пожалуйста, удалите или покините свою текущую команду, прежде чем присоединиться к новой."
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "ОШИБКА ПРИНЯТИЯ {type} ПРИГЛАШЕНИЯ!",
+				"message": "К сожалению, мы не смогли пригласить этого игрока. Пожалуйста, попробуйте еще раз.",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "отклонить",
+					"accept": "принять"
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "УЖЕ В КОМАНДЕ!",
+				"message": "Похоже, вы все еще в команде. Пожалуйста, покините или удалите команду перед удалением учетной записи."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"title": "ОШИБКА УДАЛЕНИЯ АККАУНТА!",
+				"message": "К сожалению, мы не смогли удалить ваш аккаунт. Пожалуйста, попробуйте еще раз."
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "ОШИБКА ОБНОВЛЕНИЯ!",
+				"message": "К сожалению, мы не смогли удалить вашу информацию о профиле osu. Пожалуйста, попробуйте еще раз."
 			},
-			"noRank": "No Rank"
+			"noRank": "Нет рейтинга"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
-				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"title": "УДАЛИТЬ АККАУНТ?",
+				"message": "Вы уверены, что хотите удалить свою учетную запись? Это удалит все сохраненные данные и отменит все ваши активные токены доступа для osu! и Discord.",
 				"Buttons": {
 					"Delete": {
-						"text": "DELETE",
-						"loadingText": "DELETING"
+						"text": "УДАЛИТЬ",
+						"loadingText": "УДАЛЕНИЕ"
 					},
-					"noThanks": "NO THANKS",
-					"confirmDelete": "DELETE ACCOUNT",
-					"close": "CLOSE"
+					"noThanks": "НЕТ, СПАСИБО",
+					"confirmDelete": "УДАЛИТЬ АККАУНТ",
+					"close": "ЗАКРЫТЬ"
 				}
 			}
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "РЕГИСТРАЦИЯ КОМАНДЫ",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"title": "РЕГИСТРАЦИЯ ЗАКРЫТА!",
+			"message": "В настоящее время регистрация закрыта до начала турнира. Пожалуйста, проверьте обратный отсчёт времени на первой странице."
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
+			"heading": "СОЗДАТЬ КОМАНДУ.",
+			"teamName": "Название команды",
+			"teamAcronym": "Акроним команды",
 			"timezone": "Часовой пояс",
-			"teamFlag": "Team Flag",
+			"teamFlag": "Флаг команды",
 			"createButton": {
-				"text": "CREATE",
-				"loadingText": "CREATING"
+				"text": "СОЗДАТЬ",
+				"loadingText": "СОЗДАНИЕ"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"title": "КОМАНДА СОЗДАНА!",
+				"message": "Добро пожаловать в TEST OPEN Нажмите кнопку ниже, чтобы просмотреть страницу управления вашей командой и приглашайте игроков.",
+				"teamManagementButton": "УПРАВЛЕНИЕ КОМАНДОЙ"
 			},
 			"ImagePicker": {
 				"upload": "Выбрать файл",
-				"recommended": "Recommended Ratio 9:4"
+				"recommended": "Рекомендуемое соотношение 9:4"
 			}
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "Похоже, что вы в рестрикте в osu. К сожалению, вы не можете зарегистрироваться пока вы находитесь в нем. Если вы считаете, что это ошибка, попробуйте выйти и вернуться на сайт.",
+				"title": "ВЫ В РЕСТРИКТЕ!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "Похоже, что вы уже в команде. Пожалуйста, удалите или покиньте свою текущую команду, прежде чем создать новую.",
+				"title": "УЖЕ В КОМАНДЕ!"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "Похоже, команда с таким {type} уже существует. Вместо этого используйте другую {type}.",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "название",
+					"acronym": "акроним",
+					"player": "игрок"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "КОМАНДА {type} УЖЕ СУЩЕСТВУЕТ!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "Нам не удалось создать вашу команду. Похоже, что мы имеем некоторые проблемы. Пожалуйста, попробуйте еще раз.",
+				"title": "ОШИБКА СОЗДАНИЯ КОМАНДЫ!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "ОШИБКА ЗАГРУЗКИ ФЛАГА!",
+				"message": "Мы не смогли загрузить ваш флаг на наш сервер. Пожалуйста, попробуйте еще раз."
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "СПИСОК КОМАНДЫ.",
+		"teamsRegistered": "КОМАНДЫ ЗАРЕГИСТРИРОВАНЫ"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
+		"authFailed": "ОШИБКА АВТОРИЗАЦИИ!",
 		"unauthorized": "ДОСТУП ЗАПРЕЩЁН!",
 		"homeButton": "ГЛАВНАЯ СТРАНИЦА",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "Пожалуйста, войдите перед посещением этой страницы."
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "ВЕРИФИКАЦИЯ СЕРВЕРА",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
+			"signIn": "Войдите, прежде чем пытаться пройти верификацию.",
 			"verified": "Добро пожаловать в TEST Open дискорд-сервер!",
-			"defaultError": "Verification failed. Please try again later.",
+			"defaultError": "Ошибка верификации. Попробуйте позже.",
 			"default": "Нажмите кнопку авторизации ниже, чтобы закончить верификацию к серверу."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "ПОПРОБУЙТЕ ЕЩЕ РАЗ",
 			"Verify": {
 				"text": "ПОДТВЕРЖДЕНИЕ АККАУНТА",
-				"loadingText": "VERIFYING"
+				"loadingText": "ВЕРИФИКАЦИЯ"
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "Вы уже верифицированы. Если вы считаете, что произошла ошибка, пожалуйста, DM @__entro для дальнейшей помощи.",
+			"verificationFailed": "Ошибка верификации. Попробуйте позже."
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "МОЯ КОМАНДА.",
+			"player": "СПИСОК ИГРОКОВ."
 		},
 		"timezone": "ЧАСОВОЙ ПОЯС",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "УДАЛИТЬ КОМАНДУ",
+			"edit": "ИЗМЕНИТЬ КОМАНДУ",
+			"leave": "ПОКИНУТЬ КОМАНДУ"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "ТЕКУЩИЕ ЧЛЕНЫ",
 			"Player": {
 				"rank": "РАНК",
 				"discord": "ДИСКОРД",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "УДАЛИТЬ ИГРОКА"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"heading": "ИСХОДЯЩИЕ ПРИГЛАШЕНИЯ",
+			"error": "К сожалению, мы не смогли пригласить игроков в вашу команду.",
+			"none": "В настоящее время у вас нет никаких исходящих приглашений. Начните с использования окна приглашений игроков выше.",
 			"Invite": {
 				"rank": "РАНК",
 				"discord": "ДИСКОРД",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "ОТПРАВЛЕНО",
+				"deleteButton": "УДАЛИТЬ ПРИГЛАШЕНИЕ",
+				"inviteButton": "ПРИГЛАСИТЬ",
+				"placeholder": "Введите имя пользователя osu..."
 			}
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"title": "ОШИБКА УДАЛЕНИЯ {type}!",
+				"message": "К сожалению, мы не смогли удалить эту {type}. Пожалуйста, попробуйте еще раз.",
 				"Types": {
 					"player": "player",
 					"invite": "invite"
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"title": "НЕ МОЖЕМ ПРИГЛАСИТЬ ВАС!",
+				"message": "Вы не можете пригласить себя в свою же команду. Если вы хотите сменить команды, сначала удалите эту команду."
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"title": "ИГРОК УЖЕ ПРИГЛАШЕН!",
+				"message": "Похоже, вы уже отправили этому игроку приглашение. Пожалуйста, удалите текущее приглашение, прежде чем попытаться повторно пригласить его."
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "ОШИБКА ПРИГЛАШЕНИЯ ИГРОКА!",
+				"message": "К сожалению, мы не смогли пригласить этого игрока. Пожалуйста, попробуйте еще раз."
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "ИГРОКИ ВСЕ ЕЩЕ В КОМАНДЕ!",
+				"message": "Пожалуйста, удалите всех игроков из команды перед удалением команды."
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "ОШИБКА УДАЛЕНИЯ КОМАНДЫ!",
+				"message": "К сожалению, мы не смогли удалить эту. Пожалуйста, попробуйте еще раз."
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "ИГРОК УЖЕ В КОМАНДЕ!",
+				"message": "Похоже, этот игрок уже в вашей команде. Если это ошибка, попробуйте еще раз."
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-				"profileButton": "PROFILE"
+				"title": "НЕ В КОМАНДЕ!",
+				"message": "Похоже, вы сейчас не в команде. Перейдите в свой профиль и примите приглашение.",
+				"profileButton": "ПРОФИЛЬ"
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
-			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
-			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
-			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO.",
+			"1": "TEST Open — это осу! Турнир, происходящий исключительно на клиенте **[osu! Лазера](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)**.",
+			"2": "В состав команд входят **3-5 членов**.",
+			"3": "Команды должны выбрать только **3 игроков** для каждой карты, сыгранной в турнире.",
+			"4": "Для участников нет **требований к рангам**.",
+			"5": "Все потенциальные команды должны пройти квалификационную стадию в указанные выходные дни.",
+			"6": "Лучшие **32 команды** из квалификационных отборов останутся в сетке **Двойного Выбывания**.",
+			"7": "Все игроки должны быть на **[Discord сервере](https://discord.com/invite/nZnQZMvEhq)** и установить свой ник на **osu! имя пользователя**.",
+			"8": "Время будет отображаться в **UTC-0** и **Discord Local Time**.",
+			"9": "Сотрудники, занимающие иные роли, не могут участвовать в турнире: {sublist_alpha} Streaming {sublist_alpha} Комментарий {sublist_alpha} Design {sublist_alpha}",
+			"heading": "ОБЩАЯ ИНФОРМАЦИЯ.",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
-				"heading": "SCHEDULE"
+				"1": "**Регистрация:** 26 февраля - 18 марта",
+				"2": "**Стадия скрининга:** 18 марта - 23 марта",
+				"3": "**Квалификации:** 29 марта - 31",
+				"4": "**RO32:** 5-7 апреля",
+				"5": "**RO32:** 5-7 апреля",
+				"6": "**Четвертьфиналы:** 19-21 апреля",
+				"7": "**Полуфиналы:** 26 апреля - 28",
+				"8": "**Финалы:** Май 3-5",
+				"9": "**Гранд-финалы:** 10 мая - 12",
+				"heading": "РАСПИСАНИЕ"
 			}
 		},
 		"Registrations": {
-			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
-			"2": "Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.",
+			"1": "Вы должны зарегистрироваться на сайте с помощью **osu!** и **Discord аккаунта**.",
+			"2": "Создание команды и управление будет осуществляться через **[TEST Open Website](https://test-open.com)**.",
 			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
 			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
 			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
@@ -397,50 +397,50 @@
 				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
 				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
 				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
+				"11": "Выбор **того же мода дважды подряд запрещается** за исключением **Lazer-Mod** и **No-Mod пулов**.",
+				"12": "Игроки могут играть Tiebreaker с любым модом, **не изменяющим глобально игру**.",
+				"13": "Каждая команда имеет **пятиминутный тайм-аут**, который может быть использован в любой момент матча.",
+				"14": "Если игрок **отключится в течение первой минуты карты**, карта будет **прервана** и команда будет иметь **5 минут**, чтобы выпустить другого игрока. Это может происходить только один раз на одну команду и за одну игру.",
+				"heading": "МАТЧ"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"1": "Маппул будет выпущен в **Воскресенье** каждую неделю.",
+			"2": "Лазерный мод, или LM коротко, будут иметь разные моды каждую неделю, чтобы показать новые моды, которые клиент Lazer может предложить.",
+			"heading": "ИНФОРМАЦИЯ О МАППУЛЕ.",
 			"Table": {
-				"round": "Round",
-				"starRating": "SR",
-				"bestOf": "Best Of",
-				"bans": "Bans",
-				"protects": "Protects",
-				"total": "Total",
-				"qualifiers": "Qualifiers",
-				"roundOf32": "Round of 32",
-				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
-				"finals": "Finals",
-				"grandFinals": "Grand Finals"
+				"round": "Стадия",
+				"starRating": "СР",
+				"bestOf": "Лучший из",
+				"bans": "Баны",
+				"protects": "Протекты",
+				"total": "В сумме",
+				"qualifiers": "Квалификации",
+				"roundOf32": "1/16 финала",
+				"roundOf16": "1/8 Финала",
+				"quarterfinals": "Четвертьфиналы",
+				"semifinals": "Полуфиналы",
+				"finals": "Финал",
+				"grandFinals": "Гранд-финал"
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
-			"heading": "PRIZE POOL."
+			"1": "MVP турнира {sublist_alpha} **Кастомную WLmouse Beast X mini** разработанная Spoo и написанная раскрашенная Dovacustoms. Кастомная мышка также будет включать имя игрока, написанное сверху.",
+			"2": "Первое место{sublist_alpha} $500, разделенная между игроками {sublist_alpha} **Настраиваемая TEST Open Tablet Cover** разработанная Spoo и созданная Bluebunny {sublist_alpha} анимационный командный баннер",
+			"3": "Второе место с {sublist_alpha} $200, разделённое между игроками {sublist_alpha} Статичный баннер команды",
+			"4": "Третье место с {sublist_alpha} $100 делятся между игроками флаг Статичный баннер команды {sublist_alpha}",
+			"heading": "ПРИЗОВОЙ ФОНД."
 		}
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "СКОРО!",
+			"message": "Эта страница все еще находится в процессе разработки. Ищите информацию об этом и проверьте позже, когда она будет готова."
 		}
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "Извините, но вход не может быть завершен. Если случится неожиданное, попробуйте еще раз, иначе вы можете вернуться домой."
 		}
 	}
 }
