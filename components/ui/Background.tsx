@@ -34,6 +34,7 @@ export default function Background({
 					alt='gradient background'
 					placeholder='blur'
 					sizes='100vw'
+					quality={100}
 					className={cn(
 						'-z-20 h-auto select-none object-cover',
 						imageClassName

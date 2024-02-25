@@ -198,7 +198,7 @@ const CarouselPrevious = React.forwardRef<
 			{...props}
 		>
 			<ChevronDown
-				className={cn('size-12 rotate-90', !canScrollPrev && 'opacity-75')}
+				className={cn('size-12 rotate-90', !canScrollPrev && 'opacity-55')}
 			/>
 		</button>
 	)
@@ -224,7 +224,7 @@ const CarouselNext = React.forwardRef<
 			{...props}
 		>
 			<ChevronDown
-				className={cn('-rotate-90 size-12', !canScrollNext && 'opacity-75')}
+				className={cn('-rotate-90 size-12', !canScrollNext && 'opacity-55')}
 			/>
 		</button>
 	)

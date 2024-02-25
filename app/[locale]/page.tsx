@@ -9,6 +9,7 @@ import { env } from '@env'
 import Background from '~/components/ui/Background'
 import Button from '~/components/ui/Button'
 import whiteLogo from '../../public/images/logo-white.png'
+import Sponsor from './_components/sponsor'
 
 const Features = dynamic(() => import('./_components/features'))
 const Originals = dynamic(() => import('./_components/originals'))
@@ -81,12 +82,14 @@ export default function Home() {
 				</div>
 			</Background>
 
-			<div className='w-full space-y-20 overflow-x-hidden'>
+			<div className='flex w-full flex-col overflow-x-hidden'>
 				<NextIntlClientProvider messages={pick(messages, 'HomePage.Features')}>
 					<Features countdownComplete={countdownComplete} />
 				</NextIntlClientProvider>
 
 				<Originals />
+
+				<Sponsor />
 			</div>
 		</div>
 	)
