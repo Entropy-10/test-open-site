@@ -32,7 +32,9 @@ export const env = createEnv({
 		SUPABASE_JWT_SECRET: z.string().min(1),
 		GUILD_LOG_CHANNEL_ID: z.string().min(1),
 		SUPABASE_STORAGE_URL: z.string().min(1),
-		ADMIN_SHEET: z.string().min(1)
+		ADMIN_SHEET: z.string().min(1),
+		CROWDIN_TOKEN: z.string().min(1),
+		CROWDIN_PROJECT_ID: z.string().min(1)
 	},
 	experimental__runtimeEnv: {
 		NEXT_PUBLIC_START_DATE: process.env.NEXT_PUBLIC_START_DATE,

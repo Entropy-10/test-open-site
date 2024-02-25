@@ -11,7 +11,7 @@ export default function Songs() {
 
 	return (
 		<div className='w-full'>
-			<div className='relative mt-10 flex min-h-[120px] w-full justify-start overflow-hidden pl-5 xl:mt-0 xl:max-h-[400px] md:min-h-[180px] xl:justify-end'>
+			<div className='relative mt-10 flex min-h-[120px] w-full items-center justify-start overflow-hidden pl-5 xl:mt-0 xl:max-h-[400px] md:min-h-[180px] xl:justify-end'>
 				{xlMatch ? (
 					<motion.div
 						initial={{ x: 0 }}
@@ -21,7 +21,8 @@ export default function Songs() {
 							duration: 15,
 							ease: 'linear'
 						}}
-						className='absolute flex gap-5'>
+						className='absolute flex gap-5'
+					>
 						<SongsContainer />
 						<SongsContainer />
 					</motion.div>

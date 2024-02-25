@@ -4,19 +4,16 @@ import { createClient } from '@supabase/server'
 import { getTranslations } from 'next-intl/server'
 import { cookies } from 'next/headers'
 
+import { Suspense } from 'react'
 import Logo from '~/components/icons/logo'
 import SignInButton from '~/components/sign-in-button'
 import Link from '~/components/ui/Link'
 import NavItem from '~/components/ui/nav-item'
-import LanguagePicker from './language-picker'
+import LanguageWrapper from './language-wrapper'
 import MobileNav from './mobile-nav'
 import UserDropdown from './user-dropdown'
 
-interface HeaderProps {
-	locale: string
-}
-
-export default async function Header({ locale }: HeaderProps) {
+export default async function Header() {
 	const t = await getTranslations('NavItems')
 	const session = await getSession()
 	const supabase = createClient(cookies())
@@ -58,7 +55,10 @@ export default async function Header({ locale }: HeaderProps) {
 				</nav>
 
 				<div className='flex gap-3'>
-					<LanguagePicker locale={locale} />
+					<Suspense fallback={<div className='w-12' />}>
+						<LanguageWrapper />
+					</Suspense>
+
 					<MobileNav user={session?.user} inviteCount={inviteCount} />
 
 					{session?.user ? (
