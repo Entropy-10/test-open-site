@@ -33,7 +33,7 @@
 			"Coupon": {
 				"save": "COMPRE E ECONOMIZE 10%",
 				"codeTitle": "USE CÓDIGO",
-				"checkout": "AT CHECKOUT",
+				"checkout": "DURANTE O PAGAMENTO",
 				"shopButton": "COMPRE AGORA"
 			}
 		}
@@ -334,7 +334,7 @@
 			"heading": "INFORMAÇÕES GERAIS.",
 			"Schedule": {
 				"1": "**Inscrições:** 26 de fevereiro - 18 de março",
-				"2": "**Screening:** March 18th - March 23rd",
+				"2": "**Screening:** 18 de março - 23 de março",
 				"3": "**Qualificatórias:** 29 de Março - 31 de Março",
 				"4": "**RO32:** 5 de Abril - 7 de Abril",
 				"5": "**RO16:** 12 de Abril - 14 de Abril",
