@@ -391,7 +391,7 @@
 				"2": "热手图，保图，禁图和选图消息须在 **2 分钟**内发出。",
 				"3": "队伍需要在**比赛预定开始时间后 5 分钟**内保证有 3 名选手在房间中。他们会在后续时间节点放弃如下权利。{sublist_alpha} 迟到 5 分钟放弃保图。 {sublist_alpha} 迟到 10 分钟放弃禁图。 {sublist_alpha} 迟到 15 分钟放弃比赛。",
 				"4": "选手必须按照队伍站在房间的指定位置。{sublist_alpha} 队伍 1 （红队）：位置 1， 2， 3。 {sublist_alpha} 队伍 2 （蓝队）：位置 4， 5， 6。",
-				"5": "Captains will use the **/roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
+				"5": "队长将在对应比赛的 **Discord 子区中使用 /roll 指令**来决定**选图/禁图 顺序**。拥有较高roll点的队长可以选择下列两者之一，对方队长将自动获得另一个：{sublist_alpha} 先选后禁 {sublist_alpha} 后选先禁",
 				"6": "队伍在赛前可以选择一个谱面作为热手图。{sublist_alpha} 热手图必须**短于 4 分钟**。 {sublist_alpha} 热手图**不应是图池的一部分**。",
 				"7": "保图将在禁图阶段前**私信提交**给裁判。",
 				"8": "禁图将以**蛇形方式** (ABBA) 进行。{sublist_alpha} 队伍 1 禁用 {sublist_alpha} 队伍 2 禁用两次 {sublist_alpha} 队伍 1 禁用",
