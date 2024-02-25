@@ -1,37 +1,37 @@
 {
 	"HomePage": {
 		"Header": {
-			"description": "AN OPEN RANK, OSU! LAZER TOURNAMENT",
-			"hostTitle": "HOSTED BY"
+			"description": "ТУРНИР ПО OSU! LAZER БЕЗ ОГРАНИЧЕНИЙ ПО РАНГУ",
+			"hostTitle": "ПРОВОДИМЫЙ"
 		},
 		"Features": {
 			"Titles": {
-				"mappool": "MAPPOOL.",
-				"format": "FORMAT.",
-				"schedule": "SCHEDULE."
+				"mappool": "МАППУЛ.",
+				"format": "ФОРМАТ.",
+				"schedule": "РАСПИСАНИЕ."
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
-				"format": "An open rank, double elimination, 3v3 tournament.",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"mappool": "Моды из лазера, которые пополняются новыми каждую неделю",
+				"format": "Турнир без ограничений по рангу, с двойным выбыванием, 3 на 3.",
+				"schedule": "Смотрите предстоящие матчи в прямом эфире на Twitch."
 			},
 			"Countdown": {
-				"titleSectionOne": "TOURNAMENT",
-				"titleSectionTwo": "STARTS IN"
+				"titleSectionOne": "ТУРНИР",
+				"titleSectionTwo": "НАЧИНАЕТСЯ В"
 			}
 		},
 		"Originals": {
-			"title": "Originals",
-			"subtitle": "CUSTOM SONGS COMING SOON.",
-			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
-			"tracksTitle": "TRACKLIST.",
-			"listenButton": "LISTEN NOW"
+			"title": "Оригиналы",
+			"subtitle": "КАСТОМНЫЕ ПЕСНИ СКОРО.",
+			"description": "Продвигайтесь по стадиям, чтобы разблокировать эксклюзивные TEST Originals. Талантливые авторы создали кастомные треки, которые постепенно раскрываются на квалификационных отборах, полуфиналах, финалах и главном финале. Эти карты с оригинальным стилем и искусством зарезервированы для фаваритов турнира.",
+			"tracksTitle": "ТРЕКЛИСТ.",
+			"listenButton": "СЛУШАЙ СЕЙЧАС"
 		},
 		"SponsorSpot": {
-			"sponsoredBy": "TEST OPEN is proudly sponsored by",
-			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"sponsoredBy": "TEST OPEN с гордостью спонсируется",
+			"sponsorMessage": "КАСТОМНЫЕ ОБЛОЖКИ НА ПЛАНШЕТ ПО СПРАВЕДЛИВОЙ ЦЕНЕ",
 			"Coupon": {
-				"save": "SHOP AND SAVE 10%",
+				"save": "ПОКУПАЙ И СЪЭКОНОМЬ 10%",
 				"codeTitle": "USE CODE",
 				"checkout": "AT CHECKOUT",
 				"shopButton": "SHOP NOW"
@@ -39,20 +39,20 @@
 		}
 	},
 	"NavItems": {
-		"home": "ГЛАВБУЮ СТРАНИЦУ",
+		"home": "ГЛАВНАЯ СТРАНИЦА",
 		"mappool": "MAPPOOL",
 		"schedule": "SCHEDULE",
-		"teams": "ЭКИПАЖИ",
-		"info": "ИНФО",
+		"teams": "КОМАНДЫ",
+		"info": "ИНФОРМАЦИЯ",
 		"sheet": "SHEET",
 		"invites": "INVITES",
-		"team": "ЭКИПАЖ",
+		"team": "КОМАНДА",
 		"profile": "ПРОФИЛЬ"
 	},
 	"Buttons": {
 		"register": "ПРОФИЛЬ СОЗДАТЬ",
 		"signIn": "ВХОД",
-		"signOut": "ВЫЙТИ",
+		"signOut": "ВЫХОД",
 		"close": "CLOSE"
 	},
 	"Status": {
@@ -67,13 +67,13 @@
 	"Metadata": {
 		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
 		"PageTitles": {
-			"home": "Главную страницу",
+			"home": "Главная страница",
 			"schedule": "Schedule",
-			"info": "Инфо",
+			"info": "Информация",
 			"mappool": "Mappool",
-			"register": "Профиль создать",
-			"teams": "Экипажи",
-			"team": "Экипаж",
+			"register": "Регистрация",
+			"teams": "Команды",
+			"team": "Команда",
 			"signIn": "Вход",
 			"profile": "Profile"
 		}
@@ -86,7 +86,7 @@
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "ОБНОВИТЬ",
+			"relink": "ОБНОВИТЬ ССЫЛКУ",
 			"Update": {
 				"text": "ОБНОВИТЬ",
 				"loadingText": "ОБНОВЛЕНИЕ"
@@ -97,8 +97,8 @@
 			"team": "MY TEAM."
 		},
 		"Osu": {
-			"rank": "В МИРЕ",
-			"countryRank": "В СТРАНЕ"
+			"rank": "МЕСТО В МИРЕ",
+			"countryRank": "МЕСТО В СТРАНЕ"
 		},
 		"Team": {
 			"heading": "CURRENT TEAM",
@@ -223,7 +223,7 @@
 	"UnauthorizedPage": {
 		"authFailed": "AUTHORIZATION FAILED!",
 		"unauthorized": "ДОСТУП ЗАПРЕЩЁН!",
-		"homeButton": "ГЛАВБУЮ СТРАНИЦУ",
+		"homeButton": "ГЛАВНАЯ СТРАНИЦА",
 		"Messages": {
 			"default": "Please sign in first before accessing this page."
 		}
@@ -234,7 +234,7 @@
 			"signIn": "Sign in first before attempting to verify.",
 			"verified": "Добро пожаловать в TEST Open дискорд-сервер!",
 			"defaultError": "Verification failed. Please try again later.",
-			"default": "Нажмите кнопку авторизации ниже, чтобы закончить верификацию серверу."
+			"default": "Нажмите кнопку авторизации ниже, чтобы закончить верификацию к серверу."
 		},
 		"Buttons": {
 			"tryAgain": "TRY AGAIN",
@@ -262,7 +262,7 @@
 		"Players": {
 			"heading": "CURRENT MEMBERS",
 			"Player": {
-				"rank": "РАНГ",
+				"rank": "РАНК",
 				"discord": "ДИСКОРД",
 				"removeButton": "REMOVE PLAYER"
 			}
@@ -272,7 +272,7 @@
 			"error": "Sorry, we failed to get the players on your team.",
 			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
 			"Invite": {
-				"rank": "РАНГ",
+				"rank": "РАНК",
 				"discord": "ДИСКОРД",
 				"sent": "SENT",
 				"deleteButton": "DELETE INVITE",
