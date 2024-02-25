@@ -10,24 +10,25 @@ export default function Songs() {
 	const xlMatch = useSizeQuery('(max-width: 1280px)')
 
 	return (
-		<div className='relative mt-10 flex min-h-[120px] w-full items-center justify-start overflow-hidden xl:mt-0 xl:max-h-[400px] md:min-h-[180px] xl:pl-5'>
-			{xlMatch ? (
-				<motion.div
-					initial={{ x: 0 }}
-					animate={{ x: smMatch ? -1400 : -980 }}
-					transition={{
-						repeat: Infinity,
-						duration: 15,
-						ease: 'linear'
-					}}
-					className='absolute flex space-x-5'
-				>
+		<div className='w-full'>
+			<div className='relative mt-10 flex min-h-[120px] w-full items-center justify-start overflow-hidden pl-5 xl:mt-0 xl:max-h-[400px] md:min-h-[180px] xl:justify-end'>
+				{xlMatch ? (
+					<motion.div
+						initial={{ x: 0 }}
+						animate={{ x: smMatch ? -1400 : -980 }}
+						transition={{
+							repeat: Infinity,
+							duration: 15,
+							ease: 'linear'
+						}}
+						className='absolute flex gap-5'>
+						<SongsContainer />
+						<SongsContainer />
+					</motion.div>
+				) : (
 					<SongsContainer />
-					<SongsContainer />
-				</motion.div>
-			) : (
-				<SongsContainer />
-			)}
+				)}
+			</div>
 		</div>
 	)
 }
