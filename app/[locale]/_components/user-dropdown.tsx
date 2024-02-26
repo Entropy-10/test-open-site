@@ -46,21 +46,21 @@ export default function UserDropdown({ user, inviteCount }: UserDropdownProps) {
 			</Dropdown.Trigger>
 
 			<Dropdown.Content>
-				<Dropdown.Item className='p-0'>
+				<Dropdown.Item asChild>
 					<NavItem
 						link='/profile'
 						activeClassName='bg-light-blue text-milky-white'
-						className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
+						className='h-full w-full px-3 py-0.5'
 					>
 						{t('profile')}
 					</NavItem>
 				</Dropdown.Item>
 
-				<Dropdown.Item className='p-0'>
+				<Dropdown.Item asChild>
 					<NavItem
 						link='/profile#invites'
 						activeClassName='bg-light-blue text-milky-white'
-						className='flex h-full w-full items-center justify-between px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
+						className='flex h-full w-full items-center justify-between px-3 py-0.5'
 					>
 						{t('invites')}
 						{inviteCount ? (
@@ -71,11 +71,11 @@ export default function UserDropdown({ user, inviteCount }: UserDropdownProps) {
 					</NavItem>
 				</Dropdown.Item>
 
-				<Dropdown.Item className='p-0'>
+				<Dropdown.Item asChild>
 					<NavItem
 						link='/team'
 						activeClassName='bg-light-blue text-milky-white'
-						className='h-full w-full px-3 py-0.5 hover:bg-light-blue hover:text-milky-white'
+						className='h-full w-full px-3 py-0.5'
 					>
 						{t('team')}
 					</NavItem>

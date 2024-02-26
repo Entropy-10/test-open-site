@@ -12,7 +12,6 @@ import { deleteAccount } from '../_actions/delete-account'
 
 export default function Options() {
 	const t = useTranslations('ProfilePage.Options')
-	const buttonT = useTranslations('Buttons')
 	const [open, setOpen] = useState(false)
 	const [deleting, setDeleting] = useState(false)
 	const [error, setError] = useState<ModalError | null>(null)
@@ -22,9 +21,11 @@ export default function Options() {
 		const csrfResp = await fetch('/csrf-token')
 		const { csrfToken } = await csrfResp.json()
 
-		const { error } = await deleteAccount(csrfToken)
-		if (error) setError({ title: error.title, message: error.message })
-		setDeleting(false)
+		const result = await deleteAccount(csrfToken)
+		if (result?.error) {
+			setError({ title: result?.error.title, message: result?.error.message })
+			setDeleting(false)
+		}
 	}
 
 	return (

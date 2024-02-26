@@ -40,18 +40,20 @@ export async function GET(request: NextRequest) {
 	const supabase = createClient(cookies(), env.SUPABASE_SERVICE_KEY)
 
 	try {
-		const osuUser = await osuClient.users.getSelf()
 		const discordUser = await discordAuth.getUser(tokens.access_token)
+		const osuUser = await osuClient.users.getSelf({
+			urlParams: { mode: 'osu' }
+		})
 
 		const { error: userError } = await supabase.from('users').upsert({
 			osu_id: osuUser.id.toString(),
 			osu_name: osuUser.username,
 			osu_avatar: osuUser.avatar_url,
 			restricted: osuUser.is_restricted,
-			rank: osuUser.statistics_rulesets.osu?.global_rank,
+			rank: osuUser.statistics.global_rank,
 			country: osuUser.country.name,
 			country_code: osuUser.country.code,
-			country_rank: osuUser.statistics_rulesets.osu?.country_rank,
+			country_rank: osuUser.statistics.country_rank,
 			discord_id: discordUser.id,
 			discord_name: discordUser.global_name,
 			discord_tag: discordUser.username ?? discordUser.discriminator,

@@ -23,7 +23,7 @@ export default function Search({
 	closeButtonText
 }: SearchProps) {
 	const [debounce, setDebounce] = useState<Timer>()
-	const [results, setResults] = useState<UserResult[]>([])
+	const [results, setResults] = useState<UserResult[] | string>([])
 	const [selectedUser, setSelectedUser] = useState<UserResult | null>(null)
 	const [csrfToken, setCsrfToken] = useState<string>('loading...')
 	const supabase = createClient()
@@ -46,11 +46,11 @@ export default function Search({
 				const { data, error } = await supabase
 					.from('users')
 					.select('osu_id, osu_avatar, osu_name')
-					.textSearch('osu_name', term, { type: 'websearch' })
+					.ilike('osu_name', `%${term}%`)
 					.limit(5)
 
 				if (error) return console.error(error)
-				setResults(data)
+				setResults(data.length === 0 ? 'none' : data)
 			}, 250)
 		)
 	}
@@ -112,24 +112,30 @@ export default function Search({
 					)}
 
 					{results.length > 0 && (
-						<div className='absolute mt-1 w-full border-[1.5px] border-dark-blue bg-milky-white'>
-							{results.map(result => (
-								<button
-									type='button'
-									onClick={() => handleSelect(result)}
-									key={result.osu_id}
-									className='flex w-full items-center gap-1 p-0.5 text-dark-blue hover:bg-light-blue/10 hover:text-light-blue focus:outline-none'
-								>
-									<Image
-										width={25}
-										height={25}
-										src={result.osu_avatar}
-										alt={`${result.osu_avatar}'s pfp`}
-										className='size-[25px]'
-									/>
-									{result.osu_name}
-								</button>
-							))}
+						<div className='absolute z-30 mt-1 w-full border-[1.5px] border-dark-blue bg-milky-white'>
+							{!Array.isArray(results) && (
+								<span className='p-0.5 text-medium-blue'>
+									No results found!
+								</span>
+							)}
+							{Array.isArray(results) &&
+								results.map(result => (
+									<button
+										type='button'
+										onClick={() => handleSelect(result)}
+										key={result.osu_id}
+										className='flex w-full items-center gap-1 p-0.5 text-dark-blue hover:bg-light-blue/10 hover:text-light-blue focus:outline-none'
+									>
+										<Image
+											width={25}
+											height={25}
+											src={result.osu_avatar}
+											alt={`${result.osu_avatar}'s pfp`}
+											className='size-[25px]'
+										/>
+										{result.osu_name}
+									</button>
+								))}
 						</div>
 					)}
 				</div>

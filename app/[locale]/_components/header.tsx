@@ -46,7 +46,7 @@ export default async function Header() {
 						<NavItem
 							key={text}
 							link={link}
-							className='flex items-center justify-center'
+							className='flex items-center justify-center hover:text-light-blue'
 							underline
 						>
 							{t(text)}

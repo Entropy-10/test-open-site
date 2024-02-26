@@ -3,9 +3,8 @@
 import { usePathname } from '@navigation'
 import { cn } from '@utils/client'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { forwardRef } from 'react'
-
-import useAnimatedRouter from '~/hooks/useAnimatedRouter'
 
 import type { AnchorHTMLAttributes, ReactNode } from 'react'
 
@@ -22,17 +21,15 @@ const NavItem = forwardRef<HTMLAnchorElement, NavItemProps>(
 		{ link, children, underline, className, activeClassName, ...props },
 		forwardedRef
 	) => {
-		const router = useAnimatedRouter()
 		const pathname = usePathname()
 		const currentPath = pathname === link.toLowerCase()
 
 		return (
-			<a
+			<Link
 				href={link}
-				onClick={() => router(link)}
 				ref={forwardedRef}
 				className={cn(
-					'relative select-none text-left transition-colors hover:text-light-blue focus:outline-none',
+					'relative select-none text-left transition-colors hover:cursor-pointer hover:text-light-blue focus:outline-none',
 					className,
 					currentPath && cn('font-extrabold text-light-blue', activeClassName)
 				)}
@@ -49,7 +46,7 @@ const NavItem = forwardRef<HTMLAnchorElement, NavItemProps>(
 						)}
 					/>
 				) : null}
-			</a>
+			</Link>
 		)
 	}
 )

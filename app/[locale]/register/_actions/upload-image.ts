@@ -20,7 +20,7 @@ export async function uploadImage(formData: FormData) {
 		const isGif = imageType.endsWith('gif')
 		const sharpImage = sharp(image, { animated: isGif }).resize(666, 296)
 
-		if (isGif) sharpImage.gif()
+		if (isGif) sharpImage.gif({ interFrameMaxError: 25 })
 		else sharpImage.jpeg({ quality: 100 })
 
 		const {
