@@ -28,13 +28,13 @@
 			"listenButton": "ESCUCHA AHORA"
 		},
 		"SponsorSpot": {
-			"sponsoredBy": "TEST OPEN is proudly sponsored by",
-			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"sponsoredBy": "TEST OPEN tiene orgullosamente de patrocinador",
+			"sponsorMessage": "CUBIERTAS PARA TABLETA PERSONALIZADAS A UN PRECIO RAZONABLE",
 			"Coupon": {
-				"save": "SHOP AND SAVE 10%",
-				"codeTitle": "USE CODE",
-				"checkout": "AT CHECKOUT",
-				"shopButton": "SHOP NOW"
+				"save": "COMPRA Y AHORRA 10%",
+				"codeTitle": "USA EL CÓDIGO",
+				"checkout": "AL FINALIZAR LA COMPRA",
+				"shopButton": "COMPRA AHORA"
 			}
 		}
 	},
@@ -82,7 +82,7 @@
 		"title": "¡Algo salió mal!",
 		"retryButton": "Intenta otra vez",
 		"goHomeButton": "Volver al inicio",
-		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+		"message": "Lo sentimos, pero parece que algo salió mal por nuestra parte. Puedes intentar hacer clic en \"Intenta otra vez\", y si eso no funciona entonces puedes hacer clic en \"Volver al inicio\"."
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -144,20 +144,20 @@
 				"title": "NO SE PUDO ACTUALIZAR!",
 				"message": "Lo siento, parece que fallamos en actualizar la información de tu perfil de osu. Por favor intenta otra vez para ver si eso te ayuda."
 			},
-			"noRank": "No Rank"
+			"noRank": "Sin Clasificación"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
-				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"title": "¿ELIMINAR CUENTA?",
+				"message": "¿Estás seguro de que quieres eliminar tu cuenta? Esto eliminará cualquier dato almacenado y revocará todos tus tokens de acceso para osu! y Discord.",
 				"Buttons": {
 					"Delete": {
-						"text": "DELETE",
-						"loadingText": "DELETING"
+						"text": "ELIMINAR",
+						"loadingText": "ELIMINANDO"
 					},
-					"noThanks": "NO THANKS",
-					"confirmDelete": "DELETE ACCOUNT",
-					"close": "CLOSE"
+					"noThanks": "NO GRACIAS",
+					"confirmDelete": "ELIMINAR CUENTA",
+					"close": "CERRAR"
 				}
 			}
 		}
@@ -314,9 +314,9 @@
 				"message": "Parece que este jugador ya está en tu equipo. Si esto es un error intenta otra vez para ver si eso te ayuda."
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-				"profileButton": "PROFILE"
+				"title": "¡NO ESTÁS EN UN EQUIPO!",
+				"message": "Parece que actualmente no formas parte de un equipo. Por favor ve a tu perfil y acepta una invitación primero.",
+				"profileButton": "PERFIL"
 			}
 		}
 	},
@@ -333,16 +333,16 @@
 			"9": "Miembro del Staff que tengan cualquier rol que no sean las siguientes no podrán participar en el torneo: {sublist_alpha} Streaming {sublist_alpha} Comentarista {sublist_alpha} Diseñador {sublist_alpha} Traductores",
 			"heading": "INFORMACIÓN GENERAL.",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
-				"heading": "SCHEDULE"
+				"1": "**Registraciones:** Febrero 26 - Marzo 18",
+				"2": "**Screening:** Marzo 18 - Marzo 23",
+				"3": "**Clasificatorias:** Marzo 29 - 31",
+				"4": "**RD32:** Abril 5 - 7",
+				"5": "**RD16:** Abril 12 - 14",
+				"6": "**Cuartas de final:** Abril 19 - 21",
+				"7": "**Semifinales:** Abril 26 - 28",
+				"8": "**Finales:** Mayo 3 - 5",
+				"9": "**Gran Final:** Mayo 10 - 12",
+				"heading": "HORARIOS"
 			}
 		},
 		"Registrations": {
@@ -434,8 +434,8 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "¡PRÓXIMAMENTE!",
+			"message": "Esta página sigue en progreso. Estate atento a la información pertinente a esto, y vuelve más tarde cuando esté listo."
 		}
 	},
 	"APICallbacks": {
