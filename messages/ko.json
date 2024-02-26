@@ -28,13 +28,13 @@
 			"listenButton": "들어보기"
 		},
 		"SponsorSpot": {
-			"sponsoredBy": "TEST OPEN is proudly sponsored by",
-			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"sponsoredBy": "TEST OPEN는 자랑스럽게 후원합니다",
+			"sponsorMessage": "공정한 가격에 맞춤형 태블릿 커버",
 			"Coupon": {
-				"save": "SHOP AND SAVE 10%",
-				"codeTitle": "USE CODE",
-				"checkout": "AT CHECKOUT",
-				"shopButton": "SHOP NOW"
+				"save": "쇼핑하고 10%를 절약하세요",
+				"codeTitle": "코드 사용",
+				"checkout": "결제 시",
+				"shopButton": "지금 쇼핑하기"
 			}
 		}
 	},
@@ -379,49 +379,49 @@
 			"2": "**NoFail**이 적용될 것입니다.",
 			"3": "심판은 각 게임에 참가하는 팀의 대장들에게 연락할 것입니다. {sublist_alpha} 대장들은 심판이 제공한 모든 정보를 자신의 팀에 전달하는 책임이 있습니다. {sublist_alpha} 게임 시작 **25분** 전에 알림이 전송될 것입니다. {sublist_alpha} Lazer 게임 로비 이름과 비밀번호가 각 게임 시작 **15분** 전에 전송될 것입니다.",
 			"4": "맵이 선택된 후, 참가 선수들은 로비에 참여하기 위해 **2분**의 시간이 주어집니다",
-			"heading": "GAME PROCEDURES.",
+			"heading": "게임 절차.",
 			"Qualifiers": {
 				"1": "맵은 맵풀 에서 본 순서대로 플레이됩니다.",
 				"2": "만약 플레이어가 **맵의 첫 분 안에** **연결이 끊기면**, 플레이어는 **예선 로비의 끝에서** 맵을 다시 플레이하게 됩니다.",
 				"3": "팀은 **방 시작 시간 후 5분 이내에** 로비 안에 3명의 플레이어가 있어야 합니다. 팀이 나타나지 않으면, 팀은 자신의 로비를 재일정해야 합니다. 이 로비는 팀이 나타나지 않은 로비 이후 최소 **4시간**이 지난 후여야 합니다.",
-				"heading": "QUALIFIERS"
+				"heading": "예선"
 			},
 			"Match": {
 				"1": "각 경기의 승리 조건은 **TeamVS**가 될 것입니다.",
 				"2": "워밍업, 보호, 금지, 그리고 선택은 **2분** 안에 제출되어야 합니다.",
 				"3": "팀은 **경기 시작 후 5분 이내에** 로비 안에 3명의 플레이어가 있어야 합니다. 각 시간에 다음을 포기해야 합니다. {sublist_alpha} 5분 지각은 보호를 포기합니다. {sublist_alpha} 10분 지각은 금지를 포기합니다. {sublist_alpha} 15분 지각은 경기를 포기합니다.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
-				"5": "Captains will use the **/roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
+				"4": "플레이어들은 팀에 해당하는 로비 슬롯에 있어야 합니다. {sublist_alpha} 팀 1 (빨강): 슬롯 1, 2, 그리고 3. {sublist_alpha} 팀 2 (파랑): 슬롯 4, 5, 그리고 6.",
+				"5": "대장들은 **경기의 Discord 스레드에서 /roll 명령어를 사용하여** **픽/밴 순서**를 결정합니다. 더 높은 숫자를 던진 대장은 다음 중 하나를 선택할 수 있습니다. 반면에, 다른 대장은 나머지를 받게 됩니다: {sublist_alpha} 먼저 픽하고 두 번째로 밴 {sublist_alpha} 두 번째로 픽하고 먼저로 밴",
+				"6": "팀은 경기 전 1개의 맵을 선택하여 워마프로 플레이할 수 있습니다. {sublist_alpha} 워마프는 **4분 미만** 이어야 합니다. {sublist_alpha} 워마프는 **맵풀의 일부가 아니어야** 합니다.",
+				"7": "프로텍트는 밴 단계 전에 심사위원에게 **비공개로 제출될 것입니다**.",
 				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
+				"9": "한 번 밴 및 보호 단계가 끝나면, **보호된 맵에 대한 어떠한 밴도 무효화되며** 그 맵은 보통대로 플레이할 수 있습니다.",
 				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
 				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
 				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "MATCH"
+				"13": "각 팀은 경기 중 언제든지 사용할 수 있는 **5분짜리 타임아웃이 하나**씩 있습니다.",
+				"14": "만약 플레이어가 **맵 시작 후 1분 이내에 연결이 끊기면**, 맵은 **중단되고** 팀은 맵을 플레이할 다른 플레이어를 구성하기 위해 **5분**이 주어집니다. 이는 각 팀과 경기당 한 번만 발생할 수 있습니다.",
+				"heading": "매치"
 			}
 		},
 		"MappoolInfo": {
 			"1": "맵풀은 매주 **일요일**에 공개됩니다.",
 			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"heading": "맵풀 정보.",
 			"Table": {
-				"round": "Round",
+				"round": "라운드",
 				"starRating": "SR",
-				"bestOf": "Best Of",
-				"bans": "Bans",
-				"protects": "Protects",
-				"total": "Total",
-				"qualifiers": "Qualifiers",
-				"roundOf32": "Round of 32",
-				"roundOf16": "Round of 16",
-				"quarterfinals": "Quarterfinals",
-				"semifinals": "Semifinals",
-				"finals": "Finals",
-				"grandFinals": "Grand Finals"
+				"bestOf": "최선의",
+				"bans": "금지",
+				"protects": "보호",
+				"total": "전체",
+				"qualifiers": "예선",
+				"roundOf32": "32강",
+				"roundOf16": "16강",
+				"quarterfinals": "8강전",
+				"semifinals": "준결승",
+				"finals": "파이널",
+				"grandFinals": "그랜드 파이널"
 			}
 		},
 		"PrizePool": {
