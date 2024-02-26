@@ -82,7 +82,7 @@
 		"title": "¡Algo salió mal!",
 		"retryButton": "Intenta otra vez",
 		"goHomeButton": "Volver al inicio",
-		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+		"message": "Lo sentimos, pero parece que algo salió mal por nuestra parte. Puedes intentar hacer clic en \"Intenta otra vez\", y si eso no funciona entonces puedes hacer clic en \"Volver al inicio\"."
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -314,8 +314,8 @@
 				"message": "Parece que este jugador ya está en tu equipo. Si esto es un error intenta otra vez para ver si eso te ayuda."
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
+				"title": "¡NO ESTÁS EN UN EQUIPO!",
+				"message": "Parece que actualmente no formas parte de un equipo. Por favor ve a tu perfil y acepta una invitación primero.",
 				"profileButton": "PERFIL"
 			}
 		}
