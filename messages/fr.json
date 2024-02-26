@@ -28,13 +28,13 @@
 			"listenButton": "ÉCOUTE MAINTENANT"
 		},
 		"SponsorSpot": {
-			"sponsoredBy": "TEST OPEN is proudly sponsored by",
-			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"sponsoredBy": "TEST OPEN est heureusement sponsorisé par",
+			"sponsorMessage": "AUTOCOLLANTES DES TABLETTES PERSONNALISÉS À UN JUSTE PRIX",
 			"Coupon": {
-				"save": "SHOP AND SAVE 10%",
-				"codeTitle": "USE CODE",
-				"checkout": "AT CHECKOUT",
-				"shopButton": "SHOP NOW"
+				"save": "ACHETEZ ET ÉCONOMISEZ 10%",
+				"codeTitle": "UTILISEZ LE CODE",
+				"checkout": "A PAIEMENT",
+				"shopButton": "ACHETEZ MAINTENANT"
 			}
 		}
 	},
@@ -71,7 +71,7 @@
 			"schedule": "Programme",
 			"info": "Info",
 			"mappool": "Mappool",
-			"register": "Registre",
+			"register": "Enregistrez",
 			"teams": "Équipes",
 			"team": "Équipe",
 			"signIn": "Se connecter",
@@ -82,7 +82,7 @@
 		"title": "Quelque chose s'est mal passé !",
 		"retryButton": "Réessayer",
 		"goHomeButton": "Retournez à l'accueil",
-		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+		"message": "Désolé, mais quelque chose ait cassé à notre fin. Vous pouvez essayer de cliquer à nouveau, et si cela ne fonctionne pas, vous pouvez cliquer sur retour à accueil."
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -144,20 +144,20 @@
 				"title": "ÉCHEC DE MISE À JOUR !",
 				"message": "Désolé, nous n'avons pas réussi à mettre à jour les informations de votre profil osu. Veuillez réessayer."
 			},
-			"noRank": "No Rank"
+			"noRank": "Aucun Rang"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
-				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"title": "SUPPRIMER COMPTE ?",
+				"message": "Êtes-vous sûr de vouloir supprimer votre compte ? Cela supprimera toutes les données et révoquera tous vos jetons d'accès actifs pour osu! et Discord.",
 				"Buttons": {
 					"Delete": {
-						"text": "DELETE",
-						"loadingText": "DELETING"
+						"text": "SUPPRIMER",
+						"loadingText": "SUPPRESSION"
 					},
-					"noThanks": "NO THANKS",
-					"confirmDelete": "DELETE ACCOUNT",
-					"close": "CLOSE"
+					"noThanks": "NON MERCI",
+					"confirmDelete": "SUPPRIMER COMPTE",
+					"close": "FERMEZ"
 				}
 			}
 		}
@@ -314,9 +314,9 @@
 				"message": "Ce joueur est déjà dans votre équipe. Si c'est une erreur, veuillez réessayer."
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-				"profileButton": "PROFILE"
+				"title": "PAS SUR UNE ÉQUIPE !",
+				"message": "Vous n'êtes pas actuellement dans une équipe. Veuillez vous rendre sur votre profil et accepter une invitation d'abord.",
+				"profileButton": "PROFIL"
 			}
 		}
 	},
@@ -333,16 +333,16 @@
 			"9": "Les membres du personnel qui ont un rôle autre que ce qui suit ne peuvent pas participer au tournoi : {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
 			"heading": "INFOS GÉNÉRALES.",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
-				"heading": "SCHEDULE"
+				"1": "**Registrations :** Du 26 février au 18 mars",
+				"2": "**Filtrage :** du 18 mars au 23 mars",
+				"3": "**Éliminatoires :** du 29 mars au 31 mars",
+				"4": "**RO32 :** du 5 au 7 avril",
+				"5": "**RO16 :** 12 avril - 14 avril",
+				"6": "**Quart de finale :** 19 avril - 21 avril",
+				"7": "**Demi-finale:** Du 26 au 28 avril",
+				"8": "**Finale :** 3 mai - 5 mai",
+				"9": "**Grandes Finales :** Du 10 au 12 Mai",
+				"heading": "PROGRAMME"
 			}
 		},
 		"Registrations": {
@@ -434,8 +434,8 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "BIENTÔT !",
+			"message": "Cette page est toujours en cours. Informations à venir. Revenez plus tard quand elle sera prête."
 		}
 	},
 	"APICallbacks": {
