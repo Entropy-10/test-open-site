@@ -15,6 +15,7 @@ export default function Link({ href, children, locale, ...props }: LinkProps) {
 
 	return (
 		<a
+			href={href}
 			onClick={() => {
 				animatedRoute(href, locale)
 			}}

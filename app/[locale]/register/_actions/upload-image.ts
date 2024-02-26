@@ -8,19 +8,25 @@ import sharp from 'sharp'
 export async function uploadImage(formData: FormData) {
 	try {
 		const teamName = formData.get('team_name')?.toString()
+		const imageType = formData.get('file_type')?.toString()
 		const image = await (
 			formData.get('file') as Blob | undefined
 		)?.arrayBuffer()
 
-		if (!teamName || !image) throw new Error('Missing team name or file')
+		if (!teamName || !image || !imageType) {
+			throw new Error('Missing team name or file')
+		}
+
+		const isGif = imageType.endsWith('gif')
+		const sharpImage = sharp(image, { animated: isGif }).resize(666, 296)
+
+		if (isGif) sharpImage.gif()
+		else sharpImage.jpeg({ quality: 100 })
 
 		const {
 			data: flag,
 			info: { format }
-		} = await sharp(image)
-			.resize(666, 296)
-			.toFormat('jpeg', { quality: 100 })
-			.toBuffer({ resolveWithObject: true })
+		} = await sharpImage.toBuffer({ resolveWithObject: true })
 
 		const supabase = createClient(cookies())
 		const { data, error } = await supabase.storage

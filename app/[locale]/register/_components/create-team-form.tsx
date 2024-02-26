@@ -69,6 +69,7 @@ export default function CreateTeamForm({
 		const { csrfToken } = await csrfResp.json()
 
 		flagForm.append('file', flagBlob)
+		flagForm.append('file_type', data.flag.type)
 		flagForm.append('team_name', data.name.toLowerCase().replaceAll(' ', '-'))
 		flagForm.append('csrf_token', csrfToken)
 
@@ -91,7 +92,12 @@ export default function CreateTeamForm({
 		teamForm.append('csrf_token', csrfToken)
 		teamForm.append(
 			'teamData',
-			JSON.stringify({ ...data, flag, osuId, discordId })
+			JSON.stringify({
+				...data,
+				flag,
+				osuId,
+				discordId
+			})
 		)
 
 		const { error: createTeamError } = await createTeam(teamForm)

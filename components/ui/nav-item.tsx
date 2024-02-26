@@ -7,9 +7,9 @@ import { forwardRef } from 'react'
 
 import useAnimatedRouter from '~/hooks/useAnimatedRouter'
 
-import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import type { AnchorHTMLAttributes, ReactNode } from 'react'
 
-interface NavItemProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface NavItemProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 	link: string
 	children: ReactNode
 	underline?: boolean
@@ -17,7 +17,7 @@ interface NavItemProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	activeClassName?: string
 }
 
-const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
+const NavItem = forwardRef<HTMLAnchorElement, NavItemProps>(
 	(
 		{ link, children, underline, className, activeClassName, ...props },
 		forwardedRef
@@ -27,8 +27,8 @@ const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
 		const currentPath = pathname === link.toLowerCase()
 
 		return (
-			<button
-				type='button'
+			<a
+				href={link}
 				onClick={() => router(link)}
 				ref={forwardedRef}
 				className={cn(
@@ -49,7 +49,7 @@ const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
 						)}
 					/>
 				) : null}
-			</button>
+			</a>
 		)
 	}
 )

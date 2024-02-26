@@ -1,6 +1,11 @@
 import { z } from 'zod'
 
-export const acceptedImageTypes = ['image/png', 'image/jpeg', 'image/jpg']
+export const acceptedImageTypes = [
+	'image/png',
+	'image/jpeg',
+	'image/jpg',
+	'image/gif'
+]
 
 export const createTeamForm = z.object({
 	name: z
@@ -24,7 +29,7 @@ export const createTeamForm = z.object({
 		.refine(file => !!file && file.size <= 5000000, 'Max image size is 5MB')
 		.refine(
 			file => !!file && acceptedImageTypes.includes(file.type),
-			'Only .jpg, .jpeg, and .png formats are supported'
+			'Only .jpg, .jpeg, .gif, and .png formats are supported'
 		)
 })
 

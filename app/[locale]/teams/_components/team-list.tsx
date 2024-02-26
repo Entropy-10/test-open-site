@@ -1,12 +1,13 @@
 import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default async function TeamList() {
 	const supabase = createClient(cookies())
 	const { data: teams } = await supabase
 		.from('teams')
-		.select('*, players(role, users(osu_avatar, osu_name, rank))')
+		.select('*, players(role, users(osu_id,osu_avatar, osu_name, rank))')
 		.order('role', { referencedTable: 'players' })
 
 	if (!teams) return null
@@ -32,7 +33,12 @@ export default async function TeamList() {
 
 						<div className='flex flex-col gap-1 py-1.5'>
 							{team.players.map(({ users: user }) => (
-								<div key={user?.osu_name} className='flex gap-2'>
+								<Link
+									href={`https://osu.ppy.sh/users/${user?.osu_id}`}
+									target='_blank'
+									key={user?.osu_name}
+									className='flex gap-2 focus:outline-none'
+								>
 									<Image
 										height={32}
 										width={32}
@@ -49,7 +55,7 @@ export default async function TeamList() {
 											#{user?.rank?.toLocaleString()}
 										</div>
 									</div>
-								</div>
+								</Link>
 							))}
 						</div>
 					</div>
