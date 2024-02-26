@@ -112,7 +112,7 @@
 			"none": "You currently do not have any invites. Wait for one or create your own team.",
 			"Invite": {
 				"timezone": "TIMEZONE",
-				"invited": "INVITED",
+				"invited": "INIMBITA",
 				"Buttons": {
 					"accept": "TANGGAPIN",
 					"deny": "TANGGIHAN"
@@ -330,36 +330,36 @@
 			"6": "Ang pinakamataas na **32 pangkat** sa qualifiers ay magpapatuloy sa saklungang **Double Elimination**.",
 			"7": "Lahat ng manlalaro ay kailan sumali sa **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** at itakda ang kanilang palayaw sa kanilang **osu! username**.",
 			"8": "Ang mga oras ay nakalista sa **UTC-0** at **Discord Local Time**.",
-			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
+			"9": "Ang mga miyembro ng tauhan na may tungkulin maliban sa sumusunod ay bawal lumahok sa paligsahan: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
 			"heading": "PANGKALAHATANG IMPORMASYON.",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
+				"1": "**Rehistrasyon:** ika-26 ng Pebrero - ika-18 ng Martsa",
+				"2": "**pagtatabing:** ika-18 ng Martso - ika-23 ng Martso",
+				"3": "**Qualifiers:** ika-29 ng Martso - ika-31 ng Martso",
+				"4": "**RO32:** ika-5 ng Abril - ika-7",
+				"5": "**RO16:** ika-12 ng Abril - ika-14",
+				"6": "**Kworterpinal:** ika-19 ng Abril - ika-21",
+				"7": "**Semipaynal:** ika-26 ng Abril - ika-28",
+				"8": "**Paynals:** ika-3 ng Mayo - ika-5",
+				"9": "**Grandpaynals:** ika-10 ng mayo - ika-12",
 				"heading": "ISKEDYUL"
 			}
 		},
 		"Registrations": {
-			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
-			"2": "Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.",
-			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
-			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
-			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
+			"1": "Kailangan mag-sign up sa website gamit ang parehong **osu!** at **Discord account**.",
+			"2": "Ang paggawa ng pangkat at pamamahala ay maaring gawin sa **[TEST Open Website](https://test-open.com)**.",
+			"3": "Para gumawa ng **libreng ahente post**, pumunta sa **discord server** at hanapin ang looking-for-team channel. At doon ay maari kang mag-post gamit ang **TEST Bot**.",
+			"4": "Kung hindi gumagana ang website ikaw ay maaring magtanong sa admin ng **registration form**. Gayunpaman, pag ito ang ginamit mo makikita ang iyong impormasyon sa sheet ngunit hindi sa website hanggang ito ay sadyang baguhin.",
+			"5": "Ang mga tauhan ay hindi gagawa ng **pangkatang libreng ahente**. Kaya kung gusto mong sumali, kailangan mong maghanap ng pangkat.",
 			"heading": "REHISTRASYON."
 		},
 		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
-			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
-			"3": "TEST Open has no tolerance for bullying of any kind.",
-			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
-			"5": "Try to keep **controversial conversations** to a minimum.",
-			"6": "Keep disagreements civilized.",
+			"1": "Respetuhin ang ibang manglalaro at lahat ng mga tauhan.",
+			"2": "Walang **mga terminong may diskriminasyon**. Kasama ngunit hindi limitado sa: {sublist_alpha} Racial Slurs {sublist_alpha} Mga tuntunin na maaaring nakakasakit sa LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Mapoot na Pagsasalita",
+			"3": "Ang TEST Open ay walang toleransiya sa kahit anong uri ng bullying.",
+			"4": "Ang **may kabastusang nilalaman** ay bawal. Kasama rito ang: {sublist_alpha} Kahubaran {sublist_alpha} Gore/May marahas na nilalaman {sublist_alpha} Pag abuso sa Droga/Alak {sublist_alpha} Nakakabahalang nilalaman",
+			"5": "Subukang panatilihin sa pinakamababa ang **kontrobersyal na paguusap**.",
+			"6": "Siguraduhing sibilisado ang mga hindi pagkakasundo.",
 			"7": "**Doxing is not allowed** under any circumstances.",
 			"8": "No content that is banned under **Discord TOS** is allowed.",
 			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
@@ -425,22 +425,22 @@
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
+			"1": "Ang MVP ng paligsahan {sublist_alpha} **Customized WLmouse Beast X mini mouse** na dinisenyo ni Spoo at pininturahan ng Dovacustoms. Ang pasadyang mouse ay masasamahan ng pangalan ng manlalaro na nakapintura sa taas.",
+			"2": "Unang Pwesto {sublist_alpha} pinag hati hating $500 sa mga manlalaro {sublist_alpha} **Customized TEST Open Tablet Cover** na dinisenyo ni Spoo at ginawa ni Bluebunny {sublist_alpha} Animated na Banner ng Koponan",
+			"3": "Pangalawang Pwesto {sublist_alpha} pinag hati hating $200 sa mga manlalaro {sublist_alpha} Static na Banner ng Koponan",
+			"4": "Pangatlong Pwesto {sublist_alpha} pinag hati hating $100 sa mga manlalaro {sublist_alpha} Static na Banner ng Koponan",
 			"heading": "PRIZE POOL."
 		}
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "MALAPIT NA!",
+			"message": "Ginagawa palang ang pahina na ito. Maging alerto sa impormasyon tungkol dito, at tingnan muli pag ito ay handa na."
 		}
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "Paumanhin, pero ang pag-sign in ay hindi makumpleto. Pag hindi inasahan subukang muli kung hindi ay huwag mag-atubiling mag-navigate pabalik sa home."
 		}
 	}
 }
