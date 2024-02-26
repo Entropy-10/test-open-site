@@ -32,9 +32,9 @@
 			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
 			"Coupon": {
 				"save": "SHOP AND SAVE 10%",
-				"codeTitle": "USE CODE",
+				"codeTitle": "GAMITIN ANG KODIGONG",
 				"checkout": "AT CHECKOUT",
-				"shopButton": "SHOP NOW"
+				"shopButton": "MAMILI NA"
 			}
 		}
 	},
@@ -42,22 +42,22 @@
 		"home": "BAHAY",
 		"mappool": "MAPPOOL",
 		"schedule": "ISKEDYUL",
-		"teams": "TEAMS",
+		"teams": "MGA PANGKAT",
 		"info": "IMPORMASYON",
 		"sheet": "SHEET",
 		"invites": "MGA IMBITASYON",
-		"team": "TEAM",
+		"team": "PANGKAT",
 		"profile": "PROFILE"
 	},
 	"Buttons": {
 		"register": "MAG-REHISTRO",
 		"signIn": "MAG-SIGN IN",
 		"signOut": "MAG-SIGN OUT",
-		"close": "CLOSE"
+		"close": "ISARADO"
 	},
 	"Status": {
-		"operational": "All services are online",
-		"downtime": "Some services are down",
+		"operational": "Lahat ng serbisyo ay onlayn",
+		"downtime": "May mga serbisyong hindi gumagana",
 		"degraded": "Some services are degraded",
 		"maintenance": "Ongoing maintenance"
 	},
@@ -128,16 +128,16 @@
 				"title": "FAILED TO {type} INVITE!",
 				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
 				"Types": {
-					"deny": "deny",
-					"accept": "accept"
+					"deny": "tanggihan",
+					"accept": "tanggapin"
 				}
 			},
 			"CurrentTeam": {
-				"title": "CURRENTLY ON TEAM!",
-				"message": "Looks like you are still on a team. Please leave or delete the team first before deleting your account."
+				"title": "KASALUKUYANG NASA ISANG PANGKAT!",
+				"message": "Mukhang ikaw ay kasali pa sa isang pangkat. Maaring umalis o tanggalin ang pangkat bago tanggalin ang iyong account."
 			},
 			"FailedAccountDelete": {
-				"title": "FAILED TO DELETE ACCOUNT!",
+				"title": "NABIGO ANG PAG TANGGAL NG ACCOUNT!",
 				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
 			},
 			"FailedUpdate": {
@@ -165,23 +165,23 @@
 	"RegistrationPage": {
 		"heading": "TEAM REGISTRATION",
 		"Closed": {
-			"title": "REGISTRATIONS CLOSED!",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"title": "SARADO ANG PAG REHISTRO!",
+			"message": "Sarado ang pag rehistro hanggang magsimula ang paligsahan. Maaring bumalik pag natapos na ang countdown sa unang pahina."
 		},
 		"Form": {
-			"heading": "CREATE A TEAM.",
-			"teamName": "Team Name",
-			"teamAcronym": "Team Acronym",
+			"heading": "GUMAWA NG PANGKAT.",
+			"teamName": "Pangalang ng Pangkat",
+			"teamAcronym": "Pangkatang Akronim",
 			"timezone": "Timezone",
-			"teamFlag": "Team Flag",
+			"teamFlag": "Pangkatang Bandila",
 			"createButton": {
 				"text": "GUMAWA",
 				"loadingText": "GINAGAWA"
 			},
 			"Success": {
-				"title": "TEAM CREATED!",
+				"title": "NAGAWA NA ANG PANGKAT!",
 				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-				"teamManagementButton": "TEAM MANAGEMENT"
+				"teamManagementButton": "PAMAMAHALA NG PANGKAT"
 			},
 			"ImagePicker": {
 				"upload": "Click here to upload",
@@ -262,7 +262,7 @@
 		"Players": {
 			"heading": "CURRENT MEMBERS",
 			"Player": {
-				"rank": "RANK",
+				"rank": "RANGGO",
 				"discord": "DISCORD",
 				"removeButton": "REMOVE PLAYER"
 			}
@@ -283,55 +283,55 @@
 		"Errors": {
 			"DeleteItemFailed": {
 				"title": "FAILED TO DELETE {type}!",
-				"message": "Sorry, we failed to delete that {type}. Please try again to see if that helps.",
+				"message": "Paumanhin, nabigo ang pag tanggal ng {type}. Maaring subukan muli kung ito ay makakatulong.",
 				"Types": {
-					"player": "player",
-					"invite": "invite"
+					"player": "manlalaro",
+					"invite": "imbitahin"
 				}
 			},
 			"InvitedSelf": {
-				"title": "CANNOT INVITE SELF!",
-				"message": "You cannot invite yourself to your own team. If you want to switch teams please delete this team first."
+				"title": "BAWAL I-IMBITA ANG SARILI!",
+				"message": "Bawal mo imbitahin ang sarili mo sa iyong pangkat. Kung gusto mo lumipat ng pangkat tanggalin muna ang iyong pangkat."
 			},
 			"AlreadyInvited": {
-				"title": "PLAYER ALREADY INVITED!",
-				"message": "Looks like you've already sent that player an invite. Please remove the current invite before trying to reinvite them."
+				"title": "NAIMBITA NA ANG MANLALARO!",
+				"message": "Mukhang naimbita mo na ang manlalarong ito. Maaring tanggalin ang kasalukuyang imbitasyon bago ito gawin ulit."
 			},
 			"InviteFailed": {
-				"title": "FAILED TO INVITE PLAYER!",
-				"message": "Sorry, we failed to invite that player. Please try again to see if that helps."
+				"title": "NABIGO ANG IMBITASYON!",
+				"message": "Paumanhin, nabigo ang pag imbita sa manlalaro. Maaring subukan muli kung ito ay makakatulong."
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "MAY MGA MANLALARO PA SA PANGKAT!",
+				"message": "Maaring alisin muna ang mga manlalaro sa pangkat bago ito tanggalin."
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "NABIGO ANG PAGTANGGAL NG PANGKAT!",
+				"message": "Paumanhin, nabigo ang pag tanggal ng iyong pangkat. Maaring subukan muli kung ito ay makakatulong."
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "ANG MANLALARO AY NASA PANGKAT NA!",
+				"message": "Mukhang ang manlalaro na ito ay nasa pangkat mo na. Kung ito ay isang pagkakamali maaring subukan muli kung ito ay makakatulong."
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-				"profileButton": "PROFILE"
+				"title": "WALA PA SA PANGKAT!",
+				"message": "Mukhang wala ka pa sa isang pangkat. Maaring pumunta sa iyong propayl at tumanggap muna ng imbitasyon.",
+				"profileButton": "PROPAYL"
 			}
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
-			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
-			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
+			"1": "Ang TEST Open ay isang paligsahan sa osu! na eksklusibo sa kliyenteng **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)**.",
+			"2": "Ang mga pangkat ay nilalaman ng **3-5 na miyembro**.",
+			"3": "Ang mga pangkat ay kailang pumili ng **3 manlalaro** sa kada isang map na nilalaro sa paligsahan.",
+			"4": "**Walang pangangailangan sa ranggo** para sa mga kasali.",
+			"5": "Lahat ng inaasahang pangkat ay kailangang sumailalim sa qualifiers sa nakalistang katapusan ng linggo.",
+			"6": "Ang pinakamataas na **32 pangkat** sa qualifiers ay magpapatuloy sa saklungang **Double Elimination**.",
+			"7": "Lahat ng manlalaro ay kailan sumali sa **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** at itakda ang kanilang palayaw sa kanilang **osu! username**.",
+			"8": "Ang mga oras ay nakalista sa **UTC-0** at **Discord Local Time**.",
 			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO.",
+			"heading": "PANGKALAHATANG IMPORMASYON.",
 			"Schedule": {
 				"1": "**Registrations:** February 26th - March 18th",
 				"2": "**Screening:** March 18th - March 23rd",
@@ -342,7 +342,7 @@
 				"7": "**Semifinals:** April 26th - 28th",
 				"8": "**Finals:** May 3rd - 5th",
 				"9": "**Grand Finals:** May 10th - 12th",
-				"heading": "SCHEDULE"
+				"heading": "ISKEDYUL"
 			}
 		},
 		"Registrations": {
@@ -351,7 +351,7 @@
 			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
 			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
 			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
+			"heading": "REHISTRASYON."
 		},
 		"GeneralConduct": {
 			"1": "Respect other players and all staff members.",
