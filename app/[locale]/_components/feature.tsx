@@ -15,7 +15,7 @@ export default function Feature({ name, link, className }: FeatureType) {
 	return (
 		<div
 			className={cn(
-				'relative flex w-full space-x-5 bg-[#5E72EB] py-5 pl-5 md:h-28 xl:min-w-[250px] md:items-center md:px-5 md:py-0',
+				'relative flex w-full space-x-5 bg-[#5E72EB] py-5 pl-5 md:h-28 xl:max-w-[400px] md:items-center xl:justify-center md:px-5 md:py-0',
 				className
 			)}
 		>
