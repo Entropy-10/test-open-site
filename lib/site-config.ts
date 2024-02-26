@@ -33,7 +33,7 @@ const sheetLink =
 
 export const links = {
 	sheet: sheetLink,
-	forumPost: 'https://osu.ppy.sh/community/forums/topics/',
+	forumPost: 'https://osu.ppy.sh/community/forums/topics/1889282?n=1',
 	challonge: 'https://challonge.com/test_open_2024',
 	album: 'https://www.youtube.com/@TEST_Open',
 	socials: {
