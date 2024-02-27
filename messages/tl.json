@@ -11,9 +11,9 @@
 				"schedule": "ISKEDYUL."
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
+				"mappool": "Mga modpool sa Lazer kung saan napapalitan ito kada linggo.",
 				"format": "Isang bukas na ranggo, dobleng eliminasyon, 3v3 na paligsahan.",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"schedule": "Manood ng mga paparating na labanan na mapapanood sa Twitch."
 			},
 			"Countdown": {
 				"titleSectionOne": "PALIGSAHAN",
@@ -23,17 +23,17 @@
 		"Originals": {
 			"title": "Mga orihinal",
 			"subtitle": "CUSTOM SONGS COMING SOON.",
-			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
+			"description": "Sumulong sa mga yugto upang maihayag ang mga orihinal na mga gawa ng TEST. Maraming talentadong manlilikha ang gumawa ng mga awit na paunti-unting ihahayag sa mga yugtong Qualifers, Semifinals, Finals, at Grand Finals. Sa bawat awit na kinatatampokan ng kanya-kanyang istilo at sining, ang mga beatmap na ito ay nakalaan sa mga pinakamahuhusay na manlalaro sa torneong ito.",
 			"tracksTitle": "TRACKLIST.",
 			"listenButton": "MAKINIG NGAYON"
 		},
 		"SponsorSpot": {
-			"sponsoredBy": "TEST OPEN is proudly sponsored by",
-			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"sponsoredBy": "Ang Test OPEN ay malugod na itinataguyod ng ",
+			"sponsorMessage": "MGA NAPASASADYANG PANAKIP NG TABLET SA ABOT-KAYANG PRESYO",
 			"Coupon": {
-				"save": "SHOP AND SAVE 10%",
+				"save": "MAMILI AT MAKAPAGTIPID NG 10 PORSYENTO",
 				"codeTitle": "GAMITIN ANG KODIGONG",
-				"checkout": "AT CHECKOUT",
+				"checkout": "SA CHECKOUT",
 				"shopButton": "MAMILI NA"
 			}
 		}
@@ -59,13 +59,13 @@
 		"operational": "Lahat ng serbisyo ay onlayn",
 		"downtime": "May mga serbisyong hindi gumagana",
 		"degraded": "Some services are degraded",
-		"maintenance": "Ongoing maintenance"
+		"maintenance": "Ipinagpapatuloy ang pagpapanatili"
 	},
 	"Footer": {
 		"description": "ISANG BUKAS NA RANGGONG, PALIGSAHAN SA OSU! LAZER NA HOSTED NI TEDDY, ENTROPY, AT SORA."
 	},
 	"Metadata": {
-		"description": "Osu!'s first large scale open rank lazer tournament. Welcome to the new osu! tournament experience.",
+		"description": "Ang unang maramihang paligsahan sa osu! Lazer. Maligayang pagdating sa makabagong karanasan sa osu!.",
 		"PageTitles": {
 			"home": "Simula",
 			"schedule": "Iskedyul",
@@ -75,41 +75,41 @@
 			"teams": "Teams",
 			"team": "Team",
 			"signIn": "Mag-sign in",
-			"profile": "Profile"
+			"profile": "Propayl"
 		}
 	},
 	"ErrorPage": {
 		"title": "Something went wrong!",
 		"retryButton": "Try again",
 		"goHomeButton": "Go back home",
-		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+		"message": "Paumanhin, ngunit mukhang mayroong nasira sa aming kagamitan. Maaari kang muling pumindot, at kapag hindi iyong gumana ay maaari mong pindutin and \"Bumalik sa bahay\"."
 	},
 	"ProfilePage": {
 		"Buttons": {
 			"relink": "RELINK",
 			"Update": {
-				"text": "UPDATE",
-				"loadingText": "UPDATING"
+				"text": "MULING BAGUHIN",
+				"loadingText": "BINABAGO"
 			}
 		},
 		"Headings": {
-			"profile": "MY PROFILE.",
-			"team": "MY TEAM."
+			"profile": "AKING PROPAYL.",
+			"team": "AKING KOPONAN."
 		},
 		"Osu": {
-			"rank": "GLOBAL RANK",
-			"countryRank": "COUNTRY RANK"
+			"rank": "RANGGONG PANDAIGDAIG",
+			"countryRank": "RANGGONG PAMBANSA"
 		},
 		"Team": {
-			"heading": "CURRENT TEAM",
-			"none": "You currently do not have a team. Join one by accepting any pending invites.",
+			"heading": "KASALUKUYANG KOPONAN",
+			"none": "Wala ka pa sa isang koponan. Sumali sa isa sa pamamagitan ng pagtanggap ng anumang nakabinbin na imbitasyon.",
 			"timezone": "TIMEZONE",
 			"joined": "SINALIHAN",
-			"manageTeamButton": "MANAGE MY TEAM"
+			"manageTeamButton": "PAMAHALAAN ANG KOPONAN"
 		},
 		"Invites": {
-			"heading": "PENDING INVITES",
-			"none": "You currently do not have any invites. Wait for one or create your own team.",
+			"heading": "NAKABINBING IMBITASYON",
+			"none": "Wala ka pang anumang imbitasyon. Maghintay ng isa, o lumikha ng iyong koponan.",
 			"Invite": {
 				"timezone": "TIMEZONE",
 				"invited": "INIMBITA",
@@ -121,12 +121,12 @@
 		},
 		"Errors": {
 			"ExistingTeam": {
-				"title": "ALREADY ON A TEAM!",
-				"message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
+				"title": "NASA KOPONAN NA!",
+				"message": "Mukhang ikaw ay nasa isang koponan na. Paki-tanggal o umalis sa kasalukuyang koponan bago sumali ng bago."
 			},
 			"FailedInvite": {
-				"title": "FAILED TO {type} INVITE!",
-				"message": "Sorry, we failed to {type} that invite. Please try again to see if that helps.",
+				"title": "NABIGO SA {type} NG IMBITASYON!",
+				"message": "Paumanhin, nabigo kami sa {type} ng imbitasyong ito. Maaaring subukan muli upang malaman kung ito ay nakatulong.",
 				"Types": {
 					"deny": "tanggihan",
 					"accept": "tanggapin"
@@ -138,32 +138,32 @@
 			},
 			"FailedAccountDelete": {
 				"title": "NABIGO ANG PAG TANGGAL NG ACCOUNT!",
-				"message": "Sorry, looks like we failed to delete your account. Please try again to see if that helps."
+				"message": "Paumanhin, mukhang nabigo kami sa pagtanggal ng iyong account. Maaaring subukan muli upang malaman kung ito ay nakatulong."
 			},
 			"FailedUpdate": {
-				"title": "FAILED TO UPDATE!",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"title": "HINDI NABAGO!",
+				"message": "Paumanhin, nabigo kaming muling mabago ang iyong impormasyon sa iyong propayl sa osu!. Maaring subukan muli kung ito ay makakatulong."
 			},
-			"noRank": "No Rank"
+			"noRank": "Walang Ranggo"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
-				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"title": "TANGGALIN ANG ACCOUNT?",
+				"message": "Nakasisiguro ka bang gusto mong tanggalin ang iyong account? Tatanggalin nito ang anumang datos na itinabi at ang anumang aktibong access token para sa osu! at Discord.",
 				"Buttons": {
 					"Delete": {
-						"text": "DELETE",
-						"loadingText": "DELETING"
+						"text": "TANGGALIN",
+						"loadingText": "ITINATANGGAL"
 					},
-					"noThanks": "NO THANKS",
-					"confirmDelete": "DELETE ACCOUNT",
-					"close": "CLOSE"
+					"noThanks": "HUWAG",
+					"confirmDelete": "TANGGALIN ANG ACCOUNT",
+					"close": "ISARADO"
 				}
 			}
 		}
 	},
 	"RegistrationPage": {
-		"heading": "TEAM REGISTRATION",
+		"heading": "PAGREREHISTRO NG KOPONAN",
 		"Closed": {
 			"title": "SARADO ANG PAG REHISTRO!",
 			"message": "Sarado ang pag rehistro hanggang magsimula ang paligsahan. Maaring bumalik pag natapos na ang countdown sa unang pahina."
@@ -180,12 +180,12 @@
 			},
 			"Success": {
 				"title": "NAGAWA NA ANG PANGKAT!",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
+				"message": "Maligayang pagdating sa TEST Open. Pindutin ang pindutan sa ibaba upang makita ang pahina ng pamamahala sa iyong koponan at magsimulang mag imbita ng mga manlalaro.\n",
 				"teamManagementButton": "PAMAMAHALA NG PANGKAT"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"upload": "Dito pumindot upang mag-upload",
+				"recommended": "Inirerekomendang proporsyon ay 9:4"
 			}
 		},
 		"Errors": {
@@ -360,12 +360,12 @@
 			"4": "Ang **may kabastusang nilalaman** ay bawal. Kasama rito ang: {sublist_alpha} Kahubaran {sublist_alpha} Gore/May marahas na nilalaman {sublist_alpha} Pag abuso sa Droga/Alak {sublist_alpha} Nakakabahalang nilalaman",
 			"5": "Subukang panatilihin sa pinakamababa ang **kontrobersyal na paguusap**.",
 			"6": "Siguraduhing sibilisado ang mga hindi pagkakasundo.",
-			"7": "**Doxing is not allowed** under any circumstances.",
-			"8": "No content that is banned under **Discord TOS** is allowed.",
-			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
-			"10": "If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.",
-			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
-			"heading": "GENERAL CONDUCT."
+			"7": "**Ang paglalabas ng anumang personal na impormasyon ay ipinagbabawal** sa anumang sitwasyon.",
+			"8": "Ang anumang content na ipinagbabawal sa ilalim ng **Discord TOS** ay ipinagbabawal.",
+			"9": "**Ingles ang pangunahing wika na ginagamit sa torneong ito**, kaya ito ay ating tandaan kapag makikipagusap sa mga namamahala sa torneong ito.",
+			"10": "Kapag nakakakita ka ng isang taong lumalabag sa anumang sa ipinapatupad na patakaran, ay tumawag ng isang **Moderator o Admin** upang ito ay malutas.",
+			"11": "Panghuli, gumamit ng **sentido kumon** at gumawa ng **magiliw na kapaligiran** para sa lahat!",
+			"heading": "PANGKALAHATANG ASAL."
 		},
 		"Scheduling": {
 			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
