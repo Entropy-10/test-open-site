@@ -43,8 +43,8 @@
 		"mappool": "MAPPOOL",
 		"schedule": "ZEITPLAN",
 		"teams": "TEAM LISTE",
-		"info": "INFORMATION",
-		"sheet": "SHEET",
+		"info": "INFO",
+		"sheet": "TABELLE",
 		"invites": "EINLADUNGEN",
 		"team": "TEAM",
 		"profile": "PROFIL"
@@ -53,7 +53,7 @@
 		"register": "REGISTRIEREN",
 		"signIn": "ANMELDEN",
 		"signOut": "ABMELDEN",
-		"close": "Schließen"
+		"close": "SCHLIEßEN"
 	},
 	"Status": {
 		"operational": "Alle Dienste sind online",
@@ -71,7 +71,7 @@
 			"schedule": "Zeitplan",
 			"info": "Info",
 			"mappool": "Mappool",
-			"register": "Anmelden",
+			"register": "Registrieren",
 			"teams": "Teams",
 			"team": "Team",
 			"signIn": "Anmelden",
@@ -122,7 +122,7 @@
 		"Errors": {
 			"ExistingTeam": {
 				"title": "BEREITS IN EINEM TEAM!",
-				"message": "Scheint so als seist du bereits in einem Team. Bitte lösche oder verlasse dein aktuelles Team, bevor du einem anderen beitrittst."
+				"message": "Es scheint als seist du bereits in einem Team. Bitte lösche oder verlasse dein aktuelles Team, bevor du einem anderen beitrittst."
 			},
 			"FailedInvite": {
 				"title": "ANNEHMEN DER {type} FEHLGESCHLAGEN!",
@@ -170,7 +170,7 @@
 		},
 		"Form": {
 			"heading": "EIN TEAM ERSTELLEN",
-			"teamName": "Teamname",
+			"teamName": "Name des Teams",
 			"teamAcronym": "Team Akronym",
 			"timezone": "Zeitzone",
 			"teamFlag": "Team Flagge",
@@ -190,7 +190,7 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Es scheint als wäre dein osu! Konto gesperrt. Es ist dir leider nicht möglich dich zu Registrieren, währen das Konto gesperrt ist. Falls du meinst, dies sei ein Fehler, melde dich von der Test Open Seite ab, und melde dich dann wieder an.",
+				"message": "Es scheint als wäre dein osu! Konto gesperrt. Es ist dir nicht möglich dich zu Registrieren, während das Konto gesperrt ist. Falls du meinst, dies sei ein Fehler, melde dich von der Test Open Seite ab, und melde dich dann wieder an.",
 				"title": "OSU ACCOUNT GESPERRT!"
 			},
 			"DuplicatePlayer": {
@@ -200,9 +200,9 @@
 			"Duplicate": {
 				"message": "Es existiert bereits ein Team mit diesem {type}, bitte nutze stattdessen ein anderes {type}.",
 				"Types": {
-					"name": "name",
-					"acronym": "abkürzung",
-					"player": "spieler"
+					"name": "Name",
+					"acronym": "Abkürzung",
+					"player": "Spieler"
 				},
 				"title": "TEAM {type} EXISTIERT BEREITS!"
 			},
@@ -233,8 +233,8 @@
 		"Messages": {
 			"signIn": "Melden Sie sich zuerst an, bevor Sie versuchen zu verifizieren.",
 			"verified": "Willkommen auf dem TEST Open Discord Server!",
-			"defaultError": "Verifizierung fehlgeschlagen. Bitte versuchen Sie es später erneut.",
-			"default": "Bitte klicken Sie auf die Schaltfläche unten, um Zugang zum Server zu erhalten."
+			"defaultError": "Verifizierung fehlgeschlagen. Bitte versuche es später erneut.",
+			"default": "Bitte klicke auf die Schaltfläche unten, um Zugang zum Server zu erhalten."
 		},
 		"Buttons": {
 			"tryAgain": "ERNEUT VERSUCHEN",
@@ -253,7 +253,7 @@
 			"team": "MEIN TEAM.",
 			"player": "SPIELER LISTE."
 		},
-		"timezone": "ZEITZOHNE",
+		"timezone": "ZEITZONE",
 		"Buttons": {
 			"delete": "TEAM LÖSCHEN",
 			"edit": "TEAM BEARBEITEN",
@@ -269,7 +269,7 @@
 		},
 		"Invites": {
 			"heading": "ABGESCHICKTE EINLADUNGEN",
-			"error": "Verzeihung, leider konnten wir die Spieler nicht deinem Team hinzufügen.",
+			"error": "Verzeihung, es war uns nicht möglich die Spieler deinem Team hinzuzufügen.",
 			"none": "Du hast derzeit keine ausgehenden Einladungen. Nutze die obige Suchfunktion, um Einladungen zu versenden.",
 			"Invite": {
 				"rank": "RANG",
@@ -285,8 +285,8 @@
 				"title": "LÖSCHEN VON {type} FEHLGESCHLAGEN!",
 				"message": "Verzeihung, es war uns nicht möglich diesen {type} zu entfernen. Bitte versuche es erneut und schau, ob es klappt.",
 				"Types": {
-					"player": "spieler",
-					"invite": "einladung"
+					"player": "Spieler",
+					"invite": "Einladung"
 				}
 			},
 			"InvitedSelf": {
@@ -328,7 +328,7 @@
 			"4": "Es gibt **keine Rang-Voraussetzungen** für Teilnehmer.",
 			"5": "Alle registrierten Teams müssen sich am dafür vorgesehenen Wochenende qualifizieren.",
 			"6": "Die besten **32 Teams** werden in den **Doppel-K.-o. Turnierbaum** voranschreiten.",
-			"7": "Alle Spieler müssen sich im **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** befinden, und ihre Spitznamen zu ihrem osu! Namen ändern.",
+			"7": "Alle Spieler müssen sich im **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** befinden, und ihre Nicknamen zu ihrem osu! Namen ändern.",
 			"8": "Die Uhrzeit wird in **UTC 0** und deiner **Lokalen Discord Uhrzeit** angezeigt.",
 			"9": "Alle Turnier-Mitarbeiter (Staff), welche in keiner der hier genannten Postion sind, ist es untersagt bei dem Turnier mitzuspielen: {sublist_alpha} Streamer {sublist_alpha} Stream Moderator/Kommentator {sublist_alpha} Designer {sublist_alpha} Übersetzer",
 			"heading": "ALLGEMEINE INFORMATION.",
@@ -347,7 +347,7 @@
 		},
 		"Registrations": {
 			"1": "Du musst dich auf der Website sowohl mit deinem **osu!**, sowie deinem **Discord Konto** anmelden.",
-			"2": "Team Erstellung und Management wird durch die **[TEST Open Webseite](https://test-open.com)** ausgeführt.",
+			"2": "Team Erstellung und Management wird über die **[TEST Open Webseite](https://test-open.com)** ausgeführt.",
 			"3": "Um dich als **Freier Spieler** (Free Agent) zu registrieren, suche im **Discord Server** den #looking-for-team Kanal auf, dort ist es dir möglich mithilfe des **TEST Bot** einen Post zu erstellen.",
 			"4": "Falls die Webseite nicht verfügbar ist, kontaktiere einen Admin, um dich über das **anmelde Formular** zu registrieren. Beachte bitte, dass die Daten des Anmeldeformulars nur auf dem Sheet sichtbar sind, bis diese auf der Webseite manuell nachgetragen werden.",
 			"5": "Die Turnier-Organisation wird keine **Free Agent Teams** erstellen. Solltest du wünschen am Turnier mitzuspielen, musst du selber ein Team finden.",
