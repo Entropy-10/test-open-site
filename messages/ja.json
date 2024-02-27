@@ -223,7 +223,7 @@
 	"UnauthorizedPage": {
 		"authFailed": "AUTHORIZATION FAILED!",
 		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"homeButton": "ホーム",
 		"Messages": {
 			"default": "Please sign in first before accessing this page."
 		}
@@ -253,18 +253,18 @@
 			"team": "MY TEAM.",
 			"player": "PLAYER LIST."
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "タイムゾーン",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "チームを削除",
+			"edit": "チームを編集",
+			"leave": "チームから退出"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "現在のチームメンバー",
 			"Player": {
-				"rank": "RANK",
+				"rank": "ランク",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "プレイヤーの削除"
 			}
 		},
 		"Invites": {
