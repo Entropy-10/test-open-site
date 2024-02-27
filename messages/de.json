@@ -22,14 +22,14 @@
 		},
 		"Originals": {
 			"title": "Originale",
-			"subtitle": "ORIGINELLE SONGS IN KÜRZE VERFÜGBAR.",
+			"subtitle": "ORIGINELLE SONGS IN KÜRZE VERFÜGBAR",
 			"description": "Schreite durch die Runden um exklusive TEST Originale freizuschalten. Talentierte Künstler haben Originelle Songs erstellt, welche progressiv in jeder Runde freigeschaltet werden: Qualifizierung, Halbfinale, Finale, und das große Finale.\nJedes Original beinhaltet einen einzigartigen Stil und Kunst, diese Beatmaps sind für die besten des Turniers vorbehalten.",
 			"tracksTitle": "TRACKLISTE",
 			"listenButton": "JETZT ANHÖREN"
 		},
 		"SponsorSpot": {
 			"sponsoredBy": "TEST Open wird stolz gesponsert von",
-			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"sponsorMessage": "INDIVIDUELLE TABLET-COVER ZU FAIREN PREISEN",
 			"Coupon": {
 				"save": "EINKAUFEN UND10% SPAREN",
 				"codeTitle": "BENUTZE CODE",
@@ -149,7 +149,7 @@
 		"Options": {
 			"DeleteAccount": {
 				"title": "KONTO LÖSCHEN?",
-				"message": "Bist du sicher, dass du dein Konto löschen möchtest? Dies wird alle gespeicherten Nutzerdaten löschen und deinen osu/Discord Zugang entfernen.",
+				"message": "Bist du sicher, dass du dein Konto löschen möchtest? Dadurch werden alle gespeicherten Nutzerdaten gelöscht und deinen osu/Discord Zugang entfernt.",
 				"Buttons": {
 					"Delete": {
 						"text": "JA, LÖSCHEN",
@@ -371,7 +371,7 @@
 			"1": "Spiele werden über den **TEST-Bot** im Discord Server geplant.",
 			"2": "Um die Qualifizierungsrunde zu planen oder zu verschieben, nutze den **/schedule** Befehl und fülle die entsprechenden Informationsfelder aus.",
 			"3": "Um ein Spiel zu verschieben, nutze den **/reschedule** Befehl und fülle die entsprechenden Informationsfelder aus. Dies sendet eine anfrage in den Planungs-Kanal.",
-			"4": "Um das Spiel zu verschieben, müssen beide Teamkapitäne im Planungs-Kanal auf \"annehmen\" (\"accept\") drücken.",
+			"4": "Um das Spiel zu verschieben, müssen beide Teamkapitäne im #scheduling kanal auf \"annehmen\" (\"accept\") drücken.",
 			"heading": "SPIEL/RUNDEN PLANUNG"
 		},
 		"GameProcedures": {
@@ -383,18 +383,18 @@
 			"Qualifiers": {
 				"1": "Maps werden in derselben Reihenfolge gespielt wie der Mappool sie vorgibt.",
 				"2": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, wird der entsprechende Spieler die Map am Ende der Qualifizierungsrunde erneut spielen.",
-				"3": "Es wird erwartet, dass die Teams bis spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.",
+				"3": "Es wird erwartet, dass die Teams bis spätestens **5 Minuten nach Start** der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.",
 				"heading": "QUALIFIZIERUNGEN"
 			},
 			"Match": {
 				"1": "Die Sieg-Bedingung für jede Spielrunde ist **Team gegen Team** (\"TeamVS\").",
-				"2": "Maps zum Aufwärmen, zu Schützende, oder zu Bannende Maps, sowie die Auswahl der nächsten Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
-				"3": "Es wird erwartet, dass die Teams bis spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen: {sublist_alpha} 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect). {sublist_alpha} 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban). {sublist_alpha}15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).",
+				"2": "Die Auswahl von Maps zum Aufwärmen, zu Schützen, oder zu Sperren, sowie die Auswahl der nächsten zu spielenden Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
+				"3": "Es wird erwartet, dass die Teams bis **spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match** haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen: {sublist_alpha} 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect). {sublist_alpha} 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban). {sublist_alpha} 15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).",
 				"4": "Die Spieler müssen folgende \"Sitzplätze\" in der Spielrunde einnehmen: {sublist_alpha} Team 1 (Rot): Platz 1, 2, und 3.{sublist_alpha} Team 2 (Blau): Platz 4, 5, und 6.",
-				"5": "Die Teamkapitäne werden den \"/roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:{sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren.{sublist_alpha}Als Zwietes Wählen, aber zuerst eine Map Sperren.",
+				"5": "Die Teamkapitäne werden den \"/roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:{sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren.{sublist_alpha} Als Zweites Wählen, aber zuerst eine Map Sperren.",
 				"6": "Den Teams ist es erlaubt eine Map ihrer Wahl zum Aufwärmen zu spielen.{sublist_alpha} Die Map darf **nicht länger als 4 Minuten lang** sein.{sublist_alpha} Die Map darf **nicht im Mappool** sein.",
-				"7": "Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (banning phase).",
-				"8": "Die Sperrphase (banning phase) wird im **\"snake format\"** (ABBA) abgehalten.{sublist_alpha} Team 1 sperrt eine Map.{sublist_alpha} Team 2 sperrt 2 Maps.{sublist_alpha}Team 1 sperrt eine Map.",
+				"7": "Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (Ban phase).",
+				"8": "Die Sperrphase (Ban phase) wird im **\"snake format\"** (ABBA) abgehalten.{sublist_alpha} Team 1 sperrt eine Map.{sublist_alpha} Team 2 sperrt 2 Maps.{sublist_alpha} Team 1 sperrt eine Map.",
 				"9": "Sollte eine der gesperrten **Maps von einem der Teams geschützt sein, wird die Sperrung annulliert** und die Map wird regulär spielbar sein.",
 				"10": "Das **doppelt Sperren einer Mod im Mappool ist nicht erlaubt**, mit Ausnahme der \"No-Mod\" Maps.",
 				"11": "Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der \"**Lazer-Mod**\" und \"**No-Mod**\" Maps.",
@@ -426,7 +426,7 @@
 		},
 		"PrizePool": {
 			"1": "Der MVP des Turniers{sublist_alpha} **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.",
-			"2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasste Tablet-Hülle**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
+			"2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasstes Tablet-Cover**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
 			"3": "Zweiter Platz{sublist_alpha} $200 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
 			"4": "Dritter Platz{sublist_alpha} $100 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
 			"heading": "BELOHNUNGS- UND PREISLISTE"
@@ -434,8 +434,8 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "IN KÜRZE VERFÜGBAR!",
+			"message": "Diese Seite ist noch im Aufbau. Halte Ausschau nach Informationen diesbezüglich, und schau später noch mal vorbei, wenn die Seite fertig ist."
 		}
 	},
 	"APICallbacks": {
