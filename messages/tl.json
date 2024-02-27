@@ -22,7 +22,7 @@
 		},
 		"Originals": {
 			"title": "Mga orihinal",
-			"subtitle": "CUSTOM SONGS COMING SOON.",
+			"subtitle": "",
 			"description": "Sumulong sa mga yugto upang maihayag ang mga orihinal na mga gawa ng TEST. Maraming talentadong manlilikha ang gumawa ng mga awit na paunti-unting ihahayag sa mga yugtong Qualifers, Semifinals, Finals, at Grand Finals. Sa bawat awit na kinatatampokan ng kanya-kanyang istilo at sining, ang mga beatmap na ito ay nakalaan sa mga pinakamahuhusay na manlalaro sa torneong ito.",
 			"tracksTitle": "TRACKLIST.",
 			"listenButton": "MAKINIG NGAYON"
@@ -58,7 +58,7 @@
 	"Status": {
 		"operational": "Lahat ng serbisyo ay onlayn",
 		"downtime": "May mga serbisyong hindi gumagana",
-		"degraded": "Some services are degraded",
+		"degraded": "Ang ilang serbisyo ay hindi gumagana",
 		"maintenance": "Ipinagpapatuloy ang pagpapanatili"
 	},
 	"Footer": {
@@ -72,21 +72,21 @@
 			"info": "Impormasyon",
 			"mappool": "Mappool",
 			"register": "Mag rehistro",
-			"teams": "Teams",
-			"team": "Team",
+			"teams": "Mga Koponan",
+			"team": "Koponan",
 			"signIn": "Mag-sign in",
 			"profile": "Propayl"
 		}
 	},
 	"ErrorPage": {
-		"title": "Something went wrong!",
-		"retryButton": "Try again",
-		"goHomeButton": "Go back home",
+		"title": "May nangyaring mali!",
+		"retryButton": "Subukan muli",
+		"goHomeButton": "Bumalik sa Home",
 		"message": "Paumanhin, ngunit mukhang mayroong nasira sa aming kagamitan. Maaari kang muling pumindot, at kapag hindi iyong gumana ay maaari mong pindutin and \"Bumalik sa bahay\"."
 	},
 	"ProfilePage": {
 		"Buttons": {
-			"relink": "RELINK",
+			"relink": "Muling Ipagtugma",
 			"Update": {
 				"text": "MULING BAGUHIN",
 				"loadingText": "BINABAGO"
@@ -103,7 +103,7 @@
 		"Team": {
 			"heading": "KASALUKUYANG KOPONAN",
 			"none": "Wala ka pa sa isang koponan. Sumali sa isa sa pamamagitan ng pagtanggap ng anumang nakabinbin na imbitasyon.",
-			"timezone": "TIMEZONE",
+			"timezone": "",
 			"joined": "SINALIHAN",
 			"manageTeamButton": "PAMAHALAAN ANG KOPONAN"
 		},
@@ -111,7 +111,7 @@
 			"heading": "NAKABINBING IMBITASYON",
 			"none": "Wala ka pang anumang imbitasyon. Maghintay ng isa, o lumikha ng iyong koponan.",
 			"Invite": {
-				"timezone": "TIMEZONE",
+				"timezone": "",
 				"invited": "INIMBITA",
 				"Buttons": {
 					"accept": "TANGGAPIN",
@@ -190,21 +190,21 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "Ikaw ay ipinagbabawal sa osu dahil sa lagay ng iyong account. Sa kasamaang palad, hindi ka maaaring mag rehistro habang ikaw ay ipinagbabawal. Kung sa tingin mo na ito ay mali, maaari kang mag sign out at mag log in ulit dito.",
+				"title": "IKAW AY IPINAGBABAWAL NA SUMALI DITO!"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "Mukhang nasa isang koponan ka na. Mangyaring i-delete o umalis ka sa iyong kasalukuyang koponan bago gumawa ng bago.",
+				"title": "IKAW AY NASA KOPONAN NA!"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "Mukhang mayroon nang koponan ang gumagamit niyan. Mangyaring gumamit ng iba.",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "pangalan",
+					"acronym": "",
+					"player": "manlalaro"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "MAYROON NANG {type} NA KOPONAN!"
 			},
 			"Default": {
 				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
@@ -225,15 +225,15 @@
 		"unauthorized": "UNAUTHORIZED!",
 		"homeButton": "HOME",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "Ikaw ay mag sign in muna bago mo ma-access ang pahina na ito."
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "PAG-BERIPIKA SA SERVER",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
-			"verified": "Welcome to the TEST Open Discord server!",
-			"defaultError": "Verification failed. Please try again later.",
+			"signIn": "Ikaw ay mag sign in muna bago mag verify.",
+			"verified": "Maligayang Pagdating sa TEST Open Discord server!",
+			"defaultError": "Ang iyong pag-beripika ay nabigo. Paki ulit nalang mamaya.",
 			"default": "Please click the button below to gain access to the server."
 		},
 		"Buttons": {
