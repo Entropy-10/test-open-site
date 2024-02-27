@@ -11,7 +11,7 @@
 				"schedule": "ZEITPLAN."
 			},
 			"Descriptions": {
-				"mappool": "Ein lazer Modpool welcher jede Woche neue Mods enthält.",
+				"mappool": "Ein lazer Modpool, welcher jede Woche neue Mods enthält.",
 				"format": "Ein 3 gegen 3 Turnier für alle Ränge, mit Doppel-K.-o.-System.",
 				"schedule": "Schau dir die kommenden Runden auf Twitch an."
 			},
@@ -21,9 +21,9 @@
 			}
 		},
 		"Originals": {
-			"title": "Originals",
+			"title": "Originale",
 			"subtitle": "ORIGINELLE SONGS IN KÜRZE VERFÜGBAR.",
-			"description": "Schreite durch die Runden um exklusive TEST originale freizuschalten. Talentierte Künstler haben Orginelle Songs erstellt, welche progressiv in jeder Runde freigeschaltet werden: Qualifizierung, Halbfinale, Finale, und das große Finale.\nJedes Original beinhaltet einen einzigartigen Stil und Kunst, diese Beatmaps sind für die besten des Turniers vorbehalten.",
+			"description": "Schreite durch die Runden um exklusive TEST Originale freizuschalten. Talentierte Künstler haben Originelle Songs erstellt, welche progressiv in jeder Runde freigeschaltet werden: Qualifizierung, Halbfinale, Finale, und das große Finale.\nJedes Original beinhaltet einen einzigartigen Stil und Kunst, diese Beatmaps sind für die besten des Turniers vorbehalten.",
 			"tracksTitle": "TRACKLISTE.",
 			"listenButton": "JETZT ANHÖREN"
 		},
