@@ -394,11 +394,11 @@
 				"5": "대장들은 **경기의 Discord 스레드에서 /roll 명령어를 사용하여** **픽/밴 순서**를 결정합니다. 더 높은 숫자를 던진 대장은 다음 중 하나를 선택할 수 있습니다. 반면에, 다른 대장은 나머지를 받게 됩니다: {sublist_alpha} 먼저 픽하고 두 번째로 밴 {sublist_alpha} 두 번째로 픽하고 먼저로 밴",
 				"6": "팀은 경기 전 1개의 맵을 선택하여 워마프로 플레이할 수 있습니다. {sublist_alpha} 워마프는 **4분 미만** 이어야 합니다. {sublist_alpha} 워마프는 **맵풀의 일부가 아니어야** 합니다.",
 				"7": "프로텍트는 밴 단계 전에 심사위원에게 **비공개로 제출될 것입니다**.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
+				"8": "금지된 맵은 **뱀 형태로** (ABBA) 진행됩니다. {sublist_alpha} 팀 1이 금지함, {sublist_alpha} 팀 2가 두 번 금지함, {sublist_alpha} 팀 1이 다시 금지함.",
 				"9": "한 번 밴 및 보호 단계가 끝나면, **보호된 맵에 대한 어떠한 밴도 무효화되며** 그 맵은 보통대로 플레이할 수 있습니다.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
+				"10": "**No-Mod 맵들** 을 제외하고, 한 편이 **동일한 모드풀에서 두 맵을 금지할 수 없습니다**.",
+				"11": "**No-Mod** 와 **Lazer-Mod** 맵들을 제외하고, 한 편이 **동일한 모드풀에서 두 맵을 연속으로 선택할 수 없습니다**.",
+				"12": "**전체 속도를 변경하는 모드를 제외하고** , 선수들은 결승 맵을 플레이할 때 어떤 모드든 사용할 수 있습니다.",
 				"13": "각 팀은 경기 중 언제든지 사용할 수 있는 **5분짜리 타임아웃이 하나**씩 있습니다.",
 				"14": "만약 플레이어가 **맵 시작 후 1분 이내에 연결이 끊기면**, 맵은 **중단되고** 팀은 맵을 플레이할 다른 플레이어를 구성하기 위해 **5분**이 주어집니다. 이는 각 팀과 경기당 한 번만 발생할 수 있습니다.",
 				"heading": "매치"
@@ -406,7 +406,7 @@
 		},
 		"MappoolInfo": {
 			"1": "맵풀은 매주 **일요일**에 공개됩니다.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
+			"2": "Lazer Mod(약칭 LM), 는 Lazer 클라이언트에서 제공하는 새로운 모드들 중에서 매주 다른 모드들을 조합하여 구성된 모드 풀입니다.",
 			"heading": "맵풀 정보.",
 			"Table": {
 				"round": "라운드",

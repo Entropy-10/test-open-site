@@ -28,8 +28,8 @@
 			"listenButton": "OUÇA AGORA"
 		},
 		"SponsorSpot": {
-			"sponsoredBy": "TEST OPEN é patrocinado por",
-			"sponsorMessage": "CAPAS DE MESA DIGITALIZADORA A UM PREÇO JUSTO",
+			"sponsoredBy": "TEST OPEN é orgulhosamente patrocinado por",
+			"sponsorMessage": "COVERS DE MESA DIGITALIZADORA A UM PREÇO JUSTO",
 			"Coupon": {
 				"save": "COMPRE E ECONOMIZE 10%",
 				"codeTitle": "USE CÓDIGO",
@@ -333,15 +333,15 @@
 			"9": "Membros da staff que possuírem qualquer outro tipo de cargo além dos citados abaixo não poderão participar do torneio: {sublist_alpha} Streamer {sublist_alpha} Comentador {sublist_alpha} Designer {sublist_alpha} Tradutor",
 			"heading": "INFORMAÇÕES GERAIS.",
 			"Schedule": {
-				"1": "**Inscrições:** 26 de fevereiro - 18 de março",
-				"2": "**Screening:** 18 de março - 23 de março",
+				"1": "**Inscrições:** 26 de Fevereiro - 18 de Março",
+				"2": "**Screening:** 18 de Março - 23 de Março",
 				"3": "**Qualificatórias:** 29 de Março - 31 de Março",
 				"4": "**RO32:** 5 de Abril - 7 de Abril",
 				"5": "**RO16:** 12 de Abril - 14 de Abril",
-				"6": "**Quarterfinals** - 19 de Abril - 21 de Abril",
+				"6": "**Quartas de finais** - 19 de Abril - 21 de Abril",
 				"7": "**Semifinais:** 26 de Abril - 28 de Abril",
-				"8": "**Finals:** 3 de Maio - 5 de Maio",
-				"9": "**Grand Finals:** 10 de Maio - 12 de Maio",
+				"8": "**Finais:** 3 de Maio - 5 de Maio",
+				"9": "**Grandes Finais:** 10 de Maio - 12 de Maio",
 				"heading": "PROGRAMAÇÃO"
 			}
 		},

@@ -6,12 +6,12 @@
 		},
 		"Features": {
 			"Titles": {
-				"mappool": "MAPPOOL.",
-				"format": "FORMAT.",
-				"schedule": "ZEITPLAN."
+				"mappool": "MAPPOOL",
+				"format": "FORMAT",
+				"schedule": "ZEITPLAN"
 			},
 			"Descriptions": {
-				"mappool": "Ein lazer Modpool welcher jede Woche neue Mods enthält.",
+				"mappool": "Ein lazer Modpool, welcher jede Woche neue Mods enthält.",
 				"format": "Ein 3 gegen 3 Turnier für alle Ränge, mit Doppel-K.-o.-System.",
 				"schedule": "Schau dir die kommenden Runden auf Twitch an."
 			},
@@ -21,20 +21,20 @@
 			}
 		},
 		"Originals": {
-			"title": "Originals",
-			"subtitle": "ORIGINELLE SONGS IN KÜRZE VERFÜGBAR.",
-			"description": "Schreite durch die Runden um exklusive TEST originale freizuschalten. Talentierte Künstler haben Orginelle Songs erstellt, welche progressiv in jeder Runde freigeschaltet werden: Qualifizierung, Halbfinale, Finale, und das große Finale.\nJedes Original beinhaltet einen einzigartigen Stil und Kunst, diese Beatmaps sind für die besten des Turniers vorbehalten.",
-			"tracksTitle": "TRACKLISTE.",
+			"title": "Originale",
+			"subtitle": "ORIGINELLE SONGS IN KÜRZE VERFÜGBAR",
+			"description": "Schreite durch die Runden um exklusive TEST Originale freizuschalten. Talentierte Künstler haben Originelle Songs erstellt, welche progressiv in jeder Runde freigeschaltet werden: Qualifizierung, Halbfinale, Finale, und das große Finale.\nJedes Original beinhaltet einen einzigartigen Stil und Kunst, diese Beatmaps sind für die besten des Turniers vorbehalten.",
+			"tracksTitle": "TRACKLISTE",
 			"listenButton": "JETZT ANHÖREN"
 		},
 		"SponsorSpot": {
-			"sponsoredBy": "TEST OPEN is proudly sponsored by",
-			"sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
+			"sponsoredBy": "TEST Open wird stolz gesponsert von",
+			"sponsorMessage": "INDIVIDUELLE TABLET-COVER ZU FAIREN PREISEN",
 			"Coupon": {
-				"save": "SHOP AND SAVE 10%",
-				"codeTitle": "USE CODE",
-				"checkout": "AT CHECKOUT",
-				"shopButton": "SHOP NOW"
+				"save": "EINKAUFEN UND10% SPAREN",
+				"codeTitle": "BENUTZE CODE",
+				"checkout": "AN DER KASSE",
+				"shopButton": "JETZT EINKAUFEN"
 			}
 		}
 	},
@@ -43,8 +43,8 @@
 		"mappool": "MAPPOOL",
 		"schedule": "ZEITPLAN",
 		"teams": "TEAM LISTE",
-		"info": "INFORMATION",
-		"sheet": "SHEET",
+		"info": "INFO",
+		"sheet": "TABELLE",
 		"invites": "EINLADUNGEN",
 		"team": "TEAM",
 		"profile": "PROFIL"
@@ -53,7 +53,7 @@
 		"register": "REGISTRIEREN",
 		"signIn": "ANMELDEN",
 		"signOut": "ABMELDEN",
-		"close": "Schließen"
+		"close": "SCHLIEßEN"
 	},
 	"Status": {
 		"operational": "Alle Dienste sind online",
@@ -71,7 +71,7 @@
 			"schedule": "Zeitplan",
 			"info": "Info",
 			"mappool": "Mappool",
-			"register": "Anmelden",
+			"register": "Registrieren",
 			"teams": "Teams",
 			"team": "Team",
 			"signIn": "Anmelden",
@@ -82,7 +82,7 @@
 		"title": "Etwas ist schiefgelaufen!",
 		"retryButton": "Erneut versuchen",
 		"goHomeButton": "Zurück zur Startseite",
-		"message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
+		"message": "Verzeihung, es scheint als wäre dem System ein Fehler unterlaufen. Klicke auf \"Erneut versuchen\", um zu schauen, ob es diesmal funktioniert, oder gehe zurück zur Startseite."
 	},
 	"ProfilePage": {
 		"Buttons": {
@@ -93,8 +93,8 @@
 			}
 		},
 		"Headings": {
-			"profile": "MEIN PROFIL.",
-			"team": "MEIN TEAM."
+			"profile": "MEIN PROFIL",
+			"team": "MEIN TEAM"
 		},
 		"Osu": {
 			"rank": "GLOBALER RANG",
@@ -122,7 +122,7 @@
 		"Errors": {
 			"ExistingTeam": {
 				"title": "BEREITS IN EINEM TEAM!",
-				"message": "Scheint so als seist du bereits in einem Team. Bitte lösche oder verlasse dein aktuelles Team, bevor du einem anderen beitrittst."
+				"message": "Es scheint als seist du bereits in einem Team. Bitte lösche oder verlasse dein aktuelles Team, bevor du einem anderen beitrittst."
 			},
 			"FailedInvite": {
 				"title": "ANNEHMEN DER {type} FEHLGESCHLAGEN!",
@@ -144,20 +144,20 @@
 				"title": "UPDATE FEHLGESCHLAGEN!",
 				"message": "Verzeihung, aber es war uns nicht möglich deine osu! Profil-Informationen zu aktualisieren. Bitte versuche es erneut und schau, ob es klappt."
 			},
-			"noRank": "No Rank"
+			"noRank": "Kein Rang"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
-				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"title": "KONTO LÖSCHEN?",
+				"message": "Bist du sicher, dass du dein Konto löschen möchtest? Dadurch werden alle gespeicherten Nutzerdaten gelöscht und deinen osu/Discord Zugang entfernt.",
 				"Buttons": {
 					"Delete": {
-						"text": "DELETE",
-						"loadingText": "DELETING"
+						"text": "JA, LÖSCHEN",
+						"loadingText": "WIRD GELÖSCHT"
 					},
-					"noThanks": "NO THANKS",
-					"confirmDelete": "DELETE ACCOUNT",
-					"close": "CLOSE"
+					"noThanks": "NEIN DANKE",
+					"confirmDelete": "KONTO LÖSCHEN",
+					"close": "SCHLIEßEN"
 				}
 			}
 		}
@@ -170,7 +170,7 @@
 		},
 		"Form": {
 			"heading": "EIN TEAM ERSTELLEN",
-			"teamName": "Teamname",
+			"teamName": "Name des Teams",
 			"teamAcronym": "Team Akronym",
 			"timezone": "Zeitzone",
 			"teamFlag": "Team Flagge",
@@ -190,7 +190,7 @@
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Es scheint als wäre dein osu! Konto gesperrt. Es ist dir leider nicht möglich dich zu Registrieren, währen das Konto gesperrt ist. Falls du meinst, dies sei ein Fehler, melde dich von der Test Open Seite ab, und melde dich dann wieder an.",
+				"message": "Es scheint als wäre dein osu! Konto gesperrt. Es ist dir nicht möglich dich zu Registrieren, während das Konto gesperrt ist. Falls du meinst, dies sei ein Fehler, melde dich von der Test Open Seite ab, und melde dich dann wieder an.",
 				"title": "OSU ACCOUNT GESPERRT!"
 			},
 			"DuplicatePlayer": {
@@ -200,9 +200,9 @@
 			"Duplicate": {
 				"message": "Es existiert bereits ein Team mit diesem {type}, bitte nutze stattdessen ein anderes {type}.",
 				"Types": {
-					"name": "name",
-					"acronym": "abkürzung",
-					"player": "spieler"
+					"name": "Name",
+					"acronym": "Abkürzung",
+					"player": "Spieler"
 				},
 				"title": "TEAM {type} EXISTIERT BEREITS!"
 			},
@@ -217,7 +217,7 @@
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LISTE.",
+		"heading": "TEAM LISTE",
 		"teamsRegistered": "TEAMS SIND ANGEMELDET"
 	},
 	"UnauthorizedPage": {
@@ -225,16 +225,16 @@
 		"unauthorized": "FEHLENDE AUTHORISIERUNG!",
 		"homeButton": "STARTSEITE",
 		"Messages": {
-			"default": "Bitte melden Sie sich zuerst an, bevor Sie auf diese Seite zugreifen."
+			"default": "Bitte melde dich an, bevor du auf die Seite zugreifst."
 		}
 	},
 	"VerifyPage": {
 		"title": "SERVERIFIZIERUNG",
 		"Messages": {
-			"signIn": "Melden Sie sich zuerst an, bevor Sie versuchen zu verifizieren.",
+			"signIn": "Melde dich an, bevor du versuchst dich zu Verifizieren.",
 			"verified": "Willkommen auf dem TEST Open Discord Server!",
-			"defaultError": "Verifizierung fehlgeschlagen. Bitte versuchen Sie es später erneut.",
-			"default": "Bitte klicken Sie auf die Schaltfläche unten, um Zugang zum Server zu erhalten."
+			"defaultError": "Verifizierung fehlgeschlagen. Bitte versuche es später erneut.",
+			"default": "Bitte klicke auf die Schaltfläche unten, um Zugang zum Server zu erhalten."
 		},
 		"Buttons": {
 			"tryAgain": "ERNEUT VERSUCHEN",
@@ -250,10 +250,10 @@
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MEIN TEAM.",
-			"player": "SPIELER LISTE."
+			"team": "MEIN TEAM",
+			"player": "SPIELER LISTE"
 		},
-		"timezone": "ZEITZOHNE",
+		"timezone": "ZEITZONE",
 		"Buttons": {
 			"delete": "TEAM LÖSCHEN",
 			"edit": "TEAM BEARBEITEN",
@@ -269,7 +269,7 @@
 		},
 		"Invites": {
 			"heading": "ABGESCHICKTE EINLADUNGEN",
-			"error": "Verzeihung, leider konnten wir die Spieler nicht deinem Team hinzufügen.",
+			"error": "Verzeihung, es war uns nicht möglich die Spieler deinem Team hinzuzufügen.",
 			"none": "Du hast derzeit keine ausgehenden Einladungen. Nutze die obige Suchfunktion, um Einladungen zu versenden.",
 			"Invite": {
 				"rank": "RANG",
@@ -285,8 +285,8 @@
 				"title": "LÖSCHEN VON {type} FEHLGESCHLAGEN!",
 				"message": "Verzeihung, es war uns nicht möglich diesen {type} zu entfernen. Bitte versuche es erneut und schau, ob es klappt.",
 				"Types": {
-					"player": "spieler",
-					"invite": "einladung"
+					"player": "Spieler",
+					"invite": "Einladung"
 				}
 			},
 			"InvitedSelf": {
@@ -314,9 +314,9 @@
 				"message": "Es scheint als wäre dieser Spieler bereits in deinem Team, sollte dies ein Irrtum sein, versuche es bitte erneut."
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
-				"profileButton": "PROFILE"
+				"title": "NICHT IN EINEM TEAM!",
+				"message": "Es scheint als seist du derzeit nicht in einem Team. Bitte gehe erst auf dein Profil und nehme eine Einladung an.",
+				"profileButton": "PROFIL"
 			}
 		}
 	},
@@ -328,30 +328,30 @@
 			"4": "Es gibt **keine Rang-Voraussetzungen** für Teilnehmer.",
 			"5": "Alle registrierten Teams müssen sich am dafür vorgesehenen Wochenende qualifizieren.",
 			"6": "Die besten **32 Teams** werden in den **Doppel-K.-o. Turnierbaum** voranschreiten.",
-			"7": "Alle Spieler müssen sich im **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** befinden, und ihre Spitznamen zu ihrem osu! Namen ändern.",
+			"7": "Alle Spieler müssen sich im **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** befinden, und ihre Nicknamen zu ihrem osu! Namen ändern.",
 			"8": "Die Uhrzeit wird in **UTC 0** und deiner **Lokalen Discord Uhrzeit** angezeigt.",
 			"9": "Alle Turnier-Mitarbeiter (Staff), welche in keiner der hier genannten Postion sind, ist es untersagt bei dem Turnier mitzuspielen: {sublist_alpha} Streamer {sublist_alpha} Stream Moderator/Kommentator {sublist_alpha} Designer {sublist_alpha} Übersetzer",
-			"heading": "ALLGEMEINE INFORMATION.",
+			"heading": "ALLGEMEINE INFORMATION",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
-				"heading": "SCHEDULE"
+				"1": "**Anmeldungen:** 26. Februar - 18. März",
+				"2": "**Sicherheitsüberprüfung:** 18. März - 23. März",
+				"3": "**Qualifizierung:** 29. März - 31. März",
+				"4": "**Runde der 32:** 5. April - 7. April",
+				"5": "**Achtelfinale:** 12. April - 14. April",
+				"6": "**Viertelfinale:** 19. April - 21. April",
+				"7": "**Halbfinale:** 26. April - 28. April",
+				"8": "**Finale:** 3. Mai - 5. Mai",
+				"9": "**Großes Finale:** 10. Mai - 12. Mai",
+				"heading": "ZEITPLAN"
 			}
 		},
 		"Registrations": {
 			"1": "Du musst dich auf der Website sowohl mit deinem **osu!**, sowie deinem **Discord Konto** anmelden.",
-			"2": "Team Erstellung und Management wird durch die **[TEST Open Webseite](https://test-open.com)** ausgeführt.",
+			"2": "Team Erstellung und Management wird über die **[TEST Open Webseite](https://test-open.com)** ausgeführt.",
 			"3": "Um dich als **Freier Spieler** (Free Agent) zu registrieren, suche im **Discord Server** den #looking-for-team Kanal auf, dort ist es dir möglich mithilfe des **TEST Bot** einen Post zu erstellen.",
 			"4": "Falls die Webseite nicht verfügbar ist, kontaktiere einen Admin, um dich über das **anmelde Formular** zu registrieren. Beachte bitte, dass die Daten des Anmeldeformulars nur auf dem Sheet sichtbar sind, bis diese auf der Webseite manuell nachgetragen werden.",
 			"5": "Die Turnier-Organisation wird keine **Free Agent Teams** erstellen. Solltest du wünschen am Turnier mitzuspielen, musst du selber ein Team finden.",
-			"heading": "REGISTRIERUNGEN."
+			"heading": "REGISTRIERUNG"
 		},
 		"GeneralConduct": {
 			"1": "Respektiere andere Spieler und das Turner-Personal.",
@@ -365,47 +365,47 @@
 			"9": "Englisch ist die primäre Sprache des Turniers, behalte dies im Hinterkopf, wenn du mit dem Turnier-Personal (Staff) kommunizierst.",
 			"10": "Solltest du bemerken das jemand gegen eine dieser regeln verstößt, **melde es bitte einem Moderator oder Admin**.",
 			"11": "Des Weiteren, benutze **gesunden Menschenverstand** um eine **einladende Umgebung für alle** zu gestalten!",
-			"heading": "ALLGEMEINES VERHALTEN."
+			"heading": "ALLGEMEINES VERHALTEN"
 		},
 		"Scheduling": {
 			"1": "Spiele werden über den **TEST-Bot** im Discord Server geplant.",
 			"2": "Um die Qualifizierungsrunde zu planen oder zu verschieben, nutze den **/schedule** Befehl und fülle die entsprechenden Informationsfelder aus.",
 			"3": "Um ein Spiel zu verschieben, nutze den **/reschedule** Befehl und fülle die entsprechenden Informationsfelder aus. Dies sendet eine anfrage in den Planungs-Kanal.",
-			"4": "Um das Spiel zu verschieben, müssen beide Teamkapitäne im Planungs-Kanal auf \"annehmen\" (\"accept\") drücken.",
-			"heading": "SPIEL/RUNDEN PLANUNG."
+			"4": "Um das Spiel zu verschieben, müssen beide Teamkapitäne im #scheduling kanal auf \"annehmen\" (\"accept\") drücken.",
+			"heading": "SPIEL/RUNDEN PLANUNG"
 		},
 		"GameProcedures": {
 			"1": "Alle Maps werden mit dem **Standard osu! lazer Score System** bewertet.",
 			"2": "Die \"**NoFail**\" mod wird erzwungen.",
 			"3": "Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren. {sublist_alpha} Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten. {sublist_alpha} Eine Erinnerung wird **25 Minuten** vor dem jeweiligen Spiel verschickt. {sublist_alpha} Der lazer Raumname und das Passwort werden **15 Minuten** vor beginn des spiels verschickt.",
 			"4": "Nachdem eine Map gewählt wurde haben die Teams **2 Minuten** Zeit um, ihre Spieler auszuwechseln.",
-			"heading": "SPIELABLAUF.",
+			"heading": "SPIELABLAUF",
 			"Qualifiers": {
 				"1": "Maps werden in derselben Reihenfolge gespielt wie der Mappool sie vorgibt.",
 				"2": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, wird der entsprechende Spieler die Map am Ende der Qualifizierungsrunde erneut spielen.",
-				"3": "Es wird erwartet, dass die Teams bis spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.",
+				"3": "Es wird erwartet, dass die Teams bis spätestens **5 Minuten nach Start** der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.",
 				"heading": "QUALIFIZIERUNGEN"
 			},
 			"Match": {
 				"1": "Die Sieg-Bedingung für jede Spielrunde ist **Team gegen Team** (\"TeamVS\").",
-				"2": "Maps zum Aufwärmen, zu Schützende, oder zu Bannende Maps, sowie die Auswahl der nächsten Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
-				"3": "Es wird erwartet, dass die Teams bis spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen: {sublist_alpha} 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect). {sublist_alpha} 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban). {sublist_alpha}15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).",
+				"2": "Die Auswahl von Maps zum Aufwärmen, zu Schützen, oder zu Sperren, sowie die Auswahl der nächsten zu spielenden Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
+				"3": "Es wird erwartet, dass die Teams bis **spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match** haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen: {sublist_alpha} 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect). {sublist_alpha} 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban). {sublist_alpha} 15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).",
 				"4": "Die Spieler müssen folgende \"Sitzplätze\" in der Spielrunde einnehmen: {sublist_alpha} Team 1 (Rot): Platz 1, 2, und 3.{sublist_alpha} Team 2 (Blau): Platz 4, 5, und 6.",
-				"5": "Die Teamkapitäne werden den \"/roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:{sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren.{sublist_alpha}Als Zwietes Wählen, aber zuerst eine Map Sperren.",
+				"5": "Die Teamkapitäne werden den \"/roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:{sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren.{sublist_alpha} Als Zweites Wählen, aber zuerst eine Map Sperren.",
 				"6": "Den Teams ist es erlaubt eine Map ihrer Wahl zum Aufwärmen zu spielen.{sublist_alpha} Die Map darf **nicht länger als 4 Minuten lang** sein.{sublist_alpha} Die Map darf **nicht im Mappool** sein.",
-				"7": "Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (banning phase).",
-				"8": "Die Sperrphase (banning phase) wird im **\"snake format\"** (ABBA) abgehalten.{sublist_alpha} Team 1 sperrt eine Map.{sublist_alpha} Team 2 sperrt 2 Maps.{sublist_alpha}Team 1 sperrt eine Map.",
+				"7": "Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (Ban phase).",
+				"8": "Die Sperrphase (Ban phase) wird im **\"snake format\"** (ABBA) abgehalten.{sublist_alpha} Team 1 sperrt eine Map.{sublist_alpha} Team 2 sperrt 2 Maps.{sublist_alpha} Team 1 sperrt eine Map.",
 				"9": "Sollte eine der gesperrten **Maps von einem der Teams geschützt sein, wird die Sperrung annulliert** und die Map wird regulär spielbar sein.",
 				"10": "Das **doppelt Sperren einer Mod im Mappool ist nicht erlaubt**, mit Ausnahme der \"No-Mod\" Maps.",
-				"11": "Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der \"**Lazer-Mod**\" und \"** No-Mod**\" Maps.",
+				"11": "Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der \"**Lazer-Mod**\" und \"**No-Mod**\" Maps.",
 				"12": "Spieler dürfen den Tiebreaker mit jeder Mod spielen, die nicht alle Spieler beeinflusst.",
 				"13": "Jedes Team hat **eine 5 minütige Pause**, welche zu jeder Zeit in der Spielrunde genutzt werden kann.",
 				"14": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, **wird die Map abgebrochen**. Das Team hat dann **5 Minuten Zeit einen anderen Spieler für die Map einzutauschen**. Dies sollte nur ein mal Pro Team/Spielrunde passieren.",
-				"heading": "Spielrunde"
+				"heading": "SPIELRUNDE"
 			}
 		},
 		"MappoolInfo": {
-			"1": "Der Mappool wird jede Woche am Sonntag veröffentlicht.",
+			"1": "Der Mappool wird jede Woche am **Sonntag** veröffentlicht.",
 			"2": "lazer Mod, LM abgekürzt, ist ein Modpool welcher jede Woche andere Mods nutzt, welche in lazer zu finden sind.",
 			"heading": "MAPPOOL INFO",
 			"Table": {
@@ -426,7 +426,7 @@
 		},
 		"PrizePool": {
 			"1": "Der MVP des Turniers{sublist_alpha} **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.",
-			"2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasste Tablet-Hülle**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
+			"2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasstes Tablet-Cover**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
 			"3": "Zweiter Platz{sublist_alpha} $200 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
 			"4": "Dritter Platz{sublist_alpha} $100 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
 			"heading": "BELOHNUNGS- UND PREISLISTE"
@@ -434,8 +434,8 @@
 	},
 	"Components": {
 		"ComingSoon": {
-			"title": "COMING SOON!",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"title": "IN KÜRZE VERFÜGBAR!",
+			"message": "Diese Seite ist noch im Aufbau. Halte Ausschau nach Informationen diesbezüglich, und schau später noch mal vorbei, wenn die Seite fertig ist."
 		}
 	},
 	"APICallbacks": {
