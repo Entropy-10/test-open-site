@@ -18,9 +18,10 @@ export const createTeamForm = z.object({
 		.string()
 		.trim()
 		.toUpperCase()
-		.min(1, 'Team name is required')
+		.min(1, 'Acronym is required')
 		.min(3, 'Cannot be less than three characters')
-		.max(4, 'Cannot be more than four characters'),
+		.max(4, 'Cannot be more than four characters')
+		.regex(/^\w+$/, 'Only letters or characters are allowed'),
 	timezone: z.string().toUpperCase().min(1, 'Timezone is required'),
 	flag: z
 		.custom<FileList>()
