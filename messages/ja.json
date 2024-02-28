@@ -200,9 +200,9 @@
 			"Duplicate": {
 				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "名前",
+					"acronym": "略称",
+					"player": "プレイヤー"
 				},
 				"title": "TEAM {type} ALREADY EXISTS!"
 			},
@@ -250,8 +250,8 @@
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "自分のチーム",
+			"player": "プレイヤーリスト"
 		},
 		"timezone": "タイムゾーン",
 		"Buttons": {
@@ -351,10 +351,10 @@
 			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
 			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
 			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
+			"heading": "参加登録"
 		},
 		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
+			"1": "他のプレイヤーとすべてのスタッフに敬意を払ってください。",
 			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
 			"3": "TEST Open has no tolerance for bullying of any kind.",
 			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
