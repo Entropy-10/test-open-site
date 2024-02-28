@@ -378,7 +378,7 @@
 			"1": "すべてのスコアは、**osu! lazer のデフォルトスコア方式** が採用されます。",
 			"2": "**NoFail** が適用されます。",
 			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
+			"4": "プレイするプレイヤーは、譜面が選択されてから２分以内にロビーに参加してください。",
 			"heading": "GAME PROCEDURES.",
 			"Qualifiers": {
 				"1": "Maps will be played in the same order as seen on the mappool.",
