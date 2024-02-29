@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@supabase/server'
+import { getFlagPathFromUrl } from '@utils/client'
 import { getServerTranslations } from '@utils/server'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -33,11 +34,12 @@ export async function deleteTeam(formData: FormData) {
 		.delete()
 		.eq('id', teamId)
 
-	const flagRegex =
-		/(?:https:\/\/[\w.-]+\/storage\/v1\/object\/public\/flags\/)(.*\.jpeg)/
-
-	const flagLabel = teamFlag.match(flagRegex)?.[1]
-	if (flagLabel) await supabase.storage.from('flags').remove([flagLabel])
+	const flagInfo = getFlagPathFromUrl(teamFlag)
+	if (flagInfo) {
+		await supabase.storage
+			.from('flags')
+			.remove([`${flagInfo.folder}/${flagInfo.filename}`])
+	}
 
 	if (teamError) {
 		redirect(

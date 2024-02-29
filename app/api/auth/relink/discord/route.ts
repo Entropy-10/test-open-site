@@ -35,7 +35,7 @@ export async function GET(request: NextRequest) {
 	try {
 		const tokens = await discordAuth.tokenRequest({
 			code,
-			scope: ['identify', 'guilds.join', 'guilds.members.read'],
+			scope: ['identify', 'guilds.members.read'],
 			grantType: 'authorization_code',
 			redirectUri: `${getBaseUrl()}/api/auth/relink/discord`
 		})

@@ -5,17 +5,17 @@ import { acceptedImageTypes, createTeamForm } from '@schemas'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
+import ImagePicker from '~/components/image-picker'
 import MessageBox from '~/components/message-box'
 import TextModal from '~/components/text-modal'
 import Button from '~/components/ui/Button'
 import Heading from '~/components/ui/heading'
+import UtcPicker from '~/components/utc-picker'
 import { createTeam } from '../_actions/create-team'
 import { uploadImage } from '../_actions/upload-image'
-import ImagePicker from './image-picker'
 import Input from './input'
 import InputError from './input-error'
 import Label from './label'
-import UtcPicker from './utc-picker'
 
 import type { ModalError } from '@types'
 import { useTranslations } from 'next-intl'
@@ -26,10 +26,7 @@ interface CreateTeamFormProps {
 	discordId: string
 }
 
-export default function CreateTeamForm({
-	osuId,
-	discordId
-}: CreateTeamFormProps) {
+export default function CreateTeamForm({ osuId }: CreateTeamFormProps) {
 	const t = useTranslations('RegistrationPage')
 	const [previewImage, setPreviewImage] = useState<string | null>(null)
 	const [success, setSuccess] = useState(false)
@@ -73,13 +70,13 @@ export default function CreateTeamForm({
 		flagForm.append('team_name', data.name.toLowerCase().replaceAll(' ', '-'))
 		flagForm.append('csrf_token', csrfToken)
 
-		let flag: { path: string; url: string }
+		let flag: string
 		try {
-			const { data: flagData, error: imageUploadError } =
+			const { url: flagUrl, error: imageUploadError } =
 				await uploadImage(flagForm)
 
-			if (!flagData || imageUploadError) throw Error
-			flag = flagData
+			if (!flagUrl || imageUploadError) throw Error
+			flag = flagUrl
 		} catch (err) {
 			setError({
 				title: t('Errors.UploadFailed.title'),
@@ -95,8 +92,7 @@ export default function CreateTeamForm({
 			JSON.stringify({
 				...data,
 				flag,
-				osuId,
-				discordId
+				osuId
 			})
 		)
 
