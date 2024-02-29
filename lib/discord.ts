@@ -27,7 +27,7 @@ export const discordAuth = new Auth({
 
 export function getDiscordAuthUrl(redirectUri?: string) {
 	return discordAuth.generateAuthUrl({
-		scope: ['identify', 'guilds.join', 'guilds.members.read'],
+		scope: ['identify', 'guilds.members.read'],
 		redirectUri: redirectUri ?? env.NEXT_PUBLIC_DISCORD_REDIRECT_URI
 	})
 }
@@ -36,7 +36,7 @@ export async function refreshDiscordToken(tokens: Tables<'tokens'>) {
 	const newTokens = await discordAuth.tokenRequest({
 		refreshToken: tokens.discord_refresh_token,
 		grantType: 'refresh_token',
-		scope: 'identify guilds.join guilds.members.read'
+		scope: 'identify guilds.members.read'
 	})
 
 	const supabase = createClient(cookies())

@@ -24,7 +24,6 @@ export async function deleteItem(formData: FormData) {
 		.eq(type === 'invite' ? 'id' : 'user_id', id)
 
 	if (error) {
-		console.log(error)
 		redirect(
 			`/team?title=${t('DeleteItemFailed.title', {
 				type: t(`DeleteItemFailed.Types.${type}`).toUpperCase()

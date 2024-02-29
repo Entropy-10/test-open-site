@@ -4,19 +4,35 @@ import { forwardRef } from 'react'
 
 import ChevronDownIcon from '~/components/icons/chevron-down'
 
+import { cn } from '@utils/client'
 import type { UseFormRegisterReturn } from 'react-hook-form'
 
-const UtcPicker = forwardRef<HTMLButtonElement, UseFormRegisterReturn>(
-	({ name, onChange, required, disabled }, forwardedRef) => (
+interface UtcPickerProps extends UseFormRegisterReturn {
+	defaultValue?: string
+	className?: {
+		trigger?: string
+		content?: string
+	}
+}
+
+const UtcPicker = forwardRef<HTMLButtonElement, UtcPickerProps>(
+	(
+		{ name, onChange, required, disabled, className, defaultValue },
+		forwardedRef
+	) => (
 		<Select.Root
 			name={name}
 			onValueChange={value => onChange({ target: { name, value } })}
+			defaultValue={defaultValue}
 			required={required}
 			disabled={disabled}
 		>
 			<Select.Trigger
 				ref={forwardedRef}
-				className='focus:-outline-offset-2 flex w-28 justify-between border-[1.5px] border-dark-blue pl-1 text-dark-blue'
+				className={cn(
+					'focus:-outline-offset-2 flex w-28 justify-between border-[1.5px] border-dark-blue pl-1 text-dark-blue',
+					className?.trigger
+				)}
 			>
 				<Select.Value />
 				<Select.Icon>
@@ -28,7 +44,12 @@ const UtcPicker = forwardRef<HTMLButtonElement, UseFormRegisterReturn>(
 			</Select.Trigger>
 
 			<Select.Portal>
-				<Select.Content className='overflow-hidden border-[1.5px] border-dark-blue bg-milky-white'>
+				<Select.Content
+					className={cn(
+						'overflow-hidden border-[1.5px] border-dark-blue bg-milky-white',
+						className?.content
+					)}
+				>
 					<Select.ScrollUpButton className='flex h-[20px] cursor-default items-center justify-center'>
 						<ChevronDownIcon
 							className='size-6 rotate-180'

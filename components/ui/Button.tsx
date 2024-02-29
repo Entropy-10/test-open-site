@@ -4,7 +4,7 @@ import { cn } from '@utils/client'
 import { cva } from 'class-variance-authority'
 import { Loader2 } from 'lucide-react'
 
-import Link from './Link'
+import Link from 'next/link'
 
 import type { VariantProps } from 'class-variance-authority'
 import type { ButtonHTMLAttributes, ReactNode } from 'react'

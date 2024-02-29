@@ -1,11 +1,6 @@
 'use server'
 
-import {
-	addGuildMember,
-	getGuildMember,
-	sendMessage,
-	updateGuildMember
-} from '@discord'
+import { getGuildMember, sendMessage, updateGuildMember } from '@discord'
 import { env } from '@env'
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
@@ -43,7 +38,7 @@ export async function verify() {
 
 	try {
 		if (!member) {
-			await addGuildMember(memberInfo)
+			//await addGuildMember(memberInfo)
 		} else {
 			await updateGuildMember(memberInfo)
 		}

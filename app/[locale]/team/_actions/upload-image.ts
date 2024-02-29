@@ -5,15 +5,16 @@ import { createClient } from '@supabase/server'
 import { cookies } from 'next/headers'
 import sharp from 'sharp'
 
-export async function uploadImage(formData: FormData) {
+export default async function uploadImage(formData: FormData) {
 	try {
 		const teamName = formData.get('team_name')?.toString()
+		const oldFlagPath = formData.get('old_flag_path')?.toString()
 		const imageType = formData.get('file_type')?.toString()
 		const image = await (
 			formData.get('file') as Blob | undefined
 		)?.arrayBuffer()
 
-		if (!teamName || !image || !imageType) {
+		if (!teamName || !oldFlagPath || !image || !imageType) {
 			throw new Error('Missing team name or file')
 		}
 
@@ -29,7 +30,13 @@ export async function uploadImage(formData: FormData) {
 		} = await sharpImage.toBuffer({ resolveWithObject: true })
 
 		const supabase = createClient(cookies())
-		const { data, error } = await supabase.storage
+		const { error: deleteError } = await supabase.storage
+			.from('flags')
+			.remove([oldFlagPath])
+
+		if (deleteError) throw deleteError
+
+		const { data, error: uploadError } = await supabase.storage
 			.from('flags')
 			.upload(
 				`${teamName}/flag-${Date.now()}.${format}`,
@@ -37,13 +44,13 @@ export async function uploadImage(formData: FormData) {
 				{ upsert: true }
 			)
 
-		if (error) throw error
+		if (uploadError) throw uploadError
 
 		return {
 			url: `${env.SUPABASE_STORAGE_URL}/flags/${data.path}`,
 			error: null
 		}
 	} catch (err) {
-		return { error: { type: 'default', message: 'failed to create team' } }
+		return { error: { type: 'default', message: '' } }
 	}
 }

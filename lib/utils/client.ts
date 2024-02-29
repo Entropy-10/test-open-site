@@ -32,3 +32,12 @@ export function blobToBase64(blob: Blob) {
 		reader.readAsDataURL(blob)
 	})
 }
+
+export function getFlagPathFromUrl(url: string) {
+	const matches = url.match(/\/flags\/(.*?)\/(flag-\d+\.(?:jpeg|gif))/)
+	if (!matches) return null
+	return {
+		folder: matches[1],
+		filename: matches[2]
+	}
+}

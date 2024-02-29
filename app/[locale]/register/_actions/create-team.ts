@@ -15,13 +15,14 @@ export async function createTeam(
 
 	if (!session) redirect('/unauthorized')
 
-	if (session.user.restricted)
+	if (session.user.restricted) {
 		return {
 			error: {
 				title: t('Restricted.title'),
 				message: t('Restricted.message')
 			}
 		}
+	}
 
 	const formTeamData = formData.get('teamData')?.toString()
 	if (!formTeamData) {
@@ -53,7 +54,7 @@ export async function createTeam(
 				name: teamData.name,
 				acronym: teamData.acronym,
 				timezone: teamData.timezone,
-				flag: teamData.flag.url,
+				flag: teamData.flag,
 				updated_at: new Date().toISOString()
 			})
 			.select()

@@ -46,8 +46,8 @@ export default async function TeamList() {
 											className='size-[32px]'
 										/>
 
-										<div className='flex flex-col justify-center'>
-											<div className='font-extrabold text-sm/3'>
+										<div className='flex w-full flex-col justify-center'>
+											<div className='w-[120px] overflow-hidden truncate font-extrabold text-sm/3'>
 												{user?.osu_name}
 											</div>
 											<div className='text-xs'>

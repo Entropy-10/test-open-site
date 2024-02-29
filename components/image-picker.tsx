@@ -1,8 +1,9 @@
 'use client'
 
+import { cn } from '@utils/client'
 import { X } from 'lucide-react'
 import Image from 'next/image'
-import { forwardRef } from 'react'
+import { forwardRef, useState } from 'react'
 
 import type { UseFormRegisterReturn } from 'react-hook-form'
 
@@ -11,15 +12,34 @@ interface ImagePickerProps extends UseFormRegisterReturn {
 	clearPreviewImage: () => void
 	uploadText: string
 	recommendedText: string
+	className?: string
+	defaultValue?: string
 }
 
 const ImagePicker = forwardRef<HTMLInputElement, ImagePickerProps>(
 	(
-		{ previewImage, clearPreviewImage, uploadText, recommendedText, ...props },
+		{
+			previewImage,
+			clearPreviewImage,
+			uploadText,
+			recommendedText,
+			className,
+			defaultValue: tempDefaultValue,
+			...props
+		},
 		forwardedRef
 	) => {
+		const [defaultValue, setDefaultValue] = useState<string | undefined>(
+			tempDefaultValue
+		)
+
 		return (
-			<div className='h-[96px] w-[216px] border border-dark-blue border-dashed p-1'>
+			<div
+				className={cn(
+					'h-[96px] w-[216px] border border-dark-blue border-dashed p-1',
+					className
+				)}
+			>
 				<div className='relative flex size-full items-center justify-center bg-[#E6E5E1] text-center text-dark-blue text-xs'>
 					<label htmlFor='file-upload' className='cursor-pointer'>
 						<div className='flex items-center justify-center'>
@@ -39,12 +59,15 @@ const ImagePicker = forwardRef<HTMLInputElement, ImagePickerProps>(
 						/>
 					</label>
 
-					{previewImage && (
+					{(previewImage || defaultValue) && (
 						<>
 							<button
-								className='absolute top-1 right-1 z-20 text-milky-white drop-shadow-[0px_0px_1px_#000000]'
+								className='absolute top-1 right-1 z-20 text-milky-white drop-shadow-[0px_0px_1px_#000000] focus:outline-none'
 								type='button'
-								onClick={() => clearPreviewImage()}
+								onClick={() => {
+									if (defaultValue) setDefaultValue(undefined)
+									clearPreviewImage()
+								}}
 							>
 								<X />
 							</button>
@@ -53,7 +76,7 @@ const ImagePicker = forwardRef<HTMLInputElement, ImagePickerProps>(
 								fill
 								objectFit='cover'
 								alt='flag preview'
-								src={previewImage}
+								src={previewImage ?? defaultValue ?? ''}
 							/>
 						</>
 					)}
