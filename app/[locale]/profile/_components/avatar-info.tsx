@@ -33,7 +33,7 @@ export default function AvatarInfo({
 
 	return (
 		<div className={cn('flex gap-2', className)}>
-			<div>
+			<div className=''>
 				<Image
 					width={123}
 					height={123}
@@ -44,9 +44,18 @@ export default function AvatarInfo({
 							? `${user.osu_name}'s pfp`
 							: `${user.discord_name}'s pfp` ?? ''
 					}
-					className='mb-4 size-24 border-2 border-milky-white md:size-[123px]'
+					className={cn(
+						'mb-4 size-24 border-2 border-milky-white md:size-[123px]',
+						type === 'discord' && 'hidden xs:flex'
+					)}
 				/>
-				<div className={cn(type === 'osu' && 'flex w-24 gap-1 md:w-[123px]')}>
+				<div
+					className={cn(
+						type === 'osu' && 'flex w-24 gap-1 md:w-[123px]',
+						type === 'discord' &&
+							'max-xs:padding max-xs:absolute max-xs:bottom-0 max-xs:left-28'
+					)}
+				>
 					<NextIntlClientProvider
 						locale={locale}
 						messages={pick(messages, 'ProfilePage.Options')}
@@ -68,7 +77,12 @@ export default function AvatarInfo({
 				</div>
 			</div>
 
-			<div className='flex h-24 flex-col justify-between text-sm md:h-[123px]'>
+			<div
+				className={cn(
+					'flex h-24 flex-col justify-between text-sm md:h-[123px]',
+					type === 'discord' && 'hidden xs:flex'
+				)}
+			>
 				<div className='font-extrabold text-lg uppercase md:mb-1 md:text-xl'>
 					{type === 'osu' ? user.osu_name : user.discord_name}
 				</div>

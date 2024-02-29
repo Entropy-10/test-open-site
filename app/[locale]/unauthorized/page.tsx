@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 import MessageBox from '~/components/message-box'
+import SignInButton from '~/components/sign-in-button'
 import Background from '~/components/ui/Background'
 import Button from '~/components/ui/Button'
 
@@ -23,9 +24,13 @@ export default function UnauthorizedPage({
 				title={authError ? t('authFailed') : t('unauthorized')}
 				message={message ?? t('Messages.default')}
 			>
-				<Button href='/' variant='outline'>
-					{t('homeButton')}
-				</Button>
+				<div className='flex gap-3'>
+					<SignInButton variant='default' />
+
+					<Button href='/' variant='outline'>
+						{t('homeButton')}
+					</Button>
+				</div>
 			</MessageBox>
 		</Background>
 	)

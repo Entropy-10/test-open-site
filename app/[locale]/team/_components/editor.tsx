@@ -131,9 +131,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 			imageForm.append('csrf_token', csrfToken)
 
 			try {
-				const { url: flagUrl, error: imageUploadError } = await uploadImage(
-					imageForm
-				)
+				const { url: flagUrl, error: imageUploadError } =
+					await uploadImage(imageForm)
 
 				if (!flagUrl || imageUploadError) throw Error
 				newFlag = flagUrl
@@ -225,7 +224,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 					className={cn(
 						'flex flex-col justify-center font-extrabold',
 						editing && 'w-52 gap-1'
-					)}>
+					)}
+				>
 					{editing ? (
 						<input
 							className='h-6 border border-dashed bg-transparent px-1 font-semibold focus:outline-none'
@@ -265,14 +265,16 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 							<Button
 								className='w-[180px]'
 								loading={isSubmitting}
-								type='submit'>
+								type='submit'
+							>
 								UPDATE
 							</Button>
 							<Button
 								type='button'
 								onClick={() => setEditing(false)}
 								className='w-[180px]'
-								variant='outline'>
+								variant='outline'
+							>
 								CANCEL
 							</Button>
 						</div>
@@ -290,7 +292,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 					<>
 						<Button
 							onClick={() => setEditing(true)}
-							className='hidden w-[180px] xs:flex'>
+							className='hidden w-[180px] xs:flex'
+						>
 							{t('Buttons.edit')}
 						</Button>
 						<form action={deleteTeam}>

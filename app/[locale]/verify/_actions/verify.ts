@@ -36,12 +36,10 @@ export async function verify() {
 		tokens: user.tokens
 	}
 
+	if (!member) redirect(`/verify?status=error&message=${t('notInServer')}`)
+
 	try {
-		if (!member) {
-			//await addGuildMember(memberInfo)
-		} else {
-			await updateGuildMember(memberInfo)
-		}
+		await updateGuildMember(memberInfo)
 	} catch (err) {
 		verifyError(t)
 	}

@@ -23,12 +23,7 @@ export async function GET(request: NextRequest) {
 		return authError(url, t('Errors.missingCode'))
 	}
 
-	if (!session) {
-		return linkingError(
-			url,
-			'Invalid session. Please trying logging out and back in.'
-		)
-	}
+	if (!session) return NextResponse.redirect(`${getBaseUrl()}/unauthorized`)
 
 	const supabase = createClient(cookies())
 
@@ -58,7 +53,8 @@ export async function GET(request: NextRequest) {
 			.from('tokens')
 			.update({
 				discord_access_token: tokens.access_token,
-				discord_refresh_token: tokens.refresh_token
+				discord_refresh_token: tokens.refresh_token,
+				old: false
 			})
 			.eq('osu_id', session.sub)
 
