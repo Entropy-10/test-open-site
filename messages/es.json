@@ -245,7 +245,8 @@
 		},
 		"Errors": {
 			"alreadyVerified": "Ya estabas verificado. Si crees que esto es un error, por favor manda mensaje privado a @_entro para ayuda.",
-			"verificationFailed": "Verificación fallida. Por favor intenta otra vez para ver si eso te ayuda."
+			"verificationFailed": "Verificación fallida. Por favor intenta otra vez para ver si eso te ayuda.",
+			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
 		}
 	},
 	"TeamPage": {
@@ -317,7 +318,19 @@
 				"title": "¡NO ESTÁS EN UN EQUIPO!",
 				"message": "Parece que actualmente no formas parte de un equipo. Por favor ve a tu perfil y acepta una invitación primero.",
 				"profileButton": "PERFIL"
+			},
+			"NoChanges": {
+				"title": "NOTHING CHANGED!",
+				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+			},
+			"UpdateTeamFailed": {
+				"title": "FAILED TO UPDATE TEAM!",
+				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
 			}
+		},
+		"TeamUpdated": {
+			"title": "TEAM INFO UPDATED!",
+			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
 		}
 	},
 	"InfoPage": {

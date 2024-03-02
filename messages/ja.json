@@ -11,9 +11,9 @@
 				"schedule": "スケジュール"
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
+				"mappool": "LazerModプールでは毎週新しいModを搭載",
 				"format": "ランク制限なし、ダブルイリミネーション、3v3のトーナメント",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"schedule": "Twitchで配信される試合を観戦しよう"
 			},
 			"Countdown": {
 				"titleSectionOne": "トーナメント",
@@ -23,7 +23,7 @@
 		"Originals": {
 			"title": "オリジナル",
 			"subtitle": "オリジナルソングはまもなく公開。",
-			"description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
+			"description": "ステージを進めて、TESTオリジナルを解禁しよう。さまざまな才能あふれるクリエイターがカスタム曲を制作。予選、セミファイナル、ファイナル、グランドファイナルでリリースされます。どのオリジナルも独自のスタイルとアートを備えています。これらはステージを勝ち進んだプレイヤーだけのものです！",
 			"tracksTitle": "トラックリスト",
 			"listenButton": "今すぐ聞く"
 		},
@@ -33,7 +33,7 @@
 			"Coupon": {
 				"save": "10%割引価格でお届け",
 				"codeTitle": "コード：",
-				"checkout": "AT CHECKOUT",
+				"checkout": "購入時に使用",
 				"shopButton": "今すぐ購入"
 			}
 		}
@@ -43,7 +43,7 @@
 		"mappool": "マッププール",
 		"schedule": "スケジュール",
 		"teams": "チーム",
-		"info": "詳細",
+		"info": "詳細ルール",
 		"sheet": "シート",
 		"invites": "招待",
 		"team": "チーム",
@@ -69,7 +69,7 @@
 		"PageTitles": {
 			"home": "ホーム",
 			"schedule": "スケジュール",
-			"info": "詳細",
+			"info": "詳細ルール",
 			"mappool": "マッププール",
 			"register": "登録",
 			"teams": "チーム",
@@ -142,14 +142,14 @@
 			},
 			"FailedUpdate": {
 				"title": "アップデートに失敗！",
-				"message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
+				"message": "あなたのosu! プロフィールの情報を更新することができませんでした。申し訳ありませんが、もう一度お試しください。"
 			},
 			"noRank": "ランクなし"
 		},
 		"Options": {
 			"DeleteAccount": {
-				"title": "DELETE ACCOUNT?",
-				"message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
+				"title": "アカウントを削除しますか？",
+				"message": "本当にアカウントを削除しますか？保存されているすべてのデータが削除され、osu! およびDiscordのアクセストークンがすべて無効になります。",
 				"Buttons": {
 					"Delete": {
 						"text": "削除",
@@ -166,111 +166,112 @@
 		"heading": "チームの登録",
 		"Closed": {
 			"title": "登録期間終了！",
-			"message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
+			"message": "トーナメントが開始されるまで、参加登録をクローズしています。トップページのカウントダウンが終了次第、もう一度お試しください。"
 		},
 		"Form": {
 			"heading": "チーム作成",
 			"teamName": "チーム名",
 			"teamAcronym": "略称",
 			"timezone": "タイムゾーン",
-			"teamFlag": "チームフラッグ",
+			"teamFlag": "チームフラグ",
 			"createButton": {
 				"text": "作成",
 				"loadingText": "作成中"
 			},
 			"Success": {
 				"title": "チームが作成されました！",
-				"message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
+				"message": "TEST Open へようこそ！\n以下のボタンをクリックすると、チームの管理画面が表示され、プレイヤーの招待を行うことができます。",
 				"teamManagementButton": "チーム管理"
 			},
 			"ImagePicker": {
-				"upload": "Click here to upload",
-				"recommended": "Recommended Ratio 9:4"
+				"upload": "ここをクリックしてアップロード",
+				"recommended": "推奨アスペクト比 9:4"
 			}
 		},
 		"Errors": {
 			"Restricted": {
-				"message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-				"title": "YOU ARE RESTRICTED!"
+				"message": "あなたのosu! アカウントは制限されているようです。残念ながら、制限モード中は登録をすることができません。\nこれが間違いだと思われる場合は、サインアウトして、もう一度ログインし、再度お試しください。",
+				"title": "あなたのosuアカウントは制限されています！"
 			},
 			"DuplicatePlayer": {
-				"message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-				"title": "ALREADY ON A TEAM!"
+				"message": "あなたは既にチームに所属しているようです。\n新しいチームを作る場合は、現在のチームを削除するか、チームから抜けてください。",
+				"title": "チームに参加済みです！"
 			},
 			"Duplicate": {
-				"message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
+				"message": "同じ {type} を使用しているチームが既に存在しているようです。別の {type} を使用してください。",
 				"Types": {
-					"name": "name",
-					"acronym": "acronym",
-					"player": "player"
+					"name": "名前",
+					"acronym": "略称",
+					"player": "プレイヤー"
 				},
-				"title": "TEAM {type} ALREADY EXISTS!"
+				"title": "{type} は既に存在します！"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "チームを作成することができませんでした。何か問題が発生しているようです。申し訳ありませんが、もう一度お試しください。",
+				"title": "チームの作成に失敗しました！"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "フラグのアップロードに失敗しました！",
+				"message": "フラグのアップロードに失敗しました。申し訳ありませんが、もう一度お試しください。"
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "チームリスト",
+		"teamsRegistered": "チームが登録済み"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
-		"homeButton": "HOME",
+		"authFailed": "認証に失敗しました！",
+		"unauthorized": "認証されていません！",
+		"homeButton": "ホーム",
 		"Messages": {
-			"default": "Please sign in first before accessing this page."
+			"default": "このページにアクセスする前に最初にログインしてください。"
 		}
 	},
 	"VerifyPage": {
-		"title": "SERVER VERIFICATION",
+		"title": "サーバー認証",
 		"Messages": {
-			"signIn": "Sign in first before attempting to verify.",
-			"verified": "Welcome to the TEST Open Discord server!",
-			"defaultError": "Verification failed. Please try again later.",
-			"default": "Please click the button below to gain access to the server."
+			"signIn": "認証をするまえに、まずはログインしてください。",
+			"verified": "TEST Open の Discordサーバー へようこそ！",
+			"defaultError": "認証に失敗しました。しばらくしてからもう一度お試しください。",
+			"default": "サーバーにアクセスするには下のボタンをクリックしてください。"
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "再試行",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "確認",
+				"loadingText": "確認中"
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps."
+			"alreadyVerified": "既に認証済みです。これが間違いだと思われる場合は、@__entro にDMしてください。",
+			"verificationFailed": "認証に失敗しました。申し訳ありませんが、もう一度お試しください。",
+			"notInServer": "あなたはDiscordサーバーにいません。認証を行う前にサーバーに参加してください。"
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "自分のチーム",
+			"player": "プレイヤーリスト"
 		},
-		"timezone": "TIMEZONE",
+		"timezone": "タイムゾーン",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "チームを削除",
+			"edit": "チームを編集",
+			"leave": "チームから退出"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "現在のチームメンバー",
 			"Player": {
-				"rank": "RANK",
+				"rank": "ランク",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "プレイヤーの削除"
 			}
 		},
 		"Invites": {
 			"heading": "送信中の招待",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"error": "申し訳ありませんが、チームにプレイヤーを登録できませんでした。",
+			"none": "現在、送信した招待はありません。上記の入力フィールドを使用して招待を開始してください。",
 			"Invite": {
 				"rank": "ランク",
 				"discord": "DISCORD",
@@ -302,111 +303,123 @@
 				"message": "そのプレイヤーを招待することができませんでした。申し訳ありませんが、もう一度お試しください。"
 			},
 			"PlayersOnTeam": {
-				"title": "PLAYERS STILL ON TEAM!",
-				"message": "Please remove all players from the team before deleting the team."
+				"title": "プレイヤーがまだチームに残っています！",
+				"message": "チームを削除する前に、すべてのプレイヤーをチームから削除してください。"
 			},
 			"DeleteTeamFailed": {
-				"title": "FAILED TO DELETE TEAM!",
-				"message": "Sorry, we failed to delete your team. Please try again to see if that helps."
+				"title": "チームの削除に失敗しました！",
+				"message": "チームを削除することができませんでした。申し訳ありませんが、もう一度お試しください。"
 			},
 			"PlayerOnTeam": {
-				"title": "PLAYER ON TEAM ALREADY!",
-				"message": "Looks like this player is already on your team. If this is a mistake please try again and see that helps."
+				"title": "すでに参加済みです！",
+				"message": "この選手は既にあなたのチームにいるようです。これが間違いだと思われる場合は、もう一度お試しください。"
 			},
 			"NotOnTeam": {
-				"title": "NOT ON A TEAM!",
-				"message": "Looks like you currently are not on a team. Please go to your profile and accept an invite first.",
+				"title": "チームに入っていません！",
+				"message": "あなたは現在チームに所属していません。まずはプロフィールから招待を承認してください。",
 				"profileButton": "プロフィール"
+			},
+			"NoChanges": {
+				"title": "変更されていません！",
+				"message": "チーム情報は何も変更されていないようです。アップデートする前に何か情報を変更してください。"
+			},
+			"UpdateTeamFailed": {
+				"title": "チームのアップデートに失敗しました！",
+				"message": "チームのアップデートに失敗しました。申し訳ありませんが、もう一度お試しください。"
 			}
+		},
+		"TeamUpdated": {
+			"title": "チーム情報が更新されました！",
+			"message": "チーム情報は正常に更新されました。変更した内容を確認するには、ページを再読み込みしてください。"
 		}
 	},
 	"InfoPage": {
 		"GeneralInfo": {
-			"1": "TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.",
-			"2": "Teams are comprised of **3-5 members**.",
-			"3": "Teams must select exactly **3 players** for each map played in the tournament.",
-			"4": "There are **no rank requirements** for participants.",
-			"5": "All prospective teams must undergo qualifiers on the listed weekend.",
-			"6": "The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.",
-			"7": "All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.",
-			"8": "Times will be listed in **UTC-0** and **Discord Local Time**.",
-			"9": "Staff members that hold any role other than the following may not participate in the tournament: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-			"heading": "GENERAL INFO.",
+			"1": "TEST Open は **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** を使って行われるトーナメントです。",
+			"2": "チームの人数は **3人~5人** です。",
+			"3": "チームは譜面ごとに**3人のプレイヤー**を選択する必要があります。",
+			"4": "**ランクの制限はありません。**",
+			"5": "参加する全てのチームは、指定の週末 (後述) に予選を受けなければなりません。",
+			"6": "予選の **上位32チーム** が **ダブルイリミネーション** ブラケットに進出できます。",
+			"7": "参加する全てのプレイヤーは、**[Discord Server](https://discord.com/invite/nZnQZMvEhq)** に参加し、ニックネームを**osu!のユーザーネーム** に変更する必要があります。",
+			"8": "時刻はすべて **UTC-0 (協定世界時)** と **Discordのローカル時間** で表記されます。",
+			"9": "これら以外の役割を持つスタッフは、プレイヤーとして参加することができません。 {sublist_alpha} ストリーマー (配信者) {sublist_alpha} コメンテーター {sublist_alpha} デザイナー {sublist_alpha} 翻訳者",
+			"heading": "大会概要",
 			"Schedule": {
-				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
+				"1": "**参加登録：** ２月２６日～３月１８日",
+				"2": "**スクリーニング：** ３月１８日～２３日",
+				"3": "**予選：** ３月２９日～３１日",
+				"4": "*RO32：** ４月５日～７日",
+				"5": "*RO16：** ４月１２日～１４日",
+				"6": "**Quarterfinals：** ４月１９日～２１日",
+				"7": "**Semifinals：** ４月２６日～２８日",
+				"8": "**Finals:：** ５月３日～５日",
+				"9": "**Grand Finals：** ５月１０日～１２日",
 				"heading": "スケジュール"
 			}
 		},
 		"Registrations": {
-			"1": "You must sign up for the website with both your **osu!** and **Discord account**.",
-			"2": "Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.",
-			"3": "To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.",
-			"4": "If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.",
-			"5": "The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.",
-			"heading": "REGISTRATIONS."
+			"1": "**osu!** と **Discordアカウント** の両方をウェブサイトに登録する必要があります。",
+			"2": "チームの作成および管理は、**[TEST Open ウェブサイト](https://test-open.com)**を通じて行われます。",
+			"3": "**フリーエージェントの投稿**を作成するには、**discordサーバー**で、#looking-for-teamチャンネルを使用してください。 そこで**TEST Bot**を使って投稿を作成できます。",
+			"4": "ウェブサイトがダウンしている場合は、管理者に**登録用フォーム**を求めることができます。 ただし、 この方法でサインアップする場合、手動で更新されるまで、あなたの情報はシート上には表示されますが、ウェブサイトは表示されません。",
+			"5": "スタッフチームは**フリーエージェントチーム**を作成しません。参加したい場合は、どこかのチームに所属する必要があります。",
+			"heading": "参加登録"
 		},
 		"GeneralConduct": {
-			"1": "Respect other players and all staff members.",
-			"2": "No **discriminatory terms**. Including but not limited to: {sublist_alpha} Racial Slurs {sublist_alpha} Terms that may be offensive to LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Hate Speech",
-			"3": "TEST Open has no tolerance for bullying of any kind.",
-			"4": "**NSFW content** is prohibited. This includes: {sublist_alpha} Nudity {sublist_alpha} Gore/Violent Content {sublist_alpha} Drug/Alcohol Abuse {sublist_alpha} Disturbing Content",
-			"5": "Try to keep **controversial conversations** to a minimum.",
-			"6": "Keep disagreements civilized.",
-			"7": "**Doxing is not allowed** under any circumstances.",
-			"8": "No content that is banned under **Discord TOS** is allowed.",
-			"9": "**English is the primary language of the tournament**, so keep this in mind when communicating with staff.",
-			"10": "If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.",
-			"11": "Lastly, just use **common sense** and create a **welcoming environment** for everyone!",
-			"heading": "GENERAL CONDUCT."
+			"1": "他のプレイヤーとすべてのスタッフに敬意を払ってください。",
+			"2": "**差別的な用語** を使用しないでください。以下が該当しますが、これらに限定したわけではありません。\n{sublist_alpha} 人種差別\n{sublist_alpha} LGBTQ+の方が不快だと感じる言葉\n{sublist_alpha} 性差別発言\n{sublist_alpha} ヘイトスピーチ",
+			"3": "TEST Open はいかなる種類のいじめも許すことはありません。",
+			"4": "**NSFWコンテンツ** は禁止されています。これには以下の内容が含まれます。\n{sublist_alpha} ヌード\n{sublist_alpha} グロ・暴力的な表現\n{sublist_alpha} 薬物・アルコールの乱用示唆\n{sublist_alpha} 不愉快なコンテンツ",
+			"5": "**議論** は最小限にとどめましょう。",
+			"6": "意見の相違が生まれたときは、穏便に事を進めましょう。",
+			"7": "**晒し行為** はいかなる場合でも許されません。",
+			"8": "**Discord's Terms of Service** で禁止されているコンテンツは使用できません。",
+			"9": "このトーナメントの主要言語は **英語** ですので、コミュニケーションを図る際はこれを留意しておいてください。",
+			"10": "もし、誰かがこれらのルールを破っているのを見かけた場合は **モデレーター または 管理者** に連絡し、解決してもらいましょう。",
+			"11": "**常識** を意識し、誰にとっても **歓迎されるような環境** を皆さんで作りましょう！",
+			"heading": "諸注意"
 		},
 		"Scheduling": {
-			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
-			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
+			"1": "試合のスケジュール調整は、Discordサーバーの **TEST Bot** を通じて行います。",
+			"2": "予選のロビー登録や、スケジュールの変更については、 **/schedule** コマンドを使用して行ってください。",
+			"3": "試合をリスケジュールする場合、 **/reschedule** コマンドを使用してください。これにより、スケジュールチャンネルにリスケジュールのリクエストが送信されます。",
+			"4": "リスケジュールを完了させるには、スケジュールのチャンネルにて、**両チームのキャプテンが accept をクリック** する必要があります。",
+			"heading": "スケジューリング"
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
+			"1": "すべてのスコアは、**osu! lazer のデフォルトスコア方式** が採用されます。",
+			"2": "**NoFail** が適用されます。",
+			"3": "レフェリーは、試合の参加チームのキャプテンに連絡を行います。 {sublist_alpha} 各キャプテンは、レフェリーから受けた連絡を自分のチームに伝える責任があります。 {sublist_alpha} 試合のリマインダーは、各試合の**25分前**に行われます。 {sublist_alpha} Lazerの部屋名およびパスワードは、各試合の**15分前**に送信されます。",
+			"4": "プレイするプレイヤーは、譜面が選択されてから２分以内にロビーに参加してください。",
+			"heading": "試合手順",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
+				"1": "譜面の順番は、マッププールの順番と同じ順です。",
+				"2": "もしプレイヤーが **譜面の最初の１分以内** に切断された場合、そのプレイヤーは **そのロビーの最終譜面の後** に再度その譜面をプレイします。",
+				"3": "各チームは、**試合の開始時間から5分以内** に3人のプレイヤーをロビーに揃える必要があります。もし3人揃わない場合、そのチームは違うロビーにリスケジュールを行わなければなりません。また、リスケジュールはそのロビーから**4時間以上後**のロビーでなければなりません。",
 				"heading": "予選"
 			},
 			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
-				"5": "Captains will use the **/roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
-				"heading": "試合概要"
+				"1": "各試合の勝利条件は **TeamVS** です。",
+				"2": "ウォームアップ、プロテクト、バン、ピック は全て **2分以内** に選択しなければいけません。",
+				"3": "各チームは、試合開始時刻の **5分後**までに3人のプレイヤーを入室させなければいけません。遅刻すると、以下のペナルティが適用されます。 {sublist_alpha} 5分遅刻：プロテクト権利没収 {sublist_alpha} 10分遅刻：バン権利没収 {sublist_alpha} 15分遅刻：不戦敗扱い",
+				"4": "プレイヤーは、それぞれのチームに対応するスロットにいる必要があります。 {sublist_alpha} チーム1(赤)：スロット１、２、３ {sublist_alpha} チーム2(青)：スロット４、５、６",
+				"5": "各キャプテンは**ピック、バンの順番**を決めるために、Discordの**試合用スレッドで/rollコマンド** を使用します。rollで高い値を出したキャプテンは、以下のいずれかを選択することができます。もう一方のキャプテンは、選ばれなかった方になります。 {sublist_alpha} ピック：先攻、バン：後攻 {sublist_alpha} ピック：後攻、バン：先攻",
+				"6": "各チームは、試合前にウォームアップの譜面を1つ選択することができます。{sublist_alpha} ウォームアップは **4分未満** でなければなりません。{sublist_alpha} ウォームアップに、**マッププールの譜面** は使用できません。",
+				"7": "プロテクト (保護) は、バンを行うフェーズの前に、**非公開**で提出されます。",
+				"8": "バンフェーズは、**スネーク形式** (ABBA) で行われます。 {sublist_alpha} チーム1 バン {sublist_alpha} チーム2 バン(2回) {sublist_alpha} チーム1 バン",
+				"9": "バンおよびプロテクトのフェーズが終了すると、**プロテクトされた譜面はバン無効**となり、その譜面は通常通りプレイすることが可能になります。",
+				"10": "**No-Mod**のプールを除き、**同じModプールから2個バン**するのは禁止されています。",
+				"11": "**No-Mod**と**Lazer-Mod**のプールを除き、**同じModプールから2個連続でピック**するのは禁止されています。",
+				"12": "タイブレーカー (Tiebreaker) では、**曲の速度変更以外**のすべてのmodを使用できます。",
+				"13": "各チームには**５分間のタイムアウト**を１回行うことができます。これは試合中いつでも使用できます。",
+				"14": "もし、**譜面が始まって１分以内に切断**した場合、プレイが**中断**され、チームは**5分以内**に他のプレイヤーを準備して再度プレイを行います。これは各チームごとに１試合１回のみ可能です。",
+				"heading": "試合手順"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
+			"1": "マッププールは、毎週 **日曜** に公開されます。",
+			"2": "Lazer Mod (LM) とは、Lazerクライアントで使用できる新しいModが使用されます。毎週異なるmodが採用されます。",
 			"heading": "マッププール",
 			"Table": {
 				"round": "ラウンド",
@@ -425,22 +438,22 @@
 			}
 		},
 		"PrizePool": {
-			"1": "The MVP of the tournament {sublist_alpha} **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.",
-			"2": "First Place {sublist_alpha} $500 split between the players {sublist_alpha} **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny {sublist_alpha} Animated Team Banner",
-			"3": "Second Place {sublist_alpha} $200 split between the players {sublist_alpha} Static Team Banner",
-			"4": "Third Place {sublist_alpha} $100 split between the players {sublist_alpha} Static Team Banner",
+			"1": "トーナメントMVP\n{sublist_alpha} **TEST Openのためにカスタマイズされた WLmouse Beast X mini mouse** デザイン：Spoo 制作：Dovacustoms\nカスタムマウスには、プレイヤーの名前が描かれます！",
+			"2": "優勝\n{sublist_alpha} $500 をチーム内で分配\n{sublist_alpha} **TEST Openのために作られたタブレットカバー** 提供：Spoo 制作：Bluebunny\n{sublist_alpha} アニメーションチームバナー",
+			"3": "準優勝\n{sublist_alpha} $200 をチーム内で分配\n{sublist_alpha} チームバナー",
+			"4": "第３位\n{sublist_alpha} $100 をチーム内で分配\n{sublist_alpha} チームバナー",
 			"heading": "賞品"
 		}
 	},
 	"Components": {
 		"ComingSoon": {
 			"title": "近日公開！",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"message": "このページはまだ制作中です。また後ほどお越しください。"
 		}
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "ログインできませんでした。申し訳ありませんが、もう一度試すか、ホームに戻ってください。"
 		}
 	}
 }

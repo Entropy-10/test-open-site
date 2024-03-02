@@ -245,7 +245,8 @@
 		},
 		"Errors": {
 			"alreadyVerified": "Du bist bereits verifiziert. Sollte dies ein Irrtum sein, sende bitte eine Nachricht an @__entro, um weitere Hilfe zu erhalten.",
-			"verificationFailed": "Verifizierung fehlgeschlagen. Bitte versuche es erneut und schau, ob es klappt."
+			"verificationFailed": "Verifizierung fehlgeschlagen. Bitte versuche es erneut und schau, ob es klappt.",
+			"notInServer": "Du bist nicht auf dem Discord Server! Bitte trete dem Server bei, bevor du versuchst dich zu verifizieren."
 		}
 	},
 	"TeamPage": {
@@ -317,7 +318,19 @@
 				"title": "NICHT IN EINEM TEAM!",
 				"message": "Es scheint als seist du derzeit nicht in einem Team. Bitte gehe erst auf dein Profil und nehme eine Einladung an.",
 				"profileButton": "PROFIL"
+			},
+			"NoChanges": {
+				"title": "NICHTS GEÄNDERT!",
+				"message": "Du hast keine Team-Informationen geändert. Bitte ändere die Information, bevor du versuchst es zu aktualisieren."
+			},
+			"UpdateTeamFailed": {
+				"title": "TEAM AKTUALISIERUNG FEHLGESCHLAGEN!",
+				"message": "Verzeihung, es war uns nicht möglich die Team-Informationen zu aktualisieren. Bitte versuche es erneut und schau, ob es klappt."
 			}
+		},
+		"TeamUpdated": {
+			"title": "TEAM INFORMATIONEN AKTUALISIERT!",
+			"message": "Deine Team-Informationen wurden erfolgreich aktualisiert. Eventuell musst du die Seite neu laden, damit die Änderungen sichtbar werden."
 		}
 	},
 	"InfoPage": {

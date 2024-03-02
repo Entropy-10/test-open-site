@@ -245,7 +245,8 @@
 		},
 		"Errors": {
 			"alreadyVerified": "Você já foi verificado. Caso você pense que isto foi um erro, entre em contato com @__entro para mais ajuda.",
-			"verificationFailed": "Falha na verificação. Por favor, tente novamente para ver se isso ajuda."
+			"verificationFailed": "Falha na verificação. Por favor, tente novamente para ver se isso ajuda.",
+			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
 		}
 	},
 	"TeamPage": {
@@ -317,7 +318,19 @@
 				"title": "NÃO ESTÁ EM UM TIME!",
 				"message": "Parece que você atualmente não está em um time. Por favor, vá ao seu perfil e aceite um convite primeiro.",
 				"profileButton": "PERFIL"
+			},
+			"NoChanges": {
+				"title": "NOTHING CHANGED!",
+				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+			},
+			"UpdateTeamFailed": {
+				"title": "FAILED TO UPDATE TEAM!",
+				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
 			}
+		},
+		"TeamUpdated": {
+			"title": "TEAM INFO UPDATED!",
+			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
 		}
 	},
 	"InfoPage": {
