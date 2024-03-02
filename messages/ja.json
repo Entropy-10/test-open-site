@@ -11,9 +11,9 @@
 				"schedule": "スケジュール"
 			},
 			"Descriptions": {
-				"mappool": "A lazer modpool featuring new mods each week.",
+				"mappool": "LazerModプールでは毎週新しいModを搭載",
 				"format": "ランク制限なし、ダブルイリミネーション、3v3のトーナメント",
-				"schedule": "Watch upcoming matches being streamed on Twitch."
+				"schedule": "Twitchで配信される試合を観戦しよう"
 			},
 			"Countdown": {
 				"titleSectionOne": "トーナメント",
@@ -412,8 +412,8 @@
 				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
 				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
 				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
+				"13": "各チームには**５分間のタイムアウト**を１回行うことができます。これは試合中いつでも使用できます。",
+				"14": "もし、**譜面が始まって１分以内に切断**した場合、プレイが**中断**され、チームは**5分以内**に他のプレイヤーを準備して再度プレイを行います。これは各チームごとに１試合１回のみ可能です。",
 				"heading": "試合概要"
 			}
 		},
@@ -448,12 +448,12 @@
 	"Components": {
 		"ComingSoon": {
 			"title": "近日公開！",
-			"message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
+			"message": "このページはまだ制作中です。また後ほどお越しください。"
 		}
 	},
 	"APICallbacks": {
 		"Errors": {
-			"missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
+			"missingCode": "ログインできませんでした。申し訳ありませんが、もう一度試すか、ホームに戻ってください。"
 		}
 	}
 }
