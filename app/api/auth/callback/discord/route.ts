@@ -69,7 +69,8 @@ export async function GET(request: NextRequest) {
 			osu_access_token: osuTokens.access_token,
 			osu_refresh_token: osuTokens.refresh_token,
 			discord_access_token: tokens.access_token,
-			discord_refresh_token: tokens.refresh_token
+			discord_refresh_token: tokens.refresh_token,
+			old: false
 		})
 
 		if (tokenError) throw tokenError

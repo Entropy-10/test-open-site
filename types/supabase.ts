@@ -9,6 +9,39 @@ export type Json =
 export type Database = {
 	public: {
 		Tables: {
+			'free-players': {
+				Row: {
+					created_at: string
+					discord_id: string
+					discord_name: string
+					message_id: string
+					osu_id: string
+					rank: number | null
+					timezone: string
+					updated_at: string
+				}
+				Insert: {
+					created_at?: string
+					discord_id: string
+					discord_name: string
+					message_id: string
+					osu_id: string
+					rank?: number | null
+					timezone: string
+					updated_at: string
+				}
+				Update: {
+					created_at?: string
+					discord_id?: string
+					discord_name?: string
+					message_id?: string
+					osu_id?: string
+					rank?: number | null
+					timezone?: string
+					updated_at?: string
+				}
+				Relationships: []
+			}
 			invites: {
 				Row: {
 					created_at: string
@@ -69,27 +102,6 @@ export type Database = {
 					guild_id?: string
 					message_id?: string
 					updated_at?: string
-				}
-				Relationships: []
-			}
-			'looking-for-team-post': {
-				Row: {
-					created_at: string
-					message_id: string
-					updated_at: string
-					user_id: string
-				}
-				Insert: {
-					created_at?: string
-					message_id: string
-					updated_at?: string
-					user_id: string
-				}
-				Update: {
-					created_at?: string
-					message_id?: string
-					updated_at?: string
-					user_id?: string
 				}
 				Relationships: []
 			}
@@ -170,6 +182,7 @@ export type Database = {
 					created_at: string
 					discord_access_token: string
 					discord_refresh_token: string
+					old: boolean
 					osu_access_token: string
 					osu_id: string
 					osu_refresh_token: string
@@ -178,6 +191,7 @@ export type Database = {
 					created_at?: string
 					discord_access_token: string
 					discord_refresh_token: string
+					old?: boolean
 					osu_access_token: string
 					osu_id: string
 					osu_refresh_token: string
@@ -186,6 +200,7 @@ export type Database = {
 					created_at?: string
 					discord_access_token?: string
 					discord_refresh_token?: string
+					old?: boolean
 					osu_access_token?: string
 					osu_id?: string
 					osu_refresh_token?: string
@@ -253,6 +268,55 @@ export type Database = {
 			[_ in never]: never
 		}
 		Functions: {
+			citext:
+				| {
+						Args: {
+							'': boolean
+						}
+						Returns: string
+				  }
+				| {
+						Args: {
+							'': string
+						}
+						Returns: string
+				  }
+				| {
+						Args: {
+							'': unknown
+						}
+						Returns: string
+				  }
+			citext_hash: {
+				Args: {
+					'': string
+				}
+				Returns: number
+			}
+			citextin: {
+				Args: {
+					'': unknown
+				}
+				Returns: string
+			}
+			citextout: {
+				Args: {
+					'': string
+				}
+				Returns: unknown
+			}
+			citextrecv: {
+				Args: {
+					'': unknown
+				}
+				Returns: string
+			}
+			citextsend: {
+				Args: {
+					'': string
+				}
+				Returns: string
+			}
 			request_user_id: {
 				Args: Record<PropertyKey, never>
 				Returns: string

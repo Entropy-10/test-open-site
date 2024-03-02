@@ -36,8 +36,7 @@ interface EditorProps {
 
 export default function Editor({ userId, isCaptain, team }: EditorProps) {
 	const t = useTranslations('TeamPage')
-	const uploadT = useTranslations('RegistrationPage.Errors.UploadFailed')
-	const formT = useTranslations('RegistrationPage.Form')
+	const registerT = useTranslations('RegistrationPage')
 	const [editing, setEditing] = useState(false)
 	const [previewImage, setPreviewImage] = useState<string | null>(null)
 	const [isCurrentImage, setIsCurrentImage] = useState(false)
@@ -117,8 +116,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 		if (!isCurrentImage) {
 			if (!data.flag) {
 				setModalMessage({
-					title: uploadT('title'),
-					message: uploadT('message')
+					title: registerT('Errors.UploadFailed.title'),
+					message: registerT('Errors.UploadFailed.message')
 				})
 				return setOpen(true)
 			}
@@ -140,8 +139,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 				updatedTeam = true
 			} catch (err) {
 				setModalMessage({
-					title: uploadT('title'),
-					message: uploadT('message')
+					title: registerT('Errors.UploadFailed.title'),
+					message: registerT('Errors.UploadFailed.message')
 				})
 				return setOpen(true)
 			}
@@ -154,15 +153,12 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 		if (Object.keys(newTeamData).length === 0 && isCurrentImage) {
 			if (!updatedTeam) {
 				setModalMessage({
-					title: 'NOTHING CHANGED!',
-					message:
-						"You haven't changed any of your team info. Please change your info before attempting to update."
+					title: t('Errors.NoChanges.title'),
+					message: t('Errors.NoChanges.message')
 				})
 				return setOpen(true)
 			}
 		}
-		console.log(newFlag, `${getFlagPathFromUrl(newFlag ?? '')?.filename}`)
-		console.log('name' in newTeamData && newFlag)
 
 		const teamForm = new FormData()
 		teamForm.append('csrf_token', csrfToken)
@@ -193,9 +189,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 		}
 
 		setModalMessage({
-			title: 'TEAM INFO UPDATED!',
-			message:
-				'Your team info has been successfully updated. You may need to reload the page to see your changes.'
+			title: t('TeamUpdated.title'),
+			message: t('TeamUpdated.message')
 		})
 		setEditing(false)
 		return setOpen(true)
@@ -206,8 +201,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 			<div className='flex gap-3'>
 				{editing ? (
 					<ImagePicker
-						uploadText={formT('ImagePicker.upload')}
-						recommendedText={formT('ImagePicker.recommended')}
+						uploadText={registerT('Form.ImagePicker.upload')}
+						recommendedText={registerT('Form.ImagePicker.recommended')}
 						previewImage={previewImage}
 						clearPreviewImage={clearPreviewImage}
 						defaultValue={team.flag}
@@ -259,7 +254,9 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 								{...register('timezone')}
 							/>
 						) : (
-							team.timezone
+							<span className='text-nowrap text-xs md:text-sm'>
+								{team.timezone}
+							</span>
 						)}
 					</div>
 
@@ -293,7 +290,10 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 			{isCaptain && !editing && (
 				<div className='flex gap-3'>
 					<>
-						<Button onClick={() => setEditing(true)} className='w-[180px]'>
+						<Button
+							onClick={() => setEditing(true)}
+							className='hidden w-[180px] xs:flex'
+						>
 							{t('Buttons.edit')}
 						</Button>
 						<form action={deleteTeam}>

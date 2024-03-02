@@ -10,7 +10,8 @@ import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
 export default async function updateTeam(formData: FormData) {
-	const t = await getServerTranslations('RegistrationPage.Errors')
+	const t = await getServerTranslations('TeamPage.Errors')
+	const registerT = await getServerTranslations('RegistrationPage.Errors')
 	const session = await getSession()
 	if (!session) redirect('/unauthorized')
 
@@ -39,11 +40,11 @@ export default async function updateTeam(formData: FormData) {
 			if (violatedKey && teamError.code === '23505') {
 				return {
 					error: {
-						title: t('Duplicate.title', {
-							type: t(`Duplicate.Types.${violatedKey}`).toUpperCase()
+						title: registerT('Duplicate.title', {
+							type: registerT(`Duplicate.Types.${violatedKey}`).toUpperCase()
 						}),
-						message: t('Duplicate.message', {
-							type: t(`Duplicate.Types.${violatedKey}`)
+						message: registerT('Duplicate.message', {
+							type: registerT(`Duplicate.Types.${violatedKey}`)
 						})
 					}
 				}
@@ -64,9 +65,8 @@ export default async function updateTeam(formData: FormData) {
 		console.log(err)
 		return {
 			error: {
-				title: 'FAILED TO UPDATE TEAM!',
-				message:
-					'Sorry, we failed to update your team. Please try again and see if that helps.'
+				title: t('UpdateTeamFailed.title'),
+				message: t('UpdateTeamFailed.message')
 			}
 		}
 	}

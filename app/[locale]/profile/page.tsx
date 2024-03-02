@@ -49,7 +49,7 @@ export default async function ProfilePage() {
 				<Heading>{t('Headings.profile')}</Heading>
 				<Divider />
 
-				<section className='padding flex gap-6 md:gap-20'>
+				<section className='padding relative flex gap-6 md:gap-20'>
 					<AvatarInfo user={user} type='osu'>
 						<div className='space-y-1'>
 							<div>
@@ -77,7 +77,7 @@ export default async function ProfilePage() {
 						</div>
 					</AvatarInfo>
 
-					<AvatarInfo user={user} type='discord' className='hidden xs:flex'>
+					<AvatarInfo user={user} type='discord'>
 						<div className='font-extrabold uppercase'>@{user.discord_tag}</div>
 					</AvatarInfo>
 				</section>
