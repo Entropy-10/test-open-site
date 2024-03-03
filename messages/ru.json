@@ -324,13 +324,13 @@
 				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
 			},
 			"UpdateTeamFailed": {
-				"title": "FAILED TO UPDATE TEAM!",
+				"title": "ОШИБКА СОЗДАНИЯ КОМАНДЫ!",
 				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
 			}
 		},
 		"TeamUpdated": {
-			"title": "TEAM INFO UPDATED!",
-			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
+			"title": "ИНФО КОМАНДЫ ОБНОВЛЕН!",
+			"message": "Информация о вашей команде была успешно обновлена. Возможно, вам потребуется перезагрузить страницу, чтобы увидеть изменения."
 		}
 	},
 	"InfoPage": {
