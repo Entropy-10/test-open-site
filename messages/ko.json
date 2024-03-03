@@ -246,7 +246,7 @@
 		"Errors": {
 			"alreadyVerified": "이미 확인되었습니다. 이것이 실수라고 생각되면 @__entro에게 DM을 보내 도움을 요청하세요.",
 			"verificationFailed": "확인을 실패했습니다. 잠시후 시도하세요",
-			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
+			"notInServer": "디스코드 서버에 없습니다! 인증을 시도하기 전에 서버에 참여해 주세요."
 		}
 	},
 	"TeamPage": {
@@ -320,17 +320,17 @@
 				"profileButton": "프로필"
 			},
 			"NoChanges": {
-				"title": "NOTHING CHANGED!",
-				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+				"title": "변경 사항 없음!",
+				"message": "팀 정보를 변경하지 않았습니다. 업데이트를 시도하기 전에 정보를 변경해 주세요."
 			},
 			"UpdateTeamFailed": {
-				"title": "FAILED TO UPDATE TEAM!",
-				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
+				"title": "팀 업데이트 실패!",
+				"message": "죄송합니다, 팀 정보를 업데이트하는 데 실패했습니다. 다시 시도해 보시고 그게 도움이 되는지 확인해 주세요."
 			}
 		},
 		"TeamUpdated": {
-			"title": "TEAM INFO UPDATED!",
-			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
+			"title": "팀 정보 업데이트 완료!",
+			"message": "팀 정보가 성공적으로 업데이트되었습니다. 변경 사항을 보려면 페이지를 새로고침할 필요가 있을 수 있습니다."
 		}
 	},
 	"InfoPage": {
