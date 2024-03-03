@@ -349,8 +349,8 @@
 				"1": "**参加登録：** ２月２６日～３月１８日",
 				"2": "**スクリーニング：** ３月１８日～２３日",
 				"3": "**予選：** ３月２９日～３１日",
-				"4": "*RO32：** ４月５日～７日",
-				"5": "*RO16：** ４月１２日～１４日",
+				"4": "**RO32：** ４月５日～７日",
+				"5": "**RO16：** ４月１２日～１４日",
 				"6": "**Quarterfinals：** ４月１９日～２１日",
 				"7": "**Semifinals：** ４月２６日～２８日",
 				"8": "**Finals:：** ５月３日～５日",
@@ -360,7 +360,7 @@
 		},
 		"Registrations": {
 			"1": "**osu!** と **Discordアカウント** の両方をウェブサイトに登録する必要があります。",
-			"2": "チームの作成および管理は、**[TEST Open ウェブサイト](https://test-open.com)**を通じて行われます。",
+			"2": "チームの作成および管理は、 **[TEST Open ウェブサイト](https://test-open.com)** を通じて行われます。",
 			"3": "**フリーエージェントの投稿**を作成するには、**discordサーバー**で、#looking-for-teamチャンネルを使用してください。 そこで**TEST Bot**を使って投稿を作成できます。",
 			"4": "ウェブサイトがダウンしている場合は、管理者に**登録用フォーム**を求めることができます。 ただし、 この方法でサインアップする場合、手動で更新されるまで、あなたの情報はシート上には表示されますが、ウェブサイトは表示されません。",
 			"5": "スタッフチームは**フリーエージェントチーム**を作成しません。参加したい場合は、どこかのチームに所属する必要があります。",
@@ -368,9 +368,9 @@
 		},
 		"GeneralConduct": {
 			"1": "他のプレイヤーとすべてのスタッフに敬意を払ってください。",
-			"2": "**差別的な用語** を使用しないでください。以下が該当しますが、これらに限定したわけではありません。\n{sublist_alpha} 人種差別\n{sublist_alpha} LGBTQ+の方が不快だと感じる言葉\n{sublist_alpha} 性差別発言\n{sublist_alpha} ヘイトスピーチ",
+			"2": "**差別的な用語** を使用しないでください。以下が該当しますが、これらに限定したわけではありません。 {sublist_alpha} 人種差別 {sublist_alpha} LGBTQ+の方が不快だと感じる言葉 {sublist_alpha} 性差別発言 {sublist_alpha} ヘイトスピーチ",
 			"3": "TEST Open はいかなる種類のいじめも許すことはありません。",
-			"4": "**NSFWコンテンツ** は禁止されています。これには以下の内容が含まれます。\n{sublist_alpha} ヌード\n{sublist_alpha} グロ・暴力的な表現\n{sublist_alpha} 薬物・アルコールの乱用示唆\n{sublist_alpha} 不愉快なコンテンツ",
+			"4": "**NSFWコンテンツ** は禁止されています。これには以下の内容が含まれます。{sublist_alpha} ヌード {sublist_alpha} グロ・暴力的な表現 {sublist_alpha} 薬物・アルコールの乱用示唆 {sublist_alpha} 不愉快なコンテンツ",
 			"5": "**議論** は最小限にとどめましょう。",
 			"6": "意見の相違が生まれたときは、穏便に事を進めましょう。",
 			"7": "**晒し行為** はいかなる場合でも許されません。",
@@ -438,10 +438,10 @@
 			}
 		},
 		"PrizePool": {
-			"1": "トーナメントMVP\n{sublist_alpha} **TEST Openのためにカスタマイズされた WLmouse Beast X mini mouse** デザイン：Spoo 制作：Dovacustoms\nカスタムマウスには、プレイヤーの名前が描かれます！",
-			"2": "優勝\n{sublist_alpha} $500 をチーム内で分配\n{sublist_alpha} **TEST Openのために作られたタブレットカバー** 提供：Spoo 制作：Bluebunny\n{sublist_alpha} アニメーションチームバナー",
-			"3": "準優勝\n{sublist_alpha} $200 をチーム内で分配\n{sublist_alpha} チームバナー",
-			"4": "第３位\n{sublist_alpha} $100 をチーム内で分配\n{sublist_alpha} チームバナー",
+			"1": "トーナメントMVP {sublist_alpha} **TEST Openのためにカスタマイズされた WLmouse Beast X mini mouse** デザイン：Spoo 制作：Dovacustoms カスタムマウスには、プレイヤーの名前が描かれます！",
+			"2": "優勝 {sublist_alpha} $500 をチーム内で分配 {sublist_alpha} **TEST Openのために作られたタブレットカバー** 提供：Spoo 制作：Bluebunny {sublist_alpha} アニメーションチームバナー",
+			"3": "準優勝 {sublist_alpha} $200 をチーム内で分配 {sublist_alpha} チームバナー",
+			"4": "第３位 {sublist_alpha} $100 をチーム内で分配 {sublist_alpha} チームバナー",
 			"heading": "賞品"
 		}
 	},
