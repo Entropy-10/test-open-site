@@ -55,8 +55,8 @@ export async function GET(request: NextRequest) {
 			country_code: osuUser.country.code,
 			country_rank: osuUser.statistics.country_rank,
 			discord_id: discordUser.id,
-			discord_name: discordUser.global_name,
-			discord_tag: discordUser.username ?? discordUser.discriminator,
+			discord_name: discordUser.global_name ?? discordUser.username,
+			discord_tag: discordUser.username,
 			discord_avatar:
 				discordUser.avatar &&
 				getDiscordAvatarUrl(discordUser.id, discordUser.avatar)
