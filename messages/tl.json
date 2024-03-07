@@ -47,7 +47,7 @@
 		"sheet": "SHEET",
 		"invites": "MGA IMBITASYON",
 		"team": "PANGKAT",
-		"profile": "PROFILE"
+		"profile": "PROPAYL"
 	},
 	"Buttons": {
 		"register": "MAG-REHISTRO",
@@ -207,22 +207,22 @@
 				"title": "MAYROON NANG {type} NA KOPONAN!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "Hindi namin nabuo ang iyong koponan. Mukhang may isyu sa aming banda. Maaaring subukan para malaman upang malaman kung ito ay nakatulong.",
+				"title": "NABIGO SA PAGLIKHA NG KOPONAN!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "NABIGO SA PAG-UPLOAD NG WATAWAT!",
+				"message": "Hindi namin na-upload ang iyong watawat sa aming server. Maaaring subukan muli upang makita kung ito ay nakatulong."
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "LISTAHAN NG KOPONAN.",
+		"teamsRegistered": "MGA KOPONANG NAKAREHISTRO"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
+		"authFailed": "NABIGO ANG PAGPAPA-AWTORISASYON!",
+		"unauthorized": "HINDI PINAHINTULUTAN!",
 		"homeButton": "HOME",
 		"Messages": {
 			"default": "Ikaw ay mag sign in muna bago mo ma-access ang pahina na ito."
@@ -234,42 +234,42 @@
 			"signIn": "Ikaw ay mag sign in muna bago mag verify.",
 			"verified": "Maligayang Pagdating sa TEST Open Discord server!",
 			"defaultError": "Ang iyong pag-beripika ay nabigo. Paki ulit nalang mamaya.",
-			"default": "Please click the button below to gain access to the server."
+			"default": "Mangyaring pindutin ang pindutan sa ibaba upang makapasok sa server."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "SUBUKAN MULI",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "IPABERIPIKA",
+				"loadingText": "IPINAPABERIPIKA"
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps.",
-			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
+			"alreadyVerified": "Ikaw ay naipa-beripika na. Kung sa tingin mo na ito ay isang pagkakamali, mangyari magpadala ng DM kay @__entro para ikaw ay matulungan.",
+			"verificationFailed": "Nabigo ang pagpapa-beripika. Maaaring subukan muli upang makita kung ito ay nakatulong.",
+			"notInServer": "Ikaw ay wala sa Discord server! Mangyaring sumali sa server bago subukang magpa-beripika."
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "AKING KOPONAN.",
+			"player": "LISTAHAN NG MANLALARO."
 		},
 		"timezone": "TIMEZONE",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "TANGGALIN ANG KOPONAN",
+			"edit": "I-EDIT ANG KOPONAN",
+			"leave": "UMALIS SA KOPONAN"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "KASALUKUYANG KAANIB",
 			"Player": {
 				"rank": "RANGGO",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "TANGGALIN ANG MANLALARO"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
+			"heading": "PAPALABAS NA IMBITASYON",
 			"error": "Sorry, we failed to get the players on your team.",
 			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
 			"Invite": {
