@@ -347,14 +347,14 @@
 			"heading": "INFORMACIÓN GENERAL.",
 			"Schedule": {
 				"1": "**Registraciones:** Febrero 26 - Marzo 18",
-				"2": "**Screening:** March 18th - March 30th",
-				"3": "**Qualifiers:** April 5th - 7th",
-				"4": "**RO32:** April 12th - 14th",
-				"5": "**RO16:** April 19th - 21st",
-				"6": "**Quarterfinals:** April 26th - 28th",
-				"7": "**Semifinals:** May 3rd - 5th",
-				"8": "**Finals:** May 10th - 12th",
-				"9": "**Grand Finals:** May 17th - 19th",
+				"2": "**Screening:** Marzo 18 - Marzo 30",
+				"3": "**Clasificatorias:** Abril 5 - 7",
+				"4": "**RD32:** Abril 12 - 14",
+				"5": "**RD16:** Abril 19 - 21",
+				"6": "**Cuartas de final:** Abril 26 - 28",
+				"7": "**Semifinales:** Mayo 3 - 5",
+				"8": "**Finales:** Mayo 10 - 12",
+				"9": "**Gran Final:** Mayo 17 - 19",
 				"heading": "HORARIOS"
 			}
 		},
