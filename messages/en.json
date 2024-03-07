@@ -347,14 +347,14 @@
 			"heading": "GENERAL INFO.",
 			"Schedule": {
 				"1": "**Registrations:** February 26th - March 18th",
-				"2": "**Screening:** March 18th - March 23rd",
-				"3": "**Qualifiers:** March 29th - 31st",
-				"4": "**RO32:** April 5th - 7th",
-				"5": "**RO16:** April 12th - 14th",
-				"6": "**Quarterfinals:** April 19th - 21st",
-				"7": "**Semifinals:** April 26th - 28th",
-				"8": "**Finals:** May 3rd - 5th",
-				"9": "**Grand Finals:** May 10th - 12th",
+				"2": "**Screening:** March 18th - March 30th",
+				"3": "**Qualifiers:** April 5th - 7th",
+				"4": "**RO32:** April 12th - 14th",
+				"5": "**RO16:** April 19th - 21st",
+				"6": "**Quarterfinals:** April 26th - 28th",
+				"7": "**Semifinals:** May 3rd - 5th",
+				"8": "**Finals:** May 10th - 12th",
+				"9": "**Grand Finals:** May 17th - 19th",
 				"heading": "SCHEDULE"
 			}
 		},
@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "All maps will be scored with **osu! Lazer default scoring**.",
 			"2": "**NoFail** will be enforced.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **25 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **15 minutes** before each game.",
+			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
 			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
 			"heading": "GAME PROCEDURES.",
 			"Qualifiers": {

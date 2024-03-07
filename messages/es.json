@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "Todos los mapas utilizarán el **puntaje nuevo de osu! lazer**.",
 			"2": "**NoFail** es obligatorio.",
-			"3": "Los árbitros contactarán los Capitanes de cualquier equipo participante para cada partida. {sublist_alpha} Los capitanes son responsables de comunicar cualquier información dado por el árbitro hacia su equipo. {sublist_alpha} Un recordatorio será enviado **25 minutos** antes de cada partida. {sublist_alpha} El nombre y la contraseña de la sala en Lazer será enviado **15 minutos** antes de cada partida.",
+			"3": "Los árbitros contactarán los Capitanes de cualquier equipo participante para cada partida. {sublist_alpha} Los capitanes son responsables de comunicar cualquier información dado por el árbitro hacia su equipo. {sublist_alpha} Un recordatorio será enviado **15 minutos** antes de cada partida. {sublist_alpha} El nombre y la contraseña de la sala en Lazer será enviado **10 minutos** antes de cada partida.",
 			"4": "Luego de que un mapa haya sido seleccionado, los jugadores participantes tendrán **2 minutos** para unirse a la sala.",
 			"heading": "PROCEDIMIENTOS DE LA PARTIDA.",
 			"Qualifiers": {

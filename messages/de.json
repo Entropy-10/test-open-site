@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "Alle Maps werden mit dem **Standard osu! lazer Score System** bewertet.",
 			"2": "Die \"**NoFail**\" mod wird erzwungen.",
-			"3": "Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren. {sublist_alpha} Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten. {sublist_alpha} Eine Erinnerung wird **25 Minuten** vor dem jeweiligen Spiel verschickt. {sublist_alpha} Der lazer Raumname und das Passwort werden **15 Minuten** vor beginn des spiels verschickt.",
+			"3": "Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren. {sublist_alpha} Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten. {sublist_alpha} Eine Erinnerung wird **15 Minuten** vor dem jeweiligen Spiel verschickt. {sublist_alpha} Der lazer Raumname und das Passwort werden **10 Minuten** vor beginn des spiels verschickt.",
 			"4": "Nachdem eine Map gewählt wurde haben die Teams **2 Minuten** Zeit um, ihre Spieler auszuwechseln.",
 			"heading": "SPIELABLAUF",
 			"Qualifiers": {

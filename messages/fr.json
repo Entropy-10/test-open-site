@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "Tous les matchs seront marqués avec **Le score par défaut de osu! Lazer**.",
 			"2": "**NoFail** sera appliqué.",
-			"3": "Les arbitres contacteront les capitaines de toute équipe participante pour chaque match. {sublist_alpha} Les capitaines sont responsables de relayer toute information donnée par l'arbitre à leur équipe. {sublist_alpha} Un rappel sera envoyé **25 minutes** avant chaque match. {sublist_alpha} Le nom et le mot de passe de la salle osu! Lazer seront envoyés **15 minutes** avant chaque match.",
+			"3": "Les arbitres contacteront les capitaines de toute équipe participante pour chaque match. {sublist_alpha} Les capitaines sont responsables de relayer toute information donnée par l'arbitre à leur équipe. {sublist_alpha} Un rappel sera envoyé **15 minutes** avant chaque match. {sublist_alpha} Le nom et le mot de passe de la salle osu! Lazer seront envoyés **10 minutes** avant chaque match.",
 			"4": "Une fois qu'une beatmap a été sélectionnée, les joueurs participants ont **2 minutes** pour rejoindre le lobby.",
 			"heading": "PROCÉDURES DE JEU.",
 			"Qualifiers": {
