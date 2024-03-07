@@ -347,14 +347,14 @@
 			"heading": "ALLGEMEINE INFORMATION",
 			"Schedule": {
 				"1": "**Anmeldungen:** 26. Februar - 18. März",
-				"2": "**Sicherheitsüberprüfung:** 18. März - 23. März",
-				"3": "**Qualifizierung:** 29. März - 31. März",
-				"4": "**Runde der 32:** 5. April - 7. April",
-				"5": "**Achtelfinale:** 12. April - 14. April",
-				"6": "**Viertelfinale:** 19. April - 21. April",
-				"7": "**Halbfinale:** 26. April - 28. April",
-				"8": "**Finale:** 3. Mai - 5. Mai",
-				"9": "**Großes Finale:** 10. Mai - 12. Mai",
+				"2": "**Screening:** March 18th - March 30th",
+				"3": "**Qualifiers:** April 5th - 7th",
+				"4": "**RO32:** April 12th - 14th",
+				"5": "**RO16:** April 19th - 21st",
+				"6": "**Quarterfinals:** April 26th - 28th",
+				"7": "**Semifinals:** May 3rd - 5th",
+				"8": "**Finals:** May 10th - 12th",
+				"9": "**Grand Finals:** May 17th - 19th",
 				"heading": "ZEITPLAN"
 			}
 		},
@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "Alle Maps werden mit dem **Standard osu! lazer Score System** bewertet.",
 			"2": "Die \"**NoFail**\" mod wird erzwungen.",
-			"3": "Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren. {sublist_alpha} Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten. {sublist_alpha} Eine Erinnerung wird **15 Minuten** vor dem jeweiligen Spiel verschickt. {sublist_alpha} Der lazer Raumname und das Passwort werden **10 Minuten** vor beginn des spiels verschickt.",
+			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
 			"4": "Nachdem eine Map gewählt wurde haben die Teams **2 Minuten** Zeit um, ihre Spieler auszuwechseln.",
 			"heading": "SPIELABLAUF",
 			"Qualifiers": {
