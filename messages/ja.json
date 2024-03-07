@@ -347,14 +347,14 @@
 			"heading": "大会概要",
 			"Schedule": {
 				"1": "**参加登録：** ２月２６日～３月１８日",
-				"2": "**スクリーニング：** ３月１８日～２３日",
-				"3": "**予選：** ３月２９日～３１日",
-				"4": "**RO32：** ４月５日～７日",
-				"5": "**RO16：** ４月１２日～１４日",
-				"6": "**Quarterfinals：** ４月１９日～２１日",
-				"7": "**Semifinals：** ４月２６日～２８日",
-				"8": "**Finals:：** ５月３日～５日",
-				"9": "**Grand Finals：** ５月１０日～１２日",
+				"2": "**Screening:** March 18th - March 30th",
+				"3": "**Qualifiers:** April 5th - 7th",
+				"4": "**RO32:** April 12th - 14th",
+				"5": "**RO16:** April 19th - 21st",
+				"6": "**Quarterfinals:** April 26th - 28th",
+				"7": "**Semifinals:** May 3rd - 5th",
+				"8": "**Finals:** May 10th - 12th",
+				"9": "**Grand Finals:** May 17th - 19th",
 				"heading": "スケジュール"
 			}
 		},
@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "すべてのスコアは、**osu! lazer のデフォルトスコア方式** が採用されます。",
 			"2": "**NoFail** が適用されます。",
-			"3": "レフェリーは、試合の参加チームのキャプテンに連絡を行います。 {sublist_alpha} 各キャプテンは、レフェリーから受けた連絡を自分のチームに伝える責任があります。 {sublist_alpha} 試合のリマインダーは、各試合の**15分前**に行われます。 {sublist_alpha} Lazerの部屋名およびパスワードは、各試合の**10分前**に送信されます。",
+			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
 			"4": "プレイするプレイヤーは、譜面が選択されてから２分以内にロビーに参加してください。",
 			"heading": "試合手順",
 			"Qualifiers": {
