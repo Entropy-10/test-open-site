@@ -347,14 +347,14 @@
 			"heading": "일반 정보.",
 			"Schedule": {
 				"1": "**등록:** 2월 26일 - 3월 18일",
-				"2": "**심사:** 3월 18일 - 3월 23일",
-				"3": "**예선:** 3월 29일 - 31일",
-				"4": "**32강:** 4월 5일 - 7일",
-				"5": "**16강:** 4월 12일 - 14일",
-				"6": "**8강전:** 4월 19일 - 21일",
-				"7": "**준결승:** 4월 26일 - 28일",
-				"8": "**파이널:** 5월 3일 - 5일",
-				"9": "**그랜드 파이널:** 5월 10일 - 12일",
+				"2": "**Screening:** March 18th - March 30th",
+				"3": "**Qualifiers:** April 5th - 7th",
+				"4": "**RO32:** April 12th - 14th",
+				"5": "**RO16:** April 19th - 21st",
+				"6": "**Quarterfinals:** April 26th - 28th",
+				"7": "**Semifinals:** May 3rd - 5th",
+				"8": "**Finals:** May 10th - 12th",
+				"9": "**Grand Finals:** May 17th - 19th",
 				"heading": "일정"
 			}
 		},
@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "모든 맵은 **osu! Lazer 기본 점수 매기기** 로 점수를 매깁니다.",
 			"2": "**NoFail**이 적용될 것입니다.",
-			"3": "심판은 각 게임에 참가하는 팀의 대장들에게 연락할 것입니다. {sublist_alpha} 대장들은 심판이 제공한 모든 정보를 자신의 팀에 전달하는 책임이 있습니다. {sublist_alpha} 게임 시작 **15분** 전에 알림이 전송될 것입니다. {sublist_alpha} Lazer 게임 로비 이름과 비밀번호가 각 게임 시작 **10분** 전에 전송될 것입니다.",
+			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
 			"4": "맵이 선택된 후, 참가 선수들은 로비에 참여하기 위해 **2분**의 시간이 주어집니다",
 			"heading": "게임 절차.",
 			"Qualifiers": {
