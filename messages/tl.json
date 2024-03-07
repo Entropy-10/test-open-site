@@ -270,7 +270,7 @@
 		},
 		"Invites": {
 			"heading": "PAPALABAS NA IMBITASYON",
-			"error": "Sorry, we failed to get the players on your team.",
+			"error": "Paumanhin, nabigo kaming kunin ang mga manlalaro sa iyong koponan.",
 			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
 			"Invite": {
 				"rank": "RANK",
