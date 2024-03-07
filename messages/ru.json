@@ -320,7 +320,7 @@
 				"profileButton": "ПРОФИЛЬ"
 			},
 			"NoChanges": {
-				"title": "NOTHING CHANGED!",
+				"title": "НЕ ИЗМЕНЯЕТСЯ!",
 				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
 			},
 			"UpdateTeamFailed": {
@@ -347,14 +347,14 @@
 			"heading": "ОБЩАЯ ИНФОРМАЦИЯ.",
 			"Schedule": {
 				"1": "**Регистрация:** 26 февраля - 18 марта",
-				"2": "**Screening:** March 18th - March 30th",
-				"3": "**Qualifiers:** April 5th - 7th",
-				"4": "**RO32:** April 12th - 14th",
-				"5": "**RO16:** April 19th - 21st",
-				"6": "**Quarterfinals:** April 26th - 28th",
-				"7": "**Semifinals:** May 3rd - 5th",
-				"8": "**Finals:** May 10th - 12th",
-				"9": "**Grand Finals:** May 17th - 19th",
+				"2": "**Стадия скрининга:** 18 - 23 марта",
+				"3": "Квалификации:** 5 - 7 апреля",
+				"4": "**RO32:** 12 - 14 апреля",
+				"5": "**RO16:** 19 - 21 апреля",
+				"6": "**Четвертьфиналы:** 26 - 28 апреля",
+				"7": "**Полуфиналы:** 3 - 5 мая",
+				"8": "**Финалы:** 10 - 12 мая",
+				"9": "**Гранд-финалы:** 10 мая - 12 мая",
 				"heading": "РАСПИСАНИЕ"
 			}
 		},
