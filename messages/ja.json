@@ -347,14 +347,14 @@
 			"heading": "大会概要",
 			"Schedule": {
 				"1": "**参加登録：** ２月２６日～３月１８日",
-				"2": "**Screening:** March 18th - March 30th",
-				"3": "**Qualifiers:** April 5th - 7th",
-				"4": "**RO32:** April 12th - 14th",
-				"5": "**RO16:** April 19th - 21st",
-				"6": "**Quarterfinals:** April 26th - 28th",
-				"7": "**Semifinals:** May 3rd - 5th",
-				"8": "**Finals:** May 10th - 12th",
-				"9": "**Grand Finals:** May 17th - 19th",
+				"2": "**スクリーニング：** ３月１８日～３０日",
+				"3": "**予選：** ４月５日～７日",
+				"4": "**RO32： **４月１２日～１４日",
+				"5": "**RO16：** ４月１９日～２１日",
+				"6": "**Quarterfinals：** ４月２６日～２８日",
+				"7": "**Semifinals：** ５月３日～５日",
+				"8": "**Finals:：** ５月１０日～１２日",
+				"9": "**Grand Finals：** ５月１７日～１９日",
 				"heading": "スケジュール"
 			}
 		},
