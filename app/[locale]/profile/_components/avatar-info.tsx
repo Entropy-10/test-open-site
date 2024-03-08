@@ -1,7 +1,7 @@
 import { cn } from '@utils/client'
 import Image from 'next/image'
 
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 import { relink } from '../_actions/relink'
 import { update } from '../_actions/update'
 import UpdateButton from './update-button'

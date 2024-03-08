@@ -1,10 +1,10 @@
 'use client'
 
 import { cn } from '@utils/client'
-import { VariantProps } from 'class-variance-authority'
+import type { VariantProps } from 'class-variance-authority'
 import { useFormStatus } from 'react-dom'
 
-import Button, { buttonVariants } from '~/components/ui/Button'
+import Button, { type buttonVariants } from '~/components/ui/button'
 
 interface DeleteButtonProps extends VariantProps<typeof buttonVariants> {
 	text: string

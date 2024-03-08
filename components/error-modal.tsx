@@ -4,7 +4,7 @@ import { usePathname } from '@navigation'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 import { Content, Description, Root, Title } from '~/components/ui/modal'
 import { reset } from '~/lib/actions'
 import { CsrfInput } from './csrf-input'

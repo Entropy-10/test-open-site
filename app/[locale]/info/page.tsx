@@ -1,7 +1,7 @@
 import { createMetadata } from '@metadata'
 import { getTranslations } from 'next-intl/server'
 
-import Background from '~/components/ui/Background'
+import Background from '~/components/ui/background'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
 

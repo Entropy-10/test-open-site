@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 import SponsorLogo from '~/public/images/sponsor-logo.png'
 import SponsorCode from './sponsor-code'
 

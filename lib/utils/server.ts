@@ -1,4 +1,4 @@
-import { NamespaceKeys, NestedKeyOf } from 'next-intl'
+import type { NamespaceKeys, NestedKeyOf } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { cookies } from 'next/headers'
 import 'server-only'

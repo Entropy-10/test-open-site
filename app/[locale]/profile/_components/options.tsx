@@ -1,11 +1,11 @@
 'use client'
 
-import { ModalError } from '@types'
+import type { ModalError } from '@types'
 import { MoreVertical } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import TextModal from '~/components/text-modal'
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 import * as Dropdown from '~/components/ui/dropdown'
 import { Cancel } from '~/components/ui/modal'
 import { deleteAccount } from '../_actions/delete-account'

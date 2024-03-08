@@ -1,5 +1,5 @@
-import { MDXProvider } from '@mdx-js/react'
-import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
+import type { MDXProvider } from '@mdx-js/react'
+import { MDXRemote, type MDXRemoteProps } from 'next-mdx-remote/rsc'
 
 const components = {
 	h1: props => (

@@ -3,9 +3,9 @@
 import { useTranslations } from 'next-intl'
 import { useEffect } from 'react'
 import MessageBox from '~/components/message-box'
-import Background from '~/components/ui/Background'
+import Background from '~/components/ui/background'
 
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 
 interface ErrorProps {
 	error: Error & { digest?: string }

@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl'
 import MessageBox from '~/components/message-box'
 import SignInButton from '~/components/sign-in-button'
-import Background from '~/components/ui/Background'
-import Button from '~/components/ui/Button'
+import Background from '~/components/ui/background'
+import Button from '~/components/ui/button'
 
 interface UnauthorizedPageProps {
 	searchParams: {

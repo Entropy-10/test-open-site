@@ -41,7 +41,7 @@ export async function invite(formData: FormData) {
 	}
 
 	const { error: inviteError } = await supabase.from('invites').insert({
-		team_id: parseInt(teamId),
+		team_id: Number.parseInt(teamId),
 		user_id: userId,
 		updated_at: new Date().toISOString()
 	})

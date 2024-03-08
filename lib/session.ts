@@ -1,5 +1,5 @@
 import { env } from '@env'
-import { Session } from '@types'
+import type { Session } from '@types'
 import { SignJWT, jwtVerify } from 'jose'
 import { cookies } from 'next/headers'
 

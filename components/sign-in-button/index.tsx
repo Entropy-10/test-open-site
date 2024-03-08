@@ -1,7 +1,7 @@
-import { VariantProps } from 'class-variance-authority'
+import type { VariantProps } from 'class-variance-authority'
 import { useTranslations } from 'next-intl'
 import { headers } from 'next/headers'
-import Button, { buttonVariants } from '../ui/Button'
+import Button, { type buttonVariants } from '../ui/button'
 import { signIn } from './actions'
 
 interface SignInButtonProps extends VariantProps<typeof buttonVariants> {

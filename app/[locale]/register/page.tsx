@@ -3,7 +3,7 @@ import { getSession } from '@session'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { redirect } from 'next/navigation'
 
-import Background from '~/components/ui/Background'
+import Background from '~/components/ui/background'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
 import CreateTeamForm from './_components/create-team-form'

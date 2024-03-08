@@ -4,7 +4,7 @@ import { getTranslations } from 'next-intl/server'
 import { cookies } from 'next/headers'
 import Image from 'next/image'
 
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 
 interface TeamProps {
 	userId: string

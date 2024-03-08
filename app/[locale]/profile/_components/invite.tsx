@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import Image from 'next/image'
 
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 import { acceptInvite } from '../_actions/accept-invite'
 import { denyInvite } from '../_actions/deny-invite'
 

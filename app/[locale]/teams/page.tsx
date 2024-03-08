@@ -5,7 +5,7 @@ import { getTranslations } from 'next-intl/server'
 import { cookies } from 'next/headers'
 import { Suspense } from 'react'
 
-import Background from '~/components/ui/Background'
+import Background from '~/components/ui/background'
 import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
 import TeamList from './_components/team-list'

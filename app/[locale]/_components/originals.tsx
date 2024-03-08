@@ -2,7 +2,7 @@ import { links, songs } from '@siteConfig'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
-import Button from '~/components/ui/Button'
+import Button from '~/components/ui/button'
 import Songs from './songs'
 
 export default function Originals() {

@@ -16,7 +16,7 @@ export default function Divider({
 				header: children,
 				divider: (
 					<div className='flex w-full flex-row-reverse py-5 pl-56'>
-						<div className='flex-1 max-w-[600px]'>
+						<div className='max-w-[600px] flex-1'>
 							<div className={cn('h-[2px] w-full bg-milky-white', className)} />
 						</div>
 					</div>

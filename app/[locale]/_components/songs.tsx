@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 
-import useSizeQuery from '~/hooks/useSizeQuery'
+import useSizeQuery from '~/hooks/use-size-query'
 import Song from './song'
 
 export default function Songs() {
@@ -17,7 +17,7 @@ export default function Songs() {
 						initial={{ x: 0 }}
 						animate={{ x: smMatch ? -1400 : -980 }}
 						transition={{
-							repeat: Infinity,
+							repeat: Number.POSITIVE_INFINITY,
 							duration: 15,
 							ease: 'linear'
 						}}

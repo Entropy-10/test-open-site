@@ -4,8 +4,8 @@ import { useTranslations } from 'next-intl'
 import ClickArrow from '~/components/icons/click-arrow'
 import Format from '~/components/icons/format'
 import Schedule from '~/components/icons/schedule'
-import Link from '~/components/ui/Link'
 
+import { Link } from '@navigation'
 import type { Feature as FeatureType } from '@types'
 
 export default function Feature({ name, link, className }: FeatureType) {
