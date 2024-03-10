@@ -271,19 +271,19 @@
 		"Invites": {
 			"heading": "PAPALABAS NA IMBITASYON",
 			"error": "Paumanhin, nabigo kaming kunin ang mga manlalaro sa iyong koponan.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"none": "Sa kasalukuyan ay wala kang anumang imbitasyon. Magsimula sa pamamagitan ng paggamit sa kahon ng imbitasyon ng mga manlalaro sa itaas.",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "RANGGO",
 				"discord": "DISCORD",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "INIMBITA NOONG",
+				"deleteButton": "BURAHIN ANG IMBITASYON",
+				"inviteButton": "ANYAYAHAN",
+				"placeholder": "Paki-lagay ang osu username..."
 			}
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
+				"title": "SABLAY ANG PAGTANGGAL NG TEAM NA {type}!",
 				"message": "Paumanhin, nabigo ang pag tanggal ng {type}. Maaring subukan muli kung ito ay makakatulong.",
 				"Types": {
 					"player": "manlalaro",
@@ -320,17 +320,17 @@
 				"profileButton": "PROPAYL"
 			},
 			"NoChanges": {
-				"title": "NOTHING CHANGED!",
-				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+				"title": "WALANG NANGYARI!",
+				"message": "Wala ka pang nababago sa iyong team info. Paki-bago ito bago i-update."
 			},
 			"UpdateTeamFailed": {
-				"title": "FAILED TO UPDATE TEAM!",
-				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
+				"title": "SUMABLAY ANG PAGBABAGO NG TEAM!",
+				"message": "Paumanhin, pero nabigo ang pagbabago ng iyong team. Maaring subukan muli kung ito ay makakatulong."
 			}
 		},
 		"TeamUpdated": {
-			"title": "TEAM INFO UPDATED!",
-			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
+			"title": "NA-UPDATE NA ANG IMPORMASYON NG TEAM!",
+			"message": "Na-update na ang iyong impormasyon para sa team. Paki-refresh ang page na ito para makita ang mga pagbabago na iyong ginawa."
 		}
 	},
 	"InfoPage": {
@@ -347,14 +347,14 @@
 			"heading": "PANGKALAHATANG IMPORMASYON.",
 			"Schedule": {
 				"1": "**Rehistrasyon:** ika-26 ng Pebrero - ika-18 ng Martsa",
-				"2": "**Screening:** March 18th - March 30th",
-				"3": "**Qualifiers:** April 5th - 7th",
-				"4": "**RO32:** April 12th - 14th",
-				"5": "**RO16:** April 19th - 21st",
-				"6": "**Quarterfinals:** April 26th - 28th",
-				"7": "**Semifinals:** May 3rd - 5th",
-				"8": "**Finals:** May 10th - 12th",
-				"9": "**Grand Finals:** May 17th - 19th",
+				"2": "**Screening:** ika-18 ng Marso hanggang ika-30 ng Marso",
+				"3": "**Qualifiers:** ika-5 hanggang 7 ng Abril",
+				"4": "**RO32:** ika-12 hanggang 14 ng Abril",
+				"5": "**RO16:** ika-19 hanggang 21 ng Abril",
+				"6": "**Quarterfinals:** ika-26 hanggang 28 ng Abril",
+				"7": "**Semifinals:** ika-3 hanggang 5 ng Mayo",
+				"8": "**Finals:** ika-10 hanggang 12 ng Mayo",
+				"9": "**Grand Finals:** ika-17 hanggang 19 ng Mayo",
 				"heading": "ISKEDYUL"
 			}
 		},
@@ -381,15 +381,15 @@
 			"heading": "PANGKALAHATANG ASAL."
 		},
 		"Scheduling": {
-			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
-			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
+			"1": "Ang mga laban ay iiskedyul sa pamamagitan ng **TEST Bot** sa Discord Server.",
+			"2": "Para sa pag-iskedyul o muling pag-iskedyul ng qualifier lobby, mangyaring gamitin ang **/schedule** command at ilagay ang na-prompt na impormasyon.",
+			"3": "Para sa muling pag-iskedyul ng laban, mangyaring gamitin ang **/reschedule** na command at ilagay ang na-prompt na impormasyon. Magpapadala ito ng kahilingan sa muling pag-iskedyul sa channel ng pag-iiskedyul.",
+			"4": "Kapag nag-reschedule ng laban **kailangang i-click ng dalawang team captain ang accept** sa kahilingan sa muling pag-iskedyul sa channel ng pag-iiskedyul upang makumpleto ang muling pag-iskedyul.",
+			"heading": "PAG-ISKEDYUL."
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
+			"1": "Ang lahat ng mga mapa ay ma-iiscore gamit ang **osu! Lazer default scoring**.",
+			"2": "**NoFail** ay ipapatupad.",
 			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
 			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
 			"heading": "GAME PROCEDURES.",
