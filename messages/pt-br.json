@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "Todos os mapas serão pontuados com a **pontuação padrão do osu! Lazer**.",
 			"2": "**NoFail** será aplicado.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
+			"3": "Os juízes entrarão em contato com os Capitães de qualquer equipe participante para cada jogo. {sublist_alpha} Capitães serão responsáveis por repassar qualquer tipo de informação dada pelo juiz para a sua equipe. {sublist_alpha} Um lembrete será enviado com **15 minutos** de antecedência. {sublist_alpha} O nome e a senha da sala do Lazer serão enviadas com **10 minutos** antes de cada jogo.",
 			"4": "Após a seleção de um mapa, os jogadores participantes terão **2 minutos** para entrar no lobby.",
 			"heading": "PROCEDIMENTOS DE JOGO.",
 			"Qualifiers": {
