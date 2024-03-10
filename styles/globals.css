@@ -15,15 +15,3 @@
 *:focus {
   outline-color: #5e72eb;
 }
-
-.disabledViewTransition {
-  view-transition-name: disabled-view-transiton;
-}
-
-::view-transition-old(disabled-view-transiton) {
-  animation: none;
-}
-
-::view-transition-new(disabled-view-transiton) {
-  animation: none;
-}

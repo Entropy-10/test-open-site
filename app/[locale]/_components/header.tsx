@@ -29,7 +29,7 @@ export default async function Header() {
 	}
 
 	return (
-		<header className='disabledViewTransition h-14 bg-milky-white'>
+		<header className='h-14 bg-milky-white'>
 			<section className='padding flex h-full grow items-center justify-between'>
 				<Link
 					href='/'
