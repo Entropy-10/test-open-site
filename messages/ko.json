@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "모든 맵은 **osu! Lazer 기본 점수 매기기** 로 점수를 매깁니다.",
 			"2": "**NoFail**이 적용될 것입니다.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
+			"3": "심판은 각 게임에 참가하는 팀의 대장들에게 연락할 것입니다. {sublist_alpha} 대장들은 심판이 제공한 모든 정보를 자신의 팀에 전달하는 책임이 있습니다. {sublist_alpha} 게임 시작 **15분** 전에 알림이 전송될 것입니다. {sublist_alpha} Lazer 게임 로비 이름과 비밀번호가 각 게임 시작 **10분** 전에 전송될 것입니다.",
 			"4": "맵이 선택된 후, 참가 선수들은 로비에 참여하기 위해 **2분**의 시간이 주어집니다",
 			"heading": "게임 절차.",
 			"Qualifiers": {
