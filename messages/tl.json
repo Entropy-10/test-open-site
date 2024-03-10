@@ -207,22 +207,22 @@
 				"title": "MAYROON NANG {type} NA KOPONAN!"
 			},
 			"Default": {
-				"message": "We were unable to create your team. Looks like an issue on our end. Please try again to see if that helps.",
-				"title": "FAILED TO CREATE TEAM!"
+				"message": "Hindi namin nabuo ang iyong koponan. Mukhang may isyu sa aming banda. Maaaring subukan para malaman upang malaman kung ito ay nakatulong.",
+				"title": "NABIGO SA PAGLIKHA NG KOPONAN!"
 			},
 			"UploadFailed": {
-				"title": "FAILED TO UPLOAD FLAG!",
-				"message": "We were unable to upload your flag to our server. Please try again to see if that helps."
+				"title": "NABIGO SA PAG-UPLOAD NG WATAWAT!",
+				"message": "Hindi namin na-upload ang iyong watawat sa aming server. Maaaring subukan muli upang makita kung ito ay nakatulong."
 			}
 		}
 	},
 	"TeamsPage": {
-		"heading": "TEAM LIST.",
-		"teamsRegistered": "TEAMS REGISTERED"
+		"heading": "LISTAHAN NG KOPONAN.",
+		"teamsRegistered": "MGA KOPONANG NAKAREHISTRO"
 	},
 	"UnauthorizedPage": {
-		"authFailed": "AUTHORIZATION FAILED!",
-		"unauthorized": "UNAUTHORIZED!",
+		"authFailed": "NABIGO ANG PAGPAPA-AWTORISASYON!",
+		"unauthorized": "HINDI PINAHINTULUTAN!",
 		"homeButton": "HOME",
 		"Messages": {
 			"default": "Ikaw ay mag sign in muna bago mo ma-access ang pahina na ito."
@@ -234,56 +234,56 @@
 			"signIn": "Ikaw ay mag sign in muna bago mag verify.",
 			"verified": "Maligayang Pagdating sa TEST Open Discord server!",
 			"defaultError": "Ang iyong pag-beripika ay nabigo. Paki ulit nalang mamaya.",
-			"default": "Please click the button below to gain access to the server."
+			"default": "Mangyaring pindutin ang pindutan sa ibaba upang makapasok sa server."
 		},
 		"Buttons": {
-			"tryAgain": "TRY AGAIN",
+			"tryAgain": "SUBUKAN MULI",
 			"Verify": {
-				"text": "VERIFY",
-				"loadingText": "VERIFYING"
+				"text": "IPABERIPIKA",
+				"loadingText": "IPINAPABERIPIKA"
 			}
 		},
 		"Errors": {
-			"alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-			"verificationFailed": "Verification failed. Please try again and see if that helps.",
-			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
+			"alreadyVerified": "Ikaw ay naipa-beripika na. Kung sa tingin mo na ito ay isang pagkakamali, mangyari magpadala ng DM kay @__entro para ikaw ay matulungan.",
+			"verificationFailed": "Nabigo ang pagpapa-beripika. Maaaring subukan muli upang makita kung ito ay nakatulong.",
+			"notInServer": "Ikaw ay wala sa Discord server! Mangyaring sumali sa server bago subukang magpa-beripika."
 		}
 	},
 	"TeamPage": {
 		"Headings": {
-			"team": "MY TEAM.",
-			"player": "PLAYER LIST."
+			"team": "AKING KOPONAN.",
+			"player": "LISTAHAN NG MANLALARO."
 		},
 		"timezone": "TIMEZONE",
 		"Buttons": {
-			"delete": "DELETE TEAM",
-			"edit": "EDIT TEAM",
-			"leave": "LEAVE TEAM"
+			"delete": "TANGGALIN ANG KOPONAN",
+			"edit": "I-EDIT ANG KOPONAN",
+			"leave": "UMALIS SA KOPONAN"
 		},
 		"Players": {
-			"heading": "CURRENT MEMBERS",
+			"heading": "KASALUKUYANG KAANIB",
 			"Player": {
 				"rank": "RANGGO",
 				"discord": "DISCORD",
-				"removeButton": "REMOVE PLAYER"
+				"removeButton": "TANGGALIN ANG MANLALARO"
 			}
 		},
 		"Invites": {
-			"heading": "OUTGOING INVITES",
-			"error": "Sorry, we failed to get the players on your team.",
-			"none": "You currently do not have any outgoing invites. Start by using the invite players box above.",
+			"heading": "PAPALABAS NA IMBITASYON",
+			"error": "Paumanhin, nabigo kaming kunin ang mga manlalaro sa iyong koponan.",
+			"none": "Sa kasalukuyan ay wala kang anumang imbitasyon. Magsimula sa pamamagitan ng paggamit sa kahon ng imbitasyon ng mga manlalaro sa itaas.",
 			"Invite": {
-				"rank": "RANK",
+				"rank": "RANGGO",
 				"discord": "DISCORD",
-				"sent": "SENT",
-				"deleteButton": "DELETE INVITE",
-				"inviteButton": "INVITE",
-				"placeholder": "Enter osu username..."
+				"sent": "INIMBITA NOONG",
+				"deleteButton": "BURAHIN ANG IMBITASYON",
+				"inviteButton": "ANYAYAHAN",
+				"placeholder": "Paki-lagay ang osu username..."
 			}
 		},
 		"Errors": {
 			"DeleteItemFailed": {
-				"title": "FAILED TO DELETE {type}!",
+				"title": "SABLAY ANG PAGTANGGAL NG TEAM NA {type}!",
 				"message": "Paumanhin, nabigo ang pag tanggal ng {type}. Maaring subukan muli kung ito ay makakatulong.",
 				"Types": {
 					"player": "manlalaro",
@@ -320,17 +320,17 @@
 				"profileButton": "PROPAYL"
 			},
 			"NoChanges": {
-				"title": "NOTHING CHANGED!",
-				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+				"title": "WALANG NANGYARI!",
+				"message": "Wala ka pang nababago sa iyong team info. Paki-bago ito bago i-update."
 			},
 			"UpdateTeamFailed": {
-				"title": "FAILED TO UPDATE TEAM!",
-				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
+				"title": "SUMABLAY ANG PAGBABAGO NG TEAM!",
+				"message": "Paumanhin, pero nabigo ang pagbabago ng iyong team. Maaring subukan muli kung ito ay makakatulong."
 			}
 		},
 		"TeamUpdated": {
-			"title": "TEAM INFO UPDATED!",
-			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
+			"title": "NA-UPDATE NA ANG IMPORMASYON NG TEAM!",
+			"message": "Na-update na ang iyong impormasyon para sa team. Paki-refresh ang page na ito para makita ang mga pagbabago na iyong ginawa."
 		}
 	},
 	"InfoPage": {
@@ -347,14 +347,14 @@
 			"heading": "PANGKALAHATANG IMPORMASYON.",
 			"Schedule": {
 				"1": "**Rehistrasyon:** ika-26 ng Pebrero - ika-18 ng Martsa",
-				"2": "**pagtatabing:** ika-18 ng Martso - ika-23 ng Martso",
-				"3": "**Qualifiers:** ika-29 ng Martso - ika-31 ng Martso",
-				"4": "**RO32:** ika-5 ng Abril - ika-7",
-				"5": "**RO16:** ika-12 ng Abril - ika-14",
-				"6": "**Kworterpinal:** ika-19 ng Abril - ika-21",
-				"7": "**Semipaynal:** ika-26 ng Abril - ika-28",
-				"8": "**Paynals:** ika-3 ng Mayo - ika-5",
-				"9": "**Grandpaynals:** ika-10 ng mayo - ika-12",
+				"2": "**Screening:** ika-18 ng Marso hanggang ika-30 ng Marso",
+				"3": "**Qualifiers:** ika-5 hanggang 7 ng Abril",
+				"4": "**RO32:** ika-12 hanggang 14 ng Abril",
+				"5": "**RO16:** ika-19 hanggang 21 ng Abril",
+				"6": "**Quarterfinals:** ika-26 hanggang 28 ng Abril",
+				"7": "**Semifinals:** ika-3 hanggang 5 ng Mayo",
+				"8": "**Finals:** ika-10 hanggang 12 ng Mayo",
+				"9": "**Grand Finals:** ika-17 hanggang 19 ng Mayo",
 				"heading": "ISKEDYUL"
 			}
 		},
@@ -381,46 +381,46 @@
 			"heading": "PANGKALAHATANG ASAL."
 		},
 		"Scheduling": {
-			"1": "Matches will be scheduled through the **TEST Bot** in the Discord Server.",
-			"2": "For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.",
-			"3": "For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.",
-			"4": "When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.",
-			"heading": "SCHEDULING."
+			"1": "Ang mga laban ay iiskedyul sa pamamagitan ng **TEST Bot** sa Discord Server.",
+			"2": "Para sa pag-iskedyul o muling pag-iskedyul ng qualifier lobby, mangyaring gamitin ang **/schedule** command at ilagay ang na-prompt na impormasyon.",
+			"3": "Para sa muling pag-iskedyul ng laban, mangyaring gamitin ang **/reschedule** na command at ilagay ang na-prompt na impormasyon. Magpapadala ito ng kahilingan sa muling pag-iskedyul sa channel ng pag-iiskedyul.",
+			"4": "Kapag nag-reschedule ng laban **kailangang i-click ng dalawang team captain ang accept** sa kahilingan sa muling pag-iskedyul sa channel ng pag-iiskedyul upang makumpleto ang muling pag-iskedyul.",
+			"heading": "PAG-ISKEDYUL."
 		},
 		"GameProcedures": {
-			"1": "All maps will be scored with **osu! Lazer default scoring**.",
-			"2": "**NoFail** will be enforced.",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
-			"4": "After a map has been selected, participating players have **2 minutes** to join the lobby.",
-			"heading": "GAME PROCEDURES.",
+			"1": "Ang lahat ng mga mapa ay ma-iiscore gamit ang **osu! Lazer default scoring**.",
+			"2": "**NoFail** ay ipapatupad.",
+			"3": "Makikipag-ugnayan ang mga referee sa mga Captain ng alinmang kalahok na team para sa bawat laro. {sublist_alpha} Ang mga kapitan ay may responsibilidad sa paghahatid ng anumang impormasyong ibinigay ng referee sa kanilang team. {sublist_alpha} Isang paalala ang ipapadala **15 minuto** bago ang bawat laro. {sublist_alpha} Ang Lazer room name at password ay ipapadala **10 minuto** bago ang bawat laro.",
+			"4": "Pagkatapos mapili ang isang mapa, ang mga kalahok na manlalaro ay may **2 minuto** upang sumali sa lobby.",
+			"heading": "MGA PAMAMARAAN SA LARO.",
 			"Qualifiers": {
-				"1": "Maps will be played in the same order as seen on the mappool.",
-				"2": "If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.",
+				"1": "Ipe-play ang mga mapa sa parehong pagkakasunod-sunod tulad ng nakikita sa mappool.",
+				"2": "Kung ang isang player ay **na-disconnect** **sa loob ng unang minuto ng isang mapa**, ire-replay ng player ang mapa sa **pag-tapos ng qualifier room**.",
+				"3": "Ang mga team ay inaasahang magkakaroon ng tatlong manlalaro sa silid sa loob ng **5 minuto pagkatapos ng oras ng pagsisimula ng kanilang room**. Kung ang isang team ay nabigong magpakita, ang team ay kailangang muling iiskedyul ang kanilang room. Ang room na ito ay dapat na hindi bababa sa **4 na oras** pagkatapos ng room kung saan sila hindi magpakita.",
 				"heading": "QUALIFIERS"
 			},
 			"Match": {
-				"1": "The win-condition for each match will be **TeamVS**.",
-				"2": "Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.",
-				"3": "Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp. {sublist_alpha} 5 minutes late is forfeit of protects. {sublist_alpha} 10 minutes late is forfeit of bans. {sublist_alpha} 15 minutes late is a forfeit of match.",
-				"4": "Players must be in a lobby slot corresponding to their team. {sublist_alpha} Team 1 (Red): Slots 1, 2, and 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, and 6.",
-				"5": "Captains will use the **/roll command in the Discord thread** of their match to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other: {sublist_alpha} First to Pick and Second to Ban {sublist_alpha} Second to Pick and First to Ban",
-				"6": "Teams may opt into playing 1 map of their choice as a warmup before the match. {sublist_alpha} Warmups must be **less than 4 minutes long**. {sublist_alpha} Warmups may **not be part of the mappool**.",
-				"7": "Protects will be **privately submitted** to the referee before the banning phase.",
-				"8": "Banning phase will be done in a **snake format** (ABBA). {sublist_alpha} Team 1 Bans {sublist_alpha} Team 2 Bans twice {sublist_alpha} Team 1 Bans",
-				"9": "Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.",
-				"10": "Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.",
-				"11": "Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.",
-				"12": "Players may play Tiebreaker with any mod that is **not a global rate change mod**.",
-				"13": "Each team has **one 5-minute timeout** which may be used at any point in the match.",
-				"14": "If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.",
+				"1": "Ang win-condition para sa bawat laban ay **TeamVS**.",
+				"2": "Dapat i-submit ang mga Warmups, Protects, Bans, at Picks sa loob ng **2 minuto**.",
+				"3": "Ang mga team ay inaasahang magkakaroon ng tatlong manlalaro sa silid sa loob ng **5 minuto pagkatapos ng oras ng pagsisimula ng kanilang room**. Mawawala ang mga sumusunod sa bawat timestamp. {sublist_alpha} 5 minutong huli ay mawawalan ang protects. {sublist_alpha} 10 minutong huli ay mawawalan ng bans. {sublist_alpha} Ang huling 15 minuto ay isang pag-forfeit ng laban.",
+				"4": "Ang mga manlalaro ay dapat nasa lobby slot na naaayon sa kanilang team. {sublist_alpha} Team 1 (Red): Slots 1, 2, at 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, at 6.",
+				"5": "Gagamitin ng mga kapitan ang **/roll command sa Discord thread** ng kanilang laban para mapagdesisyonan ang **Pick/Ban order**. Ang kapitan na may mas mataas na roll ay maaaring pumili ng isa sa mga sumusunod, habang ang isa pang kapitan ay tatanggap ng isa pa: {sublist_alpha} Unang Pinili at Pangalawa sa Pagbawal {sublist_alpha} Pangalawa sa Pinili at Unang Pagbawalan",
+				"6": "Maaaring mag-opt in ang mga team sa paglalaro ng isang mapa na kanilang pinili bilang warmup bago ang laban. {sublist_alpha} Dapat ay **mas mababa sa 4 na minuto ang haba ng mga warmup**. {sublist_alpha} Maaaring **hindi bahagi ng mappool** ang mga warmup.",
+				"7": "Ang mga proteksiyon ay **pribadong isu-submit** sa referee bago ang banning phase.",
+				"8": "Ang banning phase ay gagawin sa isang **snake format** (ABBA). {sublist_alpha} Team 1 ay magba-ban {sublist_alpha} Team 2 ay magba-ban ng dawalang beses {sublist_alpha} at ang Team 1 ay muling magbaban",
+				"9": "Kapag natapos na ang ban and protect phase, **ang anumang pagbabawal sa isang pinoprotektahang mapa ay mawawalan ng bisa** at ang mapa na iyon ay maaaring laruin.",
+				"10": "Ipinagbabawal ang pag-ban mula sa **parehong modpool ng dalawang beses na magkasunod** pero hindi kasama ang **No-Mod pool**.",
+				"11": "Ang pagpili mula sa **parehong modpool ng dalawang beses na magkasunod ay ipinagbabawal** hindi kasama ang **Lazer-Mod** at **No-Mod pool**.",
+				"12": "Maaaring maglaro ang mga manlalaro ng Tiebreaker sa anumang mod na **hindi isang global rate change mod**.",
+				"13": "Ang bawat team ay may **isang 5 minutong timeout** na maaaring gamitin sa anumang punto ng laban.",
+				"14": "Kung ang isang manlalaro **ay madidisconnect sa loob ng unang minuto ng isang mapa**, ang mapa ay **maa-abort** at ang team ay may **5 minuto** upang isali ang isa pang manlalaro upang laruin ang mapa. Maaari lang itong mangyari nang isang beses bawat team at bawat laban.",
 				"heading": "MATCH"
 			}
 		},
 		"MappoolInfo": {
-			"1": "The mappool will be released the **Sunday** of every week.",
-			"2": "Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.",
-			"heading": "MAPPOOL INFO.",
+			"1": "Ipapalabas ang mappool tuwing **Linggo** ng bawat linggo.",
+			"2": "Ang Lazer Mod, o LM para sa maikli, ay isang modpool na magtatampok ng iba't ibang mod bawat linggo upang ipakita ang mga bagong mod na inaalok ng Lazer client.",
+			"heading": "IMPORMASYON NG MAPPOOL.",
 			"Table": {
 				"round": "Round",
 				"starRating": "SR",
