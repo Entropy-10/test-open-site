@@ -324,13 +324,13 @@
 				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
 			},
 			"UpdateTeamFailed": {
-				"title": "FAILED TO UPDATE TEAM!",
+				"title": "FALHA EM ATUALIZAR O TIME!",
 				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
 			}
 		},
 		"TeamUpdated": {
-			"title": "TEAM INFO UPDATED!",
-			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
+			"title": "INFORMAÇÕES DO TIME ATUALIZADO!",
+			"message": "As informações do seu time foram atualizadas com sucesso. Você pode precisar recarregar a página para ver suas mudanças."
 		}
 	},
 	"InfoPage": {
@@ -347,14 +347,14 @@
 			"heading": "INFORMAÇÕES GERAIS.",
 			"Schedule": {
 				"1": "**Inscrições:** 26 de Fevereiro - 18 de Março",
-				"2": "**Screening:** March 18th - March 30th",
-				"3": "**Qualifiers:** April 5th - 7th",
-				"4": "**RO32:** April 12th - 14th",
-				"5": "**RO16:** April 19th - 21st",
-				"6": "**Quarterfinals:** April 26th - 28th",
-				"7": "**Semifinals:** May 3rd - 5th",
-				"8": "**Finals:** May 10th - 12th",
-				"9": "**Grand Finals:** May 17th - 19th",
+				"2": "**Screening:** 18 - 30 de Março",
+				"3": "**Qualificatórias:** 5 - 7 de Abril",
+				"4": "**RO32:** 12 - 14 de Abril",
+				"5": "**RO16:** 19 - 21 de Abril",
+				"6": "**Quartas de Finais:** 26 - 28 de Abril",
+				"7": "**Semifinais:** 3 - 5 de Maio",
+				"8": "**Finais:** 10 - 12 de Maio",
+				"9": "**Grandes Finais:** 17 - 19 de Maio",
 				"heading": "PROGRAMAÇÃO"
 			}
 		},
