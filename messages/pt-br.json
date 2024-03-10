@@ -246,7 +246,7 @@
 		"Errors": {
 			"alreadyVerified": "Você já foi verificado. Caso você pense que isto foi um erro, entre em contato com @__entro para mais ajuda.",
 			"verificationFailed": "Falha na verificação. Por favor, tente novamente para ver se isso ajuda.",
-			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
+			"notInServer": "Você não está no servidor do Discord! Por favor, entre no servidor antes de tentar verificar."
 		}
 	},
 	"TeamPage": {
@@ -320,12 +320,12 @@
 				"profileButton": "PERFIL"
 			},
 			"NoChanges": {
-				"title": "NOTHING CHANGED!",
-				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+				"title": "NENHUMA MUDANÇA!",
+				"message": "Você não alterou nenhuma informação da sua equipe. Altere suas informações antes de tentar atualizar."
 			},
 			"UpdateTeamFailed": {
 				"title": "FALHA EM ATUALIZAR O TIME!",
-				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
+				"message": "Desculpe, nós falhamos em atualizar sua equipe. Por favor, tente novamente e veja se isso ajuda."
 			}
 		},
 		"TeamUpdated": {
