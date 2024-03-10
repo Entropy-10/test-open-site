@@ -390,7 +390,7 @@
 		"GameProcedures": {
 			"1": "すべてのスコアは、**osu! lazer のデフォルトスコア方式** が採用されます。",
 			"2": "**NoFail** が適用されます。",
-			"3": "Referees will contact the Captains of any participating team for each game. {sublist_alpha} Captains are responsible for relaying any information given by the referee to their team. {sublist_alpha} A reminder will be sent out **15 minutes** before each game. {sublist_alpha} Lazer room name and password will be sent out **10 minutes** before each game.",
+			"3": "レフェリーは、試合の参加チームのキャプテンに連絡を行います。 {sublist_alpha} 各キャプテンは、レフェリーから受けた連絡を自分のチームに伝える責任があります。 {sublist_alpha} 試合のリマインダーは、各試合の**15分前**に行われます。 {sublist_alpha} Lazerの部屋名およびパスワードは、各試合の**10分前**に送信されます。",
 			"4": "プレイするプレイヤーは、譜面が選択されてから２分以内にロビーに参加してください。",
 			"heading": "試合手順",
 			"Qualifiers": {
