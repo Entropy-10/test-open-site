@@ -246,7 +246,7 @@
 		"Errors": {
 			"alreadyVerified": "Ya estabas verificado. Si crees que esto es un error, por favor manda mensaje privado a @_entro para ayuda.",
 			"verificationFailed": "Verificación fallida. Por favor intenta otra vez para ver si eso te ayuda.",
-			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
+			"notInServer": "¡Si tu no estas en el servidor de Discord! por favor únete antes de intentar nuevamente."
 		}
 	},
 	"TeamPage": {
@@ -320,17 +320,17 @@
 				"profileButton": "PERFIL"
 			},
 			"NoChanges": {
-				"title": "NOTHING CHANGED!",
-				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+				"title": "¡NADA CAMBIADO!",
+				"message": "Tu no haz cambiado nada de tu información de equipo. Por favor cambia tu información antes de intentar actualizar."
 			},
 			"UpdateTeamFailed": {
-				"title": "FAILED TO UPDATE TEAM!",
-				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
+				"title": "¡ERROR AL ACTUALIZAR EL EQUIPO!",
+				"message": "Lo sentimos, nosotros no pudimos actualizar tu equipo. Por favor intenta nuevamente y revisa si eso ayuda."
 			}
 		},
 		"TeamUpdated": {
-			"title": "TEAM INFO UPDATED!",
-			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
+			"title": "¡INFORMACIÓN DEL EQUIPO ACTUALIZADA!",
+			"message": "Tu información de equipo ha sido actualizada correctamente. Es posible que debas recargar la página para ver los cambios."
 		}
 	},
 	"InfoPage": {
