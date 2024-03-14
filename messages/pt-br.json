@@ -246,7 +246,7 @@
 		"Errors": {
 			"alreadyVerified": "Você já foi verificado. Caso você pense que isto foi um erro, entre em contato com @__entro para mais ajuda.",
 			"verificationFailed": "Falha na verificação. Por favor, tente novamente para ver se isso ajuda.",
-			"notInServer": "You are not in the Discord server! Please join the server before trying to verify."
+			"notInServer": "Você não está no servidor do Discord! Por favor, entre no servidor antes de tentar verificar."
 		}
 	},
 	"TeamPage": {
@@ -320,17 +320,17 @@
 				"profileButton": "PERFIL"
 			},
 			"NoChanges": {
-				"title": "NOTHING CHANGED!",
-				"message": "You haven't changed any of your team info. Please change your info before attempting to update."
+				"title": "NENHUMA MUDANÇA!",
+				"message": "Você não alterou nenhuma informação da sua equipe. Altere suas informações antes de tentar atualizar."
 			},
 			"UpdateTeamFailed": {
-				"title": "FAILED TO UPDATE TEAM!",
-				"message": "Sorry, we failed to update your team. Please try again and see if that helps."
+				"title": "FALHA EM ATUALIZAR O TIME!",
+				"message": "Desculpe, nós falhamos em atualizar sua equipe. Por favor, tente novamente e veja se isso ajuda."
 			}
 		},
 		"TeamUpdated": {
-			"title": "TEAM INFO UPDATED!",
-			"message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
+			"title": "INFORMAÇÕES DO TIME ATUALIZADO!",
+			"message": "As informações do seu time foram atualizadas com sucesso. Você pode precisar recarregar a página para ver suas mudanças."
 		}
 	},
 	"InfoPage": {
@@ -347,14 +347,14 @@
 			"heading": "INFORMAÇÕES GERAIS.",
 			"Schedule": {
 				"1": "**Inscrições:** 26 de Fevereiro - 18 de Março",
-				"2": "**Screening:** March 18th - March 30th",
-				"3": "**Qualifiers:** April 5th - 7th",
-				"4": "**RO32:** April 12th - 14th",
-				"5": "**RO16:** April 19th - 21st",
-				"6": "**Quarterfinals:** April 26th - 28th",
-				"7": "**Semifinals:** May 3rd - 5th",
-				"8": "**Finals:** May 10th - 12th",
-				"9": "**Grand Finals:** May 17th - 19th",
+				"2": "**Screening:** 18 - 30 de Março",
+				"3": "**Qualificatórias:** 5 - 7 de Abril",
+				"4": "**RO32:** 12 - 14 de Abril",
+				"5": "**RO16:** 19 - 21 de Abril",
+				"6": "**Quartas de Finais:** 26 - 28 de Abril",
+				"7": "**Semifinais:** 3 - 5 de Maio",
+				"8": "**Finais:** 10 - 12 de Maio",
+				"9": "**Grandes Finais:** 17 - 19 de Maio",
 				"heading": "PROGRAMAÇÃO"
 			}
 		},
