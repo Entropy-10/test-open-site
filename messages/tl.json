@@ -169,8 +169,8 @@
 			"message": "Sarado ang pag rehistro hanggang magsimula ang paligsahan. Maaring bumalik pag natapos na ang countdown sa unang pahina."
 		},
 		"Form": {
-			"heading": "GUMAWA NG PANGKAT.",
-			"teamName": "Pangalang ng Pangkat",
+			"heading": "GUMAWA NG KOPONAN.",
+			"teamName": "Pangalang ng Koponan",
 			"teamAcronym": "Pangkatang Akronim",
 			"timezone": "Timezone",
 			"teamFlag": "Pangkatang Bandila",
@@ -179,9 +179,9 @@
 				"loadingText": "GINAGAWA"
 			},
 			"Success": {
-				"title": "NAGAWA NA ANG PANGKAT!",
+				"title": "NAGAWA NA ANG KOPONAN!",
 				"message": "Maligayang pagdating sa TEST Open. Pindutin ang pindutan sa ibaba upang makita ang pahina ng pamamahala sa iyong koponan at magsimulang mag imbita ng mga manlalaro.\n",
-				"teamManagementButton": "PAMAMAHALA NG PANGKAT"
+				"teamManagementButton": "PAMAMAHALA NG KOPONAN"
 			},
 			"ImagePicker": {
 				"upload": "Dito pumindot upang mag-upload",
