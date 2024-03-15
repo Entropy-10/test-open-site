@@ -171,7 +171,7 @@
 		"Form": {
 			"heading": "GUMAWA NG KOPONAN.",
 			"teamName": "Pangalang ng Koponan",
-			"teamAcronym": "Pangkatang Akronim",
+			"teamAcronym": "Akronim ng Koponan",
 			"timezone": "Timezone",
 			"teamFlag": "Pangkatang Bandila",
 			"createButton": {
@@ -201,7 +201,7 @@
 				"message": "Mukhang mayroon nang koponan ang gumagamit niyan. Mangyaring gumamit ng iba.",
 				"Types": {
 					"name": "pangalan",
-					"acronym": "",
+					"acronym": "akronim",
 					"player": "manlalaro"
 				},
 				"title": "MAYROON NANG {type} NA KOPONAN!"
