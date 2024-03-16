@@ -1,5 +1,6 @@
 import '~/styles/globals.css'
 
+import Loglib from '@loglib/tracker/react'
 import { genOgTwitterImage } from '@metadata'
 import { locales } from '@siteConfig'
 import { cn, getBaseUrl, inter, isPreview } from '@utils/client'
@@ -68,12 +69,10 @@ export default async function LocaleLayout({
 				className={cn(
 					'flex min-h-screen flex-col overflow-x-hidden',
 					inter.className
-				)}
-			>
+				)}>
 				<NextIntlClientProvider
 					locale={locale}
-					messages={pick(messages, 'ErrorPage')}
-				>
+					messages={pick(messages, 'ErrorPage')}>
 					<Header />
 					{isPreview && <PreviewWarning />}
 					{tokenState?.old && <UpdateScopes />}
@@ -81,6 +80,7 @@ export default async function LocaleLayout({
 					<Footer />
 				</NextIntlClientProvider>
 				<Analytics />
+				<Loglib config={{ id: 'test-open' }} />
 				<SpeedInsights />
 			</body>
 		</html>
