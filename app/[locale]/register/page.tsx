@@ -4,15 +4,10 @@ import { getMessages, getTranslations } from 'next-intl/server'
 import { redirect } from 'next/navigation'
 
 import Background from '~/components/ui/background'
-import Divider from '~/components/ui/divider'
-import Heading from '~/components/ui/heading'
-import CreateTeamForm from './_components/create-team-form'
 
 import { env } from '@env'
 import type { MetadataProps } from '@types'
 import { isProd } from '@utils/client'
-import pick from 'lodash/pick'
-import { NextIntlClientProvider } from 'next-intl'
 import MessageBox from '~/components/message-box'
 
 export async function generateMetadata({ params: { locale } }: MetadataProps) {
@@ -35,22 +30,31 @@ export default async function RegisterPage() {
 		: true
 
 	return (
-		<Background className='relative flex min-h-screen items-center justify-center'>
-			<div className='absolute top-10 left-0'>
-				<Heading>{t('heading')}</Heading>
-				<Divider />
-			</div>
-
-			{allowRegs ? (
-				<NextIntlClientProvider messages={pick(messages, 'RegistrationPage')}>
-					<CreateTeamForm
-						osuId={session.sub}
-						discordId={session.user.discord_id}
-					/>
-				</NextIntlClientProvider>
-			) : (
-				<MessageBox title={t('Closed.title')} message={t('Closed.message')} />
-			)}
+		<Background className='flex min-h-screen items-center justify-center'>
+			<MessageBox
+				title='REGISTRATIONS CLOSED!'
+				message='Registrations are currently closed. If you are a free player trying to create a team please contact @__entro.'
+			/>
 		</Background>
 	)
+
+	// return (
+	// 	<Background className='relative flex min-h-screen items-center justify-center'>
+	// 		<div className='absolute top-10 left-0'>
+	// 			<Heading>{t('heading')}</Heading>
+	// 			<Divider />
+	// 		</div>
+
+	// 		{allowRegs ? (
+	// 			<NextIntlClientProvider messages={pick(messages, 'RegistrationPage')}>
+	// 				<CreateTeamForm
+	// 					osuId={session.sub}
+	// 					discordId={session.user.discord_id}
+	// 				/>
+	// 			</NextIntlClientProvider>
+	// 		) : (
+	// 			<MessageBox title={t('Closed.title')} message={t('Closed.message')} />
+	// 		)}
+	// 	</Background>
+	// )
 }

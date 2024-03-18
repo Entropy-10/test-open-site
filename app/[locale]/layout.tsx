@@ -4,8 +4,6 @@ import Loglib from '@loglib/tracker/react'
 import { genOgTwitterImage } from '@metadata'
 import { locales } from '@siteConfig'
 import { cn, getBaseUrl, inter, isPreview } from '@utils/client'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 
@@ -69,19 +67,19 @@ export default async function LocaleLayout({
 				className={cn(
 					'flex min-h-screen flex-col overflow-x-hidden',
 					inter.className
-				)}>
+				)}
+			>
 				<NextIntlClientProvider
 					locale={locale}
-					messages={pick(messages, 'ErrorPage')}>
+					messages={pick(messages, 'ErrorPage')}
+				>
 					<Header />
 					{isPreview && <PreviewWarning />}
 					{tokenState?.old && <UpdateScopes />}
 					<main className='flex-1'>{children}</main>
 					<Footer />
 				</NextIntlClientProvider>
-				<Analytics />
 				<Loglib config={{ id: 'test-open' }} />
-				<SpeedInsights />
 			</body>
 		</html>
 	)
