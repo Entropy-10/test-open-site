@@ -403,11 +403,11 @@
 				"1": "Die Sieg-Bedingung für jede Spielrunde ist **Team gegen Team** (\"TeamVS\").",
 				"2": "Die Auswahl von Maps zum Aufwärmen, zu Schützen, oder zu Sperren, sowie die Auswahl der nächsten zu spielenden Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
 				"3": "Es wird erwartet, dass die Teams bis **spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match** haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen: {sublist_alpha} 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect). {sublist_alpha} 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban). {sublist_alpha} 15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).",
-				"4": "Die Spieler müssen folgende \"Sitzplätze\" in der Spielrunde einnehmen: {sublist_alpha} Team 1 (Rot): Platz 1, 2, und 3.{sublist_alpha} Team 2 (Blau): Platz 4, 5, und 6.",
-				"5": "Die Teamkapitäne werden den \"/roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:{sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren.{sublist_alpha} Als Zweites Wählen, aber zuerst eine Map Sperren.",
-				"6": "Den Teams ist es erlaubt eine Map ihrer Wahl zum Aufwärmen zu spielen.{sublist_alpha} Die Map darf **nicht länger als 4 Minuten lang** sein.{sublist_alpha} Die Map darf **nicht im Mappool** sein.",
+				"4": "Die Spieler müssen folgende \"Sitzplätze\" in der Spielrunde einnehmen: {sublist_alpha} Team 1 (Rot): Platz 1, 2, und 3. {sublist_alpha} Team 2 (Blau): Platz 4, 5, und 6.",
+				"5": "Die Teamkapitäne werden den \"/roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende: {sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren. {sublist_alpha} Als Zweites Wählen, aber zuerst eine Map Sperren.",
+				"6": "Den Teams ist es erlaubt eine Map ihrer Wahl zum Aufwärmen zu spielen. {sublist_alpha} Die Map darf **nicht länger als 4 Minuten lang** sein. {sublist_alpha} Die Map darf **nicht im Mappool** sein.",
 				"7": "Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (Ban phase).",
-				"8": "Die Sperrphase (Ban phase) wird im **\"snake format\"** (ABBA) abgehalten.{sublist_alpha} Team 1 sperrt eine Map.{sublist_alpha} Team 2 sperrt 2 Maps.{sublist_alpha} Team 1 sperrt eine Map.",
+				"8": "Die Sperrphase (Ban phase) wird im **\"snake format\"** (ABBA) abgehalten. {sublist_alpha} Team 1 sperrt eine Map. {sublist_alpha} Team 2 sperrt 2 Maps. {sublist_alpha} Team 1 sperrt eine Map.",
 				"9": "Sollte eine der gesperrten **Maps von einem der Teams geschützt sein, wird die Sperrung annulliert** und die Map wird regulär spielbar sein.",
 				"10": "Das **doppelt Sperren einer Mod im Mappool ist nicht erlaubt**, mit Ausnahme der \"No-Mod\" Maps.",
 				"11": "Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der \"**Lazer-Mod**\" und \"**No-Mod**\" Maps.",
@@ -438,10 +438,10 @@
 			}
 		},
 		"PrizePool": {
-			"1": "Der MVP des Turniers{sublist_alpha} **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.",
-			"2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasstes Tablet-Cover**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
-			"3": "Zweiter Platz{sublist_alpha} $200 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
-			"4": "Dritter Platz{sublist_alpha} $100 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
+			"1": "Der MVP des Turniers {sublist_alpha} **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.",
+			"2": "Erster Platz {sublist_alpha} $500 aufgeteilt zwischen den Spielern. {sublist_alpha} **Individuell angepasstes Tablet-Cover**, entworfen von Spoo und hergestellt von Bluebunny. {sublist_alpha} Ein animiertes Team Banner.",
+			"3": "Zweiter Platz {sublist_alpha} $200 aufgeteilt zwischen den Spielern. {sublist_alpha} Statisches Team Banner.",
+			"4": "Dritter Platz {sublist_alpha} $100 aufgeteilt zwischen den Spielern {sublist_alpha} Statisches Team Banner",
 			"heading": "BELOHNUNGS- UND PREISLISTE"
 		}
 	},
