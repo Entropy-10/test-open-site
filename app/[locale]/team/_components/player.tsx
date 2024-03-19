@@ -3,11 +3,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 import { cn } from '@utils/client'
-import { headers } from 'next/headers'
-import { CsrfInput } from '~/components/csrf-input'
 import type { Tables } from '~/types/supabase'
-import { deleteItem } from '../_actions/delete'
-import DeleteButton from './delete-button'
 
 interface PlayerProps {
 	userId: string
@@ -19,13 +15,11 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 	if (!player.users) return null
 	const user = player.users
 	const t = useTranslations('TeamPage.Players.Player')
-	const csrfToken = headers().get('X-CSRF-Token') ?? 'missing'
 
 	return (
 		<div
 			className={cn(
-				'w-[200px] bg-gradient-to-r from-light-blue to-salmon p-4 md:w-[250px]',
-				isCaptain && 'h-full'
+				'h-full w-[200px] bg-gradient-to-r from-light-blue to-salmon p-4 md:w-[250px]'
 			)}
 		>
 			<div className='mb-1.5 flex flex-col items-center uppercase md:mb-3'>
@@ -56,14 +50,14 @@ export default function Player({ player, userId, isCaptain }: PlayerProps) {
 				</div>
 			</div>
 
-			{userId !== player.user_id && isCaptain ? (
+			{/* {userId !== player.user_id && isCaptain ? (
 				<form action={deleteItem}>
 					<CsrfInput token={csrfToken} />
 					<input name='id' defaultValue={player.user_id} hidden />
 					<input name='type' defaultValue='player' hidden />
 					<DeleteButton text={t('removeButton')} />
 				</form>
-			) : null}
+			) : null} */}
 		</div>
 	)
 }

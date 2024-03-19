@@ -14,7 +14,6 @@ import Divider from '~/components/ui/divider'
 import Heading from '~/components/ui/heading'
 import Invites from './_components/invites'
 import Players from './_components/players'
-import Search from './_components/search'
 
 import type { MetadataProps } from '@types'
 import { NextIntlClientProvider } from 'next-intl'
@@ -90,14 +89,14 @@ export default async function TeamPage() {
 				<Divider variant='single' className='bg-light-blue' />
 				<Heading sub>{t('Invites.heading')}</Heading>
 
-				{isCaptain && (
+				{/* {isCaptain && (
 					<Search
 						teamId={team.id}
 						inviteButtonText={t('Invites.Invite.inviteButton')}
 						placeholderText={t('Invites.Invite.placeholder')}
 						closeButtonText={buttonT('close')}
 					/>
-				)}
+				)} */}
 				<Suspense fallback={<SectionLoader className='h-[311px]' />}>
 					<Invites teamId={team.id} isCaptain={isCaptain} />
 				</Suspense>

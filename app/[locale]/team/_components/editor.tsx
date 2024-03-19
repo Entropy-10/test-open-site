@@ -14,11 +14,8 @@ import ImagePicker from '~/components/image-picker'
 import TextModal from '~/components/text-modal'
 import Button from '~/components/ui/button'
 import UtcPicker from '~/components/utc-picker'
-import { deleteItem } from '../_actions/delete'
-import { deleteTeam } from '../_actions/delete-team'
 import updateTeam from '../_actions/update-team'
 import uploadImage from '../_actions/upload-image'
-import DeleteButton from './delete-button'
 
 interface EditorProps {
 	userId: string
@@ -197,7 +194,7 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 	}
 
 	return (
-		<section className='padding relative h-[128px] space-y-4'>
+		<section className='padding relative flex h-[128px] items-center'>
 			<div className='flex gap-3'>
 				{editing ? (
 					<ImagePicker
@@ -287,7 +284,7 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 				</div>
 			</div>
 
-			{isCaptain && !editing && (
+			{/* {isCaptain && !editing && (
 				<div className='flex gap-3'>
 					<>
 						<Button
@@ -309,16 +306,16 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 						</form>
 					</>
 				</div>
-			)}
+			)} */}
 
-			{!isCaptain && (
+			{/* {!isCaptain && (
 				<form action={deleteItem}>
 					<input name='csrf_token' value={csrfToken} hidden readOnly />
 					<input name='id' defaultValue={userId} hidden />
 					<input name='type' defaultValue='player' hidden />
 					<Button className='w-[180px]'>{t('Buttons.leave')}</Button>
 				</form>
-			)}
+			)} */}
 
 			{modalMessage && (
 				<TextModal
