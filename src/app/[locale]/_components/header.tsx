@@ -35,7 +35,7 @@ export default async function Header() {
 					href='/'
 					className='flex cursor-pointer items-center space-x-2 focus:outline-hidden'
 				>
-					<Logo h={38} w={44} className='h-[38px] w-[44px]' />
+					<Logo h={38} w={44} className='h-[38px] w-11' />
 					<h1 className='text-xl'>
 						<span className='font-black'>TEST</span> OPEN
 					</h1>

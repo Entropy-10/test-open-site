@@ -49,7 +49,6 @@ export default function Lobby({ lobby }: LobbyProps) {
 
 				{Array.from({ length: 3 - lobby.teams?.length }).map((_, index) => (
 					<div
-						// biome-ignore lint/suspicious/noArrayIndexKey:
 						key={index}
 						className={cn(
 							'h-[30px] w-[65px] bg-light-blue/45',

@@ -26,7 +26,7 @@ export default function CountdownContainer() {
 
 	useEffect(() => {
 		const counter = setInterval(() => {
-			const now = new Date().getTime()
+			const now = Date.now()
 			const diff = start - now
 
 			if (diff <= 0) {
@@ -50,7 +50,6 @@ export default function CountdownContainer() {
 			<AnimatePresence mode='wait'>
 				{!completed && (
 					<motion.div
-						// @ts-ignore
 						className='flex h-28 w-full flex-col items-center justify-center bg-feature4 text-milky-white xl:min-w-[450px] xl:flex-row xl:gap-5 xl:pl-5'
 						initial={{ x: 300, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}

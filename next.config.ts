@@ -9,14 +9,16 @@ jiti.esmResolve('./src/env')
 const withNextIntl = createNextIntlPlugin()
 
 export default withNextIntl({
+	reactCompiler: true,
 	experimental: {
 		mdxRs: true,
 		serverActions: { bodySizeLimit: '5mb' },
-		reactCompiler: true
+		turbopackFileSystemCacheForDev: true
 	},
 	transpilePackages: ['next-mdx-remote'],
 	pageExtensions: ['mdx', 'ts', 'tsx'],
 	images: {
+		qualities: [100, 75],
 		remotePatterns: [
 			{ protocol: 'https', hostname: 'a.ppy.sh' },
 			{ protocol: 'https', hostname: 'assets.ppy.sh' },

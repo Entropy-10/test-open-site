@@ -125,7 +125,7 @@ export async function updateGuildMember({
 		return (await rest.patch(Routes.guildMember(env.GUILD_ID, discordId), {
 			body: { nick: osuName, roles }
 		})) as OAuth.Member
-	} catch (err) {
+	} catch (_) {
 		return null
 	}
 }
@@ -138,7 +138,7 @@ export async function sendMessage(
 		return (await rest.post(Routes.channelMessages(channelId), {
 			body: content
 		})) as APIMessage
-	} catch (err) {
+	} catch (_) {
 		return null
 	}
 }

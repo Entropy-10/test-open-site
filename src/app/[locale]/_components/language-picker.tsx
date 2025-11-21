@@ -12,12 +12,7 @@ import RadialProgress from '~/components/radial-progress'
 import * as Dropdown from '~/components/ui/dropdown'
 
 interface LanguagePickerProps {
-	progress:
-		| {
-				code: string
-				progress: number
-		  }[]
-		| null
+	progress: { code: string; progress: number }[] | null
 }
 
 export default function LanguagePicker({ progress }: LanguagePickerProps) {
@@ -32,7 +27,7 @@ export default function LanguagePicker({ progress }: LanguagePickerProps) {
 					height={15}
 					alt={locale}
 					src={`/flags/${locale}.svg`}
-					className='h-[15px] w-[20px] drop-shadow-[0.5px_0.5px_0.5px_rgba(0,0,0,0.25)]'
+					className='h-[15px] w-5 drop-shadow-[0.5px_0.5px_0.5px_rgba(0,0,0,0.25)]'
 				/>
 				<ChevronDown
 					className='size-6 transition-all duration-300 group-data-[state=open]:rotate-180'
@@ -62,7 +57,7 @@ export default function LanguagePicker({ progress }: LanguagePickerProps) {
 										height={12}
 										alt={name}
 										src={`/flags/${flag}`}
-										className='mr-2 h-[12px] w-[16px] drop-shadow-[0.5px_0.5px_0.5px_rgba(0,0,0,0.25)]'
+										className='mr-2 h-3 w-4 drop-shadow-[0.5px_0.5px_0.5px_rgba(0,0,0,0.25)]'
 									/>
 									{name}
 								</div>

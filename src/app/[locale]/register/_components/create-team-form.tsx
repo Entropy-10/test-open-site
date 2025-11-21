@@ -77,7 +77,7 @@ export default function CreateTeamForm({ osuId }: CreateTeamFormProps) {
 
 			if (!flagUrl || imageUploadError) throw Error
 			flag = flagUrl
-		} catch (err) {
+		} catch (_) {
 			setError({
 				title: t('Errors.UploadFailed.title'),
 				message: t('Errors.UploadFailed.message')

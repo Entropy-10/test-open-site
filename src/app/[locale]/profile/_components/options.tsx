@@ -20,10 +20,7 @@ export default function Options() {
 
 	async function handleDelete() {
 		setDeleting(true)
-		const csrfResp = await fetch('/csrf-token')
-		const { csrfToken } = await csrfResp.json()
-
-		const result = await deleteAccount(csrfToken)
+		const result = await deleteAccount()
 		if (result?.error) {
 			setError({ title: result?.error.title, message: result?.error.message })
 			setDeleting(false)

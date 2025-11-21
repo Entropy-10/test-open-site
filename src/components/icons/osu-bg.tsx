@@ -8,7 +8,7 @@ interface OsuBgIconProps extends SVGProps<SVGSVGElement> {
 
 export default function OsuBgIcon({ className, ...props }: OsuBgIconProps) {
 	return (
-		// biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
+		// biome-ignore lint/a11y/noSvgWithoutTitle: ignore
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			width='30'

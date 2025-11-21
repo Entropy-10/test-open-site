@@ -28,6 +28,7 @@ export default async function uploadImage(formData: FormData) {
 			data: flag,
 			info: { format }
 		} = await sharpImage.toBuffer({ resolveWithObject: true })
+		const flagBlobParts = [flag as unknown as BlobPart]
 
 		const supabase = await createClient()
 		const { error: deleteError } = await supabase.storage
@@ -40,7 +41,7 @@ export default async function uploadImage(formData: FormData) {
 			.from('flags')
 			.upload(
 				`${teamName}/flag-${Date.now()}.${format}`,
-				new File([flag], `flag.${format}`, { type: `image/${format}` }),
+				new File(flagBlobParts, `flag.${format}`, { type: `image/${format}` }),
 				{ upsert: true }
 			)
 
@@ -50,7 +51,7 @@ export default async function uploadImage(formData: FormData) {
 			url: `${env.SUPABASE_STORAGE_URL}/flags/${data.path}`,
 			error: null
 		}
-	} catch (err) {
+	} catch (_) {
 		return { error: { type: 'default', message: '' } }
 	}
 }

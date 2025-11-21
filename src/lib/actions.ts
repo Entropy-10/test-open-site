@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation'
 
 import { deleteSession } from '@session'
 
-export async function signOut(csrfToken: string) {
+export async function signOut() {
 	await deleteSession()
 	redirect('/')
 }

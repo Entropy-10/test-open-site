@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import { headers } from 'next/headers'
+import type { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages, getTranslations } from 'next-intl/server'
@@ -18,7 +18,7 @@ import Editor from './_components/editor'
 import Invites from './_components/invites'
 import Players from './_components/players'
 
-export async function generateMetadata() {
+export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getLocale()
 
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -32,12 +32,12 @@ export async function generateMetadata() {
 export default async function TeamPage() {
 	const session = await getSession()
 	const locale = await getLocale()
-	const csrfToken = (await headers()).get('X-CSRF-Token') ?? 'missing'
+	// const csrfToken = (await headers()).get('X-CSRF-Token') ?? 'missing'
 	if (!session) redirect('/unauthorized')
 
 	const messages = await getMessages()
 	const t = await getTranslations('TeamPage')
-	const buttonT = await getTranslations('Buttons')
+	// const buttonT = await getTranslations('Buttons')
 	const supabase = await createClient()
 
 	const { data } = await supabase

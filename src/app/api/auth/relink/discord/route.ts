@@ -64,7 +64,7 @@ export async function GET(request: NextRequest) {
 		if (returnUrl) (await cookies()).delete('return-url')
 
 		return NextResponse.redirect(returnUrl ?? `${url.origin}/profile`)
-	} catch (err) {
+	} catch (_) {
 		linkingError(url)
 	}
 }

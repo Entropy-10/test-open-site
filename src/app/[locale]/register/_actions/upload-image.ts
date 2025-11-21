@@ -27,15 +27,16 @@ export async function uploadImage(formData: FormData) {
 			data: flag,
 			info: { format }
 		} = await sharpImage.toBuffer({ resolveWithObject: true })
+		const flagBlobParts = [flag as unknown as BlobPart]
 
 		const supabase = await createClient()
-		const { data, error } = await supabase.storage
-			.from('flags')
-			.upload(
-				`${teamName}/flag-${Date.now()}.${format}`,
-				new File([flag], `flag.${format}`, { type: `image/${format}` }),
-				{ upsert: true }
-			)
+		const { data, error } = await supabase.storage.from('flags').upload(
+			`${teamName}/flag-${Date.now()}.${format}`,
+			new File(flagBlobParts, `flag.${format}`, {
+				type: `image/${format}`
+			}),
+			{ upsert: true }
+		)
 
 		if (error) throw error
 
@@ -43,7 +44,7 @@ export async function uploadImage(formData: FormData) {
 			url: `${env.SUPABASE_STORAGE_URL}/flags/${data.path}`,
 			error: null
 		}
-	} catch (err) {
+	} catch (_) {
 		return { error: { type: 'default', message: 'failed to create team' } }
 	}
 }

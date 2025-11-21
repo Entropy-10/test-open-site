@@ -40,7 +40,7 @@ export async function verify() {
 
 	try {
 		await updateGuildMember(memberInfo)
-	} catch (err) {
+	} catch (_) {
 		verifyError(t)
 	}
 

@@ -28,7 +28,7 @@ export async function invite(formData: FormData) {
 	const { data: player } = await supabase
 		.from('players')
 		.select()
-		.eq('team_id', Number(teamId))
+		.eq('team_id', parseInt(teamId, 10))
 		.eq('user_id', userId)
 		.maybeSingle()
 
@@ -41,7 +41,7 @@ export async function invite(formData: FormData) {
 	}
 
 	const { error: inviteError } = await supabase.from('invites').insert({
-		team_id: Number.parseInt(teamId),
+		team_id: parseInt(teamId, 10),
 		user_id: userId,
 		updated_at: new Date().toISOString()
 	})

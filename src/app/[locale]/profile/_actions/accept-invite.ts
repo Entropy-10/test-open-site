@@ -18,7 +18,7 @@ export async function acceptInvite(formData: FormData) {
 	try {
 		const supabase = await createClient()
 		const { error: teamError } = await supabase.from('players').insert({
-			team_id: Number.parseInt(teamId),
+			team_id: parseInt(teamId, 10),
 			user_id: session.sub,
 			role: 'player',
 			joined_at: new Date().toISOString(),
@@ -39,7 +39,7 @@ export async function acceptInvite(formData: FormData) {
 			.eq('id', Number(inviteId))
 
 		if (inviteError) throw inviteError
-	} catch (err) {
+	} catch (_) {
 		redirect(
 			`/profile?title=${t('FailedInvite.title', {
 				type: t('FailedInvite.Types.accept').toUpperCase()

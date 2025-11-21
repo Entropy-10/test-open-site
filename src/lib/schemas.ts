@@ -1,4 +1,4 @@
-import { z } from 'zod'
+import * as z from 'zod'
 
 export const acceptedImageTypes = [
 	'image/png',
@@ -23,15 +23,7 @@ export const createTeamForm = z.object({
 		.max(4, "Acronym can't be more than four characters")
 		.regex(/^\w+$/, 'Acronym only allows letters or numbers'),
 	timezone: z.string().toUpperCase().min(1, 'Timezone is required'),
-	flag: z
-		.custom<File>()
-		.transform(file => (file instanceof FileList ? file.item(0) : file))
-		.refine(file => !!file, 'Flag is required')
-		.refine(file => !!file && file.size <= 5000000, 'Max image size is 5MB')
-		.refine(
-			file => !!file && acceptedImageTypes.includes(file.type),
-			'Only .jpg, .jpeg, .gif, and .png formats are supported'
-		)
+	flag: z.file().min(1).max(5000000).mime(acceptedImageTypes)
 })
 
 export const createTeamAction = z.object({

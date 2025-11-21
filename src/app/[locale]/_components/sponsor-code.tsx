@@ -12,7 +12,7 @@ export default function SponsorCode() {
 			await navigator.clipboard.writeText('TEST')
 			setSuccess(true)
 			setTimeout(() => setSuccess(false), 800)
-		} catch (error) {
+		} catch (_) {
 			setSuccess(false)
 		}
 	}

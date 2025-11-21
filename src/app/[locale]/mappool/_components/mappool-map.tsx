@@ -1,10 +1,10 @@
 'use client'
 
+import { useState } from 'react'
+import Link from 'next/link'
 import { Music, Star, Timer } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
-import Link from 'next/link'
 import { buildUrl } from 'osu-web.js'
-import { useState } from 'react'
 
 import { cn } from '@utils/client'
 
@@ -114,7 +114,6 @@ export default function MappoolMap({ map }: MappoolMapProps) {
 								initial={{ y: 20, opacity: 0 }}
 								animate={{ y: 0, opacity: 1 }}
 								exit={{ opacity: 0 }}
-								// @ts-ignore
 								className='max-w-[230px] text-sm/5'
 							>
 								<Link

@@ -1,15 +1,14 @@
+import type { Metadata } from 'next'
 import { redirect } from 'next/navigation'
-import { getLocale, getMessages, getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 
-import { env } from '@env'
 import { createMetadata } from '@metadata'
 import { getSession } from '@session'
-import { isProd } from '@utils/client'
 
 import MessageBox from '~/components/message-box'
 import Background from '~/components/ui/background'
 
-export async function generateMetadata() {
+export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getLocale()
 
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
@@ -24,11 +23,11 @@ export default async function RegisterPage() {
 	const session = await getSession()
 	if (!session) redirect('/unauthorized')
 
-	const t = await getTranslations('RegistrationPage')
-	const messages = await getMessages()
-	const allowRegs = isProd
-		? Date.now() >= Number(env.NEXT_PUBLIC_START_DATE)
-		: true
+	// const t = await getTranslations('RegistrationPage')
+	// const messages = await getMessages()
+	// const allowRegs = isProd
+	// 	? Date.now() >= Number(env.NEXT_PUBLIC_START_DATE)
+	// 	: true
 
 	return (
 		<Background className='flex min-h-screen items-center justify-center'>

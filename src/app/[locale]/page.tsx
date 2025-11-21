@@ -49,7 +49,7 @@ export default function Home() {
 								<span className='hidden w-28 text-right xl:block'>
 									{t('Header.hostTitle')}
 								</span>
-								<div className='-top-[20px] absolute right-0 hidden h-[2px] w-96 bg-milky-white md:block xl:top-[15px]' />
+								<div className='-top-5 absolute right-0 hidden h-0.5 w-96 bg-milky-white md:block xl:top-[15px]' />
 							</div>
 
 							<div className='mt-9 hidden flex-col text-right font-light xl:flex'>
@@ -67,7 +67,7 @@ export default function Home() {
 					</section>
 
 					<div className='mt-5 hidden md:block'>
-						<div className='h-[2px] w-96 bg-milky-white' />
+						<div className='h-0.5 w-96 bg-milky-white' />
 						<div className='mt-2 ml-12 h-[5px] w-9 bg-milky-white' />
 					</div>
 

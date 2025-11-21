@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
+@plugin "@tailwindcss/typography";
 
 @theme {
 	--breakpoint-xs: 500px;
@@ -27,11 +27,9 @@
 		#120c6e -30.19%,
 		#807ee1 107.81%
 	);
-	--background-image-flag-fade: linear-gradient(
-			270deg,
-			#fffefa 5%,
-			rgba(255, 254, 250, 0) 15%
-		), linear-gradient(0deg, #fffefa 5%, rgba(255, 254, 250, 0) 25%);
+	--background-image-flag-fade:
+		linear-gradient(270deg, #fffefa 5%, rgba(255, 254, 250, 0) 15%),
+		linear-gradient(0deg, #fffefa 5%, rgba(255, 254, 250, 0) 25%);
 
 	--color-milky-white: #fffefa;
 	--color-light-blue: #5e72eb;

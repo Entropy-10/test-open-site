@@ -12,7 +12,7 @@ interface PlayerProps {
 	player: Tables<'players'> & { users: Tables<'users'> | null }
 }
 
-export default function Player({ player, userId, isCaptain }: PlayerProps) {
+export default function Player({ player }: PlayerProps) {
 	const user = player.users
 	const t = useTranslations('TeamPage.Players.Player')
 

@@ -10,7 +10,7 @@ import { osuAuth } from '@osu'
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
 
-export async function update(formData: FormData) {
+export async function update() {
 	const session = await getSession()
 	const t = await getTranslations('ProfilePage.Errors')
 
@@ -72,7 +72,7 @@ export async function update(formData: FormData) {
 		if (userError) throw userError
 
 		revalidatePath('/profile')
-	} catch (err) {
+	} catch (_) {
 		updateError(t)
 	}
 }

@@ -40,7 +40,6 @@ const NavItem = forwardRef<HTMLAnchorElement, NavItemProps>(
 					<motion.div
 						layoutId='underline'
 						transition={{ duration: 0.2 }}
-						// @ts-ignore
 						className={cn(
 							'absolute bottom-0 h-[2.5px] w-full bg-light-blue',
 							activeClassName

@@ -91,7 +91,7 @@ export async function createTeam(
 		if (playerError) throw playerError
 
 		return { error: null }
-	} catch (err) {
+	} catch (_) {
 		return {
 			error: {
 				title: t('Default.title'),

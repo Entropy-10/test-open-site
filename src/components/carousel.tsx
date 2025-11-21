@@ -134,11 +134,11 @@ const Carousel = React.forwardRef<
 					canScrollNext
 				}}
 			>
+				{/** biome-ignore lint/a11y/useSemanticElements: ignore */}
 				<div
 					ref={ref}
 					onKeyDownCapture={handleKeyDown}
 					className={cn('relative', className)}
-					// biome-ignore lint/a11y/useSemanticElements: <explanation>
 					role='region'
 					aria-roledescription='carousel'
 					{...props}
@@ -170,6 +170,7 @@ const CarouselItem = React.forwardRef<
 	React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
 	return (
+		// biome-ignore lint/a11y/useSemanticElements: ignore
 		<div
 			ref={ref}
 			role='group'

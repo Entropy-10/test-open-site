@@ -37,7 +37,7 @@ interface EditorProps {
 	}
 }
 
-export default function Editor({ userId, isCaptain, team }: EditorProps) {
+export default function Editor({ team }: EditorProps) {
 	const t = useTranslations('TeamPage')
 	const registerT = useTranslations('RegistrationPage')
 	const [editing, setEditing] = useState(false)
@@ -141,7 +141,7 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 				if (!flagUrl || imageUploadError) throw Error
 				newFlag = flagUrl
 				updatedTeam = true
-			} catch (err) {
+			} catch (_) {
 				setModalMessage({
 					title: registerT('Errors.UploadFailed.title'),
 					message: registerT('Errors.UploadFailed.message')
@@ -150,8 +150,8 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 			}
 		}
 
-		const { flag, id, created_at, updated_at, ...originalTeam } = team
-		const { flag: f, ...newTeam } = data
+		const { id, ...originalTeam } = team
+		const { flag: _, ...newTeam } = data
 		const newTeamData = diff(originalTeam, newTeam)
 
 		if (Object.keys(newTeamData).length === 0 && isCurrentImage) {
@@ -201,7 +201,7 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 	}
 
 	return (
-		<section className='padding relative flex h-[128px] items-center'>
+		<section className='padding relative flex h-32 items-center'>
 			<div className='flex gap-3'>
 				{editing ? (
 					<ImagePicker
@@ -210,7 +210,7 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 						previewImage={previewImage}
 						clearPreviewImage={clearPreviewImage}
 						defaultValue={team.flag}
-						className='h-[80px] w-[180px] border-milky-white'
+						className='h-20 w-[180px] border-milky-white'
 						{...register('flag')}
 					/>
 				) : (
@@ -219,7 +219,7 @@ export default function Editor({ userId, isCaptain, team }: EditorProps) {
 						height={80}
 						src={team.flag}
 						alt='team flag'
-						className='h-[80px] w-[180px]'
+						className='h-20 w-[180px]'
 					/>
 				)}
 

@@ -14,7 +14,7 @@ export async function getTranslationProgress() {
 			code: status.data.language.editorCode,
 			progress: status.data.translationProgress
 		}))
-	} catch (err) {
+	} catch (_) {
 		return null
 	}
 }

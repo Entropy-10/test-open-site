@@ -1,6 +1,6 @@
 import type { Messages } from 'next-intl'
 
-// @ts-ignore
+// @ts-expect-error
 export interface ExtendedDocument extends Document {
 	startViewTransition?: (callback: () => Promise<void> | void) => ViewTransition
 }

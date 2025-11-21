@@ -9,7 +9,7 @@ import { discordAuth } from '@discord'
 import { getSession } from '@session'
 import { createClient } from '@supabase/server'
 
-export async function deleteAccount(csrfToken: string) {
+export async function deleteAccount() {
 	const session = await getSession()
 	const t = await getTranslations('ProfilePage.Errors')
 
@@ -48,7 +48,7 @@ export async function deleteAccount(csrfToken: string) {
 			osuClient.revokeToken(),
 			discordAuth.revokeToken(tokens.discord_access_token)
 		])
-	} catch (err) {
+	} catch (_) {
 		return deleteAccountError(t)
 	}
 

@@ -96,7 +96,7 @@ export async function GET(request: NextRequest) {
 			httpOnly: true,
 			secure: isProd
 		})
-	} catch (err) {
+	} catch (_) {
 		const cookiesList = await cookies()
 		cookiesList.delete('return-url')
 		cookiesList.delete('osu-tokens')
