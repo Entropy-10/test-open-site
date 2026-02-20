@@ -134,20 +134,19 @@ export default function Editor({ team }: EditorProps) {
 			imageForm.append('team_name', formatFlagName(data.name))
 			imageForm.append('csrf_token', csrfToken)
 
-			try {
-				const { url: flagUrl, error: imageUploadError } =
-					await uploadImage(imageForm)
+			const { url: flagUrl, error: imageUploadError } =
+				await uploadImage(imageForm)
 
-				if (!flagUrl || imageUploadError) throw Error
-				newFlag = flagUrl
-				updatedTeam = true
-			} catch (_) {
+			if (!flagUrl || imageUploadError) {
 				setModalMessage({
 					title: registerT('Errors.UploadFailed.title'),
 					message: registerT('Errors.UploadFailed.message')
 				})
 				return setOpen(true)
 			}
+
+			newFlag = flagUrl
+			updatedTeam = true
 		}
 
 		const { id, ...originalTeam } = team

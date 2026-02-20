@@ -27,7 +27,7 @@ export default async function MobileNav({ user, inviteCount }: MobileNavProps) {
 						<div className='absolute -top-1 -left-1'>
 							<div className='relative'>
 								<div className='size-3 rounded-full bg-red-500' />
-								<div className='absolute top-[1px] left-[1px] size-[10px] animate-ping rounded-full bg-red-500' />
+								<div className='absolute top-px left-px size-2.5 animate-ping rounded-full bg-red-500' />
 							</div>
 						</div>
 					) : null}

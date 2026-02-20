@@ -36,7 +36,7 @@ const ImagePicker = forwardRef<HTMLInputElement, ImagePickerProps>(
 		return (
 			<div
 				className={cn(
-					'h-[96px] w-[216px] border border-dark-blue border-dashed p-1',
+					'h-24 w-[216px] border border-dark-blue border-dashed p-1',
 					className
 				)}
 			>

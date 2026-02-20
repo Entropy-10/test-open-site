@@ -14,9 +14,12 @@ import MobileNav from './mobile-nav'
 import UserDropdown from './user-dropdown'
 
 export default async function Header() {
-	const t = await getTranslations('NavItems')
-	const session = await getSession()
-	const supabase = await createClient()
+	const [session, supabase, t] = await Promise.all([
+		getSession(),
+		createClient(),
+		getTranslations('NavItems')
+	])
+
 	let inviteCount: number | null = null
 
 	if (session) {

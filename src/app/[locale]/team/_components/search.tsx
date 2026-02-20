@@ -77,7 +77,7 @@ export default function Search({
 				<div className='relative max-w-80 grow'>
 					{selectedUser ? (
 						<>
-							<div className='flex h-[32px] w-full items-center gap-1 border-[1.5px] border-dark-blue px-1'>
+							<div className='flex h-8 w-full items-center gap-1 border-[1.5px] border-dark-blue px-1'>
 								<Image
 									width={25}
 									height={25}
@@ -90,7 +90,7 @@ export default function Search({
 							<button
 								type='button'
 								onClick={() => setSelectedUser(null)}
-								className='absolute top-[6px] right-1.5 focus:outline-hidden'
+								className='absolute top-1.5 right-1.5 focus:outline-hidden'
 							>
 								<X
 									size={20}
@@ -103,7 +103,7 @@ export default function Search({
 							<input
 								onChange={e => handleSearch(e.currentTarget.value)}
 								placeholder={placeholderText}
-								className='h-[32px] w-full border-[1.5px] border-dark-blue pr-[30px] pl-1.5 text-dark-blue placeholder:text-dark-blue/55 focus:-outline-offset-2'
+								className='h-8 w-full border-[1.5px] border-dark-blue pr-[30px] pl-1.5 text-dark-blue placeholder:text-dark-blue/55 focus:-outline-offset-2'
 							/>
 							<SearchIcon
 								size={20}

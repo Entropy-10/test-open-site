@@ -1,7 +1,6 @@
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
 import { links } from '@siteConfig'
 
@@ -9,13 +8,11 @@ import Background from '~/components/ui/background'
 import Button from '~/components/ui/button'
 import whiteLogo from '../../../public/images/logo-white.png'
 import Features from './_components/features'
-import Sponsor from './_components/sponsor'
+import Originals from './_components/originals'
 
-const Originals = dynamic(() => import('./_components/originals'))
-
-export default function Home() {
-	const buttonT = useTranslations('Buttons')
-	const t = useTranslations('HomePage')
+export default async function Home() {
+	const buttonT = await getTranslations('Buttons')
+	const t = await getTranslations('HomePage')
 
 	return (
 		<div>
@@ -82,7 +79,6 @@ export default function Home() {
 			<div className='flex w-full flex-col overflow-x-hidden'>
 				<Features />
 				<Originals />
-				<Sponsor />
 			</div>
 		</div>
 	)

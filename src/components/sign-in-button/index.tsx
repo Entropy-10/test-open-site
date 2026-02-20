@@ -1,5 +1,5 @@
 import { headers } from 'next/headers'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import type { VariantProps } from 'class-variance-authority'
 
 import Button, { type buttonVariants } from '../ui/button'
@@ -13,7 +13,7 @@ export default async function SignInButton({
 	className,
 	variant
 }: SignInButtonProps) {
-	const t = useTranslations('Buttons')
+	const t = await getTranslations('Buttons')
 	const headersList = await headers()
 	const pathname = headersList.get('x-pathname') ?? '/'
 	const csrfToken = headersList.get('X-CSRF-Token') ?? 'missing'

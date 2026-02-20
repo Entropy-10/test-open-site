@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages, getTranslations } from 'next-intl/server'
-import { pick } from 'lodash'
+import pick from 'lodash/pick'
 
 import { createMetadata } from '@metadata'
 
@@ -21,8 +21,10 @@ export async function generateMetadata() {
 }
 
 export default async function MappoolPage() {
-	const t = await getTranslations('MappoolPage')
-	const messages = await getMessages()
+	const [t, messages] = await Promise.all([
+		getTranslations('MappoolPage'),
+		getMessages()
+	])
 	// TODO: fix this
 	const defaultRound = 'grand finals'
 

@@ -34,7 +34,7 @@ export const env = createEnv({
 		SUPABASE_STORAGE_URL: z.string().min(1),
 		ADMIN_SHEET: z.string().min(1),
 		CROWDIN_TOKEN: z.string().min(1),
-		CROWDIN_PROJECT_ID: z.string().min(1),
+		CROWDIN_PROJECT_ID: z.coerce.number().min(1),
 		REACT_SCAN_API_KEY: z.string().min(1)
 	},
 	experimental__runtimeEnv: {

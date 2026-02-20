@@ -18,9 +18,11 @@ interface VerifyPageProps {
 }
 
 export default async function VerifyPage(props: VerifyPageProps) {
-	const searchParams = await props.searchParams
-	const session = await getSession()
-	const t = await getTranslations('VerifyPage')
+	const [searchParams, session, t] = await Promise.all([
+		props.searchParams,
+		getSession(),
+		getTranslations('VerifyPage')
+	])
 	const csrfToken = (await headers()).get('X-CSRF-Token') ?? 'missing'
 	const { status, message } = searchParams
 

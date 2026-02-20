@@ -70,14 +70,10 @@ export default function CreateTeamForm({ osuId }: CreateTeamFormProps) {
 		flagForm.append('team_name', data.name.toLowerCase().replaceAll(' ', '-'))
 		flagForm.append('csrf_token', csrfToken)
 
-		let flag: string
-		try {
-			const { url: flagUrl, error: imageUploadError } =
-				await uploadImage(flagForm)
+		const { url: flagUrl, error: imageUploadError } =
+			await uploadImage(flagForm)
 
-			if (!flagUrl || imageUploadError) throw Error
-			flag = flagUrl
-		} catch (_) {
+		if (!flagUrl || imageUploadError) {
 			setError({
 				title: t('Errors.UploadFailed.title'),
 				message: t('Errors.UploadFailed.message')
@@ -91,7 +87,7 @@ export default function CreateTeamForm({ osuId }: CreateTeamFormProps) {
 			'teamData',
 			JSON.stringify({
 				...data,
-				flag,
+				flag: flagUrl,
 				osuId
 			})
 		)

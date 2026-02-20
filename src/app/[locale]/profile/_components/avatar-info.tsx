@@ -26,12 +26,14 @@ export default async function AvatarInfo({
 	children,
 	className
 }: AvatarInfoProps) {
-	const headerList = await headers()
+	const [headerList, locale, messages, t] = await Promise.all([
+		headers(),
+		getLocale(),
+		getMessages(),
+		getTranslations('ProfilePage.Buttons')
+	])
 	const pathname = headerList.get('x-pathname') ?? '/profile'
 	const csrfToken = headerList.get('X-CSRF-Token') ?? 'missing'
-	const locale = await getLocale()
-	const t = await getTranslations('ProfilePage.Buttons')
-	const messages = await getMessages()
 
 	return (
 		<div className={cn('flex gap-2', className)}>
