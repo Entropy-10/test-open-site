@@ -24,7 +24,7 @@ export default async function MobileNav({ user, inviteCount }: MobileNavProps) {
 			<Dropdown.Root>
 				<Dropdown.Trigger className='relative flex items-center justify-between gap-1 bg-linear-to-r from-[-100%] from-light-blue to-salmon px-1 py-0.5 text-milky-white focus:outline-hidden'>
 					{inviteCount ? (
-						<div className='-left-1 -top-1 absolute'>
+						<div className='absolute -top-1 -left-1'>
 							<div className='relative'>
 								<div className='size-3 rounded-full bg-red-500' />
 								<div className='absolute top-[1px] left-[1px] size-[10px] animate-ping rounded-full bg-red-500' />

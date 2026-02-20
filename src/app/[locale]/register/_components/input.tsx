@@ -9,7 +9,7 @@ const Input = forwardRef<HTMLInputElement, UseFormRegisterReturn>(
 			{...props}
 			ref={forwardedRef}
 			className={cn(
-				'focus:-outline-offset-2 w-full border-[1.5px] border-dark-blue text-dark-blue'
+				'w-full border-[1.5px] border-dark-blue text-dark-blue focus:-outline-offset-2'
 			)}
 		/>
 	)

@@ -92,7 +92,7 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className='md:-mr-2 z-20 flex justify-center md:absolute md:right-[48px] md:bottom-1 md:justify-end lg:right-[96px]'>
+				<div className='z-20 flex justify-center md:absolute md:right-[48px] md:bottom-1 md:-mr-2 md:justify-end lg:right-[96px]'>
 					<Suspense>
 						<Status />
 					</Suspense>

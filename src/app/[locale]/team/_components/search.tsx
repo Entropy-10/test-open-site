@@ -103,7 +103,7 @@ export default function Search({
 							<input
 								onChange={e => handleSearch(e.currentTarget.value)}
 								placeholder={placeholderText}
-								className='focus:-outline-offset-2 h-[32px] w-full border-[1.5px] border-dark-blue pr-[30px] pl-1.5 text-dark-blue placeholder:text-dark-blue/55'
+								className='h-[32px] w-full border-[1.5px] border-dark-blue pr-[30px] pl-1.5 text-dark-blue placeholder:text-dark-blue/55 focus:-outline-offset-2'
 							/>
 							<SearchIcon
 								size={20}

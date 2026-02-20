@@ -27,7 +27,7 @@ export default function RadialProgress({
 					strokeWidth='5'
 					className='stroke-current text-[#dddddd]'
 				/>
-				<g className='-rotate-90 origin-center transform'>
+				<g className='origin-center -rotate-90 transform'>
 					<circle
 						cx='18'
 						cy='18'

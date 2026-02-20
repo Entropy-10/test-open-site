@@ -193,7 +193,7 @@ const CarouselPrevious = React.forwardRef<
 			type='button'
 			ref={ref}
 			className={cn(
-				'-left-12 -translate-y-1/2 absolute top-1/2 size-12 focus:outline-hidden',
+				'absolute top-1/2 -left-12 size-12 -translate-y-1/2 focus:outline-hidden',
 				className
 			)}
 			disabled={!canScrollPrev}
@@ -219,7 +219,7 @@ const CarouselNext = React.forwardRef<
 			type='button'
 			ref={ref}
 			className={cn(
-				'-right-12 -translate-y-1/2 absolute top-1/2 size-12 focus:outline-hidden',
+				'absolute top-1/2 -right-12 size-12 -translate-y-1/2 focus:outline-hidden',
 				className
 			)}
 			disabled={!canScrollNext}
@@ -227,7 +227,7 @@ const CarouselNext = React.forwardRef<
 			{...props}
 		>
 			<ChevronDown
-				className={cn('-rotate-90 size-12', !canScrollNext && 'opacity-55')}
+				className={cn('size-12 -rotate-90', !canScrollNext && 'opacity-55')}
 			/>
 		</button>
 	)

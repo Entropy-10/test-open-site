@@ -1,10 +1,6 @@
-import { fileURLToPath } from 'node:url'
+import './src/env'
 
 import createNextIntlPlugin from 'next-intl/plugin'
-import { createJiti } from 'jiti'
-
-const jiti = createJiti(fileURLToPath(import.meta.url))
-jiti.esmResolve('./src/env')
 
 const withNextIntl = createNextIntlPlugin()
 

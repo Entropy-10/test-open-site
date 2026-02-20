@@ -31,7 +31,7 @@ const UtcPicker = forwardRef<HTMLButtonElement, UtcPickerProps>(
 			<Select.Trigger
 				ref={forwardedRef}
 				className={cn(
-					'focus:-outline-offset-2 flex w-28 justify-between border-[1.5px] border-dark-blue pl-1 text-dark-blue',
+					'flex w-28 justify-between border-[1.5px] border-dark-blue pl-1 text-dark-blue focus:-outline-offset-2',
 					className?.trigger
 				)}
 			>

@@ -21,7 +21,7 @@ export default function UserDropdown({ user, inviteCount }: UserDropdownProps) {
 		<Dropdown.Root>
 			<Dropdown.Trigger className='group relative hidden max-w-44 items-center justify-between bg-linear-to-r from-[-100%] from-light-blue to-salmon px-1 py-0.5 text-milky-white focus:outline-hidden md:flex'>
 				{inviteCount ? (
-					<div className='-left-1 -top-1 absolute'>
+					<div className='absolute -top-1 -left-1'>
 						<div className='relative'>
 							<div className='size-3 rounded-full bg-red-500' />
 							<div className='absolute top-[1px] left-[1px] size-[10px] animate-ping rounded-full bg-red-500' />
