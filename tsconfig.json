@@ -13,22 +13,25 @@
 		"isolatedModules": true,
 		"jsx": "react-jsx",
 		"incremental": true,
-		"plugins": [{ "name": "next" }],
-		"baseUrl": "./src",
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
 		"paths": {
-			"@supabase/*": ["lib/supabase/*"],
-			"@env": ["env.ts"],
-			"@osu": ["lib/osu.ts"],
-			"@discord": ["lib/discord.ts"],
-			"@sheets": ["lib/sheets.ts"],
-			"@utils/*": ["lib/utils/*"],
-			"@types": ["types/index.ts"],
-			"@schemas": ["lib/schemas.ts"],
-			"@session": ["lib/session.ts"],
-			"@metadata": ["lib/metadata.ts"],
-			"@navigation": ["i18n/routing.ts"],
-			"@siteConfig": ["lib/site-config.ts"],
-			"~/*": ["./*"]
+			"@supabase/*": ["./src/lib/supabase/*"],
+			"@env": ["./src/env.ts"],
+			"@osu": ["./src/lib/osu.ts"],
+			"@discord": ["./src/lib/discord.ts"],
+			"@sheets": ["./src/lib/sheets.ts"],
+			"@utils/*": ["./src/lib/utils/*"],
+			"@types": ["./src/types/index.ts"],
+			"@schemas": ["./src/lib/schemas.ts"],
+			"@session": ["./src/lib/session.ts"],
+			"@metadata": ["./src/lib/metadata.ts"],
+			"@navigation": ["./src/i18n/routing.ts"],
+			"@siteConfig": ["./src/lib/site-config.ts"],
+			"~/*": ["./src/*"]
 		}
 	},
 	"include": [

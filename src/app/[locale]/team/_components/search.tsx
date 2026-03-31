@@ -23,7 +23,7 @@ export default function Search({
 	placeholderText,
 	closeButtonText
 }: SearchProps) {
-	const [debounce, setDebounce] = useState<Timer>()
+	const [debounce, setDebounce] = useState<NodeJS.Timeout>()
 	const [results, setResults] = useState<UserResult[] | string>([])
 	const [selectedUser, setSelectedUser] = useState<UserResult | null>(null)
 	const [csrfToken, setCsrfToken] = useState<string>('loading...')

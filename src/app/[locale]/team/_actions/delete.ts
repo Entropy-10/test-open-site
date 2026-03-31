@@ -18,10 +18,10 @@ export async function deleteItem(formData: FormData) {
 	const supabase = await createClient()
 	const t = await getTranslations('TeamPage.Errors')
 
-	const { error } = await supabase
-		.from(`${type}s`)
-		.delete()
-		.eq(type === 'invite' ? 'id' : 'user_id', id)
+	const { error } =
+		type === 'invite'
+			? await supabase.from('invites').delete().eq('id', Number(id))
+			: await supabase.from(`players`).delete().eq('user_id', id)
 
 	if (error) {
 		redirect(
