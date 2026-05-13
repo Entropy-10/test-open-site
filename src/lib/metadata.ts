@@ -35,7 +35,7 @@ export function genOgTwitterImage({
 			title,
 			description,
 			images: {
-				url: new URL(`/${locale}/opengraph-image.png`, getBaseUrl()),
+				url: new URL(`/opengraph-image.png`, getBaseUrl()),
 				width: 1024,
 				height: 512,
 				alt: 'TEST Open',
@@ -49,7 +49,7 @@ export function genOgTwitterImage({
 			description,
 			card: 'summary_large_image',
 			images: {
-				url: new URL(`/${locale}/opengraph-image.png`, getBaseUrl()),
+				url: new URL(`/opengraph-image.png`, getBaseUrl()),
 				width: 1024,
 				height: 512,
 				alt: 'TEST Open',
