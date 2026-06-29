@@ -45,7 +45,6 @@ export default function Editor({ team }: EditorProps) {
 	const [isCurrentImage, setIsCurrentImage] = useState(false)
 	const [modalMessage, setModalMessage] = useState<ModalError | null>(null)
 	const [open, setOpen] = useState(false)
-	const [csrfToken, setCsrfToken] = useState<string>('loading...')
 	const availability = team.availability as Availability | null
 
 	const {
@@ -63,14 +62,6 @@ export default function Editor({ team }: EditorProps) {
 			timezone: team.timezone
 		}
 	})
-
-	useEffect(() => {
-		const el = document.querySelector(
-			'meta[name="x-csrf-token"]'
-		) as HTMLMetaElement | null
-		if (el) setCsrfToken(el.content)
-		else setCsrfToken('missing')
-	}, [])
 
 	useEffect(() => {
 		async function getFlagFile() {
@@ -132,7 +123,6 @@ export default function Editor({ team }: EditorProps) {
 			imageForm.append('file_type', data.flag.type)
 			imageForm.append('old_flag_path', oldFlagPath)
 			imageForm.append('team_name', formatFlagName(data.name))
-			imageForm.append('csrf_token', csrfToken)
 
 			const { url: flagUrl, error: imageUploadError } =
 				await uploadImage(imageForm)
@@ -164,7 +154,6 @@ export default function Editor({ team }: EditorProps) {
 		}
 
 		const teamForm = new FormData()
-		teamForm.append('csrf_token', csrfToken)
 		teamForm.append(
 			'teamData',
 			JSON.stringify({
@@ -305,7 +294,6 @@ export default function Editor({ team }: EditorProps) {
 							{t('Buttons.edit')}
 						</Button>
 						<form action={deleteTeam}>
-							<input name='csrf_token' value={csrfToken} hidden readOnly />
 							<input name='team_id' defaultValue={team.id} hidden />
 							<input name='team_flag' defaultValue={team.flag} hidden />
 							<input name='user_id' defaultValue={userId} hidden />
@@ -321,7 +309,6 @@ export default function Editor({ team }: EditorProps) {
 
 			{/* {!isCaptain && (
 				<form action={deleteItem}>
-					<input name='csrf_token' value={csrfToken} hidden readOnly />
 					<input name='id' defaultValue={userId} hidden />
 					<input name='type' defaultValue='player' hidden />
 					<Button className='w-[180px]'>{t('Buttons.leave')}</Button>

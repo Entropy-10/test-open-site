@@ -1,13 +1,8 @@
-import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-import { CsrfInput } from '~/components/csrf-input'
 import Button from '~/components/ui/button'
 
 export default async function UpdateScopes() {
-	const headerList = await headers()
-	const csrfToken = headerList.get('X-CSRF-Token') ?? 'missing'
-
 	async function updateScopes() {
 		'use server'
 		redirect('/profile')
@@ -21,7 +16,6 @@ export default async function UpdateScopes() {
 			</p>
 
 			<form action={updateScopes}>
-				<CsrfInput token={csrfToken} />
 				<Button>PROFILE</Button>
 			</form>
 		</div>

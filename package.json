@@ -14,7 +14,6 @@
 	},
 	"dependencies": {
 		"@discordjs/rest": "^2.6.1",
-		"@edge-csrf/nextjs": "^2.5.3-cloudflare-rc1",
 		"@hookform/resolvers": "^5.4.0",
 		"@radix-ui/react-alert-dialog": "^1.1.17",
 		"@radix-ui/react-dropdown-menu": "^2.1.18",

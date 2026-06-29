@@ -8,7 +8,7 @@ import { Client } from 'osu-web.js'
 import { discordAuth } from '@discord'
 import { env } from '@env'
 import { decrypt, encrypt } from '@session'
-import { createClient } from '@supabase/server'
+import { createClient } from '@supabase/supabase-js'
 import { isProd } from '@utils/client'
 
 import { authError, getDiscordAvatarUrl } from '../../utils'
@@ -38,7 +38,10 @@ export async function GET(request: NextRequest) {
 	if (!osuTokens) return authError(url)
 
 	const osuClient = new Client(osuTokens.access_token)
-	const supabase = await createClient(env.SUPABASE_SERVICE_KEY)
+	const supabaseAdmin = createClient(
+		env.NEXT_PUBLIC_SUPABASE_URL,
+		env.SUPABASE_SECRET_KEY
+	)
 
 	try {
 		const discordUser = await discordAuth.getUser(tokens.access_token)
@@ -46,7 +49,7 @@ export async function GET(request: NextRequest) {
 			urlParams: { mode: 'osu' }
 		})
 
-		const { error: userError } = await supabase.from('users').upsert({
+		const { error: userError } = await supabaseAdmin.from('users').upsert({
 			osu_id: osuUser.id.toString(),
 			osu_name: osuUser.username,
 			osu_avatar: osuUser.avatar_url,
@@ -63,9 +66,10 @@ export async function GET(request: NextRequest) {
 				getDiscordAvatarUrl(discordUser.id, discordUser.avatar)
 		})
 
-		if (userError) throw userError
+		if (userError)
+			throw new Error('Failed to upsert user', { cause: userError })
 
-		const { error: tokenError } = await supabase.from('tokens').upsert({
+		const { error: tokenError } = await supabaseAdmin.from('tokens').upsert({
 			osu_id: osuUser.id.toString(),
 			osu_access_token: osuTokens.access_token,
 			osu_refresh_token: osuTokens.refresh_token,
@@ -74,7 +78,8 @@ export async function GET(request: NextRequest) {
 			old: false
 		})
 
-		if (tokenError) throw tokenError
+		if (tokenError)
+			throw new Error('Failed to upsert token', { cause: tokenError })
 
 		const expires = new Date(Date.now() + 604800 * 1000)
 		const session = await encrypt({

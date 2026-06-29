@@ -1,4 +1,3 @@
-import { headers } from 'next/headers'
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 import dayjs from 'dayjs'
@@ -21,8 +20,6 @@ interface InviteProps {
 export default async function Invite({ invite }: InviteProps) {
 	if (!invite.teams) return null
 	const team = invite.teams
-	const headerList = await headers()
-	const csrfToken = headerList.get('X-CSRF-Token') ?? 'missing'
 	const t = await getTranslations('ProfilePage.Invites.Invite')
 
 	return (
@@ -54,13 +51,11 @@ export default async function Invite({ invite }: InviteProps) {
 
 			<div>
 				{/* <form action={acceptInvite}>
-					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='team_id' defaultValue={team.id} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
 					<Button className='w-full md:w-[100px]'>{t('Buttons.accept')}</Button>
 				</form> */}
 				<form action={denyInvite}>
-					<input name='csrf_token' defaultValue={csrfToken} hidden />
 					<input name='invite_id' defaultValue={invite.id} hidden />
 					<Button variant='outline' className='w-full'>
 						{t('Buttons.deny')}

@@ -1,4 +1,3 @@
-import { headers } from 'next/headers'
 import { getTranslations } from 'next-intl/server'
 
 import { getSession } from '@session'
@@ -23,7 +22,6 @@ export default async function VerifyPage(props: VerifyPageProps) {
 		getSession(),
 		getTranslations('VerifyPage')
 	])
-	const csrfToken = (await headers()).get('X-CSRF-Token') ?? 'missing'
 	const { status, message } = searchParams
 
 	// this is pretty cringe... not going to fix tho :p
@@ -49,7 +47,6 @@ export default async function VerifyPage(props: VerifyPageProps) {
 					</Button>
 				) : (
 					<form action={verify}>
-						<input name='csrf_token' defaultValue={csrfToken} hidden />
 						<VerifyButton
 							text={t('Buttons.Verify.text')}
 							loadingText={t('Buttons.Verify.loadingText')}

@@ -12,8 +12,10 @@ export const env = createEnv({
 		NEXT_PUBLIC_DISCORD_REDIRECT_URI: z.string().min(1),
 		NEXT_PUBLIC_UPTIME_API_URL: z.string().min(1),
 		NEXT_PUBLIC_STATUS_PAGE_ID: z.string().min(1),
-		NEXT_PUBLIC_SUPABASE_URL: z.string().min(1),
-		NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1)
+		NEXT_PUBLIC_SUPABASE_URL: z.url(),
+		NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: z
+			.string()
+			.startsWith('sb_publishable')
 	},
 	server: {
 		GOOGLE_SERVICE_ACCOUNT_EMAIL: z.string().min(1),
@@ -28,14 +30,13 @@ export const env = createEnv({
 		GUILD_VERIFIED_ROLE_ID: z.string().min(1),
 		GUILD_UNVERIFIED_ROLE_ID: z.string().min(1),
 		UPTIME_API_KEY: z.string().min(1),
-		SUPABASE_SERVICE_KEY: z.string().min(1),
+		SUPABASE_SECRET_KEY: z.string().startsWith('sb_secret'),
 		SUPABASE_JWT_SECRET: z.string().min(1),
 		GUILD_LOG_CHANNEL_ID: z.string().min(1),
 		SUPABASE_STORAGE_URL: z.string().min(1),
 		ADMIN_SHEET: z.string().min(1),
 		CROWDIN_TOKEN: z.string().min(1),
-		CROWDIN_PROJECT_ID: z.coerce.number().min(1),
-		REACT_SCAN_API_KEY: z.string().min(1)
+		CROWDIN_PROJECT_ID: z.coerce.number().min(1)
 	},
 	experimental__runtimeEnv: {
 		NEXT_PUBLIC_START_DATE: process.env.NEXT_PUBLIC_START_DATE,
@@ -47,6 +48,7 @@ export const env = createEnv({
 		NEXT_PUBLIC_UPTIME_API_URL: process.env.NEXT_PUBLIC_UPTIME_API_URL,
 		NEXT_PUBLIC_STATUS_PAGE_ID: process.env.NEXT_PUBLIC_STATUS_PAGE_ID,
 		NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
-		NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+		NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:
+			process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
 	}
 })

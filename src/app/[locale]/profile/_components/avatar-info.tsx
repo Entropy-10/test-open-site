@@ -1,4 +1,3 @@
-import { headers } from 'next/headers'
 import Image from 'next/image'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages, getTranslations } from 'next-intl/server'
@@ -26,14 +25,11 @@ export default async function AvatarInfo({
 	children,
 	className
 }: AvatarInfoProps) {
-	const [headerList, locale, messages, t] = await Promise.all([
-		headers(),
+	const [locale, messages, t] = await Promise.all([
 		getLocale(),
 		getMessages(),
 		getTranslations('ProfilePage.Buttons')
 	])
-	const pathname = headerList.get('x-pathname') ?? '/profile'
-	const csrfToken = headerList.get('X-CSRF-Token') ?? 'missing'
 
 	return (
 		<div className={cn('flex gap-2', className)}>
@@ -67,8 +63,6 @@ export default async function AvatarInfo({
 						{type === 'osu' && <Options />}
 					</NextIntlClientProvider>
 					<form action={type === 'discord' ? relink : update} className='grow'>
-						<input name='csrf_token' defaultValue={csrfToken} hidden />
-						<input name='pathname' defaultValue={pathname} hidden />
 						{type === 'osu' ? (
 							<UpdateButton
 								text={t('Update.text')}

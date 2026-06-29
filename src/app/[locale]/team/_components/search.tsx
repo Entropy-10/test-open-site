@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { SearchIcon, X } from 'lucide-react'
 
@@ -26,16 +26,7 @@ export default function Search({
 	const [debounce, setDebounce] = useState<NodeJS.Timeout>()
 	const [results, setResults] = useState<UserResult[] | string>([])
 	const [selectedUser, setSelectedUser] = useState<UserResult | null>(null)
-	const [csrfToken, setCsrfToken] = useState<string>('loading...')
 	const supabase = createClient()
-
-	useEffect(() => {
-		const el = document.querySelector(
-			'meta[name="x-csrf-token"]'
-		) as HTMLMetaElement | null
-		if (el) setCsrfToken(el.content)
-		else setCsrfToken('missing')
-	}, [])
 
 	function handleSearch(term: string | null) {
 		if (debounce) clearTimeout(debounce)
@@ -70,7 +61,6 @@ export default function Search({
 				className='flex gap-3'
 			>
 				<InviteButton text={inviteButtonText} disabled={!selectedUser} />
-				<input name='csrf_token' value={csrfToken} hidden readOnly />
 				<input name='team_id' defaultValue={teamId} hidden />
 				<input name='user_id' defaultValue={selectedUser?.osu_id} hidden />
 

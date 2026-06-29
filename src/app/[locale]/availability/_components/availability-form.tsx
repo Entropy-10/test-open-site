@@ -32,9 +32,6 @@ export default function AvailabilityForm() {
 	})
 
 	async function onSubmit(data: z.infer<typeof availabilityForm>) {
-		const csrfResp = await fetch('/csrf-token')
-		const { csrfToken } = await csrfResp.json()
-
 		const availabilityForm = new FormData()
 		availabilityForm.append(
 			'availability',
@@ -49,7 +46,6 @@ export default function AvailabilityForm() {
 				}
 			})
 		)
-		availabilityForm.append('csrf_token', csrfToken)
 
 		const { error } = await updateAvailability(availabilityForm)
 

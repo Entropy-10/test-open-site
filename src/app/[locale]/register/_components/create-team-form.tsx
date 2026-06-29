@@ -62,13 +62,10 @@ export default function CreateTeamForm({ osuId }: CreateTeamFormProps) {
 
 		const flagBlob = new Blob([await data.flag.arrayBuffer()])
 		const flagForm = new FormData()
-		const csrfResp = await fetch('/csrf-token')
-		const { csrfToken } = await csrfResp.json()
 
 		flagForm.append('file', flagBlob)
 		flagForm.append('file_type', data.flag.type)
 		flagForm.append('team_name', data.name.toLowerCase().replaceAll(' ', '-'))
-		flagForm.append('csrf_token', csrfToken)
 
 		const { url: flagUrl, error: imageUploadError } =
 			await uploadImage(flagForm)
@@ -82,7 +79,6 @@ export default function CreateTeamForm({ osuId }: CreateTeamFormProps) {
 		}
 
 		const teamForm = new FormData()
-		teamForm.append('csrf_token', csrfToken)
 		teamForm.append(
 			'teamData',
 			JSON.stringify({

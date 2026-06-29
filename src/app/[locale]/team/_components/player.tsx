@@ -54,7 +54,6 @@ export default function Player({ player }: PlayerProps) {
 
 			{/* {userId !== player.user_id && isCaptain ? (
 				<form action={deleteItem}>
-					<CsrfInput token={csrfToken} />
 					<input name='id' defaultValue={player.user_id} hidden />
 					<input name='type' defaultValue='player' hidden />
 					<DeleteButton text={t('removeButton')} />

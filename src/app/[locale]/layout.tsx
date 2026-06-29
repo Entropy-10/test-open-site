@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import type { Metadata } from 'next'
-import { headers } from 'next/headers'
 import { notFound } from 'next/navigation'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getLocale, getTranslations } from 'next-intl/server'
@@ -17,11 +16,9 @@ import Header from './_components/header'
 import PreviewWarning from './_components/preview-warning'
 import UpdateScopes from './_components/update-scopes'
 
-export async function generateMetadata() {
+export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getLocale()
-
 	const t = await getTranslations({ locale, namespace: 'Metadata' })
-	const csrfToken = (await headers()).get('X-CSRF-Token') || 'missing'
 
 	return {
 		metadataBase: new URL(getBaseUrl()),
@@ -37,8 +34,7 @@ export async function generateMetadata() {
 			},
 			description: t('description'),
 			locale
-		}),
-		other: { 'x-csrf-token': csrfToken }
+		})
 	} satisfies Metadata
 }
 

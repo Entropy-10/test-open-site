@@ -32,7 +32,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function TeamPage() {
 	const session = await getSession()
 	const locale = await getLocale()
-	// const csrfToken = (await headers()).get('X-CSRF-Token') ?? 'missing'
 	if (!session) redirect('/unauthorized')
 
 	const messages = await getMessages()
