@@ -6,15 +6,16 @@ A small website for our osu tournament for TEST Open 2024.
 
 ## Tech Stack
 
-- [Bun](https://bun.sh): Runtime and Package Manager
+- [Bun](https://bun.com): Runtime and Package Manager
 - [Typescript](https://www.typescriptlang.org): Language
 - [Next.js](https://nextjs.org): Framework
 - [Vercel](https://vercel.com/home): Hosting
 - [Tailwind CSS](https://tailwindcss.com): CSS Styling
-- [Radix Primitives](https://www.radix-ui.com): Accessible Components
-- [Supabase](https://supabase.com): Database
-- [Next Intl](https://next-intl-docs.vercel.app): Localization
-- [BetterStack](https://betterstack.dev): Status
+- [Base UI](https://base-ui.com): Accessible Components
+- [PlanetScale](https://planetscale.com): Database
+- [Next Intl](https://next-intl.dev): Localization
+- [Evlog](https://evlog.dev): Logging
+- [BetterStack](https://betterstack.dev): Status and Log Ingest
 
 ## Getting Started
 

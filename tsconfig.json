@@ -1,45 +1,28 @@
 {
-	"compilerOptions": {
-		"target": "es2017",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"allowJs": true,
-		"skipLibCheck": true,
-		"strict": true,
-		"noEmit": true,
-		"esModuleInterop": true,
-		"module": "esnext",
-		"moduleResolution": "bundler",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"jsx": "react-jsx",
-		"incremental": true,
-		"plugins": [
-			{
-				"name": "next"
-			}
-		],
-		"paths": {
-			"@supabase/*": ["./src/lib/supabase/*"],
-			"@env": ["./src/env.ts"],
-			"@osu": ["./src/lib/osu.ts"],
-			"@discord": ["./src/lib/discord.ts"],
-			"@sheets": ["./src/lib/sheets.ts"],
-			"@utils/*": ["./src/lib/utils/*"],
-			"@types": ["./src/types/index.ts"],
-			"@schemas": ["./src/lib/schemas.ts"],
-			"@session": ["./src/lib/session.ts"],
-			"@metadata": ["./src/lib/metadata.ts"],
-			"@navigation": ["./src/i18n/routing.ts"],
-			"@siteConfig": ["./src/lib/site-config.ts"],
-			"~/*": ["./src/*"]
-		}
-	},
-	"include": [
-		"next-env.d.ts",
-		"**/*.ts",
-		"**/*.tsx",
-		".next/types/**/*.ts",
-		".next/dev/types/**/*.ts"
-	],
-	"exclude": ["node_modules"]
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    "paths": { "~/*": ["./src/*"] }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
 }
