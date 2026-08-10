@@ -1,1 +1,84 @@
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 500px;
+
+  --background-image-bottom-fade: linear-gradient(
+    180deg,
+    #ffffff00 85%,
+    95%,
+    #fffefa
+  );
+  --background-image-fade: linear-gradient(0deg, #fffefa 65%, 90%, #fffefa99);
+  --background-image-feature2: linear-gradient(
+    270deg,
+    #807ee1 -9.09%,
+    #5e72eb 108.5%
+  );
+  --background-image-feature4: linear-gradient(
+    90deg,
+    #807ee1 -8.67%,
+    #ff9190 118.61%
+  );
+  --background-image-footer: linear-gradient(
+    90deg,
+    #120c6e -30.19%,
+    #807ee1 107.81%
+  );
+  --background-image-flag-fade:
+    linear-gradient(270deg, #fffefa 5%, rgba(255, 254, 250, 0) 15%),
+    linear-gradient(0deg, #fffefa 5%, rgba(255, 254, 250, 0) 25%);
+
+  --color-milky-white: #fffefa;
+  --color-light-blue: #5e72eb;
+  --color-blue: #120c6e;
+  --color-medium-blue: #0b0742;
+  --color-dark-blue: #070427;
+  --color-lavender: #807ee1;
+  --color-salmon: #ff9190;
+
+  --animate-overlay-show: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-content-show: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  @keyframes overlayShow {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes contentShow {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -48%) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+@utility padding {
+  @apply px-4 md:px-12 lg:px-24;
+}
+
+@media (max-width: 768px) {
+  .no-bottom-shadow {
+    clip-path: inset(-15px -15px 0px -15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .no-top-shadow {
+    clip-path: inset(0px -15px -15px -15px);
+  }
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

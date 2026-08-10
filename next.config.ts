@@ -1,5 +1,8 @@
 import type { NextConfig } from "next"
 
+import { varlockNextConfigPlugin } from "@varlock/nextjs-integration/plugin"
+import createNextIntlPlugin from "next-intl/plugin"
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
   cacheComponents: true,
@@ -10,4 +13,7 @@ const nextConfig: NextConfig = {
   }
 }
 
-export default nextConfig
+const withVarlock = varlockNextConfigPlugin()
+const withNextIntl = createNextIntlPlugin()
+
+export default withVarlock(withNextIntl(nextConfig))

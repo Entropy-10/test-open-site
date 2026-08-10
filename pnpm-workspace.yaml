@@ -1,0 +1,9 @@
+packages:
+  - .
+
+overrides:
+  "@next/env": "npm:@varlock/nextjs-integration"
+
+allowBuilds:
+  "@parcel/watcher": true
+  "@swc/core": true
