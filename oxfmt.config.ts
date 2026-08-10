@@ -19,6 +19,7 @@ export default defineConfig({
     preserveWhitespace: true
   },
   sortPackageJson: true,
+  ignorePatterns: ["env.d.ts"],
   sortImports: {
     customGroups: [
       {
