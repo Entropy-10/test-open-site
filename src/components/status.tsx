@@ -33,11 +33,11 @@ const statusColors: Record<
 
 export default async function Status() {
   const t = await getTranslations("Status")
-  const pageId = ENV.NEXT_PUBLIC_STATUS_PAGE_ID
-  const apiURL = ENV.NEXT_PUBLIC_UPTIME_API_URL
+  const pageId = ENV.BETTER_STACK_STATUS_PAGE_ID
+  const apiURL = ENV.BETTER_STACK_UPTIME_API_URL
 
   const response = await fetch(`${apiURL}/status-pages/${pageId}`, {
-    headers: { Authorization: `Bearer ${ENV.UPTIME_API_KEY}` }
+    headers: { Authorization: `Bearer ${ENV.BETTER_STACK_UPTIME_API_KEY}` }
   })
   const json = await response.json()
   const { success, output } = v.safeParse(UptimeStatusPageSchema, json.data)

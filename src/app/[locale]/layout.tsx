@@ -2,6 +2,7 @@ import "~/styles/globals.css"
 
 import type { Metadata } from "next"
 
+import { EvlogProvider } from "evlog/next/client"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale } from "next-intl/server"
 import { Inter } from "next/font/google"
@@ -25,12 +26,14 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${inter.className} antialiased`}>
       <body className="flex min-h-screen flex-col overflow-x-hidden">
-        <NextIntlClientProvider>
-          <main className="flex-1">
-            {children}
-            <Footer />
-          </main>
-        </NextIntlClientProvider>
+        <EvlogProvider service="test-open-site" transport={{ enabled: true }}>
+          <NextIntlClientProvider>
+            <main className="flex-1">
+              {children}
+              <Footer />
+            </main>
+          </NextIntlClientProvider>
+        </EvlogProvider>
       </body>
     </html>
   )
