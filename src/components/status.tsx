@@ -5,6 +5,7 @@ import * as v from "valibot"
 import { ENV } from "varlock/env"
 
 import { StatusIcon } from "~/components/icons/status"
+import { log } from "~/lib/evlog"
 
 const UptimeStatusPageSchema = v.object({
   id: v.string(),
@@ -39,9 +40,31 @@ export default async function Status() {
   const response = await fetch(`${apiURL}/status-pages/${pageId}`, {
     headers: { Authorization: `Bearer ${ENV.BETTER_STACK_UPTIME_API_KEY}` }
   })
+
+  if (!response.ok) {
+    log.error({
+      component: "Status",
+      message: "Failed to fetch status page",
+      httpStatus: response.status,
+      pageId
+    })
+    return null
+  }
+
   const json = await response.json()
-  const { success, output } = v.safeParse(UptimeStatusPageSchema, json.data)
-  if (!success) return null
+  const { success, output, issues } = v.safeParse(
+    UptimeStatusPageSchema,
+    json.data
+  )
+  if (!success) {
+    log.error({
+      component: "Status",
+      message: "Unexpected status page response shape",
+      pageId,
+      issues: issues.map((issue) => issue.message)
+    })
+    return null
+  }
 
   const status = output.attributes.aggregate_state
   const color = statusColors[status]
