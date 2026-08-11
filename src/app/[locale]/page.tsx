@@ -5,6 +5,8 @@ import { getTranslations } from "next-intl/server"
 import whiteLogo from "../../../public/images/logo-white.png"
 import { Background } from "~/components/ui/background"
 import { Button } from "~/components/ui/button"
+import { Features } from "~/features/features-display/components/features"
+import { Originals } from "~/features/originals/components/originals"
 import { Link } from "~/i18n/navigation"
 import { links } from "~/utils/links"
 
@@ -78,7 +80,10 @@ export default async function HomePage() {
         </div>
       </Background>
 
-      <div className="flex w-full flex-col overflow-x-hidden" />
+      <div className="flex w-full flex-col overflow-x-hidden">
+        <Features />
+        <Originals />
+      </div>
     </div>
   )
 }
