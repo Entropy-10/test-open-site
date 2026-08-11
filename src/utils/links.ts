@@ -1,5 +1,3 @@
-import type { Messages } from "next-intl"
-
 export const links = {
   sheet:
     "https://docs.google.com/spreadsheets/d/1kmZCOJL5KCPT-Xd0X2AO8s_rV736RhKnJ5Bw_4HztXc/edit?usp=sharing",
@@ -20,9 +18,9 @@ export const links = {
   }
 }
 
-export const navlinks: {
+export const navLinks: {
   link: string
-  text: keyof Messages["NavItems"]
+  text: string
 }[] = [
   { link: "/", text: "home" },
   { link: "/mappool", text: "mappool" },

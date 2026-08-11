@@ -9,6 +9,7 @@ import { getLocale } from "next-intl/server"
 import { Inter } from "next/font/google"
 
 import { Footer } from "~/components/footer"
+import { Header } from "~/components/header"
 import { routing } from "~/i18n/routing"
 
 export const inter = Inter({ subsets: ["latin"] })
@@ -28,6 +29,7 @@ export default async function RootLayout({
     <html lang={locale} className={`${inter.className} antialiased`}>
       <body className="flex min-h-screen flex-col overflow-x-hidden">
         <NextIntlClientProvider>
+          <Header />
           <main className="flex-1">{children}</main>
           <Footer />
           <Analytics />

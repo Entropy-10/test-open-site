@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Suspense } from "react"
 
-import { cn } from "cnfast"
 import { useTranslations } from "next-intl"
 
 import whiteLogo from "../../public/images/logo-white.png"
@@ -16,7 +15,7 @@ import { XIcon } from "~/components/icons/x"
 import { YoutubeIcon } from "~/components/icons/youtube"
 import { Button } from "~/components/ui/button"
 import { Link } from "~/i18n/navigation"
-import { links, navlinks } from "~/utils/links"
+import { links, navLinks } from "~/utils/links"
 
 export function Footer() {
   const buttonsT = useTranslations("Buttons")
@@ -40,16 +39,13 @@ export function Footer() {
 
           <div className="max-md:w-full max-md:max-w-lg">
             <nav className="divide-milky-white flex justify-between divide-x-2 text-xs font-medium select-none">
-              {navlinks.map((item, i) => (
+              {navLinks.map(({ link, text }) => (
                 <NavLink
-                  key={item.text.toString()}
-                  href={item.link}
-                  className={cn(
-                    "hover:text-medium-blue aria-[current=page]:text-medium-blue flex grow justify-center transition-colors aria-[current=page]:font-extrabold",
-                    navlinks.length === i + 1 ? "md:pl-3" : "md:px-3"
-                  )}
+                  key={text}
+                  href={link}
+                  className="hover:text-medium-blue aria-[current=page]:text-medium-blue flex grow justify-center transition-colors aria-[current=page]:font-extrabold md:px-3"
                 >
-                  {navT(item.text.toString())}
+                  {navT(text)}
                 </NavLink>
               ))}
             </nav>
