@@ -37,6 +37,7 @@ function NavLinkShell({
       data-navlink-href={href.toString()}
       data-navlink-exact={exact || undefined}
       suppressHydrationWarning
+      prefetch
       {...rest}
     >
       <>
