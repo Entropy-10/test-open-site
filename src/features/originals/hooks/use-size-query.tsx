@@ -9,6 +9,9 @@ export function useSizeQuery(query: string) {
 
   useEffect(() => {
     const queryList = window.matchMedia(query)
+    // oxlint-disable-next-line react/react-compiler
+    setMatch(queryList.matches)
+
     queryList.addEventListener("change", changeHandler)
 
     return () => {
