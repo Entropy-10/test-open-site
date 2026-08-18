@@ -1,14 +1,13 @@
 "use client"
 
-import { usePathname } from "next/navigation"
-import { Suspense } from "react"
+import { Suspense, ViewTransition } from "react"
 import type { Route } from "next"
 import type { ComponentProps } from "react"
 
 import cn from "cnfast"
-import { motion } from "motion/react"
+// import { motion } from "motion/react"
 
-import { Link } from "~/i18n/navigation"
+import { Link, usePathname } from "~/i18n/navigation"
 
 interface Props extends ComponentProps<typeof Link> {
   exact?: boolean
@@ -36,19 +35,24 @@ function NavLinkShell({
       className={cn("relative", className)}
       data-navlink-href={href.toString()}
       data-navlink-exact={exact || undefined}
-      suppressHydrationWarning
       prefetch
       {...rest}
     >
       <>
         {children}
         {isActive && underline && (
+          <ViewTransition enter="auto" exit="none">
+            <div className="bg-light-blue absolute bottom-0 h-[2.5px] w-full" />
+          </ViewTransition>
+        )}
+
+        {/*{isActive && underline && (
           <motion.div
             layoutId="underline"
             transition={{ duration: 0.2 }}
             className="bg-light-blue absolute bottom-0 h-[2.5px] w-full"
           />
-        )}
+        )}*/}
       </>
     </Link>
   )
