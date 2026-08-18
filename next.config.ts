@@ -8,12 +8,12 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   experimental: {
-    useTypeScriptCli: true,
-    turbopackRustReactCompiler: true
+    globalNotFound: true,
+    useTypeScriptCli: true
   }
 }
 
 const withVarlock = varlockNextConfigPlugin()
-const withNextIntl = createNextIntlPlugin()
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts")
 
 export default withVarlock(withNextIntl(nextConfig))
