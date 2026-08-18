@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { getTranslations } from "next-intl/server"
+import { useTranslations } from "next-intl"
 
 import whiteLogo from "../../../public/images/logo-white.png"
 import { Background } from "~/components/ui/background"
@@ -10,11 +10,9 @@ import { Originals } from "~/features/originals/components/originals"
 import { Link } from "~/i18n/navigation"
 import { links } from "~/utils/links"
 
-export default async function HomePage() {
-  const [homePageT, buttonsT] = await Promise.all([
-    getTranslations("HomePage"),
-    getTranslations("Buttons")
-  ])
+export default function HomePage() {
+  const homePageT = useTranslations("HomePage")
+  const buttonsT = useTranslations("Buttons")
 
   return (
     <div>

@@ -46,7 +46,7 @@ importers:
         version: 16.3.1(@types/node@26.2.0)(babel-plugin-react-compiler@1.0.0)(react@19.2.8)(react-dom@19.2.8(react@19.2.8))
       next-intl:
         specifier: ^4.13.5
-        version: 4.13.6(@types/node@26.2.0)(next@16.3.1(babel-plugin-react-compiler@1.0.0)(react@19.2.8)(react-dom@19.2.8(react@19.2.8)))(react@19.2.8)(typescript@7.0.2)
+        version: 4.13.7(@types/node@26.2.0)(next@16.3.1(babel-plugin-react-compiler@1.0.0)(react@19.2.8)(react-dom@19.2.8(react@19.2.8)))(react@19.2.8)(typescript@7.0.2)
       react:
         specifier: ^19.2.8
         version: 19.2.8
@@ -91,8 +91,8 @@ importers:
         specifier: ^7.0.2
         version: 7.0.2
       ultracite:
-        specifier: 7.10.3
-        version: 7.10.3(oxfmt@0.63.0)(oxlint@1.78.0)
+        specifier: 7.10.5
+        version: 7.10.5(oxfmt@0.63.0)(oxlint@1.78.0)
 
 packages:
 
@@ -1351,8 +1351,8 @@ packages:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
 
-  icu-minify@4.13.6:
-    resolution: {integrity: sha512-iYZGCJZ+kX6o7GrxpVe2sOSdW86AvEqh8RQBvWeBd9jqmuABsMc2B6xongACfItLOogyIWH6GuBslNHr79OU8Q==}
+  icu-minify@4.13.7:
+    resolution: {integrity: sha512-X9gLFtipsP4HHbmy9urh+palImTR9P6lyhvmgbP6iym8i0IwhcsS4Z6KMjkEoCU6O16OJT5JIZkd8xfDROYo/A==}
 
   intl-messageformat@11.2.13:
     resolution: {integrity: sha512-JaPaE6TIX+TAS5XLhDUh41geLw4QfBHX4s5pW8Km+L9fVC8HzB9yOuhbh4EMR/F1+8C6b9qk4763Cv+LdOG1kg==}
@@ -1522,11 +1522,11 @@ packages:
     resolution: {integrity: sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==}
     engines: {node: '>= 0.6'}
 
-  next-intl-swc-plugin-extractor@4.13.6:
-    resolution: {integrity: sha512-M2L8jtPEAXj0CPmXbiW66THdr3OnDqA9IsU1hqv3CdxtVow3Bl9eXPdT9Opeji7L4AFrUZ016dJOs+CoTw66OA==}
+  next-intl-swc-plugin-extractor@4.13.7:
+    resolution: {integrity: sha512-MxOUMGKncc/D6rofu0O80I6Ebr3gqlH8XiEb0Uu5TZmX7DqY3NVHs70Uy4bvtgWmHeDwsra6KU8EBtfRVGRv7Q==}
 
-  next-intl@4.13.6:
-    resolution: {integrity: sha512-loS6tjWWkr/IP+EV1yXUm9URB54QmZOp4+ZsMZNmeYxY8IZxLvO2esUegnXIDxj5DpK/4BsxwDGfGhlqodpkCQ==}
+  next-intl@4.13.7:
+    resolution: {integrity: sha512-j7KnGWt4Ih6TnW1x714R8bX3H+DYP25fqLTYTfUzAFXh0Od57WuQYM/Sf58yalvIXhE6y8sBYHlrCFmr0jPy3g==}
     peerDependencies:
       next: ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
@@ -1751,8 +1751,8 @@ packages:
   ufo@1.6.4:
     resolution: {integrity: sha512-JFNbkD1Svwe0KvGi8GOeLcP4kAWQ609twvCdcHxq1oSL8svv39ZuSvajcD8B+5D0eL4+s1Is2D/O6KN3qcTeRA==}
 
-  ultracite@7.10.3:
-    resolution: {integrity: sha512-0T27Sdpsk9XBdpAzEhJeRzMxAncowkfxW33M3l5i9iIPhptxRumXuOTzCCb+gkOckzKLA0SkTTZhbePMrUxUCw==}
+  ultracite@7.10.5:
+    resolution: {integrity: sha512-0zXTerSOLPiEmF17m3M52gdBp0P8QUlimy8f6fh8L8gbPKo9Kx891h/9X0yrCHc3mQ3a9vgdgqF4As058eNzMg==}
     hasBin: true
     peerDependencies:
       oxfmt: '>=0.1.0'
@@ -1770,8 +1770,8 @@ packages:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
 
-  use-intl@4.13.6:
-    resolution: {integrity: sha512-RLej84qL6PGTDp/PSG3tqRpwr7IvJfOu4Qfv/uyy8CrnYn1oEOQb6osNJb++jZ7FQxqN3aQ5BI7wTIerUgrgMA==}
+  use-intl@4.13.7:
+    resolution: {integrity: sha512-vWapep/2GESovKEmkxaG1Bkt6AWwANCWrM4kwOYbMmvQ4IsBGJFx9l66h8DNCcU0jSOzNtSFyRXFcYvgAak/Cg==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
 
@@ -2610,7 +2610,7 @@ snapshots:
 
   human-signals@8.0.1: {}
 
-  icu-minify@4.13.6:
+  icu-minify@4.13.7:
     dependencies:
       '@formatjs/icu-messageformat-parser': 3.5.16
 
@@ -2746,21 +2746,21 @@ snapshots:
 
   negotiator@1.0.0: {}
 
-  next-intl-swc-plugin-extractor@4.13.6: {}
+  next-intl-swc-plugin-extractor@4.13.7: {}
 
-  next-intl@4.13.6(@types/node@26.2.0)(next@16.3.1(babel-plugin-react-compiler@1.0.0)(react@19.2.8)(react-dom@19.2.8(react@19.2.8)))(react@19.2.8)(typescript@7.0.2):
+  next-intl@4.13.7(@types/node@26.2.0)(next@16.3.1(babel-plugin-react-compiler@1.0.0)(react@19.2.8)(react-dom@19.2.8(react@19.2.8)))(react@19.2.8)(typescript@7.0.2):
     dependencies:
       '@formatjs/intl-localematcher': 0.8.13
       '@parcel/watcher': 2.6.0
       '@swc/core': 1.15.47
-      icu-minify: 4.13.6
+      icu-minify: 4.13.7
       negotiator: 1.0.0
       next: 16.3.1(@types/node@26.2.0)(babel-plugin-react-compiler@1.0.0)(react@19.2.8)(react-dom@19.2.8(react@19.2.8))
-      next-intl-swc-plugin-extractor: 4.13.6
+      next-intl-swc-plugin-extractor: 4.13.7
       po-parser: 2.1.1
       react: 19.2.8
       typescript: 7.0.2
-      use-intl: 4.13.6(react@19.2.8)
+      use-intl: 4.13.7(react@19.2.8)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -3011,7 +3011,7 @@ snapshots:
 
   ufo@1.6.4: {}
 
-  ultracite@7.10.3(oxfmt@0.63.0)(oxlint@1.78.0):
+  ultracite@7.10.5(oxfmt@0.63.0)(oxlint@1.78.0):
     dependencies:
       '@clack/prompts': 1.7.0
       cli-truncate: 6.1.1
@@ -3036,11 +3036,11 @@ snapshots:
 
   unicorn-magic@0.3.0: {}
 
-  use-intl@4.13.6(react@19.2.8):
+  use-intl@4.13.7(react@19.2.8):
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
       '@schummar/icu-type-parser': 1.21.5
-      icu-minify: 4.13.6
+      icu-minify: 4.13.7
       intl-messageformat: 11.2.13
       react: 19.2.8
 

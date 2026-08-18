@@ -14,6 +14,6 @@ export const routing = defineRouting({
     "pl",
     "pt-br"
   ],
-  localePrefix: "as-needed",
+  localePrefix: "never",
   defaultLocale: "en"
 })
