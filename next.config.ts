@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   experimental: {
     globalNotFound: true,
-    useTypeScriptCli: true
+    useTypeScriptCli: true,
+    turbopackRustReactCompiler: true
   }
 }
 

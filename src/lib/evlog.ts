@@ -32,7 +32,7 @@ export const { withEvlog, useLogger, log, createError } = createEvlog({
   drain,
   service: "test-open-site",
   sampling: {
-    rates: { info: 10 },
+    rates: { info: 100 },
     keep: [{ status: 400 }, { duration: 1000 }]
   },
   enrich: (ctx) => {
