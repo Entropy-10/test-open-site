@@ -6,7 +6,7 @@ import whiteLogo from "../../../public/images/logo-white.png"
 import { Background } from "~/components/ui/background"
 import { Button } from "~/components/ui/button"
 import { Features } from "~/features/features-display/components/features"
-// import { Originals } from "~/features/originals/components/originals"
+import { Originals } from "~/features/originals/components/originals"
 import { Link } from "~/i18n/navigation"
 import { links } from "~/utils/links"
 
@@ -80,7 +80,7 @@ export default function HomePage() {
 
       <div className="flex w-full flex-col overflow-x-hidden">
         <Features />
-        {/*<Originals />*/}
+        <Originals />
       </div>
     </div>
   )
