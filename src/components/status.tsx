@@ -41,22 +41,8 @@ export default async function Status() {
   const pageId = ENV.BETTER_STACK_STATUS_PAGE_ID
   const apiURL = ENV.BETTER_STACK_UPTIME_API_URL
 
-  log.info({
-    component: "Status",
-    message: "Fetching status page",
-    pageId
-  })
-
   const response = await fetch(`${apiURL}/status-pages/${pageId}`, {
     headers: { Authorization: `Bearer ${ENV.BETTER_STACK_UPTIME_API_KEY}` }
-  })
-
-  log.info({
-    component: "Status",
-    message: "Fetched status page",
-    httpStatus: response.status,
-    pageId,
-    url: `${apiURL}/status-pages/${pageId}`
   })
 
   if (!response.ok) {
@@ -71,13 +57,6 @@ export default async function Status() {
 
   const json = await response.json()
 
-  log.info({
-    component: "Status",
-    message: "Raw status page",
-    pageId,
-    data: json.data
-  })
-
   const { success, output, issues } = v.safeParse(
     UptimeStatusPageSchema,
     json.data
@@ -91,13 +70,6 @@ export default async function Status() {
     })
     return null
   }
-
-  log.info({
-    component: "Status",
-    message: "Parsed status page",
-    pageId,
-    status: output.attributes.aggregate_state
-  })
 
   const status = output.attributes.aggregate_state
   const color = statusColors[status]
