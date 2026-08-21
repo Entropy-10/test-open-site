@@ -1,7 +1,5 @@
 import type { Messages } from "next-intl"
 
-import type { Feature } from "./components/feature"
-
 export interface Feature {
   name: keyof Messages["HomePage"]["Features"]["Titles"]
   link: string

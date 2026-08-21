@@ -7,6 +7,7 @@ export default defineConfig({
   extends: [core, react, next],
   ignorePatterns: [...(core.ignorePatterns ?? []), "env.d.ts"],
   rules: {
+    "oxc/no-barrel-file": "off",
     "promise/spec-only": "off",
     "eslint/curly": "off",
     "eslint/func-style": "off",

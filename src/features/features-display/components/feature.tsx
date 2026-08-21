@@ -1,4 +1,4 @@
-import cn from "cnfast"
+import { cn } from "cnfast"
 import { useTranslations } from "next-intl"
 
 import { ClickArrowIcon } from "~/components/icons/click-arrow"

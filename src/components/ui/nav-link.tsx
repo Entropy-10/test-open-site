@@ -4,7 +4,7 @@ import { Suspense, ViewTransition } from "react"
 import type { Route } from "next"
 import type { ComponentProps } from "react"
 
-import cn from "cnfast"
+import { cn } from "cnfast"
 // import { motion } from "motion/react"
 
 import { Link, usePathname } from "~/i18n/navigation"
