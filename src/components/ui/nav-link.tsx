@@ -5,13 +5,13 @@ import type { Route } from "next"
 import type { ComponentProps } from "react"
 
 import { cn } from "cnfast"
-// import { motion } from "motion/react"
 
 import { Link, usePathname } from "~/i18n/navigation"
 
 interface Props extends ComponentProps<typeof Link> {
   exact?: boolean
   underline?: boolean
+  indicatorName?: string
 }
 
 function checkActive(pathname: string, href: string, exact?: boolean): boolean {
@@ -26,6 +26,7 @@ function NavLinkShell({
   exact,
   isActive,
   underline = false,
+  indicatorName = "nav-link-indicator",
   ...rest
 }: Props & { isActive: boolean }) {
   return (
@@ -41,18 +42,10 @@ function NavLinkShell({
       <>
         {children}
         {isActive && underline && (
-          <ViewTransition enter="auto" exit="none">
+          <ViewTransition name={indicatorName} share="nav-underline">
             <div className="bg-light-blue absolute bottom-0 h-[2.5px] w-full" />
           </ViewTransition>
         )}
-
-        {/*{isActive && underline && (
-          <motion.div
-            layoutId="underline"
-            transition={{ duration: 0.2 }}
-            className="bg-light-blue absolute bottom-0 h-[2.5px] w-full"
-          />
-        )}*/}
       </>
     </Link>
   )

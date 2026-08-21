@@ -28,6 +28,7 @@ export async function Header() {
               key={text}
               href={link}
               underline={true}
+              indicatorName="main-nav-indicator"
               className="hover:text-light-blue aria-[current=page]:text-light-blue flex items-center justify-center aria-[current=page]:font-extrabold"
             >
               {t(text)}

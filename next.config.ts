@@ -11,7 +11,8 @@ const nextConfig: NextConfig = {
     globalNotFound: true,
     useTypeScriptCli: true,
     turbopackRustReactCompiler: true
-  }
+  },
+  images: { remotePatterns: [{ hostname: "assets.ppy.sh" }] }
 }
 
 const withVarlock = varlockNextConfigPlugin()

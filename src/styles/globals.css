@@ -82,3 +82,14 @@
     cursor: pointer;
   }
 }
+
+::view-transition-group(.nav-underline) {
+  animation-duration: 220ms;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+::view-transition-old(.nav-underline),
+::view-transition-new(.nav-underline) {
+  animation: none;
+  height: 100%;
+}
