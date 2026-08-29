@@ -3,21 +3,6 @@ import type { NextConfig } from "next"
 import { varlockNextConfigPlugin } from "@varlock/nextjs-integration/plugin"
 import createNextIntlPlugin from "next-intl/plugin"
 
-const stylexLoader = {
-  loader: "@stylexswc/turbopack-plugin/loader",
-  options: {
-    rsOptions: {
-      dev: process.env.NODE_ENV !== "production",
-      runtimeInjection: false,
-      treeshakeCompensation: true,
-      unstable_moduleResolution: {
-        type: "commonJS",
-        rootDir: process.cwd()
-      }
-    }
-  }
-}
-
 const nextConfig: NextConfig = {
   reactCompiler: true,
   cacheComponents: true,
@@ -27,13 +12,7 @@ const nextConfig: NextConfig = {
     useTypeScriptCli: true,
     turbopackRustReactCompiler: true
   },
-  images: { remotePatterns: [{ hostname: "assets.ppy.sh" }] },
-  turbopack: {
-    rules: {
-      "*.tsx": { loaders: [stylexLoader] },
-      "*.ts": { loaders: [stylexLoader] }
-    }
-  }
+  images: { remotePatterns: [{ hostname: "assets.ppy.sh" }] }
 }
 
 const withVarlock = varlockNextConfigPlugin()
