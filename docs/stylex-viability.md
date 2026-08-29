@@ -22,7 +22,7 @@ Base UI / Tailwind v4, all at the versions this repo pins.
 | Compiles under Turbopack           | Yes                                                       |
 | CSS extracted and served           | Yes                                                       |
 | Coexists with Tailwind v4          | Yes, same stylesheet, no conflicts                        |
-| Visual parity with Tailwind        | Near pixel-identical across all 5 variants incl. disabled |
+| Visual parity with Tailwind        | Near pixel-identical — but see the caveat below            |
 | Hover / focus / disabled           | Yes                                                       |
 | Media queries                      | Yes (via specificity doubling)                            |
 | Design tokens (`defineVars`)       | Yes, compiled to CSS custom properties                    |
@@ -31,6 +31,30 @@ Base UI / Tailwind v4, all at the versions this repo pins.
 | `tsc` / oxlint / oxfmt             | Clean                                                     |
 | Works with Base UI components      | Yes (via `className`)                                     |
 | React Compiler interop             | Still active (verified in output)                         |
+
+### Caveat on that parity
+
+The ported button matches the original **partly because Tailwind is still
+on the page.** Tailwind's preflight emits
+
+```css
+*, ::after, ::before, ::backdrop {
+  box-sizing: border-box;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+}
+```
+
+StyleX ships **no reset at all**. The `invertedDefault` variant never sets
+`boxSizing`, yet stayed 160x32 when its 2px hover border appeared — because
+preflight had already given it `border-box`. Without Tailwind it would be
+`content-box` and grow to 164x36 on hover. Same story for `border: 0 solid`:
+`borderStyle` is only implicit while preflight supplies it.
+
+So a Tailwind-free rebuild is not just a translation of the styles — it also
+means owning a reset. Worth knowing up front for RoguAni, which would be
+StyleX-only from day one and would not inherit any of this.
 
 ## Toolchain
 
