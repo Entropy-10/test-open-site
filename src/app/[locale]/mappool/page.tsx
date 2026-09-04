@@ -3,6 +3,7 @@ import { Suspense } from "react"
 import { useTranslations } from "next-intl"
 import * as v from "valibot"
 
+import ErrorBoundary from "~/components/error-boundary"
 import { Background } from "~/components/ui/background"
 import { Divider } from "~/components/ui/divider"
 import { Heading } from "~/components/ui/heading"
@@ -27,12 +28,14 @@ export default function MappoolPage({
         <Divider className="max-w-[180px] sm:max-w-[280px] md:max-w-[310px] lg:max-w-[360px]" />
       </Background>
 
-      <Suspense>
-        {/*oxlint-disable-next-line promise/prefer-await-to-then*/}
-        {searchParams.then((sp) => (
-          <MappoolContainer round={parseRound(sp.round)} />
-        ))}
-      </Suspense>
+      <ErrorBoundary title="Failed to load mappool">
+        <Suspense>
+          {/*oxlint-disable-next-line promise/prefer-await-to-then*/}
+          {searchParams.then((sp) => (
+            <MappoolContainer round={parseRound(sp.round)} />
+          ))}
+        </Suspense>
+      </ErrorBoundary>
     </div>
   )
 }
