@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-import { cn } from "cnfast"
+import { cn } from "cn"
 
 interface TwitchIconProps extends SVGProps<SVGSVGElement> {
   className?: string

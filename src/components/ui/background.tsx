@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { cn } from "cnfast"
+import { cn } from "cn"
 
 import background from "../../../public/images/background.jpg"
 

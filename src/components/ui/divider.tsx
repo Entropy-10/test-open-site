@@ -1,4 +1,4 @@
-import { cn } from "cnfast"
+import { cn } from "cn"
 
 interface DividerProps {
   children?: React.ReactNode

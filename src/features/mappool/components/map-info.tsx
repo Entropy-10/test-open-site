@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
-import { cn } from "cnfast"
+import { cn } from "cn"
 import { Music, Star, Timer } from "lucide-react"
 import { LazyMotion, AnimatePresence, m, domAnimation } from "motion/react"
 

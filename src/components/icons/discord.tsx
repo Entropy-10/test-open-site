@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-import { cn } from "cnfast"
+import { cn } from "cn"
 
 interface DiscordIconProps extends SVGProps<SVGSVGElement> {
   className?: string
