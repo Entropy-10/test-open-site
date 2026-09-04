@@ -333,122 +333,25 @@
       "message": "Deine Team-Informationen wurden erfolgreich aktualisiert. Eventuell musst du die Seite neu laden, damit die Änderungen sichtbar werden."
     }
   },
-  "InfoPage": {
-    "GeneralInfo": {
-      "1": "TEST Open ist ein osu! Turnier welches Exklusiv in **[osu! lazer](https://osu.ppy.sh/wiki/de/Help_centre/Upgrading_to_lazer)** gespielt wird.",
-      "2": "Die Teams bestehen aus **3 bis 5 Spielern**.",
-      "3": "Exakt **3 Spieler** pro Team werden eine Map im Turnier spielen. Diese werden vom Team selbst gewählt.",
-      "4": "Es gibt **keine Rang-Voraussetzungen** für Teilnehmer.",
-      "5": "Alle registrierten Teams müssen sich am dafür vorgesehenen Wochenende qualifizieren.",
-      "6": "Die besten **32 Teams** werden in den **Doppel-K.-o. Turnierbaum** voranschreiten.",
-      "7": "Alle Spieler müssen sich im **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** befinden, und ihre Nicknamen zu ihrem osu! Namen ändern.",
-      "8": "Die Uhrzeit wird in **UTC 0** und deiner **Lokalen Discord Uhrzeit** angezeigt.",
-      "9": "Alle Turnier-Mitarbeiter (Staff), welche in keiner der hier genannten Postion sind, ist es untersagt bei dem Turnier mitzuspielen: {sublist_alpha} Streamer {sublist_alpha} Stream Moderator/Kommentator {sublist_alpha} Designer {sublist_alpha} Übersetzer",
-      "heading": "ALLGEMEINE INFORMATION",
-      "Schedule": {
-        "1": "**Anmeldungen:** 26. Februar - 18. März",
-        "2": "**Sicherheitsüberprüfung:** 18. März - 30. März",
-        "3": "**Qualifizierung:** 5. April - 7. April",
-        "4": "**Runde der 32:** 12. April - 14. April",
-        "5": "**Achtelfinale:** 19. April - 21. April",
-        "6": "**Viertelfinale:** 26. April - 28. April",
-        "7": "**Halbfinale:** 3. Mai - 5. Mai",
-        "8": "**Finale:** 10. Mai - 12. Mai",
-        "9": "**Großes Finale:** 17. Mai - 19. Mai",
-        "heading": "ZEITPLAN"
-      }
-    },
-    "Registrations": {
-      "1": "Du musst dich auf der Website sowohl mit deinem **osu!**, sowie deinem **Discord Konto** anmelden.",
-      "2": "Team Erstellung und Management wird über die **[TEST Open Webseite](https://test-open.com)** ausgeführt.",
-      "3": "Um dich als **Freier Spieler** (Free Agent) zu registrieren, suche im **Discord Server** den #looking-for-team Kanal auf, dort ist es dir möglich mithilfe des **TEST Bot** einen Post zu erstellen.",
-      "4": "Falls die Webseite nicht verfügbar ist, kontaktiere einen Admin, um dich über das **anmelde Formular** zu registrieren. Beachte bitte, dass die Daten des Anmeldeformulars nur auf dem Sheet sichtbar sind, bis diese auf der Webseite manuell nachgetragen werden.",
-      "5": "Die Turnier-Organisation wird keine **Free Agent Teams** erstellen. Solltest du wünschen am Turnier mitzuspielen, musst du selber ein Team finden.",
-      "heading": "REGISTRIERUNG"
-    },
-    "GeneralConduct": {
-      "1": "Respektiere andere Spieler und das Turner-Personal.",
-      "2": "**Keine diskriminierenden Texte oder Nachrichten**. Dies beinhalten unter anderem {sublist_alpha} Rassistische Kommentare {sublist_alpha} Begriffe, die für LGBTQ+-Mitglieder anstößig sein könnten {sublist_alpha} Sexismus {sublist_alpha} Hassrede",
-      "3": "TEST Open hat keine Toleranz für Mobbing jeglicher Art.",
-      "4": "**Jugendfreie Themen (NSFW) sind nicht erlaubt**. Dies beinhaltet: {sublist_alpha} Nacktheit {sublist_alpha} Blut/Gewaltätige Inhalte {sublist_alpha} Drogen/Alkohol missbrauch {sublist_alpha} Verstörender Inhalt",
-      "5": "Versuche Gespräche über **Kontroverse Themen** auf ein Minimum zu reduzieren.",
-      "6": "Bleibt bei Meinungsverschiedenheiten zivilisiert.",
-      "7": "**Doxing ist unter keinen Umständen erlaubt**.",
-      "8": "Jeglicher Inhalt welcher gegen die **Discord TOS** verstößt ist nicht erlaubt.",
-      "9": "Englisch ist die primäre Sprache des Turniers, behalte dies im Hinterkopf, wenn du mit dem Turnier-Personal (Staff) kommunizierst.",
-      "10": "Solltest du bemerken das jemand gegen eine dieser regeln verstößt, **melde es bitte einem Moderator oder Admin**.",
-      "11": "Des Weiteren, benutze **gesunden Menschenverstand** um eine **einladende Umgebung für alle** zu gestalten!",
-      "heading": "ALLGEMEINES VERHALTEN"
-    },
-    "Scheduling": {
-      "1": "Spiele werden über den **TEST-Bot** im Discord Server geplant.",
-      "2": "Um die Qualifizierungsrunde zu planen oder zu verschieben, nutze den **/schedule** Befehl und fülle die entsprechenden Informationsfelder aus.",
-      "3": "Um ein Spiel zu verschieben, nutze den **/reschedule** Befehl und fülle die entsprechenden Informationsfelder aus. Dies sendet eine anfrage in den Planungs-Kanal.",
-      "4": "Um das Spiel zu verschieben, müssen beide Teamkapitäne im #scheduling kanal auf \"annehmen\" (\"accept\") drücken.",
-      "heading": "SPIEL/RUNDEN PLANUNG"
-    },
-    "GameProcedures": {
-      "1": "Alle Maps werden mit dem **Standard osu! lazer Score System** bewertet.",
-      "2": "Die \"**NoFail**\" mod wird erzwungen.",
-      "3": "Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren. {sublist_alpha} Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten. {sublist_alpha} Eine Erinnerung wird **15 Minuten** vor dem jeweiligen Spiel verschickt. {sublist_alpha} Der lazer Raumname und das Passwort werden **10 Minuten** vor beginn des spiels verschickt.",
-      "4": "Nachdem eine Map gewählt wurde haben die Teams **2 Minuten** Zeit um, ihre Spieler auszuwechseln.",
-      "heading": "SPIELABLAUF",
-      "Qualifiers": {
-        "1": "Maps werden in derselben Reihenfolge gespielt wie der Mappool sie vorgibt.",
-        "2": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, wird der entsprechende Spieler die Map am Ende der Qualifizierungsrunde erneut spielen.",
-        "3": "Es wird erwartet, dass die Teams bis spätestens **5 Minuten nach Start** der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.",
-        "heading": "QUALIFIZIERUNGEN"
-      },
-      "Match": {
-        "1": "Die Sieg-Bedingung für jede Spielrunde ist **Team gegen Team** (\"TeamVS\").",
-        "2": "Die Auswahl von Maps zum Aufwärmen, zu Schützen, oder zu Sperren, sowie die Auswahl der nächsten zu spielenden Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.",
-        "3": "Es wird erwartet, dass die Teams bis **spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match** haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen: {sublist_alpha} 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect). {sublist_alpha} 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban). {sublist_alpha} 15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).",
-        "4": "Die Spieler müssen folgende \"Sitzplätze\" in der Spielrunde einnehmen: {sublist_alpha} Team 1 (Rot): Platz 1, 2, und 3.{sublist_alpha} Team 2 (Blau): Platz 4, 5, und 6.",
-        "5": "Die Teamkapitäne werden den \"/roll\" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:{sublist_alpha} Erst Whälen, aber als Zweites eine map Sperren.{sublist_alpha} Als Zweites Wählen, aber zuerst eine Map Sperren.",
-        "6": "Den Teams ist es erlaubt eine Map ihrer Wahl zum Aufwärmen zu spielen.{sublist_alpha} Die Map darf **nicht länger als 4 Minuten lang** sein.{sublist_alpha} Die Map darf **nicht im Mappool** sein.",
-        "7": "Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (Ban phase).",
-        "8": "Die Sperrphase (Ban phase) wird im **\"snake format\"** (ABBA) abgehalten.{sublist_alpha} Team 1 sperrt eine Map.{sublist_alpha} Team 2 sperrt 2 Maps.{sublist_alpha} Team 1 sperrt eine Map.",
-        "9": "Sollte eine der gesperrten **Maps von einem der Teams geschützt sein, wird die Sperrung annulliert** und die Map wird regulär spielbar sein.",
-        "10": "Das **doppelt Sperren einer Mod im Mappool ist nicht erlaubt**, mit Ausnahme der \"No-Mod\" Maps.",
-        "11": "Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der \"**Lazer-Mod**\" und \"**No-Mod**\" Maps.",
-        "12": "Spieler dürfen den Tiebreaker mit jeder Mod spielen, die nicht alle Spieler beeinflusst.",
-        "13": "Jedes Team hat **eine 5 minütige Pause**, welche zu jeder Zeit in der Spielrunde genutzt werden kann.",
-        "14": "Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, **wird die Map abgebrochen**. Das Team hat dann **5 Minuten Zeit einen anderen Spieler für die Map einzutauschen**. Dies sollte nur ein mal Pro Team/Spielrunde passieren.",
-        "heading": "SPIELRUNDE"
-      }
-    },
-    "MappoolInfo": {
-      "1": "Der Mappool wird jede Woche am **Sonntag** veröffentlicht.",
-      "2": "lazer Mod, LM abgekürzt, ist ein Modpool welcher jede Woche andere Mods nutzt, welche in lazer zu finden sind.",
-      "heading": "MAPPOOL INFO",
-      "Table": {
-        "round": "Runde",
-        "starRating": "SR",
-        "bestOf": "Das beste von",
-        "bans": "Sperren",
-        "protects": "Schützen",
-        "total": "Insgesamt",
-        "qualifiers": "Qualifizierung",
-        "roundOf32": "Runde der 32",
-        "roundOf16": "Achtelfinale",
-        "quarterfinals": "Viertelfinale",
-        "semifinals": "Halbfinale",
-        "finals": "Finale",
-        "grandFinals": "Großes Finale"
-      }
-    },
-    "PrizePool": {
-      "1": "Der MVP des Turniers{sublist_alpha} **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.",
-      "2": "Erster Platz{sublist_alpha} $500 aufgeteilt zwischen den Spielern.{sublist_alpha} **Individuell angepasstes Tablet-Cover**, entworfen von Spoo und hergestellt von Bluebunny.{sublist_alpha} Ein animiertes Team Banner.",
-      "3": "Zweiter Platz{sublist_alpha} $200 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
-      "4": "Dritter Platz{sublist_alpha} $100 aufgeteilt zwischen den Spielern.{sublist_alpha} Statisches Team Banner.",
-      "heading": "BELOHNUNGS- UND PREISLISTE"
-    }
-  },
   "Components": {
     "ComingSoon": {
       "title": "IN KÜRZE VERFÜGBAR!",
       "message": "Diese Seite ist noch im Aufbau. Halte Ausschau nach Informationen diesbezüglich, und schau später noch mal vorbei, wenn die Seite fertig ist."
+    },
+    "MappoolTable": {
+      "round": "Runde",
+      "starRating": "SR",
+      "bestOf": "Das beste von",
+      "bans": "Sperren",
+      "protects": "Schützen",
+      "total": "Insgesamt",
+      "qualifiers": "Qualifizierung",
+      "roundOf32": "Runde der 32",
+      "roundOf16": "Achtelfinale",
+      "quarterfinals": "Viertelfinale",
+      "semifinals": "Halbfinale",
+      "finals": "Finale",
+      "grandFinals": "Großes Finale"
     }
   },
   "APICallbacks": {

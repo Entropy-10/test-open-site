@@ -333,122 +333,25 @@
       "message": "Na-update na ang iyong impormasyon para sa team. Paki-refresh ang page na ito para makita ang mga pagbabago na iyong ginawa."
     }
   },
-  "InfoPage": {
-    "GeneralInfo": {
-      "1": "Ang TEST Open ay isang paligsahan sa osu! na eksklusibo sa kliyenteng **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)**.",
-      "2": "Ang mga pangkat ay nilalaman ng **3-5 na miyembro**.",
-      "3": "Ang mga pangkat ay kailang pumili ng **3 manlalaro** sa kada isang map na nilalaro sa paligsahan.",
-      "4": "**Walang pangangailangan sa ranggo** para sa mga kasali.",
-      "5": "Lahat ng inaasahang pangkat ay kailangang sumailalim sa qualifiers sa nakalistang katapusan ng linggo.",
-      "6": "Ang pinakamataas na **32 pangkat** sa qualifiers ay magpapatuloy sa saklungang **Double Elimination**.",
-      "7": "Lahat ng manlalaro ay kailan sumali sa **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** at itakda ang kanilang palayaw sa kanilang **osu! username**.",
-      "8": "Ang mga oras ay nakalista sa **UTC-0** at **Discord Local Time**.",
-      "9": "Ang mga miyembro ng tauhan na may tungkulin maliban sa sumusunod ay bawal lumahok sa paligsahan: {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-      "heading": "PANGKALAHATANG IMPORMASYON.",
-      "Schedule": {
-        "1": "**Rehistrasyon:** ika-26 ng Pebrero - ika-18 ng Martsa",
-        "2": "**Screening:** ika-18 ng Marso hanggang ika-30 ng Marso",
-        "3": "**Qualifiers:** ika-5 hanggang 7 ng Abril",
-        "4": "**RO32:** ika-12 hanggang 14 ng Abril",
-        "5": "**RO16:** ika-19 hanggang 21 ng Abril",
-        "6": "**Quarterfinals:** ika-26 hanggang 28 ng Abril",
-        "7": "**Semifinals:** ika-3 hanggang 5 ng Mayo",
-        "8": "**Finals:** ika-10 hanggang 12 ng Mayo",
-        "9": "**Grand Finals:** ika-17 hanggang 19 ng Mayo",
-        "heading": "ISKEDYUL"
-      }
-    },
-    "Registrations": {
-      "1": "Kailangan mag-sign up sa website gamit ang parehong **osu!** at **Discord account**.",
-      "2": "Ang paggawa ng pangkat at pamamahala ay maaring gawin sa **[TEST Open Website](https://test-open.com)**.",
-      "3": "Para gumawa ng **libreng ahente post**, pumunta sa **discord server** at hanapin ang looking-for-team channel. At doon ay maari kang mag-post gamit ang **TEST Bot**.",
-      "4": "Kung hindi gumagana ang website ikaw ay maaring magtanong sa admin ng **registration form**. Gayunpaman, pag ito ang ginamit mo makikita ang iyong impormasyon sa sheet ngunit hindi sa website hanggang ito ay sadyang baguhin.",
-      "5": "Ang mga tauhan ay hindi gagawa ng **pangkatang libreng ahente**. Kaya kung gusto mong sumali, kailangan mong maghanap ng pangkat.",
-      "heading": "REHISTRASYON."
-    },
-    "GeneralConduct": {
-      "1": "Respetuhin ang ibang manglalaro at lahat ng mga tauhan.",
-      "2": "Walang **mga terminong may diskriminasyon**. Kasama ngunit hindi limitado sa: {sublist_alpha} Racial Slurs {sublist_alpha} Mga tuntunin na maaaring nakakasakit sa LGBTQ+ members {sublist_alpha} Sexist comments {sublist_alpha} Mapoot na Pagsasalita",
-      "3": "Ang TEST Open ay walang toleransiya sa kahit anong uri ng bullying.",
-      "4": "Ang **may kabastusang nilalaman** ay bawal. Kasama rito ang: {sublist_alpha} Kahubaran {sublist_alpha} Gore/May marahas na nilalaman {sublist_alpha} Pag abuso sa Droga/Alak {sublist_alpha} Nakakabahalang nilalaman",
-      "5": "Subukang panatilihin sa pinakamababa ang **kontrobersyal na paguusap**.",
-      "6": "Siguraduhing sibilisado ang mga hindi pagkakasundo.",
-      "7": "**Ang paglalabas ng anumang personal na impormasyon ay ipinagbabawal** sa anumang sitwasyon.",
-      "8": "Ang anumang content na ipinagbabawal sa ilalim ng **Discord TOS** ay ipinagbabawal.",
-      "9": "**Ingles ang pangunahing wika na ginagamit sa torneong ito**, kaya ito ay ating tandaan kapag makikipagusap sa mga namamahala sa torneong ito.",
-      "10": "Kapag nakakakita ka ng isang taong lumalabag sa anumang sa ipinapatupad na patakaran, ay tumawag ng isang **Moderator o Admin** upang ito ay malutas.",
-      "11": "Panghuli, gumamit ng **sentido kumon** at gumawa ng **magiliw na kapaligiran** para sa lahat!",
-      "heading": "PANGKALAHATANG ASAL."
-    },
-    "Scheduling": {
-      "1": "Ang mga laban ay iiskedyul sa pamamagitan ng **TEST Bot** sa Discord Server.",
-      "2": "Para sa pag-iskedyul o muling pag-iskedyul ng qualifier lobby, mangyaring gamitin ang **/schedule** command at ilagay ang na-prompt na impormasyon.",
-      "3": "Para sa muling pag-iskedyul ng laban, mangyaring gamitin ang **/reschedule** na command at ilagay ang na-prompt na impormasyon. Magpapadala ito ng kahilingan sa muling pag-iskedyul sa channel ng pag-iiskedyul.",
-      "4": "Kapag nag-reschedule ng laban **kailangang i-click ng dalawang team captain ang accept** sa kahilingan sa muling pag-iskedyul sa channel ng pag-iiskedyul upang makumpleto ang muling pag-iskedyul.",
-      "heading": "PAG-ISKEDYUL."
-    },
-    "GameProcedures": {
-      "1": "Ang lahat ng mga mapa ay ma-iiscore gamit ang **osu! Lazer default scoring**.",
-      "2": "**NoFail** ay ipapatupad.",
-      "3": "Makikipag-ugnayan ang mga referee sa mga Captain ng alinmang kalahok na team para sa bawat laro. {sublist_alpha} Ang mga kapitan ay may responsibilidad sa paghahatid ng anumang impormasyong ibinigay ng referee sa kanilang team. {sublist_alpha} Isang paalala ang ipapadala **15 minuto** bago ang bawat laro. {sublist_alpha} Ang Lazer room name at password ay ipapadala **10 minuto** bago ang bawat laro.",
-      "4": "Pagkatapos mapili ang isang mapa, ang mga kalahok na manlalaro ay may **2 minuto** upang sumali sa lobby.",
-      "heading": "MGA PAMAMARAAN SA LARO.",
-      "Qualifiers": {
-        "1": "Ipe-play ang mga mapa sa parehong pagkakasunod-sunod tulad ng nakikita sa mappool.",
-        "2": "Kung ang isang player ay **na-disconnect** **sa loob ng unang minuto ng isang mapa**, ire-replay ng player ang mapa sa **pag-tapos ng qualifier room**.",
-        "3": "Ang mga team ay inaasahang magkakaroon ng tatlong manlalaro sa silid sa loob ng **5 minuto pagkatapos ng oras ng pagsisimula ng kanilang room**. Kung ang isang team ay nabigong magpakita, ang team ay kailangang muling iiskedyul ang kanilang room. Ang room na ito ay dapat na hindi bababa sa **4 na oras** pagkatapos ng room kung saan sila hindi magpakita.",
-        "heading": "QUALIFIERS"
-      },
-      "Match": {
-        "1": "Ang win-condition para sa bawat laban ay **TeamVS**.",
-        "2": "Dapat i-submit ang mga Warmups, Protects, Bans, at Picks sa loob ng **2 minuto**.",
-        "3": "Ang mga team ay inaasahang magkakaroon ng tatlong manlalaro sa silid sa loob ng **5 minuto pagkatapos ng oras ng pagsisimula ng kanilang room**. Mawawala ang mga sumusunod sa bawat timestamp. {sublist_alpha} 5 minutong huli ay mawawalan ang protects. {sublist_alpha} 10 minutong huli ay mawawalan ng bans. {sublist_alpha} Ang huling 15 minuto ay isang pag-forfeit ng laban.",
-        "4": "Ang mga manlalaro ay dapat nasa lobby slot na naaayon sa kanilang team. {sublist_alpha} Team 1 (Red): Slots 1, 2, at 3. {sublist_alpha} Team 2 (Blue): Slots 4, 5, at 6.",
-        "5": "Gagamitin ng mga kapitan ang **/roll command sa Discord thread** ng kanilang laban para mapagdesisyonan ang **Pick/Ban order**. Ang kapitan na may mas mataas na roll ay maaaring pumili ng isa sa mga sumusunod, habang ang isa pang kapitan ay tatanggap ng isa pa: {sublist_alpha} Unang Pinili at Pangalawa sa Pagbawal {sublist_alpha} Pangalawa sa Pinili at Unang Pagbawalan",
-        "6": "Maaaring mag-opt in ang mga team sa paglalaro ng isang mapa na kanilang pinili bilang warmup bago ang laban. {sublist_alpha} Dapat ay **mas mababa sa 4 na minuto ang haba ng mga warmup**. {sublist_alpha} Maaaring **hindi bahagi ng mappool** ang mga warmup.",
-        "7": "Ang mga proteksiyon ay **pribadong isu-submit** sa referee bago ang banning phase.",
-        "8": "Ang banning phase ay gagawin sa isang **snake format** (ABBA). {sublist_alpha} Team 1 ay magba-ban {sublist_alpha} Team 2 ay magba-ban ng dawalang beses {sublist_alpha} at ang Team 1 ay muling magbaban",
-        "9": "Kapag natapos na ang ban and protect phase, **ang anumang pagbabawal sa isang pinoprotektahang mapa ay mawawalan ng bisa** at ang mapa na iyon ay maaaring laruin.",
-        "10": "Ipinagbabawal ang pag-ban mula sa **parehong modpool ng dalawang beses na magkasunod** pero hindi kasama ang **No-Mod pool**.",
-        "11": "Ang pagpili mula sa **parehong modpool ng dalawang beses na magkasunod ay ipinagbabawal** hindi kasama ang **Lazer-Mod** at **No-Mod pool**.",
-        "12": "Maaaring maglaro ang mga manlalaro ng Tiebreaker sa anumang mod na **hindi isang global rate change mod**.",
-        "13": "Ang bawat team ay may **isang 5 minutong timeout** na maaaring gamitin sa anumang punto ng laban.",
-        "14": "Kung ang isang manlalaro **ay madidisconnect sa loob ng unang minuto ng isang mapa**, ang mapa ay **maa-abort** at ang team ay may **5 minuto** upang isali ang isa pang manlalaro upang laruin ang mapa. Maaari lang itong mangyari nang isang beses bawat team at bawat laban.",
-        "heading": "MATCH"
-      }
-    },
-    "MappoolInfo": {
-      "1": "Ipapalabas ang mappool tuwing **Linggo** ng bawat linggo.",
-      "2": "Ang Lazer Mod, o LM para sa maikli, ay isang modpool na magtatampok ng iba't ibang mod bawat linggo upang ipakita ang mga bagong mod na inaalok ng Lazer client.",
-      "heading": "IMPORMASYON NG MAPPOOL.",
-      "Table": {
-        "round": "Round",
-        "starRating": "SR",
-        "bestOf": "Best Of",
-        "bans": "Bans",
-        "protects": "Protects",
-        "total": "Total",
-        "qualifiers": "Qualifiers",
-        "roundOf32": "Round of 32",
-        "roundOf16": "Round of 16",
-        "quarterfinals": "Quarterfinals",
-        "semifinals": "Semifinals",
-        "finals": "Finals",
-        "grandFinals": "Grand Finals"
-      }
-    },
-    "PrizePool": {
-      "1": "Ang MVP ng paligsahan {sublist_alpha} **Customized WLmouse Beast X mini mouse** na dinisenyo ni Spoo at pininturahan ng Dovacustoms. Ang pasadyang mouse ay masasamahan ng pangalan ng manlalaro na nakapintura sa taas.",
-      "2": "Unang Pwesto {sublist_alpha} pinag hati hating $500 sa mga manlalaro {sublist_alpha} **Customized TEST Open Tablet Cover** na dinisenyo ni Spoo at ginawa ni Bluebunny {sublist_alpha} Animated na Banner ng Koponan",
-      "3": "Pangalawang Pwesto {sublist_alpha} pinag hati hating $200 sa mga manlalaro {sublist_alpha} Static na Banner ng Koponan",
-      "4": "Pangatlong Pwesto {sublist_alpha} pinag hati hating $100 sa mga manlalaro {sublist_alpha} Static na Banner ng Koponan",
-      "heading": "PRIZE POOL."
-    }
-  },
   "Components": {
     "ComingSoon": {
       "title": "MALAPIT NA!",
       "message": "Ginagawa palang ang pahina na ito. Maging alerto sa impormasyon tungkol dito, at tingnan muli pag ito ay handa na."
+    },
+    "MappoolTable": {
+      "round": "Round",
+      "starRating": "SR",
+      "bestOf": "Best Of",
+      "bans": "Bans",
+      "protects": "Protects",
+      "total": "Total",
+      "qualifiers": "Qualifiers",
+      "roundOf32": "Round of 32",
+      "roundOf16": "Round of 16",
+      "quarterfinals": "Quarterfinals",
+      "semifinals": "Semifinals",
+      "finals": "Finals",
+      "grandFinals": "Grand Finals"
     }
   },
   "APICallbacks": {

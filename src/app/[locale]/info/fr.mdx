@@ -1,0 +1,214 @@
+import { Background } from "~/components/ui/background"
+import { Divider } from "~/components/ui/divider"
+import { Heading } from "~/components/ui/heading"
+import { MappoolTable } from "~/features/info/components/mappool-table"
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>INFOS GÉNÉRALES.</Heading>
+<Divider />
+
+- TEST Open est un tournoi osu! Qui se déroule exclusivement sur le client **[osu! Lazer](https://osu.ppy.sh/wiki/fr/Help_centre/Upgrading_to_lazer)**.
+- Les équipes sont composées de **3-5 membres**.
+- Les équipes doivent sélectionner exactement **3 joueurs** pour chaque chanson jouée dans le tournoi.
+- Il n'y a **aucune condition de classement** pour les participants.
+- Toutes les équipes potentielles doivent faire éliminatoires lors de la fin de semaine indiquée.
+- Les **32 meilleures équipes** des éliminatoires continueront dans une fourchette de **Double Élimination**.
+- Tous les joueurs doivent être dans le **[serveur Discord](https://discord.com/invite/nZnQZMvEhq)** et définir leur nom sur leur nom **osu!**.
+- Les heures seront listées en **UTC-0** et **Heure locale Discord**.
+- Les membres du personnel qui ont un rôle autre que ce qui suit ne peuvent pas participer au tournoi :
+  - Streaming
+  - Commentary
+  - Design
+  - Translation
+
+<Divider variant="single" />
+
+<Heading sub>PROGRAMME</Heading>
+
+<div className="padding">
+<div className="px-7 md:px-9 lg:px-11">
+
+**Registrations :** Du 26 février au 18 mars
+
+**Filtrage:** du 18 mars au 30 mars
+
+**Éliminatoires:** du 5 avril au 7 avril
+
+**RO32:** du 12 avril au 14 avril
+
+**RO16:** du 19 avril au 21 avril
+
+**Quart de finale:** du 26 avril au 28 avril
+
+**Demi-finale:** du 3 mai au 5 mai
+
+**Finale:** du 10 mai au 12 mai
+
+**Grandes Finales:** du 17 mai au 19 mai
+
+</div>
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>ENREGISTREMENTS.</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- Vous devez vous inscrire sur le site avec votre **osu!** et **compte Discord**.
+- La création et la gestion d'équipe seront effectuées via le **[TEST Open Website](https://test-open.com)**.
+- Pour créer un **free agent post**, allez sur le **serveur discord** et localisez le canal de looking-for-team. Vous pouvez y créer un message via le **TEST Bot**.
+- Si le site est en panne, vous pouvez demander à un administrateur de **registration form**. Cependant, Si vous choisissez de vous inscrire par cette méthode, vos informations seront affichées sur la feuille mais pas sur le site Web jusqu'à ce qu'il soit mis à jour manuellement.
+- L'équipe du personnel ne créera pas de **free agent teams**. Donc, si vous souhaitez participer, vous devez vous trouver une équipe.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>RÈGLES GÉNÉRALES.</Heading>
+<Divider />
+
+- Respectez les autres joueurs et tous les membres du personnel.
+- Pas de **mots discriminatoires**. Incluant mais non limité à:
+  - Insultes Raciales
+  - mots qui peuvent être offensantes pour les membres LGBTQ+
+  - Sexist Commentaires
+  - Discours de Haine
+- TEST Open n'a aucune tolérance pour l'intimidation de quelque nature que ce soit.
+- Le contenu **NSFW** est interdit. Cela inclut :
+  - Nudité
+  - Contenu Gore/Violent
+  - Abus de Drogues/Alcool
+  - Contenu Dérangeant
+- Limitez **conversations controversées**.
+- Gardez les désaccords civilisés.
+- **Doxing n'est pas permis** en aucune circonstance.
+- Aucun contenu qui est banni sous **Discord TOS** n'est pas permis.
+- **L'anglais est la langue principale du tournoi**, veuillez le communiquer au personnel en anglais svp.
+- Si vous voyez quelqu'un enfreindre l'une de ces règles, veuillez contacter un **Modérateur ou Admin** pour qu'il soit résolu.
+- Enfin, il suffit d'utiliser **le bon sens** et de créer un **environnement accueillant** pour tout le monde !
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>PROGRAMME.</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- Les matchs seront programmés à travers le **TEST Bot** dans le Discord.
+- Pour planifier ou reprogrammer un lobby de qualification, veuillez utiliser la commande **/schedule** et entrer les informations demandées.
+- Pour reprogrammer un match, veuillez utiliser la commande **/reschedule** et entrer les informations demandées. Cela enverra une demande de replanifier le match dans le canal de planification.
+- Lorsque vous replanifiez un match **les deux capitaines d'équipe devront cliquer sur accepter** sur la demande de replanification dans le canal de planification afin que la reprogrammation soit acceptée.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>PROCÉDURES DE JEU.</Heading>
+<Divider />
+
+- Tous les matchs seront marqués avec **Le score par défaut de osu! Lazer**.
+- **NoFail** sera appliqué.
+- Les arbitres contacteront les capitaines de toute équipe participante pour chaque match.
+  - Les capitaines sont responsables de relayer toute information donnée par l'arbitre à leur équipe.
+  - Un rappel sera envoyé **15 minutes** avant chaque match.
+  - Le nom et le mot de passe de la salle osu! Lazer seront envoyés **10 minutes** avant chaque match.
+- Une fois qu'une beatmap a été sélectionnée, les joueurs participants ont **2 minutes** pour rejoindre le lobby.
+
+<Divider variant="single" />
+
+<Heading sub>ÉLIMINATOIRES</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- Les beatmaps seront jouées dans le même ordre que sur le mappool.
+- Si un joueur **se déconnecte** **dans la première minute d'une chanson**, le joueur rejouera la chanson à la **fin de la salle de qualification**.
+- Les équipes devraient avoir 3 joueurs dans la salle dans **5 minutes après le début de leur salle**. Si une équipe ne parvient pas à apparaître alors l'équipe devra reprogrammer leur match d'éliminatoire. Cette salle doit être au moins **4 heures** après la salle où ils ne se sont pas présentés.
+- Once qualifiers have concluded, teams will be seeded into the top 32 using z-sum as a calculation method.
+
+</div>
+
+<Divider variant="single" />
+
+<Heading sub>MATCH</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- La condition de victoire pour chaque match sera **TeamVS**.
+- Les réchauffements, les protections, les bans et les pioches doivent être soumis dans les **2 minutes**.
+- Les équipes doivent avoir 3 joueurs dans la salle dans les **5 minutes suivant l'heure de début de leur match**. Ils perdront les éléments suivants à chaque horodatage.
+  - 5 minutes en retard entraînent la perte des protections.
+  - 10 minutes en retard entraînent la perte des bans.
+  - 15 minutes en retard est un forfait.
+- Les joueurs doivent être dans un emplacement de lobby correspondant à leur équipe.
+  - Équipe 1 (Rouge): Emplacements 1, 2, et 3. Équipe 2
+  - (Bleu): Emplacements 4, 5, et 6.
+- Les capitaines utiliseront la commande **/roll dans le fil de discussion Discord** de leur match pour décider de **l'ordre de pioche/ban**. Le capitaine avec le jet supérieur peut choisir l'un des suivants, tandis que l'autre capitaine recevra l'autre :
+  - Première à choisir et Deuxième à Banni
+  - Seconde à choisir et Premier à Banni
+- Les équipes peuvent choisir de jouer 1 chanson de leur choix comme échauffement avant le match.
+  - Les réchauffements en doivent être **de moins de 4 minutes**.
+  - Les réchauffements en peuvent **ne pas faire partie du mappool**.
+- Les protections seront **soumises en privé** à l'arbitre avant la phase de bannissement.
+- La phase de bannissement sera effectuée dans un **format de serpent** (ABBA).
+  - Équipe 1 Bans
+  - Équipe 2 Bans deux fois
+  - Équipe 1 Bans
+- Quand la phase de ban et de protection a terminé, **tous les bannissements sur une chanson protégée seront annulés** et cette chanson sera jouable normalement.
+- Bannissement du **même modpool deux fois dans une rangée est interdit** à l'exclusion du **pool No-Mod**.
+- **Il est interdit de ramasser deux fois le même modpool à partir du même modpool** à l'exclusion des piscines **Lazer-Mod** et **No-Mod**.
+- Les joueurs peuvent jouer à Tiebreaker avec n'importe quel mod qui n'est **pas un mod de changement de taux global**.
+- Chaque équipe a **un temps mort de 5 minutes** qui peut être utilisé à n'importe quel moment du match.
+- Si un joueur **se déconnecte dans la première minute d'une chanson**, la chanson sera **abandonnée** et l'équipe a **5 minutes** pour mettre un autre joueur sur la chanson. Cela ne peut se produire qu'une seule fois par équipe et par match.
+
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>INFORMATION MAPPOOL.</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="padding mb-5 overflow-x-scroll">
+  <MappoolTable />
+</div>
+
+<div className="text-blue">
+
+- Le mappool sera publié le **Dimanche** de chaque semaine.
+- Lazer Mod, ou LM pour bref, est un modpool qui proposera différents mods chaque semaine pour présenter les nouveaux mods que le client Lazer a à offrir.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>LES PRIX.</Heading>
+<Divider />
+
+- Le joueur le plus précieux du tournoi
+  - **WLmouse Beast X mini mouse personnalisée** dessiné par Spoo et peint par Dovacustoms. La souris personnalisée inclura le nom du joueur sur le dessus.
+- Première place
+  - $500 est divisée entre les joueurs
+  - **Une autocollante de tablette graphique personnalisée de TEST Open** dessiné par Spoo et produit par Bluebunny
+  - Bannière D'équipe Animée
+- Deuxième place
+  - $200 divisé entre les joueurs
+  - Bannière D'équipe Statique
+- Troisième place
+  - $100 divisé entre les joueurs
+  - Bannière d'équipe statique
+
+</Background>

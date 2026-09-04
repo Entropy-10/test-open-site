@@ -5,10 +5,17 @@ import createMiddleware from "next-intl/middleware"
 
 import { routing } from "./i18n/routing"
 
-export default function proxy(request: NextRequest) {
-  evlogMiddleware()(request)
-  const handleI18nRouting = createMiddleware(routing)
-  return handleI18nRouting(request)
+const handleI18nRouting = createMiddleware(routing)
+const handleEvlog = evlogMiddleware()
+
+export default async function proxy(request: NextRequest) {
+  const correlated = await handleEvlog(request)
+  const response = handleI18nRouting(request)
+
+  const requestId = correlated.headers.get("x-request-id")
+  if (requestId) response.headers.set("x-request-id", requestId)
+
+  return response
 }
 
 export const config = {

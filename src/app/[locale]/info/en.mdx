@@ -1,0 +1,214 @@
+import { Background } from "~/components/ui/background"
+import { Divider } from "~/components/ui/divider"
+import { Heading } from "~/components/ui/heading"
+import { MappoolTable } from "~/features/info/components/mappool-table"
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>GENERAL INFO.</Heading>
+<Divider />
+
+- TEST Open is an osu! Tournament exclusively ran on the **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** client.
+- Teams are comprised of **3-5 members**.
+- Teams must select exactly **3 players** for each map played in the tournament.
+- There are **no rank requirements** for participants.
+- All prospective teams must undergo qualifiers on the listed weekend.
+- The top **32 teams** from qualifiers will continue into a **Double Elimination** bracket.
+- All players must be in the **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** and set their nickname to their **osu! username**.
+- Times will be listed in **UTC-0** and **Discord Local Time**.
+- Staff members that hold any role other than the following may not participate in the tournament:
+  - Streaming
+  - Commentary
+  - Design
+  - Translation
+
+<Divider variant="single" />
+
+<Heading sub>SCHEDULE</Heading>
+
+<div className="padding">
+<div className="px-7 md:px-9 lg:px-11">
+
+**Registrations:** February 26th - March 18th
+
+**Screening:** March 18th - March 30th
+
+**Qualifiers:** April 5th - 7th
+
+**RO32:** April 12th - 14th
+
+**RO16:** April 19th - 21st
+
+**Quarterfinals:** April 26th - 28th
+
+**Semifinals:** May 3rd - 5th
+
+**Finals:** May 10th - 12th
+
+**Grand Finals:** May 17th - 19th
+
+</div>
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>REGISTRATIONS.</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- You must sign up for the website with both your **osu!** and **Discord account**.
+- Team creation and management will be done through the **[TEST Open Website](https://test-open.com)**.
+- To create a **free agent post**, go to the **discord server** and locate the looking-for-team channel. In there you are able to create a post through the **TEST Bot**.
+- If the website is down then you may ask an admin for a **registration form**. However, if you opt to sign-up through this method then your info will be seen on the sheet but not the website until it is manually updated.
+- The staff team will not be creating **free agent teams**. So if you wish to participate, you must find yourself a team.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>GENERAL CONDUCT.</Heading>
+<Divider />
+
+- Respect other players and all staff members.
+- No **discriminatory terms**. Including but not limited to:
+  - Racial Slurs
+  - Terms that may be offensive to LGBTQ+ members
+  - Sexist comments
+  - Hate Speech
+- TEST Open has no tolerance for bullying of any kind.
+- **NSFW content** is prohibited. This includes:
+  - Nudity
+  - Gore/Violent Content
+  - Drug/Alcohol Abuse
+  - Disturbing Content
+- Try to keep **controversial conversations** to a minimum.
+- Keep disagreements civilized.
+- **Doxing is not allowed** under any circumstances.
+- No content that is banned under **Discord TOS** is allowed.
+- **English is the primary language of the tournament**, so keep this in mind when communicating with staff.
+- If you see somebody breaking any of these rules, please contact a **Moderator or Admin** to get it resolved.
+- Lastly, just use **common sense** and create a **welcoming environment** for everyone!
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>SCHEDULING.</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- Matches will be scheduled through the **TEST Bot** in the Discord Server.
+- For scheduling or rescheduling a qualifier lobby, please use the **/schedule** command and enter the prompted information.
+- For rescheduling a match, please use the **/reschedule** command and enter the prompted information. This will send a reschedule request in the scheduling channel.
+- When rescheduling a match **both team captains will have to click accept** on the reschedule request in the scheduling channel in order for the reschedule to complete.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>GAME PROCEDURES.</Heading>
+<Divider />
+
+- All maps will be scored with **osu! Lazer default scoring**.
+- **NoFail** will be enforced.
+- Referees will contact the Captains of any participating team for each game.
+  - Captains are responsible for relaying any information given by the referee to their team.
+  - A reminder will be sent out **15 minutes** before each game.
+  - Lazer room name and password will be sent out **10 minutes** before each game.
+- After a map has been selected, participating players have **2 minutes** to join the lobby.
+
+<Divider variant="single" />
+
+<Heading sub>QUALIFIERS</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- Maps will be played in the same order as seen on the mappool.
+- If a player **disconnects** **within the first minute of a map**, the player will replay the map at the **end of the qualifier room**.
+- Teams are expected to have 3 players in the room within **5 minutes after their room start time**. If a team fails to show up then the team will have to reschedule their room. This room must be at least **4 hours** after the room they failed to show up to.
+- Once qualifiers have concluded, teams will be seeded into the top 32 using z-sum as a calculation method.
+
+</div>
+
+<Divider variant="single" />
+
+<Heading sub>MATCH</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- The win-condition for each match will be **TeamVS**.
+- Warmups, Protects, Bans, and Picks must be submitted within **2 minutes**.
+- Teams are expected to have 3 players in the room within **5 minutes after their match start time**. They will forfeit the following at each timestamp.
+  - 5 minutes late is forfeit of protects.
+  - 10 minutes late is forfeit of bans.
+  - 15 minutes late is a forfeit of match.
+- Players must be in a lobby slot corresponding to their team.
+  - Team 1 (Red): Slots 1, 2, and 3.
+  - Team 2 (Blue): Slots 4, 5, and 6.
+- Captains will use the **!roll command in the osu chat** to decide **Pick/Ban order**. The captain with the higher roll may select one of the following, while the other captain will receive the other:
+  - First to Pick and Second to Ban
+  - Second to Pick and First to Ban
+- Teams may opt into playing 1 map of their choice as a warmup before the match.
+  - Warmups must be **less than 4 minutes long**.
+  - Warmups may **not be part of the mappool**.
+- Protects will be **privately submitted** to the referee before the banning phase.
+- Banning phase will be done in a **snake format** (ABBA).
+  - Team 1 Bans
+  - Team 2 Bans twice
+  - Team 1 Bans
+- Once the ban and protect phase has ended, **any bans on a protected map will be voided** and that map will be playable as normal.
+- Banning from the **same modpool twice in a row is prohibited** excluding the **No-Mod pool**.
+- Picking from the **same modpool twice in a row is prohibited** excluding the **Lazer-Mod** and **No-Mod pools**.
+- Players may play Tiebreaker with any mod that is **not a global rate change mod**.
+- Each team has **one 5-minute timeout** which may be used at any point in the match.
+- If a player **disconnects within the first minute of a map**, the map will be **aborted** and the team has **5 minutes** to field another player to play the map. This may only occur once per team and per match.
+
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>MAPPOOL INFO.</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="padding mb-5 overflow-x-scroll">
+  <MappoolTable />
+</div>
+
+<div className="text-blue">
+
+- The mappool will be released the **Sunday or Monday** of every week.
+- Lazer Mod, or LM for short, is a modpool that will feature different mods every week to showcase the new mods the Lazer client has to offer.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>PRIZE POOL.</Heading>
+<Divider />
+
+- The MVP of the tournament
+  - **Customized WLmouse Beast X mini mouse** designed by Spoo and painted by Dovacustoms. The custom mouse will also include the player's name painted on the top.
+- First Place
+  - $500 split between the players
+  - **Customized TEST Open Tablet Cover** designed by Spoo and produced by Bluebunny
+  - Animated Team Banner
+- Second Place
+  - $200 split between the players
+  - Static Team Banner
+- Third Place
+  - $100 split between the players
+  - Static Team Banner
+
+</Background>

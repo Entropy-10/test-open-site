@@ -37,6 +37,13 @@
   --color-lavender: #807ee1;
   --color-salmon: #ff9190;
 
+  --color-mod-lm: #ff9190;
+  --color-mod-nm: #6d9eeb;
+  --color-mod-hd: #f6b26b;
+  --color-mod-hr: #e06666;
+  --color-mod-dt: #8e7cc3;
+  --color-mod-tb: #93c47d;
+
   --animate-overlay-show: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
   --animate-content-show: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 

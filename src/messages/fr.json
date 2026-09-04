@@ -333,122 +333,25 @@
       "message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
     }
   },
-  "InfoPage": {
-    "GeneralInfo": {
-      "1": "TEST Open est un tournoi osu! Qui se déroule exclusivement sur le client **[osu! Lazer](https://osu.ppy.sh/wiki/fr/Help_centre/Upgrading_to_lazer)**.",
-      "2": "Les équipes sont composées de **3-5 membres**.",
-      "3": "Les équipes doivent sélectionner exactement **3 joueurs** pour chaque chanson jouée dans le tournoi.",
-      "4": "Il n'y a **aucune condition de classement** pour les participants.",
-      "5": "Toutes les équipes potentielles doivent faire éliminatoires lors de la fin de semaine indiquée.",
-      "6": "Les **32 meilleures équipes** des éliminatoires continueront dans une fourchette de **Double Élimination**.",
-      "7": "Tous les joueurs doivent être dans le **[serveur Discord](https://discord.com/invite/nZnQZMvEhq)** et définir leur nom sur leur nom **osu!**.",
-      "8": "Les heures seront listées en **UTC-0** et **Heure locale Discord**.",
-      "9": "Les membres du personnel qui ont un rôle autre que ce qui suit ne peuvent pas participer au tournoi : {sublist_alpha} Streaming {sublist_alpha} Commentary {sublist_alpha} Design {sublist_alpha} Translation",
-      "heading": "INFOS GÉNÉRALES.",
-      "Schedule": {
-        "1": "**Registrations :** Du 26 février au 18 mars",
-        "2": "**Filtrage:** du 18 mars au 30 mars",
-        "3": "**Éliminatoires:** du 5 avril au 7 avril",
-        "4": "**RO32:** du 12 avril au 14 avril",
-        "5": "**RO16:** du 19 avril au 21 avril",
-        "6": "**Quart de finale:** du 26 avril au 28 avril",
-        "7": "**Demi-finale:** du 3 mai au 5 mai",
-        "8": "**Finale:** du 10 mai au 12 mai",
-        "9": "**Grandes Finales:** du 17 mai au 19 mai",
-        "heading": "PROGRAMME"
-      }
-    },
-    "Registrations": {
-      "1": "Vous devez vous inscrire sur le site avec votre **osu!** et **compte Discord**.",
-      "2": "La création et la gestion d'équipe seront effectuées via le **[TEST Open Website](https://test-open.com)**.",
-      "3": "Pour créer un **free agent post**, allez sur le **serveur discord** et localisez le canal de looking-for-team. Vous pouvez y créer un message via le **TEST Bot**.",
-      "4": "Si le site est en panne, vous pouvez demander à un administrateur de **registration form**. Cependant, Si vous choisissez de vous inscrire par cette méthode, vos informations seront affichées sur la feuille mais pas sur le site Web jusqu'à ce qu'il soit mis à jour manuellement.",
-      "5": "L'équipe du personnel ne créera pas de **free agent teams**. Donc, si vous souhaitez participer, vous devez vous trouver une équipe.",
-      "heading": "ENREGISTREMENTS."
-    },
-    "GeneralConduct": {
-      "1": "Respectez les autres joueurs et tous les membres du personnel.",
-      "2": "Pas de **mots discriminatoires**. Incluant mais non limité à: {sublist_alpha} Insultes Raciales {sublist_alpha} mots qui peuvent être offensantes pour les membres LGBTQ+ {sublist_alpha} Sexist Commentaires {sublist_alpha} Discours de Haine",
-      "3": "TEST Open n'a aucune tolérance pour l'intimidation de quelque nature que ce soit.",
-      "4": "Le contenu **NSFW** est interdit. Cela inclut : {sublist_alpha} Nudité {sublist_alpha} Contenu Gore/Violent {sublist_alpha} Abus de Drogues/Alcool {sublist_alpha} Contenu Dérangeant",
-      "5": "Limitez **conversations controversées**.",
-      "6": "Gardez les désaccords civilisés.",
-      "7": "**Doxing n'est pas permis** en aucune circonstance.",
-      "8": "Aucun contenu qui est banni sous **Discord TOS** n'est pas permis.",
-      "9": "**L'anglais est la langue principale du tournoi**, veuillez le communiquer au personnel en anglais svp.",
-      "10": "Si vous voyez quelqu'un enfreindre l'une de ces règles, veuillez contacter un **Modérateur ou Admin** pour qu'il soit résolu.",
-      "11": "Enfin, il suffit d'utiliser **le bon sens** et de créer un **environnement accueillant** pour tout le monde !",
-      "heading": "RÈGLES GÉNÉRALES."
-    },
-    "Scheduling": {
-      "1": "Les matchs seront programmés à travers le **TEST Bot** dans le Discord.",
-      "2": "Pour planifier ou reprogrammer un lobby de qualification, veuillez utiliser la commande **/schedule** et entrer les informations demandées.",
-      "3": "Pour reprogrammer un match, veuillez utiliser la commande **/reschedule** et entrer les informations demandées. Cela enverra une demande de replanifier le match dans le canal de planification.",
-      "4": "Lorsque vous replanifiez un match **les deux capitaines d'équipe devront cliquer sur accepter** sur la demande de replanification dans le canal de planification afin que la reprogrammation soit acceptée.",
-      "heading": "PROGRAMME."
-    },
-    "GameProcedures": {
-      "1": "Tous les matchs seront marqués avec **Le score par défaut de osu! Lazer**.",
-      "2": "**NoFail** sera appliqué.",
-      "3": "Les arbitres contacteront les capitaines de toute équipe participante pour chaque match. {sublist_alpha} Les capitaines sont responsables de relayer toute information donnée par l'arbitre à leur équipe. {sublist_alpha} Un rappel sera envoyé **15 minutes** avant chaque match. {sublist_alpha} Le nom et le mot de passe de la salle osu! Lazer seront envoyés **10 minutes** avant chaque match.",
-      "4": "Une fois qu'une beatmap a été sélectionnée, les joueurs participants ont **2 minutes** pour rejoindre le lobby.",
-      "heading": "PROCÉDURES DE JEU.",
-      "Qualifiers": {
-        "1": "Les beatmaps seront jouées dans le même ordre que sur le mappool.",
-        "2": "Si un joueur **se déconnecte** **dans la première minute d'une chanson**, le joueur rejouera la chanson à la **fin de la salle de qualification**.",
-        "3": "Les équipes devraient avoir 3 joueurs dans la salle dans **5 minutes après le début de leur salle**. Si une équipe ne parvient pas à apparaître alors l'équipe devra reprogrammer leur match d'éliminatoire. Cette salle doit être au moins **4 heures** après la salle où ils ne se sont pas présentés.",
-        "heading": "ÉLIMINATOIRES"
-      },
-      "Match": {
-        "1": "La condition de victoire pour chaque match sera **TeamVS**.",
-        "2": "Les réchauffements, les protections, les bans et les pioches doivent être soumis dans les **2 minutes**.",
-        "3": "Les équipes doivent avoir 3 joueurs dans la salle dans les **5 minutes suivant l'heure de début de leur match**. Ils perdront les éléments suivants à chaque horodatage. {sublist_alpha} 5 minutes en retard entraînent la perte des protections. {sublist_alpha} 10 minutes en retard entraînent la perte des bans. {sublist_alpha} 15 minutes en retard est un forfait.",
-        "4": "Les joueurs doivent être dans un emplacement de lobby correspondant à leur équipe. {sublist_alpha} Équipe 1 (Rouge): Emplacements 1, 2, et 3. Équipe 2 {sublist_alpha} (Bleu): Emplacements 4, 5, et 6.",
-        "5": "Les capitaines utiliseront la commande **/roll dans le fil de discussion Discord** de leur match pour décider de **l'ordre de pioche/ban**. Le capitaine avec le jet supérieur peut choisir l'un des suivants, tandis que l'autre capitaine recevra l'autre : {sublist_alpha} Première à choisir et Deuxième à Banni {sublist_alpha} Seconde à choisir et Premier à Banni",
-        "6": "Les équipes peuvent choisir de jouer 1 chanson de leur choix comme échauffement avant le match. {sublist_alpha} Les réchauffements en doivent être **de moins de 4 minutes**. {sublist_alpha} Les réchauffements en peuvent **ne pas faire partie du mappool**.",
-        "7": "Les protections seront **soumises en privé** à l'arbitre avant la phase de bannissement.",
-        "8": "La phase de bannissement sera effectuée dans un **format de serpent** (ABBA). {sublist_alpha} Équipe 1 Bans {sublist_alpha} Équipe 2 Bans deux fois {sublist_alpha} Équipe 1 Bans",
-        "9": "Quand la phase de ban et de protection a terminé, **tous les bannissements sur une chanson protégée seront annulés** et cette chanson sera jouable normalement.",
-        "10": "Bannissement du **même modpool deux fois dans une rangée est interdit** à l'exclusion du **pool No-Mod**.",
-        "11": "**Il est interdit de ramasser deux fois le même modpool à partir du même modpool** à l'exclusion des piscines **Lazer-Mod** et **No-Mod**.",
-        "12": "Les joueurs peuvent jouer à Tiebreaker avec n'importe quel mod qui n'est **pas un mod de changement de taux global**.",
-        "13": "Chaque équipe a **un temps mort de 5 minutes** qui peut être utilisé à n'importe quel moment du match.",
-        "14": "Si un joueur **se déconnecte dans la première minute d'une chanson**, la chanson sera **abandonnée** et l'équipe a **5 minutes** pour mettre un autre joueur sur la chanson. Cela ne peut se produire qu'une seule fois par équipe et par match.",
-        "heading": "MATCH"
-      }
-    },
-    "MappoolInfo": {
-      "1": "Le mappool sera publié le **Dimanche** de chaque semaine.",
-      "2": "Lazer Mod, ou LM pour bref, est un modpool qui proposera différents mods chaque semaine pour présenter les nouveaux mods que le client Lazer a à offrir.",
-      "heading": "INFORMATION MAPPOOL.",
-      "Table": {
-        "round": "Round",
-        "starRating": "SR",
-        "bestOf": "Meilleur de",
-        "bans": "Bans",
-        "protects": "Protèges",
-        "total": "Total",
-        "qualifiers": "Éliminatoire",
-        "roundOf32": "Top 32",
-        "roundOf16": "Top 16",
-        "quarterfinals": "Quart de Finale",
-        "semifinals": "Demi-Finale",
-        "finals": "Finales",
-        "grandFinals": "La Grande Finale"
-      }
-    },
-    "PrizePool": {
-      "1": "Le joueur le plus précieux du tournoi {sublist_alpha} **WLmouse Beast X mini mouse personnalisée** dessiné par Spoo et peint par Dovacustoms. La souris personnalisée inclura le nom du joueur sur le dessus.",
-      "2": "Première place {sublist_alpha} $500 est divisée entre les joueurs {sublist_alpha} **Une autocollante de tablette graphique personnalisée de TEST Open** dessiné par Spoo et produit par Bluebunny {sublist_alpha} Bannière D'équipe Animée",
-      "3": "Deuxième place {sublist_alpha} $200 divisé entre les joueurs {sublist_alpha} Bannière D'équipe Statique",
-      "4": "Troisième place {sublist_alpha} $100 divisé entre les joueurs {sublist_alpha} Bannière d'équipe statique",
-      "heading": "LES PRIX."
-    }
-  },
   "Components": {
     "ComingSoon": {
       "title": "BIENTÔT !",
       "message": "Cette page est toujours en cours. Informations à venir. Revenez plus tard quand elle sera prête."
+    },
+    "MappoolTable": {
+      "round": "Round",
+      "starRating": "SR",
+      "bestOf": "Meilleur de",
+      "bans": "Bans",
+      "protects": "Protèges",
+      "total": "Total",
+      "qualifiers": "Éliminatoire",
+      "roundOf32": "Top 32",
+      "roundOf16": "Top 16",
+      "quarterfinals": "Quart de Finale",
+      "semifinals": "Demi-Finale",
+      "finals": "Finales",
+      "grandFinals": "La Grande Finale"
     }
   },
   "APICallbacks": {

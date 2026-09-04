@@ -1,0 +1,214 @@
+import { Background } from "~/components/ui/background"
+import { Divider } from "~/components/ui/divider"
+import { Heading } from "~/components/ui/heading"
+import { MappoolTable } from "~/features/info/components/mappool-table"
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>ALLGEMEINE INFORMATION</Heading>
+<Divider />
+
+- TEST Open ist ein osu! Turnier welches Exklusiv in **[osu! lazer](https://osu.ppy.sh/wiki/de/Help_centre/Upgrading_to_lazer)** gespielt wird.
+- Die Teams bestehen aus **3 bis 5 Spielern**.
+- Exakt **3 Spieler** pro Team werden eine Map im Turnier spielen. Diese werden vom Team selbst gewählt.
+- Es gibt **keine Rang-Voraussetzungen** für Teilnehmer.
+- Alle registrierten Teams müssen sich am dafür vorgesehenen Wochenende qualifizieren.
+- Die besten **32 Teams** werden in den **Doppel-K.-o. Turnierbaum** voranschreiten.
+- Alle Spieler müssen sich im **[Discord Server](https://discord.com/invite/nZnQZMvEhq)** befinden, und ihre Nicknamen zu ihrem osu! Namen ändern.
+- Die Uhrzeit wird in **UTC 0** und deiner **Lokalen Discord Uhrzeit** angezeigt.
+- Alle Turnier-Mitarbeiter (Staff), welche in keiner der hier genannten Postion sind, ist es untersagt bei dem Turnier mitzuspielen:
+  - Streamer
+  - Stream Moderator/Kommentator
+  - Designer
+  - Übersetzer
+
+<Divider variant="single" />
+
+<Heading sub>ZEITPLAN</Heading>
+
+<div className="padding">
+<div className="px-7 md:px-9 lg:px-11">
+
+**Anmeldungen:** 26. Februar - 18. März
+
+**Sicherheitsüberprüfung:** 18. März - 30. März
+
+**Qualifizierung:** 5. April - 7. April
+
+**Runde der 32:** 12. April - 14. April
+
+**Achtelfinale:** 19. April - 21. April
+
+**Viertelfinale:** 26. April - 28. April
+
+**Halbfinale:** 3. Mai - 5. Mai
+
+**Finale:** 10. Mai - 12. Mai
+
+**Großes Finale:** 17. Mai - 19. Mai
+
+</div>
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>REGISTRIERUNG</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- Du musst dich auf der Website sowohl mit deinem **osu!**, sowie deinem **Discord Konto** anmelden.
+- Team Erstellung und Management wird über die **[TEST Open Webseite](https://test-open.com)** ausgeführt.
+- Um dich als **Freier Spieler** (Free Agent) zu registrieren, suche im **Discord Server** den #looking-for-team Kanal auf, dort ist es dir möglich mithilfe des **TEST Bot** einen Post zu erstellen.
+- Falls die Webseite nicht verfügbar ist, kontaktiere einen Admin, um dich über das **anmelde Formular** zu registrieren. Beachte bitte, dass die Daten des Anmeldeformulars nur auf dem Sheet sichtbar sind, bis diese auf der Webseite manuell nachgetragen werden.
+- Die Turnier-Organisation wird keine **Free Agent Teams** erstellen. Solltest du wünschen am Turnier mitzuspielen, musst du selber ein Team finden.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>ALLGEMEINES VERHALTEN</Heading>
+<Divider />
+
+- Respektiere andere Spieler und das Turner-Personal.
+- **Keine diskriminierenden Texte oder Nachrichten**. Dies beinhalten unter anderem
+  - Rassistische Kommentare
+  - Begriffe, die für LGBTQ+-Mitglieder anstößig sein könnten
+  - Sexismus
+  - Hassrede
+- TEST Open hat keine Toleranz für Mobbing jeglicher Art.
+- **Jugendfreie Themen (NSFW) sind nicht erlaubt**. Dies beinhaltet:
+  - Nacktheit
+  - Blut/Gewaltätige Inhalte
+  - Drogen/Alkohol missbrauch
+  - Verstörender Inhalt
+- Versuche Gespräche über **Kontroverse Themen** auf ein Minimum zu reduzieren.
+- Bleibt bei Meinungsverschiedenheiten zivilisiert.
+- **Doxing ist unter keinen Umständen erlaubt**.
+- Jeglicher Inhalt welcher gegen die **Discord TOS** verstößt ist nicht erlaubt.
+- Englisch ist die primäre Sprache des Turniers, behalte dies im Hinterkopf, wenn du mit dem Turnier-Personal (Staff) kommunizierst.
+- Solltest du bemerken das jemand gegen eine dieser regeln verstößt, **melde es bitte einem Moderator oder Admin**.
+- Des Weiteren, benutze **gesunden Menschenverstand** um eine **einladende Umgebung für alle** zu gestalten!
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>SPIEL/RUNDEN PLANUNG</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- Spiele werden über den **TEST-Bot** im Discord Server geplant.
+- Um die Qualifizierungsrunde zu planen oder zu verschieben, nutze den **/schedule** Befehl und fülle die entsprechenden Informationsfelder aus.
+- Um ein Spiel zu verschieben, nutze den **/reschedule** Befehl und fülle die entsprechenden Informationsfelder aus. Dies sendet eine anfrage in den Planungs-Kanal.
+- Um das Spiel zu verschieben, müssen beide Teamkapitäne im #scheduling kanal auf "annehmen" ("accept") drücken.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>SPIELABLAUF</Heading>
+<Divider />
+
+- Alle Maps werden mit dem **Standard osu! lazer Score System** bewertet.
+- Die "**NoFail**" mod wird erzwungen.
+- Die Schiedsrichter (Referee) werden die Teamkapitäne der jeweiligen Spielrunde vor dem spiel kontaktieren.
+  - Teamkapitäne sind dafür verantwortlich alle Informationen an ihr Team weiterzuleiten.
+  - Eine Erinnerung wird **15 Minuten** vor dem jeweiligen Spiel verschickt.
+  - Der lazer Raumname und das Passwort werden **10 Minuten** vor beginn des spiels verschickt.
+- Nachdem eine Map gewählt wurde haben die Teams **2 Minuten** Zeit um, ihre Spieler auszuwechseln.
+
+<Divider variant="single" />
+
+<Heading sub>QUALIFIZIERUNGEN</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- Maps werden in derselben Reihenfolge gespielt wie der Mappool sie vorgibt.
+- Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, wird der entsprechende Spieler die Map am Ende der Qualifizierungsrunde erneut spielen.
+- Es wird erwartet, dass die Teams bis spätestens **5 Minuten nach Start** der Spielrunde 3 Spieler in dem Match haben. Sollte ein Team nicht zum Qualifizierung-spiel erscheinen muss es ihre Qualifizierung verschieben. Das neue Spiel sollte 4 stunden nach der eigentlichen Spielrunde sein.
+- Once qualifiers have concluded, teams will be seeded into the top 32 using z-sum as a calculation method.
+
+</div>
+
+<Divider variant="single" />
+
+<Heading sub>SPIELRUNDE</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- Die Sieg-Bedingung für jede Spielrunde ist **Team gegen Team** ("TeamVS").
+- Die Auswahl von Maps zum Aufwärmen, zu Schützen, oder zu Sperren, sowie die Auswahl der nächsten zu spielenden Map müssen jeweils **innerhalb von 2 Minuten** erfolgen.
+- Es wird erwartet, dass die Teams bis **spätestens 5 Minuten nach Start der Spielrunde 3 Spieler in dem Match** haben. Sollte ein Team nicht pünktlich erscheinen gibt es folgende Strafen:
+  - 5 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu schützen (protect).
+  - 10 Minuten zuspät: Dem Team ist es nicht mehr erlaubt eine Map zu sperren (ban).
+  - 15 minuten zu spät: Das Team wird gezwingen aufzugeben (FF).
+- Die Spieler müssen folgende "Sitzplätze" in der Spielrunde einnehmen:
+  - Team 1 (Rot): Platz 1, 2, und 3.
+  - Team 2 (Blau): Platz 4, 5, und 6.
+- Die Teamkapitäne werden den "/roll" Befehl in dem Discord Thread ihrer Spielrunde nutzen, dies dient zur Festlegung der Ban/Pick Reihenfolge. Der Kapitän mit der höheren Roll-Score darf eine der Aktionen auswählen, der Kaptiän mit der niedrigeren Roll-Score bekommt automatisch das verbleibende:
+  - Erst Whälen, aber als Zweites eine map Sperren.
+  - Als Zweites Wählen, aber zuerst eine Map Sperren.
+- Den Teams ist es erlaubt eine Map ihrer Wahl zum Aufwärmen zu spielen.
+  - Die Map darf **nicht länger als 4 Minuten lang** sein.
+  - Die Map darf **nicht im Mappool** sein.
+- Die zu Schützende Map wird privat an den Schiedsrichter (Referee) übermittelt, dies geschieht vor der Sperrphase (Ban phase).
+- Die Sperrphase (Ban phase) wird im **"snake format"** (ABBA) abgehalten.
+  - Team 1 sperrt eine Map.
+  - Team 2 sperrt 2 Maps.
+  - Team 1 sperrt eine Map.
+- Sollte eine der gesperrten **Maps von einem der Teams geschützt sein, wird die Sperrung annulliert** und die Map wird regulär spielbar sein.
+- Das **doppelt Sperren einer Mod im Mappool ist nicht erlaubt**, mit Ausnahme der "No-Mod" Maps.
+- Das wählen derselben Mod 2-mal in Folge ist nicht erlaubt, mit Ausnahme der "**Lazer-Mod**" und "**No-Mod**" Maps.
+- Spieler dürfen den Tiebreaker mit jeder Mod spielen, die nicht alle Spieler beeinflusst.
+- Jedes Team hat **eine 5 minütige Pause**, welche zu jeder Zeit in der Spielrunde genutzt werden kann.
+- Falls ein Spieler **innerhalb der ersten Minute der Map** die Verbindung verliert, **wird die Map abgebrochen**. Das Team hat dann **5 Minuten Zeit einen anderen Spieler für die Map einzutauschen**. Dies sollte nur ein mal Pro Team/Spielrunde passieren.
+
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>MAPPOOL INFO</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="padding mb-5 overflow-x-scroll">
+  <MappoolTable />
+</div>
+
+<div className="text-blue">
+
+- Der Mappool wird jede Woche am **Sonntag** veröffentlicht.
+- lazer Mod, LM abgekürzt, ist ein Modpool welcher jede Woche andere Mods nutzt, welche in lazer zu finden sind.
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>BELOHNUNGS- UND PREISLISTE</Heading>
+<Divider />
+
+- Der MVP des Turniers
+  - **Individuell angepasste WLmaus Beast X mini Maus** entworfen von Spoo und bemalt von Dovacustoms. Die individuelle Maus wird den Spielernamen auf oben auf die Maus aufgedruckt bekommen.
+- Erster Platz
+  - $500 aufgeteilt zwischen den Spielern.
+  - **Individuell angepasstes Tablet-Cover**, entworfen von Spoo und hergestellt von Bluebunny.
+  - Ein animiertes Team Banner.
+- Zweiter Platz
+  - $200 aufgeteilt zwischen den Spielern.
+  - Statisches Team Banner.
+- Dritter Platz
+  - $100 aufgeteilt zwischen den Spielern.
+  - Statisches Team Banner.
+
+</Background>

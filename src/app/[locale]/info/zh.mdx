@@ -1,0 +1,214 @@
+import { Background } from "~/components/ui/background"
+import { Divider } from "~/components/ui/divider"
+import { Heading } from "~/components/ui/heading"
+import { MappoolTable } from "~/features/info/components/mappool-table"
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>通则</Heading>
+<Divider />
+
+- TEST Open 是一个仅在 **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** 上举办的 osu! 赛事。
+- 队伍由 **3-5 名**选手组成。
+- 每队须在每张谱面中派 **3 名选手**上场。
+- 参赛者**没有排名要求**。
+- 所有参赛队伍，须在指定周末参加资格赛。
+- 资格赛前 **32 名**的队伍将继续参加**双败淘汰赛**。
+- 所有选手必须加入**[Discord 服务器](https://discord.com/invite/nZnQZMvEhq)** 并将昵称设置为自己的 **osu! 用户名**。
+- 时间将以 **UTC-0** 与 **Discord 时间戳** 的方式列出。
+- 除下列职位以外，任何赛事工作人员不允许作为选手参赛：
+  - 直播员
+  - 解说
+  - 美术设计
+  - 翻译员
+
+<Divider variant="single" />
+
+<Heading sub>SCHEDULE</Heading>
+
+<div className="padding">
+<div className="px-7 md:px-9 lg:px-11">
+
+**Registrations:** February 26th - March 18th
+
+**Screening:** March 18th - March 30th
+
+**Qualifiers:** April 5th - 7th
+
+**RO32:** April 12th - 14th
+
+**RO16:** April 19th - 21st
+
+**Quarterfinals:** April 26th - 28th
+
+**Semifinals:** May 3rd - 5th
+
+**Finals:** May 10th - 12th
+
+**Grand Finals:** May 17th - 19th
+
+</div>
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>报名</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- 您必须同时使用您的 **osu!** 与 **Discord 账号**注册网站。
+- 队伍创建与管理将通过 **[TEST Open 网站](https://test-open.com)** 完成。
+- 若要创建 **自由人选手自荐帖** ，请到 **discord 服务器**，找到 looking-for-team 频道，利用 **TEST Bot** 在那里发布一个帖子。
+- 如果网站宕机，您可以咨询赛事管理员填写**报名表** 。不过使用这种方式报名后，直到网站手动更新前，您的信息只会在主表上显示，而不会在网站中显示。
+- 赛事团队不会创建**自由人选手队伍**。如果您想参赛，您必须自己寻找队伍。
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>行为准则</Heading>
+<Divider />
+
+- 请尊重选手与赛事工作人员。
+- 禁止**歧视性用语**。包括但不限于：
+  - 种族歧视
+  - 冒犯 LGBTQ+ 团体的用语
+  - 性别歧视言论
+  - 仇恨言论
+- TEST Open 绝不容忍任何类型的欺凌行为。
+- 禁止**NSFW 内容**。包括：
+  - 裸露
+  - 血腥/暴力内容
+  - 滥用药品/酒精
+  - 令人不适的内容
+- 请尽可能减少**争论**。
+- 尊重不同地域文化。
+- 任何情况下禁止**开盒**。
+- 被**Discord 用户条款**所禁止的内容也会被禁止。
+- **英语是本赛事官方语言**，请在与工作人员交流时注意这点。
+- 如果你看到任何人违反了上述任何规则，请联系**社区管理或赛事管理**来解决问题。
+- 总之，请依**常识**行事，共同构建**和谐友善**的环境！
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>时间安排</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- 比赛将通过 Discord 服务器的 **TEST Bot** 进行安排。
+- 请使用 **/schedule** 命令并按照提示输入信息，完成资格赛房间的时间安排或调整。
+- 请使用 **/reschedule** 命令并按照提示输入信息，进行比赛的时间调整。使用指令后会在 scheduling 频道发送时间调整请求。
+- **双方队长必须均点击**位于 scheduling 频道的重排时间请求上的 **accept** 来完成时间重排。
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>对局流程</Heading>
+<Divider />
+
+- 所有谱面将使用 **osu! Lazer 默认计分方式**来计分。
+- **NoFail** 将会被强制开启。
+- 裁判会联系参赛双方队长。
+  - 队长负责向自己队伍传递裁判给出的信息。
+  - 每场比赛前 **15 分钟**会有提醒发出。
+  - 每场比赛前 **10 分钟**会有该比赛的房间名和密码发出。
+- 当谱面被选择后，参赛选手有 **2 分钟**时间加入房间。
+
+<Divider variant="single" />
+
+<Heading sub>资格赛</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- 谱面的游玩顺序与图池所列顺序相同。
+- 如果选手**在谱面开始一分钟内掉线**，选手会在**该资格赛房最后**重玩此谱面。
+- 队伍需要在**资格赛房间预定开始时间后 5 分钟**内保证有 3 名选手在房间中。如果队伍未能出席，则必须重排资格赛房间。其开始时间必须晚于他们未能出席的房间至少 **4 小时**。
+- Once qualifiers have concluded, teams will be seeded into the top 32 using z-sum as a calculation method.
+
+</div>
+
+<Divider variant="single" />
+
+<Heading sub>正赛</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- 每场比赛的获胜条件均为 **TeamVS** 。
+- 热手图，保图，禁图和选图消息须在 **2 分钟**内发出。
+- 队伍需要在**比赛预定开始时间后 5 分钟**内保证有 3 名选手在房间中。他们会在后续时间节点放弃如下权利。
+  - 迟到 5 分钟放弃保图。
+  - 迟到 10 分钟放弃禁图。
+  - 迟到 15 分钟放弃比赛。
+- 选手必须按照队伍站在房间的指定位置。
+  - 队伍 1 （红队）：位置 1， 2， 3。
+  - 队伍 2 （蓝队）：位置 4， 5， 6。
+- 队长将在对应比赛的 **Discord 子区中使用 /roll 指令**来决定**选图/禁图 顺序**。拥有较高roll点的队长可以选择下列两者之一，对方队长将自动获得另一个：
+  - 先选后禁
+  - 后选先禁
+- 队伍在赛前可以选择一个谱面作为热手图。
+  - 热手图必须**短于 4 分钟**。
+  - 热手图**不应是图池的一部分**。
+- 保图将在禁图阶段前**私信提交**给裁判。
+- 禁图将以**蛇形方式** (ABBA) 进行。
+  - 队伍 1 禁用
+  - 队伍 2 禁用两次
+  - 队伍 1 禁用
+- 当禁图和保图阶段结束后，**对保图的禁用将直接失效**，该谱面可正常选取。
+- 除了 **No-Mod 图**以外，一方不能禁用**两张同 mod 池中的图**。
+- 除了 **No-Mod**和**Lazer-Mod**图以外，一方不能**连续**选取**两张同 mod 池中的图**。
+- 除了**改变全局速度的mod**，选手可以使用任何 mod 游玩决胜图。
+- 每只队伍拥有**一次 5 分钟的暂停**，可于一场比赛中的任何时刻使用。
+- 如果选手**在谱面开始的一分钟内掉线**，这个谱面会被**中止**，队伍将有** 5 分钟**时间指派另一位选手游玩该谱面。每场比赛每支队伍只有一次机会。
+
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>图池信息</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="padding mb-5 overflow-x-scroll">
+  <MappoolTable />
+</div>
+
+<div className="text-blue">
+
+- 图池将会在每**周日**公布。
+- Lazer Mod，简称LM，是一个从Lazer客户端提供的新模组中，每周选用不同模组组成的模组池。
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>奖池</Heading>
+<Divider />
+
+- 赛事的MVP
+  - 由 Spoo 设计，Dovacustoms 喷涂的**定制 WLmouse Beast X mini 鼠标**。该定制鼠标上面会喷涂选手的名字。
+- 第一名
+  - 由队员均分 $500
+  - 由 Spro 设计，Bluebunny 制造的**定制 TEST Open 触控板贴膜**
+  - 动态队伍Banner
+- 第二名
+  - 由队员均分 $200
+  - 静态队伍Banner
+- 第三名
+  - 由队员均分 $100
+  - 静态队伍Banner
+
+</Background>

@@ -1,5 +1,6 @@
 import type { NextConfig } from "next"
 
+import createMDX from "@next/mdx"
 import { varlockNextConfigPlugin } from "@varlock/nextjs-integration/plugin"
 import createNextIntlPlugin from "next-intl/plugin"
 
@@ -12,10 +13,12 @@ const nextConfig: NextConfig = {
     useTypeScriptCli: true,
     turbopackRustReactCompiler: true
   },
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   images: { remotePatterns: [{ hostname: "assets.ppy.sh" }] }
 }
 
+const withMDX = createMDX()
 const withVarlock = varlockNextConfigPlugin()
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts")
 
-export default withVarlock(withNextIntl(nextConfig))
+export default withVarlock(withMDX(withNextIntl(nextConfig)))

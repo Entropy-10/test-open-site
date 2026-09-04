@@ -27,7 +27,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${inter.className} antialiased`}>
-      <body className="flex min-h-screen flex-col overflow-x-hidden">
+      <body className="bg-milky-white flex min-h-screen flex-col overflow-x-hidden">
         <NextIntlClientProvider>
           <Header />
           <main className="flex-1">{children}</main>

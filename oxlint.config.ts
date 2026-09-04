@@ -12,6 +12,7 @@ export default defineConfig({
     "eslint/curly": "off",
     "eslint/func-style": "off",
     "eslint/sort-keys": "off",
+    "promise/prefer-await-to-then": "off",
     "unicorn/no-await-expression-member": "off",
     "react/function-component-definition": "off"
   }

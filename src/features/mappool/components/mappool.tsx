@@ -1,15 +1,7 @@
-import type { ReactNode } from "react"
+import { Fragment } from "react"
 
 import { MapInfo } from "./map-info"
-import type { Map } from "~/lib/db/schema"
-
-function ModPoolContainer({ children }: { children: ReactNode }) {
-  return (
-    <div className="padding flex flex-wrap justify-center gap-5 py-8">
-      {children}
-    </div>
-  )
-}
+import type { ModPool } from "~/utils/mods"
 
 function Divider() {
   return (
@@ -19,76 +11,15 @@ function Divider() {
   )
 }
 
-export function Mappool({ maps }: { maps: Map[] }) {
-  if (!maps || maps.length === 0) return
-
-  const sortedMaps = maps.toSorted(
-    (a, b) => Number(a.slot.slice(-1)) - Number(b.slot.slice(-1))
-  )
-
-  return (
-    <>
-      <ModPoolContainer>
-        {sortedMaps
-          .filter((map) => map.mod === "LM")
-          .map((map) => (
-            <MapInfo key={map.beatmapId} map={map} />
-          ))}
-      </ModPoolContainer>
-
-      <Divider />
-
-      <ModPoolContainer>
-        {sortedMaps
-          .filter((map) => map.mod === "NM")
-          .map((map) => (
-            <MapInfo key={map.beatmapId} map={map} />
-          ))}
-      </ModPoolContainer>
-
-      <Divider />
-
-      <ModPoolContainer>
-        {sortedMaps
-          .filter((map) => map.mod === "HD")
-          .map((map) => (
-            <MapInfo key={map.beatmapId} map={map} />
-          ))}
-      </ModPoolContainer>
-
-      <Divider />
-
-      <ModPoolContainer>
-        {sortedMaps
-          .filter((map) => map.mod === "HR")
-          .map((map) => (
-            <MapInfo key={map.beatmapId} map={map} />
-          ))}
-      </ModPoolContainer>
-
-      <Divider />
-
-      <ModPoolContainer>
-        {sortedMaps
-          .filter((map) => map.mod === "DT")
-          .map((map) => (
-            <MapInfo key={map.beatmapId} map={map} />
-          ))}
-      </ModPoolContainer>
-
-      {sortedMaps.some((map) => map.mod === "TB") && (
-        <>
-          <Divider />
-
-          <ModPoolContainer>
-            {sortedMaps
-              .filter((map) => map.mod === "TB")
-              .map((map) => (
-                <MapInfo key={map.beatmapId} map={map} />
-              ))}
-          </ModPoolContainer>
-        </>
-      )}
-    </>
-  )
+export function Mappool({ pools }: { pools: ModPool[] }) {
+  return pools.map((pool, index) => (
+    <Fragment key={pool.mod}>
+      {index > 0 && <Divider />}
+      <div className="padding flex flex-wrap justify-center gap-5 py-8">
+        {pool.maps.map((map) => (
+          <MapInfo key={map.beatmapId} map={map} />
+        ))}
+      </div>
+    </Fragment>
+  ))
 }

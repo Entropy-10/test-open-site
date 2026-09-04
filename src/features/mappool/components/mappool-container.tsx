@@ -28,7 +28,7 @@ export async function MappoolContainer({ round }: { round: Round }) {
 
       <PoolSelector />
 
-      <Mappool maps={mappool.maps} />
+      <Mappool pools={mappool.pools} />
     </div>
   )
 }

@@ -1,0 +1,214 @@
+import { Background } from "~/components/ui/background"
+import { Divider } from "~/components/ui/divider"
+import { Heading } from "~/components/ui/heading"
+import { MappoolTable } from "~/features/info/components/mappool-table"
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>大会概要</Heading>
+<Divider />
+
+- TEST Open は **[osu! Lazer](https://osu.ppy.sh/wiki/en/Help_centre/Upgrading_to_lazer)** を使って行われるトーナメントです。
+- チームの人数は **3人~5人** です。
+- チームは譜面ごとに**3人のプレイヤー**を選択する必要があります。
+- **ランクの制限はありません。**
+- 参加する全てのチームは、指定の週末 (後述) に予選を受けなければなりません。
+- 予選の **上位32チーム** が **ダブルイリミネーション** ブラケットに進出できます。
+- 参加する全てのプレイヤーは、**[Discord Server](https://discord.com/invite/nZnQZMvEhq)** に参加し、ニックネームを**osu!のユーザーネーム** に変更する必要があります。
+- 時刻はすべて **UTC-0 (協定世界時)** と **Discordのローカル時間** で表記されます。
+- これら以外の役割を持つスタッフは、プレイヤーとして参加することができません。
+  - ストリーマー (配信者)
+  - コメンテーター
+  - デザイナー
+  - 翻訳者
+
+<Divider variant="single" />
+
+<Heading sub>スケジュール</Heading>
+
+<div className="padding">
+<div className="px-7 md:px-9 lg:px-11">
+
+**参加登録：** ２月２６日～３月１８日
+
+**スクリーニング：** ３月１８日～３０日
+
+**予選：** ４月５日～７日
+
+**RO32： **４月１２日～１４日
+
+**RO16：** ４月１９日～２１日
+
+**Quarterfinals：** ４月２６日～２８日
+
+**Semifinals：** ５月３日～５日
+
+**Finals:：** ５月１０日～１２日
+
+**Grand Finals：** ５月１７日～１９日
+
+</div>
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>参加登録</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- **osu!** と **Discordアカウント** の両方をウェブサイトに登録する必要があります。
+- チームの作成および管理は、 **[TEST Open ウェブサイト](https://test-open.com)** を通じて行われます。
+- **フリーエージェントの投稿**を作成するには、**discordサーバー**で、#looking-for-teamチャンネルを使用してください。 そこで**TEST Bot**を使って投稿を作成できます。
+- ウェブサイトがダウンしている場合は、管理者に**登録用フォーム**を求めることができます。 ただし、 この方法でサインアップする場合、手動で更新されるまで、あなたの情報はシート上には表示されますが、ウェブサイトは表示されません。
+- スタッフチームは**フリーエージェントチーム**を作成しません。参加したい場合は、どこかのチームに所属する必要があります。
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>諸注意</Heading>
+<Divider />
+
+- 他のプレイヤーとすべてのスタッフに敬意を払ってください。
+- **差別的な用語** を使用しないでください。以下が該当しますが、これらに限定したわけではありません。
+  - 人種差別
+  - LGBTQ+の方が不快だと感じる言葉
+  - 性差別発言
+  - ヘイトスピーチ
+- TEST Open はいかなる種類のいじめも許すことはありません。
+- **NSFWコンテンツ** は禁止されています。これには以下の内容が含まれます。
+  - ヌード
+  - グロ・暴力的な表現
+  - 薬物・アルコールの乱用示唆
+  - 不愉快なコンテンツ
+- **議論** は最小限にとどめましょう。
+- 意見の相違が生まれたときは、穏便に事を進めましょう。
+- **晒し行為** はいかなる場合でも許されません。
+- **Discord's Terms of Service** で禁止されているコンテンツは使用できません。
+- このトーナメントの主要言語は **英語** ですので、コミュニケーションを図る際はこれを留意しておいてください。
+- もし、誰かがこれらのルールを破っているのを見かけた場合は **モデレーター または 管理者** に連絡し、解決してもらいましょう。
+- **常識** を意識し、誰にとっても **歓迎されるような環境** を皆さんで作りましょう！
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>スケジューリング</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="text-blue">
+
+- 試合のスケジュール調整は、Discordサーバーの **TEST Bot** を通じて行います。
+- 予選のロビー登録や、スケジュールの変更については、 **/schedule** コマンドを使用して行ってください。
+- 試合をリスケジュールする場合、 **/reschedule** コマンドを使用してください。これにより、スケジュールチャンネルにリスケジュールのリクエストが送信されます。
+- リスケジュールを完了させるには、スケジュールのチャンネルにて、**両チームのキャプテンが accept をクリック** する必要があります。
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>試合手順</Heading>
+<Divider />
+
+- すべてのスコアは、**osu! lazer のデフォルトスコア方式** が採用されます。
+- **NoFail** が適用されます。
+- レフェリーは、試合の参加チームのキャプテンに連絡を行います。
+  - 各キャプテンは、レフェリーから受けた連絡を自分のチームに伝える責任があります。
+  - 試合のリマインダーは、各試合の**15分前**に行われます。
+  - Lazerの部屋名およびパスワードは、各試合の**10分前**に送信されます。
+- プレイするプレイヤーは、譜面が選択されてから２分以内にロビーに参加してください。
+
+<Divider variant="single" />
+
+<Heading sub>予選</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- 譜面の順番は、マッププールの順番と同じ順です。
+- もしプレイヤーが **譜面の最初の１分以内** に切断された場合、そのプレイヤーは **そのロビーの最終譜面の後** に再度その譜面をプレイします。
+- 各チームは、**試合の開始時間から5分以内** に3人のプレイヤーをロビーに揃える必要があります。もし3人揃わない場合、そのチームは違うロビーにリスケジュールを行わなければなりません。また、リスケジュールはそのロビーから**4時間以上後**のロビーでなければなりません。
+- Once qualifiers have concluded, teams will be seeded into the top 32 using z-sum as a calculation method.
+
+</div>
+
+<Divider variant="single" />
+
+<Heading sub>試合手順</Heading>
+
+<div className="px-7 md:px-9 lg:px-11">
+
+- 各試合の勝利条件は **TeamVS** です。
+- ウォームアップ、プロテクト、バン、ピック は全て **2分以内** に選択しなければいけません。
+- 各チームは、試合開始時刻の **5分後**までに3人のプレイヤーを入室させなければいけません。遅刻すると、以下のペナルティが適用されます。
+  - 5分遅刻：プロテクト権利没収
+  - 10分遅刻：バン権利没収
+  - 15分遅刻：不戦敗扱い
+- プレイヤーは、それぞれのチームに対応するスロットにいる必要があります。
+  - チーム1(赤)：スロット１、２、３
+  - チーム2(青)：スロット４、５、６
+- 各キャプテンは**ピック、バンの順番**を決めるために、Discordの**試合用スレッドで/rollコマンド** を使用します。rollで高い値を出したキャプテンは、以下のいずれかを選択することができます。もう一方のキャプテンは、選ばれなかった方になります。
+  - ピック：先攻、バン：後攻
+  - ピック：後攻、バン：先攻
+- 各チームは、試合前にウォームアップの譜面を1つ選択することができます。
+  - ウォームアップは **4分未満** でなければなりません。
+  - ウォームアップに、**マッププールの譜面** は使用できません。
+- プロテクト (保護) は、バンを行うフェーズの前に、**非公開**で提出されます。
+- バンフェーズは、**スネーク形式** (ABBA) で行われます。
+  - チーム1 バン
+  - チーム2 バン(2回)
+  - チーム1 バン
+- バンおよびプロテクトのフェーズが終了すると、**プロテクトされた譜面はバン無効**となり、その譜面は通常通りプレイすることが可能になります。
+- **No-Mod**のプールを除き、**同じModプールから2個バン**するのは禁止されています。
+- **No-Mod**と**Lazer-Mod**のプールを除き、**同じModプールから2個連続でピック**するのは禁止されています。
+- タイブレーカー (Tiebreaker) では、**曲の速度変更以外**のすべてのmodを使用できます。
+- 各チームには**５分間のタイムアウト**を１回行うことができます。これは試合中いつでも使用できます。
+- もし、**譜面が始まって１分以内に切断**した場合、プレイが**中断**され、チームは**5分以内**に他のプレイヤーを準備して再度プレイを行います。これは各チームごとに１試合１回のみ可能です。
+
+</div>
+
+</Background>
+
+<Background className="text-light-blue py-10" gradient={false}>
+
+<Heading>マッププール</Heading>
+<Divider className="bg-light-blue" />
+
+<div className="padding mb-5 overflow-x-scroll">
+  <MappoolTable />
+</div>
+
+<div className="text-blue">
+
+- マッププールは、毎週 **日曜** に公開されます。
+- Lazer Mod (LM) とは、Lazerクライアントで使用できる新しいModが使用されます。毎週異なるmodが採用されます。
+
+</div>
+
+</Background>
+
+<Background className="py-10" imageClassName="brightness-95">
+
+<Heading>賞品</Heading>
+<Divider />
+
+- トーナメントMVP
+  - **TEST Openのためにカスタマイズされた WLmouse Beast X mini mouse** デザイン：Spoo 制作：Dovacustoms カスタムマウスには、プレイヤーの名前が描かれます！
+- 優勝
+  - $500 をチーム内で分配
+  - **TEST Openのために作られたタブレットカバー** 提供：Spoo 制作：Bluebunny
+  - アニメーションチームバナー
+- 準優勝
+  - $200 をチーム内で分配
+  - チームバナー
+- 第３位
+  - $100 をチーム内で分配
+  - チームバナー
+
+</Background>
