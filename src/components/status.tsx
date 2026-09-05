@@ -39,7 +39,7 @@ export default async function Status() {
 
   const t = await getTranslations("Status")
   const pageId = ENV.BETTER_STACK_STATUS_PAGE_ID
-  const apiURL = ENV.BETTER_STACK_UPTIME_API_URL
+  const apiURL = "https://uptime.betterstack.com/api/v2"
 
   const response = await fetch(`${apiURL}/status-pages/${pageId}`, {
     headers: { Authorization: `Bearer ${ENV.BETTER_STACK_UPTIME_API_KEY}` }

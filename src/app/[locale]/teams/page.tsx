@@ -6,7 +6,10 @@ import { getLocale, getTranslations } from "next-intl/server"
 import { Background } from "~/components/ui/background"
 import { Divider } from "~/components/ui/divider"
 import { Heading } from "~/components/ui/heading"
-import TeamList from "~/features/teams/components/team-list"
+import {
+  TeamList,
+  TeamListSkeleton
+} from "~/features/teams/components/team-list"
 import { createMetadata } from "~/utils/metadata"
 
 export async function generateMetadata() {
@@ -33,7 +36,7 @@ export default function TeamsPage() {
         </div>
       </Background>
 
-      <Suspense>
+      <Suspense fallback={<TeamListSkeleton />}>
         <TeamList />
       </Suspense>
     </div>

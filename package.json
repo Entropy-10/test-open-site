@@ -9,7 +9,7 @@
     "start": "portless test-open bun --bun next start",
     "fix": "ultracite fix",
     "check": "ultracite check",
-    "review": "ultracite check && tsc --noEmit",
+    "review": "bun check && tsc --noEmit",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio"
   },
@@ -49,6 +49,7 @@
     "drizzle-kit": "1.0.0-rc.4",
     "oxfmt": "^0.66.0",
     "oxlint": "^1.81.0",
+    "portless": "^0.15.6",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
     "ultracite": "^7.10.7"

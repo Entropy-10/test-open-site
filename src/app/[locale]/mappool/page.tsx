@@ -7,6 +7,7 @@ import * as v from "valibot"
 import { Background } from "~/components/ui/background"
 import { Divider } from "~/components/ui/divider"
 import { Heading } from "~/components/ui/heading"
+import { MappoolSkeleton } from "~/features/mappool/components/mappool"
 import { MappoolContainer } from "~/features/mappool/components/mappool-container"
 import { RoundSchema } from "~/lib/db/schema"
 import { createMetadata } from "~/utils/metadata"
@@ -40,7 +41,7 @@ export default function MappoolPage({
         <Divider className="max-w-[180px] sm:max-w-[280px] md:max-w-[310px] lg:max-w-[360px]" />
       </Background>
 
-      <Suspense>
+      <Suspense fallback={<MappoolSkeleton />}>
         {searchParams.then((sp) => (
           <MappoolContainer round={parseRound(sp.round)} />
         ))}

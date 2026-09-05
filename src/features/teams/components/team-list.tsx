@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { getTeamsWithPlayers } from "../teams-queries"
 
-export default async function TeamList() {
+export async function TeamList() {
   const teams = await getTeamsWithPlayers()
   if (!teams) return null
 
@@ -65,6 +65,21 @@ export default async function TeamList() {
           </div>
         </div>
       ))}
+    </div>
+  )
+}
+
+export function TeamListSkeleton() {
+  return (
+    <div className="padding flex flex-wrap justify-center gap-5 py-8">
+      {Array.from({ length: 32 })
+        .fill(0)
+        .map((_, i) => (
+          <div
+            key={i}
+            className="h-[190px] w-[340px] animate-pulse bg-gray-200"
+          />
+        ))}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 
-import { MapInfo } from "./map-info"
+import { MapInfo, MapInfoSkeleton } from "./map-info"
 import type { ModPool } from "~/utils/mods"
 
 function Divider() {
@@ -19,6 +19,21 @@ export function Mappool({ pools }: { pools: ModPool[] }) {
         {pool.maps.map((map) => (
           <MapInfo key={map.beatmapId} map={map} />
         ))}
+      </div>
+    </Fragment>
+  ))
+}
+
+export function MappoolSkeleton() {
+  return [5, 4, 3, 3, 3, 1].map((size, index) => (
+    <Fragment key={index}>
+      {index > 0 && <Divider />}
+      <div className="padding flex flex-wrap justify-center gap-5 py-8">
+        {Array.from({ length: size })
+          .fill(0)
+          .map((_, i) => (
+            <MapInfoSkeleton key={i} />
+          ))}
       </div>
     </Fragment>
   ))

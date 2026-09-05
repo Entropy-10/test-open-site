@@ -166,3 +166,7 @@ export function MapInfo({ map }: { map: Map }) {
     </div>
   )
 }
+
+export function MapInfoSkeleton() {
+  return <div className="h-[187px] w-[400px] animate-pulse bg-gray-200" />
+}
