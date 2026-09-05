@@ -1,7 +1,19 @@
-import { getLocale } from "next-intl/server"
+import { getLocale, getTranslations } from "next-intl/server"
 import type { Locale } from "next-intl"
 
-// Kept out of the component: React Compiler cannot lower an import expression.
+import { createMetadata } from "~/utils/metadata"
+
+export async function generateMetadata() {
+  const locale = await getLocale()
+
+  const t = await getTranslations({ locale, namespace: "Metadata" })
+  return createMetadata({
+    locale,
+    title: t("PageTitles.info"),
+    description: t("description")
+  })
+}
+
 function loadContent(locale: Locale) {
   return import(`./${locale}.mdx`)
 }

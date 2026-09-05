@@ -1,6 +1,7 @@
 import { Suspense } from "react"
 
 import { useTranslations } from "next-intl"
+import { getLocale, getTranslations } from "next-intl/server"
 import * as v from "valibot"
 
 import { Background } from "~/components/ui/background"
@@ -8,7 +9,19 @@ import { Divider } from "~/components/ui/divider"
 import { Heading } from "~/components/ui/heading"
 import { MappoolContainer } from "~/features/mappool/components/mappool-container"
 import { RoundSchema } from "~/lib/db/schema"
+import { createMetadata } from "~/utils/metadata"
 import type { Round } from "~/lib/db/schema"
+
+export async function generateMetadata() {
+  const locale = await getLocale()
+
+  const t = await getTranslations({ locale, namespace: "Metadata" })
+  return createMetadata({
+    locale,
+    title: t("PageTitles.mappool"),
+    description: t("description")
+  })
+}
 
 function parseRound(value: string | string[] | undefined): Round {
   const round = v.safeParse(RoundSchema, value)

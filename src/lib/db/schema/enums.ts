@@ -1,6 +1,10 @@
 import { pgEnum } from "drizzle-orm/pg-core"
 import * as v from "valibot"
 
+export const playerRoleEnum = pgEnum("player_role", ["player", "captain"])
+export const PlayerRoleSchema = v.picklist(playerRoleEnum.enumValues)
+export type PlayerRole = v.InferOutput<typeof PlayerRoleSchema>
+
 export const roundEnum = pgEnum("round", [
   "qualifiers",
   "round_of_32",

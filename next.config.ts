@@ -14,7 +14,13 @@ const nextConfig: NextConfig = {
     turbopackRustReactCompiler: true
   },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
-  images: { remotePatterns: [{ hostname: "assets.ppy.sh" }] }
+  images: {
+    remotePatterns: [
+      { hostname: "a.ppy.sh" },
+      { hostname: "assets.ppy.sh" },
+      { hostname: "dtoyeiqtecliyympsgji.supabase.co" }
+    ]
+  }
 }
 
 const withMDX = createMDX()

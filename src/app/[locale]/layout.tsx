@@ -5,19 +5,41 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { NextIntlClientProvider } from "next-intl"
-import { getLocale } from "next-intl/server"
+import { getLocale, getTranslations } from "next-intl/server"
 import { Inter } from "next/font/google"
 
 import { Footer } from "~/components/footer"
 import { Header } from "~/components/header"
 import { routing } from "~/i18n/routing"
+import { genOgTwitterImage } from "~/utils/metadata"
+import { getBaseUrl } from "~/utils/site"
 
 export const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = { title: "TEST Open" }
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: "Metadata" })
+
+  return {
+    metadataBase: new URL(getBaseUrl()),
+    title: {
+      template: "%s • TEST Open",
+      default: "TEST Open"
+    },
+    description: t("description"),
+    ...genOgTwitterImage({
+      title: {
+        template: "%s",
+        default: "TEST Open"
+      },
+      description: t("description"),
+      locale
+    })
+  } satisfies Metadata
 }
 
 export default async function RootLayout({
