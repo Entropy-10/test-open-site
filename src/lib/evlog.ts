@@ -1,43 +1,56 @@
 import { createBetterStackDrain } from "evlog/better-stack"
-import {
-  createUserAgentEnricher,
-  createRequestSizeEnricher
-} from "evlog/enrichers"
 import { createEvlog } from "evlog/next"
-import { createInstrumentation } from "evlog/next/instrumentation/create"
+import {
+  createInstrumentation,
+  DEFAULT_CAPTURE_OUTPUT_IGNORE
+} from "evlog/next/instrumentation/create"
 import { createDrainPipeline } from "evlog/pipeline"
 import { ENV } from "varlock/env"
 import type { DrainContext } from "evlog"
 
-const enrichers = [createUserAgentEnricher(), createRequestSizeEnricher()]
+const service = "test-open-site"
 
-const pipeline = createDrainPipeline<DrainContext>({
+const ship = createDrainPipeline<DrainContext>({
   batch: { size: 50, intervalMs: 5000 },
-  retry: { maxAttempts: 3 }
-})
-
-export const drain = pipeline(
+  retry: { maxAttempts: 3 },
+  onDropped: (events, error) =>
+    console.error(
+      `[evlog] dropped ${events.length} event(s) before Better Stack`,
+      error
+    )
+})(
   createBetterStackDrain({
     apiKey: ENV.BETTER_STACK_WEBSITE_SOURCE_TOKEN,
     endpoint: ENV.BETTER_STACK_INGEST_HOST
   })
 )
 
-export const { register, onRequestError } = createInstrumentation({
-  drain,
-  service: "test-open-site"
-})
+function drain(ctx: DrainContext) {
+  ctx.event.deploymentId = ENV.VERCEL_DEPLOYMENT_ID
+  ship(ctx)
+}
 
-export const { withEvlog, useLogger, log, createError } = createEvlog({
+const shared = {
+  service,
   drain,
-  service: "test-open-site",
-  sampling: {
-    rates: { info: 100 },
-    keep: [{ status: 400 }, { duration: 1000 }]
-  },
-  enrich: (ctx) => {
-    for (const enricher of enrichers) enricher(ctx)
-    ctx.event.deploymentId = ENV.VERCEL_DEPLOYMENT_ID
-    ctx.event.region = ENV.VERCEL_REGION
+  env: { environment: ENV.APP_ENV },
+  sampling: { rates: { debug: ENV.APP_ENV === "production" ? 0 : 100 } }
+}
+
+export const { register, onRequestError } = createInstrumentation({
+  ...shared,
+  captureOutput: {
+    stdout: false,
+    stderr: true,
+    ignore: [...DEFAULT_CAPTURE_OUTPUT_IGNORE, "[evlog]"]
   }
 })
+
+export const { withEvlog, useLogger, log, createError } = createEvlog(shared)
+
+export function serializeError(error: unknown) {
+  if (error instanceof Error) {
+    return { name: error.name, message: error.message, stack: error.stack }
+  }
+  return { message: String(error) }
+}

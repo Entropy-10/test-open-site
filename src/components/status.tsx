@@ -6,7 +6,7 @@ import * as v from "valibot"
 import { ENV } from "varlock/env"
 
 import { StatusIcon } from "~/components/icons/status"
-import { log } from "~/lib/evlog"
+import { log, serializeError } from "~/lib/evlog"
 
 const UptimeStatusPageSchema = v.object({
   id: v.string(),
@@ -41,25 +41,36 @@ export async function Status() {
   const pageId = ENV.BETTER_STACK_STATUS_PAGE_ID
   const apiURL = "https://uptime.betterstack.com/api/v2"
 
-  const response = await fetch(`${apiURL}/status-pages/${pageId}`, {
-    headers: { Authorization: `Bearer ${ENV.BETTER_STACK_UPTIME_API_KEY}` }
-  })
+  let json: unknown
+  try {
+    const response = await fetch(`${apiURL}/status-pages/${pageId}`, {
+      headers: { Authorization: `Bearer ${ENV.BETTER_STACK_UPTIME_API_KEY}` }
+    })
 
-  if (!response.ok) {
+    if (!response.ok) {
+      log.error({
+        component: "Status",
+        message: "Failed to fetch status page",
+        httpStatus: response.status,
+        pageId
+      })
+      return null
+    }
+
+    json = await response.json()
+  } catch (error) {
     log.error({
       component: "Status",
-      message: "Failed to fetch status page",
-      httpStatus: response.status,
-      pageId
+      message: "Could not reach the status page API",
+      pageId,
+      error: serializeError(error)
     })
     return null
   }
 
-  const json = await response.json()
-
   const { success, output, issues } = v.safeParse(
     UptimeStatusPageSchema,
-    json.data
+    (json as { data?: unknown })?.data
   )
   if (!success) {
     log.error({

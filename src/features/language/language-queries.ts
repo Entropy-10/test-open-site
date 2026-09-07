@@ -5,6 +5,8 @@ import { cacheLife, cacheTag } from "next/cache"
 import { ENV } from "varlock/env"
 import { z } from "zod"
 
+import { log, serializeError } from "~/lib/evlog"
+
 const baseUrl = "https://api.crowdin.com/api/v2"
 
 const wordStatsSchema = z.object({
@@ -67,14 +69,43 @@ export async function getTranslationProgress() {
   cacheLife("days")
   cacheTag("language-progress")
 
-  const res = await fetch(
-    `${baseUrl}/projects/${ENV.CROWDIN_PROJECT_ID}/languages/progress`,
-    { headers: { Authorization: `Bearer ${ENV.CROWDIN_TOKEN}` } }
-  )
-  const resJson = await res.json()
-  const { success, data } = languageProgressResponseSchema.safeParse(resJson)
+  let responseJson: unknown
+  try {
+    const res = await fetch(
+      `${baseUrl}/projects/${ENV.CROWDIN_PROJECT_ID}/languages/progress`,
+      { headers: { Authorization: `Bearer ${ENV.CROWDIN_TOKEN}` } }
+    )
 
-  if (!success || "error" in data) return null
+    if (!res.ok) {
+      log.error({
+        component: "language-progress",
+        message: "Crowdin rejected the progress request",
+        httpStatus: res.status
+      })
+      return null
+    }
+
+    responseJson = await res.json()
+  } catch (error) {
+    log.error({
+      component: "language-progress",
+      message: "Could not reach Crowdin",
+      error: serializeError(error)
+    })
+    return null
+  }
+
+  const { success, data, error } =
+    languageProgressResponseSchema.safeParse(responseJson)
+
+  if (!success || "error" in data) {
+    log.error({
+      component: "language-progress",
+      message: "Unexpected Crowdin response shape",
+      issues: error?.issues.map((issue) => issue.message)
+    })
+    return null
+  }
 
   return data.data.map(({ data: { language, translationProgress } }) => ({
     code: language.editorCode,

@@ -2,6 +2,7 @@
 
 import { useEffect } from "react"
 
+import { log } from "evlog/next/client"
 import { useTranslations } from "next-intl"
 
 import { Background } from "~/components/ui/background"
@@ -16,8 +17,18 @@ interface ErrorProps {
 
 export default function ErrorPage({ error, reset }: ErrorProps) {
   const t = useTranslations("ErrorPage")
+
   useEffect(() => {
-    console.error(error) // switch to evlog
+    log.error({
+      component: "ErrorBoundary",
+      message: error.message,
+      digest: error.digest,
+      error: {
+        name: error.name,
+        message: error.message,
+        stack: error.stack
+      }
+    })
   }, [error])
 
   return (

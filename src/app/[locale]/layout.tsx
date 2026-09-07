@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { EvlogProvider } from "evlog/next/client"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getTranslations } from "next-intl/server"
 import { Inter } from "next/font/google"
@@ -50,13 +51,18 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${inter.className} antialiased`}>
       <body className="bg-milky-white flex min-h-screen flex-col overflow-x-hidden">
-        <NextIntlClientProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </NextIntlClientProvider>
+        <EvlogProvider
+          service="test-open-site"
+          transport={{ enabled: true, endpoint: "/api/evlog/ingest" }}
+        >
+          <NextIntlClientProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <Analytics />
+            <SpeedInsights />
+          </NextIntlClientProvider>
+        </EvlogProvider>
       </body>
     </html>
   )
