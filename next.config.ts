@@ -14,11 +14,7 @@ const nextConfig: NextConfig = {
   },
   pageExtensions: ["mdx", "ts", "tsx"],
   images: {
-    remotePatterns: [
-      { hostname: "a.ppy.sh" },
-      { hostname: "assets.ppy.sh" },
-      { hostname: "dtoyeiqtecliyympsgji.supabase.co" }
-    ]
+    remotePatterns: [{ hostname: "a.ppy.sh" }, { hostname: "assets.ppy.sh" }]
   }
 }
 

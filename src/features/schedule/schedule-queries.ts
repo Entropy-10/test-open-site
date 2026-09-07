@@ -18,7 +18,7 @@ export async function getMatchesWithTeamsAndPlayers() {
           with: { players: { with: { user: { columns: { rank: true } } } } }
         }
       },
-      where: { round: "grand finals" },
+      where: { round: "grand_finals" },
       orderBy: { matchId: "asc" }
     })
   } catch (error) {

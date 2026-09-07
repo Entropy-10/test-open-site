@@ -1,12 +1,12 @@
 import * as d from "drizzle-orm/pg-core"
 import { createSelectSchema } from "drizzle-orm/valibot"
 
-import { matchTypeEnum } from "./enums"
+import { matchTypeEnum, roundEnum } from "./enums"
 import { teams } from "./teams"
 
 export const matches = d.snakeCase.table("matches", {
   id: d.integer().primaryKey().generatedByDefaultAsIdentity(),
-  round: d.text().notNull(),
+  round: roundEnum().notNull(),
   matchId: d.integer().notNull().unique(),
   date: d.text().notNull(),
   time: d.text().notNull(),
