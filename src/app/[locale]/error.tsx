@@ -32,8 +32,10 @@ export default function ErrorPage({ error, reset }: ErrorProps) {
             variant="outline"
             className="max-xs:w-full"
             nativeButton={false}
-            render={<Link href="/">{t("goHomeButton")}</Link>}
-          />
+            render={<Link href="/" />}
+          >
+            {t("goHomeButton")}
+          </Button>
         </div>
       </MessageBox>
     </Background>

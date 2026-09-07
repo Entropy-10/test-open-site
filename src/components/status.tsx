@@ -33,7 +33,7 @@ const statusColors: Record<
   maintenance: "rgb(96, 165, 250)"
 }
 
-export default async function Status() {
+export async function Status() {
   "use cache"
   cacheLife("minutes")
 

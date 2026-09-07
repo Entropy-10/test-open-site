@@ -14,7 +14,7 @@ import { routing } from "~/i18n/routing"
 import { genOgTwitterImage } from "~/utils/metadata"
 import { getBaseUrl } from "~/utils/site"
 
-export const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] })
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))

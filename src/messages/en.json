@@ -50,6 +50,7 @@
     "profile": "PROFILE"
   },
   "Buttons": {
+    "registrationClosed": "REGISTRATION CLOSED",
     "register": "REGISTER",
     "signIn": "SIGN IN",
     "signOut": "SIGN OUT",

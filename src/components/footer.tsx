@@ -4,7 +4,7 @@ import { Suspense } from "react"
 import { useTranslations } from "next-intl"
 
 import whiteLogo from "../../public/images/logo-white.png"
-import Status, { StatusSkeleton } from "./status"
+import { Status, StatusSkeleton } from "./status"
 import { NavLink } from "./ui/nav-link"
 import { ChallongeIcon } from "~/components/icons/challonge"
 import { DiscordIcon } from "~/components/icons/discord"
@@ -54,9 +54,12 @@ export function Footer() {
 
         <div className="order-first flex grow items-center justify-center md:order-0 md:justify-between">
           <Button
+            disabled
             className="hidden md:flex"
             nativeButton={false}
-            render={<Link href="/register">{buttonsT("register")}</Link>}
+            render={
+              <Link href="/register">{buttonsT("registrationClosed")}</Link>
+            }
           />
 
           <div className="mt-5 flex items-center space-x-5 *:cursor-pointer *:outline-hidden max-md:mt-0 md:justify-end">

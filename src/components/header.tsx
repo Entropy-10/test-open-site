@@ -1,17 +1,17 @@
 import { Suspense } from "react"
 
-import { getTranslations } from "next-intl/server"
+import { useTranslations } from "next-intl"
 
-import { Button } from "./ui/button"
+import { MobileNav } from "./mobile-nav"
 import { NavLink } from "./ui/nav-link"
 import { LogoIcon } from "~/components/icons/logo"
 import { LanguagePickerSkeleton } from "~/features/language/components/language-picker"
-import LanguageWrapper from "~/features/language/components/language-wrapper"
+import { LanguageWrapper } from "~/features/language/components/language-wrapper"
 import { Link } from "~/i18n/navigation"
 import { navLinks } from "~/utils/links"
 
-export async function Header() {
-  const t = await getTranslations("NavItems")
+export function Header() {
+  const t = useTranslations("NavItems")
 
   return (
     <header className="bg-milky-white h-14">
@@ -45,7 +45,7 @@ export async function Header() {
             <LanguageWrapper />
           </Suspense>
 
-          <Button variant="invertedDefault">Sign In</Button>
+          <MobileNav />
         </div>
       </section>
     </header>
