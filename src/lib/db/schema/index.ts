@@ -1,6 +1,7 @@
 export * from "./mappool"
 export * from "./enums"
 export * from "./maps"
+export * from "./matches"
 export * from "./teams"
 export * from "./players"
 export * from "./users"

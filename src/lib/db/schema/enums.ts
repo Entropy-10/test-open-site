@@ -21,6 +21,10 @@ export const modEnum = pgEnum("mod", ["NM", "HD", "HR", "DT", "LM", "TB"])
 export const ModSchema = v.picklist(modEnum.enumValues)
 export type Mod = v.InferOutput<typeof ModSchema>
 
+export const matchTypeEnum = pgEnum("match_type", ["loser", "loser2", "winner"])
+export const MatchTypeSchema = v.picklist(matchTypeEnum.enumValues)
+export type MatchType = v.InferOutput<typeof MatchTypeSchema>
+
 export const subModEnum = pgEnum("sub_mod", [
   "BR",
   "TC",
