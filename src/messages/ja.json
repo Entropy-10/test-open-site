@@ -14,28 +14,13 @@
         "mappool": "LazerModプールでは毎週新しいModを搭載",
         "format": "ランク制限なし、ダブルイリミネーション、3v3のトーナメント",
         "schedule": "Twitchで配信される試合を観戦しよう"
-      },
-      "Countdown": {
-        "titleSectionOne": "トーナメント",
-        "titleSectionTwo": "開始まであと"
       }
     },
     "Originals": {
-      "title": "オリジナル",
       "subtitle": "オリジナルソングはまもなく公開。",
       "description": "ステージを進めて、TESTオリジナルを解禁しよう。さまざまな才能あふれるクリエイターがカスタム曲を制作。予選、セミファイナル、ファイナル、グランドファイナルでリリースされます。どのオリジナルも独自のスタイルとアートを備えています。これらはステージを勝ち進んだプレイヤーだけのものです！",
       "tracksTitle": "トラックリスト",
       "listenButton": "今すぐ聞く"
-    },
-    "SponsorSpot": {
-      "sponsoredBy": "TEST OPEN は以下からスポンサーをいただいております。",
-      "sponsorMessage": "カスタムタブレットカバーを適正価格でお届け",
-      "Coupon": {
-        "save": "10%割引価格でお届け",
-        "codeTitle": "コード：",
-        "checkout": "購入時に使用",
-        "shopButton": "今すぐ購入"
-      }
     }
   },
   "NavItems": {
@@ -49,12 +34,7 @@
     "team": "チーム",
     "profile": "プロフィール"
   },
-  "Buttons": {
-    "register": "参加登録",
-    "signIn": "ログイン",
-    "signOut": "ログアウト",
-    "close": "閉じる"
-  },
+  "Buttons": {},
   "Status": {
     "operational": "すべてのサービスは正常です",
     "downtime": "一部のサービスが停止しています",
@@ -84,260 +64,11 @@
     "goHomeButton": "ホームに戻る",
     "message": "何か問題があったようです。 再試行 をクリックしてもう一度お試しください。\nそれでもうまくいかない場合は、申し訳ありませんが ホームに戻る をクリックしてください。"
   },
-  "ProfilePage": {
-    "Buttons": {
-      "relink": "再リンク",
-      "Update": {
-        "text": "アップデート",
-        "loadingText": "アップデート中"
-      }
-    },
-    "Headings": {
-      "profile": "プロフィール",
-      "team": "チーム"
-    },
-    "Osu": {
-      "rank": "世界ランク",
-      "countryRank": "国別ランク"
-    },
-    "Team": {
-      "heading": "現在のチーム",
-      "none": "あなたは現在チームに参加していません。\n保留中の招待を承認し、チームに参加してください。",
-      "timezone": "タイムゾーン",
-      "joined": "アカウント作成日",
-      "manageTeamButton": "チームを管理"
-    },
-    "Invites": {
-      "heading": "保留中の招待",
-      "none": "現在あなたは招待を受けていません。招待を待つか、チームの作成をしてください。",
-      "Invite": {
-        "timezone": "タイムゾーン",
-        "invited": "招待された日",
-        "Buttons": {
-          "accept": "承認",
-          "deny": "拒否"
-        }
-      }
-    },
-    "Errors": {
-      "ExistingTeam": {
-        "title": "チーム参加済み！",
-        "message": "あなたは既にチームに所属しているようです。\n新しいチームに参加する場合は、現在のチームを削除するか、チームから抜けてください。"
-      },
-      "FailedInvite": {
-        "title": "招待の {type} に失敗しました！",
-        "message": "招待の {type} に失敗しました。申し訳ありませんが、もう一度お試しください。",
-        "Types": {
-          "deny": "拒否",
-          "accept": "承認"
-        }
-      },
-      "CurrentTeam": {
-        "title": "チーム所属中！",
-        "message": "まだチームに所属しているようです。\nアカウントを削除する場合は、現在のチームを削除するか、チームから抜けてください。"
-      },
-      "FailedAccountDelete": {
-        "title": "アカウントの削除に失敗しました！",
-        "message": "アカウントの削除に失敗しました。申し訳ありませんが、もう一度お試しください。"
-      },
-      "FailedUpdate": {
-        "title": "アップデートに失敗！",
-        "message": "あなたのosu! プロフィールの情報を更新することができませんでした。申し訳ありませんが、もう一度お試しください。"
-      },
-      "noRank": "ランクなし"
-    },
-    "Options": {
-      "DeleteAccount": {
-        "title": "アカウントを削除しますか？",
-        "message": "本当にアカウントを削除しますか？保存されているすべてのデータが削除され、osu! およびDiscordのアクセストークンがすべて無効になります。",
-        "Buttons": {
-          "Delete": {
-            "text": "削除",
-            "loadingText": "削除中"
-          },
-          "noThanks": "キャンセル",
-          "confirmDelete": "アカウント削除",
-          "close": "閉じる"
-        }
-      }
-    }
-  },
-  "RegistrationPage": {
-    "heading": "チームの登録",
-    "Closed": {
-      "title": "登録期間終了！",
-      "message": "トーナメントが開始されるまで、参加登録をクローズしています。トップページのカウントダウンが終了次第、もう一度お試しください。"
-    },
-    "Form": {
-      "heading": "チーム作成",
-      "teamName": "チーム名",
-      "teamAcronym": "略称",
-      "timezone": "タイムゾーン",
-      "teamFlag": "チームフラグ",
-      "createButton": {
-        "text": "作成",
-        "loadingText": "作成中"
-      },
-      "Success": {
-        "title": "チームが作成されました！",
-        "message": "TEST Open へようこそ！\n以下のボタンをクリックすると、チームの管理画面が表示され、プレイヤーの招待を行うことができます。",
-        "teamManagementButton": "チーム管理"
-      },
-      "ImagePicker": {
-        "upload": "ここをクリックしてアップロード",
-        "recommended": "推奨アスペクト比 9:4"
-      }
-    },
-    "Errors": {
-      "Restricted": {
-        "message": "あなたのosu! アカウントは制限されているようです。残念ながら、制限モード中は登録をすることができません。\nこれが間違いだと思われる場合は、サインアウトして、もう一度ログインし、再度お試しください。",
-        "title": "あなたのosuアカウントは制限されています！"
-      },
-      "DuplicatePlayer": {
-        "message": "あなたは既にチームに所属しているようです。\n新しいチームを作る場合は、現在のチームを削除するか、チームから抜けてください。",
-        "title": "チームに参加済みです！"
-      },
-      "Duplicate": {
-        "message": "同じ {type} を使用しているチームが既に存在しているようです。別の {type} を使用してください。",
-        "Types": {
-          "name": "名前",
-          "acronym": "略称",
-          "player": "プレイヤー"
-        },
-        "title": "{type} は既に存在します！"
-      },
-      "Default": {
-        "message": "チームを作成することができませんでした。何か問題が発生しているようです。申し訳ありませんが、もう一度お試しください。",
-        "title": "チームの作成に失敗しました！"
-      },
-      "UploadFailed": {
-        "title": "フラグのアップロードに失敗しました！",
-        "message": "フラグのアップロードに失敗しました。申し訳ありませんが、もう一度お試しください。"
-      }
-    }
-  },
   "TeamsPage": {
     "heading": "チームリスト",
     "teamsRegistered": "チームが登録済み"
   },
-  "UnauthorizedPage": {
-    "authFailed": "認証に失敗しました！",
-    "unauthorized": "認証されていません！",
-    "homeButton": "ホーム",
-    "Messages": {
-      "default": "このページにアクセスする前に最初にログインしてください。"
-    }
-  },
-  "VerifyPage": {
-    "title": "サーバー認証",
-    "Messages": {
-      "signIn": "認証をするまえに、まずはログインしてください。",
-      "verified": "TEST Open の Discordサーバー へようこそ！",
-      "defaultError": "認証に失敗しました。しばらくしてからもう一度お試しください。",
-      "default": "サーバーにアクセスするには下のボタンをクリックしてください。"
-    },
-    "Buttons": {
-      "tryAgain": "再試行",
-      "Verify": {
-        "text": "確認",
-        "loadingText": "確認中"
-      }
-    },
-    "Errors": {
-      "alreadyVerified": "既に認証済みです。これが間違いだと思われる場合は、@__entro にDMしてください。",
-      "verificationFailed": "認証に失敗しました。申し訳ありませんが、もう一度お試しください。",
-      "notInServer": "あなたはDiscordサーバーにいません。認証を行う前にサーバーに参加してください。"
-    }
-  },
-  "TeamPage": {
-    "Headings": {
-      "team": "自分のチーム",
-      "player": "プレイヤーリスト"
-    },
-    "timezone": "タイムゾーン",
-    "Buttons": {
-      "delete": "チームを削除",
-      "edit": "チームを編集",
-      "leave": "チームから退出"
-    },
-    "Players": {
-      "heading": "現在のチームメンバー",
-      "Player": {
-        "rank": "ランク",
-        "discord": "DISCORD",
-        "removeButton": "プレイヤーの削除"
-      }
-    },
-    "Invites": {
-      "heading": "送信中の招待",
-      "error": "申し訳ありませんが、チームにプレイヤーを登録できませんでした。",
-      "none": "現在、送信した招待はありません。上記の入力フィールドを使用して招待を開始してください。",
-      "Invite": {
-        "rank": "ランク",
-        "discord": "DISCORD",
-        "sent": "送信日",
-        "deleteButton": "招待取り消し",
-        "inviteButton": "招待",
-        "placeholder": "osu! のユーザー名を入力..."
-      }
-    },
-    "Errors": {
-      "DeleteItemFailed": {
-        "title": "{type} の削除に失敗しました",
-        "message": "{type} の削除に失敗しました。申し訳ありませんが、もう一度お試しください。",
-        "Types": {
-          "player": "プレイヤー",
-          "invite": "招待"
-        }
-      },
-      "InvitedSelf": {
-        "title": "自分は招待できません！",
-        "message": "自分をチームに招待することはできません。チームを変更したい場合は、まずこのチームを削除してください。"
-      },
-      "AlreadyInvited": {
-        "title": "このプレイヤーは招待済みです！",
-        "message": "そのプレイヤーには既に招待を送っているようです。送りなおす場合は一度招待を取り消してください。"
-      },
-      "InviteFailed": {
-        "title": "プレイヤーの招待に失敗しました！",
-        "message": "そのプレイヤーを招待することができませんでした。申し訳ありませんが、もう一度お試しください。"
-      },
-      "PlayersOnTeam": {
-        "title": "プレイヤーがまだチームに残っています！",
-        "message": "チームを削除する前に、すべてのプレイヤーをチームから削除してください。"
-      },
-      "DeleteTeamFailed": {
-        "title": "チームの削除に失敗しました！",
-        "message": "チームを削除することができませんでした。申し訳ありませんが、もう一度お試しください。"
-      },
-      "PlayerOnTeam": {
-        "title": "すでに参加済みです！",
-        "message": "この選手は既にあなたのチームにいるようです。これが間違いだと思われる場合は、もう一度お試しください。"
-      },
-      "NotOnTeam": {
-        "title": "チームに入っていません！",
-        "message": "あなたは現在チームに所属していません。まずはプロフィールから招待を承認してください。",
-        "profileButton": "プロフィール"
-      },
-      "NoChanges": {
-        "title": "変更されていません！",
-        "message": "チーム情報は何も変更されていないようです。アップデートする前に何か情報を変更してください。"
-      },
-      "UpdateTeamFailed": {
-        "title": "チームのアップデートに失敗しました！",
-        "message": "チームのアップデートに失敗しました。申し訳ありませんが、もう一度お試しください。"
-      }
-    },
-    "TeamUpdated": {
-      "title": "チーム情報が更新されました！",
-      "message": "チーム情報は正常に更新されました。変更した内容を確認するには、ページを再読み込みしてください。"
-    }
-  },
   "Components": {
-    "ComingSoon": {
-      "title": "近日公開！",
-      "message": "このページはまだ制作中です。また後ほどお越しください。"
-    },
     "MappoolTable": {
       "round": "ラウンド",
       "starRating": "SR",
@@ -352,11 +83,6 @@
       "semifinals": "Semifinals",
       "finals": "Finals",
       "grandFinals": "Grand Finals"
-    }
-  },
-  "APICallbacks": {
-    "Errors": {
-      "missingCode": "ログインできませんでした。申し訳ありませんが、もう一度試すか、ホームに戻ってください。"
     }
   }
 }

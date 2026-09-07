@@ -8,7 +8,7 @@ interface BackgroundProps {
   children: React.ReactNode
   className?: string
   imageClassName?: string
-  fade?: boolean | "double"
+  fade?: boolean
   gradient?: boolean
 }
 

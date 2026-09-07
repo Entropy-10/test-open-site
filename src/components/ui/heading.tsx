@@ -8,20 +8,19 @@ interface HeadingProps {
   padding?: boolean
 }
 
-function stringArray(children: React.ReactNode) {
-  if (!children || typeof children === "object") return ""
+function words(children: React.ReactNode) {
+  if (!children || typeof children === "object") return []
   return children.toString().split(" ")
 }
 
 function fancyHeader(children: React.ReactNode) {
-  return stringArray(children).length < 2 ? (
-    children
-  ) : (
+  const [first, ...rest] = words(children)
+  if (rest.length === 0) return children
+
+  return (
     <>
-      {stringArray(children)[0]}
-      <span className="font-medium">{` ${[...stringArray(children)]
-        .slice(1)
-        .join(" ")}`}</span>
+      {first}
+      <span className="font-medium">{` ${rest.join(" ")}`}</span>
     </>
   )
 }

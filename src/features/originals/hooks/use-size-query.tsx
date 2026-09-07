@@ -1,23 +1,16 @@
-import { useEffect, useState } from "react"
+import { useSyncExternalStore } from "react"
 
 export function useSizeQuery(query: string) {
-  const [match, setMatch] = useState(false)
+  return useSyncExternalStore(
+    (onStoreChange) => {
+      const queryList = window.matchMedia(query)
+      queryList.addEventListener("change", onStoreChange)
 
-  useEffect(() => {
-    const queryList = window.matchMedia(query)
-    // oxlint-disable-next-line react/set-state-in-effect
-    setMatch(queryList.matches)
-
-    const changeHandler = ({ matches }: MediaQueryListEvent) => {
-      setMatch(matches)
-    }
-
-    queryList.addEventListener("change", changeHandler)
-
-    return () => {
-      queryList.removeEventListener("change", changeHandler)
-    }
-  }, [query])
-
-  return match
+      return () => {
+        queryList.removeEventListener("change", onStoreChange)
+      }
+    },
+    () => window.matchMedia(query).matches,
+    () => false
+  )
 }

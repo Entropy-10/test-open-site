@@ -25,7 +25,8 @@ export async function POST(request: Request) {
   if (!sameOrigin(request)) return new Response(null, { status: 403 })
 
   const raw = await request.text()
-  if (raw.length > MAX_BODY_BYTES) return new Response(null, { status: 413 })
+  const size = new TextEncoder().encode(raw).length
+  if (size > MAX_BODY_BYTES) return new Response(null, { status: 413 })
 
   let body: unknown
   try {

@@ -9,12 +9,10 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   experimental: {
-    globalNotFound: true,
     useTypeScriptCli: true,
-    turbopackRustReactCompiler: true,
-    turbopackFileSystemCacheForBuild: true
+    turbopackRustReactCompiler: true
   },
-  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  pageExtensions: ["mdx", "ts", "tsx"],
   images: {
     remotePatterns: [
       { hostname: "a.ppy.sh" },

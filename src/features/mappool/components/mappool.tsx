@@ -29,11 +29,9 @@ export function MappoolSkeleton() {
     <Fragment key={index}>
       {index > 0 && <Divider />}
       <div className="padding flex flex-wrap justify-center gap-5 py-8">
-        {Array.from({ length: size })
-          .fill(0)
-          .map((_, i) => (
-            <MapInfoSkeleton key={i} />
-          ))}
+        {Array.from({ length: size }).map((_, i) => (
+          <MapInfoSkeleton key={i} />
+        ))}
       </div>
     </Fragment>
   ))

@@ -14,28 +14,13 @@
         "mappool": "A lazer modpool featuring new mods each week.",
         "format": "An open rank, double elimination, 3v3 tournament.",
         "schedule": "Watch upcoming matches being streamed on Twitch."
-      },
-      "Countdown": {
-        "titleSectionOne": "TURNIEJ",
-        "titleSectionTwo": "ROZPOCZNIE SIĘ ZA"
       }
     },
     "Originals": {
-      "title": "Originals",
       "subtitle": "CUSTOM SONGS COMING SOON.",
       "description": "Advance through the stages to unlock exclusive TEST Originals. Talented creators crafted custom tracks that progressively reveal at qualifiers, semifinals, finals, and grand finals. With each original featuring unique style and art, these beatmaps are reserved for the tournament's top competitors.",
       "tracksTitle": "LISTA UTWORÓW.",
       "listenButton": "POSŁUCHAJ TERAZ"
-    },
-    "SponsorSpot": {
-      "sponsoredBy": "TEST OPEN is proudly sponsored by",
-      "sponsorMessage": "CUSTOM TABLET COVERS AT A FAIR PRICE",
-      "Coupon": {
-        "save": "SHOP AND SAVE 10%",
-        "codeTitle": "USE CODE",
-        "checkout": "AT CHECKOUT",
-        "shopButton": "SHOP NOW"
-      }
     }
   },
   "NavItems": {
@@ -49,12 +34,7 @@
     "team": "DRUŻYNA",
     "profile": "PROFIL"
   },
-  "Buttons": {
-    "register": "ZAREJESTRUJ",
-    "signIn": "ZALOGUJ",
-    "signOut": "WYLOGUJ",
-    "close": "CLOSE"
-  },
+  "Buttons": {},
   "Status": {
     "operational": "All services are online",
     "downtime": "Some services are down",
@@ -84,260 +64,11 @@
     "goHomeButton": "Powrót do strony głównej",
     "message": "Sorry, but it seems like something broke on our end. You can try clicking try again, and if that does not work then you can click go back home."
   },
-  "ProfilePage": {
-    "Buttons": {
-      "relink": "RELINK",
-      "Update": {
-        "text": "ZAKTUALIZUJ",
-        "loadingText": "AKTUALIZOWANIE"
-      }
-    },
-    "Headings": {
-      "profile": "MÓJ PROFIL.",
-      "team": "MOJA DRUŻYNA."
-    },
-    "Osu": {
-      "rank": "RANGA GLOBALNA",
-      "countryRank": "RANGA KRAJOWA"
-    },
-    "Team": {
-      "heading": "AKTUALNA DRUŻYNA",
-      "none": "Obecnie nie należysz do żadnej drużyny. Dołącz, akceptując oczekujące zaproszenia.",
-      "timezone": "STREFA CZASOWA",
-      "joined": "DOŁĄCZYŁ",
-      "manageTeamButton": "ZARZĄDZAJ MOJĄ DRUŻYNĄ"
-    },
-    "Invites": {
-      "heading": "OCZEKUJĄCE ZAPROSZENIA",
-      "none": "Obecnie nie masz żadnych zaproszeń. Poczekaj na jedno lub stwórz swoją własną drużynę.",
-      "Invite": {
-        "timezone": "STREFA CZASOWA",
-        "invited": "WYSŁANO",
-        "Buttons": {
-          "accept": "AKCEPTUJ",
-          "deny": "ODRZUĆ"
-        }
-      }
-    },
-    "Errors": {
-      "ExistingTeam": {
-        "title": "ALREADY ON A TEAM!",
-        "message": "Looks like you are already on a team. Please delete or leave your current team before joining a new one."
-      },
-      "FailedInvite": {
-        "title": "NIE UDAŁO SIĘ {type} ZAPROSZENIA!",
-        "message": "Przepraszamy, {type} zaproszenia nie powiodło się. Proszę, spróbuj ponownie i sprawdź, czy to pomoże.",
-        "Types": {
-          "deny": "odrzuć",
-          "accept": "zaakceptuj"
-        }
-      },
-      "CurrentTeam": {
-        "title": "JESTEŚ JUŻ W DRUŻYNIE!",
-        "message": "Wygląda na to, że nadal znajdujesz się w drużynie. Proszę, opuść lub usuń drużynę, zanim usuniesz swoje konto."
-      },
-      "FailedAccountDelete": {
-        "title": "USUNIĘCIE KONTA NIE POWIODŁO SIĘ!",
-        "message": "Przepraszamy, nie udało się usunąć twojego konta. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
-      },
-      "FailedUpdate": {
-        "title": "FAILED TO UPDATE!",
-        "message": "Sorry, we failed to update your osu profile info. Please try again to see if that helps."
-      },
-      "noRank": "Brak Rangi"
-    },
-    "Options": {
-      "DeleteAccount": {
-        "title": "USUNĄĆ KONTO?",
-        "message": "Are you sure you would like to delete your account? This will delete any data stored and revoke all your active access tokens for osu! and Discord.",
-        "Buttons": {
-          "Delete": {
-            "text": "USUŃ",
-            "loadingText": "USUWANIE"
-          },
-          "noThanks": "NIE, DZIĘKUJĘ",
-          "confirmDelete": "USUŃ KONTO",
-          "close": "ZAMKNIJ"
-        }
-      }
-    }
-  },
-  "RegistrationPage": {
-    "heading": "ZAPISY DRUŻYNOWE",
-    "Closed": {
-      "title": "ZAPISY ZAMKNIĘTE!",
-      "message": "Registrations are currently closed until the tournament starts. Please check back here once the countdown on the front page has ended."
-    },
-    "Form": {
-      "heading": "STWÓRZ DRUŻYNĘ.",
-      "teamName": "Nazwa Drużyny",
-      "teamAcronym": "Akronim Drużyny",
-      "timezone": "Strefa Czasowa",
-      "teamFlag": "Flaga Drużyny",
-      "createButton": {
-        "text": "STWÓRZ",
-        "loadingText": "TWORZENIE"
-      },
-      "Success": {
-        "title": "STWORZONO DRUŻYNĘ!",
-        "message": "Welcome to TEST Open Click the button below to view your team management page and start inviting players.",
-        "teamManagementButton": "ZARZĄDZANIE DRUŻYNĄ"
-      },
-      "ImagePicker": {
-        "upload": "Kliknij tutaj aby przesłać",
-        "recommended": "Recommended Ratio 9:4"
-      }
-    },
-    "Errors": {
-      "Restricted": {
-        "message": "Looks like you are restricted on osu. Unfortunately you can not register while restricted. If you believe this is a mistake try signing out and signing back into the site.",
-        "title": "YOU ARE RESTRICTED!"
-      },
-      "DuplicatePlayer": {
-        "message": "Looks like you are already on a team. Please delete or leave your current team before making a new one.",
-        "title": "ALREADY ON A TEAM!"
-      },
-      "Duplicate": {
-        "message": "Looks like a team with that {type} already exists. Please use a different {type} instead.",
-        "Types": {
-          "name": "name",
-          "acronym": "akronim",
-          "player": "gracz"
-        },
-        "title": "DRUŻYNA {type} JUŻ ISTNIEJE!"
-      },
-      "Default": {
-        "message": "Nie udało się utworzyć drużyny. Wygląda to na problem z naszej strony. Proszę, spróbuj ponownie i sprawdź, czy to pomoże.",
-        "title": "UTWORZENIE DRUŻYNY NIE POWIODŁO SIĘ!"
-      },
-      "UploadFailed": {
-        "title": "PRZESŁANIE FLAGI NIE POWIODŁO SIĘ!",
-        "message": "Nie udało się przesłać flagi na nasz serwer. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
-      }
-    }
-  },
   "TeamsPage": {
     "heading": "LISTA DRUŻYN.",
     "teamsRegistered": "ZAREJESTROWANE DRUŻYNY"
   },
-  "UnauthorizedPage": {
-    "authFailed": "AUTORYZACJA NIE POWIODŁA SIĘ!",
-    "unauthorized": "NIEZAUTORYZOWANO!",
-    "homeButton": "STRONA GŁÓWNA",
-    "Messages": {
-      "default": "Zaloguj się, aby otrzymać dostęp do tej strony."
-    }
-  },
-  "VerifyPage": {
-    "title": "SERVER VERIFICATION",
-    "Messages": {
-      "signIn": "Zaloguj się, aby otrzymać możliwość weryfikacji.",
-      "verified": "Welcome to the TEST Open Discord server!",
-      "defaultError": "Weryfikacja nie powiodła się. Spróbuj ponownie później.",
-      "default": "Kliknij przycisk poniżej, aby otrzymać dostęp do serwera."
-    },
-    "Buttons": {
-      "tryAgain": "SPRÓBUJ PONOWNIE",
-      "Verify": {
-        "text": "ZWERYFIKUJ",
-        "loadingText": "WERYFIKOWANIE"
-      }
-    },
-    "Errors": {
-      "alreadyVerified": "You are already verified. If you think this is a mistake please DM @__entro for further help.",
-      "verificationFailed": "Verification failed. Please try again and see if that helps.",
-      "notInServer": "You are not in the Discord server! Please join the server before trying to verify."
-    }
-  },
-  "TeamPage": {
-    "Headings": {
-      "team": "MOJA DRUŻYNA.",
-      "player": "LISTA GRACZY."
-    },
-    "timezone": "STREFA CZASOWA",
-    "Buttons": {
-      "delete": "USUŃ DRUŻYNĘ",
-      "edit": "EDYTUJ DRUŻYNĘ",
-      "leave": "OPUŚĆ DRUŻYNĘ"
-    },
-    "Players": {
-      "heading": "AKTUALNI CZŁONKOWIE",
-      "Player": {
-        "rank": "RANGA",
-        "discord": "DISCORD",
-        "removeButton": "USUŃ GRACZA"
-      }
-    },
-    "Invites": {
-      "heading": "WYSŁANE ZAPROSZENIA",
-      "error": "Przepraszamy, nie udało się wyświetlić graczy w twojej drużynie.",
-      "none": "Aktualnie nie masz żadnych wysłanych zaproszeń. Zacznij od użycia pola zaproszeń powyżej.",
-      "Invite": {
-        "rank": "RANGA",
-        "discord": "DISCORD",
-        "sent": "WYSŁANO",
-        "deleteButton": "USUŃ ZAPROSZENIE",
-        "inviteButton": "ZAPROŚ",
-        "placeholder": "Wprowadź nazwę użytkownika osu..."
-      }
-    },
-    "Errors": {
-      "DeleteItemFailed": {
-        "title": "USUNIĘCIE {type} NIE POWIODŁO SIĘ!",
-        "message": "Przepraszamy, nie udało się usunąć {type}. Proszę, spróbuj ponownie i sprawdź, czy to pomoże.",
-        "Types": {
-          "player": "gracz",
-          "invite": "zaproszenie"
-        }
-      },
-      "InvitedSelf": {
-        "title": "NIE MOŻESZ ZAPROSIĆ SIEBIE!",
-        "message": "Nie możesz zaprosić siebie samego do swojej drużyny. Jeśli chcesz zmienić drużynę, wpierw usuń dotychczasową."
-      },
-      "AlreadyInvited": {
-        "title": "GRACZ ZOSTAŁ JUŻ ZAPROSZONY!",
-        "message": "Wygląda na to, że już wysłałeś zaproszenie temu graczowi. Proszę, usuń dotychczasowe zaproszenie przed spróbowaniem ponownie."
-      },
-      "InviteFailed": {
-        "title": "NIE UDAŁO SIĘ ZAPROSIĆ GRACZA!",
-        "message": "Przepraszamy, usunięcie gracza nie powiodło się. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
-      },
-      "PlayersOnTeam": {
-        "title": "GRACZ NADAL JEST W DRUŻYNIE!",
-        "message": "Usuń wszystkich graczy przed usunięciem drużyny."
-      },
-      "DeleteTeamFailed": {
-        "title": "USUNIĘCIE DRUŻYNY NIE POWIODŁO SIĘ!",
-        "message": "Przepraszamy, nie udało się usunąć twojej drużyny. Proszę, spróbuj ponownie i sprawdź, czy to pomoże."
-      },
-      "PlayerOnTeam": {
-        "title": "GRACZ JEST JUŻ W DRUŻYNIE!",
-        "message": "Gracz jest już w twojej drużynie. Jeśli jest to błąd, spróbuj ponownie i sprawdź, czy to pomoże."
-      },
-      "NotOnTeam": {
-        "title": "NIE JESTEŚ W DRUŻYNIE!",
-        "message": "Nie znajdujesz się aktualnie w żadnej drużynie. Odwiedź swój profil i zaakceptuj zaproszenie.",
-        "profileButton": "PROFIL"
-      },
-      "NoChanges": {
-        "title": "NOTHING CHANGED!",
-        "message": "You haven't changed any of your team info. Please change your info before attempting to update."
-      },
-      "UpdateTeamFailed": {
-        "title": "FAILED TO UPDATE TEAM!",
-        "message": "Sorry, we failed to update your team. Please try again and see if that helps."
-      }
-    },
-    "TeamUpdated": {
-      "title": "TEAM INFO UPDATED!",
-      "message": "Your team info has been successfully updated. You may need to reload the page to see your changes."
-    }
-  },
   "Components": {
-    "ComingSoon": {
-      "title": "JUŻ WKRÓTCE!",
-      "message": "This page is still in progress. Be on the look out for info regarding this, and check back later when it is ready."
-    },
     "MappoolTable": {
       "round": "Runda",
       "starRating": "SR",
@@ -352,11 +83,6 @@
       "semifinals": "Półfinały",
       "finals": "Finals",
       "grandFinals": "Grand Finals"
-    }
-  },
-  "APICallbacks": {
-    "Errors": {
-      "missingCode": "Sorry, but the sign in couldn't be completed. If unexpected please try again otherwise feel free to navigate back home."
     }
   }
 }

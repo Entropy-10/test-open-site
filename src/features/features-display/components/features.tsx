@@ -1,5 +1,3 @@
-"use client"
-
 import { featuresInfo } from "../features-info"
 import { Feature } from "./feature"
 

@@ -14,28 +14,13 @@
         "mappool": "Ein lazer Modpool, welcher jede Woche neue Mods enthält.",
         "format": "Ein 3 gegen 3 Turnier für alle Ränge, mit Doppel-K.-o.-System.",
         "schedule": "Schau dir die kommenden Runden auf Twitch an."
-      },
-      "Countdown": {
-        "titleSectionOne": "TURNER",
-        "titleSectionTwo": "BEGINNT IN"
       }
     },
     "Originals": {
-      "title": "Originale",
       "subtitle": "ORIGINELLE SONGS IN KÜRZE VERFÜGBAR",
       "description": "Schreite durch die Runden um exklusive TEST Originale freizuschalten. Talentierte Künstler haben Originelle Songs erstellt, welche progressiv in jeder Runde freigeschaltet werden: Qualifizierung, Halbfinale, Finale, und das große Finale.\nJedes Original beinhaltet einen einzigartigen Stil und Kunst, diese Beatmaps sind für die besten des Turniers vorbehalten.",
       "tracksTitle": "TRACKLISTE",
       "listenButton": "JETZT ANHÖREN"
-    },
-    "SponsorSpot": {
-      "sponsoredBy": "TEST Open wird stolz gesponsert von",
-      "sponsorMessage": "INDIVIDUELLE TABLET-COVER ZU FAIREN PREISEN",
-      "Coupon": {
-        "save": "EINKAUFEN UND10% SPAREN",
-        "codeTitle": "BENUTZE CODE",
-        "checkout": "AN DER KASSE",
-        "shopButton": "JETZT EINKAUFEN"
-      }
     }
   },
   "NavItems": {
@@ -49,12 +34,7 @@
     "team": "TEAM",
     "profile": "PROFIL"
   },
-  "Buttons": {
-    "register": "REGISTRIEREN",
-    "signIn": "ANMELDEN",
-    "signOut": "ABMELDEN",
-    "close": "SCHLIEßEN"
-  },
+  "Buttons": {},
   "Status": {
     "operational": "Alle Dienste sind online",
     "downtime": "Einige Dienste sind nicht verfügbar",
@@ -84,260 +64,11 @@
     "goHomeButton": "Zurück zur Startseite",
     "message": "Verzeihung, es scheint als wäre dem System ein Fehler unterlaufen. Klicke auf \"Erneut versuchen\", um zu schauen, ob es diesmal funktioniert, oder gehe zurück zur Startseite."
   },
-  "ProfilePage": {
-    "Buttons": {
-      "relink": "NEU-VERLINKEN",
-      "Update": {
-        "text": "AKTUALISIEREN",
-        "loadingText": "WIRD AKTUALISIERT"
-      }
-    },
-    "Headings": {
-      "profile": "MEIN PROFIL",
-      "team": "MEIN TEAM"
-    },
-    "Osu": {
-      "rank": "GLOBALER RANG",
-      "countryRank": "LANDESRANG"
-    },
-    "Team": {
-      "heading": "AKTUELLES TEAM",
-      "none": "Du hast derzeit kein Team. Trete einem bei, indem du eine ausstehende Einlandung annimmst.",
-      "timezone": "ZEITZONE",
-      "joined": "BEIGETRETEN",
-      "manageTeamButton": "MEIN TEAM BEARBEITEN"
-    },
-    "Invites": {
-      "heading": "AUSSTEHENDE EINLADUNGEN",
-      "none": "Du hast derzeit keine Einladungen. Warte auf eine oder erstelle dein eigenes Team.",
-      "Invite": {
-        "timezone": "ZEITZONE",
-        "invited": "EINGELADEN",
-        "Buttons": {
-          "accept": "ANNEHMEN",
-          "deny": "ABLEHNEN"
-        }
-      }
-    },
-    "Errors": {
-      "ExistingTeam": {
-        "title": "BEREITS IN EINEM TEAM!",
-        "message": "Es scheint als seist du bereits in einem Team. Bitte lösche oder verlasse dein aktuelles Team, bevor du einem anderen beitrittst."
-      },
-      "FailedInvite": {
-        "title": "ANNEHMEN DER {type} FEHLGESCHLAGEN!",
-        "message": "Verzeihung, es war uns nicht möglich die Einladung zu {type}. Bitte versuche es erneut und schau, ob es klappt.",
-        "Types": {
-          "deny": "ablehnen",
-          "accept": "annehmen"
-        }
-      },
-      "CurrentTeam": {
-        "title": "DERZEIT IN EINEM TEAM!",
-        "message": "Es scheint als seist du derzeit in einem Team, bitte verlasse oder lösche das Team, bevor du dein Konto löscht."
-      },
-      "FailedAccountDelete": {
-        "title": "KONTO LÖSCHUNG FEHGESCHLAGEN!",
-        "message": "Verzeihung, aber es war uns nicht möglich dein Konto zu löschen. Bitte versuche es erneut und schau, ob es klappt."
-      },
-      "FailedUpdate": {
-        "title": "UPDATE FEHLGESCHLAGEN!",
-        "message": "Verzeihung, aber es war uns nicht möglich deine osu! Profil-Informationen zu aktualisieren. Bitte versuche es erneut und schau, ob es klappt."
-      },
-      "noRank": "Kein Rang"
-    },
-    "Options": {
-      "DeleteAccount": {
-        "title": "KONTO LÖSCHEN?",
-        "message": "Bist du sicher, dass du dein Konto löschen möchtest? Dadurch werden alle gespeicherten Nutzerdaten gelöscht und deinen osu/Discord Zugang entfernt.",
-        "Buttons": {
-          "Delete": {
-            "text": "JA, LÖSCHEN",
-            "loadingText": "WIRD GELÖSCHT"
-          },
-          "noThanks": "NEIN DANKE",
-          "confirmDelete": "KONTO LÖSCHEN",
-          "close": "SCHLIEßEN"
-        }
-      }
-    }
-  },
-  "RegistrationPage": {
-    "heading": "TEAM REGISTRIERUNG",
-    "Closed": {
-      "title": "ANMELDUNG GESCHLOSSEN!",
-      "message": "Die Anmeldungen sind bis zum Start des Turniers geschlossen. Bitte komm nach dem Ablaufen des Countdowns auf der Startseite wieder."
-    },
-    "Form": {
-      "heading": "EIN TEAM ERSTELLEN",
-      "teamName": "Name des Teams",
-      "teamAcronym": "Team Akronym",
-      "timezone": "Zeitzone",
-      "teamFlag": "Team Flagge",
-      "createButton": {
-        "text": "ERSTELLEN",
-        "loadingText": "ERSTELLUNG LÄUFT"
-      },
-      "Success": {
-        "title": "TEAM ERSTELLT!",
-        "message": "Willkommen bei TEST Open, Klicke auf den Button zur Team-Bearbeitung um dein Team anzuschauen und Spieler einzuladen.",
-        "teamManagementButton": "TEAM-BEARBEITUNG"
-      },
-      "ImagePicker": {
-        "upload": "Hier klicken, um eine Datei hochzuladen",
-        "recommended": "Empfohlenes Bildverhältnis 9:4"
-      }
-    },
-    "Errors": {
-      "Restricted": {
-        "message": "Es scheint als wäre dein osu! Konto gesperrt. Es ist dir nicht möglich dich zu Registrieren, während das Konto gesperrt ist. Falls du meinst, dies sei ein Fehler, melde dich von der Test Open Seite ab, und melde dich dann wieder an.",
-        "title": "OSU ACCOUNT GESPERRT!"
-      },
-      "DuplicatePlayer": {
-        "message": "Es scheint als wärst du bereits in einem Team. Bitte lösche oder verlasse dein derzeitiges Team, bevor du ein neues erstellst.",
-        "title": "BEREITS IN EINEM TEAM!"
-      },
-      "Duplicate": {
-        "message": "Es existiert bereits ein Team mit diesem {type}, bitte nutze stattdessen ein anderes {type}.",
-        "Types": {
-          "name": "Name",
-          "acronym": "Abkürzung",
-          "player": "Spieler"
-        },
-        "title": "TEAM {type} EXISTIERT BEREITS!"
-      },
-      "Default": {
-        "message": "Es war uns nicht möglich dein Team zu erstellen, scheint als wäre es ein Fehler in unserem System. Bitte versuche es erneut und schau, ob es klappt.",
-        "title": "TEAM ERSTELLUNG FEHLGESCHLAGEN!"
-      },
-      "UploadFailed": {
-        "title": "HOCHLADEN DER FLAGGE FEHLGESCHLAGEN!",
-        "message": "Es war uns nicht möglich deine Flagge in unseren Server hochzuladen. Bitte versuche es erneut und schau, ob es klappt."
-      }
-    }
-  },
   "TeamsPage": {
     "heading": "TEAM LISTE",
     "teamsRegistered": "TEAMS SIND ANGEMELDET"
   },
-  "UnauthorizedPage": {
-    "authFailed": "AUTHENTIFIZIERUNG FEHLGESCHLAGEN!",
-    "unauthorized": "FEHLENDE AUTHORISIERUNG!",
-    "homeButton": "STARTSEITE",
-    "Messages": {
-      "default": "Bitte melde dich an, bevor du auf die Seite zugreifst."
-    }
-  },
-  "VerifyPage": {
-    "title": "SERVERIFIZIERUNG",
-    "Messages": {
-      "signIn": "Melde dich an, bevor du versuchst dich zu Verifizieren.",
-      "verified": "Willkommen auf dem TEST Open Discord Server!",
-      "defaultError": "Verifizierung fehlgeschlagen. Bitte versuche es später erneut.",
-      "default": "Bitte klicke auf die Schaltfläche unten, um Zugang zum Server zu erhalten."
-    },
-    "Buttons": {
-      "tryAgain": "ERNEUT VERSUCHEN",
-      "Verify": {
-        "text": "VERIFIZIEREN",
-        "loadingText": "VERIFIZIERUNG LÄUFT"
-      }
-    },
-    "Errors": {
-      "alreadyVerified": "Du bist bereits verifiziert. Sollte dies ein Irrtum sein, sende bitte eine Nachricht an @__entro, um weitere Hilfe zu erhalten.",
-      "verificationFailed": "Verifizierung fehlgeschlagen. Bitte versuche es erneut und schau, ob es klappt.",
-      "notInServer": "Du bist nicht auf dem Discord Server! Bitte trete dem Server bei, bevor du versuchst dich zu verifizieren."
-    }
-  },
-  "TeamPage": {
-    "Headings": {
-      "team": "MEIN TEAM",
-      "player": "SPIELER LISTE"
-    },
-    "timezone": "ZEITZONE",
-    "Buttons": {
-      "delete": "TEAM LÖSCHEN",
-      "edit": "TEAM BEARBEITEN",
-      "leave": "TEAM VERLASSEN"
-    },
-    "Players": {
-      "heading": "DERZEITIGE TEAM MITGLIEDER",
-      "Player": {
-        "rank": "RANG",
-        "discord": "DISCORD",
-        "removeButton": "SPIELER ENTFERNEN"
-      }
-    },
-    "Invites": {
-      "heading": "ABGESCHICKTE EINLADUNGEN",
-      "error": "Verzeihung, es war uns nicht möglich die Spieler deinem Team hinzuzufügen.",
-      "none": "Du hast derzeit keine ausgehenden Einladungen. Nutze die obige Suchfunktion, um Einladungen zu versenden.",
-      "Invite": {
-        "rank": "RANG",
-        "discord": "DISCORD",
-        "sent": "EINGELADEN",
-        "deleteButton": "EINLADUNG LÖSCHEN",
-        "inviteButton": "EINLADEN",
-        "placeholder": "Gebe einen Benutzernamen ein..."
-      }
-    },
-    "Errors": {
-      "DeleteItemFailed": {
-        "title": "LÖSCHEN VON {type} FEHLGESCHLAGEN!",
-        "message": "Verzeihung, es war uns nicht möglich diesen {type} zu entfernen. Bitte versuche es erneut und schau, ob es klappt.",
-        "Types": {
-          "player": "Spieler",
-          "invite": "Einladung"
-        }
-      },
-      "InvitedSelf": {
-        "title": "SELBSTEINLADUNG NICHT MÖGLICH!",
-        "message": "Du kannst dich nicht selber in dein eigenes Team einladen. Falls du das Team wechseln möchtest, lösche es bitte vorher."
-      },
-      "AlreadyInvited": {
-        "title": "SPIELER BEREITS EINGELADEN!",
-        "message": "Es scheint als hättest du diesen Spieler bereits eingeladen. Bitte entferne die existierende Einladung, bevor du eine neue versendest."
-      },
-      "InviteFailed": {
-        "title": "EINLADEN DES SPIELERS FEHLGESCHLAGEN!",
-        "message": "Verzeihung, es war uns nicht möglich diesen Spieler einzuladen. Bitte versuche es erneut und schau, ob es klappt."
-      },
-      "PlayersOnTeam": {
-        "title": "SPIELER IM TEAM!",
-        "message": "Bitte entferne alle Spieler aus dem Team, bevor du das Team löscht."
-      },
-      "DeleteTeamFailed": {
-        "title": "LÖSCHEN DES TEAMS FEHLGESCHLAGEN!",
-        "message": "Verzeihung, es war uns nicht möglich dein Team zu löschen. Bitte versuche es erneut und schau, ob es klappt."
-      },
-      "PlayerOnTeam": {
-        "title": "SPIELER BEREITS IM TEAM!",
-        "message": "Es scheint als wäre dieser Spieler bereits in deinem Team, sollte dies ein Irrtum sein, versuche es bitte erneut."
-      },
-      "NotOnTeam": {
-        "title": "NICHT IN EINEM TEAM!",
-        "message": "Es scheint als seist du derzeit nicht in einem Team. Bitte gehe erst auf dein Profil und nehme eine Einladung an.",
-        "profileButton": "PROFIL"
-      },
-      "NoChanges": {
-        "title": "NICHTS GEÄNDERT!",
-        "message": "Du hast keine Team-Informationen geändert. Bitte ändere die Information, bevor du versuchst es zu aktualisieren."
-      },
-      "UpdateTeamFailed": {
-        "title": "TEAM AKTUALISIERUNG FEHLGESCHLAGEN!",
-        "message": "Verzeihung, es war uns nicht möglich die Team-Informationen zu aktualisieren. Bitte versuche es erneut und schau, ob es klappt."
-      }
-    },
-    "TeamUpdated": {
-      "title": "TEAM INFORMATIONEN AKTUALISIERT!",
-      "message": "Deine Team-Informationen wurden erfolgreich aktualisiert. Eventuell musst du die Seite neu laden, damit die Änderungen sichtbar werden."
-    }
-  },
   "Components": {
-    "ComingSoon": {
-      "title": "IN KÜRZE VERFÜGBAR!",
-      "message": "Diese Seite ist noch im Aufbau. Halte Ausschau nach Informationen diesbezüglich, und schau später noch mal vorbei, wenn die Seite fertig ist."
-    },
     "MappoolTable": {
       "round": "Runde",
       "starRating": "SR",
@@ -352,11 +83,6 @@
       "semifinals": "Halbfinale",
       "finals": "Finale",
       "grandFinals": "Großes Finale"
-    }
-  },
-  "APICallbacks": {
-    "Errors": {
-      "missingCode": "Verzeihung, aber die Anmeldung konnte nicht abgeschlossen werden. Bitte versuche es erneut oder gehe zurück zur Startseite."
     }
   }
 }

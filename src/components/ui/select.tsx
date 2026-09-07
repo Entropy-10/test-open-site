@@ -63,7 +63,7 @@ function SelectContent({
           data-slot="select-content"
           data-align-trigger={alignItemWithTrigger}
           className={cn(
-            "bg-milky-white relative isolate z-50 w-32  text-sm drop-shadow-sm",
+            "bg-milky-white relative isolate z-50 w-32 text-sm drop-shadow-sm",
             className
           )}
           {...props}

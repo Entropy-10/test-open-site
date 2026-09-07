@@ -14,28 +14,13 @@
         "mappool": "Mga modpool sa Lazer kung saan napapalitan ito kada linggo.",
         "format": "Isang bukas na ranggo, dobleng eliminasyon, 3v3 na paligsahan.",
         "schedule": "Manood ng mga paparating na labanan na mapapanood sa Twitch."
-      },
-      "Countdown": {
-        "titleSectionOne": "PALIGSAHAN",
-        "titleSectionTwo": "MAGSISIMULA NG"
       }
     },
     "Originals": {
-      "title": "Mga orihinal",
       "subtitle": "",
       "description": "Sumulong sa mga yugto upang maihayag ang mga orihinal na mga gawa ng TEST. Maraming talentadong manlilikha ang gumawa ng mga awit na paunti-unting ihahayag sa mga yugtong Qualifers, Semifinals, Finals, at Grand Finals. Sa bawat awit na kinatatampokan ng kanya-kanyang istilo at sining, ang mga beatmap na ito ay nakalaan sa mga pinakamahuhusay na manlalaro sa torneong ito.",
       "tracksTitle": "TRACKLIST.",
       "listenButton": "MAKINIG NGAYON"
-    },
-    "SponsorSpot": {
-      "sponsoredBy": "Ang Test OPEN ay malugod na itinataguyod ng ",
-      "sponsorMessage": "MGA NAPASASADYANG PANAKIP NG TABLET SA ABOT-KAYANG PRESYO",
-      "Coupon": {
-        "save": "MAMILI AT MAKAPAGTIPID NG 10 PORSYENTO",
-        "codeTitle": "GAMITIN ANG KODIGONG",
-        "checkout": "SA CHECKOUT",
-        "shopButton": "MAMILI NA"
-      }
     }
   },
   "NavItems": {
@@ -49,12 +34,7 @@
     "team": "PANGKAT",
     "profile": "PROFILE"
   },
-  "Buttons": {
-    "register": "MAG-REHISTRO",
-    "signIn": "MAG-SIGN IN",
-    "signOut": "MAG-SIGN OUT",
-    "close": "ISARADO"
-  },
+  "Buttons": {},
   "Status": {
     "operational": "Lahat ng serbisyo ay onlayn",
     "downtime": "May mga serbisyong hindi gumagana",
@@ -84,260 +64,11 @@
     "goHomeButton": "Bumalik sa Home",
     "message": "Paumanhin, ngunit mukhang mayroong nasira sa aming kagamitan. Maaari kang muling pumindot, at kapag hindi iyong gumana ay maaari mong pindutin and \"Bumalik sa bahay\"."
   },
-  "ProfilePage": {
-    "Buttons": {
-      "relink": "Muling Ipagtugma",
-      "Update": {
-        "text": "MULING BAGUHIN",
-        "loadingText": "BINABAGO"
-      }
-    },
-    "Headings": {
-      "profile": "AKING PROPAYL.",
-      "team": "AKING KOPONAN."
-    },
-    "Osu": {
-      "rank": "RANGGONG PANDAIGDAIG",
-      "countryRank": "RANGGONG PAMBANSA"
-    },
-    "Team": {
-      "heading": "KASALUKUYANG KOPONAN",
-      "none": "Wala ka pa sa isang koponan. Sumali sa isa sa pamamagitan ng pagtanggap ng anumang nakabinbin na imbitasyon.",
-      "timezone": "",
-      "joined": "SINALIHAN",
-      "manageTeamButton": "PAMAHALAAN ANG KOPONAN"
-    },
-    "Invites": {
-      "heading": "NAKABINBING IMBITASYON",
-      "none": "Wala ka pang anumang imbitasyon. Maghintay ng isa, o lumikha ng iyong koponan.",
-      "Invite": {
-        "timezone": "",
-        "invited": "INIMBITA",
-        "Buttons": {
-          "accept": "TANGGAPIN",
-          "deny": "TANGGIHAN"
-        }
-      }
-    },
-    "Errors": {
-      "ExistingTeam": {
-        "title": "NASA KOPONAN NA!",
-        "message": "Mukhang ikaw ay nasa isang koponan na. Paki-tanggal o umalis sa kasalukuyang koponan bago sumali ng bago."
-      },
-      "FailedInvite": {
-        "title": "NABIGO SA {type} NG IMBITASYON!",
-        "message": "Paumanhin, nabigo kami sa {type} ng imbitasyong ito. Maaaring subukan muli upang malaman kung ito ay nakatulong.",
-        "Types": {
-          "deny": "tanggihan",
-          "accept": "tanggapin"
-        }
-      },
-      "CurrentTeam": {
-        "title": "KASALUKUYANG NASA ISANG PANGKAT!",
-        "message": "Mukhang ikaw ay kasali pa sa isang pangkat. Maaring umalis o tanggalin ang pangkat bago tanggalin ang iyong account."
-      },
-      "FailedAccountDelete": {
-        "title": "NABIGO ANG PAG TANGGAL NG ACCOUNT!",
-        "message": "Paumanhin, mukhang nabigo kami sa pagtanggal ng iyong account. Maaaring subukan muli upang malaman kung ito ay nakatulong."
-      },
-      "FailedUpdate": {
-        "title": "HINDI NABAGO!",
-        "message": "Paumanhin, nabigo kaming muling mabago ang iyong impormasyon sa iyong propayl sa osu!. Maaring subukan muli kung ito ay makakatulong."
-      },
-      "noRank": "Walang Ranggo"
-    },
-    "Options": {
-      "DeleteAccount": {
-        "title": "TANGGALIN ANG ACCOUNT?",
-        "message": "Nakasisiguro ka bang gusto mong tanggalin ang iyong account? Tatanggalin nito ang anumang datos na itinabi at ang anumang aktibong access token para sa osu! at Discord.",
-        "Buttons": {
-          "Delete": {
-            "text": "TANGGALIN",
-            "loadingText": "ITINATANGGAL"
-          },
-          "noThanks": "HUWAG",
-          "confirmDelete": "TANGGALIN ANG ACCOUNT",
-          "close": "ISARADO"
-        }
-      }
-    }
-  },
-  "RegistrationPage": {
-    "heading": "PAGREREHISTRO NG KOPONAN",
-    "Closed": {
-      "title": "SARADO ANG PAG REHISTRO!",
-      "message": "Sarado ang pag rehistro hanggang magsimula ang paligsahan. Maaring bumalik pag natapos na ang countdown sa unang pahina."
-    },
-    "Form": {
-      "heading": "GUMAWA NG PANGKAT.",
-      "teamName": "Pangalang ng Pangkat",
-      "teamAcronym": "Pangkatang Akronim",
-      "timezone": "Timezone",
-      "teamFlag": "Pangkatang Bandila",
-      "createButton": {
-        "text": "GUMAWA",
-        "loadingText": "GINAGAWA"
-      },
-      "Success": {
-        "title": "NAGAWA NA ANG PANGKAT!",
-        "message": "Maligayang pagdating sa TEST Open. Pindutin ang pindutan sa ibaba upang makita ang pahina ng pamamahala sa iyong koponan at magsimulang mag imbita ng mga manlalaro.\n",
-        "teamManagementButton": "PAMAMAHALA NG PANGKAT"
-      },
-      "ImagePicker": {
-        "upload": "Dito pumindot upang mag-upload",
-        "recommended": "Inirerekomendang proporsyon ay 9:4"
-      }
-    },
-    "Errors": {
-      "Restricted": {
-        "message": "Ikaw ay ipinagbabawal sa osu dahil sa lagay ng iyong account. Sa kasamaang palad, hindi ka maaaring mag rehistro habang ikaw ay ipinagbabawal. Kung sa tingin mo na ito ay mali, maaari kang mag sign out at mag log in ulit dito.",
-        "title": "IKAW AY IPINAGBABAWAL NA SUMALI DITO!"
-      },
-      "DuplicatePlayer": {
-        "message": "Mukhang nasa isang koponan ka na. Mangyaring i-delete o umalis ka sa iyong kasalukuyang koponan bago gumawa ng bago.",
-        "title": "IKAW AY NASA KOPONAN NA!"
-      },
-      "Duplicate": {
-        "message": "Mukhang mayroon nang koponan ang gumagamit niyan. Mangyaring gumamit ng iba.",
-        "Types": {
-          "name": "pangalan",
-          "acronym": "",
-          "player": "manlalaro"
-        },
-        "title": "MAYROON NANG {type} NA KOPONAN!"
-      },
-      "Default": {
-        "message": "Hindi namin nabuo ang iyong koponan. Mukhang may isyu sa aming banda. Maaaring subukan para malaman upang malaman kung ito ay nakatulong.",
-        "title": "NABIGO SA PAGLIKHA NG KOPONAN!"
-      },
-      "UploadFailed": {
-        "title": "NABIGO SA PAG-UPLOAD NG WATAWAT!",
-        "message": "Hindi namin na-upload ang iyong watawat sa aming server. Maaaring subukan muli upang makita kung ito ay nakatulong."
-      }
-    }
-  },
   "TeamsPage": {
     "heading": "LISTAHAN NG KOPONAN.",
     "teamsRegistered": "MGA KOPONANG NAKAREHISTRO"
   },
-  "UnauthorizedPage": {
-    "authFailed": "NABIGO ANG PAGPAPA-AWTORISASYON!",
-    "unauthorized": "HINDI PINAHINTULUTAN!",
-    "homeButton": "HOME",
-    "Messages": {
-      "default": "Ikaw ay mag sign in muna bago mo ma-access ang pahina na ito."
-    }
-  },
-  "VerifyPage": {
-    "title": "PAG-BERIPIKA SA SERVER",
-    "Messages": {
-      "signIn": "Ikaw ay mag sign in muna bago mag verify.",
-      "verified": "Maligayang Pagdating sa TEST Open Discord server!",
-      "defaultError": "Ang iyong pag-beripika ay nabigo. Paki ulit nalang mamaya.",
-      "default": "Mangyaring pindutin ang pindutan sa ibaba upang makapasok sa server."
-    },
-    "Buttons": {
-      "tryAgain": "SUBUKAN MULI",
-      "Verify": {
-        "text": "IPABERIPIKA",
-        "loadingText": "IPINAPABERIPIKA"
-      }
-    },
-    "Errors": {
-      "alreadyVerified": "Ikaw ay naipa-beripika na. Kung sa tingin mo na ito ay isang pagkakamali, mangyari magpadala ng DM kay @__entro para ikaw ay matulungan.",
-      "verificationFailed": "Nabigo ang pagpapa-beripika. Maaaring subukan muli upang makita kung ito ay nakatulong.",
-      "notInServer": "Ikaw ay wala sa Discord server! Mangyaring sumali sa server bago subukang magpa-beripika."
-    }
-  },
-  "TeamPage": {
-    "Headings": {
-      "team": "AKING KOPONAN.",
-      "player": "LISTAHAN NG MANLALARO."
-    },
-    "timezone": "TIMEZONE",
-    "Buttons": {
-      "delete": "TANGGALIN ANG KOPONAN",
-      "edit": "I-EDIT ANG KOPONAN",
-      "leave": "UMALIS SA KOPONAN"
-    },
-    "Players": {
-      "heading": "KASALUKUYANG KAANIB",
-      "Player": {
-        "rank": "RANGGO",
-        "discord": "DISCORD",
-        "removeButton": "TANGGALIN ANG MANLALARO"
-      }
-    },
-    "Invites": {
-      "heading": "PAPALABAS NA IMBITASYON",
-      "error": "Paumanhin, nabigo kaming kunin ang mga manlalaro sa iyong koponan.",
-      "none": "Sa kasalukuyan ay wala kang anumang imbitasyon. Magsimula sa pamamagitan ng paggamit sa kahon ng imbitasyon ng mga manlalaro sa itaas.",
-      "Invite": {
-        "rank": "RANGGO",
-        "discord": "DISCORD",
-        "sent": "INIMBITA NOONG",
-        "deleteButton": "BURAHIN ANG IMBITASYON",
-        "inviteButton": "ANYAYAHAN",
-        "placeholder": "Paki-lagay ang osu username..."
-      }
-    },
-    "Errors": {
-      "DeleteItemFailed": {
-        "title": "SABLAY ANG PAGTANGGAL NG TEAM NA {type}!",
-        "message": "Paumanhin, nabigo ang pag tanggal ng {type}. Maaring subukan muli kung ito ay makakatulong.",
-        "Types": {
-          "player": "manlalaro",
-          "invite": "imbitahin"
-        }
-      },
-      "InvitedSelf": {
-        "title": "BAWAL I-IMBITA ANG SARILI!",
-        "message": "Bawal mo imbitahin ang sarili mo sa iyong pangkat. Kung gusto mo lumipat ng pangkat tanggalin muna ang iyong pangkat."
-      },
-      "AlreadyInvited": {
-        "title": "NAIMBITA NA ANG MANLALARO!",
-        "message": "Mukhang naimbita mo na ang manlalarong ito. Maaring tanggalin ang kasalukuyang imbitasyon bago ito gawin ulit."
-      },
-      "InviteFailed": {
-        "title": "NABIGO ANG IMBITASYON!",
-        "message": "Paumanhin, nabigo ang pag imbita sa manlalaro. Maaring subukan muli kung ito ay makakatulong."
-      },
-      "PlayersOnTeam": {
-        "title": "MAY MGA MANLALARO PA SA PANGKAT!",
-        "message": "Maaring alisin muna ang mga manlalaro sa pangkat bago ito tanggalin."
-      },
-      "DeleteTeamFailed": {
-        "title": "NABIGO ANG PAGTANGGAL NG PANGKAT!",
-        "message": "Paumanhin, nabigo ang pag tanggal ng iyong pangkat. Maaring subukan muli kung ito ay makakatulong."
-      },
-      "PlayerOnTeam": {
-        "title": "ANG MANLALARO AY NASA PANGKAT NA!",
-        "message": "Mukhang ang manlalaro na ito ay nasa pangkat mo na. Kung ito ay isang pagkakamali maaring subukan muli kung ito ay makakatulong."
-      },
-      "NotOnTeam": {
-        "title": "WALA PA SA PANGKAT!",
-        "message": "Mukhang wala ka pa sa isang pangkat. Maaring pumunta sa iyong propayl at tumanggap muna ng imbitasyon.",
-        "profileButton": "PROPAYL"
-      },
-      "NoChanges": {
-        "title": "WALANG NANGYARI!",
-        "message": "Wala ka pang nababago sa iyong team info. Paki-bago ito bago i-update."
-      },
-      "UpdateTeamFailed": {
-        "title": "SUMABLAY ANG PAGBABAGO NG TEAM!",
-        "message": "Paumanhin, pero nabigo ang pagbabago ng iyong team. Maaring subukan muli kung ito ay makakatulong."
-      }
-    },
-    "TeamUpdated": {
-      "title": "NA-UPDATE NA ANG IMPORMASYON NG TEAM!",
-      "message": "Na-update na ang iyong impormasyon para sa team. Paki-refresh ang page na ito para makita ang mga pagbabago na iyong ginawa."
-    }
-  },
   "Components": {
-    "ComingSoon": {
-      "title": "MALAPIT NA!",
-      "message": "Ginagawa palang ang pahina na ito. Maging alerto sa impormasyon tungkol dito, at tingnan muli pag ito ay handa na."
-    },
     "MappoolTable": {
       "round": "Round",
       "starRating": "SR",
@@ -352,11 +83,6 @@
       "semifinals": "Semifinals",
       "finals": "Finals",
       "grandFinals": "Grand Finals"
-    }
-  },
-  "APICallbacks": {
-    "Errors": {
-      "missingCode": "Paumanhin, pero ang pag-sign in ay hindi makumpleto. Pag hindi inasahan subukang muli kung hindi ay huwag mag-atubiling mag-navigate pabalik sa home."
     }
   }
 }

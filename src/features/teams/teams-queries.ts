@@ -1,5 +1,3 @@
-"use server"
-
 import { cacheLife, cacheTag } from "next/cache"
 
 import { db } from "~/lib/db"
@@ -11,12 +9,9 @@ export async function getTeamsWithPlayers() {
   cacheTag("teams")
 
   try {
-    const teams = await db.query.teams.findMany({
+    return await db.query.teams.findMany({
       with: { players: { with: { user: true } } }
     })
-
-    if (!teams) return
-    return teams
   } catch (error) {
     log.error({
       component: "teams-query",

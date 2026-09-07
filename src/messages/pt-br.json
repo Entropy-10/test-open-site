@@ -14,28 +14,13 @@
         "mappool": "Uma modpool de lazer, com novos mods a cada semana.",
         "format": "Um torneio 3v3, rank aberto, de eliminação dupla.",
         "schedule": "Assista à transmissão de partidas futuras na Twitch."
-      },
-      "Countdown": {
-        "titleSectionOne": "TORNEIO",
-        "titleSectionTwo": "COMEÇA EM"
       }
     },
     "Originals": {
-      "title": "Originais",
       "subtitle": "MÚSICAS CUSTOMIZADAS LANÇADAS EM BREVE.",
       "description": "Avance pelas fases para desbloquear originais do TEST exclusivos. Criadores talentosos compuseram músicas originais que são progressivamente reveladas com os estágios de qualificação, semifinals, finals e grand finals. Com cada música original apresentando estilo e arte únicos, estes beatmaps estão reservados para os melhores competidores deste torneio.",
       "tracksTitle": "LISTA DE MÚSICAS.",
       "listenButton": "OUÇA AGORA"
-    },
-    "SponsorSpot": {
-      "sponsoredBy": "TEST OPEN é orgulhosamente patrocinado por",
-      "sponsorMessage": "COVERS DE MESA DIGITALIZADORA A UM PREÇO JUSTO",
-      "Coupon": {
-        "save": "COMPRE E ECONOMIZE 10%",
-        "codeTitle": "USE CÓDIGO",
-        "checkout": "DURANTE O PAGAMENTO",
-        "shopButton": "COMPRE AGORA"
-      }
     }
   },
   "NavItems": {
@@ -49,12 +34,7 @@
     "team": "TIME",
     "profile": "PERFIL"
   },
-  "Buttons": {
-    "register": "INSCREVA-SE",
-    "signIn": "ENTRAR",
-    "signOut": "ENCERRAR SESSÃO",
-    "close": "FECHAR"
-  },
+  "Buttons": {},
   "Status": {
     "operational": "Todos os serviços estão online",
     "downtime": "Alguns serviços estão indisponíveis",
@@ -84,260 +64,11 @@
     "goHomeButton": "Voltar ao início",
     "message": "Desculpe, mas parece que algo deu errado do nosso lado. Você pode tentar clicar em tentar novamente, e se isso não funcionar você pode voltar ao início."
   },
-  "ProfilePage": {
-    "Buttons": {
-      "relink": "REVINCULAR",
-      "Update": {
-        "text": "ATUALIZAR",
-        "loadingText": "ATUALIZANDO"
-      }
-    },
-    "Headings": {
-      "profile": "MEU PERFIL.",
-      "team": "MEU TIME."
-    },
-    "Osu": {
-      "rank": "RANK GLOBAL",
-      "countryRank": "RANK NACIONAL"
-    },
-    "Team": {
-      "heading": "TIME ATUAL",
-      "none": "No momento você não tem um time. Entre em um aceitando quaisquer convites pendentes.",
-      "timezone": "FUSO HORÁRIO",
-      "joined": "JUNTOU-SE EM",
-      "manageTeamButton": "GERENCIAR MEU TIME"
-    },
-    "Invites": {
-      "heading": "CONVITES PENDENTES",
-      "none": "No momento você não tem nenhum convite. Espere por um ou crie seu próprio time.",
-      "Invite": {
-        "timezone": "FUSO HORÁRIO",
-        "invited": "CONVIDADO",
-        "Buttons": {
-          "accept": "ACEITAR",
-          "deny": "NEGAR"
-        }
-      }
-    },
-    "Errors": {
-      "ExistingTeam": {
-        "title": "JÁ ESTÁ EM UM TIME!",
-        "message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de entrar em um novo time."
-      },
-      "FailedInvite": {
-        "title": "FALHA EM {type} CONVITE!",
-        "message": "Desculpe, não conseguimos {type} aquele convite. Por favor, tente novamente para ver se isso ajuda.",
-        "Types": {
-          "deny": "negar",
-          "accept": "aceitar"
-        }
-      },
-      "CurrentTeam": {
-        "title": "ATUALMENTE EM TIME!",
-        "message": "Parece que você ainda está em um time. Por favor, saia ou exclua o time antes de excluir sua conta."
-      },
-      "FailedAccountDelete": {
-        "title": "FALHA NA EXCLUSÃO DA CONTA!",
-        "message": "Desculpe, parece que não conseguimos excluir sua conta. Por favor, tente novamente para ver se isso ajuda."
-      },
-      "FailedUpdate": {
-        "title": "FALHA EM ATUALIZAR!",
-        "message": "Desculpe, não conseguimos atualizar as informações do seu perfil de osu. Por favor, tente novamente para ver se isso ajuda."
-      },
-      "noRank": "Sem rank"
-    },
-    "Options": {
-      "DeleteAccount": {
-        "title": "EXCLUIR CONTA?",
-        "message": "Tem certeza que deseja excluir sua conta? Isto excluirá todos os dados armazenados e revogará todos os seus tokens de acesso ativos do osu! e Discord.",
-        "Buttons": {
-          "Delete": {
-            "text": "EXCLUIR",
-            "loadingText": "EXCLUINDO"
-          },
-          "noThanks": "NÃO, OBRIGADO",
-          "confirmDelete": "EXCLUIR CONTA",
-          "close": "FECHAR"
-        }
-      }
-    }
-  },
-  "RegistrationPage": {
-    "heading": "REGISTRO DO TIME",
-    "Closed": {
-      "title": "REGISTROS FECHADOS!",
-      "message": "Registros estão atualmente fechados até que o torneio comece. Por favor, volte assim que a contagem regressiva na página inicial terminar."
-    },
-    "Form": {
-      "heading": "CRIE UM TIME.",
-      "teamName": "Nome do Time",
-      "teamAcronym": "Acrônimo da Equipe",
-      "timezone": "Fuso-horário",
-      "teamFlag": "Bandeira do Time",
-      "createButton": {
-        "text": "CRIAR",
-        "loadingText": "CRIANDO"
-      },
-      "Success": {
-        "title": "TIME CRIADO!",
-        "message": "Bem-vindo ao TEST Open! Clique o botão abaixo para ver a página de gerenciamento do seu time e comece a convidar jogadores.",
-        "teamManagementButton": "GERENCIAMENTO DE TIME"
-      },
-      "ImagePicker": {
-        "upload": "Clique aqui para fazer upload",
-        "recommended": "Proporção recomendada 9:4"
-      }
-    },
-    "Errors": {
-      "Restricted": {
-        "message": "Parece que sua conta está restrita no osu. Infelizmente, você não pode se registrar enquanto no modo restrito. Se você acredita que isto foi um erro, tente deslogar e logar novamente no site.",
-        "title": "VOCÊ ESTÁ RESTRITO!"
-      },
-      "DuplicatePlayer": {
-        "message": "Parece que você já está em um time. Por favor, exclua ou saia de seu time atual antes de criar um novo time.",
-        "title": "JÁ ESTÁ EM UM TIME!"
-      },
-      "Duplicate": {
-        "message": "Parece que um time com esse {type} já existe. Por favor, use um {type} diferente.",
-        "Types": {
-          "name": "nome",
-          "acronym": "acrônimo",
-          "player": "jogador"
-        },
-        "title": "TIME {type} JÁ EXISTE!"
-      },
-      "Default": {
-        "message": "Não pudemos criar o seu time. Parece um problema no nosso lado. Por favor, tente novamente para ver se isso ajuda.",
-        "title": "FALHA NA CRIAÇÃO DO TIME!"
-      },
-      "UploadFailed": {
-        "title": "FALHA NO UPLOAD DA BANDEIRA!",
-        "message": "Não conseguimos carregar a sua bandeira em nosso servidor. Por favor, tente novamente para ver se isso ajuda."
-      }
-    }
-  },
   "TeamsPage": {
     "heading": "LISTA DE TIMES.",
     "teamsRegistered": "TIMES REGISTRADOS"
   },
-  "UnauthorizedPage": {
-    "authFailed": "AUTORIZAÇÃO FALHOU!",
-    "unauthorized": "SEM AUTORIZAÇÃO!",
-    "homeButton": "INÍCIO",
-    "Messages": {
-      "default": "Por favor, faça login antes de acessar esta página."
-    }
-  },
-  "VerifyPage": {
-    "title": "VERIFICAÇÃO DE SERVIDOR",
-    "Messages": {
-      "signIn": "Faça o login primeiro antes de tentar verificar-se.",
-      "verified": "Bem-vindo ao servidor do Discord do TEST Open!",
-      "defaultError": "A verificação falhou. Por favor, tente novamente mais tarde.",
-      "default": "Por favor, clique o botão abaixo para obter acesso ao servidor."
-    },
-    "Buttons": {
-      "tryAgain": "TENTE NOVAMENTE",
-      "Verify": {
-        "text": "VERIFICAR",
-        "loadingText": "VERIFICANDO"
-      }
-    },
-    "Errors": {
-      "alreadyVerified": "Você já foi verificado. Caso você pense que isto foi um erro, entre em contato com @__entro para mais ajuda.",
-      "verificationFailed": "Falha na verificação. Por favor, tente novamente para ver se isso ajuda.",
-      "notInServer": "Você não está no servidor do Discord! Por favor, entre no servidor antes de tentar verificar."
-    }
-  },
-  "TeamPage": {
-    "Headings": {
-      "team": "MEU TIME.",
-      "player": "LISTA DE JOGADORES."
-    },
-    "timezone": "FUSO HORÁRIO",
-    "Buttons": {
-      "delete": "EXCLUIR TIME",
-      "edit": "EDITAR TIME",
-      "leave": "SAIR DO TIME"
-    },
-    "Players": {
-      "heading": "MEMBROS ATUAIS",
-      "Player": {
-        "rank": "RANK",
-        "discord": "DISCORD",
-        "removeButton": "REMOVER JOGADOR"
-      }
-    },
-    "Invites": {
-      "heading": "CONVITES ENVIADOS",
-      "error": "Desculpe, não conseguimos os jogadores do seu time.",
-      "none": "No momento você não tem nenhum convite enviado. Comece usando a caixa de convites acima.",
-      "Invite": {
-        "rank": "RANK",
-        "discord": "DISCORD",
-        "sent": "ENVIAR",
-        "deleteButton": "EXCLUIR CONVITE",
-        "inviteButton": "CONVIDAR",
-        "placeholder": "Insira um nome de usuário..."
-      }
-    },
-    "Errors": {
-      "DeleteItemFailed": {
-        "title": "FALHA NA EXCLUSÃO DO {type}!",
-        "message": "Desculpe, não conseguimos excluir aquele {type}. Por favor, tente novamente para ver se isso ajuda.",
-        "Types": {
-          "player": "jogador",
-          "invite": "convite"
-        }
-      },
-      "InvitedSelf": {
-        "title": "VOCÊ NÃO PODE CONVIDAR A SI MESMO(A)!",
-        "message": "Você não pode se convidar para o seu próprio time. Se você deseja mudar de times, exclua este time primeiro."
-      },
-      "AlreadyInvited": {
-        "title": "JOGADOR JÁ FOI CONVIDADO!",
-        "message": "Parece que você já enviou um convite para esse jogador. Por favor, remova o convite atual antes de tentar convidá-lo novamente."
-      },
-      "InviteFailed": {
-        "title": "FALHA EM CONVIDAR JOGADOR!",
-        "message": "Desculpe, não conseguimos convidar aquele jogador. Por favor, tente novamente para ver se isso ajuda."
-      },
-      "PlayersOnTeam": {
-        "title": "JOGADORES AINDA ESTÃO NO TIME!",
-        "message": "Por favor, remova todos os jogadores do time antes de excluí-lo."
-      },
-      "DeleteTeamFailed": {
-        "title": "FALHA NA EXCLUSÃO DO TIME!",
-        "message": "Desculpe, não conseguimos excluir seu time. Por favor, tente novamente para ver se isso ajuda."
-      },
-      "PlayerOnTeam": {
-        "title": "JOGADOR JÁ ESTÁ EM TIME!",
-        "message": "Parece que esse jogador já está em sua equipe. Se isso for um erro, por favor, tente novamente e veja se isso ajuda."
-      },
-      "NotOnTeam": {
-        "title": "NÃO ESTÁ EM UM TIME!",
-        "message": "Parece que você atualmente não está em um time. Por favor, vá ao seu perfil e aceite um convite primeiro.",
-        "profileButton": "PERFIL"
-      },
-      "NoChanges": {
-        "title": "NENHUMA MUDANÇA!",
-        "message": "Você não alterou nenhuma informação da sua equipe. Altere suas informações antes de tentar atualizar."
-      },
-      "UpdateTeamFailed": {
-        "title": "FALHA EM ATUALIZAR O TIME!",
-        "message": "Desculpe, nós falhamos em atualizar sua equipe. Por favor, tente novamente e veja se isso ajuda."
-      }
-    },
-    "TeamUpdated": {
-      "title": "INFORMAÇÕES DO TIME ATUALIZADO!",
-      "message": "As informações do seu time foram atualizadas com sucesso. Você pode precisar recarregar a página para ver suas mudanças."
-    }
-  },
   "Components": {
-    "ComingSoon": {
-      "title": "EM BREVE!",
-      "message": "Esta página ainda está em andamento. Fique atento para informações sobre isso, e volte mais tarde quando estiver pronta."
-    },
     "MappoolTable": {
       "round": "Rodada",
       "starRating": "SR",
@@ -352,11 +83,6 @@
       "semifinals": "Semifinais",
       "finals": "Finais",
       "grandFinals": "Grandes Finais"
-    }
-  },
-  "APICallbacks": {
-    "Errors": {
-      "missingCode": "Desculpe, mas o login não pôde ser finalizado. Se inesperado, por favor, tente novamente, caso ao contrário, sinta-se à vontade para retornar ao início."
     }
   }
 }

@@ -1,5 +1,3 @@
-"use server"
-
 import { cacheLife, cacheTag } from "next/cache"
 
 import * as v from "valibot"

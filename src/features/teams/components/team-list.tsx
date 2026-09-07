@@ -6,7 +6,7 @@ import { getTeamsWithPlayers } from "../teams-queries"
 export async function TeamCount() {
   const teams = await getTeamsWithPlayers()
 
-  return <span className="font-extrabold">{teams?.length ?? 0}</span>
+  return <span className="font-extrabold">{teams.length}</span>
 }
 
 export function TeamCountSkeleton() {
@@ -17,7 +17,6 @@ export function TeamCountSkeleton() {
 
 export async function TeamList() {
   const teams = await getTeamsWithPlayers()
-  if (!teams) return null
 
   return (
     <div className="padding flex flex-wrap justify-center gap-5 py-8">
@@ -40,25 +39,25 @@ export async function TeamList() {
               <div className="grid w-full grid-cols-2 gap-2 p-2 opacity-100 transition-all sm:opacity-0 sm:group-hover:opacity-100">
                 {team.players.map(({ user }) => (
                   <Link
-                    key={user?.osuId}
+                    key={user.osuId}
                     target="_blank"
-                    href={`https://osu.ppy.sh/users/${user?.osuId}`}
+                    href={`https://osu.ppy.sh/users/${user.osuId}`}
                     className="flex gap-2 focus:outline-hidden"
                   >
                     <Image
                       height={32}
                       width={32}
-                      src={user?.osuAvatar ?? ""}
-                      alt={`${user?.osuName}'s pfp`}
+                      src={user.osuAvatar}
+                      alt={`${user.osuName}'s pfp`}
                       className="size-[32px]"
                     />
 
                     <div className="flex w-full flex-col justify-center">
                       <div className="w-[120px] truncate overflow-hidden text-sm/3 font-extrabold">
-                        {user?.osuName}
+                        {user.osuName}
                       </div>
                       <div className="text-xs">
-                        #{user?.rank?.toLocaleString()}
+                        #{user.rank?.toLocaleString()}
                       </div>
                     </div>
                   </Link>
@@ -84,14 +83,12 @@ export async function TeamList() {
 export function TeamListSkeleton() {
   return (
     <div className="padding flex flex-wrap justify-center gap-5 py-8">
-      {Array.from({ length: 32 })
-        .fill(0)
-        .map((_, i) => (
-          <div
-            key={i}
-            className="h-[190px] w-[340px] animate-pulse bg-gray-200"
-          />
-        ))}
+      {Array.from({ length: 32 }).map((_, i) => (
+        <div
+          key={i}
+          className="h-[190px] w-[340px] animate-pulse bg-gray-200"
+        />
+      ))}
     </div>
   )
 }
