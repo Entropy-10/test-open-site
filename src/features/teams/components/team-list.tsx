@@ -3,6 +3,18 @@ import Link from "next/link"
 
 import { getTeamsWithPlayers } from "../teams-queries"
 
+export async function TeamCount() {
+  const teams = await getTeamsWithPlayers()
+
+  return <span className="font-extrabold">{teams?.length ?? 0}</span>
+}
+
+export function TeamCountSkeleton() {
+  return (
+    <span className="inline-block h-5 w-8 animate-pulse bg-gray-200 align-middle" />
+  )
+}
+
 export async function TeamList() {
   const teams = await getTeamsWithPlayers()
   if (!teams) return null

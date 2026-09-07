@@ -69,14 +69,9 @@ export default function HomePage() {
           </div>
 
           <div className="mt-5 flex w-full items-center justify-center xl:mt-0">
-            <Button
-              disabled
-              variant="outline"
-              nativeButton={false}
-              render={
-                <Link href="/register">{buttonsT("registrationClosed")}</Link>
-              }
-            />
+            <Button disabled variant="outline">
+              {buttonsT("registrationClosed")}
+            </Button>
           </div>
         </div>
       </Background>

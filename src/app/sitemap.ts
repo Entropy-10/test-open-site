@@ -1,8 +1,13 @@
+import { cacheLife } from "next/cache"
 import type { MetadataRoute } from "next"
 
-import { getBaseUrl } from "./utils/site"
+import { getBaseUrl } from "~/utils/site"
 
-export default function sitemap(): MetadataRoute.Sitemap {
+// oxlint-disable-next-line eslint/require-await
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  "use cache"
+  cacheLife("max")
+
   return [
     {
       url: getBaseUrl(),

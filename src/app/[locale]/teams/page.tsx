@@ -7,6 +7,8 @@ import { Background } from "~/components/ui/background"
 import { Divider } from "~/components/ui/divider"
 import { Heading } from "~/components/ui/heading"
 import {
+  TeamCount,
+  TeamCountSkeleton,
   TeamList,
   TeamListSkeleton
 } from "~/features/teams/components/team-list"
@@ -32,7 +34,10 @@ export default function TeamsPage() {
         <Heading>{t("heading")}</Heading>
         <Divider />
         <div className="padding text-xl">
-          <span className="font-extrabold">{0}</span> {t("teamsRegistered")}
+          <Suspense fallback={<TeamCountSkeleton />}>
+            <TeamCount />
+          </Suspense>{" "}
+          {t("teamsRegistered")}
         </div>
       </Background>
 

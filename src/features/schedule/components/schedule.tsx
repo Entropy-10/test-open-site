@@ -4,6 +4,17 @@ import { cn } from "cn"
 
 import { getMatchesWithTeamsAndPlayers } from "../schedule-queries"
 
+function averageRank(players: { user: { rank: number | null } }[]) {
+  const ranks = players
+    .map(({ user }) => user.rank)
+    .filter((rank) => rank !== null)
+
+  if (ranks.length === 0) return "?"
+
+  const total = ranks.reduce((sum, rank) => sum + rank, 0)
+  return Math.round(total / ranks.length).toLocaleString()
+}
+
 export async function Schedule() {
   const matches = await getMatchesWithTeamsAndPlayers()
 
@@ -65,10 +76,7 @@ export async function Schedule() {
                   {match.team1.name}
                 </div>
                 <div className="text-xs font-medium lg:text-sm">
-                  AVG RANK: #
-                  {match.team1.players
-                    .reduce((acc, player) => acc + (player.user.rank ?? 0), 0)
-                    .toLocaleString()}
+                  AVG RANK: #{averageRank(match.team1.players)}
                 </div>
               </div>
 
@@ -95,10 +103,7 @@ export async function Schedule() {
                   {match.team2.name}
                 </div>
                 <div className="text-right text-xs font-medium lg:text-sm">
-                  AVG RANK: #
-                  {match.team1.players
-                    .reduce((acc, player) => acc + (player.user.rank ?? 0), 0)
-                    .toLocaleString()}
+                  AVG RANK: #{averageRank(match.team2.players)}
                 </div>
               </div>
             </div>

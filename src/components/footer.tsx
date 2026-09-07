@@ -53,14 +53,9 @@ export function Footer() {
         </div>
 
         <div className="order-first flex grow items-center justify-center md:order-0 md:justify-between">
-          <Button
-            disabled
-            className="hidden md:flex"
-            nativeButton={false}
-            render={
-              <Link href="/register">{buttonsT("registrationClosed")}</Link>
-            }
-          />
+          <Button disabled className="hidden md:flex">
+            {buttonsT("registrationClosed")}
+          </Button>
 
           <div className="mt-5 flex items-center space-x-5 *:cursor-pointer *:outline-hidden max-md:mt-0 md:justify-end">
             <Link target="_blank" href={discord}>
