@@ -1,8 +1,12 @@
+import { Suspense } from "react"
+
 import { getTranslations } from "next-intl/server"
 
 import { Button } from "./ui/button"
 import { NavLink } from "./ui/nav-link"
 import { LogoIcon } from "~/components/icons/logo"
+import { LanguagePickerSkeleton } from "~/features/language/components/language-picker"
+import LanguageWrapper from "~/features/language/components/language-wrapper"
 import { Link } from "~/i18n/navigation"
 import { navLinks } from "~/utils/links"
 
@@ -37,6 +41,10 @@ export async function Header() {
         </nav>
 
         <div className="flex gap-3">
+          <Suspense fallback={<LanguagePickerSkeleton />}>
+            <LanguageWrapper />
+          </Suspense>
+
           <Button variant="invertedDefault">Sign In</Button>
         </div>
       </section>
