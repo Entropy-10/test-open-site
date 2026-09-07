@@ -2,62 +2,62 @@
 
 import { cacheLife, cacheTag } from "next/cache"
 
+import * as v from "valibot"
 import { ENV } from "varlock/env"
-import { z } from "zod"
 
 import { log, serializeError } from "~/lib/evlog"
 
 const baseUrl = "https://api.crowdin.com/api/v2"
 
-const wordStatsSchema = z.object({
-  total: z.number(),
-  translated: z.number(),
-  preTranslateAppliedTo: z.number(),
-  approved: z.number()
+const wordStatsSchema = v.object({
+  total: v.number(),
+  translated: v.number(),
+  preTranslateAppliedTo: v.number(),
+  approved: v.number()
 })
 
-const qaChecksStatusSchema = z.object({
-  total: z.number(),
-  inProgress: z.number(),
-  passed: z.number(),
-  failed: z.number()
+const qaChecksStatusSchema = v.object({
+  total: v.number(),
+  inProgress: v.number(),
+  passed: v.number(),
+  failed: v.number()
 })
 
-const languageSchema = z.object({
-  id: z.string(),
-  name: z.string(),
-  editorCode: z.string(),
-  twoLettersCode: z.string(),
-  threeLettersCode: z.string(),
-  locale: z.string(),
-  androidCode: z.string(),
-  osxCode: z.string(),
-  osxLocale: z.string(),
-  pluralCategoryNames: z.array(z.string()),
-  pluralRules: z.string(),
-  pluralExamples: z.array(z.string()),
-  textDirection: z.enum(["ltr", "rtl"]),
-  dialectOf: z.string().nullable()
+const languageSchema = v.object({
+  id: v.string(),
+  name: v.string(),
+  editorCode: v.string(),
+  twoLettersCode: v.string(),
+  threeLettersCode: v.string(),
+  locale: v.string(),
+  androidCode: v.string(),
+  osxCode: v.string(),
+  osxLocale: v.string(),
+  pluralCategoryNames: v.array(v.string()),
+  pluralRules: v.string(),
+  pluralExamples: v.array(v.string()),
+  textDirection: v.picklist(["ltr", "rtl"]),
+  dialectOf: v.nullable(v.string())
 })
 
-const progressDataSchema = z.object({
+const progressDataSchema = v.object({
   words: wordStatsSchema,
   phrases: wordStatsSchema,
-  translationProgress: z.number().min(0).max(100),
-  approvalProgress: z.number().min(0).max(100),
+  translationProgress: v.pipe(v.number(), v.minValue(0), v.maxValue(100)),
+  approvalProgress: v.pipe(v.number(), v.minValue(0), v.maxValue(100)),
   qaChecksStatus: qaChecksStatusSchema,
-  languageId: z.string(),
+  languageId: v.string(),
   language: languageSchema
 })
 
-const paginationSchema = z.object({
-  offset: z.number(),
-  limit: z.number()
+const paginationSchema = v.object({
+  offset: v.number(),
+  limit: v.number()
 })
 
-const languageProgressResponseSchema = z.object({
-  data: z.array(
-    z.object({
+const languageProgressResponseSchema = v.object({
+  data: v.array(
+    v.object({
       data: progressDataSchema
     })
   ),
@@ -95,19 +95,21 @@ export async function getTranslationProgress() {
     return null
   }
 
-  const { success, data, error } =
-    languageProgressResponseSchema.safeParse(responseJson)
+  const { success, output, issues } = v.safeParse(
+    languageProgressResponseSchema,
+    responseJson
+  )
 
-  if (!success || "error" in data) {
+  if (!success) {
     log.error({
       component: "language-progress",
       message: "Unexpected Crowdin response shape",
-      issues: error?.issues.map((issue) => issue.message)
+      issues: issues.map((issue) => issue.message)
     })
     return null
   }
 
-  return data.data.map(({ data: { language, translationProgress } }) => ({
+  return output.data.map(({ data: { language, translationProgress } }) => ({
     code: language.editorCode,
     progress: translationProgress
   }))
